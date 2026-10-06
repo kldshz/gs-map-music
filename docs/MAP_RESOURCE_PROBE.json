@@ -1,0 +1,129 @@
+{
+  "checked_on": "2026-10-06",
+  "timezone": "Asia/Shanghai",
+  "scope": "source inspection and five V3 production tile probes; not full coverage or application acceptance",
+  "repositories": [
+    {
+      "repository": "https://github.com/kongying-tavern/map_front_v3",
+      "default_branch": "master",
+      "archived": false,
+      "pushed_at": "2026-08-28T02:36:26Z",
+      "inspected_commit": "0e80dd090329cb4964360ef42d2ed6016cf7cc15"
+    },
+    {
+      "repository": "https://github.com/kongying-tavern/map_akashic_v4",
+      "default_branch": "main",
+      "archived": false,
+      "pushed_at": "2026-07-29T09:56:48Z",
+      "inspected_commit": "3c61ff078ecba0f26458176b789c6069fa544a4d"
+    }
+  ],
+  "production_config": {
+    "url": "https://assets.yuanshen.site/webapp.json",
+    "bytes": 114934,
+    "sha256": "bce01daf659246667e1d23f1e8de38ba5fc32c3a3f1561d598abdfe5038055ba",
+    "selected_tiles": {
+      "提瓦特-base0": {
+        "code": "twt672",
+        "name": "提瓦特",
+        "settings": {
+          "center": [
+            0,
+            1742
+          ]
+        },
+        "center": [
+          3568,
+          6969
+        ],
+        "size": [
+          30370,
+          26624
+        ],
+        "tilesOffset": [
+          -17408,
+          -10240
+        ]
+      },
+      "A:ZD:ZHIDONG1": {
+        "extend": "提瓦特-base0",
+        "settings": {
+          "center": [
+            -9760,
+            -11529
+          ],
+          "zoom": -2
+        }
+      }
+    },
+    "other_observed_area_codes": [
+      "A:NDKL:NDKL",
+      "A:NDKL:NDKL2",
+      "A:NDKL:NDKL3",
+      "A:NDKL:SY"
+    ]
+  },
+  "tile_probes": [
+    {
+      "url": "https://assets.yuanshen.site/tiles_twt672/11/-7_-5.png",
+      "z": 11,
+      "x": -7,
+      "y": -5,
+      "status": 200,
+      "bytes": 30656,
+      "content_type": "image/webp",
+      "sha256": "eb8ab7d7ed33ddb3c8343c697f397de55e1f6e6ee832816d2c8c38629b27e4b9",
+      "image_signature": "RIFF/WEBP"
+    },
+    {
+      "url": "https://assets.yuanshen.site/tiles_twt672/10/-4_-3.png",
+      "z": 10,
+      "x": -4,
+      "y": -3,
+      "status": 200,
+      "bytes": 41130,
+      "content_type": "image/webp",
+      "sha256": "ed676a7d46fbe797ff992fe9ede125876703611cd5151e0edb2720b04dd73381",
+      "image_signature": "RIFF/WEBP"
+    },
+    {
+      "url": "https://assets.yuanshen.site/tiles_twt672/10/-3_-2.png",
+      "z": 10,
+      "x": -3,
+      "y": -2,
+      "status": 200,
+      "bytes": 21766,
+      "content_type": "image/webp",
+      "sha256": "c7cde2475d2d1a7da7182f0ebf784366209048333f612d47f70404e72a055864",
+      "image_signature": "RIFF/WEBP"
+    },
+    {
+      "url": "https://assets.yuanshen.site/tiles_twt672/10/-4_-2.png",
+      "z": 10,
+      "x": -4,
+      "y": -2,
+      "status": 200,
+      "bytes": 31082,
+      "content_type": "image/webp",
+      "sha256": "32bc471aae93c903a499ab42e432bb1573920efdda057b2ffec8de8dee92c094",
+      "image_signature": "RIFF/WEBP"
+    },
+    {
+      "url": "https://assets.yuanshen.site/tiles_twt672/10/-3_-3.png",
+      "z": 10,
+      "x": -3,
+      "y": -3,
+      "status": 200,
+      "bytes": 46402,
+      "content_type": "image/webp",
+      "sha256": "243078040b103fd6e50c90c919c36aa8a4d01ce63827acb052b045617c44bac8",
+      "image_signature": "RIFF/WEBP"
+    }
+  ],
+  "limits": [
+    "region names and waypoint completeness not verified",
+    "V4 actual service environment not supplied",
+    "HTTP availability is not a separate asset redistribution license",
+    "browser CORS and point alignment not yet accepted"
+  ]
+}
