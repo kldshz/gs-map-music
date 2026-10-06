@@ -30,8 +30,10 @@
 - 分支：`main`；远程：`origin` → `https://github.com/kldshz/gs-map-music.git`。
 - 仓库：<https://github.com/kldshz/gs-map-music>，私有。
 - 沿用已配置的 Git 提交身份；未修改全局配置；没有历史需要迁移。
-- 本阶段初始提交：待文档检查后提交与推送；最终已推送哈希在交付回复中列出。
+- 初始基础提交：`72a936a29386b40d62d0453acda62e26bdc9ce55`，已推送；随后 `git ls-remote origin refs/heads/main` 与本地 HEAD 相同、工作区干净。
+- 当前收尾修改单元：补录已核实的推送证据与代理恢复方法。该文档修改检查后再提交、推送，最终已推送哈希在交付回复中列出；不在文档中循环更新自身哈希。
 - 同步判定：本地 `git rev-parse HEAD` 与 `git ls-remote origin refs/heads/main` 一致，且工作区干净。推送结果未核对前不视为同步。
+- 网络配置：全局针对 GitHub 的代理指向未运行的 `127.0.0.1:7890`，首次普通推送失败；精确覆盖 GitHub 的命令配置后成功。已在本仓库 `.git/config` 中把 `http.https://github.com.proxy` 与 `https.https://github.com.proxy` 设为空，使用直连；未改全局配置。恢复全局行为：`git config --local --unset http.https://github.com.proxy` 和 `git config --local --unset https.https://github.com.proxy`。恢复前应确保代理可用。
 
 ## 阻塞与恢复
 
