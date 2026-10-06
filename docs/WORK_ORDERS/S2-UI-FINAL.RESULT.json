@@ -1,0 +1,128 @@
+{
+  "work_order_id": "S2-UI-FINAL",
+  "date": "2026-10-06",
+  "status": "stage2_skeleton_accepted",
+  "cli_version": "2.1.291",
+  "provider_host": "kuaipao.ai",
+  "requested_model": "claude-opus-5-5",
+  "requested_effort": "high",
+  "model_substitution": false,
+  "unsuccessful_work_orders": [
+    {
+      "ticket_id": "S2-UI-001",
+      "outcome": "timeout_no_delivery",
+      "timeout_seconds": 600
+    },
+    {
+      "ticket_id": "S2-UI-001-A",
+      "outcome": "timeout_no_delivery",
+      "timeout_seconds": 360
+    }
+  ],
+  "successful_work_orders": [
+    {
+      "ticket_id": "S2-UI-001-CHECK",
+      "subtype": "success",
+      "is_error": false,
+      "reported_models": [
+        "claude-opus-5-5"
+      ],
+      "duration_ms": 5296,
+      "json_fence_removed_by_codex": false
+    },
+    {
+      "ticket_id": "S2-UI-002",
+      "subtype": "success",
+      "is_error": false,
+      "reported_models": [
+        "claude-opus-5-5"
+      ],
+      "duration_ms": 120290,
+      "json_fence_removed_by_codex": true
+    },
+    {
+      "ticket_id": "S2-UI-002-R1",
+      "subtype": "success",
+      "is_error": false,
+      "reported_models": [
+        "claude-opus-5-5"
+      ],
+      "duration_ms": 242594,
+      "json_fence_removed_by_codex": false
+    },
+    {
+      "ticket_id": "S2-UI-002-R2",
+      "subtype": "success",
+      "is_error": false,
+      "reported_models": [
+        "claude-opus-5-5"
+      ],
+      "duration_ms": 73716,
+      "json_fence_removed_by_codex": true
+    }
+  ],
+  "hash_basis": "UTF-8 file bytes with CRLF normalized to LF (Git text storage)",
+  "claude_design_files_final_after_codex_integration": [
+    {
+      "path": "index.html",
+      "sha256": "6ef4a8409092d9aa0eb446711216f284acf06d65c768147491951d07a3396b7f"
+    },
+    {
+      "path": "src/main.ts",
+      "sha256": "a4472b21b70c26d26a58870736b7f4ab1b17899ca76f637119dbaa4d8323f0fd"
+    },
+    {
+      "path": "src/App.vue",
+      "sha256": "2d604e9609e3c64c9bdfc7594dfa158cb612e37d564b24deb4d05d615a64ec15"
+    },
+    {
+      "path": "src/style.css",
+      "sha256": "6aecfff71245f7966f8e0925f7b2727f6a59d3aa0f3817fc023fa4f2a81ca92d"
+    }
+  ],
+  "codex_integration": [
+    "project configuration, fixed dependencies and lock, reviewed fixture export, browser tests and records",
+    "domain type narrowing, licensed-demo enum, Source.description, nullable and http(s) URL checks",
+    "unique skip link, nextTick detail scroll, wording corrections",
+    "R2 precise replacements reviewed, unique old snippets verified; markdown fence removed",
+    "local mobile footer two-row correction and native dialog centering",
+    "schematic scale unit and unloaded audio duration --:--"
+  ],
+  "checks": {
+    "strict_typecheck_and_production_build": "passed",
+    "edge_ui": {
+      "status": "passed",
+      "tests": 6,
+      "browser_version": "154.0.4258.53",
+      "viewports": [
+        "1440x900",
+        "1280x720",
+        "390x844",
+        "320x844"
+      ]
+    },
+    "screenshots_actually_viewed_by_codex": [
+      "desktop",
+      "mobile390",
+      "mobile320",
+      "route",
+      "dialog"
+    ],
+    "stage1_data_audio_coordinate_document_regression": "passed",
+    "npm_audit": "0 known vulnerabilities"
+  },
+  "limitations": [
+    "gateway declaration is not independent authentication of upstream supplier",
+    "effort high passed to CLI, internal effort execution not separately echoed",
+    "synthetic SVG preview only, Leaflet MapAdapter and real map resource package not implemented",
+    "player, persistence, import and route simulation engines not implemented; controls disabled",
+    "real OST entries have no audio, pending location and unknown time; no invented coordinates",
+    "other browsers and complete assistive technology checks not performed"
+  ],
+  "evidence_documents": [
+    "docs/STAGE2_REVIEW.md",
+    "docs/COLLABORATION.md",
+    "docs/ACCEPTANCE.md"
+  ],
+  "raw_responses_and_screenshots": "ignored .local only; no credentials, token/cost statistics or internal reasoning included"
+}

@@ -2,7 +2,7 @@
 
 ## 分工与文件所有权
 
-- Codex：需求与状态、调研、架构/数据、业务逻辑、验证、整合、Git/GitHub；本阶段全部仓库文件归 Codex 修改。
+- Codex：需求与状态、调研、架构/数据、业务逻辑、验证、整合、Git/GitHub；Claude返回交付后由Codex审查落盘，调用中不编辑其交付范围。
 - Claude：按用户要求主导前端视觉与交互，在阶段 2 起交付可运行前端代码；调用前列出精确可编辑文件，Codex 在调用期间不改这些文件。
 - Claude 不自行扩展需求，不提交/推送，不保存凭据。未确认模型或配置时暂停依赖它的设计任务，继续独立工作并请用户选择；不得静默替代。
 
@@ -68,6 +68,8 @@ pwsh -NoProfile -File scripts/run-claude-work-order.ps1 -Ticket docs/WORK_ORDERS
 
 工单输入、CLI 成功返回、交付 JSON 有效、代码实际可运行是不同验收层次。工单中的“完成”不是验收通过证明；服务错误、超时或模型不符时报告阻塞，不自动重试或更换模型。工单内容以中文编写，UTF-8 传递。
 
+同模型缩小工单、单独可用性核实或针对实际问题返修属于有记录的新任务；不隐瞒失败，不切换模型或自动备用模型。
+
 阶段 0 验证工单：[S0-CLI-001](WORK_ORDERS/S0-CLI-001.md)，[Codex 验证报告](WORK_ORDERS/S0-CLI-001.RESULT.json)。首次沿用本地别名的调用在 180 秒超时，没有返回；随后查阅既有网关 `/v1/models`，得到 `claude-opus-5-5`，改用该正式 ID 并显式传递既有服务环境后成功。两个因素一起变化，因此不把首次超时完全归因于别名。未改用其他模型。
 
 成功请求返回 subtype=success、is_error=false、modelUsage 中唯一标识 `claude-opus-5-5`；工单 JSON 的编号、完成状态、标记、中文范围和空 files_changed 数组全部核验通过。CLI 报告 duration_ms=3922，整个脚本约 6 秒。真实参数 `--effort high` 已传入且请求成功，但服务未单独回显 effort 或内部执行策略。这不是前端设计或业务代码验收。
@@ -79,3 +81,22 @@ pwsh -NoProfile -File scripts/run-claude-work-order.ps1 -Ticket docs/WORK_ORDERS
 本轮无前端设计/页面开发任务，未调用 Claude，也没有把 Codex 的调研、数据接口或示意几何称为 Claude 交付。Codex 完成仓库实际查阅、许可分层、栈与领域接口、小样本资源、技术探针、验收映射及版本管理。阶段 0 连通性证据沿用，不代表阶段 2 设计已完成。
 
 阶段 2 派单必须附带统一需求、ARCHITECTURE、contracts、demo.bundle、ACCEPTANCE 和资源署名；使用现有 runner 固定 `claude-opus-5-5 --effort high`，收到响应后核对 modelUsage。交付限定精确前端文件 path/content，按实际工单配置 Vite/Vue 骨架，不改业务契约/来源/许可或执行 Git。要求完整地图主体、昼夜面板、文字搜索、播放器、路线入口、移动和键盘布局，并显著展示合成地图/许可非原神音乐/待核实原神条目。Codex 审核落盘、安装锁文件、构建并实际查看页面；依赖模型失败明确报阻塞，不替换。
+
+## C2-01：实际设计交付、返修与整合（2026-10-06）
+
+继续使用上述CLI2.1.291和本机既有网关，所有请求固定 `--model claude-opus-5-5 --effort high`，禁用工具，工单经stdin。成功响应均subtype=success、is_error=false，modelUsage唯一指定ID；上游身份和内部effort不能独立认证的限制仍在。未替换模型，也未用Codex子代理代做视觉。
+
+| 工单 | 范围与实际结果 |
+| --- | --- |
+| [S2-UI-001](WORK_ORDERS/S2-UI-001.md) | 首次10文件完整骨架，附需求/契约/样本等；600秒超时，无交付 |
+| [CHECK](WORK_ORDERS/S2-UI-001-CHECK.md) | 单独连通性检查，duration_ms5296，完成标记核验通过；不代表设计通过 |
+| [001-A](WORK_ORDERS/S2-UI-001-A.md) | 三文件分批，较多上下文；360秒超时，无交付 |
+| [002](WORK_ORDERS/S2-UI-002.md) | 缩小上下文/交付规模，duration_ms120290；4完整文件index.html/main.ts/App.vue/style.css，Codex审核落盘；初版构建/截图后提出返修 |
+| [R1](WORK_ORDERS/S2-UI-002-R1.md) | 键盘点、目录入口、来源/关联、路线线条/单位、资源原生dialog；duration_ms242594，完整App/style交付 |
+| [R2](WORK_ORDERS/S2-UI-002-R2.md) | 视口footer、4:3与SVG点坐标、区域矩形边界、dialog居中；duration_ms73716，3条精确替换；返回JSON带围栏，由Codex剥离并核对old唯一性后应用 |
+
+缩小输入和输出两个因素同时变化，不能把超时断定为某一个原因。成功并不意味着交付天然可用；所有前端交付由Codex核对模型、工单编号、文件范围、结果并实际检查。初版摘要保留历史问题，最终结果见 [S2-UI-FINAL.RESULT.json](WORK_ORDERS/S2-UI-FINAL.RESULT.json) 与 [审核记录](STAGE2_REVIEW.md)。原始响应保留在忽略目录 `.local/claude-runs`，不提交费用/token/内部推理/凭据。
+
+Codex管理package/lock、Vite/TS配置、fixture导出、测试与文档；Claude主导4个前端文件的视觉/交互代码。Codex整合修复包括类型收窄/fixture断言、licensed-demo枚举、Source.description/null URL、重复skiplink、nextTick滚动、用词纠正。R2后实测仍有手机footer三行过高和dialog定位约束问题，Codex做局部两行紧凑/原生居中修复；并补比例尺单位、禁用进度栏时长改--:--（不混用原作3:25与12秒片段）。未重新设计整套视觉，未改素材或领域契约。
+
+最终严格类型/构建、6项本机Edge生产UI测试、已有阶段1探针通过；Codex实际查看桌面/手机/路线/dialog。骨架只含样本交互，播放/模拟/持久化不可用；真实地图资源依赖未解决。最终提交推送由Codex执行。

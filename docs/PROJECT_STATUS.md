@@ -4,11 +4,12 @@
 
 ## 阶段与交付
 
-- 本轮：阶段 1 调研、技术选型、接口、示例数据、许可音频文件及必要探针已完成；真实地图授权/数据缺口明确保留。阶段 0 协作连通性已通过，有网关身份/effort 回显限制。
-- 下一阶段：阶段 2，Claude 前端设计与可运行骨架；本轮未进入。阶段间由用户选择继续。
+- 本轮：阶段 2 已完成。Claude Opus 5-5/high 实际工单交付 Vue/Vite 骨架并两轮返修；Codex 审核整合、启动、严格类型/生产构建、6项实际 Edge UI 测试及桌面/手机截图查看通过。阶段1调研和数据不变；网关身份/effort 回显限制保留。
+- 下一阶段：阶段 3，地图适配与双向检索；本轮未进入。真实地图包仍缺失，S3-01保持阻塞，可继续独立的导入/适配/检索逻辑。阶段间由用户选择继续。
 - 初始目录：`C:\Users\17211\Desktop\gs-map-music`，仅有需求文件，无代码、Git 仓库或用户未提交代码。
 - 已建立：协作记录、[来源调研](RESEARCH.md)、[网易官方追加核实](NETEASE_RESEARCH.md)、[技术方案](ARCHITECTURE.md)、[路线测试计划](ROUTE_TEST_PLAN.md)、[接口](../src/domain/contracts.ts)、[数据样本](../data/demo.bundle.json)、[许可示例音频与署名](../public/audio/demo/ATTRIBUTION.md)。需求已按用户新说明补充个人用途/本地音源。
-- 未开始：业务依赖清单、Claude 前端设计、页面、真实地图接入、播放器/检索/路线生产实现、部署。
+- 新增：[阶段2审核](STAGE2_REVIEW.md)、前端源码、固定依赖/lock、构建与真实浏览器测试。SVG合成预览可选点、昼夜筛选/搜索/详情/单点定位，路线只做既有样本点静态草稿。Leaflet/Pinia已安装，但生产适配/应用状态模块未接入。
+- 未开始：真实地图接入、完整检索服务、运行时导入校验、播放引擎/持久化、路线模拟/自动切歌、部署。占位禁用控件不计功能通过。
 
 ## 环境证据
 
@@ -31,7 +32,7 @@
 - 仓库：<https://github.com/kldshz/gs-map-music>，私有。
 - 沿用已配置的 Git 提交身份；未修改全局配置；没有历史需要迁移。
 - 初始基础提交：`72a936a29386b40d62d0453acda62e26bdc9ce55`，已推送；随后 `git ls-remote origin refs/heads/main` 与本地 HEAD 相同、工作区干净。
-- 本轮起始 HEAD：`85f8d090e7718f5a127f1db045661a6d59a1ecc8`，已推送，起始工作区干净；本轮完整单元为阶段 1 来源、方案、接口/数据/音频探针及交接。检查后提交推送，最终已推送哈希在交付回复中列出，不循环更新自身哈希。
+- 阶段2起始 HEAD：`1a4a345c03c60c3a783a8e66f2c451d6334d290f`，已推送，起始工作区干净。本轮完整单元为经返修/整合/实际验证的前端骨架、依赖锁定、测试和交接；检查后提交推送，最终已推送哈希在交付回复中列出，不循环更新自身哈希。
 - 同步判定：本地 `git rev-parse HEAD` 与 `git ls-remote origin refs/heads/main` 一致，且工作区干净。推送结果未核对前不视为同步。
 - 网络配置：全局针对 GitHub 的代理指向未运行的 `127.0.0.1:7890`，首次普通推送失败；精确覆盖 GitHub 的命令配置后成功。已在本仓库 `.git/config` 中把 `http.https://github.com.proxy` 与 `https.https://github.com.proxy` 设为空，使用直连；未改全局配置。恢复全局行为：`git config --local --unset http.https://github.com.proxy` 和 `git config --local --unset https.https://github.com.proxy`。恢复前应确保代理可用。
 
@@ -40,8 +41,8 @@
 - 原 C0-01 工作区授权阻塞已解除：用户确认手动信任；按其后续要求改用工单驱动 CLI，不再依赖桌面输入。
 - 已验证工单 S0-CLI-001：既有网关模型列表及响应均为 `claude-opus-5-5`；CLI 明确传入 effort=high，JSON 响应、中文范围与完成标记通过核验。没有模型替换。
 - 首次调用 180 秒超时；核实模型正式 ID、显式传递既有服务环境后成功。正常运行原始响应存于忽略目录 `.local/claude-runs`，摘要位于 docs/WORK_ORDERS/S0-CLI-001.RESULT.json。
-- 当前没有阻止阶段 1 的协作阻塞。配置使用 kuaipao.ai 网关，无法独立认证其上游供应商；服务没有单独回显内部 effort 策略，不能推断隐藏实现。
-- 阶段 2 仍需验证实际前端交付：通过工单返回精确文件 path/content，Codex 审核后落盘、构建并查看页面。阶段 0 没有产生业务代码或提前执行该阶段。
+- 当前没有阻止阶段2交付的协作阻塞。配置使用 kuaipao.ai 网关，无法独立认证其上游供应商；服务没有单独回显内部 effort 策略，不能推断隐藏实现。
+- 阶段2整包001在600秒、分批001-A在360秒超时，无交付；独立CHECK成功。缩小上下文与返回文件数量后002成功交付4个文件，R1完整App/style返修、R2精确替换成功。请求固定指定模型/high，成功响应唯一modelUsage一致，无替换。最终构建/UI/实际查看通过，详见协作和审核记录。
 - M1-01：真实底图、区域和锚点数据尚无授权资源包；空荧代码许可不等于第三方瓦片/服务许可。用户确认个人非商业无数据。阶段 2 用显著标注的合成示意资源可继续；阶段 3 的真实地图验收保持阻塞，不能代替。
 - M1-02：两条真实 OST 目录记录已核对，但游戏地点/昼夜关联 pending，音源空。未收到用户普通本地音频。目录条目不可伪装可播放；阶段 4 可先用独立许可示例验收。
 - M1-03：网易云官方确有按 ID 取播放 URL 的 API，但个人 FAQ 当前限定 ncm-cli；尚无直接网页 API 资质、核实网易曲目 ID 或业务调用。官方 CLI 外部播放是后续选项，与浏览器播放分别验收；不需要先全量下载 OST。
@@ -54,6 +55,15 @@
 - GitHub 固定 commit 引用路径与实际仓库树核对；维护元数据/默认分支 commit 重查一致。官方网易文档实际 code=200、标题/更新日期核实。
 - 提交前审计：52 个本地 Markdown 链接存在；固定版本 GitHub 引用路径与树一致；个人资源/工具/认证/未审核 WAV 被忽略、两个精确审核 WAV 可入库；常见令牌/私钥模式无命中，空白差异无错误（模式扫描不能保证任意秘密绝不存在）。最终同步依据仍为本地/远程 HEAD 一致且工作区干净。
 
+## 阶段 2 验证证据
+
+- `npm run build`：vue-tsc strict检查及Vite7.3.7生产构建通过；完整 `npm audit` 无已知漏洞。原阶段1候选Vite7.2.6审计出现高危问题，已在同主版本修复，见D2-01。
+- `npm run test:ui -- --workers=1`：6/6通过，本机 Edge154.0.4258.53。包含day2/night1/空C、许可和来源、键盘单点反向选择、多关联入口、待核实/无音源/无坐标、无假audio、路线A→B→A/撤销清除、原生dialog/Esc/回焦、390/320手机无横溢出且详情末尾不被footer遮挡。
+- 1440×900桌面和390/320×844手机布局实测；SVG与HTML点中心偏差<3px、4:3、footer在视口内、手机footer≤120px；Codex实际查看最终桌面/手机/路线/dialog截图。生产UI检查不等于真实地图坐标标校或浏览器发声通过。
+- `npm run check:stage1`：已有数据、PCM、坐标/几何探针和本地Markdown链接回归通过。原始模型输出、截图、trace与依赖/构建仍留忽略目录；不提交凭据、token统计或内部推理。
+
 ## 启动与检查
 
-尚无应用启动或构建命令，阶段 2 建立。阶段 1 可执行 `node scripts/check-stage1.mjs`；接口类型检查见 README。工单连通性命令：`pwsh -NoProfile -File scripts/run-claude-work-order.ps1 -Ticket docs/WORK_ORDERS/S0-CLI-001.md`，会发起真实模型请求；安装与上下文传递见协作记录。后续开始前须重新核对本文件及实际 Git，不能仅依赖口头总结。
+`npm ci` 后 `npm run dev`，访问 <http://127.0.0.1:5173>。`npm run build`；`npm run preview` 默认4173。`npm run test:ui` 需本机Edge及已构建dist，自动起停4173预览（先停止手动preview）；`npm run check:stage1`、`npm audit`。细节见README。
+
+真实Claude派单仍用 `pwsh -NoProfile -File scripts/run-claude-work-order.ps1 -Ticket docs/WORK_ORDERS/工单.md -ContextFiles 仓库内输入`，会发起实际服务请求；参数固定claude-opus-5-5/high，不是模拟。后续先读取本文件和实际Git，不能仅依赖口头总结。

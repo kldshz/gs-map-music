@@ -1,13 +1,13 @@
 # 阶段 1 技术方案与接口交接
 
-当前仓库原为空项目，没有需要迁移的应用栈。本阶段只有接口、数据和探针；阶段 2 创建依赖清单、锁文件与页面，不提前实现业务。
+方案建立于阶段 1：原为空项目，无需迁移已有应用。阶段 2 已创建依赖清单、锁文件和 Vue 页面骨架，后续按阶段逐项实现业务；此文件保留阶段 1 数据/领域方案。
 
 ## 栈与边界
 
 | 用途 | 固定候选版本 | 许可 / 依据 |
 | --- | --- | --- |
 | UI | Vue 3.5.43 | MIT；空荧当前应用也使用 Vue，方便后续参考 |
-| 构建 | Vite 7.2.6、@vitejs/plugin-vue 6.0.2 | MIT；插件支持 Vite 5/6/7 |
+| 构建 | Vite 7.3.7、@vitejs/plugin-vue 6.0.2 | MIT；阶段 2 审计发现原 7.2.6 高危漏洞后升级；插件支持 Vite 5/6/7 |
 | 类型 | TypeScript 5.9.3 | Apache-2.0 |
 | 应用状态 | Pinia 3.0.4 | MIT；peer Vue ^3.5.11、TS >=4.5 |
 | 地图 | Leaflet 1.9.4 | BSD-2-Clause；简单图像 CRS、点/线/面和适配层均可支持 |
@@ -15,11 +15,15 @@
 
 以上版本已逐项读取 npm registry 的 license、engine 和 peer 字段，不宣称它们是 latest。Vite/插件要求 Node ^20.19.0 或 >=22.12.0，本机 22.17.0 符合。固定已核对的兼容组合，阶段 2 仍以实际安装与构建为验收。项目自身代码暂未选择公开许可证；私有仓库不意味着第三方材料自动取得许可。
 
+阶段 2 加入 vue-tsc 3.1.4（MIT、peer TS >=5.0）验证 SFC 和 Playwright 1.56.1（Apache-2.0、Node >=18）做实际浏览器验收，均为开发依赖。`npm audit` 在 Vite 修复后无已知漏洞；这不是未来绝对无漏洞保证。Playwright 使用本机 Edge，不下载新浏览器。
+
 采用单页应用；无需 SSR、后台、账号或游戏连接。Codex 管理 domain/adapters/services/data/tests；Claude 主导 App、components、样式与交互表达，按工单限定文件。业务状态与地图实例/播放器实例分离，切换面板不销毁音频。文字搜索不是哼唱或旋律识别。
 
 ## 地图适配层与导入包
 
 类型约定以 [contracts.ts](../src/domain/contracts.ts) 为准。`MapAdapter` 负责加载/销毁、点选择事件、定位高亮、路线与移动标记；领域层只处理 `MapPoint`，不暴露 Leaflet LatLng。地图选区和鼠标选点坐标经同一适配转换；空坐标地点只能展示文字，不定位到虚构位置。
+
+阶段 2 的 SVG 地图是 Claude 交付的合成预览，不声称已经实现 Leaflet MapAdapter。Leaflet、Pinia 已固定安装，生产适配和应用状态模块按后续阶段接入。示例数据通过 `src/data/demo.ts` 导出；JSON 静态推断会把字面量/元组拓宽，因此只对已审核 fixture 做显式类型断言，实际来源/引用/资源由阶段 1 探针验证；这不是未来导入包的运行时验证器。
 
 canonical 空间为图像原点 `(0,0)`、x 右、y 下；速度单位为图像单位/秒，不称游戏米/秒。标准 Leaflet Simple 用 `lat=-y,lng=x`。空荧 v3 的特殊轴次序、center、瓦片 zoomOffset 必须经版本转换后再进入 canonical 空间，不能拿旧配置硬套。地下/独立地图使用 `mapId + surfaceId`；路线限定同一空间，跨地图/层的连接机制不在 MVP。
 
