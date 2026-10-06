@@ -73,3 +73,9 @@ pwsh -NoProfile -File scripts/run-claude-work-order.ps1 -Ticket docs/WORK_ORDERS
 成功请求返回 subtype=success、is_error=false、modelUsage 中唯一标识 `claude-opus-5-5`；工单 JSON 的编号、完成状态、标记、中文范围和空 files_changed 数组全部核验通过。CLI 报告 duration_ms=3922，整个脚本约 6 秒。真实参数 `--effort high` 已传入且请求成功，但服务未单独回显 effort 或内部执行策略。这不是前端设计或业务代码验收。
 
 桌面授权由用户手动完成的确认已收到。由于非交互链路已通过，原工作区弹窗不再是协作阻塞；后续默认使用 CLI 工单。运行时原始响应未入库，已提交的结果报告仅含必要摘要。
+
+## C1-01：阶段 1 调研与阶段 2 交接（2026-10-06）
+
+本轮无前端设计/页面开发任务，未调用 Claude，也没有把 Codex 的调研、数据接口或示意几何称为 Claude 交付。Codex 完成仓库实际查阅、许可分层、栈与领域接口、小样本资源、技术探针、验收映射及版本管理。阶段 0 连通性证据沿用，不代表阶段 2 设计已完成。
+
+阶段 2 派单必须附带统一需求、ARCHITECTURE、contracts、demo.bundle、ACCEPTANCE 和资源署名；使用现有 runner 固定 `claude-opus-5-5 --effort high`，收到响应后核对 modelUsage。交付限定精确前端文件 path/content，按实际工单配置 Vite/Vue 骨架，不改业务契约/来源/许可或执行 Git。要求完整地图主体、昼夜面板、文字搜索、播放器、路线入口、移动和键盘布局，并显著展示合成地图/许可非原神音乐/待核实原神条目。Codex 审核落盘、安装锁文件、构建并实际查看页面；依赖模型失败明确报阻塞，不替换。

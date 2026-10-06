@@ -1,0 +1,186 @@
+[
+  {
+    "repository": "kongying-tavern/map_front_v3",
+    "accessedOn": "2026-10-06",
+    "defaultBranch": "master",
+    "archived": false,
+    "pushedAt": "2026-08-28T02:36:26Z",
+    "commit": "0e80dd090329cb4964360ef42d2ed6016cf7cc15",
+    "commitDate": "2026-08-28T02:11:16Z",
+    "license": "MulanPSL-2.0",
+    "reviewedFiles": [
+      {
+        "snapshotName": "LICENSE.txt",
+        "sha256": "bbb9450908049462c237cdad3619fcabb4c5f997ee0e6879f6282f77ce611225"
+      },
+      {
+        "snapshotName": "package.json.txt",
+        "sha256": "337a8d690fc4703671dc14c34bf0a833b1dd730a2a331cedddf2b160b9e3da5d"
+      },
+      {
+        "snapshotName": "README.md.txt",
+        "sha256": "f8c178c803128dc6b941db8d52b4ffd8476ce47c5f8b7de8b87510e3bd2e476e"
+      },
+      {
+        "snapshotName": "src_api_client.js.txt",
+        "sha256": "2cf72c43270227a322361475d90c0523156696a7ed244dbd21f704f03c5d3099"
+      },
+      {
+        "snapshotName": "src_api_config.js.txt",
+        "sha256": "124ed0208e1066540d659ffe7187911b94edcbdb3532f3c02bd7f43e130f4c6a"
+      },
+      {
+        "snapshotName": "src_api_map_obj.js.txt",
+        "sha256": "991e21f79bfd187a43cf9c63738f09eaa1e4d2f44c215dbd961936a84824a178"
+      },
+      {
+        "snapshotName": "src_api_map.js.txt",
+        "sha256": "6023d8dab5610afe7fe2bc6b5a713cb22db135e4e7d7d8c2ac3d8183c37f9157"
+      },
+      {
+        "snapshotName": "src_service_config_request.js.txt",
+        "sha256": "86137e32b5466e4316d79d7a1d9628df38e6d0c2e0a7d15a3601fba2c4ccb78a"
+      }
+    ]
+  },
+  {
+    "repository": "kongying-tavern/docs",
+    "accessedOn": "2026-10-06",
+    "defaultBranch": "main",
+    "archived": false,
+    "pushedAt": "2026-10-05T23:15:56Z",
+    "commit": "474b8dcb0ac1ef571585047bb40bb2f5f72fb1d2",
+    "commitDate": "2026-09-12T05:51:46Z",
+    "license": "MIT",
+    "reviewedFiles": [
+      {
+        "snapshotName": "LICENSE.txt",
+        "sha256": "2e2e9f015e1a94043b5233487cdb81b95ad91f493a26f7f3bc920382479351de"
+      },
+      {
+        "snapshotName": "package.json.txt",
+        "sha256": "f34d9b231c93384ace915b03e772384a525c25cb4937e5d0596094884ee942da"
+      },
+      {
+        "snapshotName": "README.md.txt",
+        "sha256": "5b5459a87e69b435c9d37ad13ef6ede3b97797b7a428ed9d88e7115d5e602789"
+      },
+      {
+        "snapshotName": "src_zh_agreement.md.txt",
+        "sha256": "9a7b142a459b0864ab69648c3dcbc76c3c99a8ea057da3dc54646e77051632d8"
+      },
+      {
+        "snapshotName": "src_zh_credits.md.txt",
+        "sha256": "ecd103c33e39fb34f81339fe06f270e6a8bacdf3f4fd50dd793496f214ec9805"
+      },
+      {
+        "snapshotName": "src_zh_disclaimer.md.txt",
+        "sha256": "c2e5c87c3b3b80d53d92070d1224e486c1996e8d77d0d1f2bb543e9ac51e5869"
+      },
+      {
+        "snapshotName": "src_zh_index.md.txt",
+        "sha256": "ddd41729277fdc01cdac48c4950dea67c2cdc7ef57fdc8d43e21299c25ddcb7f"
+      }
+    ]
+  },
+  {
+    "repository": "kongying-tavern/lightweight-genshin-maps",
+    "accessedOn": "2026-10-06",
+    "defaultBranch": "main",
+    "archived": true,
+    "pushedAt": "2023-04-14T03:44:23Z",
+    "commit": "bfa239707fa5687e2fb2dcf46ecf5c25ed2efa17",
+    "commitDate": "2023-04-14T03:43:45Z",
+    "license": "MIT",
+    "reviewedFiles": [
+      {
+        "snapshotName": "license.txt",
+        "sha256": "2e9304b65ed6d92a781ebdea00ebcc15bca7f9cba4bf292f7cfab5bf06a7f9b1"
+      },
+      {
+        "snapshotName": "package.json.txt",
+        "sha256": "7bacca18ecc02572a2048c974b2d771622687949d5f39d08c9e22fb0033db21a"
+      },
+      {
+        "snapshotName": "readme.md.txt",
+        "sha256": "426d2fc607d2815dcc1d7274621c5e99030430b8f167e4d5154302e94bda9d2f"
+      },
+      {
+        "snapshotName": "src_api.ts.txt",
+        "sha256": "5d849b5f4ea50e24ddf2b5304d1690ca73a0fd9532f280ed5babbfb081ad8c64"
+      },
+      {
+        "snapshotName": "src_maps-config.ts.txt",
+        "sha256": "68e2ba2950da9aa8e2a5fb4898b4321fad681f9aebe74c748fcd463a250af512"
+      },
+      {
+        "snapshotName": "src_store_tilemap.ts.txt",
+        "sha256": "a56056c2925cb54ab475d125e71d09187f00b25ccc5cd507e89d46c34fd7d6ee"
+      }
+    ]
+  },
+  {
+    "repository": "qiuxiang/ky-genshin-map",
+    "accessedOn": "2026-10-06",
+    "defaultBranch": "main",
+    "archived": false,
+    "pushedAt": "2024-09-12T09:28:06Z",
+    "commit": "b486faab91d1137e0d9ee08dc8bdd8a7ef48610e",
+    "commitDate": "2024-09-12T09:27:07Z",
+    "license": "MIT",
+    "reviewedFiles": [
+      {
+        "snapshotName": "license.txt",
+        "sha256": "38bef1c8c1ada03b01d5461412f14e0e366081799c44475c641bd4b0520b775b"
+      },
+      {
+        "snapshotName": "package.json.txt",
+        "sha256": "8921ae226b32fc01358b58ed1b2739aa5f4fabaa1b9db87e0e048009b3ad908d"
+      },
+      {
+        "snapshotName": "readme.md.txt",
+        "sha256": "f9126b5a1e12697785ec63c5670d8f439d77c710de5fe03f54c02f06618464d2"
+      },
+      {
+        "snapshotName": "src_genshin-map_index.tsx.txt",
+        "sha256": "7fa41e1be54efbc55aaee63c3cf54e49faa845fedecdf38d196af8e97e3f94dc"
+      },
+      {
+        "snapshotName": "src_genshin-map_state.ts.txt",
+        "sha256": "065ae5a06d89d38044c6b553b6ed0bc5c9ed6fe8d70b84d63949478aa07a0697"
+      }
+    ]
+  },
+  {
+    "repository": "EliteMasterEric/Teyvat.moe",
+    "accessedOn": "2026-10-06",
+    "defaultBranch": "master",
+    "archived": true,
+    "pushedAt": "2021-08-02T01:43:13Z",
+    "commit": "e4566515800070fbc70ded91829d423a6361518c",
+    "commitDate": "2021-08-02T01:43:12Z",
+    "license": "GPL-3.0",
+    "reviewedFiles": [
+      {
+        "snapshotName": "assets_README.md.txt",
+        "sha256": "518dac9718e0198a9eef7ba86f2a3770c635768b80369ab96457c4670b821d91"
+      },
+      {
+        "snapshotName": "LICENSE.md.txt",
+        "sha256": "7fd0166abbec4a8a3d6bcdd95068eb7b64dd746d5e5997bd004b5d3f3bb40c7d"
+      },
+      {
+        "snapshotName": "package.json.txt",
+        "sha256": "1f75b7a1c67d343b25bb146b4d8a3f82d5b3fc7a859c6cb49d100c1df472e638"
+      },
+      {
+        "snapshotName": "README.md.txt",
+        "sha256": "f8a99e631ca33cb83fa358ff241847cf740e36966c9bcc9bf1554e2b1d2fdceb"
+      },
+      {
+        "snapshotName": "src_components_data_map_MapConstants.ts.txt",
+        "sha256": "5e7c701e9e07b1fe848cd07c991e963688acf78d42646f8b8aff5ef8ecf3b645"
+      }
+    ]
+  }
+]

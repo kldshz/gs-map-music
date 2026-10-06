@@ -45,7 +45,12 @@ resources/raw/
 *.flac
 *.ogg
 *.m4a
+*.ncm
 *.mp4
 *.zip
 *.7z
 *.mbtiles
+
+# Reviewed CC BY 4.0 excerpts only; see public/audio/demo/ATTRIBUTION.md
+!public/audio/demo/carefree-12s.wav
+!public/audio/demo/brittle-rille-12s.wav
