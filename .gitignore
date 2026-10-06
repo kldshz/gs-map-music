@@ -1,0 +1,50 @@
+# Dependencies and build output
+node_modules/
+dist/
+build/
+coverage/
+.vite/
+.cache/
+*.tsbuildinfo
+
+# Secrets and machine-local configuration
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.p12
+*.pfx
+.claude/
+.claude.json
+.codex/
+.npmrc
+.netrc
+.credentials/
+credentials.json
+secrets.json
+*.token
+*.local.json
+
+# Logs, temporary files and local tools
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Large or unreviewed source assets; verified assets require a deliberate policy
+resources/local/
+resources/raw/
+*.mp3
+*.wav
+*.flac
+*.ogg
+*.m4a
+*.mp4
+*.zip
+*.7z
+*.mbtiles
