@@ -40,3 +40,36 @@
 5. 阶段 2 开始前确认本地文件交付链路及精确所有权。若入口、认证或指定模型失败，由用户提供入口或选择具体替代方案，不自行安装付费服务或切换模型。
 
 此前未发现 CLI 时发出的入口问题，已被桌面端发现缩小为工作区授权与服务实际验证；无需因 CLI 缺失自动更换模型。
+
+## C0-03：改用工单与非交互 CLI（2026-10-06）
+
+用户已确认手动信任桌面工作区，随后明确要求提高派单效率，改用 Claude 读取工单并输出的直接方式，并由 Codex 保留项目管理与审核权。上面的桌面流程是历史记录，常规协作改用以下方式，不再依赖逐次点击客户端。
+
+已安装 Anthropic 的 npm 包 `@anthropic-ai/claude-code@2.1.291` 到 `%LOCALAPPDATA%\gs-map-music-tools`，没有添加到项目业务依赖，也没有订购服务或改动系统 PATH。实测版本 2.1.291；要求 Node >=22，本机 v22.17.0 符合。包来源：<https://www.npmjs.com/package/@anthropic-ai/claude-code>；该工具采用包自身条款（SEE LICENSE IN README.md），没有复制其二进制入库。
+
+安装或复现：
+
+```powershell
+npm install --prefix "$env:LOCALAPPDATA\gs-map-music-tools" --no-audit --no-fund @anthropic-ai/claude-code@2.1.291
+pwsh -NoProfile -File scripts/run-claude-work-order.ps1 -Ticket docs/WORK_ORDERS/S0-CLI-001.md
+```
+
+脚本需要 PowerShell 7；本机 7.6.5。脚本核实 CLI 固定版本，然后固定传入 `--model claude-opus-5-5 --effort high --print --output-format json`，不设置备用模型。`claude-opus-5-5` 是本机既有网关 `/v1/models` 实际返回的指定模型标识；`Opus5-5[1M]` 保留为原本地配置别名，不再把它直接当作请求模型 ID。沿用本机用户设置中的已有认证与服务配置，并在子进程环境明确传递服务 URL 和认证，不把凭据传入命令行或项目文件。配置指向 `kuaipao.ai` 网关，不是直接连接 Anthropic 官方端点；返回模型标识只能证明该网关的声明，不能独立认证其上游模型真实性。
+
+`claude auth status` 返回 loggedIn=true。高推理参数属于真实 CLI 参数（已读本机 --help），不同于在提示词中要求它“高推理”。实际工单已成功返回，结果如下。
+
+常规流程：
+
+1. Codex 按 [模板](WORK_ORDERS/TEMPLATE.md)生成阶段工单，列明目标、文件范围、接口、交付格式和验收条件。
+2. `scripts/run-claude-work-order.ps1` 读取工单；可通过 `-ContextFiles` 提供仓库内输入文件，其内容统一经标准输入送入 Claude。
+3. 本 runner 禁用模型工具、插件/自定义指令与 MCP，并不保存可恢复会话；Claude 返回交付内容。不会让 Claude 直接读写本机文件、运行命令或操作 Git。没有启用跳过权限检查的参数。
+4. 原始 CLI 响应保存在被忽略的 `.local/claude-runs/*.json`，控制台仅输出模型声明和结果路径等摘要。Codex 从响应提取交付，检查后写入工单允许的文件；前端代码可通过 files 数组的 path/content 交付，Codex 负责保存。
+5. Codex 对照实际结果验证，返修仍通过工单；最后更新验收与状态、检查、提交和推送。这样保持总协调权，不需要用户人工转发。
+
+工单输入、CLI 成功返回、交付 JSON 有效、代码实际可运行是不同验收层次。工单中的“完成”不是验收通过证明；服务错误、超时或模型不符时报告阻塞，不自动重试或更换模型。工单内容以中文编写，UTF-8 传递。
+
+阶段 0 验证工单：[S0-CLI-001](WORK_ORDERS/S0-CLI-001.md)，[Codex 验证报告](WORK_ORDERS/S0-CLI-001.RESULT.json)。首次沿用本地别名的调用在 180 秒超时，没有返回；随后查阅既有网关 `/v1/models`，得到 `claude-opus-5-5`，改用该正式 ID 并显式传递既有服务环境后成功。两个因素一起变化，因此不把首次超时完全归因于别名。未改用其他模型。
+
+成功请求返回 subtype=success、is_error=false、modelUsage 中唯一标识 `claude-opus-5-5`；工单 JSON 的编号、完成状态、标记、中文范围和空 files_changed 数组全部核验通过。CLI 报告 duration_ms=3922，整个脚本约 6 秒。真实参数 `--effort high` 已传入且请求成功，但服务未单独回显 effort 或内部执行策略。这不是前端设计或业务代码验收。
+
+桌面授权由用户手动完成的确认已收到。由于非交互链路已通过，原工作区弹窗不再是协作阻塞；后续默认使用 CLI 工单。运行时原始响应未入库，已提交的结果报告仅含必要摘要。

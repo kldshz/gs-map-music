@@ -5,6 +5,7 @@ build/
 coverage/
 .vite/
 .cache/
+.local/
 *.tsbuildinfo
 
 # Secrets and machine-local configuration

@@ -9,6 +9,7 @@
 - [验收与限制](docs/ACCEPTANCE.md)
 - [关键决定](docs/DECISIONS.md)
 - [Claude 协作与恢复步骤](docs/COLLABORATION.md)
+- [工单模板](docs/WORK_ORDERS/TEMPLATE.md)；[非交互调用脚本](scripts/run-claude-work-order.ps1)
 
 ## 阶段 0 检查
 
