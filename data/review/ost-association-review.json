@@ -40,18 +40,27 @@
         "竟夜有辉之燎"
       ],
       "tracks": 189
+    },
+    {
+      "name": "northern",
+      "albums": [
+        "幽暮衬映之月",
+        "朔望凝待之庭",
+        "悯宥慈怜之垠"
+      ],
+      "tracks": 272
     }
   ],
   "summary": {
-    "totalTracks": 980,
-    "totalAssociations": 5067,
-    "newTracks": 917,
-    "newAssociations": 4663,
+    "totalTracks": 1252,
+    "totalAssociations": 6360,
+    "newTracks": 1189,
+    "newAssociations": 5956,
     "unlocated": 0,
-    "withoutPoint": 14,
+    "withoutPoint": 102,
     "specialMaps": 1,
     "missingOrigin": 504,
-    "limitedBattleWithoutPoint": 13,
+    "limitedBattleWithoutPoint": 24,
     "sourceConflicts": 100
   },
   "tracks": [
@@ -22214,6 +22223,6430 @@
         "kongying:95168"
       ],
       "reason": "通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756019200",
+      "title": "挪德卡莱 Nod-Krai",
+      "originText": "地区主题曲",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756019201",
+      "title": "繁沸之港 The Bustling Port Market",
+      "originText": "那夏镇（白天）",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "那夏镇"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105788",
+        "kongying:105789",
+        "kongying:105792"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756019202",
+      "title": "银鸥的回旋 Tourdion of Silver Seagulls",
+      "originText": "那夏镇（白天）",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "那夏镇"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105788",
+        "kongying:105789",
+        "kongying:105792"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756018746",
+      "title": "船歌优稳 Sea Shanties Resounding",
+      "originText": "那夏镇（白天）",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "那夏镇"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105788",
+        "kongying:105789",
+        "kongying:105792"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756019203",
+      "title": "冀求之意 Desire's Intent",
+      "originText": "那夏镇（白天）",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "那夏镇"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105788",
+        "kongying:105789",
+        "kongying:105792"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756018747",
+      "title": "飞觥走斝 Terms of Accord",
+      "originText": "那夏镇（白天）",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "那夏镇"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105788",
+        "kongying:105789",
+        "kongying:105792"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756019204",
+      "title": "海舶归港 Homecoming to Port",
+      "originText": "那夏镇（夜晚）",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "那夏镇"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105788",
+        "kongying:105789",
+        "kongying:105792"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756018748",
+      "title": "白夜洇润 Unfurling Night",
+      "originText": "那夏镇（夜晚）",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "那夏镇"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105788",
+        "kongying:105789",
+        "kongying:105792"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756018749",
+      "title": "静伫的海峤 The Still Sea-Cliff",
+      "originText": "那夏镇（夜晚）",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "那夏镇"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105788",
+        "kongying:105789",
+        "kongying:105792"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756019205",
+      "title": "飘曳的眠梦 The Swinging Motion of the Hulls",
+      "originText": "那夏镇（夜晚）",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "那夏镇"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105788",
+        "kongying:105789",
+        "kongying:105792"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756018750",
+      "title": "浮槃与蓝穹的秘话 Shetau of Tulaytullah and Pushpavatika",
+      "originText": "秘闻馆",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756019206",
+      "title": "闲饮酣适 A Carefree Cup",
+      "originText": "旗舰",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756019207",
+      "title": "锤砧间的音符 Notes From Striking the Anvil",
+      "originText": "蛋卷工坊",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756018752",
+      "title": "暂刻的时光 A Borrowed Hour",
+      "originText": "蛋卷工坊",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756019208",
+      "title": "夜阑安暇时 At Ease Near Night's End",
+      "originText": "蛋卷工坊",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756019209",
+      "title": "向晚的丘甸 Fields After Dusk",
+      "originText": "蛋卷工坊",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756019210",
+      "title": "初焙的恬脆 Fresh Baked Egg Rolls",
+      "originText": "爱诺房间",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756019211",
+      "title": "诗境所蕴的旧事 Old Tales Inscribed in Verse",
+      "originText": "蓝珀湖",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "蓝珀湖"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:107940",
+        "kongying:105804",
+        "kongying:105803"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756019212",
+      "title": "湖色映蓝 Lakelight Turquoise",
+      "originText": "蓝珀湖",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "蓝珀湖"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:107940",
+        "kongying:105804",
+        "kongying:105803"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756018753",
+      "title": "谧宁如镜水 Reflections in a Timeless Calm",
+      "originText": "蓝珀湖",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "蓝珀湖"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:107940",
+        "kongying:105804",
+        "kongying:105803"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756019213",
+      "title": "鳞光倏烁 Shimmering Water Like Flickering Souls",
+      "originText": "刻拉蒂之眼",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756019214",
+      "title": "幽芒驻息 Where the Wandering Ones Rest",
+      "originText": "刻拉蒂之眼",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756019215",
+      "title": "新月的摇篮曲（其一）：伴月同眠 Lullaby of the New Moon (I): Somnias a Luna",
+      "originText": "哥伦比娅主题 花田",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756018754",
+      "title": "新月的摇篮曲（其二）：宵晖下的笑颜 Lullaby of the New Moon (II): Lucens ut risus",
+      "originText": "哥伦比娅主题 花田",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756018755",
+      "title": "新月的摇篮曲（其三）：眉间落英 Lullaby of the New Moon (III): Petala ceciderunt",
+      "originText": "哥伦比娅主题 花田",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756018756",
+      "title": "遥月孤清 The Distant Moon Sits Alone",
+      "originText": "希汐岛",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "希汐岛"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105824",
+        "kongying:105826",
+        "kongying:105822",
+        "kongying:105828"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756018757",
+      "title": "近月赞咏 Hymn to the Moon",
+      "originText": "希汐岛",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "希汐岛"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105824",
+        "kongying:105826",
+        "kongying:105822",
+        "kongying:105828"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756019216",
+      "title": "皎亮的边野 The Bright Frontier Land",
+      "originText": "希汐岛",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "希汐岛"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105824",
+        "kongying:105826",
+        "kongying:105822",
+        "kongying:105828"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756018758",
+      "title": "蒙泽的遐裔 Ancient Heirs of Grace",
+      "originText": "希汐岛",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "希汐岛"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105824",
+        "kongying:105826",
+        "kongying:105822",
+        "kongying:105828"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756018759",
+      "title": "清辉下的参礼 Rite Beneath the Radiance",
+      "originText": "希汐岛·沐光之台",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "沐光之台"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105823"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756019217",
+      "title": "仰月所昭之路 The Path That the Moon Reveals",
+      "originText": "希汐岛·沐光之台",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "沐光之台"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105823"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756019218",
+      "title": "曦光所引 Led by Lucent GuIda Elinance",
+      "originText": "近月的隙间",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756018760",
+      "title": "涉行之刻 Wading in Hazy Light",
+      "originText": "近月的隙间",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756018761",
+      "title": "晚祷的铃歌 Dzwony na nieszpory",
+      "originText": "近月的隙间",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756018762",
+      "title": "风中的军垒 The Redoubt Amidst the Frigid Wind",
+      "originText": "月矩力试验局",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756019219",
+      "title": "升于陨圮 Raised on Fallen Meteorites",
+      "originText": "月矩力试验局",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756018763",
+      "title": "冬霰锐冽 Keen as Winter Hail",
+      "originText": "月矩力试验局",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756019220",
+      "title": "戒禁之域 The Forbidding Ground",
+      "originText": "月矩力试验局",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756018764",
+      "title": "初霜涓涟 Whimpering Morningfrost",
+      "originText": "伦波岛野外",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "伦波岛"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:107941",
+        "kongying:105807",
+        "kongying:105811",
+        "kongying:105813",
+        "kongying:105816",
+        "kongying:105820"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756019221",
+      "title": "列岛的晓风 Dawn Breeze of Lempoinen",
+      "originText": "伦波岛野外",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "伦波岛"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:107941",
+        "kongying:105807",
+        "kongying:105811",
+        "kongying:105813",
+        "kongying:105816",
+        "kongying:105820"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756019222",
+      "title": "萦思随白帆 Sails Set With Eagerness",
+      "originText": "伦波岛野外",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "伦波岛"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:107941",
+        "kongying:105807",
+        "kongying:105811",
+        "kongying:105813",
+        "kongying:105816",
+        "kongying:105820"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756019223",
+      "title": "寒涌的伫望 Foresighting From the Frigid Shore",
+      "originText": "伦波岛野外",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "伦波岛"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:107941",
+        "kongying:105807",
+        "kongying:105811",
+        "kongying:105813",
+        "kongying:105816",
+        "kongying:105820"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756018765",
+      "title": "岬石与细浪之舞 Hopak of Cape and Wave",
+      "originText": "伦波岛野外",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "伦波岛"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:107941",
+        "kongying:105807",
+        "kongying:105811",
+        "kongying:105813",
+        "kongying:105816",
+        "kongying:105820"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756018766",
+      "title": "滨海拂风 Whirling Out and Over",
+      "originText": "伦波岛野外",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "伦波岛"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:107941",
+        "kongying:105807",
+        "kongying:105811",
+        "kongying:105813",
+        "kongying:105816",
+        "kongying:105820"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756019224",
+      "title": "夕景伴归途 Rising When Night Falls",
+      "originText": "伦波岛野外",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "伦波岛"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:107941",
+        "kongying:105807",
+        "kongying:105811",
+        "kongying:105813",
+        "kongying:105816",
+        "kongying:105820"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756018767",
+      "title": "雨月夜想 Mayskaya Noch'",
+      "originText": "伦波岛野外\n旅行历程界面挪德卡莱地区音乐",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "伦波岛"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:107941",
+        "kongying:105807",
+        "kongying:105811",
+        "kongying:105813",
+        "kongying:105816",
+        "kongying:105820"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756019225",
+      "title": "苔骨的寒籁 Where the Cricket Sings",
+      "originText": "伦波岛野外",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "伦波岛"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:107941",
+        "kongying:105807",
+        "kongying:105811",
+        "kongying:105813",
+        "kongying:105816",
+        "kongying:105820"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756018768",
+      "title": "游步欣愉 Gladsome Ramble",
+      "originText": "伦波岛野外",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "伦波岛"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:107941",
+        "kongying:105807",
+        "kongying:105811",
+        "kongying:105813",
+        "kongying:105816",
+        "kongying:105820"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756018769",
+      "title": "愁绪谧息 Sorrows Calmed",
+      "originText": "伦波岛野外",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "伦波岛"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:107941",
+        "kongying:105807",
+        "kongying:105811",
+        "kongying:105813",
+        "kongying:105816",
+        "kongying:105820"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756018770",
+      "title": "牵梦的别绪 Dreams of Joy Departed",
+      "originText": "伦波岛野外",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "伦波岛"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:107941",
+        "kongying:105807",
+        "kongying:105811",
+        "kongying:105813",
+        "kongying:105816",
+        "kongying:105820"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756034884",
+      "title": "自外而至 From Beyond",
+      "originText": "空寂走廊",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "空寂走廊"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105812"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756034885",
+      "title": "荩草之途 Loafing on the Grass",
+      "originText": "北方训练场",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "北方训练场"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105814",
+        "kongying:105815"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756036507",
+      "title": "暮雨的沫痕 Vestige of Hurtling Foam",
+      "originText": "北方训练场",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "北方训练场"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105814",
+        "kongying:105815"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756036508",
+      "title": "壤土下的安居 Cozy Home Underground",
+      "originText": "北方训练场",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "北方训练场"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105814",
+        "kongying:105815"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756036509",
+      "title": "未然的乐土 Half-Finished Heaven",
+      "originText": "希汐岛野外",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "希汐岛"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105824",
+        "kongying:105826",
+        "kongying:105822",
+        "kongying:105828"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756034886",
+      "title": "述往心的霜盏 Tells of the Frost-Lamp in One's Heart",
+      "originText": "希汐岛野外",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "希汐岛"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105824",
+        "kongying:105826",
+        "kongying:105822",
+        "kongying:105828"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756036510",
+      "title": "白桦与清水之梦 Dream of Birch and Pellucid Water",
+      "originText": "希汐岛野外",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "希汐岛"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105824",
+        "kongying:105826",
+        "kongying:105822",
+        "kongying:105828"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756034887",
+      "title": "雾乡哀语 Sariola's Threnody",
+      "originText": "希汐岛野外",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "希汐岛"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105824",
+        "kongying:105826",
+        "kongying:105822",
+        "kongying:105828"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756036511",
+      "title": "咏月者的谎言 A Lie of Aila",
+      "originText": "希汐岛·遗誓者的圣所",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "希汐岛"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105824",
+        "kongying:105826",
+        "kongying:105822",
+        "kongying:105828"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756036512",
+      "title": "荒落的祀歌 Vessel for Prayer",
+      "originText": "空寂走廊（黑洞区域）",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "空寂走廊"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105812"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756036513",
+      "title": "绿丘焕然 A Green Hill Remade",
+      "originText": "希汐岛·雷图礁",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "雷图礁"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105832",
+        "kongying:105830"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756034888",
+      "title": "风挟的预兆 Omens Brought On the Wind",
+      "originText": "帕哈岛野外",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "帕哈岛"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105840",
+        "kongying:105834",
+        "kongying:111559"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756036514",
+      "title": "石下暗涌 Darkness Surges Beneath the Stone",
+      "originText": "帕哈岛野外",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "帕哈岛"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105840",
+        "kongying:105834",
+        "kongying:111559"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756034889",
+      "title": "如霞的盐沼 Rosy Marshland",
+      "originText": "帕哈岛野外",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "帕哈岛"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105840",
+        "kongying:105834",
+        "kongying:111559"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756036515",
+      "title": "澈夜低徊 Wandering Through the Starry Night",
+      "originText": "帕哈岛野外",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "帕哈岛"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105840",
+        "kongying:105834",
+        "kongying:111559"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756036516",
+      "title": "煦寒的惦念 Warm Remembrance",
+      "originText": "帕哈岛野外",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "帕哈岛"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105840",
+        "kongying:105834",
+        "kongying:111559"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756034890",
+      "title": "驻息的孤影 The Solitary Silhouette",
+      "originText": "帕哈岛野外",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "帕哈岛"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105840",
+        "kongying:105834",
+        "kongying:111559"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756034891",
+      "title": "哀茕如霭 Grief Spreading Like Haze",
+      "originText": "帕哈岛·终夜长茔",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "帕哈岛"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105840",
+        "kongying:105834",
+        "kongying:111559"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756034892",
+      "title": "海蚀的幽廊 Sea-Gnawed Hollow",
+      "originText": "挪德卡莱大世界野外随机",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL",
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:105707",
+        "kongying:105850",
+        "kongying:105847",
+        "kongying:111871",
+        "kongying:119981",
+        "kongying:105710",
+        "kongying:105848",
+        "kongying:105805",
+        "kongying:105839",
+        "kongying:106240",
+        "kongying:119952",
+        "kongying:119996",
+        "kongying:119979",
+        "kongying:105810",
+        "kongying:105808",
+        "kongying:107938",
+        "kongying:111873",
+        "kongying:105841",
+        "kongying:105836",
+        "kongying:105851",
+        "kongying:105846",
+        "kongying:105842",
+        "kongying:105843",
+        "kongying:105844",
+        "kongying:111863",
+        "kongying:111866",
+        "kongying:111864",
+        "kongying:111870",
+        "kongying:105825",
+        "kongying:105798",
+        "kongying:111852",
+        "kongying:105800",
+        "kongying:105799",
+        "kongying:105796",
+        "kongying:105821"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756034893",
+      "title": "深岩隐歌 Secrets Cast in a Deep Cave",
+      "originText": "挪德卡莱大世界野外随机",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL",
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:105707",
+        "kongying:105850",
+        "kongying:105847",
+        "kongying:111871",
+        "kongying:119981",
+        "kongying:105710",
+        "kongying:105848",
+        "kongying:105805",
+        "kongying:105839",
+        "kongying:106240",
+        "kongying:119952",
+        "kongying:119996",
+        "kongying:119979",
+        "kongying:105810",
+        "kongying:105808",
+        "kongying:107938",
+        "kongying:111873",
+        "kongying:105841",
+        "kongying:105836",
+        "kongying:105851",
+        "kongying:105846",
+        "kongying:105842",
+        "kongying:105843",
+        "kongying:105844",
+        "kongying:111863",
+        "kongying:111866",
+        "kongying:111864",
+        "kongying:111870",
+        "kongying:105825",
+        "kongying:105798",
+        "kongying:111852",
+        "kongying:105800",
+        "kongying:105799",
+        "kongying:105796",
+        "kongying:105821"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756034894",
+      "title": "千湖与月的秘径 Kuunsilta of Thousand Lakes",
+      "originText": "爱诺活动 重拳出击鸭变奏",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756036517",
+      "title": "死荫的黯色 The Perilous Fog",
+      "originText": "狂猎出场（非战斗）",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756034895",
+      "title": "圣仪默示之所 Hint From the Moonshadow",
+      "originText": "主线剧情 霜月之子圣物秘境",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756034896",
+      "title": "空待的重逢 Votum Awaited in Vain",
+      "originText": "主线剧情",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756034897",
+      "title": "纤辉之纺 The Gleaming Thread",
+      "originText": "菈乌玛出场曲",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756036518",
+      "title": "皎晶澄凝 Dalliance of Crystal Light",
+      "originText": "菈乌玛出场曲",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756034898",
+      "title": "惶悚的灼念 Dreadful Darkness Closing In",
+      "originText": "主线剧情",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756034899",
+      "title": "匿行潜踪 Leaving No Trace",
+      "originText": "主线剧情",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756034900",
+      "title": "灾焰忽起 Fire and Shadow",
+      "originText": "主线剧情",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756034901",
+      "title": "瓦砾与喧声 Ruinous Clamor",
+      "originText": "主线剧情",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756036519",
+      "title": "鼓荡的街镇 The Roiling Streets",
+      "originText": "主线剧情",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756034902",
+      "title": "柜上的淑女 A Sitting on a Gate",
+      "originText": "桑多涅登场曲",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756034903",
+      "title": "永夜与破晓的誓刃 To Light the Aeon Dark",
+      "originText": "挪德卡莱·大世界战斗",
+      "category": "battle-generic",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL",
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:105707",
+        "kongying:105850",
+        "kongying:105847",
+        "kongying:105824",
+        "kongying:111871",
+        "kongying:119981",
+        "kongying:105710",
+        "kongying:105848",
+        "kongying:105840",
+        "kongying:105812",
+        "kongying:105805",
+        "kongying:105839",
+        "kongying:106240",
+        "kongying:119952",
+        "kongying:119996",
+        "kongying:119979",
+        "kongying:105810",
+        "kongying:105808",
+        "kongying:107940",
+        "kongying:107938",
+        "kongying:107941",
+        "kongying:105807",
+        "kongying:105804",
+        "kongying:105826",
+        "kongying:105803",
+        "kongying:111865",
+        "kongying:111873",
+        "kongying:105832",
+        "kongying:105841",
+        "kongying:105836",
+        "kongying:111858",
+        "kongying:105851",
+        "kongying:105846",
+        "kongying:105842",
+        "kongying:105834",
+        "kongying:105843",
+        "kongying:105844",
+        "kongying:111841",
+        "kongying:111845",
+        "kongying:111839",
+        "kongying:111844",
+        "kongying:111848",
+        "kongying:111847",
+        "kongying:111857",
+        "kongying:111860",
+        "kongying:111863",
+        "kongying:111866",
+        "kongying:111850",
+        "kongying:111849",
+        "kongying:111856",
+        "kongying:111859",
+        "kongying:111853",
+        "kongying:111862",
+        "kongying:111864",
+        "kongying:111870",
+        "kongying:111855",
+        "kongying:111867",
+        "kongying:111869",
+        "kongying:111868",
+        "kongying:111879",
+        "kongying:105811",
+        "kongying:105825",
+        "kongying:105798",
+        "kongying:111559",
+        "kongying:105814",
+        "kongying:105830",
+        "kongying:111852",
+        "kongying:121600",
+        "kongying:105800",
+        "kongying:105799",
+        "kongying:105796",
+        "kongying:105813",
+        "kongying:105815",
+        "kongying:105816",
+        "kongying:105820",
+        "kongying:105821",
+        "kongying:105822",
+        "kongying:105823",
+        "kongying:105828"
+      ],
+      "reason": "通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756036520",
+      "title": "雪浪驰逐 Straight Through the Snowtide",
+      "originText": "挪德卡莱·大世界战斗",
+      "category": "battle-generic",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL",
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:105707",
+        "kongying:105850",
+        "kongying:105847",
+        "kongying:105824",
+        "kongying:111871",
+        "kongying:119981",
+        "kongying:105710",
+        "kongying:105848",
+        "kongying:105840",
+        "kongying:105812",
+        "kongying:105805",
+        "kongying:105839",
+        "kongying:106240",
+        "kongying:119952",
+        "kongying:119996",
+        "kongying:119979",
+        "kongying:105810",
+        "kongying:105808",
+        "kongying:107940",
+        "kongying:107938",
+        "kongying:107941",
+        "kongying:105807",
+        "kongying:105804",
+        "kongying:105826",
+        "kongying:105803",
+        "kongying:111865",
+        "kongying:111873",
+        "kongying:105832",
+        "kongying:105841",
+        "kongying:105836",
+        "kongying:111858",
+        "kongying:105851",
+        "kongying:105846",
+        "kongying:105842",
+        "kongying:105834",
+        "kongying:105843",
+        "kongying:105844",
+        "kongying:111841",
+        "kongying:111845",
+        "kongying:111839",
+        "kongying:111844",
+        "kongying:111848",
+        "kongying:111847",
+        "kongying:111857",
+        "kongying:111860",
+        "kongying:111863",
+        "kongying:111866",
+        "kongying:111850",
+        "kongying:111849",
+        "kongying:111856",
+        "kongying:111859",
+        "kongying:111853",
+        "kongying:111862",
+        "kongying:111864",
+        "kongying:111870",
+        "kongying:111855",
+        "kongying:111867",
+        "kongying:111869",
+        "kongying:111868",
+        "kongying:111879",
+        "kongying:105811",
+        "kongying:105825",
+        "kongying:105798",
+        "kongying:111559",
+        "kongying:105814",
+        "kongying:105830",
+        "kongying:111852",
+        "kongying:121600",
+        "kongying:105800",
+        "kongying:105799",
+        "kongying:105796",
+        "kongying:105813",
+        "kongying:105815",
+        "kongying:105816",
+        "kongying:105820",
+        "kongying:105821",
+        "kongying:105822",
+        "kongying:105823",
+        "kongying:105828"
+      ],
+      "reason": "通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756034904",
+      "title": "切心的渴求 A Thirst That Cuts",
+      "originText": "挪德卡莱·大世界战斗",
+      "category": "battle-generic",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL",
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:105707",
+        "kongying:105850",
+        "kongying:105847",
+        "kongying:105824",
+        "kongying:111871",
+        "kongying:119981",
+        "kongying:105710",
+        "kongying:105848",
+        "kongying:105840",
+        "kongying:105812",
+        "kongying:105805",
+        "kongying:105839",
+        "kongying:106240",
+        "kongying:119952",
+        "kongying:119996",
+        "kongying:119979",
+        "kongying:105810",
+        "kongying:105808",
+        "kongying:107940",
+        "kongying:107938",
+        "kongying:107941",
+        "kongying:105807",
+        "kongying:105804",
+        "kongying:105826",
+        "kongying:105803",
+        "kongying:111865",
+        "kongying:111873",
+        "kongying:105832",
+        "kongying:105841",
+        "kongying:105836",
+        "kongying:111858",
+        "kongying:105851",
+        "kongying:105846",
+        "kongying:105842",
+        "kongying:105834",
+        "kongying:105843",
+        "kongying:105844",
+        "kongying:111841",
+        "kongying:111845",
+        "kongying:111839",
+        "kongying:111844",
+        "kongying:111848",
+        "kongying:111847",
+        "kongying:111857",
+        "kongying:111860",
+        "kongying:111863",
+        "kongying:111866",
+        "kongying:111850",
+        "kongying:111849",
+        "kongying:111856",
+        "kongying:111859",
+        "kongying:111853",
+        "kongying:111862",
+        "kongying:111864",
+        "kongying:111870",
+        "kongying:111855",
+        "kongying:111867",
+        "kongying:111869",
+        "kongying:111868",
+        "kongying:111879",
+        "kongying:105811",
+        "kongying:105825",
+        "kongying:105798",
+        "kongying:111559",
+        "kongying:105814",
+        "kongying:105830",
+        "kongying:111852",
+        "kongying:121600",
+        "kongying:105800",
+        "kongying:105799",
+        "kongying:105796",
+        "kongying:105813",
+        "kongying:105815",
+        "kongying:105816",
+        "kongying:105820",
+        "kongying:105821",
+        "kongying:105822",
+        "kongying:105823",
+        "kongying:105828"
+      ],
+      "reason": "通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756034905",
+      "title": "苍银的圣咒 Syntyloitsut of Koitar",
+      "originText": "挪德卡莱·大世界战斗",
+      "category": "battle-generic",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL",
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:105707",
+        "kongying:105850",
+        "kongying:105847",
+        "kongying:105824",
+        "kongying:111871",
+        "kongying:119981",
+        "kongying:105710",
+        "kongying:105848",
+        "kongying:105840",
+        "kongying:105812",
+        "kongying:105805",
+        "kongying:105839",
+        "kongying:106240",
+        "kongying:119952",
+        "kongying:119996",
+        "kongying:119979",
+        "kongying:105810",
+        "kongying:105808",
+        "kongying:107940",
+        "kongying:107938",
+        "kongying:107941",
+        "kongying:105807",
+        "kongying:105804",
+        "kongying:105826",
+        "kongying:105803",
+        "kongying:111865",
+        "kongying:111873",
+        "kongying:105832",
+        "kongying:105841",
+        "kongying:105836",
+        "kongying:111858",
+        "kongying:105851",
+        "kongying:105846",
+        "kongying:105842",
+        "kongying:105834",
+        "kongying:105843",
+        "kongying:105844",
+        "kongying:111841",
+        "kongying:111845",
+        "kongying:111839",
+        "kongying:111844",
+        "kongying:111848",
+        "kongying:111847",
+        "kongying:111857",
+        "kongying:111860",
+        "kongying:111863",
+        "kongying:111866",
+        "kongying:111850",
+        "kongying:111849",
+        "kongying:111856",
+        "kongying:111859",
+        "kongying:111853",
+        "kongying:111862",
+        "kongying:111864",
+        "kongying:111870",
+        "kongying:111855",
+        "kongying:111867",
+        "kongying:111869",
+        "kongying:111868",
+        "kongying:111879",
+        "kongying:105811",
+        "kongying:105825",
+        "kongying:105798",
+        "kongying:111559",
+        "kongying:105814",
+        "kongying:105830",
+        "kongying:111852",
+        "kongying:121600",
+        "kongying:105800",
+        "kongying:105799",
+        "kongying:105796",
+        "kongying:105813",
+        "kongying:105815",
+        "kongying:105816",
+        "kongying:105820",
+        "kongying:105821",
+        "kongying:105822",
+        "kongying:105823",
+        "kongying:105828"
+      ],
+      "reason": "通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756034906",
+      "title": "铁铸的洪流 The Iron-Cast Torrent",
+      "originText": "月矩力试验局·战斗",
+      "category": "battle-limited",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "限定战斗缺少对应地点/附近点位证据，保留目录，不扩大到全区域。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756036521",
+      "title": "诡影蛰动 What Sleeps in Shadow Now Wakes",
+      "originText": "狂猎·战斗",
+      "category": "battle-limited",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "限定战斗缺少对应地点/附近点位证据，保留目录，不扩大到全区域。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756036522",
+      "title": "实力碾鸭 Duckle 'em Down!",
+      "originText": "重拳出击鸭·战斗",
+      "category": "battle-limited",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "限定战斗缺少对应地点/附近点位证据，保留目录，不扩大到全区域。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756034907",
+      "title": "未相逢的再遇 A Remeet of First Meetings",
+      "originText": "剧情过场",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756036523",
+      "title": "深水中的伟业 The Deed That Cleft the Sea",
+      "originText": "剧情过场",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756036524",
+      "title": "白昼将临 Armor of Light",
+      "originText": "剧情过场",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756034908",
+      "title": "巨炮铿轰 The Great Cannon Thundering",
+      "originText": "剧情过场",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756034909",
+      "title": "深黯与幽火 Luchnos en toi Skotei",
+      "originText": "剧情过场",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756034910",
+      "title": "凶妄的夙念 An Obsession Unriven",
+      "originText": "剧情过场",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756034911",
+      "title": "淑女的证明，或数秘的交谊舞 La preuve d'une demoiselle, ou le bal de la numerologie",
+      "originText": "剧情过场",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "幽暮衬映之月",
+      "id": "netease:2756036525",
+      "title": "束光似水 Light Shines Through Fingers as a Silver Stream",
+      "originText": "剧情过场",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358780004",
+      "title": "誓勇之心 Brave Vow",
+      "originText": "皮拉米达城 白天",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2"
+      ],
+      "matchedTerms": [
+        "皮拉米达城"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:111843"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358780005",
+      "title": "边地的守望者 The Watcher by the Edge",
+      "originText": "皮拉米达城 白天",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2"
+      ],
+      "matchedTerms": [
+        "皮拉米达城"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:111843"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358780006",
+      "title": "幽灯所及之崖 Glimmer's End",
+      "originText": "皮拉米达城 白天",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2"
+      ],
+      "matchedTerms": [
+        "皮拉米达城"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:111843"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358780007",
+      "title": "名为灯塔的希望 The Light We Call Hope",
+      "originText": "皮拉米达城 白天",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2"
+      ],
+      "matchedTerms": [
+        "皮拉米达城"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:111843"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358779439",
+      "title": "冬临之夜,灯临之夜 When Winter Arrives, When Light Rises",
+      "originText": "皮拉米达城 夜晚",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2"
+      ],
+      "matchedTerms": [
+        "皮拉米达城"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:111843"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358780008",
+      "title": "柔月下的暗鸦 Raven Beneath the Tender Moon",
+      "originText": "皮拉米达城 夜晚",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2"
+      ],
+      "matchedTerms": [
+        "皮拉米达城"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:111843"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358780009",
+      "title": "无忧之眠 Where Dreams Rest",
+      "originText": "皮拉米达城 夜晚",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2"
+      ],
+      "matchedTerms": [
+        "皮拉米达城"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:111843"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358780010",
+      "title": "泊船入梦 Moored in Dreams",
+      "originText": "皮拉米达城 港口",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2"
+      ],
+      "matchedTerms": [
+        "皮拉米达城"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:111843"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358779440",
+      "title": "茶会之余 After Tea Party",
+      "originText": "魔女的花园",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358780011",
+      "title": "仙境的夜想 Seelieland Nocturne",
+      "originText": "魔女的花园",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358779441",
+      "title": "深宵未明 Nox alta malum stat",
+      "originText": "厄布拉神柱（夜巡的先声完成前）",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2"
+      ],
+      "matchedTerms": [
+        "厄布拉神柱"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:111856",
+        "kongying:111855",
+        "kongying:111879"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358779442",
+      "title": "正如彼所见证 Vidi quae ille viderat",
+      "originText": "厄布拉神柱（异时的流星完成后）",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2"
+      ],
+      "matchedTerms": [
+        "厄布拉神柱"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:111856",
+        "kongying:111855",
+        "kongying:111879"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358780012",
+      "title": "放逐者的吟咏 Forsaken Hymn",
+      "originText": "安瓦蒂尼尔湖",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2"
+      ],
+      "matchedTerms": [
+        "安瓦蒂尼尔湖"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:111865"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358780013",
+      "title": "暮月雨时 Of Longing Rain and Moon",
+      "originText": "月球 剧情音乐",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358779443",
+      "title": "晨昏杂咏 Jahr und Tag",
+      "originText": "西风戍垒 白天",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358779444",
+      "title": "浪游之夜 Wandrers Nachtlied",
+      "originText": "西风戍垒 夜晚",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358780014",
+      "title": "牧歌如梦 Traumhafte Pastorale",
+      "originText": "西风戍垒 夜晚",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358780015",
+      "title": "朔风渐明 Der Morgen aller",
+      "originText": "剧情音乐 商讨作战计划",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358780016",
+      "title": "西风之歌 Das Favoniuslied",
+      "originText": "西风戍垒 夜晚/酒会",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358787316",
+      "title": "曦光碎影 Shattered Dawn",
+      "originText": "逐浪野/虚海望 野外白天",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2"
+      ],
+      "matchedTerms": [
+        "逐浪野",
+        "虚海望"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:111858",
+        "kongying:111841",
+        "kongying:111845",
+        "kongying:111839",
+        "kongying:111844",
+        "kongying:111857",
+        "kongying:111860",
+        "kongying:111850",
+        "kongying:111849",
+        "kongying:111859",
+        "kongying:111853",
+        "kongying:111862"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358787317",
+      "title": "晨钟初祷 Bell at First Light",
+      "originText": "逐浪野/虚海望 野外白天",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2"
+      ],
+      "matchedTerms": [
+        "逐浪野",
+        "虚海望"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:111858",
+        "kongying:111841",
+        "kongying:111845",
+        "kongying:111839",
+        "kongying:111844",
+        "kongying:111857",
+        "kongying:111860",
+        "kongying:111850",
+        "kongying:111849",
+        "kongying:111859",
+        "kongying:111853",
+        "kongying:111862"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358787318",
+      "title": "颂予边地的日光 Sunlit Hymn for the Margins",
+      "originText": "逐浪野/虚海望 野外白天",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2"
+      ],
+      "matchedTerms": [
+        "逐浪野",
+        "虚海望"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:111858",
+        "kongying:111841",
+        "kongying:111845",
+        "kongying:111839",
+        "kongying:111844",
+        "kongying:111857",
+        "kongying:111860",
+        "kongying:111850",
+        "kongying:111849",
+        "kongying:111859",
+        "kongying:111853",
+        "kongying:111862"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358787319",
+      "title": "枯叶飞旋 Withered Waltz",
+      "originText": "逐浪野/虚海望 野外白天",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2"
+      ],
+      "matchedTerms": [
+        "逐浪野",
+        "虚海望"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:111858",
+        "kongying:111841",
+        "kongying:111845",
+        "kongying:111839",
+        "kongying:111844",
+        "kongying:111857",
+        "kongying:111860",
+        "kongying:111850",
+        "kongying:111849",
+        "kongying:111859",
+        "kongying:111853",
+        "kongying:111862"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358787320",
+      "title": "众人炬火之焰 Torches Together",
+      "originText": "逐浪野/虚海望 野外白天",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2"
+      ],
+      "matchedTerms": [
+        "逐浪野",
+        "虚海望"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:111858",
+        "kongying:111841",
+        "kongying:111845",
+        "kongying:111839",
+        "kongying:111844",
+        "kongying:111857",
+        "kongying:111860",
+        "kongying:111850",
+        "kongying:111849",
+        "kongying:111859",
+        "kongying:111853",
+        "kongying:111862"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358787321",
+      "title": "雾乡之誓 Oath of the Mist",
+      "originText": "逐浪野/虚海望 野外白天",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2"
+      ],
+      "matchedTerms": [
+        "逐浪野",
+        "虚海望"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:111858",
+        "kongying:111841",
+        "kongying:111845",
+        "kongying:111839",
+        "kongying:111844",
+        "kongying:111857",
+        "kongying:111860",
+        "kongying:111850",
+        "kongying:111849",
+        "kongying:111859",
+        "kongying:111853",
+        "kongying:111862"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358788978",
+      "title": "遥遥明夜之途 To the Glowing Night",
+      "originText": "逐浪野/虚海望 野外夜晚",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2"
+      ],
+      "matchedTerms": [
+        "逐浪野",
+        "虚海望"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:111858",
+        "kongying:111841",
+        "kongying:111845",
+        "kongying:111839",
+        "kongying:111844",
+        "kongying:111857",
+        "kongying:111860",
+        "kongying:111850",
+        "kongying:111849",
+        "kongying:111859",
+        "kongying:111853",
+        "kongying:111862"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358788979",
+      "title": "崖上薄暮 Gloaming on the Cliff",
+      "originText": "逐浪野/虚海望 野外夜晚",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2"
+      ],
+      "matchedTerms": [
+        "逐浪野",
+        "虚海望"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:111858",
+        "kongying:111841",
+        "kongying:111845",
+        "kongying:111839",
+        "kongying:111844",
+        "kongying:111857",
+        "kongying:111860",
+        "kongying:111850",
+        "kongying:111849",
+        "kongying:111859",
+        "kongying:111853",
+        "kongying:111862"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358787322",
+      "title": "朔风流月之拥 Winter's Hold, Silver Cold",
+      "originText": "逐浪野/虚海望 野外夜晚",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2"
+      ],
+      "matchedTerms": [
+        "逐浪野",
+        "虚海望"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:111858",
+        "kongying:111841",
+        "kongying:111845",
+        "kongying:111839",
+        "kongying:111844",
+        "kongying:111857",
+        "kongying:111860",
+        "kongying:111850",
+        "kongying:111849",
+        "kongying:111859",
+        "kongying:111853",
+        "kongying:111862"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358788980",
+      "title": "谧银铃歌 Soft Silver Song",
+      "originText": "逐浪野/虚海望 野外夜晚、厄布拉神柱（异时的流星完成后）",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2"
+      ],
+      "matchedTerms": [
+        "逐浪野",
+        "虚海望",
+        "厄布拉神柱"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:111858",
+        "kongying:111841",
+        "kongying:111845",
+        "kongying:111839",
+        "kongying:111844",
+        "kongying:111857",
+        "kongying:111860",
+        "kongying:111850",
+        "kongying:111849",
+        "kongying:111856",
+        "kongying:111859",
+        "kongying:111853",
+        "kongying:111862",
+        "kongying:111855",
+        "kongying:111879"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358788981",
+      "title": "露水与沉夜 Where Dewdrops Sleep in Endless Deep",
+      "originText": "逐浪野/虚海望 野外夜晚",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2"
+      ],
+      "matchedTerms": [
+        "逐浪野",
+        "虚海望"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:111858",
+        "kongying:111841",
+        "kongying:111845",
+        "kongying:111839",
+        "kongying:111844",
+        "kongying:111857",
+        "kongying:111860",
+        "kongying:111850",
+        "kongying:111849",
+        "kongying:111859",
+        "kongying:111853",
+        "kongying:111862"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358788982",
+      "title": "极北的余音 Echoes of the Utmost North",
+      "originText": "亥珀波瑞亚 遗迹内 剧情音乐",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358787323",
+      "title": "苦厄荒途 The Forlorn Trek of Suffering",
+      "originText": "靡穷深壑（世界任务多鲁德的长诗完成前）",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2"
+      ],
+      "matchedTerms": [
+        "靡穷深壑"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:111871"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358788983",
+      "title": "噬身的魔魇 The Soul-Devouring Nightmare",
+      "originText": "靡穷深壑（世界任务多鲁德的长诗完成前）",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2"
+      ],
+      "matchedTerms": [
+        "靡穷深壑"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:111871"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358788984",
+      "title": "灯影之外 Beyond the Reach of Light",
+      "originText": "噩影泽地",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2"
+      ],
+      "matchedTerms": [
+        "噩影泽地"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:111848",
+        "kongying:111847"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358788985",
+      "title": "战歌吟唱时 When War Songs Rise",
+      "originText": "望崖营壁、苦壑崖",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2"
+      ],
+      "matchedTerms": [
+        "苦壑崖"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:111867",
+        "kongying:111869",
+        "kongying:111868"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358787324",
+      "title": "亡者的行进 March of the Draugr",
+      "originText": "望崖营壁、苦壑崖",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2"
+      ],
+      "matchedTerms": [
+        "苦壑崖"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:111867",
+        "kongying:111869",
+        "kongying:111868"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358787325",
+      "title": "噩梦的预兆 Presage of the Devouring Slumber",
+      "originText": "望崖营壁、苦壑崖",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2"
+      ],
+      "matchedTerms": [
+        "苦壑崖"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:111867",
+        "kongying:111869",
+        "kongying:111868"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358787326",
+      "title": "陌路遗踪 A Stranger Rode, One Fine Day",
+      "originText": "废弃避难所",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358787327",
+      "title": "弃坠者的孤旅 Lonesome Road Blues",
+      "originText": "废弃避难所",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358787328",
+      "title": "匣中魍魉 The Entombed Phantasms",
+      "originText": "厄布拉神柱（夜巡的先声完成后‑异时的流星完成前）",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2"
+      ],
+      "matchedTerms": [
+        "厄布拉神柱"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:111856",
+        "kongying:111855",
+        "kongying:111879"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358787329",
+      "title": "与残月同沉 Into the Abyss With the Moon",
+      "originText": "剧情音乐 仆人展开赤月空间",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358787330",
+      "title": "命运不曾允诺 Fatum Nihil Promisit",
+      "originText": "剧情音乐 雷利尔回忆",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358788986",
+      "title": "校准实验中 Calibration in Progress",
+      "originText": "剧情音乐 赶往深秘院棋盘部分",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358787331",
+      "title": "似纱月光的愁绪 Moonlight, Wistfully Shed",
+      "originText": "剧情音乐 木偶回忆阿兰·吉约丹",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358787332",
+      "title": "共襄馀庆之刻 A Moment of Mirth",
+      "originText": "剧情音乐 欢快场景",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358787333",
+      "title": "垂悬的傀丝 Threads Bound in Silence",
+      "originText": "剧情音乐 月矩力试验设计局 木偶相关",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL"
+      ],
+      "matchedTerms": [
+        "月矩力试验设计局"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:105707",
+        "kongying:105850",
+        "kongying:105847",
+        "kongying:105710",
+        "kongying:105848",
+        "kongying:106240",
+        "kongying:105851",
+        "kongying:105846",
+        "kongying:105842",
+        "kongying:105843"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358787334",
+      "title": "魔女的奇思遐想 Glint of Unseen Truth",
+      "originText": "剧情音乐 艾莉丝登场",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358787335",
+      "title": "如生之不竭 Life Is Inexhaustible",
+      "originText": "剧情音乐 祈月之夜",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358788987",
+      "title": "万千星火的欢宴 With Zealous Passion We Rejoice",
+      "originText": "剧情音乐 祈月之夜",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358787336",
+      "title": "月光的赞美诗 Moonlight's Serene Benediction",
+      "originText": "剧情音乐 前往月亮路上回忆长廊",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358788988",
+      "title": "月之谜,月之梦 Enigma in the Lunar Cradle",
+      "originText": "剧情音乐 月之门内",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358787337",
+      "title": "月墟尘往 The Moon's Veiled Reverie",
+      "originText": "剧情音乐 三月女神监牢",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358787338",
+      "title": "奇械的追忆 Du cote de chez Alain",
+      "originText": "剧情音乐 木偶回忆阿兰·吉约丹与雷内",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358787339",
+      "title": "三有虚妄 Threefold Falsehood",
+      "originText": "剧情音乐 博士研究所对话",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358788989",
+      "title": "四不可说 Four Unspeakables",
+      "originText": "剧情音乐 少女消失后众人讨论博士",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358807389",
+      "title": "行狩遗伤 Scars of the Hunt",
+      "originText": "过场动画「银月下的追猎」",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358807390",
+      "title": "流浪人的夜歌 A Drifter's Night Song",
+      "originText": "过场动画「残月是已死美人…」",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358806547",
+      "title": "月尽天明 Do tagte ez",
+      "originText": "剧情PV「月的倒影」",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358807391",
+      "title": "无救的垂怜 Irredeemable Mercy",
+      "originText": "过场动画「奇袭」",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358807392",
+      "title": "谧息的片缕 Slivers of Silver",
+      "originText": "过场动画 魂体场景",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358807393",
+      "title": "纺予你的道路 Song of the Open Road",
+      "originText": "过场动画「唤吾真名」",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358807394",
+      "title": "祈月将升 Moonrise Prayer",
+      "originText": "过场动画「祈月之夜」",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358807395",
+      "title": "寂落的约定 Unpromised Promise",
+      "originText": "过场动画「月的归处」",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358807396",
+      "title": "无始无明 Incomplete Ignorance",
+      "originText": "过场动画「逃离『理想乡』」",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358806548",
+      "title": "泪水、圣徒、谢幕 Aenigmata de larmes, de saints et d'adieux",
+      "originText": "过场动画「世界的变量」",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358806549",
+      "title": "衔枝的归途 Branches They Bore Homeward",
+      "originText": "过场动画「三月重临」",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358807397",
+      "title": "妄尽还源 Fall of Falsehood",
+      "originText": "过场动画「赝月之陨」",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358806550",
+      "title": "启明的祀奉 Heosphoros Hymn to Helel",
+      "originText": "BOSS战 靡穷之孽",
+      "category": "battle-limited",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "限定战斗缺少对应地点/附近点位证据，保留目录，不扩大到全区域。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358807398",
+      "title": "不虞之隙 Ain't That a Hole in the Boat",
+      "originText": "BOSS战 末缀之劫",
+      "category": "battle-limited",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "限定战斗缺少对应地点/附近点位证据，保留目录，不扩大到全区域。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358806551",
+      "title": "月失星散 Of Lost Moon and Drifting Stars",
+      "originText": "BOSS战 猎月人雷利尔一阶段",
+      "category": "battle-limited",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "限定战斗缺少对应地点/附近点位证据，保留目录，不扩大到全区域。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358806552",
+      "title": "未至的报赎 Redemptio Numquam Adventura",
+      "originText": "BOSS战 猎月人雷利尔二阶段",
+      "category": "battle-limited",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "限定战斗缺少对应地点/附近点位证据，保留目录，不扩大到全区域。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358807399",
+      "title": "七见断灭智论抄 Prajnaparamitopadesa to Quell Seven Calamities",
+      "originText": "BOSS战 博士",
+      "category": "battle-limited",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "限定战斗缺少对应地点/附近点位证据，保留目录，不扩大到全区域。"
+    },
+    {
+      "album": "朔望凝待之庭",
+      "id": "netease:3358806553",
+      "title": "白鸽之诗 Columbina's Poem",
+      "originText": "BOSS战 博士二阶段",
+      "category": "battle-limited",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "限定战斗缺少对应地点/附近点位证据，保留目录，不扩大到全区域。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729502",
+      "title": "至冬 Snezhnaya",
+      "originText": "国家主题曲",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730045",
+      "title": "银昼寒光 A Day Filled With Frigid Light",
+      "originText": "至冬堡 白天1 网页活动至冬将至",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "至冬堡"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121661",
+        "kongying:121722",
+        "kongying:121717",
+        "kongying:121723",
+        "kongying:121724",
+        "kongying:121754"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729503",
+      "title": "夜隐晓至 Night Fades, Dawn Breaks",
+      "originText": "至冬堡 白天2",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "至冬堡"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121661",
+        "kongying:121722",
+        "kongying:121717",
+        "kongying:121723",
+        "kongying:121724",
+        "kongying:121754"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729504",
+      "title": "零露漙然 Heavy Is the Dew",
+      "originText": "至冬堡 白天3",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "至冬堡"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121661",
+        "kongying:121722",
+        "kongying:121717",
+        "kongying:121723",
+        "kongying:121724",
+        "kongying:121754"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729505",
+      "title": "隙光浮影 Light Glimmers as Shadows Shift",
+      "originText": "至冬堡 白天4",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "至冬堡"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121661",
+        "kongying:121722",
+        "kongying:121717",
+        "kongying:121723",
+        "kongying:121724",
+        "kongying:121754"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729506",
+      "title": "黑雪鹄的夜梦 Dream of the Black Snow Swan",
+      "originText": "至冬堡 夜晚1 列车音乐1\n旅行历程界面至冬地区音乐",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "至冬堡"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121661",
+        "kongying:121722",
+        "kongying:121717",
+        "kongying:121723",
+        "kongying:121724",
+        "kongying:121754"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730046",
+      "title": "无眠之惘 Of Slumber Bereft",
+      "originText": "至冬堡 夜晚2",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "至冬堡"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121661",
+        "kongying:121722",
+        "kongying:121717",
+        "kongying:121723",
+        "kongying:121724",
+        "kongying:121754"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729507",
+      "title": "琴弦呀，琴弦 O Strings, My Strings",
+      "originText": "至冬堡 夜晚3",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "至冬堡"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121661",
+        "kongying:121722",
+        "kongying:121717",
+        "kongying:121723",
+        "kongying:121724",
+        "kongying:121754"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730047",
+      "title": "雪中蜂鸣 The Snowy Beehive",
+      "originText": "至冬堡 夜晚4 主线挪德卡莱前往至冬途中",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱",
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "至冬堡"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121661",
+        "kongying:121722",
+        "kongying:121717",
+        "kongying:121723",
+        "kongying:121724",
+        "kongying:121754"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730048",
+      "title": "自由颂（巴扬版） Ode to Liberty (Bayan Version)",
+      "originText": "列车总站1 网页活动至冬漫游手册",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "列车总站"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121726"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729508",
+      "title": "切莫与挚爱分离 Be Not Parted From Your Beloved",
+      "originText": "列车总站2",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "列车总站"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121726"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730049",
+      "title": "命运的谑言 The Irony of Fate",
+      "originText": "列车总站3 列车音乐2",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "列车总站"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121726"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729509",
+      "title": "车厢对白 Traincar Dialogues",
+      "originText": "列车音乐3",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729510",
+      "title": "鹰之谣咏 The Song of the Falcon",
+      "originText": "炉灰区 白天1",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "炉灰区"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121719"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730050",
+      "title": "戍望者的歌 Manechka's Sentry Song",
+      "originText": "炉灰区 白天2",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "炉灰区"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121719"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730051",
+      "title": "炉灰与钻石 Ashes and Diamonds",
+      "originText": "炉灰区 夜晚1",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "炉灰区"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121719"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730052",
+      "title": "炉边遐思 Hearthside Reflections",
+      "originText": "炉灰区 夜晚2",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "炉灰区"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121719"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730053",
+      "title": "我曾经爱过你（管弦乐版） I Loved You (Orchestral Version)",
+      "originText": "科洛列夫茨基剧场1",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729511",
+      "title": "自由颂 Ode to Liberty",
+      "originText": "科洛列夫茨基剧场2 列车音乐4",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729512",
+      "title": "水上挽月 To Draw the Moon From Water",
+      "originText": "科洛列夫茨基剧场3 列车音乐5",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729513",
+      "title": "我曾经爱过你 I Loved You",
+      "originText": "列车音乐6 与沃雅妮莎实机过场演唱有区别",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730054",
+      "title": "面包与盐的盛待 A Feast of Bread and Salt",
+      "originText": "至冬堡 老庭院餐厅",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "至冬堡"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121661",
+        "kongying:121722",
+        "kongying:121717",
+        "kongying:121723",
+        "kongying:121724",
+        "kongying:121754"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729514",
+      "title": "雪封的暗流 Whither, Troika",
+      "originText": "至冬堡 皇都评议会",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "至冬堡"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121661",
+        "kongying:121722",
+        "kongying:121717",
+        "kongying:121723",
+        "kongying:121724",
+        "kongying:121754"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730055",
+      "title": "荣光懋勋 Glorious Triumph",
+      "originText": "格鲁波夫",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "格鲁波夫"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121756"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730056",
+      "title": "夏至火升腾 Midsummer's Soaring Flame",
+      "originText": "克什尼克的炉心",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730057",
+      "title": "苍镝呈光 Argent Arrows Resplendent",
+      "originText": "主线音乐1 军械宫内",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730058",
+      "title": "炉烟阗衢 Rising Smoke, Crowded Streets",
+      "originText": "凝露镇 白天1",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "凝露镇"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121671"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730059",
+      "title": "攘来熙往 The Ceaseless Bustle",
+      "originText": "凝露镇 白天2",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "凝露镇"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121671"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729515",
+      "title": "夜街、灯火与药店 A Night, a Street, a Lamp, a Drugstore",
+      "originText": "凝露镇 夜晚1",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "凝露镇"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121671"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729516",
+      "title": "燃烧的蜡炬 A Candle Burning",
+      "originText": "凝露镇 夜晚2",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "凝露镇"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121671"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729517",
+      "title": "环游的信使 The Wandering Postman",
+      "originText": "海屑镇 白天1",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "海屑镇"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121698",
+        "kongying:121696"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730060",
+      "title": "曙暮相衔 As Dawn and Dusk Merge",
+      "originText": "海屑镇 白天2",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "海屑镇"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121698",
+        "kongying:121696"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729518",
+      "title": "坠叶与晚星 Falling Leaves and Even-Stars",
+      "originText": "海屑镇 夜晚1",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "海屑镇"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121698",
+        "kongying:121696"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729519",
+      "title": "夜港灯明时 As Lamps Light the Harbor at Night",
+      "originText": "海屑镇 夜晚2",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "海屑镇"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121698",
+        "kongying:121696"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729520",
+      "title": "叩冰垦壤 Above Frost",
+      "originText": "彩冰镇1",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "彩冰镇"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121751",
+        "kongying:125624"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730061",
+      "title": "故事中的故事 Skazka Skazok",
+      "originText": "彩冰镇2",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "彩冰镇"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121751",
+        "kongying:125624"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730062",
+      "title": "昳影之间 Amidst Dappled Shadows",
+      "originText": "曙光车站",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "曙光车站"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121683"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730063",
+      "title": "圆滚滚大冒险 Roly-Poly Adventure",
+      "originText": "小游戏音乐 「新芽相助·初探雪原」滚滚雪球 「险境征者竞锋大赛」冰雪迷宫探行推演",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729521",
+      "title": "当鹳鸟飞过 When Cranes Fly By",
+      "originText": "谒圣山峡 主线与派蒙前往避雪小屋",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "谒圣山峡"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121764"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730064",
+      "title": "往年钟鸣 Ring Out, Ye Bells of Yore",
+      "originText": "白桦雪葬地 野外",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "白桦雪葬地"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121762",
+        "kongying:121765",
+        "kongying:121769",
+        "kongying:121771",
+        "kongying:126219"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729522",
+      "title": "无泪的哀声 Penthimos Kodonokrousia",
+      "originText": "白冕宫",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "白冕宫"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121662"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729523",
+      "title": "没有英雄的叙事诗 Poem Without a Hero",
+      "originText": "白冕宫 无吟唱版 世界任务「一边是宫殿一边是陵阙」 回忆中的「谧源所」",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "白冕宫"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121662"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730065",
+      "title": "凝冰的高庭 High Court of Enduring Ice",
+      "originText": "白冕宫 霜冻的王厅",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "白冕宫"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121662"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730066",
+      "title": "在荒凉的北国 In the Wild North",
+      "originText": "霜殛寒峰 野外",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "霜殛寒峰"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:128120",
+        "kongying:121654",
+        "kongying:121734",
+        "kongying:121730",
+        "kongying:121733",
+        "kongying:121749",
+        "kongying:121731",
+        "kongying:125532"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730067",
+      "title": "荒山皑皑 On Snow-Clad Heights",
+      "originText": "赫斯珀利德斯之馆 世界任务「爱憎的赫斯珀利德斯」完成前",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "赫斯珀利德斯之馆"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121737",
+        "kongying:121747",
+        "kongying:121745",
+        "kongying:121743",
+        "kongying:121740",
+        "kongying:121746"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729524",
+      "title": "睡乡长梦 In Dreamland to Slumber",
+      "originText": "赫斯珀利德斯之馆 世界任务「爱憎的赫斯珀利德斯」完成后",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "赫斯珀利德斯之馆"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121737",
+        "kongying:121747",
+        "kongying:121745",
+        "kongying:121743",
+        "kongying:121740",
+        "kongying:121746"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729525",
+      "title": "凡雪终融 Pathos of Pavlina's Pathetique",
+      "originText": "赫斯珀利德斯之馆 礼堂",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "赫斯珀利德斯之馆"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121737",
+        "kongying:121747",
+        "kongying:121745",
+        "kongying:121743",
+        "kongying:121740",
+        "kongying:121746"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729526",
+      "title": "冰如垂棘 Ice Like Thorns",
+      "originText": "赫斯珀利德斯之馆 冰结的雷枝",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "赫斯珀利德斯之馆"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121737",
+        "kongying:121747",
+        "kongying:121745",
+        "kongying:121743",
+        "kongying:121740",
+        "kongying:121746"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730068",
+      "title": "如霭似檬 Like Mists, Like Rain",
+      "originText": "云上的祭台 前往赫斯珀利德斯之馆路上",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "赫斯珀利德斯之馆",
+        "云上的祭台"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121737",
+        "kongying:121747",
+        "kongying:121745",
+        "kongying:121743",
+        "kongying:121740",
+        "kongying:121746",
+        "kongying:121748"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730069",
+      "title": "渴家的小枝桠 The Little Branch Yearns for Home",
+      "originText": "奥古洛夫镇1",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "奥古洛夫镇"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121713",
+        "kongying:121712"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729527",
+      "title": "荒谷之日 Day on the Bald Mountain",
+      "originText": "奥古洛夫镇2",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "奥古洛夫镇"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121713",
+        "kongying:121712"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729528",
+      "title": "肉身的麦粒 The Grain of the Flesh",
+      "originText": "奥古洛夫镇 念祷的礼堂1",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "奥古洛夫镇"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121713",
+        "kongying:121712"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730070",
+      "title": "思想的苦酒 The Bitter Wine of Thought",
+      "originText": "奥古洛夫镇 念祷的礼堂2",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "奥古洛夫镇"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121713",
+        "kongying:121712"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729529",
+      "title": "叹往月光 Sigh for Sigh",
+      "originText": "悲悼的圣所 有吟唱",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730071",
+      "title": "爱得其所 Love's Labour's Won",
+      "originText": "悲悼的圣所 无吟唱",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729530",
+      "title": "小小霜精大家庭 The Little Jack Frost Clan",
+      "originText": "霜精的村落",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "霜精的村落"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121752"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729531",
+      "title": "回环的水波 The Swirling Wave",
+      "originText": "世界任务「她的宫殿正坍塌向风雪」结尾 「为她所颂轻柔之歌」过场 「卑劣者的穷街陋巷」解锁区域 列车墓地",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730072",
+      "title": "固执的冰风 Unyielding Icy Wind",
+      "originText": "7.1海屑镇东北锚点任务 霜精巨人在影域",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "海屑镇"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121698",
+        "kongying:121696"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730073",
+      "title": "疾行锐进 Swift Advance",
+      "originText": "7.0/7.1版本未出现",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730074",
+      "title": "砥志研想 To Hone Mind and Thought",
+      "originText": "影域 靶场",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729483",
+      "title": "拂向柔风 A Gentle Wind Blows Softly",
+      "originText": "野外 白天1 赫斯珀利德斯之馆·盛光如露的花园",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "赫斯珀利德斯之馆"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121737",
+        "kongying:121747",
+        "kongying:121745",
+        "kongying:121743",
+        "kongying:121740",
+        "kongying:121746"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729484",
+      "title": "雪色的再会 Snowy Reunion",
+      "originText": "野外 白天2",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730032",
+      "title": "织于雾中的吟咏 Whispers Woven in Mist",
+      "originText": "野外 白天3",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730033",
+      "title": "脊骨之笛 Spine Flute",
+      "originText": "野外 白天4",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730034",
+      "title": "致松针 Ode to the Pine Needle",
+      "originText": "野外 白天5",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730035",
+      "title": "落雪无声 Snow Falls Soundlessly",
+      "originText": "野外 白天6",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729485",
+      "title": "白日已在暗中 The Sinking Day",
+      "originText": "野外 白天7",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730036",
+      "title": "烧灯续昼 As if Drenched in Moonlight",
+      "originText": "野外 夜晚1 引用主题菲林斯角色PV",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729486",
+      "title": "极光的约定 Unfulfilled Aurora",
+      "originText": "野外 夜晚2 引用主题《烬中歌》-极光",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730037",
+      "title": "雪抚夜霜 Whispers to the Midnight Frost",
+      "originText": "野外 夜晚3",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730038",
+      "title": "如沐月中 In the Moonlight",
+      "originText": "野外 夜晚4 主线实机过场奥黛塔天鹅舞",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730039",
+      "title": "坠欢莫拾 Reclaim Not Bygone Joy",
+      "originText": "野外 夜晚5",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729487",
+      "title": "星与舫的幽歌 Skein-Song of Stars and Sails",
+      "originText": "野外 夜晚6",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729488",
+      "title": "白桦林的夜曲 Nocturne of the Birch Forest",
+      "originText": "野外 夜晚7",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730040",
+      "title": "当晚霞染红枝头 When Sunset's Blush Dyes the Branches",
+      "originText": "巡猎者木屋 至冬洞穴通用 古老废弃车站 奥古洛夫镇入口隧道",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "奥古洛夫镇"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121713",
+        "kongying:121712"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729489",
+      "title": "空寂的回响 The Empty Echo",
+      "originText": "奥古洛夫镇 融雪引流道",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [
+        "奥古洛夫镇"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121713",
+        "kongying:121712"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729490",
+      "title": "犹在镜中 Through a Glass Darkly",
+      "originText": "奥黛塔天鹅舞完整版",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730041",
+      "title": "应无所往 Abiding Nowhere",
+      "originText": "科洛列夫茨基剧场 八音盒 剧情音乐1",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730042",
+      "title": "月上水影 Where the Moon Kisses the Water",
+      "originText": "汐歌洞窟 合并",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729491",
+      "title": "潮汐藻歌 Song of the Tidal Algae",
+      "originText": "汐歌洞窟 背景音乐",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729492",
+      "title": "相逐妄出 Forms Arise From Deluded Thoughts",
+      "originText": "主线音乐2 沃雅妮莎「招魂曲」",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729493",
+      "title": "奥黛塔，快陪我去堆个雪人吧 Dear Odette, Come and Build a Snowman With Me",
+      "originText": "奥黛塔任务",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729494",
+      "title": "奥黛塔，快陪我去堆个雪人吧（日） Dear Odette, Come and Build a Snowman With Me",
+      "originText": "奥黛塔任务",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729495",
+      "title": "奥黛塔，快陪我去堆个雪人吧（英） Dear Odette, Come and Build a Snowman With Me",
+      "originText": "奥黛塔任务",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730043",
+      "title": "奥黛塔，快陪我去堆个雪人吧（韩） Dear Odette, Come and Build a Snowman With Me",
+      "originText": "奥黛塔任务",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729496",
+      "title": "谬误与缺误 Faults and Fallacies",
+      "originText": "主线音乐3 早上发现死者 阿罗夏聚所任务 雪原上的猎手",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729497",
+      "title": "疑似之间 Caught Betwixt Possibilities",
+      "originText": "主线音乐4 逃离夜祷 指控奥黛塔是「莱莱可」",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729498",
+      "title": "渡往幽世 Acrossing the River of Smorodina",
+      "originText": "主线音乐5 旅行者逃离黑雾场景",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729499",
+      "title": "某与某的辩题 The Parties Debate",
+      "originText": "剧情音乐2 米提亚返回后 旅行者推理界面",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729500",
+      "title": "失魂灵的渡口 The Ferry of Lost Souls",
+      "originText": "主线音乐6",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437729501",
+      "title": "无吟者的诗章 Verse of the Verseless One",
+      "originText": "剧情音乐3 塔诗佳 「冬妮娅」离去",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730044",
+      "title": "苍白的骑行 O Mors",
+      "originText": "剧情音乐4 死之执政主题 《如高天安固》变奏",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437733163",
+      "title": "未束的誓言 An Oath Unfettered",
+      "originText": "过场动画-「星锋」",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730695",
+      "title": "念当终亡 Memento Mori",
+      "originText": "过场动画-「『死亡』已在身边」",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730696",
+      "title": "无恒无生 Mors Omnia Vincit",
+      "originText": "过场动画-「『复活』之时将至」",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437733164",
+      "title": "既知身是梦 Behold, Life Is a Passing Dream",
+      "originText": "剧情PV-「冰中余烬」",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730697",
+      "title": "归向雪都 The Tale of Anastasya's Campaign",
+      "originText": "过场动画-「凯旋」",
+      "category": "task",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437733165",
+      "title": "冰湖的凯旋礼 Triumph on the Ice",
+      "originText": "战斗曲1",
+      "category": "battle-generic",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:128120",
+        "kongying:121703",
+        "kongying:121653",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657",
+        "kongying:121680",
+        "kongying:121670",
+        "kongying:121685",
+        "kongying:121686",
+        "kongying:121682",
+        "kongying:121684",
+        "kongying:121690",
+        "kongying:121737",
+        "kongying:121734",
+        "kongying:121726",
+        "kongying:121730",
+        "kongying:121733",
+        "kongying:121693",
+        "kongying:121676",
+        "kongying:121683",
+        "kongying:121678",
+        "kongying:121719",
+        "kongying:121725",
+        "kongying:121752",
+        "kongying:121753",
+        "kongying:121747",
+        "kongying:121749",
+        "kongying:121756",
+        "kongying:121762",
+        "kongying:121764",
+        "kongying:121759",
+        "kongying:121765",
+        "kongying:121774",
+        "kongying:121707",
+        "kongying:121694",
+        "kongying:123803",
+        "kongying:125358",
+        "kongying:121714",
+        "kongying:121715",
+        "kongying:121769",
+        "kongying:121745",
+        "kongying:121711",
+        "kongying:121771",
+        "kongying:121743",
+        "kongying:126219",
+        "kongying:121740",
+        "kongying:121746",
+        "kongying:121731",
+        "kongying:125532",
+        "kongying:121748",
+        "kongying:126268"
+      ],
+      "reason": "通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437733166",
+      "title": "掣风揽熠 Wind Rider, Light Grasper",
+      "originText": "战斗曲2",
+      "category": "battle-generic",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:128120",
+        "kongying:121703",
+        "kongying:121653",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657",
+        "kongying:121680",
+        "kongying:121670",
+        "kongying:121685",
+        "kongying:121686",
+        "kongying:121682",
+        "kongying:121684",
+        "kongying:121690",
+        "kongying:121737",
+        "kongying:121734",
+        "kongying:121726",
+        "kongying:121730",
+        "kongying:121733",
+        "kongying:121693",
+        "kongying:121676",
+        "kongying:121683",
+        "kongying:121678",
+        "kongying:121719",
+        "kongying:121725",
+        "kongying:121752",
+        "kongying:121753",
+        "kongying:121747",
+        "kongying:121749",
+        "kongying:121756",
+        "kongying:121762",
+        "kongying:121764",
+        "kongying:121759",
+        "kongying:121765",
+        "kongying:121774",
+        "kongying:121707",
+        "kongying:121694",
+        "kongying:123803",
+        "kongying:125358",
+        "kongying:121714",
+        "kongying:121715",
+        "kongying:121769",
+        "kongying:121745",
+        "kongying:121711",
+        "kongying:121771",
+        "kongying:121743",
+        "kongying:126219",
+        "kongying:121740",
+        "kongying:121746",
+        "kongying:121731",
+        "kongying:125532",
+        "kongying:121748",
+        "kongying:126268"
+      ],
+      "reason": "通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437730698",
+      "title": "驭光裁影 Wielding Light to Sever Shadows",
+      "originText": "战斗曲3",
+      "category": "battle-generic",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:128120",
+        "kongying:121703",
+        "kongying:121653",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657",
+        "kongying:121680",
+        "kongying:121670",
+        "kongying:121685",
+        "kongying:121686",
+        "kongying:121682",
+        "kongying:121684",
+        "kongying:121690",
+        "kongying:121737",
+        "kongying:121734",
+        "kongying:121726",
+        "kongying:121730",
+        "kongying:121733",
+        "kongying:121693",
+        "kongying:121676",
+        "kongying:121683",
+        "kongying:121678",
+        "kongying:121719",
+        "kongying:121725",
+        "kongying:121752",
+        "kongying:121753",
+        "kongying:121747",
+        "kongying:121749",
+        "kongying:121756",
+        "kongying:121762",
+        "kongying:121764",
+        "kongying:121759",
+        "kongying:121765",
+        "kongying:121774",
+        "kongying:121707",
+        "kongying:121694",
+        "kongying:123803",
+        "kongying:125358",
+        "kongying:121714",
+        "kongying:121715",
+        "kongying:121769",
+        "kongying:121745",
+        "kongying:121711",
+        "kongying:121771",
+        "kongying:121743",
+        "kongying:126219",
+        "kongying:121740",
+        "kongying:121746",
+        "kongying:121731",
+        "kongying:125532",
+        "kongying:121748",
+        "kongying:126268"
+      ],
+      "reason": "通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437733167",
+      "title": "不死不灭之赐 The Boon of Immortality",
+      "originText": "战斗曲4 大世界BOSS「不灭衍生造物」 世界任务BOSS「扎拉」",
+      "category": "battle-limited",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "限定战斗缺少对应地点/附近点位证据，保留目录，不扩大到全区域。"
+    },
+    {
+      "album": "悯宥慈怜之垠",
+      "id": "netease:3437733168",
+      "title": "落幕的赠礼 Gift at Curtain Call",
+      "originText": "战斗曲5 世界任务BOSS「帕芙琳娜」",
+      "category": "battle-limited",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "限定战斗缺少对应地点/附近点位证据，保留目录，不扩大到全区域。"
     }
   ]
 }
