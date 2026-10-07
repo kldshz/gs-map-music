@@ -9,10 +9,10 @@ test('专辑63首、蒙德城曲库和神像归档提示、所有关联反向定
   await page.getByRole('button',{name:'点位目录',exact:true}).click();await page.locator('.anchor-list button').filter({hasText:'#kongying:6625'}).click();
   await expect(page.locator('.detail-view')).toContainText('关联音乐（11）');await expect(page.locator('.detail-view')).toContainText('西风大教堂');
   await page.locator('.detail-view .track-item').filter({hasText:'风所爱之城'}).click();await page.getByText('完整元数据',{exact:true}).click();await page.getByText('关联点位（2）',{exact:true}).click();
-  await expect(page.locator('.detail-view')).toContainText('2020-09-28');await expect(page.locator('.detail-view')).toContainText('地点直接匹配');await expect(page.locator('.detail-view')).toContainText('蒙德城-白天');
+  await expect(page.locator('.detail-view')).toContainText('2020-09-28');await expect(page.locator('.location-list')).toContainText('【蒙德 蒙德城】');await expect(page.locator('.association-detail')).toHaveCount(0);await expect(page.locator('.detail-view')).toContainText('蒙德城-白天');
   await page.getByRole('button',{name:'在地图上定位全部'}).click();await expect(page.locator('.music-anchor.is-highlighted')).toHaveCount(2);
   await page.getByRole('searchbox').fill('');await page.getByRole('button',{name:'点位目录',exact:true}).click();await page.locator('.anchor-list button').filter({hasText:'#kongying:6557'}).click();
-  await expect(page.locator('.detail-view .track-status').filter({hasText:'地区归档（不代表此点位实际播放）'}).first()).toBeVisible();
+  await expect(page.locator('.detail-view .track-origin').first()).toBeVisible();
 });
 
 test('个人评价保存后刷新可见、检索、跨曲不串、清空和恢复；来源原文保持',async({page})=>{

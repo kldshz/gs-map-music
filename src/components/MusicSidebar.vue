@@ -32,7 +32,7 @@
           <button type="button" class="track-item" @click="selectTrackAndShow(track.id)">
             <span class="track-title">{{ trackDisplayTitle(track) }}</span>
             <span class="track-artists">{{ joinList(track.artists) }}</span>
-            <span class="track-status">{{ state.associationStatus(track.id) }}</span>
+            <span class="track-origin">{{ track.sceneInfo?.originText?.trim() || '出处尚未提供' }}</span>
           </button>
         </li>
       </ul>
@@ -71,7 +71,7 @@
             <button type="button" class="track-item" @click="selectTrackAndShow(track.id)">
               <span class="track-title">{{ trackDisplayTitle(track) }}</span>
               <span class="track-artists">艺人：{{ joinList(track.artists) }}</span>
-              <span class="track-status">{{ anchorTrackHint(track.id) }}</span>
+              <span class="track-origin">{{ track.sceneInfo?.originText?.trim() || '出处尚未提供' }}</span>
             </button>
             <div v-if="state.developmentMode && state.editingAvailable" class="edit-actions">
               <button type="button" class="edit-btn remove-btn" :disabled="state.editBusy" @click="removeFromAnchor(track.id)">移除关联</button>
@@ -169,20 +169,16 @@
 
       <details class="detail-section">
         <summary class="detail-summary">关联点位（{{ trackLocationsCount }}）</summary>
-        <p class="association-status">{{ state.associationStatus(state.selectedTrack.id) }}</p>
+        
         <template v-if="trackLocations.length">
           <button type="button" class="locate-btn" @click="locateAll">在地图上定位全部</button>
           <ul class="location-list">
             <li v-for="anchor in trackLocations" :key="anchor.id" class="location-item">
               <button type="button" class="location-btn" @click="locateAnchor(anchor.id)">
-                <span>{{ anchor.name }}</span>
-                <span class="location-area">{{ show(anchor.areaName) }} · #{{ anchor.id }}</span>
+                <span class="location-content">{{ anchor.content?.trim() || '点位说明尚未提供' }}</span>
+                <span class="location-area">{{ kindLabel(anchor.kind) }} · #{{ anchor.id }}</span>
                 <span v-if="!anchor.position" class="location-pending">坐标待核实</span>
               </button>
-              <div v-if="state.associationFor(state.selectedTrack.id, anchor.id)" class="association-detail">
-                <span :class="['match-type', { 'region-archive': state.associationFor(state.selectedTrack.id, anchor.id)!.matchType === 'region-archive', 'region-scope': state.associationFor(state.selectedTrack.id, anchor.id)!.matchType === 'region-scope', 'manual': state.associationFor(state.selectedTrack.id, anchor.id)!.matchType === 'manual' }]">{{ matchTypeLabel(state.associationFor(state.selectedTrack.id, anchor.id)!.matchType) }}</span>
-                <span class="evidence-note">{{ state.associationFor(state.selectedTrack.id, anchor.id)!.evidenceNote }}</span>
-              </div>
               <div v-if="state.developmentMode && state.editingAvailable" class="edit-actions">
                 <button type="button" class="edit-btn remove-btn" :disabled="state.editBusy" @click="removeFromTrack(anchor.id)">移除所选关联</button>
                 <button v-if="trackAnchorCanRestore(anchor.id)" type="button" class="edit-btn restore-btn" :disabled="state.editBusy" @click="restoreAssociation(state.selectedTrack.id, anchor.id)">恢复所选来源关联</button>
@@ -206,10 +202,8 @@
             <li v-for="anchor in candidateAnchors.slice(0, 20)" :key="anchor.id">
               <div class="candidate-item">
                 <div class="candidate-info">
-                  <span class="anchor-kind" :title="kindLabel(anchor.kind)">{{ anchor.kind === 'statue' ? '✦' : '⚓' }}</span>
-                  <span class="anchor-name">{{ anchor.name }}</span>
-                  <span class="anchor-id">#{{ anchor.id }}</span>
-                  <span class="anchor-content">{{ summary(anchor.content, 24) }}</span>
+                  <span class="anchor-content candidate-content">{{ anchor.content?.trim() || '点位说明尚未提供' }}</span>
+                  <span class="anchor-meta"><span class="anchor-kind" :title="kindLabel(anchor.kind)" aria-hidden="true">{{ anchor.kind === 'statue' ? '✦' : '⚓' }}</span>{{ kindLabel(anchor.kind) }} · #{{ anchor.id }}</span>
                 </div>
                 <div class="candidate-actions">
                   <button type="button" class="edit-btn add-btn" :disabled="state.editBusy || isAnchorAdded(anchor.id)" @click="addAnchorToTrack(anchor.id)">{{ isAnchorAdded(anchor.id) ? '已添加' : '添加到所选点位' }}</button>
@@ -258,7 +252,7 @@
 
 <script setup lang="ts">
 import { computed, nextTick, reactive, ref, watch } from 'vue';
-import type { MusicTrack, Anchor, AssociationMatch } from '../domain/contracts';
+import type { MusicTrack, Anchor } from '../domain/contracts';
 import type { useExplorer } from '../services/explorer';
 
 type Maybe<T> = T | null | undefined;
@@ -365,39 +359,6 @@ function trackDisplayTitle(track: MusicTrack): string {
     return `${track.sceneInfo.wikiTitle} / ${track.sceneInfo.englishTitle}`;
   }
   return track.title;
-}
-
-function matchTypeLabel(matchType: Maybe<AssociationMatch>): string {
-  if (!matchType) return '关联方式未知';
-  switch (matchType) {
-    case 'place-match':
-      return '地点直接匹配';
-    case 'parent-place-match':
-      return '父级地点匹配';
-    case 'region-archive':
-      return '【地区归档】';
-    case 'region-scope':
-      return '【地区范围候选】';
-    case 'manual':
-      return '【用户手动挂载】';
-    default:
-      return '关联方式未知';
-  }
-}
-
-function anchorTrackHint(trackId: string): string {
-  const assoc = state.associationFor(trackId, state.selectedAnchorId);
-  if (!assoc) return '关联方式详见曲目详情';
-  if (assoc.matchType === 'region-archive') {
-    return '地区归档（不代表此点位实际播放）';
-  }
-  if (assoc.matchType === 'region-scope') {
-    return '地区范围候选（待核实）';
-  }
-  if (assoc.matchType === 'manual') {
-    return '用户手动挂载（待核实）';
-  }
-  return '详见曲目详情';
 }
 
 function switchTab(tab: Tab): void {

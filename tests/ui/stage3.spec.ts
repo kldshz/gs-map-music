@@ -42,7 +42,7 @@ test('空曲库/校验失败及多对多反向定位；缺值未知、pending显
   await expect(page.locator('.import-message').first()).toContainText('已导入1首曲目');
   await page.getByLabel('搜索点位、曲目、专辑、地区、细分目录或个人评价').fill('测试元数据专辑');await expect(page.locator('.track-list button')).toHaveCount(1);
   await page.locator('.track-list button').focus();await page.keyboard.press('Space');await expect(page.locator('.detail-view')).toBeVisible();
-  await expect(page.locator('.detail-view')).toContainText('未知');await expect(page.locator('.detail-view')).toContainText('待核实2');
+  await expect(page.locator('.detail-view')).toContainText('未知');await expect(page.locator('.association-status')).toHaveCount(0);
   await page.getByText('关联点位（2）',{exact:true}).click();await expect(page.locator('.location-list button')).toHaveCount(2);await page.getByRole('button',{name:'在地图上定位全部'}).click();
   await expect(page.locator('.detail-view')).toBeVisible();await expect(page.locator('dialog')).toHaveCount(0);await expect(page.locator('.music-anchor.is-highlighted')).toHaveCount(2);
   await page.locator('input[type=file]').setInputFiles({name:'bad.json',mimeType:'application/json',buffer:Buffer.from('{broken')});

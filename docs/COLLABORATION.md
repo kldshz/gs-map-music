@@ -130,3 +130,7 @@ Codex完成官方CLI来源/清洗/挂载规则、契约与验证、评价存储�
 工单[S3-SIDEBAR-UI-001](WORK_ORDERS/S3-SIDEBAR-UI-001.md)及[R1](WORK_ORDERS/S3-SIDEBAR-UI-001-R1.md)实际调用本机CLI2.1.291，固定claude-opus-5-5/--effort high、stdin、工具禁用，均success/is_error=false、唯一modelUsage一致。初版允许App/MusicSidebar/CSS，返修精确替换及CSS追加，文件不并发编辑；时长与核实摘要见[RESULT](WORK_ORDERS/S3-SIDEBAR-UI-001.RESULT.json)。
 
 Claude主导三栏、可折叠信息、开发编辑控件、移动端和焦点设计。Codex审核修正虚构的selectedTrack.associations/editRecordFor接口，按真实证据状态计算计数；整合地图同ID重选与展开、删除后恢复条件、全局反馈、评价草稿watch。Codex完成范围规则/领域/本机中间件/数据库/测试/表格/记录/Git，没有静默更换视觉模型。原始响应与凭据只在.local，不提交内部推理。既有网关身份与effort回显限制沿用。
+
+## C3-04：OST展示调整
+
+实际工单[S3-OST-DISPLAY-001](WORK_ORDERS/S3-OST-DISPLAY-001.md)，本机CLI2.1.291固定claude-opus-5-5/--effort high，stdin、禁用工具，唯一modelUsage一致，success/is_error=false，91163ms。Claude交付MusicSidebar精确替换与CSS，Codex核对唯一old/白名单整合，构建通过；原始响应仅.local。首次CLI参数拼接未发模型，修正后成功，没有模型替换。

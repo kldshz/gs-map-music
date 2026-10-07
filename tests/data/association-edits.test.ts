@@ -7,10 +7,10 @@ const snapshot=validateSnapshot(JSON.parse(await readFile('public/data/kongying-
 const base=validateLibrary(JSON.parse(await readFile('public/data/music-library.json','utf8')),new Set(snapshot.anchors.map(a=>a.id)),snapshot);
 const empty={schemaVersion:1 as const,edits:[]};
 
-test('16泛范围曲覆盖20普通蒙德点，精确区域排除且剧情不扩散',()=>{
-  const scopes=base.associations.filter(a=>a.matchType==='region-scope');assert.equal(scopes.length,320);
-  assert.equal(new Set(scopes.map(a=>a.trackId)).size,16);assert.equal(new Set(scopes.map(a=>a.anchorId)).size,20);
-  for(const a of scopes){const p=snapshot.anchors.find(p=>p.id===a.anchorId)!;assert.equal(p.areaCode,'A:MD:MENGDE');assert(!p.content.includes('蒙德城')&&!p.content.includes('风龙废墟'));assert.equal(a.evidenceStatus,'pending');}
+test('野外不覆盖专属场景；通用战斗覆盖风龙废墟但排除城市',()=>{
+  const scopes=base.associations.filter(a=>a.matchType==='region-scope');assert.equal(scopes.length,330);
+  assert.equal(new Set(scopes.map(a=>a.trackId)).size,16);assert.equal(new Set(scopes.map(a=>a.anchorId)).size,25);
+  for(const a of scopes){const p=snapshot.anchors.find(p=>p.id===a.anchorId)!;assert.equal(p.areaCode,'A:MD:MENGDE');assert(!p.content.includes('【蒙德 蒙德城】'));if(p.content.includes('风龙废墟'))assert(['光辉的涨落','解决之道'].includes(base.tracks.find(t=>t.id===a.trackId)!.sceneInfo!.wikiTitle));assert.equal(a.evidenceStatus,'pending');}
   const loading=base.tracks.find(t=>t.sceneInfo?.wikiTitle==='宁静的黄昏')!;assert.equal(base.associations.filter(a=>a.trackId===loading.id).length,1);assert.equal(base.associations.find(a=>a.trackId===loading.id)?.matchType,'region-archive');
 });
 test('增删恢复关系不改曲目/来源，重复添加不损证据，多方向共享结果',()=>{

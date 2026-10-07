@@ -10,7 +10,7 @@ const raw=JSON.parse(await readFile('public/data/music-library.json','utf8'));
 const library=validateLibrary(raw,ids,snapshot);
 const source=JSON.parse(await readFile('data/sources/city-winds-source.json','utf8'));
 test('63曲一一对应Wiki曲序和网易ID，出处/未知项/个人评价独立',()=>{
-  assert.equal(library.tracks.length,63);assert.equal(library.associations.length,394);assert.equal(library.musicLocations?.length,40);
+  assert.equal(library.tracks.length,63);assert.equal(library.associations.length,404);assert.equal(library.musicLocations?.length,40);
   assert.equal(new Set(library.tracks.map(t=>t.neteaseId)).size,63);
   assert.deepEqual([1,2,3].map(n=>library.tracks.filter(t=>t.sceneInfo?.discNumber===n).length),[25,26,12]);
   for(const t of library.tracks){const s=source.tracks.find((s:any)=>s.neteaseId===t.neteaseId);assert(s);assert.equal(t.title,s.neteaseTitle);assert.equal(t.neteaseEncryptedId,s.neteaseEncryptedId);assert.equal(t.sceneInfo?.originText,s.originText);assert.equal(t.durationSeconds,s.durationSeconds);assert.equal(t.personalNote,'');assert.equal(t.releaseDate,'2020-09-28');assert.deepEqual(t.composers,['陈致逸']);}
