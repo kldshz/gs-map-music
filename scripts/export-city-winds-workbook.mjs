@@ -4,17 +4,17 @@ import { Workbook, SpreadsheetFile } from '@oai/artifact-tool';
 
 const library=JSON.parse(await fs.readFile('public/data/music-library.json','utf8'));
 const map=JSON.parse(await fs.readFile('public/data/kongying-map.json','utf8'));
-const out='outputs/city-winds-pilot-20261007';
+const out='outputs/city-winds-region-20261007';
 const tracks=library.tracks.filter(t=>t.sceneInfo?.wikiRevisionId==='687233');
 const links=library.associations.filter(a=>tracks.some(t=>t.id===a.trackId));
 const labels=t=>library.musicLocations.filter(p=>t.sceneInfo.musicLocationIds.includes(p.id)).map(p=>`${p.country} / ${map.areas.find(a=>a.id===p.areaId).name} / ${p.name}`).join('；');
-const matchLabels={'place-match':'地点匹配','parent-place-match':'父级地点匹配','region-archive':'地区神像归档（非实际播放点）'};
+const matchLabels={'place-match':'地点匹配','parent-place-match':'父级地点匹配','region-archive':'地区神像归档（非实际播放点）','region-scope':'地区范围候选（待核实）','manual':'用户手动挂载（待核实）'};
 const headers=['曲目Key','中文名','英文名（Wiki）','主要地区','音乐细分目录','个人评价（填写）','出处原文（Wiki）','专辑（网易）','分碟','碟内曲序','艺人（网易）','作曲','时长（秒）','发行日期（北京时间）','网易数字ID','网易加密ID','挂载方式','Wiki出处来源','网易歌曲来源','元数据备注'];
 const rows=tracks.map(t=>[t.id,t.sceneInfo.wikiTitle,t.sceneInfo.englishTitle,t.sceneInfo.mainRegions.join('；'),labels(t),t.personalNote??'',t.sceneInfo.originText,t.album,t.sceneInfo.discTitle,t.sceneInfo.trackNumber,t.artists.join(' / '),t.composers.join(' / '),t.durationSeconds,
   Date.parse(t.releaseDate+'T00:00:00Z')/86400000+25569,t.neteaseId,t.neteaseEncryptedId,[...new Set(links.filter(a=>a.trackId===t.id).map(a=>matchLabels[a.matchType]))].join('；'),t.sceneInfo.wikiSourceUrl,t.sourceUrl,t.sceneInfo.metadataNotes.join('；')]);
 const linkHeaders=['关联Key','曲目Key','中文名','点位Key','类型','国家','源地区','点位原说明','原始坐标1','原始坐标2','音乐细分目录','匹配方式','证据状态','挂载证据与限制','出处来源'];
 const linkRows=links.map(a=>{const p=map.anchors.find(p=>p.id===a.anchorId),t=tracks.find(t=>t.id===a.trackId);return [a.id,a.trackId,t.sceneInfo.wikiTitle,a.anchorId,p.kind==='statue'?'七天神像':'传送锚点',p.country,p.areaName,p.content,p.position?.[0]??null,p.position?.[1]??null,labels(t),a.matchType,a.evidenceStatus,a.evidenceNote,a.sourceUrl];});
-assert.equal(rows.length,63);assert.equal(linkRows.length,122);assert(rows.every(r=>r[5]===''));
+assert.equal(rows.length,63);assert.equal(linkRows.length,library.associations.length);assert(rows.every(r=>r[5]===''));
 await fs.mkdir(out,{recursive:true});
 const escape=v=>'"'+String(v??'').replaceAll('"','""')+'"';
 // CSV uses ISO dates for interoperability; XLSX stores numeric sortable dates.
@@ -40,11 +40,13 @@ function sheet(name,title,context,h,r,widths,tableName){
 }
 const s=sheet('曲目','风与牧歌之城曲目表','63首，3分碟。出处保留Wiki原文，个人评价默认空。采集：2026-10-07。',headers,rows,[27,26,48,43,55,65,75,55,53,12,27,16,14,20,20,44,55,65,55,85],'CityWindsTracks');
 s.getRange('F7:F69').format.fill='#FFF2CC';s.getRange('M7:M69').setNumberFormat('0.000');s.getRange('N7:N69').setNumberFormat('yyyy-mm-dd');s.getRange('O7:P69').setNumberFormat('@');
-const a=sheet('挂载','风与牧歌之城点位挂载表','122条候选关系，16个点位。地点匹配22、父级地点10、神像归档90，全部pending。',linkHeaders,linkRows,[40,27,26,25,18,16,30,80,18,18,55,30,18,115,65],'CityWindsAssociations');
-for(const c of ['D','L','M','N'])a.getRange(`${c}7:${c}128`).format.fill='#FFF2CC';
-a.getRange('I7:J128').setNumberFormat('0.########');
-a.getRange('L7:L128').dataValidation={rule:{type:'list',values:['place-match','parent-place-match','region-archive']}};
-a.getRange('M7:M128').dataValidation={rule:{type:'list',values:['pending','verified']}};
+const typeCounts=Object.fromEntries(Object.keys(matchLabels).map(k=>[k,links.filter(a=>a.matchType===k).length]));
+const a=sheet('挂载','风与牧歌之城点位挂载表',`${linkRows.length}条候选关系，${new Set(links.map(a=>a.anchorId)).size}个点位。地点${typeCounts['place-match']}、父级${typeCounts['parent-place-match']}、地区范围${typeCounts['region-scope']}、神像归档${typeCounts['region-archive']}、手动${typeCounts.manual}；当前全部待核实。`,linkHeaders,linkRows,[40,27,26,25,18,16,30,80,18,18,55,30,18,115,65],'CityWindsAssociations');
+const linkEnd=6+linkRows.length;
+for(const c of ['D','L','M','N'])a.getRange(`${c}7:${c}${linkEnd}`).format.fill='#FFF2CC';
+a.getRange(`I7:J${linkEnd}`).setNumberFormat('0.########');
+a.getRange(`L7:L${linkEnd}`).dataValidation={rule:{type:'list',values:Object.keys(matchLabels)}};
+a.getRange(`M7:M${linkEnd}`).dataValidation={rule:{type:'list',values:['pending','verified']}};
 wb.recalculate();
 console.log((await wb.inspect({kind:'region',sheetId:s.name,range:'A6:F10',maxChars:1600,tableMaxCols:6,tableMaxRows:5})).ndjson);
 console.log((await wb.inspect({kind:'match',searchTerm:'#REF!|#DIV/0!|#VALUE!|#NAME\\?|#NUM!|#SPILL!',options:{useRegex:true,maxResults:5},maxChars:500})).ndjson);
@@ -52,4 +54,5 @@ for(const [name,range,file] of [['曲目','A1:D10','album-table'],['曲目','E6:
   const preview=await wb.render({sheetName:name,range,scale:1.2,format:'png'});await fs.writeFile(`.local/region-sheet/${file}.png`,new Uint8Array(await preview.arrayBuffer()));
 }
 const xlsx=await SpreadsheetFile.exportXlsx(wb);await xlsx.save(out+'/风与牧歌之城曲目与挂载表.xlsx');
-console.log('EXPORTED 63 tracks, 122 associations, independent blank personalNote');
+await fs.writeFile(`${out}/music-library.json`,JSON.stringify(library,null,2)+'\n');
+console.log(`EXPORTED ${rows.length} tracks, ${linkRows.length} associations, independent blank personalNote`);

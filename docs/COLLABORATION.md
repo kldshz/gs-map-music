@@ -123,3 +123,10 @@ Codex主导真实地图适配/MapCanvas、领域与检索/校验、MySQL初始�
 Claude返回完整App.vue与CSS追加，主导真实63曲/出处/细目录/挂载说明/评价编辑交互。Codex去除返回围栏并精确修复唯一未转义搜索模板双引号后解析，核对白名单落盘。局部整合修正艺人标签、无效v-else/has-text、空源值恢复、清除失败不改草稿、按trackId+anchorId查全库关系；没有替代Claude重做视觉。
 
 Codex完成官方CLI来源/清洗/挂载规则、契约与验证、评价存储、MySQL迁移导入、Excel/CSV、测试与记录。16数据测试/类型构建通过，13项Edge UI合计通过（首轮一处测试标签期望修正后定向复测），实际查看桌面/手机/评价与表格预览。[结果摘要](WORK_ORDERS/S3-ALBUM-UI-001.RESULT.json)，原始响应仅.local/claude-runs。网关不能独立认证上游身份、内部effort未回显的限制不变；没有播放/路线交付。
+
+
+## C3-03：右栏与开发编辑（2026-10-07）
+
+工单[S3-SIDEBAR-UI-001](WORK_ORDERS/S3-SIDEBAR-UI-001.md)及[R1](WORK_ORDERS/S3-SIDEBAR-UI-001-R1.md)实际调用本机CLI2.1.291，固定claude-opus-5-5/--effort high、stdin、工具禁用，均success/is_error=false、唯一modelUsage一致。初版允许App/MusicSidebar/CSS，返修精确替换及CSS追加，文件不并发编辑；时长与核实摘要见[RESULT](WORK_ORDERS/S3-SIDEBAR-UI-001.RESULT.json)。
+
+Claude主导三栏、可折叠信息、开发编辑控件、移动端和焦点设计。Codex审核修正虚构的selectedTrack.associations/editRecordFor接口，按真实证据状态计算计数；整合地图同ID重选与展开、删除后恢复条件、全局反馈、评价草稿watch。Codex完成范围规则/领域/本机中间件/数据库/测试/表格/记录/Git，没有静默更换视觉模型。原始响应与凭据只在.local，不提交内部推理。既有网关身份与effort回显限制沿用。

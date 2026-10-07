@@ -59,8 +59,9 @@ export function validateLibrary(value:unknown,anchorIds:Set<string>,snapshot?:Ma
   for(const a of value.associations){
     if(!record(a)||!ids.has(String(a.trackId))||!anchorIds.has(String(a.anchorId))||!['pending','verified'].includes(String(a.evidenceStatus))||!text(a.evidenceNote)||!url(a.sourceUrl))throw new Error(`关联无效或引用不存在：${a?.id??'未知ID'}`);
     if(a.evidenceStatus==='verified'&&(!a.evidenceNote.trim()||!a.sourceUrl))throw new Error('已核实关联必须有证据说明和来源URL');
-    if(a.matchType!==undefined&&!['place-match','parent-place-match','region-archive'].includes(String(a.matchType)))throw new Error('关联方式无效');
+    if(a.matchType!==undefined&&!['place-match','parent-place-match','region-archive','region-scope','manual'].includes(String(a.matchType)))throw new Error('关联方式无效');
     if(a.matchType==='region-archive'&&a.evidenceStatus!=='pending')throw new Error('地区归档不能伪装成已核实播放地点');
+    if(['region-scope','manual'].includes(String(a.matchType))&&a.evidenceStatus!=='pending')throw new Error('范围候选或手动挂载必须待核实');
     if(a.matchType==='region-archive'&&snapshot?.anchors.find(p=>p.id===a.anchorId)?.kind!=='statue'&&snapshot)throw new Error('地区归档必须挂载到神像');
     const edge=JSON.stringify([a.trackId,a.anchorId]);if(edges.has(edge))throw new Error('重复曲目—点位关联');edges.add(edge);
   }

@@ -45,7 +45,7 @@ export interface MusicLocation {
   /** area fields describe the archive namespace; scene locations can be geographically unresolved. */
   kind:'place'|'scene'; sourceUrl:string; notes:string;
 }
-export type AssociationMatch = 'place-match'|'parent-place-match'|'region-archive';
+export type AssociationMatch = 'place-match'|'parent-place-match'|'region-archive'|'region-scope'|'manual';
 export interface TrackAnchor {
   id:string; trackId:string; anchorId:string; evidenceStatus:'pending'|'verified'; evidenceNote:string; sourceUrl:string|null;
   matchType?:AssociationMatch;

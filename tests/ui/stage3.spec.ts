@@ -16,11 +16,11 @@ test('真实地图瓦片、27个蒙德点位、地图点击和键盘神像入口
   await expect.poll(()=>page.locator('.leaflet-tile-loaded').count(),{timeout:30000}).toBeGreaterThan(0);
   await expect(page.locator('.music-anchor')).toHaveCount(27);
   await page.locator(`[data-anchor-id="${waypoint.id}"]`).click({force:true});
-  await expect(page.locator('.anchor-dialog')).toBeVisible();await expect(page.locator('.anchor-dialog')).toContainText('尚未补充音乐关系数据');
-  await page.keyboard.press('Escape');await expect(page.locator('.anchor-dialog')).not.toBeVisible();
+  await expect(page.locator('.detail-view')).toBeVisible();await expect(page.locator('.detail-view')).toContainText('关联音乐（16）');
+  await page.keyboard.press('Escape');await expect(page.locator('.detail-view')).not.toBeVisible();
   await page.getByRole('button',{name:'神像',exact:true}).click();await expect(page.locator('.anchor-list button')).toHaveCount(4);
-  await page.locator('.anchor-list button').first().focus();await page.keyboard.press('Enter');await expect(page.locator('.anchor-dialog')).toBeVisible();
-  await expect(page.locator('.anchor-dialog')).toContainText('神像');await page.keyboard.press('Escape');
+  await page.locator('.anchor-list button').first().focus();await page.keyboard.press('Enter');await expect(page.locator('.detail-view')).toBeVisible();
+  await expect(page.locator('.detail-view')).toContainText('神像');await page.keyboard.press('Escape');
   await expect(page.getByRole('button',{name:'播放',exact:true})).toBeDisabled();expect(await page.locator('audio').count()).toBe(0);
   await expect(page.locator('body')).not.toContainText('白天');await expect(page.locator('body')).not.toContainText('Carefree');expect(errors).toEqual([]);
 });
@@ -41,12 +41,12 @@ test('空曲库/校验失败及多对多反向定位；缺值未知、pending显
   await page.locator('input[type=file]').setInputFiles({name:'metadata.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(fixture))});
   await expect(page.locator('.import-message').first()).toContainText('已导入1首曲目');
   await page.getByLabel('搜索点位、曲目、专辑、地区、细分目录或个人评价').fill('测试元数据专辑');await expect(page.locator('.track-list button')).toHaveCount(1);
-  await page.locator('.track-list button').focus();await page.keyboard.press('Space');await expect(page.locator('.track-dialog')).toBeVisible();
-  await expect(page.locator('.track-dialog')).toContainText('未知');await expect(page.locator('.track-dialog')).toContainText('待核实2');
-  await expect(page.locator('.location-list button')).toHaveCount(2);await page.getByRole('button',{name:'在地图上定位全部'}).click();
-  await expect(page.locator('.track-dialog')).not.toBeVisible();await expect(page.locator('.music-anchor.is-highlighted')).toHaveCount(2);
+  await page.locator('.track-list button').focus();await page.keyboard.press('Space');await expect(page.locator('.detail-view')).toBeVisible();
+  await expect(page.locator('.detail-view')).toContainText('未知');await expect(page.locator('.detail-view')).toContainText('待核实2');
+  await page.getByText('关联点位（2）',{exact:true}).click();await expect(page.locator('.location-list button')).toHaveCount(2);await page.getByRole('button',{name:'在地图上定位全部'}).click();
+  await expect(page.locator('.detail-view')).toBeVisible();await expect(page.locator('dialog')).toHaveCount(0);await expect(page.locator('.music-anchor.is-highlighted')).toHaveCount(2);
   await page.locator('input[type=file]').setInputFiles({name:'bad.json',mimeType:'application/json',buffer:Buffer.from('{broken')});
-  await expect(page.locator('.import-message').first()).toContainText('导入失败');await expect(page.locator('.track-list button')).toHaveCount(1);
+  await expect(page.locator('.import-message').first()).toContainText('导入失败');await page.getByRole('button',{name:'曲目检索',exact:true}).click();await expect(page.locator('.track-list button')).toHaveCount(1);
   await page.getByLabel('搜索点位、曲目、专辑、地区、细分目录或个人评价').fill('没有这首曲目');await expect(page.getByText('没有与"没有这首曲目"匹配的曲目')).toBeVisible();
 });
 
@@ -63,9 +63,9 @@ for(const width of [390,320])test(`手机${width}px布局/面板/键盘可用`,a
   const bounds=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,width:innerWidth,map:document.querySelector('.map-container')!.getBoundingClientRect().height,footer:document.querySelector('footer')!.getBoundingClientRect().bottom}));
   expect(bounds.scroll).toBeLessThanOrEqual(width);expect(bounds.map).toBeGreaterThanOrEqual(240);expect(bounds.footer).toBeLessThanOrEqual(845);
   await page.getByRole('button',{name:'收起面板'}).click();await page.getByRole('button',{name:'展开面板'}).click();
-  await page.locator('.anchor-list button').first().click();await expect(page.locator('.anchor-dialog')).toBeVisible();
-  const dialog=await page.locator('.anchor-dialog').boundingBox();expect(dialog!.x).toBeGreaterThanOrEqual(0);expect(dialog!.width).toBeLessThanOrEqual(width);
-  await page.keyboard.press('Escape');await expect(page.locator('.anchor-dialog')).not.toBeVisible();
+  await page.locator('.anchor-list button').first().click();await expect(page.locator('.detail-view')).toBeVisible();
+  const dialog=await page.locator('.detail-view').boundingBox();expect(dialog!.x).toBeGreaterThanOrEqual(0);expect(dialog!.width).toBeLessThanOrEqual(width);
+  await page.keyboard.press('Escape');await expect(page.locator('.detail-view')).not.toBeVisible();
   await expect(page.locator('.map-status')).toContainText('真实地图已加载',{timeout:30000});
   await page.screenshot({path:`.local/browser-tests/stage3-mobile-${width}.png`});
 });
@@ -93,7 +93,7 @@ test('无坐标关联显示待核实，全部定位不虚构位置',async({page}
   await page.route('**/data/kongying-map.json',r=>r.fulfill({json:missing}));await ready(page);
   await page.getByRole('button',{name:'曲目检索',exact:true}).click();
   await page.locator('input[type=file]').setInputFiles({name:'missing.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({...fixture,associations:[fixture.associations[1]]}))});
-  await page.locator('.track-list button').click();await expect(page.locator('.location-list')).toContainText('坐标待核实');
+  await page.locator('.track-list button').click();await page.getByText('关联点位（1）',{exact:true}).click();await expect(page.locator('.location-list')).toContainText('坐标待核实');
   await page.getByRole('button',{name:'在地图上定位全部'}).click();
   await expect(page.locator('.map-status')).toContainText('没有可用坐标');
   await expect(page.locator(`[data-anchor-id="${waypoint.id}"]`)).toHaveCount(0);

@@ -24,7 +24,7 @@ V3源码参考固定提交`0e80dd090329cb4964360ef42d2ed6016cf7cc15`，MulanPSL2
 
 MusicTrack存title/artists/composers/album/releaseDate/durationSeconds/description/neteaseId/sourceUrl。未知字段用null或空数组，不以artist代作曲。TrackAnchor连接trackId与anchorId，有独立ID、pending/verified、证据说明和URL。verified须证据字段齐全，但格式校验不等于事实审查；pending可展示/定位供核对，禁止将它当自动选曲证据。取消所有昼夜字段/筛选。
 
-`public/data/music-library.json`当前63曲/122条pending/40目录，来源与显式规则见[CITY_WINDS_PILOT](CITY_WINDS_PILOT.md)。MusicTrack新增可选personalNote、neteaseEncryptedId、sceneInfo（Wiki曲序/原文/地区/目录/修订/备注）。MusicLocation按国家/源地区/细地点或场景，引用areaId/code，scene不冒充所在地。TrackAnchor.matchType为地点直接/父级地点/神像归档，后者强制pending与神像。目录不改变点位content/坐标，建筑借城级点，不虚构室内点位。
+`public/data/music-library.json`当前63曲/394条pending/40目录，来源与显式规则见[CITY_WINDS_PILOT](CITY_WINDS_PILOT.md)。MusicTrack新增可选personalNote、neteaseEncryptedId、sceneInfo（Wiki曲序/原文/地区/目录/修订/备注）。MusicLocation按国家/源地区/细地点或场景，引用areaId/code，scene不冒充所在地。TrackAnchor.matchType为地点直接/父级地点/神像归档/地区范围候选/用户手动挂载；归档强制pending且仅神像，region-scope与manual强制pending。目录不改变点位content/坐标，建筑借城级点，不虚构室内点位。
 
 快照加载会检查格式、唯一地区/点位ID、父引用/循环、点位地区ID与代码一致、坐标与链接。音乐JSON导入检查schemaVersion1、必填字段/类型、唯一ID、重复关系、引用、时长、网易纯数字ID、安全HTTP(S)链接、verified证据字段。限制8MB/10000曲/50000关系，失败保留旧库，未知字段挑选剔除，不接受音频URL。当前没有任意地图包上传界面；地图替换需更新快照并运行检查。
 
@@ -36,10 +36,17 @@ MusicTrack存title/artists/composers/album/releaseDate/durationSeconds/descripti
 
 ## 存储与后续播放接口
 
-本机MySQL8.0.40独立gs_map_music六表：area/anchor/music_track/track_anchor/music_location/track_music_location，外键与组合唯一键支持多对多。personal_note独立文本，另有加密ID/scene_info/match_type。凭据只存忽略目录。db:setup更新来源点位，db:import校验/幂等迁移并补新行，保留已有评价和关系；当前63曲/122关系/40目录/63曲目目录关系。页面只读JSON，无MySQL HTTP CRUD/自动同步。
+本机MySQL8.0.40独立gs_map_music六表：area/anchor/music_track/track_anchor/music_location/track_music_location，外键与组合唯一键支持多对多。personal_note独立文本，另有加密ID/scene_info/match_type。凭据只存忽略目录。db:setup更新来源点位，db:import校验/幂等迁移并补新行，保留已有评价和关系；当前63曲/394关系/40目录/63曲目目录关系。页面只读JSON，无MySQL HTTP CRUD/自动同步。
 
 阶段4的PlaybackResource契约预留ready(provider/url/expiresAt/preview)或unavailable(reason/message)，实现尚未开始。网易appid/privateKey在服务侧，root密码禁止放前端；URL到期、试听/权限/版权、账号登录和浏览器实际发声单独验收。官方CLI登录成功不能替代网页解析或播放成功。可用用户本地普通原神音频作演示，文件不入Git。无合法可用原神音源时真实播放验收保持未通过。
 
 播放实例与地图/面板生命周期分离，play()错误/用户手势/异步请求版本号/objectURL释放留阶段4。本轮personal-notes服务用版本化localStorage只保存用户评价覆盖，按稳定ID与导入personalNote/description/出处分开；刷新/清空/恢复/损坏防覆盖/失败反馈已验证。收藏/列表及数据库编辑API仍留阶段4，不将会话JSON或本机评价说成MySQL同步。
 
 路线编辑/空间判区/时钟/选曲和过渡留阶段5，见[路线计划](ROUTE_TEST_PLAN.md)。当前无真实区域多边形，必须先定义可审查的近似规则；所有昼夜要求已撤销。
+
+
+## 开发环境关联编辑（2026-10-07）
+
+使用npm run dev，在右栏点位曲库搜索歌曲并添加/移除，或在歌曲信息的关联点位分段中按地区和文字选择点位增删。关联修改成功后曲库/计数立即更新，刷新保留。删除来源关系可恢复来源；手动新增关系删除后不显示来源恢复。歌曲元数据和原始证据不改，手动新增始终manual/pending。
+
+Vite只在开发服务提供本机/__dev/music-links，记录写data/association-edits.json，按稳定曲目ID与点位ID保存add/remove覆盖。该文件为空基线纳入版本管理，用户编辑表现为可审查的Git修改；构建应用这些记录到静态曲库。生产页面没有编辑控件/写接口。仅本机Host与同源JSON请求可写，测试用.local独立文件，不污染用户修改。可导出当前曲库JSON；临时导入后编辑禁用，刷新回内置库。没有MySQL自动同步，修改评价仍只保存在当前浏览器。

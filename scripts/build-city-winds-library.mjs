@@ -7,10 +7,11 @@ const byAnchor=new Map(snapshot.anchors.map(a=>[a.id,a]));
 const md=snapshot.anchors.filter(a=>a.areaCode==='A:MD:MENGDE');
 const city=md.filter(a=>a.content.includes('【蒙德 蒙德城】'));
 const ruins=md.filter(a=>a.content.includes('【蒙德 风龙废墟】'));
-const outdoor=md.filter(a=>a.kind==='statue'&&!a.content.includes('风龙废墟'));
+// Broad source ranges cover ordinary Mondstadt points; specific soundscapes keep their own library.
+const outdoor=md.filter(a=>!city.some(p=>p.id===a.id)&&!ruins.some(p=>p.id===a.id));
 const ly=snapshot.anchors.filter(a=>a.areaCode==='A:LY:LIYUE'&&a.kind==='statue');
 const fallback=[byAnchor.get('kongying:6557')];
-assert.equal(city.length,2);assert.equal(ruins.length,5);assert.equal(outdoor.length,3);assert.equal(ly.length,5);
+assert.equal(city.length,2);assert.equal(ruins.length,5);assert.equal(outdoor.length,20);assert.equal(ly.length,5);
 const rules=new Map();
 function rule(numbers,name,anchors,matchType,notes='',areaCode='A:MD:MENGDE',kind='place',regions=['蒙德']){
  for(const number of numbers)rules.set(number,{name,anchors,matchType,notes,areaCode,kind,regions});
@@ -23,9 +24,9 @@ rule([22],'风魔龙进城（剧情）',city,'parent-place-match','“进城”�
 rule([61],'蒙德城内 · 特瓦林（剧情战斗）',city,'parent-place-match','出处直接列特瓦林(蒙德城内)，只能匹配城级锚点；非城内常驻音乐。','A:MD:MENGDE','scene');
 rule([28,29],'晨曦酒庄', [byAnchor.get('kongying:6555')],'region-archive','出处明确酒庄，现有点位说明没有“晨曦酒庄”。借苍风高地神像归档；归档不证明神像位置就是酒庄音区。');
 rule([30],'尘歌壶 · 翠黛峰（当前）；晨曦酒庄（历史）',fallback,'region-archive','原文区分原/现出处，不把历史酒庄位置当现行播放地点。暂无尘歌壶地图，以专辑归属借蒙德神像归档。','A:MD:MENGDE','scene',['尘歌壶（当前）','蒙德 · 晨曦酒庄（历史）']);
-rule([31,32,35,36,37,38,40,41,42,43,44,45,46,50],'蒙德野外',outdoor,'region-archive','出处只到蒙德野外，无更细音区证据；归档到星落湖/苍风高地/风起地三个神像，不扩展为全部锚点的已核实BGM。');
+rule([31,32,35,36,37,38,40,41,42,43,44,45,46,50],'蒙德野外',outdoor,'region-scope','按用户范围规则，将明确“蒙德野外”的曲目挂到蒙德源地区20个普通点位；蒙德城与风龙废墟保留专属音乐。范围推定待核实，未逐点确认实际音乐触发，不外推其它独立地区。');
 rule([47,48],'风龙废墟',ruins,'place-match','出处明确风龙废墟，原点位说明匹配四个锚点与一个神像；实际精确音区/触发仍待复核。');
-rule([52,53],'蒙德战斗',outdoor,'region-archive','原出处为蒙德战斗，不是地区静态环境BGM；归档到三处蒙德神像。','A:MD:MENGDE','scene');
+rule([52,53],'蒙德战斗',outdoor,'region-scope','出处明确蒙德战斗，按用户范围规则挂到20个普通蒙德点位。保留战斗语境和待核实，不将它写成常驻环境音乐；专属点位不追加泛地区候选。','A:MD:MENGDE','scene');
 rule([54],'西风之鹰的庙宇',fallback,'region-archive','保留Wiki原名；详情页404、现有锚点说明无同名。仅按蒙德篇归档，秘境名称/方位待核对。','A:MD:MENGDE','place',['蒙德（专辑归属；秘境位置待核对）']);
 rule([55],'芬德尼尔之顶',[byAnchor.get('kongying:6558')],'region-archive','秘境页面所属地区为龙脊雪山。无秘境同名锚点，归档到该源地区唯一神像，非覆雪之路常驻BGM。','A:MD:XUESHAN','place',['蒙德 · 龙脊雪山']);
 rule([56],'太山府',ly,'region-archive','秘境页面明确属于璃月；无同名锚点，挂在源地区璃月的五个神像。没有推定到更细真实音区。','A:LY:LIYUE','place',['璃月']);
@@ -68,12 +69,13 @@ assert(tracks.every(t=>associations.some(a=>a.trackId===t.id)));assert(associati
 // Refuse to replace a reviewed/user-edited library; snapshots are not a sync API.
 const current=JSON.parse(await fs.readFile('public/data/music-library.json','utf8'));
 let previous=null;
-try{previous=JSON.parse(await fs.readFile('outputs/city-winds-pilot-20261007/music-library.json','utf8'));}catch(error){if(error.code!=='ENOENT')throw error;}
+try{previous=JSON.parse(await fs.readFile('outputs/city-winds-region-20261007/music-library.json','utf8'));}catch(error){if(error.code!=='ENOENT')throw error;
+ previous=JSON.parse(await fs.readFile('outputs/city-winds-pilot-20261007/music-library.json','utf8'));}
 if(current.tracks.length||current.associations.length){
  assert(previous&&JSON.stringify(current)===JSON.stringify(previous),'曲库已有改动；请先备份并人工合并，不自动覆盖个人评价或挂载。');
 }
 await fs.writeFile('public/data/music-library.json',JSON.stringify(library,null,2)+'\n');
-await fs.mkdir('outputs/city-winds-pilot-20261007',{recursive:true});
-await fs.writeFile('outputs/city-winds-pilot-20261007/music-library.json',JSON.stringify(library,null,2)+'\n');
+await fs.mkdir('outputs/city-winds-region-20261007',{recursive:true});
+await fs.writeFile('outputs/city-winds-region-20261007/music-library.json',JSON.stringify(library,null,2)+'\n');
 console.log(JSON.stringify({tracks:tracks.length,associations:associations.length,musicLocations:musicLocations.length,matchedAnchors:new Set(associations.map(a=>a.anchorId)).size,
- matchTypes:Object.fromEntries(['place-match','parent-place-match','region-archive'].map(k=>[k,associations.filter(a=>a.matchType===k).length])),allPending:true,personalNotesBlank:tracks.every(t=>t.personalNote==='')},null,2));
+ matchTypes:Object.fromEntries(['place-match','parent-place-match','region-archive','region-scope'].map(k=>[k,associations.filter(a=>a.matchType===k).length])),allPending:true,personalNotesBlank:tracks.every(t=>t.personalNote==='')},null,2));

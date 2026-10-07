@@ -3,6 +3,7 @@ import type { Anchor, LayerNode, MapSnapshot, MusicLibrary, ResolvedMap } from '
 import { validateLibrary, validateSnapshot } from '../domain/validation';
 import { resolveMap } from '../adapters/kongying-config';
 import { usePersonalNotes } from './personal-notes';
+import type { AssociationEdits, EditOperation } from '../domain/association-edits';
 
 export function useExplorer() {
   const notes=usePersonalNotes();
@@ -10,6 +11,9 @@ export function useExplorer() {
   const loading=ref(false),error=ref(''),importMessage=ref(''),query=ref('');
   const areaCode=ref('A:MD:MENGDE'),selectedAnchorId=ref(''),selectedTrackId=ref('');
   const typeFilter=ref<'all'|'waypoint'|'statue'>('all'),layerFilter=ref('all');
+  const developmentMode=import.meta.env?.DEV===true;
+  const editingAvailable=ref(false),editBusy=ref(false),editMessage=ref('');
+  const manualEdits=ref<AssociationEdits>({schemaVersion:1,edits:[]});
   const highlightedIds=ref<string[]>([]),focusRequest=ref(0),mapStatus=ref('等待加载地图');
   const areas=computed(()=>snapshot.value?.areas??[]),anchors=computed(()=>snapshot.value?.anchors??[]);
   const roots=computed(()=>areas.value.filter(a=>a.parentId===-1&&a.hiddenFlag!==3));
@@ -56,6 +60,11 @@ export function useExplorer() {
       snapshot.value=next;
       const music=await fetch('/data/music-library.json');if(!music.ok)throw new Error(`曲库数据HTTP ${music.status}`);
       library.value=validateLibrary(await music.json(),new Set(next.anchors.map(a=>a.id)),next);
+      if(import.meta.env?.DEV){
+        try{const result=await (await import('./development-links')).developmentLibrary();
+          library.value=validateLibrary(result.library,new Set(next.anchors.map(a=>a.id)),next);manualEdits.value=result.edits;editingAvailable.value=true;
+        }catch{editingAvailable.value=false;editMessage.value='开发编辑服务加载失败，请重试加载；仍可浏览原曲库。';}
+      }
     }catch(cause){error.value=cause instanceof Error?cause.message:'数据加载失败'}finally{loading.value=false}
   }
   function selectArea(code:string){if(!areas.value.some(a=>a.code===code&&a.isFinal))return;areaCode.value=code;selectedAnchorId.value='';layerFilter.value='all';highlightedIds.value=[];}
@@ -72,12 +81,33 @@ export function useExplorer() {
     mapStatus.value=other?`已高亮当前地图；另有${other}处位于独立地图，请从关联列表选择`:`已高亮${points.length}个有坐标关联点位`;
   }
   function associationStatus(trackId:string){const links=library.value.associations.filter(a=>a.trackId===trackId);return links.length?`关联${links.length}处：已核实${links.filter(a=>a.evidenceStatus==='verified').length}，待核实${links.filter(a=>a.evidenceStatus==='pending').length}；无播放资源`:'暂无地点关联；无播放资源';}
+  function hasManualEdit(trackId:string,anchorId:string){return manualEdits.value.edits.some(e=>e.trackId===trackId&&e.anchorId===anchorId);}
+  async function editAssociation(op:EditOperation,trackId:string,anchorId:string){
+    if(!import.meta.env?.DEV||!editingAvailable.value||editBusy.value)return false;
+    editBusy.value=true;editMessage.value='正在保存关联…';
+    try{
+      const result=await (await import('./development-links')).developmentLibrary({op,trackId,anchorId});
+      library.value=validateLibrary(result.library,new Set(anchors.value.map(a=>a.id)),snapshot.value??undefined);manualEdits.value=result.edits;
+      editMessage.value=op==='restore'?'已恢复来源关联；修改已保存到本机项目。':op==='add'?'已添加关联并保存到本机项目；仍待核实。':'已移除关联并保存到本机项目；歌曲资料保持。';return true;
+    }catch(cause){editMessage.value=`关联保存失败：${cause instanceof Error?cause.message:'未知错误'}；当前曲库保持不变。`;return false;
+    }finally{editBusy.value=false;}
+  }
+  const addTrackToAnchor=(trackId:string,anchorId:string)=>editAssociation('add',trackId,anchorId);
+  const removeTrackFromAnchor=(trackId:string,anchorId:string)=>editAssociation('remove',trackId,anchorId);
+  const restoreTrackAnchor=(trackId:string,anchorId:string)=>editAssociation('restore',trackId,anchorId);
+  function exportEditedLibrary(){
+    if(!import.meta.env?.DEV)return;
+    const href=URL.createObjectURL(new Blob([JSON.stringify(library.value,null,2)+'\n'],{type:'application/json'}));
+    const link=document.createElement('a');link.href=href;link.download='music-library-edited.json';link.click();setTimeout(()=>URL.revokeObjectURL(href),1000);
+  }
   async function importLibrary(file:File){
     try{if(file.size>8*1024*1024)throw new Error('JSON文件超过8MB');const next=validateLibrary(JSON.parse(await file.text()),new Set(anchors.value.map(a=>a.id)),snapshot.value??undefined);
       library.value=next;selectedTrackId.value='';highlightedIds.value=[];importMessage.value=`已导入${next.tracks.length}首曲目、${next.associations.length}条关联；仅本次会话，无音源。请仅导入原神音乐。`;
+      if(import.meta.env?.DEV){editingAvailable.value=false;editMessage.value='当前为临时导入库；刷新后可编辑本机内置库。';}
     }catch(cause){importMessage.value=`导入失败：${cause instanceof Error?cause.message:'未知错误'}；原曲库保持不变。`;}
   }
   return {loading,error,areas,areaCode,selectedArea,roots,areaOptions,typeFilter,query,visibleAnchors,anchors,selectedAnchor,selectedAnchorId,highlightedIds,focusRequest,
     tracks,searchTracks,anchorTracks,selectedTrack,trackLocations,trackAssociations,associationFor,trackLocationLabels,anchorMusicContexts,musicLocations,...notes,
+    developmentMode,editingAvailable,editBusy,editMessage,hasManualEdit,addTrackToAnchor,removeTrackFromAnchor,restoreTrackAnchor,exportEditedLibrary,
     mapConfig,mapStatus,importMessage,layerOptions,layerFilter,load,selectArea,selectAnchor,selectTrack,locateTrack,associationStatus,importLibrary};
 }

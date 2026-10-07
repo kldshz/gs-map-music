@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS track_anchor (
   id VARCHAR(100) PRIMARY KEY, track_id VARCHAR(100) NOT NULL, anchor_id VARCHAR(80) NOT NULL,
   evidence_status ENUM('pending','verified') NOT NULL DEFAULT 'pending',
   evidence_note TEXT NOT NULL, source_url VARCHAR(500) NULL,
-  match_type ENUM('place-match','parent-place-match','region-archive') NULL,
+  match_type ENUM('place-match','parent-place-match','region-archive','region-scope','manual') NULL,
   UNIQUE KEY track_anchor_pair (track_id,anchor_id),
   FOREIGN KEY (track_id) REFERENCES music_track(id),
   FOREIGN KEY (anchor_id) REFERENCES anchor(id)

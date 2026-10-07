@@ -523,3 +523,496 @@ button.location-btn { display: flex; flex-direction: column; align-items: stretc
     text-align: right;
   }
 }
+
+/* S3-SIDEBAR-UI-001: 右栏歌曲信息与开发关联编辑 */
+
+.music-sidebar {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.detail-view {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.detail-section {
+  margin: 0 0 12px;
+  border: 1px solid var(--gold-line);
+  border-radius: var(--radius);
+  background: var(--paper);
+}
+
+.detail-summary {
+  padding: 8px 10px;
+  font-weight: 600;
+  color: var(--slate);
+  background: var(--paper-2);
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+}
+
+.detail-summary::-webkit-details-marker {
+  display: none;
+}
+
+.detail-summary::before {
+  content: '▶ ';
+  display: inline-block;
+  margin-right: 4px;
+  transition: transform 0.15s;
+}
+
+details[open] .detail-summary::before {
+  transform: rotate(90deg);
+}
+
+.detail-summary:hover {
+  background: var(--paper-3);
+}
+
+.detail-summary:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: -2px;
+}
+
+.detail-section > *:not(summary) {
+  padding: 10px;
+}
+
+.detail-section .anchor-info,
+.detail-section .track-metadata {
+  margin: 0;
+}
+
+.detail-section .music-contexts,
+.detail-section .tracks-list,
+.detail-section .location-list {
+  margin: 0;
+}
+
+.detail-section .track-description {
+  margin: 0;
+  padding: 8px 10px;
+}
+
+/* 开发编辑区块 */
+.dev-add-track,
+.dev-add-anchor {
+  margin-top: 12px;
+  padding: 10px;
+  background: rgba(200, 173, 127, 0.08);
+  border-top: 1px solid var(--gold-line);
+}
+
+.dev-add-track h4,
+.dev-add-anchor h4 {
+  margin: 0 0 4px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--slate);
+}
+
+.dev-hint {
+  margin: 0 0 8px;
+  font-size: 12px;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+.dev-add-track .search-input,
+.dev-add-anchor .search-input {
+  width: 100%;
+  margin-bottom: 8px;
+  height: 30px;
+  padding: 0 8px;
+  border: 1px solid var(--gold-line);
+  border-radius: var(--radius);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.anchor-filter {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.region-select {
+  flex: 0 1 140px;
+  height: 30px;
+  padding: 0 6px;
+  border: 1px solid var(--gold-line);
+  border-radius: var(--radius);
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 13px;
+}
+
+.anchor-filter .search-input {
+  flex: 1 1 auto;
+  margin-bottom: 0;
+}
+
+.candidate-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid var(--gold-line);
+  border-radius: var(--radius);
+  background: var(--paper);
+}
+
+.candidate-list > li + li {
+  border-top: 1px solid rgba(200, 173, 127, 0.2);
+}
+
+.candidate-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 8px;
+}
+
+.candidate-info {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.candidate-info .anchor-kind {
+  display: inline;
+  margin-right: 4px;
+  color: #8a7346;
+}
+
+.candidate-info .anchor-name {
+  font-weight: 600;
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
+.candidate-info .anchor-id {
+  font-size: 11px;
+  color: var(--ink-soft);
+}
+
+.candidate-info .anchor-content {
+  font-size: 12px;
+  color: var(--ink-soft);
+  overflow-wrap: anywhere;
+}
+
+.candidate-actions {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.edit-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 4px;
+  padding: 4px 8px;
+  background: var(--paper-2);
+  border-radius: 4px;
+}
+
+.edit-btn {
+  min-height: 26px;
+  padding: 3px 10px;
+  border: 1px solid var(--gold);
+  border-radius: var(--radius);
+  background: var(--slate);
+  color: var(--paper);
+  font-size: 12px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.edit-btn:hover:not(:disabled) {
+  background: var(--slate-2);
+}
+
+.edit-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.edit-btn:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 1px;
+}
+
+.edit-btn.add-btn {
+  background: var(--slate);
+  border-color: var(--gold);
+}
+
+.edit-btn.remove-btn {
+  background: var(--danger);
+  border-color: var(--danger);
+}
+
+.edit-btn.remove-btn:hover:not(:disabled) {
+  background: #b85839;
+}
+
+.edit-btn.restore-btn {
+  background: var(--focus);
+  border-color: var(--focus);
+}
+
+.edit-btn.restore-btn:hover:not(:disabled) {
+  background: #4d7db3;
+}
+
+.edit-message {
+  margin: 8px 0 0;
+  padding: 8px 10px;
+  border-radius: var(--radius);
+  background: var(--paper-2);
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.edit-message[role="status"] {
+  border-left: 3px solid var(--gold);
+  color: var(--ink);
+}
+
+.edit-message[role="alert"] {
+  border-left: 3px solid var(--danger);
+  color: var(--danger);
+}
+
+.dev-export {
+  margin-top: 12px;
+  padding: 10px;
+  text-align: center;
+}
+
+.export-btn {
+  min-height: 32px;
+  padding: 6px 16px;
+  border: 1px solid var(--gold);
+  border-radius: var(--radius);
+  background: var(--slate);
+  color: var(--paper);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.export-btn:hover {
+  background: var(--slate-2);
+}
+
+.export-btn:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* matchType 样式扩展 */
+.match-type.region-scope {
+  color: #8a7346;
+  font-weight: 600;
+}
+
+.match-type.manual {
+  color: var(--focus);
+  font-weight: 600;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .detail-summary {
+    padding: 6px 8px;
+    font-size: 13px;
+  }
+
+  .detail-section > *:not(summary) {
+    padding: 8px;
+  }
+
+  .edit-btn {
+    min-height: 24px;
+    padding: 2px 8px;
+    font-size: 11px;
+  }
+
+  .candidate-item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .candidate-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .anchor-filter {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .region-select {
+    flex: 1 1 auto;
+  }
+}
+
+
+
+/* S3-SIDEBAR-UI-001-R1: 返修补充 */
+
+/* 侧栏宽度调整 */
+@media (min-width: 769px) {
+  .app-main > .side-panel {
+    flex-basis: clamp(360px, 32vw, 480px);
+    width: clamp(360px, 32vw, 480px);
+  }
+  .app-main > .side-panel.collapsed {
+    flex-basis: 28px;
+    width: 28px;
+  }
+  .panel-toggle {
+    flex-basis: 28px;
+    width: 28px;
+  }
+}
+
+/* 详情区域滚动控制 */
+.music-sidebar {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-content {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.detail-view {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-view > * {
+  flex-shrink: 0;
+}
+
+/* 详情标题焦点样式 */
+.detail-summary:focus {
+  outline: 2px solid var(--focus);
+  outline-offset: -2px;
+}
+
+/* 返回当前点位按钮 */
+.back-to-anchor-btn {
+  width: 100%;
+  min-height: 32px;
+  margin-bottom: 8px;
+  padding: 6px 10px;
+  border: 1px solid var(--gold-line);
+  border-radius: var(--radius);
+  background: var(--paper-2);
+  color: var(--slate);
+  font-size: 13px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+
+.back-to-anchor-btn:hover {
+  background: var(--paper-3);
+}
+
+.back-to-anchor-btn:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 1px;
+}
+
+/* 关联点位分组展示 */
+.location-list {
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid var(--gold-line);
+  border-radius: var(--radius);
+}
+
+.location-item + .location-item {
+  border-top: 1px solid rgba(200, 173, 127, 0.2);
+}
+
+/* 开发反馈区块 */
+.dev-section {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--gold-line);
+}
+
+.dev-feedback h4 {
+  margin: 0 0 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--slate);
+}
+
+.dev-feedback .edit-message {
+  margin: 0;
+}
+
+/* 手机端触达优化 */
+@media (max-width: 768px) {
+  .back-to-anchor-btn {
+    min-height: 36px;
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .detail-summary {
+    min-height: 36px;
+    padding: 8px 10px;
+    font-size: 14px;
+    -webkit-tap-highlight-color: rgba(200, 173, 127, 0.2);
+  }
+
+  .detail-summary:focus {
+    outline: 3px solid var(--focus);
+    outline-offset: -3px;
+  }
+
+  .edit-btn {
+    min-height: 32px;
+    padding: 6px 10px;
+    font-size: 13px;
+    -webkit-tap-highlight-color: rgba(200, 173, 127, 0.2);
+  }
+}
+
+/* 整合：只由外层右栏滚动，保证长详情及开发操作可达。 */
+.music-sidebar { flex: 0 0 auto; min-width: 0; }
+.detail-view { flex: 0 0 auto; overflow: visible; }
+.sidebar-detail-title { margin: 0 0 10px; font-size: 16px; overflow-wrap: anywhere; }
+.music-sidebar .track-item { grid-template-columns: minmax(0,1fr); grid-template-areas: 'title' 'artists' 'status'; }
+.music-sidebar .track-item .track-status { justify-self: start; max-width: 100%; }
+.music-sidebar .panel-tabs { position: sticky; top: -10px; z-index: 2; background: var(--paper); }
+@media (max-width: 768px) {
+  .app-main > .side-panel:has(.detail-view):not(.collapsed) { flex: 0 1 42dvh; height: 42dvh; width: 100%; }
+  .music-sidebar .panel-tabs { top: -6px; }
+  .track-metadata { grid-template-columns: 72px minmax(0,1fr); gap: 6px 8px; }
+  .location-list { max-height: 240px; }
+}

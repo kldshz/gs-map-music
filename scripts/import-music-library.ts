@@ -16,8 +16,9 @@ function mysql(sql:string){
 // DDL is idempotent but MySQL implicitly commits DDL; data uses its own transaction.
 mysql(await fs.readFile('database/schema.sql','utf8'));
 const existing=new Set(mysql("SELECT CONCAT(TABLE_NAME,'.',COLUMN_NAME) FROM information_schema.COLUMNS WHERE TABLE_SCHEMA='gs_map_music';").split(/\r?\n/));
-const columns=[['music_track','personal_note','LONGTEXT NULL'],['music_track','netease_encrypted_id','CHAR(32) NULL'],['music_track','scene_info','JSON NULL'],['track_anchor','match_type',"ENUM('place-match','parent-place-match','region-archive') NULL"]];
+const columns=[['music_track','personal_note','LONGTEXT NULL'],['music_track','netease_encrypted_id','CHAR(32) NULL'],['music_track','scene_info','JSON NULL'],['track_anchor','match_type',"ENUM('place-match','parent-place-match','region-archive','region-scope','manual') NULL"]];
 for(const [table,column,type] of columns)if(!existing.has(`${table}.${column}`))mysql(`USE gs_map_music; ALTER TABLE ${table} ADD COLUMN ${column} ${type};`);
+if(!mysql("SELECT COLUMN_TYPE FROM information_schema.COLUMNS WHERE TABLE_SCHEMA='gs_map_music' AND TABLE_NAME='track_anchor' AND COLUMN_NAME='match_type';").includes("'region-scope'"))mysql("USE gs_map_music; ALTER TABLE track_anchor MODIFY COLUMN match_type ENUM('place-match','parent-place-match','region-archive','region-scope','manual') NULL;");
 // Hex UTF-8 literals do not depend on backslash/quote SQL modes.
 const q=(v:unknown)=>v===null||v===undefined?'NULL':`CONVERT(X'${Buffer.from(String(v),'utf8').toString('hex')}' USING utf8mb4)`;
 const json=(v:unknown)=>v===null?'NULL':q(JSON.stringify(v));

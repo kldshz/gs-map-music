@@ -53,3 +53,4 @@ resources/raw/
 *.mbtiles
 
 # Music files stay local; only Genshin music may be supplied in later stages.
+*.inspect.ndjson
