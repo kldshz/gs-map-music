@@ -22,6 +22,10 @@ const broadScopes = [
  [/须弥沙漠野外/,['A:XM:DESERT','A:XM:DESERT2','A:XM:DESERT3']],
  [/挪德卡莱.*大世界/,['A:NDKL:NDKL','A:NDKL:NDKL2','A:NDKL:NDKL3']],
  [/龙脊雪山/,['A:MD:XUESHAN']],
+ [/^渊下宫(?:$|[（(])/,['A:DQ:YUANXIAGONG']],
+ [/^鹤观(?:$|[（(])/,['A:DQ:HEGUAN']],
+ [/^悠悠度假村(?:$|[（(])/,['A:NT:NATA5']],
+ [/^远古圣山(?:$|[（(])/,['A:NT:NATA4']],
  [/远古圣山战斗/,['A:NT:NATA4']],
  [/霜月战斗/,['A:NDKL:SY']],
 ];
@@ -80,7 +84,7 @@ export function classifyOne(album,t,map) {
   }
   if(!areaCodes.length&&countries.length)areaCodes=map.areas.filter(a=>a.isFinal&&countries.includes(map.areas.find(p=>p.id===a.parentId)?.name)&&a.hiddenFlag!==3).map(a=>a.code);
   const broad=broadScopes.find(([r])=>r.test(o));
-  if(broad&&(kind==='battle-generic'||/野外|龙脊雪山/.test(o)))areaCodes=broad[1];
+  if(broad&&(kind==='battle-generic'||kind==='scene'))areaCodes=broad[1];
   if(kind==='battle-generic'&&album.title==='悯宥慈怜之垠')areaCodes=['A:ZD:ZHIDONG1'];
   let points=exact.map(({a})=>a);
   let method='place-match',reason='出处地名与点位地理标题交叉匹配，实际音区仍待校对。';
@@ -93,6 +97,7 @@ export function classifyOne(album,t,map) {
     points=map.anchors.filter(a=>a.kind==='statue'&&areaCodes.includes(a.areaCode)&&!bannedArea(a.areaCode)&&a.hiddenFlag!==3);method='region-archive';reason='缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。';
   }
   if(kind==='battle-limited'&&!points.length)reason='限定战斗缺少对应地点/附近点位证据，保留目录，不扩大到全区域。';
+  if(method==='region-archive'&&!points.length&&countries.length)reason='地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。';
   if(!countries.length){areaCodes=[];points=[];reason='来源与多地区回顾专辑均不能确定地区，保留未定位目录。';}
   return {kind,areaCodes,countries,points:[...new Map(points.map(a=>[a.id,a])).values()],terms:[...new Set(exact.map(x=>x.place))],method,reason};
 }
@@ -100,7 +105,7 @@ export function generateAssociations(source,map,existing) {
   const candidates=source.albums.flatMap(album=>album.tracks.map(track=>({album,track,classification:classifyOne(album,track,map)})));
   const occupied=new Set();
   const byTrack=new Map(existing.tracks.map(t=>[t.id,t]));
-  for(const a of existing.associations){const t=byTrack.get(a.trackId);if(['place-match','parent-place-match'].includes(a.matchType)&&t&&category(t.sceneInfo??{originText:'',discTitle:''})==='scene')occupied.add(a.anchorId);}
+  for(const a of existing.associations){const t=byTrack.get(a.trackId);if(!a.id.startsWith('ost:')&&['place-match','parent-place-match'].includes(a.matchType)&&t&&category(t.sceneInfo??{originText:'',discTitle:''})==='scene')occupied.add(a.anchorId);}
   for(const c of candidates)if(c.classification.kind==='scene'&&c.classification.method==='place-match')for(const p of c.classification.points)occupied.add(p.id);
   for(const c of candidates){if(c.classification.kind==='scene'&&c.classification.method==='region-scope')c.classification.points=c.classification.points.filter(p=>!occupied.has(p.id));}
   return candidates;

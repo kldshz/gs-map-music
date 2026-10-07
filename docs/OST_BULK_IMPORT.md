@@ -29,3 +29,4 @@
 依次运行 `node scripts/import-ost-batch.mjs <批次>`：early、inazuma-sumeru、fontaine、natlan、northern、retrospective。每次包含此前批次，完成后验证/记录/提交/推送。脚本处理全来源的精确覆盖后再决定野外候选，结果按已录入专辑输出到 `data/review/ost-association-review.json`。该JSON含逐曲出处、类别、国家、目录代码、候选点位、缺失原因；页面按用户要求只展示原出处和点位说明，校对依据留在文件。
 
 本轮新增关系全部pending，不参加路线自动选曲。没有音源播放验收，不将“可查询ID”当播放授权或浏览器播放成功。
+地区名称本身作为整张地图范围时，渊下宫、鹤观、远古圣山、悠悠度假村的普通场景按范围补充并排除精确场景。大区域名称附带具体地点时，不凭父级名称扩大到另一国家或独立地图。

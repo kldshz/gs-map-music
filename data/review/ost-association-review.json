@@ -31,18 +31,27 @@
         "金律永谐"
       ],
       "tracks": 257
+    },
+    {
+      "name": "natlan",
+      "albums": [
+        "炽炎交逐之原",
+        "遥古喁望之阳",
+        "竟夜有辉之燎"
+      ],
+      "tracks": 189
     }
   ],
   "summary": {
-    "totalTracks": 791,
-    "totalAssociations": 3936,
-    "newTracks": 728,
-    "newAssociations": 3532,
+    "totalTracks": 980,
+    "totalAssociations": 5067,
+    "newTracks": 917,
+    "newAssociations": 4663,
     "unlocated": 0,
-    "withoutPoint": 13,
+    "withoutPoint": 14,
     "specialMaps": 1,
-    "missingOrigin": 381,
-    "limitedBattleWithoutPoint": 12,
+    "missingOrigin": 504,
+    "limitedBattleWithoutPoint": 13,
     "sourceConflicts": 100
   },
   "tracks": [
@@ -4745,15 +4754,13 @@
       "matchedTerms": [
         "鹤观"
       ],
-      "matchType": "place-match",
+      "matchType": "region-scope",
       "anchorIds": [
-        "kongying:17136",
-        "kongying:16759",
-        "kongying:16757",
-        "kongying:16758",
-        "kongying:16756"
+        "kongying:16761",
+        "kongying:16762",
+        "kongying:16760"
       ],
-      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
     {
       "album": "佚落迁忘之岛",
@@ -4770,15 +4777,13 @@
       "matchedTerms": [
         "鹤观"
       ],
-      "matchType": "place-match",
+      "matchType": "region-scope",
       "anchorIds": [
-        "kongying:17136",
-        "kongying:16759",
-        "kongying:16757",
-        "kongying:16758",
-        "kongying:16756"
+        "kongying:16761",
+        "kongying:16762",
+        "kongying:16760"
       ],
-      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
     {
       "album": "佚落迁忘之岛",
@@ -4795,15 +4800,13 @@
       "matchedTerms": [
         "鹤观"
       ],
-      "matchType": "place-match",
+      "matchType": "region-scope",
       "anchorIds": [
-        "kongying:17136",
-        "kongying:16759",
-        "kongying:16757",
-        "kongying:16758",
-        "kongying:16756"
+        "kongying:16761",
+        "kongying:16762",
+        "kongying:16760"
       ],
-      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
     {
       "album": "佚落迁忘之岛",
@@ -4820,15 +4823,13 @@
       "matchedTerms": [
         "鹤观"
       ],
-      "matchType": "place-match",
+      "matchType": "region-scope",
       "anchorIds": [
-        "kongying:17136",
-        "kongying:16759",
-        "kongying:16757",
-        "kongying:16758",
-        "kongying:16756"
+        "kongying:16761",
+        "kongying:16762",
+        "kongying:16760"
       ],
-      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
     {
       "album": "佚落迁忘之岛",
@@ -4845,15 +4846,13 @@
       "matchedTerms": [
         "鹤观"
       ],
-      "matchType": "place-match",
+      "matchType": "region-scope",
       "anchorIds": [
-        "kongying:17136",
-        "kongying:16759",
-        "kongying:16757",
-        "kongying:16758",
-        "kongying:16756"
+        "kongying:16761",
+        "kongying:16762",
+        "kongying:16760"
       ],
-      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
     {
       "album": "佚落迁忘之岛",
@@ -4870,15 +4869,13 @@
       "matchedTerms": [
         "鹤观"
       ],
-      "matchType": "place-match",
+      "matchType": "region-scope",
       "anchorIds": [
-        "kongying:17136",
-        "kongying:16759",
-        "kongying:16757",
-        "kongying:16758",
-        "kongying:16756"
+        "kongying:16761",
+        "kongying:16762",
+        "kongying:16760"
       ],
-      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
     {
       "album": "佚落迁忘之岛",
@@ -4895,15 +4892,13 @@
       "matchedTerms": [
         "鹤观"
       ],
-      "matchType": "place-match",
+      "matchType": "region-scope",
       "anchorIds": [
-        "kongying:17136",
-        "kongying:16759",
-        "kongying:16757",
-        "kongying:16758",
-        "kongying:16756"
+        "kongying:16761",
+        "kongying:16762",
+        "kongying:16760"
       ],
-      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
     {
       "album": "佚落迁忘之岛",
@@ -4920,15 +4915,13 @@
       "matchedTerms": [
         "鹤观"
       ],
-      "matchType": "place-match",
+      "matchType": "region-scope",
       "anchorIds": [
-        "kongying:17136",
-        "kongying:16759",
-        "kongying:16757",
-        "kongying:16758",
-        "kongying:16756"
+        "kongying:16761",
+        "kongying:16762",
+        "kongying:16760"
       ],
-      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
     {
       "album": "佚落迁忘之岛",
@@ -4945,15 +4938,13 @@
       "matchedTerms": [
         "鹤观"
       ],
-      "matchType": "place-match",
+      "matchType": "region-scope",
       "anchorIds": [
-        "kongying:17136",
-        "kongying:16759",
-        "kongying:16757",
-        "kongying:16758",
-        "kongying:16756"
+        "kongying:16761",
+        "kongying:16762",
+        "kongying:16760"
       ],
-      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
     {
       "album": "佚落迁忘之岛",
@@ -5014,13 +5005,27 @@
       "matchedTerms": [
         "渊下宫"
       ],
-      "matchType": "place-match",
+      "matchType": "region-scope",
       "anchorIds": [
         "kongying:33183",
+        "kongying:33184",
+        "kongying:19603",
+        "kongying:33182",
+        "kongying:19604",
+        "kongying:19605",
+        "kongying:19612",
+        "kongying:19613",
+        "kongying:19614",
         "kongying:19615",
-        "kongying:19602"
+        "kongying:19611",
+        "kongying:19622",
+        "kongying:19623",
+        "kongying:19624",
+        "kongying:19625",
+        "kongying:19602",
+        "kongying:19731"
       ],
-      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
     {
       "album": "佚落迁忘之岛",
@@ -5037,13 +5042,27 @@
       "matchedTerms": [
         "渊下宫"
       ],
-      "matchType": "place-match",
+      "matchType": "region-scope",
       "anchorIds": [
         "kongying:33183",
+        "kongying:33184",
+        "kongying:19603",
+        "kongying:33182",
+        "kongying:19604",
+        "kongying:19605",
+        "kongying:19612",
+        "kongying:19613",
+        "kongying:19614",
         "kongying:19615",
-        "kongying:19602"
+        "kongying:19611",
+        "kongying:19622",
+        "kongying:19623",
+        "kongying:19624",
+        "kongying:19625",
+        "kongying:19602",
+        "kongying:19731"
       ],
-      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
     {
       "album": "佚落迁忘之岛",
@@ -5060,13 +5079,27 @@
       "matchedTerms": [
         "渊下宫"
       ],
-      "matchType": "place-match",
+      "matchType": "region-scope",
       "anchorIds": [
         "kongying:33183",
+        "kongying:33184",
+        "kongying:19603",
+        "kongying:33182",
+        "kongying:19604",
+        "kongying:19605",
+        "kongying:19612",
+        "kongying:19613",
+        "kongying:19614",
         "kongying:19615",
-        "kongying:19602"
+        "kongying:19611",
+        "kongying:19622",
+        "kongying:19623",
+        "kongying:19624",
+        "kongying:19625",
+        "kongying:19602",
+        "kongying:19731"
       ],
-      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
     {
       "album": "佚落迁忘之岛",
@@ -5083,13 +5116,27 @@
       "matchedTerms": [
         "渊下宫"
       ],
-      "matchType": "place-match",
+      "matchType": "region-scope",
       "anchorIds": [
         "kongying:33183",
+        "kongying:33184",
+        "kongying:19603",
+        "kongying:33182",
+        "kongying:19604",
+        "kongying:19605",
+        "kongying:19612",
+        "kongying:19613",
+        "kongying:19614",
         "kongying:19615",
-        "kongying:19602"
+        "kongying:19611",
+        "kongying:19622",
+        "kongying:19623",
+        "kongying:19624",
+        "kongying:19625",
+        "kongying:19602",
+        "kongying:19731"
       ],
-      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
     {
       "album": "佚落迁忘之岛",
@@ -5106,13 +5153,27 @@
       "matchedTerms": [
         "渊下宫"
       ],
-      "matchType": "place-match",
+      "matchType": "region-scope",
       "anchorIds": [
         "kongying:33183",
+        "kongying:33184",
+        "kongying:19603",
+        "kongying:33182",
+        "kongying:19604",
+        "kongying:19605",
+        "kongying:19612",
+        "kongying:19613",
+        "kongying:19614",
         "kongying:19615",
-        "kongying:19602"
+        "kongying:19611",
+        "kongying:19622",
+        "kongying:19623",
+        "kongying:19624",
+        "kongying:19625",
+        "kongying:19602",
+        "kongying:19731"
       ],
-      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
     {
       "album": "佚落迁忘之岛",
@@ -5129,13 +5190,27 @@
       "matchedTerms": [
         "渊下宫"
       ],
-      "matchType": "place-match",
+      "matchType": "region-scope",
       "anchorIds": [
         "kongying:33183",
+        "kongying:33184",
+        "kongying:19603",
+        "kongying:33182",
+        "kongying:19604",
+        "kongying:19605",
+        "kongying:19612",
+        "kongying:19613",
+        "kongying:19614",
         "kongying:19615",
-        "kongying:19602"
+        "kongying:19611",
+        "kongying:19622",
+        "kongying:19623",
+        "kongying:19624",
+        "kongying:19625",
+        "kongying:19602",
+        "kongying:19731"
       ],
-      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
     {
       "album": "佚落迁忘之岛",
@@ -5152,13 +5227,27 @@
       "matchedTerms": [
         "渊下宫"
       ],
-      "matchType": "place-match",
+      "matchType": "region-scope",
       "anchorIds": [
         "kongying:33183",
+        "kongying:33184",
+        "kongying:19603",
+        "kongying:33182",
+        "kongying:19604",
+        "kongying:19605",
+        "kongying:19612",
+        "kongying:19613",
+        "kongying:19614",
         "kongying:19615",
-        "kongying:19602"
+        "kongying:19611",
+        "kongying:19622",
+        "kongying:19623",
+        "kongying:19624",
+        "kongying:19625",
+        "kongying:19602",
+        "kongying:19731"
       ],
-      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
     {
       "album": "佚落迁忘之岛",
@@ -5175,13 +5264,27 @@
       "matchedTerms": [
         "渊下宫"
       ],
-      "matchType": "place-match",
+      "matchType": "region-scope",
       "anchorIds": [
         "kongying:33183",
+        "kongying:33184",
+        "kongying:19603",
+        "kongying:33182",
+        "kongying:19604",
+        "kongying:19605",
+        "kongying:19612",
+        "kongying:19613",
+        "kongying:19614",
         "kongying:19615",
-        "kongying:19602"
+        "kongying:19611",
+        "kongying:19622",
+        "kongying:19623",
+        "kongying:19624",
+        "kongying:19625",
+        "kongying:19602",
+        "kongying:19731"
       ],
-      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
     {
       "album": "佚落迁忘之岛",
@@ -5198,13 +5301,27 @@
       "matchedTerms": [
         "渊下宫"
       ],
-      "matchType": "place-match",
+      "matchType": "region-scope",
       "anchorIds": [
         "kongying:33183",
+        "kongying:33184",
+        "kongying:19603",
+        "kongying:33182",
+        "kongying:19604",
+        "kongying:19605",
+        "kongying:19612",
+        "kongying:19613",
+        "kongying:19614",
         "kongying:19615",
-        "kongying:19602"
+        "kongying:19611",
+        "kongying:19622",
+        "kongying:19623",
+        "kongying:19624",
+        "kongying:19625",
+        "kongying:19602",
+        "kongying:19731"
       ],
-      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
     {
       "album": "佚落迁忘之岛",
@@ -5221,13 +5338,27 @@
       "matchedTerms": [
         "渊下宫"
       ],
-      "matchType": "place-match",
+      "matchType": "region-scope",
       "anchorIds": [
         "kongying:33183",
+        "kongying:33184",
+        "kongying:19603",
+        "kongying:33182",
+        "kongying:19604",
+        "kongying:19605",
+        "kongying:19612",
+        "kongying:19613",
+        "kongying:19614",
         "kongying:19615",
-        "kongying:19602"
+        "kongying:19611",
+        "kongying:19622",
+        "kongying:19623",
+        "kongying:19624",
+        "kongying:19625",
+        "kongying:19602",
+        "kongying:19731"
       ],
-      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
     {
       "album": "佚落迁忘之岛",
@@ -5244,13 +5375,27 @@
       "matchedTerms": [
         "渊下宫"
       ],
-      "matchType": "place-match",
+      "matchType": "region-scope",
       "anchorIds": [
         "kongying:33183",
+        "kongying:33184",
+        "kongying:19603",
+        "kongying:33182",
+        "kongying:19604",
+        "kongying:19605",
+        "kongying:19612",
+        "kongying:19613",
+        "kongying:19614",
         "kongying:19615",
-        "kongying:19602"
+        "kongying:19611",
+        "kongying:19622",
+        "kongying:19623",
+        "kongying:19624",
+        "kongying:19625",
+        "kongying:19602",
+        "kongying:19731"
       ],
-      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
     {
       "album": "佚落迁忘之岛",
@@ -5267,13 +5412,27 @@
       "matchedTerms": [
         "渊下宫"
       ],
-      "matchType": "place-match",
+      "matchType": "region-scope",
       "anchorIds": [
         "kongying:33183",
+        "kongying:33184",
+        "kongying:19603",
+        "kongying:33182",
+        "kongying:19604",
+        "kongying:19605",
+        "kongying:19612",
+        "kongying:19613",
+        "kongying:19614",
         "kongying:19615",
-        "kongying:19602"
+        "kongying:19611",
+        "kongying:19622",
+        "kongying:19623",
+        "kongying:19624",
+        "kongying:19625",
+        "kongying:19602",
+        "kongying:19731"
       ],
-      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
     {
       "album": "佚落迁忘之岛",
@@ -5290,13 +5449,27 @@
       "matchedTerms": [
         "渊下宫"
       ],
-      "matchType": "place-match",
+      "matchType": "region-scope",
       "anchorIds": [
         "kongying:33183",
+        "kongying:33184",
+        "kongying:19603",
+        "kongying:33182",
+        "kongying:19604",
+        "kongying:19605",
+        "kongying:19612",
+        "kongying:19613",
+        "kongying:19614",
         "kongying:19615",
-        "kongying:19602"
+        "kongying:19611",
+        "kongying:19622",
+        "kongying:19623",
+        "kongying:19624",
+        "kongying:19625",
+        "kongying:19602",
+        "kongying:19731"
       ],
-      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
     {
       "album": "佚落迁忘之岛",
@@ -5313,13 +5486,27 @@
       "matchedTerms": [
         "渊下宫"
       ],
-      "matchType": "place-match",
+      "matchType": "region-scope",
       "anchorIds": [
         "kongying:33183",
+        "kongying:33184",
+        "kongying:19603",
+        "kongying:33182",
+        "kongying:19604",
+        "kongying:19605",
+        "kongying:19612",
+        "kongying:19613",
+        "kongying:19614",
         "kongying:19615",
-        "kongying:19602"
+        "kongying:19611",
+        "kongying:19622",
+        "kongying:19623",
+        "kongying:19624",
+        "kongying:19625",
+        "kongying:19602",
+        "kongying:19731"
       ],
-      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
     {
       "album": "佚落迁忘之岛",
@@ -5336,13 +5523,27 @@
       "matchedTerms": [
         "渊下宫"
       ],
-      "matchType": "place-match",
+      "matchType": "region-scope",
       "anchorIds": [
         "kongying:33183",
+        "kongying:33184",
+        "kongying:19603",
+        "kongying:33182",
+        "kongying:19604",
+        "kongying:19605",
+        "kongying:19612",
+        "kongying:19613",
+        "kongying:19614",
         "kongying:19615",
-        "kongying:19602"
+        "kongying:19611",
+        "kongying:19622",
+        "kongying:19623",
+        "kongying:19624",
+        "kongying:19625",
+        "kongying:19602",
+        "kongying:19731"
       ],
-      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
     {
       "album": "佚落迁忘之岛",
@@ -5384,13 +5585,27 @@
       "matchedTerms": [
         "渊下宫"
       ],
-      "matchType": "place-match",
+      "matchType": "region-scope",
       "anchorIds": [
         "kongying:33183",
+        "kongying:33184",
+        "kongying:19603",
+        "kongying:33182",
+        "kongying:19604",
+        "kongying:19605",
+        "kongying:19612",
+        "kongying:19613",
+        "kongying:19614",
         "kongying:19615",
-        "kongying:19602"
+        "kongying:19611",
+        "kongying:19622",
+        "kongying:19623",
+        "kongying:19624",
+        "kongying:19625",
+        "kongying:19602",
+        "kongying:19731"
       ],
-      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
     {
       "album": "佚落迁忘之岛",
@@ -5407,13 +5622,27 @@
       "matchedTerms": [
         "渊下宫"
       ],
-      "matchType": "place-match",
+      "matchType": "region-scope",
       "anchorIds": [
         "kongying:33183",
+        "kongying:33184",
+        "kongying:19603",
+        "kongying:33182",
+        "kongying:19604",
+        "kongying:19605",
+        "kongying:19612",
+        "kongying:19613",
+        "kongying:19614",
         "kongying:19615",
-        "kongying:19602"
+        "kongying:19611",
+        "kongying:19622",
+        "kongying:19623",
+        "kongying:19624",
+        "kongying:19625",
+        "kongying:19602",
+        "kongying:19731"
       ],
-      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
     {
       "album": "佚落迁忘之岛",
@@ -5430,13 +5659,27 @@
       "matchedTerms": [
         "渊下宫"
       ],
-      "matchType": "place-match",
+      "matchType": "region-scope",
       "anchorIds": [
         "kongying:33183",
+        "kongying:33184",
+        "kongying:19603",
+        "kongying:33182",
+        "kongying:19604",
+        "kongying:19605",
+        "kongying:19612",
+        "kongying:19613",
+        "kongying:19614",
         "kongying:19615",
-        "kongying:19602"
+        "kongying:19611",
+        "kongying:19622",
+        "kongying:19623",
+        "kongying:19624",
+        "kongying:19625",
+        "kongying:19602",
+        "kongying:19731"
       ],
-      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
     {
       "album": "佚落迁忘之岛",
@@ -5453,13 +5696,27 @@
       "matchedTerms": [
         "渊下宫"
       ],
-      "matchType": "place-match",
+      "matchType": "region-scope",
       "anchorIds": [
         "kongying:33183",
+        "kongying:33184",
+        "kongying:19603",
+        "kongying:33182",
+        "kongying:19604",
+        "kongying:19605",
+        "kongying:19612",
+        "kongying:19613",
+        "kongying:19614",
         "kongying:19615",
-        "kongying:19602"
+        "kongying:19611",
+        "kongying:19622",
+        "kongying:19623",
+        "kongying:19624",
+        "kongying:19625",
+        "kongying:19602",
+        "kongying:19731"
       ],
-      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
     {
       "album": "佚落迁忘之岛",
@@ -5575,13 +5832,27 @@
       "matchedTerms": [
         "渊下宫"
       ],
-      "matchType": "place-match",
+      "matchType": "region-scope",
       "anchorIds": [
         "kongying:33183",
+        "kongying:33184",
+        "kongying:19603",
+        "kongying:33182",
+        "kongying:19604",
+        "kongying:19605",
+        "kongying:19612",
+        "kongying:19613",
+        "kongying:19614",
         "kongying:19615",
-        "kongying:19602"
+        "kongying:19611",
+        "kongying:19622",
+        "kongying:19623",
+        "kongying:19624",
+        "kongying:19625",
+        "kongying:19602",
+        "kongying:19731"
       ],
-      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
     {
       "album": "佚落迁忘之岛",
@@ -5598,13 +5869,27 @@
       "matchedTerms": [
         "渊下宫"
       ],
-      "matchType": "place-match",
+      "matchType": "region-scope",
       "anchorIds": [
         "kongying:33183",
+        "kongying:33184",
+        "kongying:19603",
+        "kongying:33182",
+        "kongying:19604",
+        "kongying:19605",
+        "kongying:19612",
+        "kongying:19613",
+        "kongying:19614",
         "kongying:19615",
-        "kongying:19602"
+        "kongying:19611",
+        "kongying:19622",
+        "kongying:19623",
+        "kongying:19624",
+        "kongying:19625",
+        "kongying:19602",
+        "kongying:19731"
       ],
-      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
     {
       "album": "佚落迁忘之岛",
@@ -17640,6 +17925,4295 @@
         "kongying:72590"
       ],
       "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292773",
+      "title": "纳塔 Natlan",
+      "originText": "纳塔地区主题曲",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA",
+        "A:NT:NATA2",
+        "A:NT:NATA3",
+        "A:NT:NATA4",
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645",
+        "kongying:93471",
+        "kongying:103097",
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291840",
+      "title": "焚燔的欢歌 Jubilation of Calcine",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291841",
+      "title": "炎色的祝颂 Scarlet Song",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291842",
+      "title": "圣焰的嘉赐 Thanks for the Fire",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291843",
+      "title": "喧声凝寂时 After So Many Words",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291844",
+      "title": "无舞之舞 Undanced Dance",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292774",
+      "title": "夜影沉绵 A Night of Their Own",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291845",
+      "title": "紫锦草的闲息 Campa timoyetzticah, Cempaxochitl?",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291846",
+      "title": "炎石的王庭 Halls of Hueyteotl",
+      "originText": "话事处，《纳塔》改编",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA",
+        "A:NT:NATA2",
+        "A:NT:NATA3",
+        "A:NT:NATA4",
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645",
+        "kongying:93471",
+        "kongying:103097",
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291847",
+      "title": "所爱者的遗赠 Bequeathed to the Beloved",
+      "originText": "玛薇卡回忆藏品来历，《纳塔》改编",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA",
+        "A:NT:NATA2",
+        "A:NT:NATA3",
+        "A:NT:NATA4",
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645",
+        "kongying:93471",
+        "kongying:103097",
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292775",
+      "title": "金珀的回声 Descendants of Ahkantenal",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292776",
+      "title": "嵴石的秘藏 Arcana of Zipacna",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291848",
+      "title": "岩脉的节律 Beat of Boulders",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291849",
+      "title": "烈阳的祷祀 Baba we Twasali",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292777",
+      "title": "崖砦游风 The Heights of Rumikunamanta",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291850",
+      "title": "玉裙月帔 Whirl of Chalchiuhtlicue",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292778",
+      "title": "归火的传咏 Sifu Moto",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292779",
+      "title": "山王的回火颂 Cuicatl of Kongamato",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291851",
+      "title": "浪暖风柔 Makani 'olu'olu",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291852",
+      "title": "木槿花的遐想 Reverie of Pua Aloalo",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292780",
+      "title": "流泉醉月 Dazzling Moon of Metztli",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291853",
+      "title": "蓝岸铃语 Chimes on the Blue Shore",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292781",
+      "title": "虹彩缀花 Rainbow Leis",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292782",
+      "title": "水色约定 Promises by the Spring",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292783",
+      "title": "悠逸的时日 Moment of Solace",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291854",
+      "title": "炎威的燎告 Blazing Proclamation",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292784",
+      "title": "炽烈的还魂诗·众灵颂 Ode of Resurrection: Doxology",
+      "originText": "还魂诗（无歌词），《纳塔》改编",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA",
+        "A:NT:NATA2",
+        "A:NT:NATA3",
+        "A:NT:NATA4",
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645",
+        "kongying:93471",
+        "kongying:103097",
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291855",
+      "title": "炽烈的还魂诗·节录 Ode of Resurrection: Excerpt",
+      "originText": "还魂诗（有歌词），《纳塔》改编",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA",
+        "A:NT:NATA2",
+        "A:NT:NATA3",
+        "A:NT:NATA4",
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645",
+        "kongying:93471",
+        "kongying:103097",
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292785",
+      "title": "时无重至 ...Times Come Again No More",
+      "originText": "玛薇卡记忆空间，《纳塔》改编",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA",
+        "A:NT:NATA2",
+        "A:NT:NATA3",
+        "A:NT:NATA4",
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645",
+        "kongying:93471",
+        "kongying:103097",
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292786",
+      "title": "幽域翛翛 Realm of Ethereal Murk",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291856",
+      "title": "俾夜为火 Blaze of Fervent Night",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292787",
+      "title": "继古述名 Inheritance of an Ancient Name",
+      "originText": "六英雄古名觉醒，《纳塔》改编",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA",
+        "A:NT:NATA2",
+        "A:NT:NATA3",
+        "A:NT:NATA4",
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645",
+        "kongying:93471",
+        "kongying:103097",
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292788",
+      "title": "厄境之喻 Metaphor for Calamity",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291857",
+      "title": "小小的新朋友 Introduction to a Little Friend",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292789",
+      "title": "绵远的诀别 A Distant Farewell",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291858",
+      "title": "逐火如弦 Chasing Flames Like Strings",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292790",
+      "title": "述予簇花 Flower Writing",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291859",
+      "title": "谧息之梦 Dream of Tranquility",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292791",
+      "title": "盛宴与嘉赏 Feast and Bounty",
+      "originText": "旅行历程界面纳塔地区音乐",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292792",
+      "title": "邃谷泉鸣 Chirping of Canyons",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291860",
+      "title": "当雨云聚集时 When Rain Clouds Gather",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292793",
+      "title": "雾霭中的节令 Fog of the Seasons",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291861",
+      "title": "绿咬鹃的游萦 Quetzal's Yearning",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292794",
+      "title": "纯稚的奇想 Delightful Whimsy",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292795",
+      "title": "夕照留歌 Eventide Chant",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291862",
+      "title": "静夜的轻语 Silent Voices of the Night",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292796",
+      "title": "暮色落音尘 Dust of Dusklands",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292797",
+      "title": "笛中夜明 Flute of Uilacapitztli",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291863",
+      "title": "芊萰一梦 A Harvest of Dreams",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292798",
+      "title": "待晓籁再度奏响 Until the Morning After",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292799",
+      "title": "风清月白 The Nocturnal Firmament's Luster",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292800",
+      "title": "余霞散绮 Shedding Twilight",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292801",
+      "title": "旷古的荣业 Above the Glorious Crown",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291864",
+      "title": "天光煦暖 Cozy in the Light",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291865",
+      "title": "柔风凝湛之地 Where the Breeze Stills",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292802",
+      "title": "静界浅眠 Moon of Hanan Pacha",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291866",
+      "title": "溶水的铃歌 The Sea and the Bells",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292803",
+      "title": "夜愿悠远 The Nights' Wish",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292804",
+      "title": "悬木的捕风人 Striving for the Wind",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292805",
+      "title": "旧世流光 Glow of Nawpa Pacha",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292806",
+      "title": "幻写游音 Whistles of Monetoo",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291867",
+      "title": "铄石铸金 Foundry of the Golden",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291868",
+      "title": "深壑的煅火 Ravine's Calcination",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292807",
+      "title": "交叠的砾岩 Land of Tecalco",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291869",
+      "title": "烬上筑塔 House of Cinders",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292808",
+      "title": "盗火者的追忆 Reminiscent of the Stolen Flame",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291870",
+      "title": "炽土熏灼 Breath of Blazing Earth",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291871",
+      "title": "坠火与浮烟 Smoke of Fallen Flames",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291872",
+      "title": "艰虞之途 Arduous Path",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292809",
+      "title": "日暮途远 A Long Way Gone",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292810",
+      "title": "灵与尘的挽歌 Dirge of Soul and of Dust",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292811",
+      "title": "洞隐烛微 Delving Into the Hidden",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292812",
+      "title": "苍原的颂灵歌 Anthem of the Savannah",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292813",
+      "title": "预见的征程 Venture of Tonalamatl",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635291873",
+      "title": "炽火之舞 A Dance in Fire",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292814",
+      "title": "厄夜深冥 Grim Is the Night",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292815",
+      "title": "辉闪驰行 Lightning Racing",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "炽炎交逐之原",
+      "id": "netease:2635292816",
+      "title": "游光逐虹 Chasing the Rainbow",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:77650",
+        "kongying:77653",
+        "kongying:77649",
+        "kongying:77652"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657683856",
+      "title": "流光的箴训 Prismatic Proverbs",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657683857",
+      "title": "灵与沙的密谕 Soothing of Soul and Sand",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657687361",
+      "title": "镜中日暖 Springtime in a Mirror",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657683858",
+      "title": "夜诞的花冠 Night's Crown of Flowers",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657683859",
+      "title": "瞢暗的一极 A Fragment of Night",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657683860",
+      "title": "如歌的秘数 Choir's Cypher",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657683861",
+      "title": "烟漫露结 Where the Mists Enshroud",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657683862",
+      "title": "千载云已去 Cloud of Thirteen Katuns",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657687362",
+      "title": "木樨旁的旧忆 Tanyolche's Memories",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657683863",
+      "title": "游转的曙色 Touring the Dawn",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657683864",
+      "title": "悬风于心 Hanging in the Heart of the Wind",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657683865",
+      "title": "铃鼓随花 Bells in Bloom",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657683866",
+      "title": "芦笛的彼方 Beyond the Flute's Whispers",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657683867",
+      "title": "霜空曜明 Frosted Hue of Stars",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657687363",
+      "title": "祭星者的梦语 Starcaller's Wishes",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657683868",
+      "title": "暮深天静 Hushed Canopy of Night",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657687364",
+      "title": "故年往迹 Once Upon a Time in the Vale",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657683869",
+      "title": "瞑色的归途 Homeward Bound",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657687365",
+      "title": "芳草染夕烟 Malinalco's Dusk",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657687366",
+      "title": "山鸣谷应 Mountain's Hymn",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657687367",
+      "title": "鹿纵踏舞 Dance of the Brown Deer",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657687368",
+      "title": "风止水忘时 When the Breeze Ceases",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657687369",
+      "title": "浮梦终作雨 Rain of an Ancient Dream",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657687370",
+      "title": "舒翼乘云 All the Pretty Courses",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657687371",
+      "title": "苍鹫之颂 Salute of Eagles",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657683870",
+      "title": "浅斟的暇刻 Idle Hours",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657687372",
+      "title": "泛羽流月 Feathered Moonlight",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657687373",
+      "title": "渐落的晨曦 Fading Dawn",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657683871",
+      "title": "空余残晖 Afterglow of the Sky",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657687374",
+      "title": "旧乡的叹音 Sigh, the Breath of Yore",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657687375",
+      "title": "为一座无名的坟茔 For an Unmarked Grave",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657683872",
+      "title": "何日之梦 A Dream Yet to Come",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657683873",
+      "title": "苍原的巇径 Hidden Path Above the Savannah",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657683874",
+      "title": "故行已去 Someone Walked These Paths",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657687376",
+      "title": "妄执的冷烬 Ashes of Presumption",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657687377",
+      "title": "流灰地的遗声 The Fading Voices of Cinder",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657687378",
+      "title": "幻象中的慰抚 Comfort in Visions",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657687379",
+      "title": "暮火将熄 Serpent's Endgame",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657687380",
+      "title": "僭王的威烈 Formidable Usurper",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657687381",
+      "title": "圣律桓桓 Indisputable Commandments",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657683875",
+      "title": "幽室泠泠 Dripping Gloom",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657687382",
+      "title": "殒尘的黯星 Eclipsed Star",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657687383",
+      "title": "造始的噩兆 Onset of Omens",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657687384",
+      "title": "戢翼无归 Wingless Wail",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657687385",
+      "title": "沦蛰的缅忆 Hoary Hibernation",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657687386",
+      "title": "一别如羽 As the Feather Falls",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657687387",
+      "title": "幽愿难释 Unanswered Yearning",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657697279",
+      "title": "灼夜之泪 Tears of a Scorching Night",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657695914",
+      "title": "为一切战争的终结 To the End of All Wars",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657697280",
+      "title": "铸锥之刻 Shaping the Struggle",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657697281",
+      "title": "奉炽火以希望 Tumaini washa moto",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657697282",
+      "title": "随行逐飞 Stage's Coach",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "遥古喁望之阳",
+      "id": "netease:2657697283",
+      "title": "众灵的迷戏 Maze of Spirits",
+      "originText": "/",
+      "category": "missing-source",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:84647",
+        "kongying:84646",
+        "kongying:84645"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699945643",
+      "title": "饫沃坡野 Bounty of the Fertile Slopes",
+      "originText": "安饶之野·沃陆之邦（白天）",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3"
+      ],
+      "matchedTerms": [
+        "安饶之野"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:93664",
+        "kongying:93591",
+        "kongying:93481",
+        "kongying:93562",
+        "kongying:93615",
+        "kongying:93561",
+        "kongying:93595",
+        "kongying:93471",
+        "kongying:93596",
+        "kongying:93805",
+        "kongying:93806",
+        "kongying:93810",
+        "kongying:93807",
+        "kongying:93809",
+        "kongying:93811",
+        "kongying:102246"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699944066",
+      "title": "晨风拭惬气 The Brisk Morning Air",
+      "originText": "安饶之野·沃陆之邦（白天）",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3"
+      ],
+      "matchedTerms": [
+        "安饶之野"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:93664",
+        "kongying:93591",
+        "kongying:93481",
+        "kongying:93562",
+        "kongying:93615",
+        "kongying:93561",
+        "kongying:93595",
+        "kongying:93471",
+        "kongying:93596",
+        "kongying:93805",
+        "kongying:93806",
+        "kongying:93810",
+        "kongying:93807",
+        "kongying:93809",
+        "kongying:93811",
+        "kongying:102246"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699944067",
+      "title": "健行的膂力 Strength in Motion",
+      "originText": "安饶之野·沃陆之邦（夜晚）",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3"
+      ],
+      "matchedTerms": [
+        "安饶之野"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:93664",
+        "kongying:93591",
+        "kongying:93481",
+        "kongying:93562",
+        "kongying:93615",
+        "kongying:93561",
+        "kongying:93595",
+        "kongying:93471",
+        "kongying:93596",
+        "kongying:93805",
+        "kongying:93806",
+        "kongying:93810",
+        "kongying:93807",
+        "kongying:93809",
+        "kongying:93811",
+        "kongying:102246"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699945644",
+      "title": "晚间畅惬 Evening's Ease",
+      "originText": "安饶之野·沃陆之邦（夜晚）",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3"
+      ],
+      "matchedTerms": [
+        "安饶之野"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:93664",
+        "kongying:93591",
+        "kongying:93481",
+        "kongying:93562",
+        "kongying:93615",
+        "kongying:93561",
+        "kongying:93595",
+        "kongying:93471",
+        "kongying:93596",
+        "kongying:93805",
+        "kongying:93806",
+        "kongying:93810",
+        "kongying:93807",
+        "kongying:93809",
+        "kongying:93811",
+        "kongying:102246"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699945645",
+      "title": "湛火的土壤 Soil of Bright Flame",
+      "originText": "安饶之野·瓦雷莎家的果园（夜晚）",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3"
+      ],
+      "matchedTerms": [
+        "安饶之野"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:93664",
+        "kongying:93591",
+        "kongying:93481",
+        "kongying:93562",
+        "kongying:93615",
+        "kongying:93561",
+        "kongying:93595",
+        "kongying:93471",
+        "kongying:93596",
+        "kongying:93805",
+        "kongying:93806",
+        "kongying:93810",
+        "kongying:93807",
+        "kongying:93809",
+        "kongying:93811",
+        "kongying:102246"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699945646",
+      "title": "果香漫径 Meandering Fruit Fragrance",
+      "originText": "安饶之野·瓦雷莎家的果园（白天）",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3"
+      ],
+      "matchedTerms": [
+        "安饶之野"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:93664",
+        "kongying:93591",
+        "kongying:93481",
+        "kongying:93562",
+        "kongying:93615",
+        "kongying:93561",
+        "kongying:93595",
+        "kongying:93471",
+        "kongying:93596",
+        "kongying:93805",
+        "kongying:93806",
+        "kongying:93810",
+        "kongying:93807",
+        "kongying:93809",
+        "kongying:93811",
+        "kongying:102246"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699945647",
+      "title": "勤倦之畛 Sleep After the Toil",
+      "originText": "安饶之野·瓦雷莎家的果园（白天）",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3"
+      ],
+      "matchedTerms": [
+        "安饶之野"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:93664",
+        "kongying:93591",
+        "kongying:93481",
+        "kongying:93562",
+        "kongying:93615",
+        "kongying:93561",
+        "kongying:93595",
+        "kongying:93471",
+        "kongying:93596",
+        "kongying:93805",
+        "kongying:93806",
+        "kongying:93810",
+        "kongying:93807",
+        "kongying:93809",
+        "kongying:93811",
+        "kongying:102246"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699945648",
+      "title": "夜伴微火 A Flicker in the Quiet",
+      "originText": "安饶之野·瓦雷莎家的果园（夜晚）",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3"
+      ],
+      "matchedTerms": [
+        "安饶之野"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:93664",
+        "kongying:93591",
+        "kongying:93481",
+        "kongying:93562",
+        "kongying:93615",
+        "kongying:93561",
+        "kongying:93595",
+        "kongying:93471",
+        "kongying:93596",
+        "kongying:93805",
+        "kongying:93806",
+        "kongying:93810",
+        "kongying:93807",
+        "kongying:93809",
+        "kongying:93811",
+        "kongying:102246"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699944068",
+      "title": "酣战之始 The Horn Has Sounded",
+      "originText": "安饶之野·沃陆之邦大摔跤场",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3"
+      ],
+      "matchedTerms": [
+        "安饶之野"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:93664",
+        "kongying:93591",
+        "kongying:93481",
+        "kongying:93562",
+        "kongying:93615",
+        "kongying:93561",
+        "kongying:93595",
+        "kongying:93471",
+        "kongying:93596",
+        "kongying:93805",
+        "kongying:93806",
+        "kongying:93810",
+        "kongying:93807",
+        "kongying:93809",
+        "kongying:93811",
+        "kongying:102246"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699944069",
+      "title": "嵾峨之冠 Skyfire Circlet",
+      "originText": "安饶之野·天火之冠",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3"
+      ],
+      "matchedTerms": [
+        "天火之冠"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:93817",
+        "kongying:93815",
+        "kongying:93816"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699944070",
+      "title": "随流炎而行 Walk With the Blazing Fire",
+      "originText": "远古圣山（点亮前）",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [
+        "远古圣山"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:95177",
+        "kongying:95159",
+        "kongying:95170",
+        "kongying:95169"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699945649",
+      "title": "源火的深隍 Land of Primal Flame",
+      "originText": "远古圣山",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [
+        "远古圣山"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:95177",
+        "kongying:95159",
+        "kongying:95170",
+        "kongying:95169"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699945650",
+      "title": "如铸星之业 A Deed No Less Than Star-Forging",
+      "originText": "远古圣山",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [
+        "远古圣山"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:95177",
+        "kongying:95159",
+        "kongying:95170",
+        "kongying:95169"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699944071",
+      "title": "从游于识海 Sea of Shifting Sentience",
+      "originText": "远古圣山·分流识海",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [
+        "分流识海"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:95161",
+        "kongying:95162"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699944072",
+      "title": "图兰的残垣 The Dream That Was Tollan",
+      "originText": "远古圣山·古圣山的龙居地",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [
+        "远古圣山"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:95173",
+        "kongying:95175",
+        "kongying:95164",
+        "kongying:95160",
+        "kongying:95172",
+        "kongying:95167",
+        "kongying:95171",
+        "kongying:95174",
+        "kongying:95166",
+        "kongying:95163",
+        "kongying:95165"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699945651",
+      "title": "遗宫幽寂 Of That Colossal Wreck",
+      "originText": "远古圣山·古圣山的龙居地",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [
+        "远古圣山"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:95173",
+        "kongying:95175",
+        "kongying:95164",
+        "kongying:95160",
+        "kongying:95172",
+        "kongying:95167",
+        "kongying:95171",
+        "kongying:95174",
+        "kongying:95166",
+        "kongying:95163",
+        "kongying:95165"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699944073",
+      "title": "顽傲者的喧诤 Ri Yokobal kech ri Ajaw Ch'ulel",
+      "originText": "远古圣山·审议之庭、衍术阵列",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [
+        "审议之庭",
+        "衍术阵列"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:95176",
+        "kongying:95168"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699945652",
+      "title": "撼星的旅路 The Path Towards Tota'ch'imil",
+      "originText": "远古圣山·圣山之心（世界任务完成前）",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [
+        "圣山之心"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:95177"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699945653",
+      "title": "称贤者的真意 Kukulkan's Deceit",
+      "originText": "剧情音乐《溯火而归的终局》",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699945654",
+      "title": "他的选择 Where the Dragon Casts Its Will",
+      "originText": "远古圣山·真正的圣山之心，剧情音乐《溯火而归的终局》",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [
+        "远古圣山",
+        "圣山之心"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:95173",
+        "kongying:95177",
+        "kongying:95175",
+        "kongying:95164",
+        "kongying:95160",
+        "kongying:95172",
+        "kongying:95167",
+        "kongying:95171",
+        "kongying:95174",
+        "kongying:95166",
+        "kongying:95163",
+        "kongying:95165"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699945655",
+      "title": "熠熠有辉 Radiance Unfading",
+      "originText": "第五章第五幕，玛薇卡意识空间",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699945656",
+      "title": "沉眠于是夜 His Rest Was in the Night",
+      "originText": "奥奇卡纳塔·源火圣座（第五章第五幕完成后）",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [
+        "奥奇卡纳塔"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:84663",
+        "kongying:84664",
+        "kongying:84668",
+        "kongying:86247",
+        "kongying:84686",
+        "kongying:84667",
+        "kongying:84669",
+        "kongying:84671",
+        "kongying:84662",
+        "kongying:84647",
+        "kongying:84661"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699944074",
+      "title": "镌刻成忆 Inheritors of Memory and Legend",
+      "originText": "第五章第五幕《炽烈的还魂诗》剧情音乐",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699944075",
+      "title": "桃符春叙 Spring Returns in Splendor",
+      "originText": "活动「春曦画桃符」限定音乐",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699945657",
+      "title": "将世事高枕 The World at Bay Beyond the Pillow",
+      "originText": "镜璧山·茜特菈莉的家（室内）",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [
+        "镜璧山"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:84652",
+        "kongying:84648",
+        "kongying:84644",
+        "kongying:84651",
+        "kongying:84645",
+        "kongying:84649",
+        "kongying:84650"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699945658",
+      "title": "熏沐的香氛 Misty Redolence",
+      "originText": "鸣神岛·稻妻城秋沙钱汤（室内）",
+      "category": "scene",
+      "countries": [
+        "稻妻"
+      ],
+      "areaCodes": [
+        "A:DQ:1"
+      ],
+      "matchedTerms": [
+        "稻妻城"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:10301",
+        "kongying:10300"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699944076",
+      "title": "缭绕于思 Entwined in Thought",
+      "originText": "传说任务《貘枕之章 第一幕》剧情音乐",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699944077",
+      "title": "不觉入梦里 Drifting Into Dream",
+      "originText": "传说任务《貘枕之章 第一幕》剧情音乐",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699944078",
+      "title": "昕宵如游梦 A Fox's Little Daydream",
+      "originText": "活动「三川游艺绮梦谭」限定音乐",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699945659",
+      "title": "悄长的菌群 The Mushroom Creeps In",
+      "originText": "秘境「蘑境菌奇 第三幕」剧情音乐",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699944079",
+      "title": "泉与岩的交奏 Duel Between the Springs and the Echoes",
+      "originText": "第五章第一幕过场动画《归火圣夜巡礼》",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699945660",
+      "title": "所见非同 Not All Blades Point the Same Way",
+      "originText": "第五章第二幕过场动画《赤炎凛霜之争》",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699945661",
+      "title": "晦夜尽处的焰光 Where Hope Ended, Fire Began",
+      "originText": "第五章第二幕过场动画《最后的保障》",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699944080",
+      "title": "愚火为伍 Those That Stand With the Flame",
+      "originText": "第五章第四幕过场动画《席卷而来的浪潮》",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699944081",
+      "title": "狩夜不熄 And We Burn as One",
+      "originText": "第五章第四幕过场动画《夜明之前》",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699944082",
+      "title": "将黯黪炼作烁火 Blaze to Break the Dawn",
+      "originText": "第五章第四幕过场动画《永燃之火》",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699944083",
+      "title": "更生的焰主 Here Cometh the Flamelord",
+      "originText": "第五章第五幕过场动画《予夜以火，予光以歌》",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699944084",
+      "title": "昭若千阳 Till a Thousand Suns Arose",
+      "originText": "第五章第五幕过场动画《予夜以火，予光以歌》",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699944085",
+      "title": "自燎火而归 The Return Through the Fire",
+      "originText": "第五章第五幕过场动画《光与火》",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699944086",
+      "title": "赴去心如一 To the End, They Remain",
+      "originText": "剧情PV《荣勋》、第五章第五幕过场动画",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699944087",
+      "title": "为这地上的众生 Pro Vitis Horum",
+      "originText": "动画短片《此世之忆》",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699944088",
+      "title": "只为重逢的确守 Vigil for Reunion",
+      "originText": "传说任务《尤潘基的回火 第三幕》过场音乐",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699945662",
+      "title": "远行在归处 Circle of the Journey",
+      "originText": "传说任务《流泉所归之处 第三幕》过场音乐",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699944089",
+      "title": "名刻的真意 Of Truth Etched in Name",
+      "originText": "传说任务《祈祝福愿，倾高嵴峰 第三幕》过场音乐",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699945663",
+      "title": "生萌藏心念 Sprouting of a Gentle Wish",
+      "originText": "剧情PV《花与美梦》过场音乐",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699944090",
+      "title": "于翼之下 Beneath My Wings",
+      "originText": "传说任务《花之归尘，羽之将坠 第三幕》过场音乐",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699945664",
+      "title": "长明彻彻 The Flame Ever Ablaze",
+      "originText": "传说任务《不败阳焰之章 第一幕》过场音乐",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699944091",
+      "title": "烟染诸色 Woven in the Smoke of Memory",
+      "originText": "剧情PV《记住你的颜色》过场音乐",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699944092",
+      "title": "黑曜石的眷怜 A Favor of the Great Shaman",
+      "originText": "角色逸闻《瓶中的心愿》",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699945665",
+      "title": "梦的享宴 Nibbling on Nightmares",
+      "originText": "传说任务《貘枕之章 第一幕》过场动画《千梦一夜》",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699954431",
+      "title": "晓尔长梦 When Slumber Lifts",
+      "originText": "剧情PV《浮梦之诉》过场音乐",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699953011",
+      "title": "蘑神与斗士 Eat or Be Eaten",
+      "originText": "传说任务《蘑境菌奇 第三幕》过场动画《菇菇餮宴》",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699953012",
+      "title": "这是龙的国度 Here Lies the Realm of Dragons",
+      "originText": "过场动画《因善意而生的魔法》",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699953013",
+      "title": "不息的思志 The Fire That Memory Keeps",
+      "originText": "第五章第五幕决战前秘境剧情音乐",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699953014",
+      "title": "莫夜却非独行 Path Lit by Night",
+      "originText": "第五章第五幕决战前秘境剧情音乐",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699953015",
+      "title": "蚀形的灾祲 Vitas Corrodens Pestis",
+      "originText": "周本BOSS「蚀灭的源焰之主」战斗曲",
+      "category": "battle-limited",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "限定战斗缺少对应地点/附近点位证据，保留目录，不扩大到全区域。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699953016",
+      "title": "炽烈的还魂诗·再现 Ode of Resurrection： Recapitulation",
+      "originText": "第五章第五幕决战剧情音乐",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA3",
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:93471"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "竟夜有辉之燎",
+      "id": "netease:2699954432",
+      "title": "受龙所选的试炼 The Chosen of Dragons' Trials",
+      "originText": "远古圣山战斗曲",
+      "category": "battle-generic",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA4"
+      ],
+      "matchedTerms": [
+        "远古圣山"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:95173",
+        "kongying:95177",
+        "kongying:95175",
+        "kongying:95159",
+        "kongying:95164",
+        "kongying:95160",
+        "kongying:95172",
+        "kongying:95167",
+        "kongying:95171",
+        "kongying:95170",
+        "kongying:95176",
+        "kongying:95174",
+        "kongying:95169",
+        "kongying:95161",
+        "kongying:95162",
+        "kongying:95166",
+        "kongying:95163",
+        "kongying:95165",
+        "kongying:95168"
+      ],
+      "reason": "通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。"
     }
   ]
 }

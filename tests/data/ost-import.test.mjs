@@ -31,6 +31,8 @@ test('隐藏特殊地图全部零挂载，悠悠/霜月真实地图匹配；未�
  for(const c of candidates.filter(c=>c.classification.kind==='special-map')){assert.equal(c.classification.points.length,0);assert(c.classification.areaCodes.every(bannedArea));}
  assert(candidates.filter(c=>c.classification.kind==='special-map').length>60);
  assert(candidates.some(c=>c.classification.points.some(a=>a.areaCode==='A:NT:NATA5')));
+ const resort=candidates.find(c=>c.album.title==='珍珠之歌5'&&c.track.originText==='悠悠度假村').classification;
+ assert.equal(resort.method,'region-scope');assert(resort.points.length>2);assert(resort.points.every(a=>a.areaCode==='A:NT:NATA5'));
  assert(candidates.some(c=>c.classification.points.some(a=>a.areaCode==='A:NDKL:SY')));
  assert(candidates.filter(c=>!c.classification.countries.length).every(c=>!c.classification.points.length));
 });
