@@ -1,70 +1,42 @@
 # 原神地图音乐探索与播放器
 
-以地图选点找音乐、以曲目和文字线索反向定位地点，并支持路线模拟播放。统一需求见 [项目说明与分阶段提示词.md](项目说明与分阶段提示词.md)。
+阶段3本轮交付：空荧酒馆V3真实地图适配、地区与分层筛选、877个传送锚点/七天神像，以及每个点位的音乐库入口。音乐与关联数据按用户要求暂空，昼夜功能已取消。前端由实际调用的Claude Opus 5-5/high主导，Codex审核整合。
 
-当前完成阶段 2：Claude 指定模型/high 实际交付并返修的 Vue/Vite 页面骨架，可浏览地图主体、昼夜样本面板、搜索、曲目详情、常驻播放器预览及路线草稿。Codex 已审核整合、构建并实际查看桌面/手机页面。
+保留Vue/Vite/Leaflet技术栈，复用V3的坐标投影、配置继承、瓦片地址规则与点位/分层字段，没有整包迁移其账号、宝箱或采集功能。代码许可副本在[此处](public/licenses/KONGYING-MulanPSL-2.0.txt)。底图、点位图标与分层图片在线加载，依赖上游服务，不是离线地图包。
 
-真实地图资源授权和数据仍待落实；内置的是原创合成区域与两段许可非原神音乐。两条真实 OST 只含来源可查的少量元数据，没有内置音源，地点/昼夜待核实。
+## 运行
 
-- 私有仓库：<https://github.com/kldshz/gs-map-music>
-- [项目状态与环境](docs/PROJECT_STATUS.md)
-- [验收与限制](docs/ACCEPTANCE.md)
-- [关键决定](docs/DECISIONS.md)
-- [Claude 协作与恢复步骤](docs/COLLABORATION.md)
-- [工单模板](docs/WORK_ORDERS/TEMPLATE.md)；[非交互调用脚本](scripts/run-claude-work-order.ps1)
-- [地图与音乐调研](docs/RESEARCH.md)；[网易云官方 API/个人 CLI 核实](docs/NETEASE_RESEARCH.md)
-- [技术方案](docs/ARCHITECTURE.md)；[领域接口](src/domain/contracts.ts)；[数据样本](data/demo.bundle.json)
-- [路线测试方案](docs/ROUTE_TEST_PLAN.md)；[许可音乐署名](public/audio/demo/ATTRIBUTION.md)
-- [阶段 2 审核与浏览器证据](docs/STAGE2_REVIEW.md)
-- [个人音频整理与导入](resources/README.md)：`resources/local/audio/genshin` 全部忽略，先少量 MP3/FLAC/WAV 即可，不支持 `.ncm`。
-
-## 启动和验证
-
-需要 Node.js ^20.19.0 或 >=22.12.0（本机22.17.0），以及 npm。在仓库目录执行：
+本机Node22.17.0/npm10.9.2已实测。新机器需Node >=22.12（或符合Vite要求的20.19以上版本）。
 
 ```powershell
 npm ci
 npm run dev
 ```
 
-打开 <http://127.0.0.1:5173>。开发服务器仅绑定本机，5173端口被占用会报错，需要先停止占用进程。生产构建与检查：
+访问 <http://127.0.0.1:5173>。生产检查：
 
 ```powershell
 npm run build
-npm run preview
-# 另一个终端（preview 默认 http://127.0.0.1:4173）：
-npm run check:stage1
-```
-
-UI 测试需要已安装 Microsoft Edge，先构建；测试会自行启停4173的生产预览，请先停止手动 preview。
-
-```powershell
-npm run build
-npm run test:ui
+npm run test:data
+npm run test:ui -- --workers=1
 npm audit
 ```
 
-阶段 2 已实测6项 Edge UI 测试。其他浏览器尚未验证；没有 Edge 的机器可安装它或调整 Playwright 配置，再复验。截图/失败 trace 在忽略目录 `.local/browser-tests`。
+UI测试使用已安装的Edge，自动启动/停止4173预览，请先停止手动preview。截图及trace在忽略目录`.local/browser-tests`。地图需要网络。
 
-播放、进度、音量、队列、收藏/列表/编辑/音源导入及模拟移动尚未接入，控件禁用且标注后续阶段。路线仅三个样本点的静态草稿，未实现任意点或调整节点。SVG 示意图尚未实现 Leaflet MapAdapter，搜索也只是小样本界面预览；不据此宣布阶段3–5的生产功能通过。合成地图、非原神许可样本、无音源/待核实目录均显著标注。
+## 地图与数据
 
-## 数据与版本检查
+- [本轮来源与审核](docs/STAGE3_REVIEW.md)：47条API地区、877点位，其中822锚点/55神像，至冬1含61锚点/5神像。
+- [地区分类目录](outputs/map-regions-20261006/空荧地图地区分类与分层目录.xlsx)：国家、地区及地下/叠层目录，共544节点。
+- [锚点与神像补全表](outputs/map-anchors-20261007/空荧锚点与神像补全表.xlsx)：877行。黄色列填写音乐细地点、目录Key和补充说明，保持源ID及地区字段不变。
+- [接口契约](src/domain/contracts.ts)、[技术方案](docs/ARCHITECTURE.md)、[MySQL使用说明](database/README.md)。本机独立库`gs_map_music`已建，页面当前读取JSON快照，尚无数据库HTTP读写接口。
 
-在本目录 PowerShell 执行：
+侧栏的音乐JSON导入会校验曲目和多对多关联，只在当前会话生效，不写MySQL、刷新不保留，也不包含音频。格式见[音乐数据导入](docs/MUSIC_IMPORT.md)。产品仅允许原神音乐，本轮没有提供任何曲目。
 
-```powershell
-node scripts/check-stage1.mjs
-npm run typecheck
-git status --short --branch
-git diff --check
-git diff --cached --check
-git log -1 --oneline
-git remote -v
-git ls-remote origin refs/heads/main
-```
+播放器是显式禁用的阶段4入口。没有实际播放、个人库持久化或路线模拟；路线编辑与调度留阶段5。真实曲目反向关联尚待用户补充，当前自动化测试只验证数据结构与交互能力。
 
-每个完整修改单元检查后提交并执行 `git push origin main`。若认证或网络失败，记录未推送提交与恢复步骤，不能称为已同步。
+## 项目交接
 
-新机器运行数据/音频/坐标/文档探针只需 Node；应用类型检查由安装后的 vue-tsc 执行。阶段1 FFmpeg 完整解码已通过；浏览器发声、真实地图标校和生产路线仍待后续阶段。
+统一需求：[项目说明与分阶段提示词](项目说明与分阶段提示词.md)。[状态](docs/PROJECT_STATUS.md)、[决定](docs/DECISIONS.md)、[验收](docs/ACCEPTANCE.md)、[Claude协作](docs/COLLABORATION.md)、[路线测试方案](docs/ROUTE_TEST_PLAN.md)。私有仓库：<https://github.com/kldshz/gs-map-music>。
 
-两段 CC BY 4.0 WAV 合计约 1.06MB，保留改编与署名。原神音频、完整第三方音源、地图包和本机工具不入库。项目自身公开代码许可证尚未选择；各类第三方权利分别记录。
+本项目个人使用、不公开部署。代码开源许可与游戏素材/在线服务使用条件分开记录，不宣称取得素材再分发授权。第三方大图、音乐、本机认证与数据库密码不入库。历史阶段2的合成地图和非原神音频已从当前产品删除，历史证据保留在Git。

@@ -1,5 +1,20 @@
 # 决定记录
 
+## D3-04：真实V3地图模块接入与空音乐库（2026-10-07）
+
+用户最新要求音乐与关联暂空、神像与锚点同样可以存多首音乐、昼夜完全取消。覆盖D3-02及更早时段/许可非原神示例决定；旧数据和两段非原神音频已从当前产品移除，历史验证不延续为现行音乐验收。
+
+保持Vue/Vite/Leaflet，参考V3固定提交0e80dd0的地图投影、配置继承、瓦片/图标与地区/点位字段。正常公开网页游客流程取得47地区和877点位，只筛选传送锚点/七天神像，不提取宝箱或采集数据。用于本机个人演示的精简配置/元数据约0.5MB入私有Git，大图、图标、音频不镜像。MulanPSL2原文与署名保留；在线服务和游戏素材条件仍独立记录，不宣称源码开源带来素材再分发授权。见[本轮审核](STAGE3_REVIEW.md)。
+
+定位/检索能力用明确测试元数据验证，真实音乐/地点关联继续为空。点位/地区稳定ID保留，音乐细地点与目录Key在补全表预留，不臆造发行、作曲或地点。默认播放器禁用，播放阶段4、路线阶段5。
+
+## D3-05：本机MySQL存储基础（2026-10-07）
+
+用户授权本机MySQL。复用已运行的MySQL80服务8.0.40，用户提供root凭据连接实测成功，未重置root或改其他库。创建独立gs_map_music及area/anchor/music_track/track_anchor四表，初始化47地区/877点位/0音乐/0关系。凭据仅在忽略目录，CLI读取配置文件，密码不放命令行、Git或Claude上下文。
+
+页面仍读取静态快照，JSON导入仅会话，本轮没有数据库HTTP API。当前DB与浏览器两种验收分开记录；后续服务侧接入与用户音乐持久化在阶段4处理，不能把数据库建表等同页面保存功能。
+
+
 ## D3-03：保留地区API与地图分层的完整来源树（2026-10-06）
 
 用户指出纳塔更细分类后，通过官方V3页面正常游客流程实际取得47条地区API记录，再递归提取生产插件中的地下层与叠图树。合并镜像后共544节点、最大4层，见[地区导出记录](REGION_CATALOG_EXPORT.md)。此前仅依据瓦片代码列举两层的回答不完整；源项目已有的细分类应保留，不全部当作用户新增地点。
@@ -75,11 +90,11 @@ API地区ID与本项目生成的目录节点键分开；地下目录自身API地
 
 ## D1-03：事实元数据、证据关系和未知值（2026-10-06）
 
-采用独立 TrackLocation 多对多，timeCondition 与 evidenceStatus 分开。公开 Apple catalog 核对两条真实 OST，artist 不当 composer；标题提及酒庄只构成 pending 候选，无坐标、时段 unknown、audioAssetIds 空。未知值为 null，不填虚构译名/发行/地点。pending、unknown 排除路线自动选曲，synthetic 仅在标注示例中使用。契约与 [示例集](../data/demo.bundle.json) 同步维护。
+采用独立 TrackLocation 多对多，timeCondition 与 evidenceStatus 分开。公开 Apple catalog 核对两条真实 OST，artist 不当 composer；标题提及酒庄只构成 pending 候选，无坐标、时段 unknown、audioAssetIds 空。未知值为 null，不填虚构译名/发行/地点。pending、unknown 排除路线自动选曲，synthetic 仅在标注示例中使用。契约与 [示例集](https://github.com/kldshz/gs-map-music/blob/5077f9698408150f0454fed671fe5c2d6ff69983/data/demo.bundle.json) 同步维护。
 
 ## D1-04：独立许可示例与本地 OST 导入（2026-10-06）
 
-选择 Kevin MacLeod 的 Carefree/Brittle Rille（作者声明 CC BY 4.0），各 12 秒 PCM WAV，保留 [署名](../public/audio/demo/ATTRIBUTION.md)、许可与改编说明。仅此两个约 1.06MB 的审核片段精确例外入库，完整原音频/工具仍忽略。示例不是原神 OST，合成时段不代表游戏事实。
+选择 Kevin MacLeod 的 Carefree/Brittle Rille（作者声明 CC BY 4.0），各 12 秒 PCM WAV，保留 [署名](https://github.com/kldshz/gs-map-music/blob/5077f9698408150f0454fed671fe5c2d6ff69983/public/audio/demo/ATTRIBUTION.md)、许可与改编说明。仅此两个约 1.06MB 的审核片段精确例外入库，完整原音频/工具仍忽略。示例不是原神 OST，合成时段不代表游戏事实。
 
 用户愿意自行下载网易云 OST，采用普通本地音频导入，不依赖平台内部 API 或加密格式解码。整理目录 `resources/local/audio/genshin`，Git 全部忽略；网页必须主动选文件。免费收听/个人下载与网站分发分别核实，尚无“所有 HOYO-MiX 音乐均可任意个人使用”的通用授权证据，用户音频不打包分发。尚未收到文件，无需提前下载全部曲库。
 

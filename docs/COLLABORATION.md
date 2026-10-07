@@ -100,3 +100,18 @@ pwsh -NoProfile -File scripts/run-claude-work-order.ps1 -Ticket docs/WORK_ORDERS
 Codex管理package/lock、Vite/TS配置、fixture导出、测试与文档；Claude主导4个前端文件的视觉/交互代码。Codex整合修复包括类型收窄/fixture断言、licensed-demo枚举、Source.description/null URL、重复skiplink、nextTick滚动、用词纠正。R2后实测仍有手机footer三行过高和dialog定位约束问题，Codex做局部两行紧凑/原生居中修复；并补比例尺单位、禁用进度栏时长改--:--（不混用原作3:25与12秒片段）。未重新设计整套视觉，未改素材或领域契约。
 
 最终严格类型/构建、6项本机Edge生产UI测试、已有阶段1探针通过；Codex实际查看桌面/手机/路线/dialog。骨架只含样本交互，播放/模拟/持久化不可用；真实地图资源依赖未解决。最终提交推送由Codex执行。
+
+## C3-01：真实地图音乐库视觉与交互（2026-10-07）
+
+入口仍为本机CLI2.1.291、现有网关、stdin工单、禁用模型工具，参数固定`--model claude-opus-5-5 --effort high`。四个实际响应均subtype=success、is_error=false，唯一modelUsage=claude-opus-5-5，没有模型替换；网关身份与内部effort未独立回显的限制沿用。
+
+| 工单 | 允许交付文件 | 实际结果 |
+| --- | --- | --- |
+| [001](WORK_ORDERS/S3-MAP-UI-001.md) | App.vue、style.css | 完整界面交付，123808ms |
+| [R1](WORK_ORDERS/S3-MAP-UI-001-R1.md) | App.vue | 类型、原生dialog/键盘、JSON导入/检索/未知状态、禁用播放器返修，177926ms |
+| [R2](WORK_ORDERS/S3-MAP-UI-001-R2.md) | style.css | 侧栏/导入/移动布局/dialog居中返修，142041ms |
+| [R3](WORK_ORDERS/S3-MAP-UI-001-R3.md) | style.css追加 | 实际截图后修复默认列表按钮及播放器缺失flex样式，时长见摘要 |
+
+Codex核对工单、唯一模型、JSON、文件白名单后落盘。Claude上下文只有指定前端/接口材料，没有网易/MySQL或网关凭据。原始输出只保留`.local/claude-runs`，可入库摘要见[结果](WORK_ORDERS/S3-MAP-UI.RESULT.json)。不同时编辑交付文件，Claude不提交推送。
+
+Codex主导真实地图适配/MapCanvas、领域与检索/校验、MySQL初始化、表格、检查。局部整合修复：areaLabel父ID类型、移除被R2替代的inline样式、Leaflet Tile类型声明、反向定位同地图跨地区点显示、定位后新搜索遵守空结果。没有替代Claude重做视觉。最终类型/构建、12项数据测试和9项Edge UI测试通过，桌面、390/320手机、点位空库dialog实际查看。产品音乐为空，测试元数据不当作真实OST/地区证据；实际播放和路线未实现。

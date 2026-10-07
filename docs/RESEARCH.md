@@ -50,7 +50,7 @@ lightweight 旧配置的提瓦特 size `[17408,16384]`、origin `[3568,6286]`、
 实际使用 Apple iTunes 公开目录核对官方发行条目，未下载封面、preview 或原神音频：
 
 - [专辑搜索](https://itunes.apple.com/search?term=The%20Wind%20and%20The%20Star%20Traveler&entity=album&country=us&limit=5)：官方 collectionId 1519189657，The Wind and the Star Traveler，2020-06-19，15 首，artist Yu-Peng Chen & HOYO-MiX，℗ 2020 miHoYo。同名翻弹结果未纳入。
-- [City of Winds and Idylls 曲目目录](https://itunes.apple.com/lookup?id=1535605650&entity=song&country=us)：2020-09-28，63 首，同 artist/版权。少量事实记录在 [数据样本](../data/demo.bundle.json)。没有获得整目录、封面、预览或音频再分发许可；此公开查询不是我们的播放资源接口。
+- [City of Winds and Idylls 曲目目录](https://itunes.apple.com/lookup?id=1535605650&entity=song&country=us)：2020-09-28，63 首，同 artist/版权。少量事实记录在 [数据样本](https://github.com/kldshz/gs-map-music/blob/5077f9698408150f0454fed671fe5c2d6ff69983/data/demo.bundle.json)。没有获得整目录、封面、预览或音频再分发许可；此公开查询不是我们的播放资源接口。
 
 | 已核对曲目 | 目录 ID / 时长 | 实际地点与昼夜 | 音源 |
 | --- | --- | --- | --- |
@@ -63,7 +63,7 @@ artist 字段不能证明逐曲 composer，故 composers=null。后续关联须�
 
 用户进一步提供网易云官方开放平台链接，实际追加核实其 [播放 URL API、个人入驻及 CLI/FAQ](NETEASE_RESEARCH.md)。官方确有按 ID 取播放 URL 能力，但当前个人 FAQ 限定使用 ncm-cli，直接网页 API 不能记可用；接口已预留网易 ID 与动态解析，不编造样本 ID，也不安装或绕过资质。个人 CLI 本机外部播放列为可选后续路径。
 
-独立许可演示选择作者 Kevin MacLeod 的 **Carefree** 与 **Brittle Rille**，作者 [公开目录](https://incompetech.com/music/royalty-free/pieces.json)、[许可页面](https://incompetech.com/music/royalty-free/licenses/)和作品署名支持 CC BY 4.0。各取开头 12 秒，转换 PCM WAV，保留 [署名与改编说明](../public/audio/demo/ATTRIBUTION.md)及 [许可文本](../licenses/CC-BY-4.0.txt)。原作品长度 205s/229s 与本项目片段 12s 分开；uploaded 不是发行日期，未填入 releaseDate。这些曲目与合成地点/昼夜安排仅作功能测试，**不是原神 OST**。
+独立许可演示选择作者 Kevin MacLeod 的 **Carefree** 与 **Brittle Rille**，作者 [公开目录](https://incompetech.com/music/royalty-free/pieces.json)、[许可页面](https://incompetech.com/music/royalty-free/licenses/)和作品署名支持 CC BY 4.0。各取开头 12 秒，转换 PCM WAV，保留 [署名与改编说明](https://github.com/kldshz/gs-map-music/blob/5077f9698408150f0454fed671fe5c2d6ff69983/public/audio/demo/ATTRIBUTION.md)及 [许可文本](../licenses/CC-BY-4.0.txt)。原作品长度 205s/229s 与本项目片段 12s 分开；uploaded 不是发行日期，未填入 releaseDate。这些曲目与合成地点/昼夜安排仅作功能测试，**不是原神 OST**。
 
 WAV 文件已真实生成；检查遍历 RIFF chunks、编码、时长、非静音和 SHA-256，并由 FFmpeg 完整解码。浏览器真实播放和自动播放限制留待阶段 4，不能从文件验证推断已通过播放器验收。
 

@@ -1,0 +1,35 @@
+{
+  "capturedOn": "2026-10-07",
+  "upstreamCommit": "0e80dd090329cb4964360ef42d2ed6016cf7cc15",
+  "configSha256": "bce01daf659246667e1d23f1e8de38ba5fc32c3a3f1561d598abdfe5038055ba",
+  "snapshotSha256": "5712748b21cf7c41883a04ca4760a1cc79abb5f3e7332fd5183707be8f89caef",
+  "areas": 47,
+  "anchors": 877,
+  "waypoints": 822,
+  "statues": 55,
+  "zhidong1": 66,
+  "musicTracks": 0,
+  "associations": 0,
+  "validation": {
+    "typecheck": true,
+    "build": true,
+    "dataTests": 12,
+    "edgeUiTests": 9,
+    "auditVulnerabilities": 0,
+    "controlPoints": {
+      "ids": [
+        "kongying:6290",
+        "kongying:6557",
+        "kongying:6554"
+      ],
+      "beforeErrorPx": 0.311107815242309,
+      "afterErrorPx": 0.641515264324994
+    }
+  },
+  "limits": [
+    "音乐与关系本轮空，测试元数据不证明真实OST地点事实",
+    "坐标投影一致性不等于全游戏点位标校",
+    "外部瓦片服务与素材再授权未证明长期离线使用",
+    "MySQL只是存储基础，没有数据库HTTP API"
+  ]
+}
