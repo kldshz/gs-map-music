@@ -1,0 +1,2694 @@
+{
+  "schemaVersion": 1,
+  "capturedOn": "2026-10-07",
+  "batches": [
+    {
+      "name": "early",
+      "albums": [
+        "风与异乡人",
+        "皎月云间之梦",
+        "漩涡、落星与冰山"
+      ],
+      "tracks": 101
+    }
+  ],
+  "summary": {
+    "totalTracks": 164,
+    "totalAssociations": 1058,
+    "newTracks": 101,
+    "newAssociations": 654,
+    "unlocated": 0,
+    "withoutPoint": 0,
+    "specialMaps": 0,
+    "missingOrigin": 0,
+    "limitedBattleWithoutPoint": 0,
+    "sourceConflicts": 100
+  },
+  "tracks": [
+    {
+      "album": "风与异乡人",
+      "id": "netease:1455706958",
+      "title": "原神 Genshin Impact Main Theme",
+      "originText": "游戏加载界面- 白天\n《原神》EP - 和煦希望之风",
+      "category": "task",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:MENGDE"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:6557",
+        "kongying:6554",
+        "kongying:6555",
+        "kongying:6556"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "风与异乡人",
+      "id": "netease:1455706951",
+      "title": "晨曦酒庄 Dawn Winery Theme",
+      "originText": "晨曦酒庄室外-白天\n《原神》EP - 晨光拂晓之时",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:MENGDE"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:6557",
+        "kongying:6554",
+        "kongying:6555",
+        "kongying:6556"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "风与异乡人",
+      "id": "netease:1455707351",
+      "title": "甜美的微笑 A Sweet Smile",
+      "originText": "安柏传说任务\n小兔之章",
+      "category": "task",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:MENGDE"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:6557",
+        "kongying:6554",
+        "kongying:6555",
+        "kongying:6556"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "风与异乡人",
+      "id": "netease:1455707358",
+      "title": "风暴，高塔与圣地 A Storm, A Spire, and A Sanctum (Dvalin's Nest)",
+      "originText": "风龙废墟\n(战斗状态仍然使用)",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:MENGDE"
+      ],
+      "matchedTerms": [
+        "风龙废墟"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6554",
+        "kongying:6279",
+        "kongying:6280",
+        "kongying:6278",
+        "kongying:6281"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "风与异乡人",
+      "id": "netease:1455706968",
+      "title": "终天的闭幕曲 Caelestinum Finale Termini",
+      "originText": "特瓦林周本",
+      "category": "battle-limited",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:MENGDE"
+      ],
+      "matchedTerms": [
+        "风龙废墟"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6554",
+        "kongying:6279",
+        "kongying:6280",
+        "kongying:6278",
+        "kongying:6281"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "风与异乡人",
+      "id": "netease:1455706952",
+      "title": "孤独的旅居 Lone Sojourner",
+      "originText": "晨曦酒庄室外-夜间\n《原神》EP - 晨光拂晓之时",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:MENGDE"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:6557",
+        "kongying:6554",
+        "kongying:6555",
+        "kongying:6556"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "风与异乡人",
+      "id": "netease:1455707352",
+      "title": "蒙德的一日 A Day in Mondstadt",
+      "originText": "蒙德城-白天",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:MENGDE"
+      ],
+      "matchedTerms": [
+        "蒙德城"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6626",
+        "kongying:6625"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "风与异乡人",
+      "id": "netease:1455707353",
+      "title": "梦之咏叹 Dream Aria (Genshin Impact Main Theme Var.)",
+      "originText": "游戏加载界面-夜间\n含人声独奏\n《原神》EP - 和煦希望之风",
+      "category": "task",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:MENGDE"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:6557",
+        "kongying:6554",
+        "kongying:6555",
+        "kongying:6556"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "风与异乡人",
+      "id": "netease:1455706956",
+      "title": "青空 Pure Sky",
+      "originText": "蒙德野外-晴天",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:MENGDE"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:6292",
+        "kongying:6295",
+        "kongying:6557",
+        "kongying:6289",
+        "kongying:6284",
+        "kongying:6555",
+        "kongying:7290",
+        "kongying:6286",
+        "kongying:6285",
+        "kongying:6282",
+        "kongying:6283",
+        "kongying:6287",
+        "kongying:6288",
+        "kongying:6294",
+        "kongying:7298",
+        "kongying:6293",
+        "kongying:115467",
+        "kongying:6556"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "风与异乡人",
+      "id": "netease:1455706955",
+      "title": "平原的边际 The Edge of the Prairie",
+      "originText": "蒙德野外-雨天\n无人岛",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:MENGDE"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:6292",
+        "kongying:6295",
+        "kongying:6557",
+        "kongying:6289",
+        "kongying:6284",
+        "kongying:6555",
+        "kongying:7290",
+        "kongying:6286",
+        "kongying:6285",
+        "kongying:6282",
+        "kongying:6283",
+        "kongying:6287",
+        "kongying:6288",
+        "kongying:6294",
+        "kongying:7298",
+        "kongying:6293",
+        "kongying:115467",
+        "kongying:6556"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "风与异乡人",
+      "id": "netease:1455707355",
+      "title": "特瓦林与杜林 A Tale of Two Dragons",
+      "originText": "温迪传说任务\n若你困于无风之地",
+      "category": "task",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:MENGDE"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:6557",
+        "kongying:6554",
+        "kongying:6555",
+        "kongying:6556"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "风与异乡人",
+      "id": "netease:1455706971",
+      "title": "战斗的秘仪 Rite of Battle",
+      "originText": "蒙德战斗",
+      "category": "battle-generic",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:MENGDE"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:6290",
+        "kongying:6292",
+        "kongying:6295",
+        "kongying:6557",
+        "kongying:6289",
+        "kongying:6284",
+        "kongying:6554",
+        "kongying:6555",
+        "kongying:7290",
+        "kongying:6286",
+        "kongying:6285",
+        "kongying:6279",
+        "kongying:6280",
+        "kongying:6282",
+        "kongying:6283",
+        "kongying:6287",
+        "kongying:6288",
+        "kongying:6291",
+        "kongying:6294",
+        "kongying:7298",
+        "kongying:6293",
+        "kongying:115467",
+        "kongying:6278",
+        "kongying:6281",
+        "kongying:6556"
+      ],
+      "reason": "通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。"
+    },
+    {
+      "album": "风与异乡人",
+      "id": "netease:1455706959",
+      "title": "骑士的义举 Knighthood Excellence",
+      "originText": "凯亚传说任务\n孔雀羽之章",
+      "category": "task",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:MENGDE"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:6557",
+        "kongying:6554",
+        "kongying:6555",
+        "kongying:6556"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "风与异乡人",
+      "id": "netease:1455706961",
+      "title": "快乐的旅程 Happy Journey",
+      "originText": "琴传说任务\n幼狮之章",
+      "category": "task",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:MENGDE"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:6557",
+        "kongying:6554",
+        "kongying:6555",
+        "kongying:6556"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "风与异乡人",
+      "id": "netease:1455707354",
+      "title": "捕风的异乡人 The Wind Catcher from a Foreign Land",
+      "originText": "《原神》序章PV：捕风的异乡人",
+      "category": "task",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:MENGDE"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:6557",
+        "kongying:6554",
+        "kongying:6555",
+        "kongying:6556"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276411",
+      "title": "璃月 Liyue",
+      "originText": "璃月港白天、海灯节过场动画",
+      "category": "task",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "璃月港"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6595",
+        "kongying:6594",
+        "kongying:6587"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276426",
+      "title": "杯中明月 Moon in One's Cup",
+      "originText": "璃月港白天\n《原神》EP - 闲情雅趣之悦",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "璃月港"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6595",
+        "kongying:6594",
+        "kongying:6587"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276412",
+      "title": "商港的闲暇 Relaxation in Liyue",
+      "originText": "璃月港傍晚\n《原神》EP -「千帆齐聚之城」",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "璃月港"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6595",
+        "kongying:6594",
+        "kongying:6587"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275678",
+      "title": "环佩凭栏望千帆 Maiden's Longing",
+      "originText": "云来海白天\n《原神》EP - 神岩阅世之行",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "云来海"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6585",
+        "kongying:6613",
+        "kongying:6586"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275684",
+      "title": "璃月的日出 Sun Rises in Liyue",
+      "originText": "璃月港夜晚\n《原神》EP - 闲情雅趣之悦",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "璃月港"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6595",
+        "kongying:6594",
+        "kongying:6587"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276419",
+      "title": "晚安，璃月 Good Night, Liyue",
+      "originText": "璃月港日出\n《原神》EP -「千帆齐聚之城」",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "璃月港"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6595",
+        "kongying:6594",
+        "kongying:6587"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276418",
+      "title": "璃月的一日将尽 Call It a Day in Liyue",
+      "originText": "璃月港夜晚\n旅行历程界面璃月地区音乐\n《原神》EP -「千帆齐聚之城」",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "璃月港"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6595",
+        "kongying:6594",
+        "kongying:6587"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276420",
+      "title": "璃月的晴空 Clear Sky Over Liyue",
+      "originText": "云来海夜晚",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "云来海"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6585",
+        "kongying:6613",
+        "kongying:6586"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275670",
+      "title": "晶莹可掇(琉璃亭) A Transparent Moon (Liuli Pavilion)",
+      "originText": "琉璃亭、新月轩",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:6614",
+        "kongying:6613",
+        "kongying:6611",
+        "kongying:6615",
+        "kongying:6612"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275681",
+      "title": "北国的宝库 Treasury From the Northland",
+      "originText": "北国银行\n《原神》EP - 异乡流泊的武人",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:6614",
+        "kongying:6613",
+        "kongying:6611",
+        "kongying:6615",
+        "kongying:6612"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275685",
+      "title": "品茗尝清心(望舒昼间) Cozy Leisure Time (Wangshu Daytime)",
+      "originText": "望舒客栈白天",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "望舒客栈"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6580"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275680",
+      "title": "美梦抚归人(望舒夜间) Sojourner's Sweet Dream (Wangshu Night)",
+      "originText": "望舒客栈夜晚\n《原神》EP - 祓恶片晌之安",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "望舒客栈"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6580"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275672",
+      "title": "逶迤绿水长 Winding River",
+      "originText": "碧水原夜晚\n《原神》EP - 祓恶片晌之安",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "碧水原"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6577",
+        "kongying:6578",
+        "kongying:6607",
+        "kongying:6579"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276415",
+      "title": "轻波微荡 Mild Waves",
+      "originText": "碧水原白天",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "碧水原"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6577",
+        "kongying:6578",
+        "kongying:6607",
+        "kongying:6579"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275669",
+      "title": "钓客漫歌 Rhythm Amidst the Reeds",
+      "originText": "碧水原白天",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "碧水原"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6577",
+        "kongying:6578",
+        "kongying:6607",
+        "kongying:6579"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275671",
+      "title": "源流汇响 Flows of Jade-Like Water",
+      "originText": "碧水原白天\n《原神》EP - 幽蝶留芳之处",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "碧水原"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6577",
+        "kongying:6578",
+        "kongying:6607",
+        "kongying:6579"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275673",
+      "title": "幽谷多芳草 Blossoms Across the Valley",
+      "originText": "碧水原白天\n《原神》EP - 百草余芳之忆",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "碧水原"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6577",
+        "kongying:6578",
+        "kongying:6607",
+        "kongying:6579"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276421",
+      "title": "多情东逝 Flow of Mildness",
+      "originText": "碧水原夜晚",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "碧水原"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6577",
+        "kongying:6578",
+        "kongying:6607",
+        "kongying:6579"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276423",
+      "title": "山阴漫步 Stroll in the Shadows",
+      "originText": "碧水原白天\n《原神》EP - 春露漫散之虹",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "碧水原"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6577",
+        "kongying:6578",
+        "kongying:6607",
+        "kongying:6579"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275674",
+      "title": "古道笛声 Melodious Flute",
+      "originText": "碧水原白天",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "碧水原"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6577",
+        "kongying:6578",
+        "kongying:6607",
+        "kongying:6579"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275675",
+      "title": "清昼细雨 Gentle Rain",
+      "originText": "石门夜晚、云来海夜晚\n《原神》EP - 仙泽麟行之迹",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "云来海",
+        "石门"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6585",
+        "kongying:6613",
+        "kongying:6586",
+        "kongying:6574"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276417",
+      "title": "竹林的轻语 Vague Whispers",
+      "originText": "石门白天、碧水原白天",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "碧水原",
+        "石门"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6577",
+        "kongying:6578",
+        "kongying:6607",
+        "kongying:6579",
+        "kongying:6574"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275677",
+      "title": "不复回的传说 Legends Swept Away",
+      "originText": "碧水原夜晚",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "碧水原"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6577",
+        "kongying:6578",
+        "kongying:6607",
+        "kongying:6579"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276416",
+      "title": "归客的轻歌 Joy of Returning",
+      "originText": "琼玑野白天\n《原神》EP - 幽蝶留芳之处",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "琼玑野"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6612",
+        "kongying:6582",
+        "kongying:6583"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276422",
+      "title": "离原之草 Loner's Departure",
+      "originText": "琼玑野夜晚",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "琼玑野"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6612",
+        "kongying:6582",
+        "kongying:6583"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276424",
+      "title": "原上狐鸣 Foxes at Play",
+      "originText": "琼玑野白天\n《原神》EP - 幽蝶留芳之处",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "琼玑野"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6612",
+        "kongying:6582",
+        "kongying:6583"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275683",
+      "title": "怀乡的原野 Plain of Nostalgia",
+      "originText": "琼玑野夜晚、珉林夜晚",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "珉林",
+        "琼玑野"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:7760",
+        "kongying:7759",
+        "kongying:6602",
+        "kongying:6600",
+        "kongying:6601",
+        "kongying:6612",
+        "kongying:6582",
+        "kongying:6583",
+        "kongying:6608",
+        "kongying:6609"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275686",
+      "title": "希望的明日 Another Hopeful Tomorrow",
+      "originText": "地中之盐、孤云阁、瑶光滩、渌华池夜晚\n《原神》EP - 百草余芳之忆",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "孤云阁",
+        "渌华池",
+        "地中之盐",
+        "瑶光滩"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6596",
+        "kongying:6599",
+        "kongying:6581",
+        "kongying:6584"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275687",
+      "title": "小小的光 This Little Light of Mine",
+      "originText": "地中之盐、孤云阁白天",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "孤云阁",
+        "地中之盐"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6596",
+        "kongying:6581"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276425",
+      "title": "宽怀的传说 Legend of Redemption",
+      "originText": "地中之盐、孤云阁白天",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "孤云阁",
+        "地中之盐"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6596",
+        "kongying:6581"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276427",
+      "title": "暧暧含光 Hazy Light",
+      "originText": "瑶光滩、渌华池白天",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "渌华池",
+        "瑶光滩"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6599",
+        "kongying:6584"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275688",
+      "title": "潮汐浮梦 Scattered Amongst the Tides",
+      "originText": "地中之盐、孤云阁、瑶光滩、渌华池白天",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "孤云阁",
+        "渌华池",
+        "地中之盐",
+        "瑶光滩"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6596",
+        "kongying:6599",
+        "kongying:6581",
+        "kongying:6584"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275689",
+      "title": "随海风而来 Rhythms From the Conch",
+      "originText": "云来海傍晚",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "云来海"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6585",
+        "kongying:6613",
+        "kongying:6586"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275845",
+      "title": "山风拂萝衣(轻策昼间) Peaceful Hike (Qingce Daytime)",
+      "originText": "轻策庄白天\n《原神》EP - 神岩阅世之行",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "轻策庄"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6576"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276660",
+      "title": "不再年轻的村庄(轻策夜间) The Fading Stories (Qingce Night",
+      "originText": "轻策庄夜晚",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "轻策庄"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6576"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275974",
+      "title": "倦飞之鸟 Wandering Flight",
+      "originText": "华光林傍晚",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:6614",
+        "kongying:6613",
+        "kongying:6611",
+        "kongying:6615",
+        "kongying:6612"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275930",
+      "title": "追寻仙迹 Faint Tracks",
+      "originText": "华光林白天",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:6614",
+        "kongying:6613",
+        "kongying:6611",
+        "kongying:6615",
+        "kongying:6612"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276635",
+      "title": "无心出岫 Idle Away From Mountains",
+      "originText": "华光林夜晚",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:6614",
+        "kongying:6613",
+        "kongying:6611",
+        "kongying:6615",
+        "kongying:6612"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276636",
+      "title": "峭岩作歌 Humming Amidst Rocks",
+      "originText": "华光林夜晚、无妄坡",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "无妄坡"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6575"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275928",
+      "title": "云海之上 Above the Sea of Clouds",
+      "originText": "庆云顶、奥藏山、琥牢山夜晚\n《原神》EP - 祓恶片晌之安",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "奥藏山",
+        "庆云顶",
+        "琥牢山"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6604",
+        "kongying:6605",
+        "kongying:6603",
+        "kongying:6615"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276610",
+      "title": "偷闲浮生 Adeptus' Retirement",
+      "originText": "庆云顶、奥藏山、琥牢山白天\n《原神》EP - 仙泽麟行之迹",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "奥藏山",
+        "庆云顶",
+        "琥牢山"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6604",
+        "kongying:6605",
+        "kongying:6603",
+        "kongying:6615"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275929",
+      "title": "亭台闲坐 A Casual Visit",
+      "originText": "庆云顶、奥藏山、琥牢山夜晚",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "奥藏山",
+        "庆云顶",
+        "琥牢山"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6604",
+        "kongying:6605",
+        "kongying:6603",
+        "kongying:6615"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276611",
+      "title": "偶遇归人 A Serendipitous Encounter",
+      "originText": "庆云顶、奥藏山、琥牢山傍晚",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "奥藏山",
+        "庆云顶",
+        "琥牢山"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6604",
+        "kongying:6605",
+        "kongying:6603",
+        "kongying:6615"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276641",
+      "title": "白鹤之飞 Freedom of Crane",
+      "originText": "庆云顶、奥藏山、琥牢山夜晚\n《原神》EP - 春露漫散之虹",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "奥藏山",
+        "庆云顶",
+        "琥牢山"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6604",
+        "kongying:6605",
+        "kongying:6603",
+        "kongying:6615"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275966",
+      "title": "天霁日出 Rays of Sunlight",
+      "originText": "庆云顶、奥藏山、琥牢山白天",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "奥藏山",
+        "庆云顶",
+        "琥牢山"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6604",
+        "kongying:6605",
+        "kongying:6603",
+        "kongying:6615"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275967",
+      "title": "虹霞垂天 Rainbow at Summit",
+      "originText": "庆云顶、奥藏山、琥牢山白天",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "奥藏山",
+        "庆云顶",
+        "琥牢山"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6604",
+        "kongying:6605",
+        "kongying:6603",
+        "kongying:6615"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275979",
+      "title": "清泉入云海 Spring in Clouds",
+      "originText": "庆云顶、奥藏山、琥牢山白天",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "奥藏山",
+        "庆云顶",
+        "琥牢山"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6604",
+        "kongying:6605",
+        "kongying:6603",
+        "kongying:6615"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276640",
+      "title": "仙家独酌 Adeptus' Solace",
+      "originText": "珉林白天\n《原神》EP - 神岩阅世之行",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "珉林"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:7760",
+        "kongying:7759",
+        "kongying:6602",
+        "kongying:6600",
+        "kongying:6601",
+        "kongying:6608",
+        "kongying:6609"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276629",
+      "title": "洞府徘徊 The Absence of Adepti",
+      "originText": "珉林白天",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "珉林"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:7760",
+        "kongying:7759",
+        "kongying:6602",
+        "kongying:6600",
+        "kongying:6601",
+        "kongying:6608",
+        "kongying:6609"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276642",
+      "title": "风静云起 Emerging Clouds",
+      "originText": "珉林白天",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "珉林"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:7760",
+        "kongying:7759",
+        "kongying:6602",
+        "kongying:6600",
+        "kongying:6601",
+        "kongying:6608",
+        "kongying:6609"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276643",
+      "title": "岩间对饮 Drink With a Hermit",
+      "originText": "珉林白天",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "珉林"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:7760",
+        "kongying:7759",
+        "kongying:6602",
+        "kongying:6600",
+        "kongying:6601",
+        "kongying:6608",
+        "kongying:6609"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275957",
+      "title": "山路青苔 Moss Covered Path",
+      "originText": "明蕴镇、翠珏坡夜晚，珉林夜晚",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "珉林"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:7760",
+        "kongying:7759",
+        "kongying:6602",
+        "kongying:6600",
+        "kongying:6601",
+        "kongying:6608",
+        "kongying:6609"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275960",
+      "title": "云间孤鸿 Bird Call From Afar",
+      "originText": "庆云顶、琥牢山、奥藏山夜晚",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "奥藏山",
+        "庆云顶",
+        "琥牢山"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6604",
+        "kongying:6605",
+        "kongying:6603",
+        "kongying:6615"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275956",
+      "title": "仙人的棋局 Red Leaf on the Chessboard",
+      "originText": "珉林白天",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "珉林"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:7760",
+        "kongying:7759",
+        "kongying:6602",
+        "kongying:6600",
+        "kongying:6601",
+        "kongying:6608",
+        "kongying:6609"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276647",
+      "title": "幽涧泠泠 Secluded Sanctuary",
+      "originText": "无妄坡",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "无妄坡"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6575"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276646",
+      "title": "浮影掠光映百合 Flickering Petals",
+      "originText": "天衡山白天、璃沙郊白天",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "璃沙郊",
+        "天衡山"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6591",
+        "kongying:6588",
+        "kongying:6592",
+        "kongying:6590",
+        "kongying:6593"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275973",
+      "title": "青云流风饰霓裳 Swinging in the Breeze",
+      "originText": "天衡山夜晚",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "天衡山"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6588",
+        "kongying:6593"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275964",
+      "title": "孑立的群岩 Solitude Mountains",
+      "originText": "璃沙郊夜晚",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "璃沙郊"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6591",
+        "kongying:6592",
+        "kongying:6590"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276644",
+      "title": "悠远的鸟鸣 Distant Resonance",
+      "originText": "璃沙郊白天",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "璃沙郊"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6591",
+        "kongying:6592",
+        "kongying:6590"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275978",
+      "title": "悠古的脚步 Foregone Giants",
+      "originText": "璃沙郊夜晚",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "璃沙郊"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6591",
+        "kongying:6592",
+        "kongying:6590"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492275965",
+      "title": "山间回望 Linger in the Valley",
+      "originText": "灵矩关、青墟浦、遁玉陵白天",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "遁玉陵",
+        "灵矩关"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6614",
+        "kongying:6589"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276659",
+      "title": "沉睡的往昔 Slumbering Lore",
+      "originText": "灵矩关、青墟浦、遁玉陵夜晚\n《原神》EP - 闲情雅趣之悦",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "遁玉陵",
+        "灵矩关"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6614",
+        "kongying:6589"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276634",
+      "title": "黯然的城塞 Silent Ruins",
+      "originText": "灵矩关、青墟浦、遁玉陵夜晚",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "遁玉陵",
+        "灵矩关"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6614",
+        "kongying:6589"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276661",
+      "title": "孤独的漫行者 Lone Drifter",
+      "originText": "灵矩关、青墟浦、遁玉陵白天\n《原神》EP - 拈骰冥思之夜",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "遁玉陵",
+        "灵矩关"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6614",
+        "kongying:6589"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276648",
+      "title": "失落的愿景 Lost Expectation",
+      "originText": "灵矩关、青墟浦、遁玉陵白天",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [
+        "遁玉陵",
+        "灵矩关"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6614",
+        "kongying:6589"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492276672",
+      "title": "壶中洞天 The Realm Within",
+      "originText": "璃月秘境音乐",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE",
+        "A:LY:CENGYAN",
+        "A:LY:CENGYAN_UG",
+        "A:LY:CHENYUGU"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:67187",
+        "kongying:67188",
+        "kongying:6614",
+        "kongying:6613",
+        "kongying:6611",
+        "kongying:6615",
+        "kongying:21171",
+        "kongying:6612"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492283139",
+      "title": "疾如猛火 Rapid as Wildfires",
+      "originText": "璃月野外战斗",
+      "category": "battle-generic",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:7760",
+        "kongying:7759",
+        "kongying:6580",
+        "kongying:6577",
+        "kongying:6578",
+        "kongying:6607",
+        "kongying:6585",
+        "kongying:7758",
+        "kongying:6614",
+        "kongying:6604",
+        "kongying:6605",
+        "kongying:6602",
+        "kongying:6603",
+        "kongying:6606",
+        "kongying:6613",
+        "kongying:6586",
+        "kongying:6600",
+        "kongying:6601",
+        "kongying:6596",
+        "kongying:6597",
+        "kongying:6598",
+        "kongying:6599",
+        "kongying:6611",
+        "kongying:6615",
+        "kongying:6579",
+        "kongying:6576",
+        "kongying:6591",
+        "kongying:6612",
+        "kongying:6574",
+        "kongying:6581",
+        "kongying:6582",
+        "kongying:6583",
+        "kongying:6584",
+        "kongying:6588",
+        "kongying:6589",
+        "kongying:6592",
+        "kongying:6608",
+        "kongying:6609",
+        "kongying:6610",
+        "kongying:6575",
+        "kongying:6590",
+        "kongying:6593"
+      ],
+      "reason": "通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492283138",
+      "title": "激流逐浪 Chasing the Torrents",
+      "originText": "璃月野外战斗",
+      "category": "battle-generic",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:7760",
+        "kongying:7759",
+        "kongying:6580",
+        "kongying:6577",
+        "kongying:6578",
+        "kongying:6607",
+        "kongying:6585",
+        "kongying:7758",
+        "kongying:6614",
+        "kongying:6604",
+        "kongying:6605",
+        "kongying:6602",
+        "kongying:6603",
+        "kongying:6606",
+        "kongying:6613",
+        "kongying:6586",
+        "kongying:6600",
+        "kongying:6601",
+        "kongying:6596",
+        "kongying:6597",
+        "kongying:6598",
+        "kongying:6599",
+        "kongying:6611",
+        "kongying:6615",
+        "kongying:6579",
+        "kongying:6576",
+        "kongying:6591",
+        "kongying:6612",
+        "kongying:6574",
+        "kongying:6581",
+        "kongying:6582",
+        "kongying:6583",
+        "kongying:6584",
+        "kongying:6588",
+        "kongying:6589",
+        "kongying:6592",
+        "kongying:6608",
+        "kongying:6609",
+        "kongying:6610",
+        "kongying:6575",
+        "kongying:6590",
+        "kongying:6593"
+      ],
+      "reason": "通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。"
+    },
+    {
+      "album": "皎月云间之梦",
+      "id": "netease:1492281430",
+      "title": "鲜衣游侠 Gallant Challenge",
+      "originText": "璃月野外战斗",
+      "category": "battle-generic",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:7760",
+        "kongying:7759",
+        "kongying:6580",
+        "kongying:6577",
+        "kongying:6578",
+        "kongying:6607",
+        "kongying:6585",
+        "kongying:7758",
+        "kongying:6614",
+        "kongying:6604",
+        "kongying:6605",
+        "kongying:6602",
+        "kongying:6603",
+        "kongying:6606",
+        "kongying:6613",
+        "kongying:6586",
+        "kongying:6600",
+        "kongying:6601",
+        "kongying:6596",
+        "kongying:6597",
+        "kongying:6598",
+        "kongying:6599",
+        "kongying:6611",
+        "kongying:6615",
+        "kongying:6579",
+        "kongying:6576",
+        "kongying:6591",
+        "kongying:6612",
+        "kongying:6574",
+        "kongying:6581",
+        "kongying:6582",
+        "kongying:6583",
+        "kongying:6584",
+        "kongying:6588",
+        "kongying:6589",
+        "kongying:6592",
+        "kongying:6608",
+        "kongying:6609",
+        "kongying:6610",
+        "kongying:6575",
+        "kongying:6590",
+        "kongying:6593"
+      ],
+      "reason": "通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。"
+    },
+    {
+      "album": "漩涡、落星与冰山",
+      "id": "netease:1833805536",
+      "title": "雪掩的往事 Snow-Buried Tales",
+      "originText": "龙脊雪山夜晚\n《原神》EP - 异乡流泊的武人",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:XUESHAN"
+      ],
+      "matchedTerms": [
+        "龙脊雪山"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:6562",
+        "kongying:6566",
+        "kongying:6567",
+        "kongying:6570",
+        "kongying:6563",
+        "kongying:6564",
+        "kongying:6565",
+        "kongying:6568",
+        "kongying:6569",
+        "kongying:6571",
+        "kongying:6572",
+        "kongying:6558"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "漩涡、落星与冰山",
+      "id": "netease:1833806442",
+      "title": "银白的希望 Fragile Fantasy",
+      "originText": "龙脊雪山夜晚\n《原神》EP - 冰峰柔雪之绘",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:XUESHAN"
+      ],
+      "matchedTerms": [
+        "龙脊雪山"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:6562",
+        "kongying:6566",
+        "kongying:6567",
+        "kongying:6570",
+        "kongying:6563",
+        "kongying:6564",
+        "kongying:6565",
+        "kongying:6568",
+        "kongying:6569",
+        "kongying:6571",
+        "kongying:6572",
+        "kongying:6558"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "漩涡、落星与冰山",
+      "id": "netease:1833805557",
+      "title": "霜的精灵 Chattering Snowflakes",
+      "originText": "龙脊雪山白天",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:XUESHAN"
+      ],
+      "matchedTerms": [
+        "龙脊雪山"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:6562",
+        "kongying:6566",
+        "kongying:6567",
+        "kongying:6570",
+        "kongying:6563",
+        "kongying:6564",
+        "kongying:6565",
+        "kongying:6568",
+        "kongying:6569",
+        "kongying:6571",
+        "kongying:6572",
+        "kongying:6558"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "漩涡、落星与冰山",
+      "id": "netease:1833806429",
+      "title": "在梦乡重聚 Serene and Sweet Adieu",
+      "originText": "龙脊雪山夜晚",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:XUESHAN"
+      ],
+      "matchedTerms": [
+        "龙脊雪山"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:6562",
+        "kongying:6566",
+        "kongying:6567",
+        "kongying:6570",
+        "kongying:6563",
+        "kongying:6564",
+        "kongying:6565",
+        "kongying:6568",
+        "kongying:6569",
+        "kongying:6571",
+        "kongying:6572",
+        "kongying:6558"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "漩涡、落星与冰山",
+      "id": "netease:1833805537",
+      "title": "冰下的碎梦 Glistening Shards",
+      "originText": "龙脊雪山白天",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:XUESHAN"
+      ],
+      "matchedTerms": [
+        "龙脊雪山"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:6562",
+        "kongying:6566",
+        "kongying:6567",
+        "kongying:6570",
+        "kongying:6563",
+        "kongying:6564",
+        "kongying:6565",
+        "kongying:6568",
+        "kongying:6569",
+        "kongying:6571",
+        "kongying:6572",
+        "kongying:6558"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "漩涡、落星与冰山",
+      "id": "netease:1833806443",
+      "title": "遗忘的流风 Ad Oblivione",
+      "originText": "龙脊雪山夜晚",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:XUESHAN"
+      ],
+      "matchedTerms": [
+        "龙脊雪山"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:6562",
+        "kongying:6566",
+        "kongying:6567",
+        "kongying:6570",
+        "kongying:6563",
+        "kongying:6564",
+        "kongying:6565",
+        "kongying:6568",
+        "kongying:6569",
+        "kongying:6571",
+        "kongying:6572",
+        "kongying:6558"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "漩涡、落星与冰山",
+      "id": "netease:1833805535",
+      "title": "寒潮的余响 Abiding Chills",
+      "originText": "龙脊雪山夜晚",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:XUESHAN"
+      ],
+      "matchedTerms": [
+        "龙脊雪山"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:6562",
+        "kongying:6566",
+        "kongying:6567",
+        "kongying:6570",
+        "kongying:6563",
+        "kongying:6564",
+        "kongying:6565",
+        "kongying:6568",
+        "kongying:6569",
+        "kongying:6571",
+        "kongying:6572",
+        "kongying:6558"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "漩涡、落星与冰山",
+      "id": "netease:1833805539",
+      "title": "极寒的险地 Menacing Cove",
+      "originText": "星荧洞窟",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:XUESHAN"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:6558"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "漩涡、落星与冰山",
+      "id": "netease:1833806433",
+      "title": "雪暴中迷途 Striding in the Snowstorm",
+      "originText": "星荧洞窟",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:XUESHAN"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:6558"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "漩涡、落星与冰山",
+      "id": "netease:1833805541",
+      "title": "隐匿的凶兆 Sinister Mist",
+      "originText": "星荧洞窟",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:XUESHAN"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:6558"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "漩涡、落星与冰山",
+      "id": "netease:1833806431",
+      "title": "静谧的厅堂 In the Desolate Hallway",
+      "originText": "龙脊雪山夜晚",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:XUESHAN"
+      ],
+      "matchedTerms": [
+        "龙脊雪山"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:6562",
+        "kongying:6566",
+        "kongying:6567",
+        "kongying:6570",
+        "kongying:6563",
+        "kongying:6564",
+        "kongying:6565",
+        "kongying:6568",
+        "kongying:6569",
+        "kongying:6571",
+        "kongying:6572",
+        "kongying:6558"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "漩涡、落星与冰山",
+      "id": "netease:1833806430",
+      "title": "山林的故园 The Flourishing Past",
+      "originText": "龙脊雪山白天",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:XUESHAN"
+      ],
+      "matchedTerms": [
+        "龙脊雪山"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:6562",
+        "kongying:6566",
+        "kongying:6567",
+        "kongying:6570",
+        "kongying:6563",
+        "kongying:6564",
+        "kongying:6565",
+        "kongying:6568",
+        "kongying:6569",
+        "kongying:6571",
+        "kongying:6572",
+        "kongying:6558"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "漩涡、落星与冰山",
+      "id": "netease:1833805552",
+      "title": "未完成的画作 Unfinished Frescoes",
+      "originText": "龙脊雪山夜晚",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:XUESHAN"
+      ],
+      "matchedTerms": [
+        "龙脊雪山"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:6562",
+        "kongying:6566",
+        "kongying:6567",
+        "kongying:6570",
+        "kongying:6563",
+        "kongying:6564",
+        "kongying:6565",
+        "kongying:6568",
+        "kongying:6569",
+        "kongying:6571",
+        "kongying:6572",
+        "kongying:6558"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "漩涡、落星与冰山",
+      "id": "netease:1833805559",
+      "title": "冰风的独舞 Spin of Ice Crystals",
+      "originText": "龙脊雪山白天\n《原神》EP - 冰峰柔雪之绘",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:XUESHAN"
+      ],
+      "matchedTerms": [
+        "龙脊雪山"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:6562",
+        "kongying:6566",
+        "kongying:6567",
+        "kongying:6570",
+        "kongying:6563",
+        "kongying:6564",
+        "kongying:6565",
+        "kongying:6568",
+        "kongying:6569",
+        "kongying:6571",
+        "kongying:6572",
+        "kongying:6558"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "漩涡、落星与冰山",
+      "id": "netease:1833805560",
+      "title": "雪国的终曲 Finale of the Snowtomb",
+      "originText": "龙脊雪山白天\n《原神》EP - 冰峰柔雪之绘",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:XUESHAN"
+      ],
+      "matchedTerms": [
+        "龙脊雪山"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:6562",
+        "kongying:6566",
+        "kongying:6567",
+        "kongying:6570",
+        "kongying:6563",
+        "kongying:6564",
+        "kongying:6565",
+        "kongying:6568",
+        "kongying:6569",
+        "kongying:6571",
+        "kongying:6572",
+        "kongying:6558"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "漩涡、落星与冰山",
+      "id": "netease:1833806441",
+      "title": "色彩的记忆 Once-Colored Memories",
+      "originText": "龙脊雪山夜晚",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:XUESHAN"
+      ],
+      "matchedTerms": [
+        "龙脊雪山"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:6562",
+        "kongying:6566",
+        "kongying:6567",
+        "kongying:6570",
+        "kongying:6563",
+        "kongying:6564",
+        "kongying:6565",
+        "kongying:6568",
+        "kongying:6569",
+        "kongying:6571",
+        "kongying:6572",
+        "kongying:6558"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "漩涡、落星与冰山",
+      "id": "netease:1833805540",
+      "title": "皎洁的笑颜 Moonlike Smile",
+      "originText": "龙脊雪山白天\n《原神》EP - 冰涛骇浪之憩",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:XUESHAN"
+      ],
+      "matchedTerms": [
+        "龙脊雪山"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:6562",
+        "kongying:6566",
+        "kongying:6567",
+        "kongying:6570",
+        "kongying:6563",
+        "kongying:6564",
+        "kongying:6565",
+        "kongying:6568",
+        "kongying:6569",
+        "kongying:6571",
+        "kongying:6572",
+        "kongying:6558"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    }
+  ]
+}

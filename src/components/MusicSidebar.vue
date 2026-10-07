@@ -169,7 +169,7 @@
 
       <details class="detail-section">
         <summary class="detail-summary">关联点位（{{ trackLocationsCount }}）</summary>
-        
+
         <template v-if="trackLocations.length">
           <button type="button" class="locate-btn" @click="locateAll">在地图上定位全部</button>
           <ul class="location-list">

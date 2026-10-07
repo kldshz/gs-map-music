@@ -1,3 +1,6 @@
+import fs from 'node:fs';
+const builtin=JSON.parse(fs.readFileSync('public/data/music-library.json','utf8'));
+const countAt=(id:string)=>builtin.associations.filter((a:any)=>a.anchorId===id).length;
 import { test, expect } from '@playwright/test';
 
 test.setTimeout(60000);
@@ -5,9 +8,9 @@ async function ready(page:any){await page.goto('/');await expect(page.locator('.
 async function track(page:any,query:string){await page.getByRole('button',{name:'曲目检索',exact:true}).click();await page.getByRole('searchbox').fill(query);await expect(page.locator('.track-list button')).toHaveCount(1);await page.locator('.track-list button').click();await page.getByText('完整元数据',{exact:true}).click();await page.locator('summary').filter({hasText:/^关联点位/}).click();}
 
 test('专辑63首、蒙德城曲库和神像归档提示、所有关联反向定位',async({page})=>{
-  await ready(page);await page.getByRole('button',{name:'曲目检索',exact:true}).click();await expect(page.locator('.track-list button')).toHaveCount(63);
+  await ready(page);await page.getByRole('button',{name:'曲目检索',exact:true}).click();await expect(page.locator('.track-list button')).toHaveCount(builtin.tracks.length);
   await page.getByRole('button',{name:'点位目录',exact:true}).click();await page.locator('.anchor-list button').filter({hasText:'#kongying:6625'}).click();
-  await expect(page.locator('.detail-view')).toContainText('关联音乐（11）');await expect(page.locator('.detail-view')).toContainText('西风大教堂');
+  await expect(page.locator('.detail-view')).toContainText(`关联音乐（${countAt('kongying:6625')}）`);await expect(page.locator('.detail-view')).toContainText('西风大教堂');
   await page.locator('.detail-view .track-item').filter({hasText:'风所爱之城'}).click();await page.getByText('完整元数据',{exact:true}).click();await page.getByText('关联点位（2）',{exact:true}).click();
   await expect(page.locator('.detail-view')).toContainText('2020-09-28');await expect(page.locator('.location-list')).toContainText('【蒙德 蒙德城】');await expect(page.locator('.association-detail')).toHaveCount(0);await expect(page.locator('.detail-view')).toContainText('蒙德城-白天');
   await page.getByRole('button',{name:'在地图上定位全部'}).click();await expect(page.locator('.music-anchor.is-highlighted')).toHaveCount(2);

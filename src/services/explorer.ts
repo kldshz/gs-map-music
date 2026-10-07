@@ -23,14 +23,31 @@ export function useExplorer() {
   const selectedAnchor=computed(()=>anchors.value.find(a=>a.id===selectedAnchorId.value)??null);
   const tracks=computed(()=>library.value.tracks);
   const musicLocations=computed(()=>library.value.musicLocations??[]);
+  const anchorById=computed(()=>new Map(anchors.value.map(a=>[a.id,a])));
+  const trackById=computed(()=>new Map(tracks.value.map(t=>[t.id,t])));
+  const locationById=computed(()=>new Map(musicLocations.value.map(p=>[p.id,p])));
+  const associationIndex=computed(()=>{
+    const byTrack=new Map<string,typeof library.value.associations>(),byAnchor=new Map<string,Set<string>>(),byPair=new Map<string,typeof library.value.associations[number]>();
+    for(const a of library.value.associations){
+      if(!byTrack.has(a.trackId))byTrack.set(a.trackId,[]);byTrack.get(a.trackId)!.push(a);
+      if(!byAnchor.has(a.anchorId))byAnchor.set(a.anchorId,new Set());byAnchor.get(a.anchorId)!.add(a.trackId);
+      byPair.set(JSON.stringify([a.trackId,a.anchorId]),a);
+    }
+    return {byTrack,byAnchor,byPair};
+  });
   const selectedTrack=computed(()=>tracks.value.find(t=>t.id===selectedTrackId.value)??null);
-  const anchorTracks=computed(()=>tracks.value.filter(t=>library.value.associations.some(a=>a.anchorId===selectedAnchorId.value&&a.trackId===t.id)));
-  const trackLocations=computed(()=>anchors.value.filter(p=>library.value.associations.some(a=>a.anchorId===p.id&&a.trackId===selectedTrackId.value)));
-  const trackAssociations=computed(()=>library.value.associations.filter(a=>a.trackId===selectedTrackId.value));
-  function associationFor(trackId:string,anchorId:string){return library.value.associations.find(a=>a.trackId===trackId&&a.anchorId===anchorId);}
+  const anchorTracks=computed(()=>tracks.value.filter(t=>associationIndex.value.byAnchor.get(selectedAnchorId.value)?.has(t.id)));
+  const trackLocations=computed(()=>{
+    const ids=new Set((associationIndex.value.byTrack.get(selectedTrackId.value)??[]).map(a=>a.anchorId));
+    return anchors.value.filter(p=>ids.has(p.id));
+  });
+  const trackAssociations=computed(()=>associationIndex.value.byTrack.get(selectedTrackId.value)??[]);
+  function associationFor(trackId:string,anchorId:string){return associationIndex.value.byPair.get(JSON.stringify([trackId,anchorId]));}
   function trackLocationLabels(trackId:string){
-    const track=tracks.value.find(t=>t.id===trackId);
-    return musicLocations.value.filter(p=>track?.sceneInfo?.musicLocationIds.includes(p.id)).map(p=>`${p.country} / ${areas.value.find(a=>a.id===p.areaId)?.name??p.areaCode} / ${p.name}`);
+    const track=trackById.value.get(trackId);
+    return (track?.sceneInfo?.musicLocationIds??[]).flatMap(id=>{
+      const p=locationById.value.get(id);return p?[p.areaId===null?`未定位 / ${p.name}`:`${p.country} / ${areas.value.find(a=>a.id===p.areaId)?.name??p.areaCode} / ${p.name}`]:[];
+    });
   }
   const anchorMusicContexts=computed(()=>[...new Set(anchorTracks.value.flatMap(t=>trackLocationLabels(t.id)))]);
   const mapConfig=computed<ResolvedMap|null>(()=>snapshot.value?resolveMap(snapshot.value,areaCode.value):null);
@@ -49,9 +66,13 @@ export function useExplorer() {
   }
   const visibleAnchors=computed(()=>anchors.value.filter(a=>(a.areaCode===areaCode.value||(highlightedIds.value.includes(a.id)&&snapshot.value&&resolveMap(snapshot.value,a.areaCode).code===mapConfig.value?.code))&&(typeFilter.value==='all'||a.kind===typeFilter.value)&&layerMatch(a)
     &&includes([a.name,a.content,a.country,a.areaName,a.sourceId])));
-  const searchTracks=computed(()=>tracks.value.filter(t=>includes([t.title,...t.artists,...(t.composers??[]),t.album,t.description,t.neteaseId,
-    notes.personalNoteFor(t.id,t.personalNote??''),t.sceneInfo?.wikiTitle,t.sceneInfo?.englishTitle,t.sceneInfo?.originText,...(t.sceneInfo?.mainRegions??[]),...trackLocationLabels(t.id),
-    ...anchors.value.filter(p=>library.value.associations.some(a=>a.anchorId===p.id&&a.trackId===t.id)).flatMap(p=>[p.areaName,p.country,p.content])])));
+  const searchCorpus=computed(()=>new Map(tracks.value.map(t=>[t.id,[t.title,...t.artists,...(t.composers??[]),t.album,t.description,t.neteaseId,
+    t.sceneInfo?.wikiTitle,t.sceneInfo?.englishTitle,t.sceneInfo?.originText,...(t.sceneInfo?.mainRegions??[]),...trackLocationLabels(t.id),
+    ...(associationIndex.value.byTrack.get(t.id)??[]).flatMap(link=>{const p=anchorById.value.get(link.anchorId);return p?[p.areaName,p.country,p.content]:[]})].join(' ').toLocaleLowerCase()])));
+  const searchTracks=computed(()=>{
+    const q=query.value.trim().toLocaleLowerCase();if(!q)return tracks.value;
+    return tracks.value.filter(t=>searchCorpus.value.get(t.id)?.includes(q)||notes.personalNoteFor(t.id,t.personalNote??'').toLocaleLowerCase().includes(q));
+  });
   async function load(){
     loading.value=true;error.value='';
     try{

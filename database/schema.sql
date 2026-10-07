@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS track_anchor (
 );
 CREATE TABLE IF NOT EXISTS music_location (
   id VARCHAR(100) PRIMARY KEY, name VARCHAR(255) NOT NULL, country VARCHAR(80) NOT NULL,
-  area_id BIGINT NOT NULL, area_code VARCHAR(80) NOT NULL,
+    area_id BIGINT NULL, area_code VARCHAR(80) NULL,
   kind ENUM('place','scene') NOT NULL, source_url VARCHAR(500) NOT NULL, notes TEXT NOT NULL,
   FOREIGN KEY (area_id) REFERENCES area(id)
 );

@@ -1,3 +1,6 @@
+import fs from 'node:fs';
+const builtin=JSON.parse(fs.readFileSync('public/data/music-library.json','utf8'));
+const countAt=(id:string)=>builtin.associations.filter((a:any)=>a.anchorId===id).length;
 import { test, expect } from '@playwright/test';
 import { readFileSync, writeFileSync } from 'node:fs';
 import type { MapSnapshot } from '../../src/domain/contracts';
@@ -16,7 +19,7 @@ test('真实地图瓦片、27个蒙德点位、地图点击和键盘神像入口
   await expect.poll(()=>page.locator('.leaflet-tile-loaded').count(),{timeout:30000}).toBeGreaterThan(0);
   await expect(page.locator('.music-anchor')).toHaveCount(27);
   await page.locator(`[data-anchor-id="${waypoint.id}"]`).click({force:true});
-  await expect(page.locator('.detail-view')).toBeVisible();await expect(page.locator('.detail-view')).toContainText('关联音乐（16）');
+  await expect(page.locator('.detail-view')).toBeVisible();await expect(page.locator('.detail-view')).toContainText(`关联音乐（${countAt(waypoint.id)}）`);
   await page.keyboard.press('Escape');await expect(page.locator('.detail-view')).not.toBeVisible();
   await page.getByRole('button',{name:'神像',exact:true}).click();await expect(page.locator('.anchor-list button')).toHaveCount(4);
   await page.locator('.anchor-list button').first().focus();await page.keyboard.press('Enter');await expect(page.locator('.detail-view')).toBeVisible();

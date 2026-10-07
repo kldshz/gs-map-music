@@ -7,7 +7,9 @@ import { usePersonalNotes } from '../../src/services/personal-notes';
 const snapshot=validateSnapshot(JSON.parse(await readFile('public/data/kongying-map.json','utf8')));
 const ids=new Set(snapshot.anchors.map(a=>a.id));
 const raw=JSON.parse(await readFile('public/data/music-library.json','utf8'));
-const library=validateLibrary(raw,ids,snapshot);
+const full=validateLibrary(raw,ids,snapshot);
+const pilotIds=new Set(JSON.parse(await readFile('data/sources/city-winds-source.json','utf8')).tracks.map((t:any)=>'netease:'+t.neteaseId));
+const library={...full,tracks:full.tracks.filter(t=>pilotIds.has(t.id)),associations:full.associations.filter(a=>pilotIds.has(a.trackId)),musicLocations:full.musicLocations?.filter(p=>p.id.startsWith('city-winds-place-'))};
 const source=JSON.parse(await readFile('data/sources/city-winds-source.json','utf8'));
 test('63曲一一对应Wiki曲序和网易ID，出处/未知项/个人评价独立',()=>{
   assert.equal(library.tracks.length,63);assert.equal(library.associations.length,404);assert.equal(library.musicLocations?.length,40);

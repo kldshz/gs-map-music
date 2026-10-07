@@ -1,3 +1,6 @@
+import fs from 'node:fs';
+const builtin=JSON.parse(fs.readFileSync('public/data/music-library.json','utf8'));
+const countAt=(id:string)=>builtin.associations.filter((a:any)=>a.anchorId===id).length;
 import { test, expect } from '@playwright/test';
 
 test.setTimeout(60000);
@@ -6,7 +9,7 @@ async function ready(page:any){await page.goto('/');await expect(page.locator('.
 test('开发模式点位方向增删、恢复和刷新保存',async({page})=>{
   await ready(page);
   await page.locator('.anchor-list button').filter({hasText:'#kongying:6290'}).click();
-  await expect(page.locator('.detail-view')).toContainText('关联音乐（16）');
+  await expect(page.locator('.detail-view')).toContainText(`关联音乐（${countAt('kongying:6290')}）`);
   await page.getByPlaceholder('搜索全部曲目').fill('风所爱之城');
   await page.getByRole('button',{name:'添加到此点位',exact:true}).click();
   await expect(page.locator('.tracks-list .track-detail').filter({hasText:'风所爱之城'})).toHaveCount(1);
@@ -16,20 +19,20 @@ test('开发模式点位方向增删、恢复和刷新保存',async({page})=>{
   await manual.getByRole('button',{name:'移除关联',exact:true}).click();
   await expect(page.locator('.edit-message')).toContainText('已移除关联');
   await expect(manual).toHaveCount(0);
-  await expect(page.locator('.detail-view')).toContainText('关联音乐（16）');
+  await expect(page.locator('.detail-view')).toContainText(`关联音乐（${countAt('kongying:6290')}）`);
   await page.reload();await ready(page);await page.locator('.anchor-list button').filter({hasText:'#kongying:6290'}).click();
   const afterRemove=page.locator('.tracks-list .track-detail').filter({hasText:'风所爱之城'});
   await expect(afterRemove).toHaveCount(0);
   const source=page.locator('.tracks-list .track-detail').filter({hasText:'饰金的夜色'});
   await source.getByRole('button',{name:'移除关联',exact:true}).click();
   await expect(source).toHaveCount(0);
-  await expect(page.locator('.detail-view')).toContainText('关联音乐（15）');
+  await expect(page.locator('.detail-view')).toContainText(`关联音乐（${countAt('kongying:6290')-1}）`);
   await page.reload();await ready(page);await page.locator('.anchor-list button').filter({hasText:'#kongying:6290'}).click();
   await page.getByPlaceholder('搜索全部曲目').fill('饰金的夜色');
   await expect(page.getByRole('button',{name:'恢复来源关联',exact:true}).first()).toBeVisible();
   await page.getByRole('button',{name:'恢复来源关联',exact:true}).first().click();
   await expect(page.locator('.tracks-list .track-detail').filter({hasText:'饰金的夜色'})).toHaveCount(1);
-  await expect(page.locator('.detail-view')).toContainText('关联音乐（16）');
+  await expect(page.locator('.detail-view')).toContainText(`关联音乐（${countAt('kongying:6290')}）`);
   await page.screenshot({path:'.local/dev-browser-tests/editor-anchor.png',fullPage:true});
 });
 

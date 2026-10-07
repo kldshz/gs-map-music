@@ -8,7 +8,7 @@ const base=validateLibrary(JSON.parse(await readFile('public/data/music-library.
 const empty={schemaVersion:1 as const,edits:[]};
 
 test('野外不覆盖专属场景；通用战斗覆盖风龙废墟但排除城市',()=>{
-  const scopes=base.associations.filter(a=>a.matchType==='region-scope');assert.equal(scopes.length,330);
+  const scopes=base.associations.filter(a=>a.matchType==='region-scope'&&a.id.startsWith('city-winds:'));assert.equal(scopes.length,330);
   assert.equal(new Set(scopes.map(a=>a.trackId)).size,16);assert.equal(new Set(scopes.map(a=>a.anchorId)).size,25);
   for(const a of scopes){const p=snapshot.anchors.find(p=>p.id===a.anchorId)!;assert.equal(p.areaCode,'A:MD:MENGDE');assert(!p.content.includes('【蒙德 蒙德城】'));if(p.content.includes('风龙废墟'))assert(['光辉的涨落','解决之道'].includes(base.tracks.find(t=>t.id===a.trackId)!.sceneInfo!.wikiTitle));assert.equal(a.evidenceStatus,'pending');}
   const loading=base.tracks.find(t=>t.sceneInfo?.wikiTitle==='宁静的黄昏')!;assert.equal(base.associations.filter(a=>a.trackId===loading.id).length,1);assert.equal(base.associations.find(a=>a.trackId===loading.id)?.matchType,'region-archive');

@@ -41,7 +41,7 @@ export interface SceneInfo {
   wikiSourceUrl:string; wikiRevisionId:string; metadataNotes:string[];
 }
 export interface MusicLocation {
-  id:string; name:string; country:string; areaId:number; areaCode:string;
+  id:string; name:string; country:string; areaId:number|null; areaCode:string|null;
   /** area fields describe the archive namespace; scene locations can be geographically unresolved. */
   kind:'place'|'scene'; sourceUrl:string; notes:string;
 }

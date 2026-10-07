@@ -41,8 +41,8 @@ export function validateLibrary(value:unknown,anchorIds:Set<string>,snapshot?:Ma
   if(!Array.isArray(locations)||locations.length>10000)throw new Error('音乐地点目录无效');
   unique(locations,'音乐地点');
   for(const p of locations){
-    if(!record(p)||!text(p.name)||!text(p.country)||!Number.isInteger(p.areaId)||!text(p.areaCode)||!['place','scene'].includes(String(p.kind))||!text(p.sourceUrl)||!url(p.sourceUrl)||!text(p.notes))throw new Error('音乐地点字段无效');
-    if(snapshot&&!snapshot.areas.some(a=>a.id===p.areaId&&a.code===p.areaCode))throw new Error('音乐地点引用不存在的地区');
+    if(!record(p)||!text(p.name)||!text(p.country)||!((p.areaId===null&&p.areaCode===null)||(Number.isInteger(p.areaId)&&text(p.areaCode)))||!['place','scene'].includes(String(p.kind))||!text(p.sourceUrl)||!url(p.sourceUrl)||!text(p.notes))throw new Error('音乐地点字段无效');
+    if(snapshot&&p.areaId!==null&&!snapshot.areas.some(a=>a.id===p.areaId&&a.code===p.areaCode))throw new Error('音乐地点引用不存在的地区');
   }
   const locationIds=new Set(locations.map(p=>p.id));
   for(const t of value.tracks){
@@ -55,14 +55,14 @@ export function validateLibrary(value:unknown,anchorIds:Set<string>,snapshot?:Ma
       if(!record(s)||!text(s.wikiTitle)||!text(s.englishTitle)||!Number.isInteger(s.discNumber)||Number(s.discNumber)<1||!text(s.discTitle)||!Number.isInteger(s.trackNumber)||Number(s.trackNumber)<1||!text(s.originText)||!texts(s.mainRegions)||!texts(s.musicLocationIds)||!(s.musicLocationIds as string[]).every(id=>locationIds.has(id))||!text(s.wikiSourceUrl)||!url(s.wikiSourceUrl)||!text(s.wikiRevisionId)||!texts(s.metadataNotes))throw new Error('Wiki出处字段或地点引用无效');
     }
   }
-  const edges=new Set<string>();
+  const edges=new Set<string>(),anchorById=new Map(snapshot?.anchors.map(a=>[a.id,a]));
   for(const a of value.associations){
     if(!record(a)||!ids.has(String(a.trackId))||!anchorIds.has(String(a.anchorId))||!['pending','verified'].includes(String(a.evidenceStatus))||!text(a.evidenceNote)||!url(a.sourceUrl))throw new Error(`关联无效或引用不存在：${a?.id??'未知ID'}`);
     if(a.evidenceStatus==='verified'&&(!a.evidenceNote.trim()||!a.sourceUrl))throw new Error('已核实关联必须有证据说明和来源URL');
     if(a.matchType!==undefined&&!['place-match','parent-place-match','region-archive','region-scope','manual'].includes(String(a.matchType)))throw new Error('关联方式无效');
     if(a.matchType==='region-archive'&&a.evidenceStatus!=='pending')throw new Error('地区归档不能伪装成已核实播放地点');
     if(['region-scope','manual'].includes(String(a.matchType))&&a.evidenceStatus!=='pending')throw new Error('范围候选或手动挂载必须待核实');
-    if(a.matchType==='region-archive'&&snapshot?.anchors.find(p=>p.id===a.anchorId)?.kind!=='statue'&&snapshot)throw new Error('地区归档必须挂载到神像');
+    if(a.matchType==='region-archive'&&snapshot&&anchorById.get(String(a.anchorId))?.kind!=='statue')throw new Error('地区归档必须挂载到神像');
     const edge=JSON.stringify([a.trackId,a.anchorId]);if(edges.has(edge))throw new Error('重复曲目—点位关联');edges.add(edge);
   }
   return {schemaVersion:1,tracks:value.tracks.map(t=>({id:t.id,title:t.title,artists:t.artists,composers:t.composers,album:t.album,releaseDate:t.releaseDate,durationSeconds:t.durationSeconds,description:t.description,neteaseId:t.neteaseId,sourceUrl:t.sourceUrl,

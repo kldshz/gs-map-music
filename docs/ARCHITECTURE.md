@@ -50,3 +50,5 @@ MusicTrack存title/artists/composers/album/releaseDate/durationSeconds/descripti
 使用npm run dev，在右栏点位曲库搜索歌曲并添加/移除，或在歌曲信息的关联点位分段中按地区和文字选择点位增删。关联修改成功后曲库/计数立即更新，刷新保留。删除来源关系可恢复来源；手动新增关系删除后不显示来源恢复。歌曲元数据和原始证据不改，手动新增始终manual/pending。
 
 Vite只在开发服务提供本机/__dev/music-links，记录写data/association-edits.json，按稳定曲目ID与点位ID保存add/remove覆盖。该文件为空基线纳入版本管理，用户编辑表现为可审查的Git修改；构建应用这些记录到静态曲库。生产页面没有编辑控件/写接口。仅本机Host与同源JSON请求可写，测试用.local独立文件，不污染用户修改。可导出当前曲库JSON；临时导入后编辑禁用，刷新回内置库。没有MySQL自动同步，修改评价仍只保存在当前浏览器。
+
+阶段3批量增量：MusicLocation.areaId/areaCode允许成对null表示真实未知；校验拒绝单边null或虚构地区。基于track/anchor/pair索引检索与点选，避免扩库后逐曲逐点扫描全部关联。候选生成规则与批次入口见OST_BULK_IMPORT.md；保留原63数据/人工覆盖/评价。
