@@ -10,6 +10,7 @@
     "preview": "vite preview --host 127.0.0.1",
     "test:data": "tsx --test tests/data/*.test.ts && node --test tests/data/*.test.mjs",
     "db:setup": "node scripts/setup-mysql.mjs",
+    "db:import": "tsx scripts/import-music-library.ts",
     "test:ui": "playwright test"
   },
   "dependencies": {

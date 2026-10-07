@@ -299,3 +299,227 @@ button.location-btn { display: flex; flex-direction: column; align-items: stretc
   button.anchor-item, button.track-item, button.location-btn { min-height: 32px; }
   .anchor-item .anchor-content { -webkit-line-clamp: 1; line-clamp: 1; }
 }
+
+
+/* S3-ALBUM-UI-001: 曲库细分目录、关联详情、个人评价 */
+
+/* 曲库细分目录区块 */
+.music-contexts {
+  margin: 12px 0;
+  padding: 10px;
+  background: var(--paper-2);
+  border-left: 3px solid var(--gold);
+  border-radius: 4px;
+}
+
+.music-contexts h4 {
+  margin: 0 0 4px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--slate);
+}
+
+.context-note {
+  margin: 0 0 6px;
+  font-size: 12px;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+.context-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.context-list li {
+  padding: 3px 0;
+  font-size: 12px;
+  color: var(--ink);
+  border-bottom: 1px solid rgba(200, 173, 127, 0.2);
+}
+
+.context-list li:last-child {
+  border-bottom: 0;
+}
+
+/* 曲目详情页扩展 */
+.track-metadata .origin-text {
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+}
+
+.location-labels,
+.metadata-notes {
+  list-style: disc;
+  margin: 4px 0 0 20px;
+  padding: 0;
+}
+
+.location-labels li,
+.metadata-notes li {
+  margin: 2px 0;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.metadata-note {
+  display: inline;
+  margin-left: 4px;
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+/* 关联点位详情 */
+.association-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 4px;
+  padding: 6px 8px;
+  background: var(--paper-2);
+  border-left: 2px solid var(--gold-line);
+  font-size: 12px;
+}
+
+.match-type {
+  font-weight: 600;
+  color: var(--slate);
+}
+
+.match-type::before {
+  content: '● ';
+  color: var(--gold);
+}
+
+.association-detail .match-type.region-archive {
+  color: var(--danger);
+  font-weight: 700;
+}
+
+.evidence-note {
+  color: var(--ink-soft);
+  overflow-wrap: anywhere;
+}
+
+/* 个人评价区块 */
+.personal-note-section {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--gold-line);
+}
+
+.personal-note-section h3 {
+  margin: 0 0 6px;
+  font-size: 14px;
+  color: var(--slate);
+}
+
+.note-instruction {
+  margin: 0 0 8px;
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+.personal-note-input {
+  width: 100%;
+  min-height: 120px;
+  padding: 8px 10px;
+  border: 1px solid var(--gold-line);
+  border-radius: var(--radius);
+  background: var(--paper);
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+  resize: vertical;
+  overflow-y: auto;
+}
+
+.personal-note-input:focus {
+  outline: 2px solid var(--focus);
+  outline-offset: 1px;
+  border-color: var(--focus);
+}
+
+.note-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.note-btn {
+  min-height: 32px;
+  padding: 4px 14px;
+  border: 1px solid var(--gold);
+  border-radius: var(--radius);
+  background: var(--slate);
+  color: var(--paper);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.note-btn:hover:not(:disabled) {
+  background: var(--slate-2);
+}
+
+.note-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.note-btn:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.note-length {
+  margin-left: auto;
+  font-size: 12px;
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+.note-message {
+  margin: 6px 0 0;
+  padding: 6px 8px;
+  border-radius: 4px;
+  background: var(--paper-2);
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.note-message[role="status"] {
+  color: var(--ink);
+  border-left: 3px solid var(--gold);
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .music-contexts {
+    padding: 8px;
+  }
+
+  .personal-note-input {
+    min-height: 100px;
+    font-size: 16px; /* 防止iOS自动缩放 */
+  }
+
+  .note-controls {
+    gap: 6px;
+  }
+
+  .note-btn {
+    min-height: 30px;
+    padding: 3px 12px;
+    font-size: 12px;
+  }
+
+  .note-length {
+    flex: 1 1 100%;
+    margin-left: 0;
+    text-align: right;
+  }
+}

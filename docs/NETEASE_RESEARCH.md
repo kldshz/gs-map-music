@@ -34,3 +34,9 @@ FAQ 的原文包括：“个人场景：暂不支持……仅可使用 ncm-cli �
 ## 证据保存
 
 公开读取入口来自官方页面脚本：`https://developer.music.163.com/api/openplatform/developer/apidoc/get?docId=…`，文档目录来自 `/api/openplatform/developer/api/doc/category`。它们只是实际查阅文档的方式，**不是本项目音源 API**。响应 code=200，内容标题/更新日期已核对；本地原始快照在忽略目录 `.local/research/netease-*.json`。未入库示例密钥、完整第三方文档或音源链接。
+
+## 2026-10-07专辑试做追加事实
+
+沿用已配置官方ncm-cli0.1.7与用户已授权登录，读取NetEase官方netease-music-cli技能，先help再查询；本轮login --check成功。search album、album get --descFlag true、album tracks针对《风与牧歌之城》均code200，专辑数字ID95790219、加密ID8687CEE480D6D9C33D3AD0EB20A204AF，63首真实曲目ID/艺人/毫秒时长及发行信息成功。元数据详细记录见[CITY_WINDS_PILOT](CITY_WINDS_PILOT.md)。
+
+63条visible=false、playFlag=false，不把返回成功说成可播放。只读取，不下载/解析/播放音频，不将凭据或账号字段发前端/Claude/Git。此前指定歌单400与本轮专辑成功为不同请求。上文“尚无CLI/ID/资质/许可示例”是阶段1历史条件，当前CLI已配置且登录，旧非原神音频已移除；网页API权限和实际播放仍未解决。

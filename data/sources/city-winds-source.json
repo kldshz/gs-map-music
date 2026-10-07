@@ -1,0 +1,1355 @@
+{
+  "capturedOn": "2026-10-07",
+  "wikiSourceUrl": "https://wiki.biligame.com/ys/%E9%A3%8E%E4%B8%8E%E7%89%A7%E6%AD%8C%E4%B9%8B%E5%9F%8E",
+  "wikiRevisionId": "687233",
+  "wikiCaveat": "出处仅供参考，部分内容待完善，请求帮助，谢谢！",
+  "album": {
+    "neteaseId": "95790219",
+    "neteaseEncryptedId": "8687CEE480D6D9C33D3AD0EB20A204AF",
+    "title": "原神-风与牧歌之城 City of Winds and Idylls",
+    "releaseDate": "2020-09-28",
+    "publishTime": 1601222400000,
+    "dateTimeZone": "Asia/Shanghai",
+    "company": "miHoYo",
+    "artists": [
+      "陈致逸",
+      "HOYO-MiX"
+    ],
+    "composer": "陈致逸",
+    "composerEvidence": "Wiki制作团队明确列出作曲：陈致逸；网易专辑介绍明确63首由陈致逸@HOYO-MiX创作。不是从艺人字段推断。",
+    "sourceUrl": "https://music.163.com/album?id=95790219"
+  },
+  "placeReferences": [
+    {
+      "place": "太山府",
+      "region": "璃月",
+      "url": "https://wiki.biligame.com/ys/%E5%A4%AA%E5%B1%B1%E5%BA%9C"
+    },
+    {
+      "place": "震雷连山密宫",
+      "region": "璃月",
+      "url": "https://wiki.biligame.com/ys/%E9%9C%87%E9%9B%B7%E8%BF%9E%E5%B1%B1%E5%AF%86%E5%AE%AB"
+    },
+    {
+      "place": "芬德尼尔之顶",
+      "region": "龙脊雪山",
+      "url": "https://wiki.biligame.com/ys/%E8%8A%AC%E5%BE%B7%E5%B0%BC%E5%B0%94%E4%B9%8B%E9%A1%B6"
+    },
+    {
+      "place": "塞西莉亚苗圃",
+      "region": "蒙德",
+      "url": "https://wiki.biligame.com/ys/%E5%A1%9E%E8%A5%BF%E8%8E%89%E4%BA%9A%E8%8B%97%E5%9C%83"
+    }
+  ],
+  "tracks": [
+    {
+      "wikiTitle": "宁静的黄昏",
+      "englishTitle": "Twilight Serenity (Genshin Impact Main Theme Var.)",
+      "discNumber": 1,
+      "discTitle": "Disc 01 风与牧歌之城 City of Winds and Idylls",
+      "trackNumber": 1,
+      "originText": "游戏加载界面\n-清晨傍晚\n《原神》EP - 和煦希望之风",
+      "originLinks": [
+        {
+          "text": "《原神》EP - 和煦希望之风",
+          "href": "https://www.bilibili.com/video/BV1rN411d7Qi"
+        }
+      ],
+      "neteaseId": "1481392130",
+      "neteaseEncryptedId": "678A06CA91238C8157C67C77224F1488",
+      "neteaseTitle": "宁静的黄昏 Twilight Serenity (Genshin Impact Main Theme Var.)",
+      "durationSeconds": 101.554,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "风的传说",
+      "englishTitle": "Legend of the Wind",
+      "discNumber": 1,
+      "discTitle": "Disc 01 风与牧歌之城 City of Winds and Idylls",
+      "trackNumber": 2,
+      "originText": "安柏传说任务故事书\n风、勇气和翅膀\n《原神》EP - 轻风诉说之事",
+      "originLinks": [
+        {
+          "text": "风、勇气和翅膀",
+          "href": "https://wiki.biligame.com/ys/%E9%A3%8E%E3%80%81%E5%8B%87%E6%B0%94%E5%92%8C%E7%BF%85%E8%86%80"
+        },
+        {
+          "text": "《原神》EP - 轻风诉说之事",
+          "href": "https://www.bilibili.com/video/BV14K411G7Eq"
+        }
+      ],
+      "neteaseId": "1481390529",
+      "neteaseEncryptedId": "2E059A5345A80C489C673925F8657E05",
+      "neteaseTitle": "风的传说 Legend of the Wind",
+      "durationSeconds": 86.843,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "风所爱之城",
+      "englishTitle": "The City Favored By Wind",
+      "discNumber": 1,
+      "discTitle": "Disc 01 风与牧歌之城 City of Winds and Idylls",
+      "trackNumber": 3,
+      "originText": "蒙德城-白天",
+      "originLinks": [],
+      "neteaseId": "1481392245",
+      "neteaseEncryptedId": "E48E5605078E6DF96EB48D35B9741E43",
+      "neteaseTitle": "风所爱之城 The City Favored By Wind",
+      "durationSeconds": 63.25,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "蒙德城繁忙的午后",
+      "englishTitle": "Bustling Afternoon of Mondstadt",
+      "discNumber": 1,
+      "discTitle": "Disc 01 风与牧歌之城 City of Winds and Idylls",
+      "trackNumber": 4,
+      "originText": "蒙德城-白天",
+      "originLinks": [],
+      "neteaseId": "1481392262",
+      "neteaseEncryptedId": "8BB2C519AAB381A5497ABE20748C95C2",
+      "neteaseTitle": "蒙德城繁忙的午后 Bustling Afternoon of Mondstadt",
+      "durationSeconds": 108.274,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "蒙德的黄昏",
+      "englishTitle": "Dusk in Mondstadt",
+      "discNumber": 1,
+      "discTitle": "Disc 01 风与牧歌之城 City of Winds and Idylls",
+      "trackNumber": 5,
+      "originText": "蒙德城-傍晚\n旅行历程界面蒙德地区音乐",
+      "originLinks": [
+        {
+          "text": "旅行历程",
+          "href": "https://wiki.biligame.com/ys/%E6%97%85%E8%A1%8C%E5%8E%86%E7%A8%8B"
+        }
+      ],
+      "neteaseId": "1481392257",
+      "neteaseEncryptedId": "EECF2D6BA74F7858CE7CFCDE0950D01A",
+      "neteaseTitle": "蒙德的黄昏 Dusk in Mondstadt",
+      "durationSeconds": 108.77,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "星光下的蒙德",
+      "englishTitle": "Mondstadt Starlit",
+      "discNumber": 1,
+      "discTitle": "Disc 01 风与牧歌之城 City of Winds and Idylls",
+      "trackNumber": 6,
+      "originText": "蒙德城-夜间",
+      "originLinks": [],
+      "neteaseId": "1481390520",
+      "neteaseEncryptedId": "9AED4A8FACD3933D62B85AA3A3342B91",
+      "neteaseTitle": "星光下的蒙德 Mondstadt Starlit",
+      "durationSeconds": 60.71,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "蒙德的月光",
+      "englishTitle": "Moonlight in Mondstadt",
+      "discNumber": 1,
+      "discTitle": "Disc 01 风与牧歌之城 City of Winds and Idylls",
+      "trackNumber": 7,
+      "originText": "蒙德城-夜间",
+      "originLinks": [],
+      "neteaseId": "1481392244",
+      "neteaseEncryptedId": "42EB7F3112F567919C6159A4EF0D5638",
+      "neteaseTitle": "蒙德的月光 Moonlight in Mondstadt",
+      "durationSeconds": 49.339,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "蒙德的又一日",
+      "englishTitle": "Another Day in Mondstadt",
+      "discNumber": 1,
+      "discTitle": "Disc 01 风与牧歌之城 City of Winds and Idylls",
+      "trackNumber": 8,
+      "originText": "蒙德城-清晨",
+      "originLinks": [],
+      "neteaseId": "1481390511",
+      "neteaseEncryptedId": "34205064E836F8AFBCFAE5675846FC66",
+      "neteaseTitle": "蒙德的又一日 Another Day in Mondstadt",
+      "durationSeconds": 52.686,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "风带来的圣歌",
+      "englishTitle": "Windborne Hymn",
+      "discNumber": 1,
+      "discTitle": "Disc 01 风与牧歌之城 City of Winds and Idylls",
+      "trackNumber": 9,
+      "originText": "西风大教堂-室内\n《原神》EP - 轻风诉说之事",
+      "originLinks": [
+        {
+          "text": "《原神》EP - 轻风诉说之事",
+          "href": "https://www.bilibili.com/video/BV14K411G7Eq"
+        }
+      ],
+      "neteaseId": "1481390533",
+      "neteaseEncryptedId": "F682B71064D19D0F3F77DDED2A76DD86",
+      "neteaseTitle": "风带来的圣歌 Windborne Hymn",
+      "durationSeconds": 108.007,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "西风骑士团",
+      "englishTitle": "Knights of Favonius",
+      "discNumber": 1,
+      "discTitle": "Disc 01 风与牧歌之城 City of Winds and Idylls",
+      "trackNumber": 10,
+      "originText": "西风骑士团-室内",
+      "originLinks": [],
+      "neteaseId": "1481392255",
+      "neteaseEncryptedId": "3CF50EF51261A38E2CD91402D1769F0B",
+      "neteaseTitle": "西风骑士团 Knights of Favonius",
+      "durationSeconds": 75.411,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "天使的馈赠",
+      "englishTitle": "Angel's Share",
+      "discNumber": 1,
+      "discTitle": "Disc 01 风与牧歌之城 City of Winds and Idylls",
+      "trackNumber": 11,
+      "originText": "天使的馈赠-室内",
+      "originLinks": [],
+      "neteaseId": "1481392263",
+      "neteaseEncryptedId": "CE4E9BCF4953FFAC0B53CEECDAA39D8B",
+      "neteaseTitle": "天使的馈赠 Angel's Share",
+      "durationSeconds": 113.196,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "剪影与蹑步",
+      "englishTitle": "Silhouette and Silk Steps",
+      "discNumber": 1,
+      "discTitle": "Disc 01 风与牧歌之城 City of Winds and Idylls",
+      "trackNumber": 12,
+      "originText": "紧张氛围常见\n例如偷天空之琴\n风行迷踪活动\n《原神》EP - 炎夏炽宝之踪",
+      "originLinks": [
+        {
+          "text": "风行迷踪",
+          "href": "https://wiki.biligame.com/ys/%E9%A3%8E%E8%A1%8C%E8%BF%B7%E8%B8%AA"
+        },
+        {
+          "text": "《原神》EP - 炎夏炽宝之踪",
+          "href": "https://www.bilibili.com/video/BV1rg411G7hE"
+        }
+      ],
+      "neteaseId": "1481390530",
+      "neteaseEncryptedId": "D9D2B5C7D602E448154E057B5D647ECF",
+      "neteaseTitle": "剪影与蹑步 Silhouette and Silk Steps",
+      "durationSeconds": 91.368,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "危险的小径",
+      "englishTitle": "Perilous Path",
+      "discNumber": 1,
+      "discTitle": "Disc 01 风与牧歌之城 City of Winds and Idylls",
+      "trackNumber": 13,
+      "originText": "与愚人众对峙时\n如迫近的客星",
+      "originLinks": [
+        {
+          "text": "迫近的客星",
+          "href": "https://wiki.biligame.com/ys/%E8%BF%AB%E8%BF%91%E7%9A%84%E5%AE%A2%E6%98%9F"
+        }
+      ],
+      "neteaseId": "1481392264",
+      "neteaseEncryptedId": "111F82AE0EF6E3DBDFDDB9845DB717CB",
+      "neteaseTitle": "危险的小径 Perilous Path",
+      "durationSeconds": 139.34,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "直面",
+      "englishTitle": "Say My Name",
+      "discNumber": 1,
+      "discTitle": "Disc 01 风与牧歌之城 City of Winds and Idylls",
+      "trackNumber": 14,
+      "originText": "琴传说任务\n幼狮之章过场动画",
+      "originLinks": [
+        {
+          "text": "幼狮之章",
+          "href": "https://wiki.biligame.com/ys/%E5%B9%BC%E7%8B%AE%E4%B9%8B%E7%AB%A0"
+        }
+      ],
+      "neteaseId": "1481392261",
+      "neteaseEncryptedId": "7AE053FB7033AEFBD73706B5455D3EF7",
+      "neteaseTitle": "直面 Say My Name",
+      "durationSeconds": 111.936,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "呃，这可没想到…",
+      "englishTitle": "Welp, Didn't Expect That",
+      "discNumber": 1,
+      "discTitle": "Disc 01 风与牧歌之城 City of Winds and Idylls",
+      "trackNumber": 15,
+      "originText": "尴尬场面常见\n如公子鲸天之章\n最棒的玩具销售员\n《原神》EP - 炎夏炽宝之踪",
+      "originLinks": [
+        {
+          "text": "鲸天之章",
+          "href": "https://wiki.biligame.com/ys/%E9%B2%B8%E5%A4%A9%E4%B9%8B%E7%AB%A0"
+        },
+        {
+          "text": "《原神》EP - 炎夏炽宝之踪",
+          "href": "https://www.bilibili.com/video/BV1rg411G7hE"
+        }
+      ],
+      "neteaseId": "1481392259",
+      "neteaseEncryptedId": "281BC1F5EB97E6B5DFE0B9ADEA0C10C8",
+      "neteaseTitle": "呃，这可没想到… Welp, Didn't Expect That",
+      "durationSeconds": 82.987,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "有趣的挑战",
+      "englishTitle": "An Interesting Labour",
+      "discNumber": 1,
+      "discTitle": "Disc 01 风与牧歌之城 City of Winds and Idylls",
+      "trackNumber": 16,
+      "originText": "小游戏常见\n最早是考飞行执照",
+      "originLinks": [],
+      "neteaseId": "1481390532",
+      "neteaseEncryptedId": "9D4B88C34A92FFC8A44D15C549CF7DBD",
+      "neteaseTitle": "有趣的挑战 An Interesting Labour",
+      "durationSeconds": 86.986,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "速度加快",
+      "englishTitle": "Make Haste, Partner",
+      "discNumber": 1,
+      "discTitle": "Disc 01 风与牧歌之城 City of Winds and Idylls",
+      "trackNumber": 17,
+      "originText": "安柏传说任务\n空中轰炸部分",
+      "originLinks": [],
+      "neteaseId": "1481390531",
+      "neteaseEncryptedId": "1930075B4FFF6C9ABF2EDDBD7F0A130F",
+      "neteaseTitle": "速度加快 Make Haste, Partner",
+      "durationSeconds": 88.407,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "开心的一天",
+      "englishTitle": "A Happy Day",
+      "discNumber": 1,
+      "discTitle": "Disc 01 风与牧歌之城 City of Winds and Idylls",
+      "trackNumber": 18,
+      "originText": "剧情音乐",
+      "originLinks": [],
+      "neteaseId": "1481390501",
+      "neteaseEncryptedId": "01BF5971C41999578E08CE589917CAA0",
+      "neteaseTitle": "开心的一天 A Happy Day",
+      "durationSeconds": 28.702,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "低语森林的重逢",
+      "englishTitle": "Reunion in the Whispering Woods",
+      "discNumber": 1,
+      "discTitle": "Disc 01 风与牧歌之城 City of Winds and Idylls",
+      "trackNumber": 19,
+      "originText": "主线剧情\n温迪和风魔龙\n冰毛茸茸和风魔龙",
+      "originLinks": [],
+      "neteaseId": "1481390525",
+      "neteaseEncryptedId": "1FC84387BFFB045A63045938C6D46E77",
+      "neteaseTitle": "低语森林的重逢 Reunion in the Whispering Woods",
+      "durationSeconds": 37.08,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "震惊",
+      "englishTitle": "Startled",
+      "discNumber": 1,
+      "discTitle": "Disc 01 风与牧歌之城 City of Winds and Idylls",
+      "trackNumber": 20,
+      "originText": "主线剧情",
+      "originLinks": [],
+      "neteaseId": "1481390500",
+      "neteaseEncryptedId": "91CABD45FBC22D8C711BA445B74A9BEA",
+      "neteaseTitle": "震惊 Startled",
+      "durationSeconds": 29.369,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "初遇安柏",
+      "englishTitle": "Meeting Amber",
+      "discNumber": 1,
+      "discTitle": "Disc 01 风与牧歌之城 City of Winds and Idylls",
+      "trackNumber": 21,
+      "originText": "主线剧情\n第一次见安柏",
+      "originLinks": [],
+      "neteaseId": "1481390502",
+      "neteaseEncryptedId": "696EE44AA7AEE31C4F27EFB05E9FED5B",
+      "neteaseTitle": "初遇安柏 Meeting Amber",
+      "durationSeconds": 13.519,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "风暴降临",
+      "englishTitle": "Storm Befalls",
+      "discNumber": 1,
+      "discTitle": "Disc 01 风与牧歌之城 City of Winds and Idylls",
+      "trackNumber": 22,
+      "originText": "主线剧情\n风魔龙进城",
+      "originLinks": [],
+      "neteaseId": "1481392253",
+      "neteaseEncryptedId": "D54ED5B8A3CD3B57B41CD919F4E07A8A",
+      "neteaseTitle": "风暴降临 Storm Befalls",
+      "durationSeconds": 65.259,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "淡淡的不安",
+      "englishTitle": "Slight Distress",
+      "discNumber": 1,
+      "discTitle": "Disc 01 风与牧歌之城 City of Winds and Idylls",
+      "trackNumber": 23,
+      "originText": "温迪传说任务",
+      "originLinks": [],
+      "neteaseId": "1481390534",
+      "neteaseEncryptedId": "E10F733797BEBA8D146F412617B177E6",
+      "neteaseTitle": "淡淡的不安 Slight Distress",
+      "durationSeconds": 141.118,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "同伴的力量",
+      "englishTitle": "Tender Strength",
+      "discNumber": 1,
+      "discTitle": "Disc 01 风与牧歌之城 City of Winds and Idylls",
+      "trackNumber": 24,
+      "originText": "传说任务结尾常见\n最早应是琴传说任务",
+      "originLinks": [],
+      "neteaseId": "1481392260",
+      "neteaseEncryptedId": "699C8EE44013D09C0FF5D004370C58DC",
+      "neteaseTitle": "同伴的力量 Tender Strength",
+      "durationSeconds": 82.755,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "将至的凯歌",
+      "englishTitle": "Imminent Triumph",
+      "discNumber": 1,
+      "discTitle": "Disc 01 风与牧歌之城 City of Winds and Idylls",
+      "trackNumber": 25,
+      "originText": "主线剧情\n第一次见凯亚",
+      "originLinks": [],
+      "neteaseId": "1481392254",
+      "neteaseEncryptedId": "FFC5A887CC1D118DFCE6808BDDB3B78C",
+      "neteaseTitle": "将至的凯歌 Imminent Triumph",
+      "durationSeconds": 60.592,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "情不自禁",
+      "englishTitle": "Beckoning (Genshin Impact Main Theme Var)",
+      "discNumber": 2,
+      "discTitle": "Disc 02 蒲公英的国度 The Horizon of Dandelion",
+      "trackNumber": 1,
+      "originText": "内测时期音乐\n含人声",
+      "originLinks": [],
+      "neteaseId": "1481392040",
+      "neteaseEncryptedId": "45546EB1C6C08C5B62D0C6F26BDA2DCC",
+      "neteaseTitle": "情不自禁 Beckoning (Genshin Impact Main Theme Var.)",
+      "durationSeconds": 102.29,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "旅途的开始",
+      "englishTitle": "Hence, Begins the Journey",
+      "discNumber": 2,
+      "discTitle": "Disc 02 蒲公英的国度 The Horizon of Dandelion",
+      "trackNumber": 2,
+      "originText": "内测时期音乐",
+      "originLinks": [],
+      "neteaseId": "1481390641",
+      "neteaseEncryptedId": "E45E6DCD1CE52BF07AEF1E2EE6976CB8",
+      "neteaseTitle": "旅途的开始 Hence, Begins the Journey",
+      "durationSeconds": 74.422,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "晨曦酒庄",
+      "englishTitle": "Dawn Winery Theme",
+      "discNumber": 2,
+      "discTitle": "Disc 02 蒲公英的国度 The Horizon of Dandelion",
+      "trackNumber": 3,
+      "originText": "晨曦酒庄室外-白天\n无人声",
+      "originLinks": [],
+      "neteaseId": "1481390619",
+      "neteaseEncryptedId": "F3F41F3D2A5386CBC6292EC778E888DC",
+      "neteaseTitle": "晨曦酒庄 Dawn Winery Theme",
+      "durationSeconds": 67.237,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "破晓前的流光",
+      "englishTitle": "Before Dawn, at the Winery",
+      "discNumber": 2,
+      "discTitle": "Disc 02 蒲公英的国度 The Horizon of Dandelion",
+      "trackNumber": 4,
+      "originText": "晨曦酒庄室外-夜晚\n《原神》EP - 晨光拂晓之时",
+      "originLinks": [
+        {
+          "text": "《原神》EP - 晨光拂晓之时",
+          "href": "https://www.bilibili.com/video/BV1aK411u7AD"
+        }
+      ],
+      "neteaseId": "1481390635",
+      "neteaseEncryptedId": "F4E3FFC7A7BFD370B4780F493DEEA4E1",
+      "neteaseTitle": "破晓前的流光 Before Dawn, at the Winery",
+      "durationSeconds": 69.392,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "见惯的风景",
+      "englishTitle": "A Familiar Sight and Leisure",
+      "discNumber": 2,
+      "discTitle": "Disc 02 蒲公英的国度 The Horizon of Dandelion",
+      "trackNumber": 5,
+      "originText": "原：晨曦酒庄\n现：尘歌壶翠黛峰\n《原神》EP - 悠扬戏风之诗",
+      "originLinks": [
+        {
+          "text": "《原神》EP - 悠扬戏风之诗",
+          "href": "https://www.bilibili.com/video/BV1h5411P7hv"
+        }
+      ],
+      "neteaseId": "1481390634",
+      "neteaseEncryptedId": "5B1DB1A97CFE5603C66215941F4A8AD6",
+      "neteaseTitle": "见惯的风景 A Familiar Sight and Leisure",
+      "durationSeconds": 67.5,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "饰金的夜色",
+      "englishTitle": "Cold Night",
+      "discNumber": 2,
+      "discTitle": "Disc 02 蒲公英的国度 The Horizon of Dandelion",
+      "trackNumber": 6,
+      "originText": "蒙德野外-夜间",
+      "originLinks": [],
+      "neteaseId": "1481392438",
+      "neteaseEncryptedId": "5017700D75A305A225E80CC62B246D9D",
+      "neteaseTitle": "饰金的夜色 Cold Night",
+      "durationSeconds": 67.579,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "平原的低语",
+      "englishTitle": "Whispering Plain",
+      "discNumber": 2,
+      "discTitle": "Disc 02 蒲公英的国度 The Horizon of Dandelion",
+      "trackNumber": 7,
+      "originText": "蒙德野外-白天\n《原神》EP - 悠扬戏风之诗",
+      "originLinks": [
+        {
+          "text": "《原神》EP - 悠扬戏风之诗",
+          "href": "https://www.bilibili.com/video/BV1h5411P7hv"
+        }
+      ],
+      "neteaseId": "1481392436",
+      "neteaseEncryptedId": "C3FEE97482BDF52FBD693822430F5E23",
+      "neteaseTitle": "平原的低语 Whispering Plain",
+      "durationSeconds": 70,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "七天神像",
+      "englishTitle": "Statue of the Seven",
+      "discNumber": 2,
+      "discTitle": "Disc 02 蒲公英的国度 The Horizon of Dandelion",
+      "trackNumber": 8,
+      "originText": "祈愿界面\n《原神》EP - 轻风诉说之事",
+      "originLinks": [
+        {
+          "text": "《原神》EP - 轻风诉说之事",
+          "href": "https://www.bilibili.com/video/BV14K411G7Eq"
+        }
+      ],
+      "neteaseId": "1481390644",
+      "neteaseEncryptedId": "581D4198A9F87616043FF8689D81EF1F",
+      "neteaseTitle": "七天神像 Statue of the Seven",
+      "durationSeconds": 84.819,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "命运的初识",
+      "englishTitle": "Acquaintance (Statue of the Seven)",
+      "discNumber": 2,
+      "discTitle": "Disc 02 蒲公英的国度 The Horizon of Dandelion",
+      "trackNumber": 9,
+      "originText": "剧情第一次见神像\n七天神像满级",
+      "originLinks": [],
+      "neteaseId": "1481390617",
+      "neteaseEncryptedId": "96C3AEDB35C1311A2C1B804AA3BE0F18",
+      "neteaseTitle": "命运的初识 Acquaintance (Statue of the Seven)",
+      "durationSeconds": 21.818,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "月亮处盗来的歌",
+      "englishTitle": "Stealing Words of the Moon",
+      "discNumber": 2,
+      "discTitle": "Disc 02 蒲公英的国度 The Horizon of Dandelion",
+      "trackNumber": 10,
+      "originText": "蒙德野外-夜间",
+      "originLinks": [],
+      "neteaseId": "1481390643",
+      "neteaseEncryptedId": "FE3C28D6B3361F07029ED10EF7418FF4",
+      "neteaseTitle": "月亮处盗来的歌 Stealing Words of the Moon",
+      "durationSeconds": 84.587,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "旅人的暂歇",
+      "englishTitle": "Wayfarer's Peace",
+      "discNumber": 2,
+      "discTitle": "Disc 02 蒲公英的国度 The Horizon of Dandelion",
+      "trackNumber": 11,
+      "originText": "蒙德野外-白天\n《原神》EP - 冰涛骇浪之憩",
+      "originLinks": [
+        {
+          "text": "《原神》EP - 冰涛骇浪之憩",
+          "href": "https://www.bilibili.com/video/BV17i4y1o787"
+        }
+      ],
+      "neteaseId": "1481390642",
+      "neteaseEncryptedId": "4278E6C3BFCF49C7BC7DB5193B122E77",
+      "neteaseTitle": "旅人的暂歇 Wayfarer's Peace",
+      "durationSeconds": 88,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "风洗的群山",
+      "englishTitle": "Wind-Washed Mountains",
+      "discNumber": 2,
+      "discTitle": "Disc 02 蒲公英的国度 The Horizon of Dandelion",
+      "trackNumber": 12,
+      "originText": "蒙德野外-白天",
+      "originLinks": [],
+      "neteaseId": "1481392439",
+      "neteaseEncryptedId": "C73829951BD8E9C6ED50F71632D23BA4",
+      "neteaseTitle": "风洗的群山 Wind-Washed Mountains",
+      "durationSeconds": 41,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "不散的魂灵",
+      "englishTitle": "Wayward Soul",
+      "discNumber": 2,
+      "discTitle": "Disc 02 蒲公英的国度 The Horizon of Dandelion",
+      "trackNumber": 13,
+      "originText": "蒙德野外-白天",
+      "originLinks": [],
+      "neteaseId": "1481390636",
+      "neteaseEncryptedId": "1262E91226CB640490F3092E53947829",
+      "neteaseTitle": "不散的魂灵 Wayward Souls",
+      "durationSeconds": 65.454,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "追忆",
+      "englishTitle": "Reminiscence (Genshin Impact Main Theme Var.)",
+      "discNumber": 2,
+      "discTitle": "Disc 02 蒲公英的国度 The Horizon of Dandelion",
+      "trackNumber": 14,
+      "originText": "游戏加载页面\n-不分时段",
+      "originLinks": [],
+      "neteaseId": "1481392465",
+      "neteaseEncryptedId": "169E6E28E4C1B749FC6C4C2E8F30B0FD",
+      "neteaseTitle": "追忆 Reminiscence (Genshin Impact Main Theme Var.)",
+      "durationSeconds": 95,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "烈日之残响",
+      "englishTitle": "Restless Blazing Sun",
+      "discNumber": 2,
+      "discTitle": "Disc 02 蒲公英的国度 The Horizon of Dandelion",
+      "trackNumber": 15,
+      "originText": "蒙德野外-白天",
+      "originLinks": [],
+      "neteaseId": "1481390659",
+      "neteaseEncryptedId": "6F664766CF363FBEBC6FD8CF0F6EFCF4",
+      "neteaseTitle": "烈日之残响 Restless Blazing Sun",
+      "durationSeconds": 95.07,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "一段回忆",
+      "englishTitle": "Remembrance (Genshin Impact Main Theme Var.)",
+      "discNumber": 2,
+      "discTitle": "Disc 02 蒲公英的国度 The Horizon of Dandelion",
+      "trackNumber": 16,
+      "originText": "蒙德野外-夜晚",
+      "originLinks": [],
+      "neteaseId": "1481390660",
+      "neteaseEncryptedId": "001566B00F37B3BC688E8A662E9F862B",
+      "neteaseTitle": "一段回忆 Remembrance (Genshin Impact Main Theme Var.)",
+      "durationSeconds": 82.903,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "地平",
+      "englishTitle": "The Horizon",
+      "discNumber": 2,
+      "discTitle": "Disc 02 蒲公英的国度 The Horizon of Dandelion",
+      "trackNumber": 17,
+      "originText": "蒙德野外-夜晚\n《原神》EP - 冰涛骇浪之憩",
+      "originLinks": [
+        {
+          "text": "《原神》EP - 冰涛骇浪之憩",
+          "href": "https://www.bilibili.com/video/BV17i4y1o787"
+        }
+      ],
+      "neteaseId": "1481390656",
+      "neteaseEncryptedId": "472251507E1CE9AA79F25A0A8F895297",
+      "neteaseTitle": "地平 The Horizon",
+      "durationSeconds": 72.934,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "静候未来",
+      "englishTitle": "Awaiting for the Future",
+      "discNumber": 2,
+      "discTitle": "Disc 02 蒲公英的国度 The Horizon of Dandelion",
+      "trackNumber": 18,
+      "originText": "蒙德野外-夜晚\n《原神》EP - 悠扬戏风之诗",
+      "originLinks": [
+        {
+          "text": "《原神》EP - 悠扬戏风之诗",
+          "href": "https://www.bilibili.com/video/BV1h5411P7hv"
+        }
+      ],
+      "neteaseId": "1481390658",
+      "neteaseEncryptedId": "43FBF1172CCC6A59069B75ABAB9658D0",
+      "neteaseTitle": "静候未来 Awaiting for the Future",
+      "durationSeconds": 85.114,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "月照的荒野",
+      "englishTitle": "Moonlit Wilderness",
+      "discNumber": 2,
+      "discTitle": "Disc 02 蒲公英的国度 The Horizon of Dandelion",
+      "trackNumber": 19,
+      "originText": "蒙德野外-夜晚",
+      "originLinks": [],
+      "neteaseId": "1481390646",
+      "neteaseEncryptedId": "80AA78946FB832F9FADBAE98A6DE2E80",
+      "neteaseTitle": "月照的荒野 Moonlit Wilderness",
+      "durationSeconds": 76.681,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "希望的新一天",
+      "englishTitle": "A New Day with Hope",
+      "discNumber": 2,
+      "discTitle": "Disc 02 蒲公英的国度 The Horizon of Dandelion",
+      "trackNumber": 20,
+      "originText": "蒙德野外-白天\n《原神》EP - 悠扬戏风之诗",
+      "originLinks": [
+        {
+          "text": "《原神》EP - 悠扬戏风之诗",
+          "href": "https://www.bilibili.com/video/BV1h5411P7hv"
+        }
+      ],
+      "neteaseId": "1481390662",
+      "neteaseEncryptedId": "4C8E005AC7A4E6AC94C08073D59A4138",
+      "neteaseTitle": "希望的新一天 A New Day with Hope",
+      "durationSeconds": 103.237,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "希望之旅",
+      "englishTitle": "Journey of Hope（Genshin Impact Main Theme Var.)",
+      "discNumber": 2,
+      "discTitle": "Disc 02 蒲公英的国度 The Horizon of Dandelion",
+      "trackNumber": 21,
+      "originText": "蒙德野外-白天",
+      "originLinks": [],
+      "neteaseId": "1481392464",
+      "neteaseEncryptedId": "A81D727432EF4338441EAA39BA34D4D5",
+      "neteaseTitle": "希望之旅 Journey of Hope (Genshin Impact Main Theme Var.)",
+      "durationSeconds": 81.38,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "万古之风的弃儿",
+      "englishTitle": "Forlorn Child of Archaic Winds (Dvalin's Nest)",
+      "discNumber": 2,
+      "discTitle": "Disc 02 蒲公英的国度 The Horizon of Dandelion",
+      "trackNumber": 22,
+      "originText": "风龙废墟",
+      "originLinks": [],
+      "neteaseId": "1481392469",
+      "neteaseEncryptedId": "9508E35158718428D8CF1273B6579395",
+      "neteaseTitle": "万古之风的弃儿 Forlorn Child of Archaic Winds (Dvalin's Nest)",
+      "durationSeconds": 199.354,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "太古时光的遗孤",
+      "englishTitle": "Forsken Child of Ancient Times (Dvalin's Nest)",
+      "discNumber": 2,
+      "discTitle": "Disc 02 蒲公英的国度 The Horizon of Dandelion",
+      "trackNumber": 23,
+      "originText": "风龙废墟",
+      "originLinks": [],
+      "neteaseId": "1481390663",
+      "neteaseEncryptedId": "7A56FB88E5691D9858A70685773B0AAF",
+      "neteaseTitle": "太古时光的遗孤 Forsaken Child of Ancient Times (Dvalin's Nest)",
+      "durationSeconds": 175,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "午日的眺望",
+      "englishTitle": "Midday Prospects",
+      "discNumber": 2,
+      "discTitle": "Disc 02 蒲公英的国度 The Horizon of Dandelion",
+      "trackNumber": 24,
+      "originText": "未归的息星剧情PV",
+      "originLinks": [],
+      "neteaseId": "1481390661",
+      "neteaseEncryptedId": "62F5BEE2EF1B5356AE67805B9989ABEE",
+      "neteaseTitle": "午日的眺望 Midday Prospects",
+      "durationSeconds": 98.928,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "久住往昔",
+      "englishTitle": "Dwelling in the Past",
+      "discNumber": 2,
+      "discTitle": "Disc 02 蒲公英的国度 The Horizon of Dandelion",
+      "trackNumber": 25,
+      "originText": "蒙德野外-白天",
+      "originLinks": [],
+      "neteaseId": "1481392466",
+      "neteaseEncryptedId": "FFB7451EE1171D2A6C0A04D0338C0333",
+      "neteaseTitle": "久住往昔 Dwelling in the Past",
+      "durationSeconds": 101.109,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "永恒的回忆",
+      "englishTitle": "Eternal Anamnesis (Genshin Impact Main Theme Var.)",
+      "discNumber": 2,
+      "discTitle": "Disc 02 蒲公英的国度 The Horizon of Dandelion",
+      "trackNumber": 26,
+      "originText": "温迪PV-四方之风",
+      "originLinks": [
+        {
+          "text": "温迪PV-四方之风 ",
+          "href": "https://www.bilibili.com/video/BV1xk4y117tg"
+        }
+      ],
+      "neteaseId": "1481392468",
+      "neteaseEncryptedId": "0643F0E83545C08FF5340E2A6325C5FC",
+      "neteaseTitle": "永恒的回忆 Eternal Anamnesis (Genshin Impact Main Theme Var.)",
+      "durationSeconds": 119.011,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "光辉的涨落",
+      "englishTitle": "Photon of Fluctuation",
+      "discNumber": 3,
+      "discTitle": "Disc 03 蒙德战记 Saga of the West Wind",
+      "trackNumber": 1,
+      "originText": "蒙德战斗",
+      "originLinks": [],
+      "neteaseId": "1481390929",
+      "neteaseEncryptedId": "DFFC4F66B7332A4B8F1993FCF0916ACD",
+      "neteaseTitle": "光辉的涨落 Photon of Fluctuation",
+      "durationSeconds": 194.514,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "解决之道",
+      "englishTitle": "His Resolution",
+      "discNumber": 3,
+      "discTitle": "Disc 03 蒙德战记 Saga of the West Wind",
+      "trackNumber": 2,
+      "originText": "蒙德战斗",
+      "originLinks": [],
+      "neteaseId": "1481392863",
+      "neteaseEncryptedId": "2E2EB350D3144F5B854401515BCFCEE9",
+      "neteaseTitle": "解决之道 His Resolution",
+      "durationSeconds": 283.802,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "亘古的韵律",
+      "englishTitle": "Rhythm from Ancient Times",
+      "discNumber": 3,
+      "discTitle": "Disc 03 蒙德战记 Saga of the West Wind",
+      "trackNumber": 3,
+      "originText": "西风之鹰的庙宇",
+      "originLinks": [],
+      "neteaseId": "1481392859",
+      "neteaseEncryptedId": "AB5349A12D14D08A529C378B54667927",
+      "neteaseTitle": "亘古的韵律 Rhythm from Ancient Times",
+      "durationSeconds": 220.445,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "无尽的回响",
+      "englishTitle": "Endless Echoes",
+      "discNumber": 3,
+      "discTitle": "Disc 03 蒙德战记 Saga of the West Wind",
+      "trackNumber": 4,
+      "originText": "芬德尼尔之顶",
+      "originLinks": [
+        {
+          "text": "芬德尼尔之顶",
+          "href": "https://wiki.biligame.com/ys/%E8%8A%AC%E5%BE%B7%E5%B0%BC%E5%B0%94%E4%B9%8B%E9%A1%B6"
+        }
+      ],
+      "neteaseId": "1481392861",
+      "neteaseEncryptedId": "55C0A116B2D5CE1D3216F6BC940D02AC",
+      "neteaseTitle": "无尽的回响 Endless Echoes",
+      "durationSeconds": 252.762,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "冲啊！无畏的勇士",
+      "englishTitle": "Charge! Fearless Warriors",
+      "discNumber": 3,
+      "discTitle": "Disc 03 蒙德战记 Saga of the West Wind",
+      "trackNumber": 5,
+      "originText": "太山府",
+      "originLinks": [
+        {
+          "text": "太山府",
+          "href": "https://wiki.biligame.com/ys/%E5%A4%AA%E5%B1%B1%E5%BA%9C"
+        }
+      ],
+      "neteaseId": "1481390944",
+      "neteaseEncryptedId": "6B3D691AE36824A9C12D166AF456B51A",
+      "neteaseTitle": "冲啊！无畏的勇士 Charge! Fearless Warriors",
+      "durationSeconds": 238.709,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "水滴的节拍",
+      "englishTitle": "Beats of Water Drops",
+      "discNumber": 3,
+      "discTitle": "Disc 03 蒙德战记 Saga of the West Wind",
+      "trackNumber": 6,
+      "originText": "塞西莉亚苗圃",
+      "originLinks": [
+        {
+          "text": "塞西莉亚苗圃",
+          "href": "https://wiki.biligame.com/ys/%E5%A1%9E%E8%A5%BF%E8%8E%89%E4%BA%9A%E8%8B%97%E5%9C%83"
+        }
+      ],
+      "neteaseId": "1481390947",
+      "neteaseEncryptedId": "E97DE6A838BCA0B065C0983C1204E3AA",
+      "neteaseTitle": "水滴的节拍 Beats of Water Drops",
+      "durationSeconds": 243.446,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "魔导的深秘",
+      "englishTitle": "Magic Intrigues",
+      "discNumber": 3,
+      "discTitle": "Disc 03 蒙德战记 Saga of the West Wind",
+      "trackNumber": 7,
+      "originText": "雷震连山秘宫",
+      "originLinks": [],
+      "neteaseId": "1481390943",
+      "neteaseEncryptedId": "6C3FEF11FBE576C39C78743DDAA1FB12",
+      "neteaseTitle": "魔导的深秘 Magic Intrigues",
+      "durationSeconds": 230.504,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "无数的逆境",
+      "englishTitle": "Against All Odds",
+      "discNumber": 3,
+      "discTitle": "Disc 03 蒙德战记 Saga of the West Wind",
+      "trackNumber": 8,
+      "originText": "冒险等级突破副本、深渊",
+      "originLinks": [],
+      "neteaseId": "1481390950",
+      "neteaseEncryptedId": "57D649FBEC1C31286C608662E2B54E98",
+      "neteaseTitle": "无数的逆境 Against All Odds",
+      "durationSeconds": 321.953,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "不休的风航",
+      "englishTitle": "Perpetual Motion of Wind",
+      "discNumber": 3,
+      "discTitle": "Disc 03 蒙德战记 Saga of the West Wind",
+      "trackNumber": 9,
+      "originText": "主线任务",
+      "originLinks": [],
+      "neteaseId": "1481392821",
+      "neteaseEncryptedId": "62D345768926116F3549D57057EFE172",
+      "neteaseTitle": "不休的风航 Perpetual Motion of Wind",
+      "durationSeconds": 212.779,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "乘风前行",
+      "englishTitle": "Riders of the Wind, Onward",
+      "discNumber": 3,
+      "discTitle": "Disc 03 蒙德战记 Saga of the West Wind",
+      "trackNumber": 10,
+      "originText": "特瓦林(蒙德城内)",
+      "originLinks": [],
+      "neteaseId": "1481392824",
+      "neteaseEncryptedId": "4C4138A41BB2FB110E9834225C6FF20F",
+      "neteaseTitle": "乘风前行 Riders of the Wind, Onward",
+      "durationSeconds": 186.826,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "冰风回荡",
+      "englishTitle": "Whirl of Boreal Wind",
+      "discNumber": 3,
+      "discTitle": "Disc 03 蒙德战记 Saga of the West Wind",
+      "trackNumber": 11,
+      "originText": "北风狼第一阶段",
+      "originLinks": [],
+      "neteaseId": "1481390930",
+      "neteaseEncryptedId": "76301B71DF4FA7E9D3C474DFEA044F02",
+      "neteaseTitle": "冰风回荡 Whirl of Boreal Wind",
+      "durationSeconds": 191.5,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    },
+    {
+      "wikiTitle": "冰封交响曲",
+      "englishTitle": "Symphony of Boreal Wind",
+      "discNumber": 3,
+      "discTitle": "Disc 03 蒙德战记 Saga of the West Wind",
+      "trackNumber": 12,
+      "originText": "北风狼第二阶段",
+      "originLinks": [],
+      "neteaseId": "1481392864",
+      "neteaseEncryptedId": "4D02DAE60C4B80C96930DF451DA6CA67",
+      "neteaseTitle": "冰封交响曲 Symphony of Boreal Wind",
+      "durationSeconds": 291,
+      "artists": [
+        "陈致逸",
+        "HOYO-MiX"
+      ],
+      "providerVisible": false,
+      "providerPlayFlag": false
+    }
+  ]
+}

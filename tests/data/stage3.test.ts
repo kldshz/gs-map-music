@@ -9,9 +9,9 @@ const snapshot=validateSnapshot(JSON.parse(await readFile('public/data/kongying-
 const ids=new Set(snapshot.anchors.map(a=>a.id));
 const library={schemaVersion:1,tracks:[{id:'test-fixture-1',title:'自动化测试条目（无真实音乐）',artists:[],composers:null,album:'测试专辑',releaseDate:null,durationSeconds:null,description:'仅校验元数据导入',neteaseId:null,sourceUrl:null}],
   associations:[{id:'test-edge-1',trackId:'test-fixture-1',anchorId:snapshot.anchors.find(a=>a.kind==='statue')!.id,evidenceStatus:'pending',evidenceNote:'仅测试，未核实',sourceUrl:null}]};
-test('真实快照只有传送锚点/神像，当前音乐全空',async()=>{
+test('真实快照只有传送锚点/神像，空曲库仍可导入',async()=>{
   assert.equal(snapshot.anchors.length,877);assert.equal(snapshot.anchors.filter(a=>a.kind==='waypoint').length,822);assert.equal(snapshot.anchors.filter(a=>a.kind==='statue').length,55);
-  const empty=validateLibrary(JSON.parse(await readFile('public/data/music-library.json','utf8')),ids);assert.equal(empty.tracks.length,0);assert.equal(empty.associations.length,0);
+  const empty=validateLibrary({schemaVersion:1,tracks:[],associations:[]},ids);assert.equal(empty.tracks.length,0);assert.equal(empty.associations.length,0);
   const zd=snapshot.anchors.filter(a=>a.areaCode==='A:ZD:ZHIDONG1');assert.equal(zd.length,66);
   assert(snapshot.anchors.every(a=>a.position));
 });

@@ -115,3 +115,11 @@ Codex管理package/lock、Vite/TS配置、fixture导出、测试与文档；Clau
 Codex核对工单、唯一模型、JSON、文件白名单后落盘。Claude上下文只有指定前端/接口材料，没有网易/MySQL或网关凭据。原始输出只保留`.local/claude-runs`，可入库摘要见[结果](WORK_ORDERS/S3-MAP-UI.RESULT.json)。不同时编辑交付文件，Claude不提交推送。
 
 Codex主导真实地图适配/MapCanvas、领域与检索/校验、MySQL初始化、表格、检查。局部整合修复：areaLabel父ID类型、移除被R2替代的inline样式、Leaflet Tile类型声明、反向定位同地图跨地区点显示、定位后新搜索遵守空结果。没有替代Claude重做视觉。最终类型/构建、12项数据测试和9项Edge UI测试通过，桌面、390/320手机、点位空库dialog实际查看。产品音乐为空，测试元数据不当作真实OST/地区证据；实际播放和路线未实现。
+
+## C3-02：风与牧歌之城专辑交互（2026-10-07）
+
+本轮实际[S3-ALBUM-UI-001](WORK_ORDERS/S3-ALBUM-UI-001.md)，入口本机CLI2.1.291/既有网关、stdin、禁用工具，固定--model claude-opus-5-5 --effort high，不换模型。成功subtype/is_error与唯一modelUsage核验，duration_ms136498。上下文仅App/style/contracts/explorer，无网易/MySQL凭据或账号响应。
+
+Claude返回完整App.vue与CSS追加，主导真实63曲/出处/细目录/挂载说明/评价编辑交互。Codex去除返回围栏并精确修复唯一未转义搜索模板双引号后解析，核对白名单落盘。局部整合修正艺人标签、无效v-else/has-text、空源值恢复、清除失败不改草稿、按trackId+anchorId查全库关系；没有替代Claude重做视觉。
+
+Codex完成官方CLI来源/清洗/挂载规则、契约与验证、评价存储、MySQL迁移导入、Excel/CSV、测试与记录。16数据测试/类型构建通过，13项Edge UI合计通过（首轮一处测试标签期望修正后定向复测），实际查看桌面/手机/评价与表格预览。[结果摘要](WORK_ORDERS/S3-ALBUM-UI-001.RESULT.json)，原始响应仅.local/claude-runs。网关不能独立认证上游身份、内部effort未回显的限制不变；没有播放/路线交付。

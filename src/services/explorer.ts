@@ -2,8 +2,10 @@ import { computed, ref } from 'vue';
 import type { Anchor, LayerNode, MapSnapshot, MusicLibrary, ResolvedMap } from '../domain/contracts';
 import { validateLibrary, validateSnapshot } from '../domain/validation';
 import { resolveMap } from '../adapters/kongying-config';
+import { usePersonalNotes } from './personal-notes';
 
 export function useExplorer() {
+  const notes=usePersonalNotes();
   const snapshot=ref<MapSnapshot|null>(null),library=ref<MusicLibrary>({schemaVersion:1,tracks:[],associations:[]});
   const loading=ref(false),error=ref(''),importMessage=ref(''),query=ref('');
   const areaCode=ref('A:MD:MENGDE'),selectedAnchorId=ref(''),selectedTrackId=ref('');
@@ -16,9 +18,17 @@ export function useExplorer() {
   const selectedArea=computed(()=>areas.value.find(a=>a.code===areaCode.value)??null);
   const selectedAnchor=computed(()=>anchors.value.find(a=>a.id===selectedAnchorId.value)??null);
   const tracks=computed(()=>library.value.tracks);
+  const musicLocations=computed(()=>library.value.musicLocations??[]);
   const selectedTrack=computed(()=>tracks.value.find(t=>t.id===selectedTrackId.value)??null);
   const anchorTracks=computed(()=>tracks.value.filter(t=>library.value.associations.some(a=>a.anchorId===selectedAnchorId.value&&a.trackId===t.id)));
   const trackLocations=computed(()=>anchors.value.filter(p=>library.value.associations.some(a=>a.anchorId===p.id&&a.trackId===selectedTrackId.value)));
+  const trackAssociations=computed(()=>library.value.associations.filter(a=>a.trackId===selectedTrackId.value));
+  function associationFor(trackId:string,anchorId:string){return library.value.associations.find(a=>a.trackId===trackId&&a.anchorId===anchorId);}
+  function trackLocationLabels(trackId:string){
+    const track=tracks.value.find(t=>t.id===trackId);
+    return musicLocations.value.filter(p=>track?.sceneInfo?.musicLocationIds.includes(p.id)).map(p=>`${p.country} / ${areas.value.find(a=>a.id===p.areaId)?.name??p.areaCode} / ${p.name}`);
+  }
+  const anchorMusicContexts=computed(()=>[...new Set(anchorTracks.value.flatMap(t=>trackLocationLabels(t.id)))]);
   const mapConfig=computed<ResolvedMap|null>(()=>snapshot.value?resolveMap(snapshot.value,areaCode.value):null);
   const layerOptions=computed(()=>{
     const options=[{value:'all',label:'全部分层'},{value:'surface',label:'仅地表点位'}],values=new Set<string>();
@@ -36,6 +46,7 @@ export function useExplorer() {
   const visibleAnchors=computed(()=>anchors.value.filter(a=>(a.areaCode===areaCode.value||(highlightedIds.value.includes(a.id)&&snapshot.value&&resolveMap(snapshot.value,a.areaCode).code===mapConfig.value?.code))&&(typeFilter.value==='all'||a.kind===typeFilter.value)&&layerMatch(a)
     &&includes([a.name,a.content,a.country,a.areaName,a.sourceId])));
   const searchTracks=computed(()=>tracks.value.filter(t=>includes([t.title,...t.artists,...(t.composers??[]),t.album,t.description,t.neteaseId,
+    notes.personalNoteFor(t.id,t.personalNote??''),t.sceneInfo?.wikiTitle,t.sceneInfo?.englishTitle,t.sceneInfo?.originText,...(t.sceneInfo?.mainRegions??[]),...trackLocationLabels(t.id),
     ...anchors.value.filter(p=>library.value.associations.some(a=>a.anchorId===p.id&&a.trackId===t.id)).flatMap(p=>[p.areaName,p.country,p.content])])));
   async function load(){
     loading.value=true;error.value='';
@@ -44,7 +55,7 @@ export function useExplorer() {
       const next=validateSnapshot(await response.json());for(const a of next.areas.filter(a=>a.isFinal))resolveMap(next,a.code);
       snapshot.value=next;
       const music=await fetch('/data/music-library.json');if(!music.ok)throw new Error(`曲库数据HTTP ${music.status}`);
-      library.value=validateLibrary(await music.json(),new Set(next.anchors.map(a=>a.id)));
+      library.value=validateLibrary(await music.json(),new Set(next.anchors.map(a=>a.id)),next);
     }catch(cause){error.value=cause instanceof Error?cause.message:'数据加载失败'}finally{loading.value=false}
   }
   function selectArea(code:string){if(!areas.value.some(a=>a.code===code&&a.isFinal))return;areaCode.value=code;selectedAnchorId.value='';layerFilter.value='all';highlightedIds.value=[];}
@@ -62,10 +73,11 @@ export function useExplorer() {
   }
   function associationStatus(trackId:string){const links=library.value.associations.filter(a=>a.trackId===trackId);return links.length?`关联${links.length}处：已核实${links.filter(a=>a.evidenceStatus==='verified').length}，待核实${links.filter(a=>a.evidenceStatus==='pending').length}；无播放资源`:'暂无地点关联；无播放资源';}
   async function importLibrary(file:File){
-    try{if(file.size>8*1024*1024)throw new Error('JSON文件超过8MB');const next=validateLibrary(JSON.parse(await file.text()),new Set(anchors.value.map(a=>a.id)));
+    try{if(file.size>8*1024*1024)throw new Error('JSON文件超过8MB');const next=validateLibrary(JSON.parse(await file.text()),new Set(anchors.value.map(a=>a.id)),snapshot.value??undefined);
       library.value=next;selectedTrackId.value='';highlightedIds.value=[];importMessage.value=`已导入${next.tracks.length}首曲目、${next.associations.length}条关联；仅本次会话，无音源。请仅导入原神音乐。`;
     }catch(cause){importMessage.value=`导入失败：${cause instanceof Error?cause.message:'未知错误'}；原曲库保持不变。`;}
   }
   return {loading,error,areas,areaCode,selectedArea,roots,areaOptions,typeFilter,query,visibleAnchors,anchors,selectedAnchor,selectedAnchorId,highlightedIds,focusRequest,
-    tracks,searchTracks,anchorTracks,selectedTrack,trackLocations,mapConfig,mapStatus,importMessage,layerOptions,layerFilter,load,selectArea,selectAnchor,selectTrack,locateTrack,associationStatus,importLibrary};
+    tracks,searchTracks,anchorTracks,selectedTrack,trackLocations,trackAssociations,associationFor,trackLocationLabels,anchorMusicContexts,musicLocations,...notes,
+    mapConfig,mapStatus,importMessage,layerOptions,layerFilter,load,selectArea,selectAnchor,selectTrack,locateTrack,associationStatus,importLibrary};
 }

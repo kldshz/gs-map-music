@@ -14,7 +14,7 @@
           <button type="button" :class="['filter-btn', { active: typeFilter === 'waypoint' }]" :aria-pressed="typeFilter === 'waypoint'" @click="typeFilter = 'waypoint'">锚点</button>
           <button type="button" :class="['filter-btn', { active: typeFilter === 'statue' }]" :aria-pressed="typeFilter === 'statue'" @click="typeFilter = 'statue'">神像</button>
         </div>
-        <input v-model="query" type="search" class="search-input" placeholder="搜索点位、曲目、专辑或地区" aria-label="搜索点位、曲目、专辑或地区" />
+        <input v-model="query" type="search" class="search-input" placeholder="搜索点位、曲目、专辑、地区、细分目录或个人评价" aria-label="搜索点位、曲目、专辑、地区、细分目录或个人评价" />
       </div>
     </header>
 
@@ -68,12 +68,12 @@
 
           <div v-else class="tab-content">
             <p class="result-count" aria-live="polite">{{ trackCountText }}</p>
-            <p v-if="!tracks.length" class="empty-state">音乐库尚未补充</p>
-            <p v-else-if="!searchTracks.length" class="empty-state">没有与“{{ query }}”匹配的曲目</p>
+            <p v-if="!tracks.length" class="empty-state">曲库尚未导入</p>
+            <p v-else-if="!searchTracks.length" class="empty-state">没有与"{{ query }}"匹配的曲目</p>
             <ul v-else class="track-list" aria-label="曲目列表">
               <li v-for="track in searchTracks" :key="track.id">
                 <button type="button" class="track-item" @click="openTrack(track.id)">
-                  <span class="track-title">{{ track.title }}</span>
+                  <span class="track-title">{{ trackDisplayTitle(track) }}</span>
                   <span class="track-artists">{{ joinList(track.artists) }}</span>
                   <span class="track-status">{{ associationStatus(track.id) }}</span>
                 </button>
@@ -83,7 +83,7 @@
 
           <section class="import-section" aria-labelledby="import-title">
             <h3 id="import-title">导入音乐库</h3>
-            <p class="import-hint">曲目与关联JSON；神像和锚点均可关联多首。音乐数据暂空。</p>
+            <p class="import-hint">曲目与关联JSON；仅元数据，不含音频文件。仅本次会话有效。</p>
             <label class="import-label">
               <input type="file" accept="application/json,.json" class="import-input" @change="handleImport" />
               <span class="import-btn">{{ tracks.length ? '替换导入' : '选择文件' }}</span>
@@ -116,12 +116,19 @@
           </dl>
           <section class="anchor-tracks">
             <h3>关联音乐（{{ anchorTracks.length }}）</h3>
+            <div v-if="anchorMusicContexts.length" class="music-contexts">
+              <h4>曲库细分目录</h4>
+              <p class="context-note">以下为此点位已关联曲目的细分目录标签，不代表该点位的实际地理位置</p>
+              <ul class="context-list">
+                <li v-for="ctx in anchorMusicContexts" :key="ctx">{{ ctx }}</li>
+              </ul>
+            </div>
             <ul v-if="anchorTracks.length" class="tracks-list">
               <li v-for="track in anchorTracks" :key="track.id" class="track-detail">
                 <button type="button" class="track-item" @click="openTrack(track.id)">
-                  <span class="track-title">{{ track.title }}</span>
-                  <span class="track-artists">演奏：{{ joinList(track.artists) }}</span>
-                  <span class="track-status">{{ associationStatus(track.id) }}</span>
+                  <span class="track-title">{{ trackDisplayTitle(track) }}</span>
+                  <span class="track-artists">艺人：{{ joinList(track.artists) }}</span>
+                  <span class="track-status">{{ anchorTrackHint(track.id) }}</span>
                 </button>
               </li>
             </ul>
@@ -134,29 +141,60 @@
     <dialog ref="trackDialog" class="track-dialog" aria-labelledby="track-dialog-title" @close="onTrackDialogClose">
       <div class="dialog-content">
         <header class="dialog-header">
-          <h2 id="track-dialog-title">{{ selectedTrack ? selectedTrack.title : '尚未选择曲目' }}</h2>
+          <h2 id="track-dialog-title">{{ selectedTrack ? trackDisplayTitle(selectedTrack) : '尚未选择曲目' }}</h2>
           <button type="button" class="close-btn" aria-label="关闭" @click="closeTrack">✕</button>
         </header>
         <div v-if="selectedTrack" class="dialog-body">
           <dl class="track-metadata">
-            <dt>演奏</dt><dd>{{ joinList(selectedTrack.artists) }}</dd>
+            <template v-if="selectedTrack.sceneInfo">
+              <dt>中文名</dt><dd>{{ selectedTrack.sceneInfo.wikiTitle }}</dd>
+              <dt>英文名</dt><dd>{{ selectedTrack.sceneInfo.englishTitle }}</dd>
+              <dt>分碟与曲序</dt><dd>{{ selectedTrack.sceneInfo.discTitle }} 第{{ selectedTrack.sceneInfo.trackNumber }}首</dd>
+            </template>
+            <dt>艺人</dt><dd>{{ joinList(selectedTrack.artists) }}</dd>
             <dt>作曲</dt><dd>{{ joinList(selectedTrack.composers) }}</dd>
             <dt>专辑</dt><dd>{{ show(selectedTrack.album) }}</dd>
             <dt>发行日期</dt><dd>{{ show(selectedTrack.releaseDate) }}</dd>
             <dt>时长</dt><dd>{{ formatDuration(selectedTrack.durationSeconds) }}</dd>
-            <dt>网易云 ID</dt>
+            <dt>网易云音乐</dt>
             <dd>
-              <a v-if="selectedTrack.neteaseId" :href="neteaseUrl(selectedTrack.neteaseId)" target="_blank" rel="noopener">{{ selectedTrack.neteaseId }}</a>
+              <template v-if="selectedTrack.neteaseId">
+                <a :href="neteaseUrl(selectedTrack.neteaseId)" target="_blank" rel="noopener">{{ selectedTrack.neteaseId }}</a>
+                <span class="metadata-note">（元数据来源，artist字段不代表演奏家本人）</span>
+              </template>
               <template v-else>未知</template>
             </dd>
-            <dt>来源</dt>
+            <template v-if="selectedTrack.sceneInfo">
+              <dt>出处原文</dt><dd class="origin-text">{{ selectedTrack.sceneInfo.originText || '未知' }}</dd>
+              <dt>主要地区</dt><dd>{{ joinList(selectedTrack.sceneInfo.mainRegions) }}</dd>
+              <dt>完整细分目录</dt>
+              <dd>
+                <ul v-if="trackLocationLabels(selectedTrack.id).length" class="location-labels">
+                  <li v-for="label in trackLocationLabels(selectedTrack.id)" :key="label">{{ label }}</li>
+                </ul>
+                <template v-else>未知</template>
+              </dd>
+              <dt>Wiki来源</dt>
+              <dd>
+                <a v-if="selectedTrack.sceneInfo.wikiSourceUrl" :href="selectedTrack.sceneInfo.wikiSourceUrl" target="_blank" rel="noopener">{{ selectedTrack.sceneInfo.wikiSourceUrl }}</a>
+                <template v-else>未知</template>
+                <span v-if="selectedTrack.sceneInfo.wikiRevisionId" class="metadata-note">（修订版本 {{ selectedTrack.sceneInfo.wikiRevisionId }}，内容仅供参考）</span>
+              </dd>
+              <dt v-if="selectedTrack.sceneInfo.metadataNotes.length">元数据说明</dt>
+              <dd v-if="selectedTrack.sceneInfo.metadataNotes.length">
+                <ul class="metadata-notes">
+                  <li v-for="(note, idx) in selectedTrack.sceneInfo.metadataNotes" :key="idx">{{ note }}</li>
+                </ul>
+              </dd>
+            </template>
+            <dt>元数据来源</dt>
             <dd>
               <a v-if="selectedTrack.sourceUrl" :href="selectedTrack.sourceUrl" target="_blank" rel="noopener">{{ selectedTrack.sourceUrl }}</a>
               <template v-else>未知</template>
             </dd>
             <dt>地域关系</dt><dd>{{ associationStatus(selectedTrack.id) }}</dd>
           </dl>
-          <p class="track-description">{{ selectedTrack.description || '简介未知' }}</p>
+          <p v-if="selectedTrack.description" class="track-description">{{ selectedTrack.description }}</p>
           <section class="track-locations">
             <h3>关联点位（{{ trackLocations.length }}）</h3>
             <template v-if="trackLocations.length">
@@ -168,10 +206,32 @@
                     <span class="location-area">{{ show(anchor.areaName) }} · #{{ anchor.id }}</span>
                     <span v-if="!anchor.position" class="location-pending">坐标待核实</span>
                   </button>
+                  <div v-if="getAssociation(selectedTrack.id, anchor.id)" class="association-detail">
+                    <span :class="['match-type', { 'region-archive': getAssociation(selectedTrack.id, anchor.id)!.matchType === 'region-archive' }]">{{ matchTypeLabel(getAssociation(selectedTrack.id, anchor.id)!.matchType) }}</span>
+                    <span class="evidence-note">{{ getAssociation(selectedTrack.id, anchor.id)!.evidenceNote }}</span>
+                  </div>
                 </li>
               </ul>
             </template>
             <p v-else class="empty-state">尚无关联点位</p>
+          </section>
+          <section class="personal-note-section">
+            <h3>我的评价</h3>
+            <p class="note-instruction">个人评价内容保存在本机浏览器，支持20000字以内</p>
+            <textarea
+              v-model="draftPersonalNote"
+              class="personal-note-input"
+              placeholder="在此输入您对本曲目的个人评价、感想或备注"
+              maxlength="20000"
+              rows="6"
+              aria-label="个人评价输入框"
+            ></textarea>
+            <div class="note-controls">
+              <button type="button" class="note-btn save-btn" @click="saveNote">保存评价</button>
+              <button type="button" class="note-btn restore-btn" @click="restoreNote">恢复导入值</button>
+              <span class="note-length">{{ draftPersonalNote.length }} / 20000</span>
+            </div>
+            <p v-if="noteMessage" class="note-message" role="status" aria-live="polite">{{ noteMessage }}</p>
           </section>
         </div>
       </div>
@@ -180,7 +240,7 @@
     <footer class="app-footer">
       <div class="player-stub" role="region" aria-label="播放器">
         <div class="player-track">
-          <span class="player-title">{{ selectedTrack ? selectedTrack.title : '尚未选择曲目' }}</span>
+          <span class="player-title">{{ selectedTrack ? trackDisplayTitle(selectedTrack) : '尚未选择曲目' }}</span>
           <span class="player-note">音源尚未接入</span>
         </div>
         <div class="player-controls">
@@ -205,11 +265,13 @@ import { ref, computed, watch, nextTick } from 'vue';
 import type { Ref } from 'vue';
 import MapCanvas from './components/MapCanvas.vue';
 import { useExplorer } from './services/explorer';
+import type { MusicTrack, TrackAnchor, AssociationMatch } from './domain/contracts';
 
 const {
   loading, error, areas, areaOptions, areaCode, typeFilter, layerFilter, layerOptions, query,
   visibleAnchors, selectedAnchorId, selectedAnchor, highlightedIds, focusRequest, mapStatus,
-  tracks, searchTracks, anchorTracks, selectedTrack, trackLocations, mapConfig, importMessage,
+  tracks, searchTracks, anchorTracks, selectedTrack, trackLocations, trackAssociations, mapConfig, importMessage,
+  trackLocationLabels, anchorMusicContexts, associationFor, personalNoteFor, savePersonalNote, clearPersonalNote, noteMessage,
   load, selectArea, selectAnchor, selectTrack, locateTrack, importLibrary, associationStatus,
 } = useExplorer();
 
@@ -220,6 +282,7 @@ const panelCollapsed = ref(false);
 const activeTab = ref<Tab>('anchors');
 const showTrackDetail = ref(false);
 const importError = ref('');
+const draftPersonalNote = ref('');
 const anchorDialog = ref<HTMLDialogElement | null>(null);
 const trackDialog = ref<HTMLDialogElement | null>(null);
 let lastFocus: HTMLElement | null = null;
@@ -230,9 +293,13 @@ const anchorCountText = computed(() => {
   const n = visibleAnchors.value.length;
   return n > 100 ? `当前共 ${n} 个点位，显示前 100 个` : `当前共 ${n} 个点位`;
 });
-const trackCountText = computed(() =>
-  tracks.value.length ? `${searchTracks.value.length} / ${tracks.value.length} 首曲目` : '0 首曲目',
-);
+const trackCountText = computed(() => {
+  const total = tracks.value.length;
+  const shown = searchTracks.value.length;
+  if (!total) return '0 首曲目';
+  const albumInfo = total === 1 ? '1 首曲目' : `${total} 首曲目`;
+  return shown === total ? albumInfo : `${shown} / ${albumInfo}`;
+});
 
 function areaLabel(area: { name: string; parentId?: Maybe<number> }): string {
   const parent = area.parentId ? areas.value.find((a) => a.id === area.parentId)?.name : undefined;
@@ -267,6 +334,40 @@ function formatDuration(seconds: Maybe<number>): string {
 
 function neteaseUrl(id: string | number): string {
   return `https://music.163.com/#/song?id=${encodeURIComponent(String(id))}`;
+}
+
+function trackDisplayTitle(track: MusicTrack): string {
+  if (track.sceneInfo) {
+    return `${track.sceneInfo.wikiTitle} / ${track.sceneInfo.englishTitle}`;
+  }
+  return track.title;
+}
+
+function matchTypeLabel(matchType: Maybe<AssociationMatch>): string {
+  if (!matchType) return '关联方式未知';
+  switch (matchType) {
+    case 'place-match':
+      return '地点直接匹配';
+    case 'parent-place-match':
+      return '父级地点匹配';
+    case 'region-archive':
+      return '【地区归档】';
+    default:
+      return '关联方式未知';
+  }
+}
+
+function getAssociation(trackId: string, anchorId: string): TrackAnchor | undefined {
+  return associationFor(trackId, anchorId);
+}
+
+function anchorTrackHint(trackId: string): string {
+  const assoc = associationFor(trackId, selectedAnchorId.value);
+  if (!assoc) return '关联方式详见曲目详情';
+  if (assoc.matchType === 'region-archive') {
+    return '地区归档（不代表此点位实际播放）';
+  }
+  return '详见曲目详情';
 }
 
 function rememberFocus(): void {
@@ -317,6 +418,14 @@ watch(showTrackDetail, (visible) => {
   else closeModal(trackDialog);
 });
 
+watch(selectedTrack, (track) => {
+  if (track) {
+    draftPersonalNote.value = personalNoteFor(track.id, track.personalNote ?? '');
+  } else {
+    draftPersonalNote.value = '';
+  }
+});
+
 function onAnchorDialogClose(): void {
   if (selectedAnchorId.value) selectedAnchorId.value = '';
   restoreFocus();
@@ -345,6 +454,19 @@ function locateAnchor(id: string): void {
   void nextTick(() => {
     suppressAnchorDialog = false;
   });
+}
+
+function saveNote(): void {
+  if (!selectedTrack.value) return;
+  const success = savePersonalNote(selectedTrack.value.id, draftPersonalNote.value);
+  if (!success) {
+    // noteMessage is already set by the service
+  }
+}
+
+function restoreNote(): void {
+  if (!selectedTrack.value) return;
+  if(clearPersonalNote(selectedTrack.value.id)) draftPersonalNote.value = personalNoteFor(selectedTrack.value.id, selectedTrack.value.personalNote ?? '');
 }
 
 async function handleImport(event: Event): Promise<void> {

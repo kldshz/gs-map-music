@@ -30,9 +30,27 @@ export interface MapPoint { mapId:string; x:number; y:number }
 export interface MusicTrack {
   id:string; title:string; artists:string[]; composers:string[]|null; album:string|null; releaseDate:string|null;
   durationSeconds:number|null; description:string; neteaseId:string|null; sourceUrl:string|null;
+  /** Personal text is independent of source metadata and is never generated for the user. */
+  personalNote?:string;
+  neteaseEncryptedId?:string|null;
+  sceneInfo?:SceneInfo;
 }
-export interface TrackAnchor { id:string; trackId:string; anchorId:string; evidenceStatus:'pending'|'verified'; evidenceNote:string; sourceUrl:string|null }
-export interface MusicLibrary { schemaVersion:1; tracks:MusicTrack[]; associations:TrackAnchor[] }
+export interface SceneInfo {
+  wikiTitle:string; englishTitle:string; discNumber:number; discTitle:string; trackNumber:number;
+  originText:string; mainRegions:string[]; musicLocationIds:string[];
+  wikiSourceUrl:string; wikiRevisionId:string; metadataNotes:string[];
+}
+export interface MusicLocation {
+  id:string; name:string; country:string; areaId:number; areaCode:string;
+  /** area fields describe the archive namespace; scene locations can be geographically unresolved. */
+  kind:'place'|'scene'; sourceUrl:string; notes:string;
+}
+export type AssociationMatch = 'place-match'|'parent-place-match'|'region-archive';
+export interface TrackAnchor {
+  id:string; trackId:string; anchorId:string; evidenceStatus:'pending'|'verified'; evidenceNote:string; sourceUrl:string|null;
+  matchType?:AssociationMatch;
+}
+export interface MusicLibrary { schemaVersion:1; tracks:MusicTrack[]; associations:TrackAnchor[]; musicLocations?:MusicLocation[] }
 /** Stage 4 resolver contract only; no audio implementation or URL is bundled. */
 export type PlaybackResource =
   | { status:'ready'; provider:'netease'|'local'; url:string; expiresAt:string|null; preview:boolean }
