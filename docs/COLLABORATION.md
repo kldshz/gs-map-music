@@ -134,3 +134,5 @@ Claude主导三栏、可折叠信息、开发编辑控件、移动端和焦点�
 ## C3-04：OST展示调整
 
 实际工单[S3-OST-DISPLAY-001](WORK_ORDERS/S3-OST-DISPLAY-001.md)，本机CLI2.1.291固定claude-opus-5-5/--effort high，stdin、禁用工具，唯一modelUsage一致，success/is_error=false，91163ms。Claude交付MusicSidebar精确替换与CSS，Codex核对唯一old/白名单整合，构建通过；原始响应仅.local。首次CLI参数拼接未发模型，修正后成功，没有模型替换。
+
+C3-04最终整合：Claude的原说明/出处设计沿用，Codex负责24专辑净化匹配、范围/城市/限定规则、目录与MySQL、索引性能、批次检查与校对报告。没有追加视觉模型或替代模型。扩库后25数据与15生产UI（含定向复测）、2开发UI/构建通过；桌面/手机实际查看。

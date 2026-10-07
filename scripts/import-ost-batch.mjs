@@ -5,7 +5,8 @@ const batches=[['early',0,3],['inazuma-sumeru',3,8],['fontaine',8,12],['natlan',
 const through=process.argv[2]??'retrospective',batch=batches.find(b=>b[0]===through);assert(batch,'unknown batch');
 const source=JSON.parse(await fs.readFile('data/sources/ost-bulk-source.json','utf8'));
 const map=JSON.parse(await fs.readFile('public/data/kongying-map.json','utf8'));
-const library=JSON.parse(await fs.readFile('public/data/music-library.json','utf8'));
+const originalLibraryText=await fs.readFile('public/data/music-library.json','utf8');
+const library=JSON.parse(originalLibraryText);
 const edits=JSON.parse(await fs.readFile('data/association-edits.json','utf8'));
 const candidates=generateAssociations(source,map,library);
 const byTrack=new Map(library.tracks.map(t=>[t.id,t])),edges=new Set(library.associations.map(a=>a.trackId+'|'+a.anchorId)),locations=new Set((library.musicLocations??=[]).map(p=>p.id));
@@ -36,6 +37,13 @@ assert.equal(new Set(library.associations.map(a=>a.trackId+'|'+a.anchorId)).size
 const all=candidates.filter(c=>byTrack.has('netease:'+c.track.neteaseId)).map(c=>({album:c.album.title,id:'netease:'+c.track.neteaseId,title:c.track.title,originText:c.track.originText,category:c.classification.kind,countries:c.classification.countries,areaCodes:c.classification.areaCodes,matchedTerms:c.classification.terms,matchType:c.classification.method??null,
  anchorIds:c.classification.points.filter(p=>!edits.edits.some(e=>e.trackId==='netease:'+c.track.neteaseId&&e.anchorId===p.id&&e.action==='remove')).map(p=>p.id),reason:c.classification.reason}));
 const review={schemaVersion:1,capturedOn:source.capturedOn,batches:batches.filter(b=>b[2]<=batch[2]).map(b=>({name:b[0],albums:source.albums.slice(b[1],b[2]).map(a=>a.title),tracks:source.albums.slice(b[1],b[2]).reduce((n,a)=>n+a.tracks.length,0)})),summary:{totalTracks:library.tracks.length,totalAssociations:library.associations.length,newTracks:all.length,newAssociations:library.associations.filter(a=>a.id.startsWith('ost:')).length,unlocated:all.filter(x=>!x.countries.length).length,withoutPoint:all.filter(x=>!x.anchorIds.length).length,specialMaps:all.filter(x=>x.category==='special-map').length,missingOrigin:all.filter(x=>!x.originText.trim()||/^[\s/—-]+$/.test(x.originText)).length,limitedBattleWithoutPoint:all.filter(x=>x.category==='battle-limited'&&!x.anchorIds.length).length,sourceConflicts:source.conflicts.length},tracks:all};
-await fs.writeFile('public/data/music-library.json',JSON.stringify(library,null,2)+'\n');
-await fs.mkdir('data/review',{recursive:true});await fs.writeFile('data/review/ost-association-review.json',JSON.stringify(review,null,2)+'\n');
+async function saveAtomic(path,content,expected){
+ const previous=await fs.readFile(path,'utf8').catch(e=>{if(e.code!=='ENOENT')throw e;return null;});
+ if(expected!==undefined)assert.equal(previous,expected,'导入期间曲库被修改，拒绝覆盖');
+ if(previous===content)return;
+ const temp=path+`.import-${process.pid}.tmp`;
+ try{await fs.writeFile(temp,content,{flag:'wx'});await fs.rename(temp,path);}finally{await fs.unlink(temp).catch(e=>{if(e.code!=='ENOENT')throw e;});}
+}
+await saveAtomic('public/data/music-library.json',JSON.stringify(library,null,2)+'\n',originalLibraryText);
+await fs.mkdir('data/review',{recursive:true});await saveAtomic('data/review/ost-association-review.json',JSON.stringify(review,null,2)+'\n');
 console.log(JSON.stringify({batch:through,addedTracks,addedLinks,...review.summary,libraryBytes:Buffer.byteLength(JSON.stringify(library,null,2))},null,2));

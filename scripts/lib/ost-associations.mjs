@@ -41,7 +41,7 @@ export function category(t) {
     return 'battle-limited';
   }
   if(/Battles of Inazuma/.test(t.discTitle)&&/^稻妻野外/.test(o))return 'battle-generic';
-  if(/任务|剧情|传说|过场|PV|活动|小游戏|主题曲|界面|改编|回忆|登场|出场|音乐[一二三123]|七圣召唤|千星/.test(o))return 'task';
+  if(/任务|剧情|传说|过场|PV|活动|小游戏|主题曲|印象曲|界面|改编|回忆|登场|出场|音乐[一二三123]|七圣召唤|千星/.test(o))return 'task';
   return 'scene';
 }
 function special(album,t) {
@@ -106,7 +106,8 @@ export function generateAssociations(source,map,existing) {
   const occupied=new Set();
   const byTrack=new Map(existing.tracks.map(t=>[t.id,t]));
   for(const a of existing.associations){const t=byTrack.get(a.trackId);if(!a.id.startsWith('ost:')&&['place-match','parent-place-match'].includes(a.matchType)&&t&&category(t.sceneInfo??{originText:'',discTitle:''})==='scene')occupied.add(a.anchorId);}
-  for(const c of candidates)if(c.classification.kind==='scene'&&c.classification.method==='place-match')for(const p of c.classification.points)occupied.add(p.id);
+  const broadNames=new Set(map.areas.filter(a=>a.isFinal).flatMap(a=>[a.name,...a.name.split('、')]));
+  for(const c of candidates)if(c.classification.kind==='scene'&&c.classification.method==='place-match'&&c.classification.terms.some(t=>!broadNames.has(t)))for(const p of c.classification.points)occupied.add(p.id);
   for(const c of candidates){if(c.classification.kind==='scene'&&c.classification.method==='region-scope')c.classification.points=c.classification.points.filter(p=>!occupied.has(p.id));}
   return candidates;
 }

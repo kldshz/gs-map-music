@@ -42,3 +42,7 @@ UI测试使用已安装的Edge，自动启动/停止4173预览，请先停止手
 统一需求：[项目说明与分阶段提示词](项目说明与分阶段提示词.md)。[状态](docs/PROJECT_STATUS.md)、[决定](docs/DECISIONS.md)、[验收](docs/ACCEPTANCE.md)、[Claude协作](docs/COLLABORATION.md)、[路线测试方案](docs/ROUTE_TEST_PLAN.md)。私有仓库：<https://github.com/kldshz/gs-map-music>。
 
 本项目个人使用、不公开部署。代码开源许可与游戏素材/在线服务使用条件分开记录，不宣称取得素材再分发授权。第三方大图、音乐、本机认证与数据库密码不入库。历史阶段2的合成地图和非原神音频已从当前产品删除，历史证据保留在Git。
+
+## 阶段3批量OST
+
+现有25张专辑（含原风与牧歌）1663曲，7075待校对关系。新增24专辑的来源、离线净化、分批导入与人工覆盖语义见[批量说明](docs/OST_BULK_IMPORT.md)，需要你校对的歌曲与冲突见[清单](docs/OST_REVIEW.md)。所有关联pending，播放/路线未开始；运行页面`npm run dev`。旧Excel是原63首历史产物，当前完整数据以public/data/music-library.json及审查记录为准。

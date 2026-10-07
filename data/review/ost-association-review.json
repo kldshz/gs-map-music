@@ -49,18 +49,30 @@
         "悯宥慈怜之垠"
       ],
       "tracks": 272
+    },
+    {
+      "name": "retrospective",
+      "albums": [
+        "珍珠之歌",
+        "珍珠之歌2",
+        "珍珠之歌3",
+        "珍珠之歌4",
+        "珍珠之歌5",
+        "珍珠之歌6"
+      ],
+      "tracks": 411
     }
   ],
   "summary": {
-    "totalTracks": 1252,
-    "totalAssociations": 6360,
-    "newTracks": 1189,
-    "newAssociations": 5956,
-    "unlocated": 0,
-    "withoutPoint": 102,
-    "specialMaps": 1,
-    "missingOrigin": 504,
-    "limitedBattleWithoutPoint": 24,
+    "totalTracks": 1663,
+    "totalAssociations": 7075,
+    "newTracks": 1600,
+    "newAssociations": 6671,
+    "unlocated": 216,
+    "withoutPoint": 422,
+    "specialMaps": 85,
+    "missingOrigin": 578,
+    "limitedBattleWithoutPoint": 48,
     "sourceConflicts": 100
   },
   "tracks": [
@@ -4765,8 +4777,13 @@
       ],
       "matchType": "region-scope",
       "anchorIds": [
+        "kongying:17136",
+        "kongying:16759",
         "kongying:16761",
         "kongying:16762",
+        "kongying:16757",
+        "kongying:16758",
+        "kongying:16756",
         "kongying:16760"
       ],
       "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
@@ -4788,8 +4805,13 @@
       ],
       "matchType": "region-scope",
       "anchorIds": [
+        "kongying:17136",
+        "kongying:16759",
         "kongying:16761",
         "kongying:16762",
+        "kongying:16757",
+        "kongying:16758",
+        "kongying:16756",
         "kongying:16760"
       ],
       "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
@@ -4811,8 +4833,13 @@
       ],
       "matchType": "region-scope",
       "anchorIds": [
+        "kongying:17136",
+        "kongying:16759",
         "kongying:16761",
         "kongying:16762",
+        "kongying:16757",
+        "kongying:16758",
+        "kongying:16756",
         "kongying:16760"
       ],
       "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
@@ -4834,8 +4861,13 @@
       ],
       "matchType": "region-scope",
       "anchorIds": [
+        "kongying:17136",
+        "kongying:16759",
         "kongying:16761",
         "kongying:16762",
+        "kongying:16757",
+        "kongying:16758",
+        "kongying:16756",
         "kongying:16760"
       ],
       "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
@@ -4857,8 +4889,13 @@
       ],
       "matchType": "region-scope",
       "anchorIds": [
+        "kongying:17136",
+        "kongying:16759",
         "kongying:16761",
         "kongying:16762",
+        "kongying:16757",
+        "kongying:16758",
+        "kongying:16756",
         "kongying:16760"
       ],
       "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
@@ -4880,8 +4917,13 @@
       ],
       "matchType": "region-scope",
       "anchorIds": [
+        "kongying:17136",
+        "kongying:16759",
         "kongying:16761",
         "kongying:16762",
+        "kongying:16757",
+        "kongying:16758",
+        "kongying:16756",
         "kongying:16760"
       ],
       "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
@@ -4903,8 +4945,13 @@
       ],
       "matchType": "region-scope",
       "anchorIds": [
+        "kongying:17136",
+        "kongying:16759",
         "kongying:16761",
         "kongying:16762",
+        "kongying:16757",
+        "kongying:16758",
+        "kongying:16756",
         "kongying:16760"
       ],
       "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
@@ -4926,8 +4973,13 @@
       ],
       "matchType": "region-scope",
       "anchorIds": [
+        "kongying:17136",
+        "kongying:16759",
         "kongying:16761",
         "kongying:16762",
+        "kongying:16757",
+        "kongying:16758",
+        "kongying:16756",
         "kongying:16760"
       ],
       "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
@@ -4949,8 +5001,13 @@
       ],
       "matchType": "region-scope",
       "anchorIds": [
+        "kongying:17136",
+        "kongying:16759",
         "kongying:16761",
         "kongying:16762",
+        "kongying:16757",
+        "kongying:16758",
+        "kongying:16756",
         "kongying:16760"
       ],
       "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
@@ -21191,10 +21248,21 @@
       ],
       "matchType": "region-scope",
       "anchorIds": [
+        "kongying:95173",
         "kongying:95177",
+        "kongying:95175",
         "kongying:95159",
+        "kongying:95164",
+        "kongying:95160",
+        "kongying:95172",
+        "kongying:95167",
+        "kongying:95171",
         "kongying:95170",
-        "kongying:95169"
+        "kongying:95174",
+        "kongying:95169",
+        "kongying:95166",
+        "kongying:95163",
+        "kongying:95165"
       ],
       "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
@@ -21215,10 +21283,21 @@
       ],
       "matchType": "region-scope",
       "anchorIds": [
+        "kongying:95173",
         "kongying:95177",
+        "kongying:95175",
         "kongying:95159",
+        "kongying:95164",
+        "kongying:95160",
+        "kongying:95172",
+        "kongying:95167",
+        "kongying:95171",
         "kongying:95170",
-        "kongying:95169"
+        "kongying:95174",
+        "kongying:95169",
+        "kongying:95166",
+        "kongying:95163",
+        "kongying:95165"
       ],
       "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
@@ -21239,10 +21318,21 @@
       ],
       "matchType": "region-scope",
       "anchorIds": [
+        "kongying:95173",
         "kongying:95177",
+        "kongying:95175",
         "kongying:95159",
+        "kongying:95164",
+        "kongying:95160",
+        "kongying:95172",
+        "kongying:95167",
+        "kongying:95171",
         "kongying:95170",
-        "kongying:95169"
+        "kongying:95174",
+        "kongying:95169",
+        "kongying:95166",
+        "kongying:95163",
+        "kongying:95165"
       ],
       "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
@@ -23721,10 +23811,12 @@
         "kongying:105707",
         "kongying:105850",
         "kongying:105847",
+        "kongying:105824",
         "kongying:111871",
         "kongying:119981",
         "kongying:105710",
         "kongying:105848",
+        "kongying:105840",
         "kongying:105805",
         "kongying:105839",
         "kongying:106240",
@@ -23734,25 +23826,36 @@
         "kongying:105810",
         "kongying:105808",
         "kongying:107938",
+        "kongying:107941",
+        "kongying:105807",
+        "kongying:105826",
         "kongying:111873",
         "kongying:105841",
         "kongying:105836",
         "kongying:105851",
         "kongying:105846",
         "kongying:105842",
+        "kongying:105834",
         "kongying:105843",
         "kongying:105844",
         "kongying:111863",
         "kongying:111866",
         "kongying:111864",
         "kongying:111870",
+        "kongying:105811",
         "kongying:105825",
         "kongying:105798",
+        "kongying:111559",
         "kongying:111852",
         "kongying:105800",
         "kongying:105799",
         "kongying:105796",
-        "kongying:105821"
+        "kongying:105813",
+        "kongying:105816",
+        "kongying:105820",
+        "kongying:105821",
+        "kongying:105822",
+        "kongying:105828"
       ],
       "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
@@ -23776,10 +23879,12 @@
         "kongying:105707",
         "kongying:105850",
         "kongying:105847",
+        "kongying:105824",
         "kongying:111871",
         "kongying:119981",
         "kongying:105710",
         "kongying:105848",
+        "kongying:105840",
         "kongying:105805",
         "kongying:105839",
         "kongying:106240",
@@ -23789,25 +23894,36 @@
         "kongying:105810",
         "kongying:105808",
         "kongying:107938",
+        "kongying:107941",
+        "kongying:105807",
+        "kongying:105826",
         "kongying:111873",
         "kongying:105841",
         "kongying:105836",
         "kongying:105851",
         "kongying:105846",
         "kongying:105842",
+        "kongying:105834",
         "kongying:105843",
         "kongying:105844",
         "kongying:111863",
         "kongying:111866",
         "kongying:111864",
         "kongying:111870",
+        "kongying:105811",
         "kongying:105825",
         "kongying:105798",
+        "kongying:111559",
         "kongying:111852",
         "kongying:105800",
         "kongying:105799",
         "kongying:105796",
-        "kongying:105821"
+        "kongying:105813",
+        "kongying:105816",
+        "kongying:105820",
+        "kongying:105821",
+        "kongying:105822",
+        "kongying:105828"
       ],
       "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
     },
@@ -28647,6 +28763,7099 @@
       "matchType": "place-match",
       "anchorIds": [],
       "reason": "限定战斗缺少对应地点/附近点位证据，保留目录，不扩大到全区域。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861403401",
+      "title": "希望的航程 What a Hopeful Voyage",
+      "originText": "金苹果群岛",
+      "category": "special-map",
+      "countries": [
+        "金苹果群岛"
+      ],
+      "areaCodes": [
+        "A:APPLE:1_6"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861403399",
+      "title": "广袤的晴空 Vast and Blue",
+      "originText": "金苹果群岛",
+      "category": "special-map",
+      "countries": [
+        "金苹果群岛"
+      ],
+      "areaCodes": [
+        "A:APPLE:1_6"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861403400",
+      "title": "微波轻摇 Mesmerizing Waves",
+      "originText": "金苹果群岛",
+      "category": "special-map",
+      "countries": [
+        "金苹果群岛"
+      ],
+      "areaCodes": [
+        "A:APPLE:1_6"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861403397",
+      "title": "远航入梦 Journey Into Sweet Dreams",
+      "originText": "金苹果群岛",
+      "category": "special-map",
+      "countries": [
+        "金苹果群岛"
+      ],
+      "areaCodes": [
+        "A:APPLE:1_6"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861403393",
+      "title": "海风细语 Whispering Seabreeze",
+      "originText": "金苹果群岛",
+      "category": "special-map",
+      "countries": [
+        "金苹果群岛"
+      ],
+      "areaCodes": [
+        "A:APPLE:1_6"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861403398",
+      "title": "小憩沙滩 Sunshine Beach",
+      "originText": "金苹果群岛",
+      "category": "special-map",
+      "countries": [
+        "金苹果群岛"
+      ],
+      "areaCodes": [
+        "A:APPLE:1_6"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861402593",
+      "title": "海岛精灵 Ariel's Footprints",
+      "originText": "金苹果群岛",
+      "category": "special-map",
+      "countries": [
+        "金苹果群岛"
+      ],
+      "areaCodes": [
+        "A:APPLE:1_6"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861403396",
+      "title": "水母之歌 Melody of Jellyfish",
+      "originText": "金苹果群岛",
+      "category": "special-map",
+      "countries": [
+        "金苹果群岛"
+      ],
+      "areaCodes": [
+        "A:APPLE:1_6"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861403389",
+      "title": "难得的静谧 Comforting Quietude",
+      "originText": "金苹果群岛",
+      "category": "special-map",
+      "countries": [
+        "金苹果群岛"
+      ],
+      "areaCodes": [
+        "A:APPLE:1_6"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861403394",
+      "title": "海螺中的回音 Old Tales Preserved",
+      "originText": "金苹果群岛",
+      "category": "special-map",
+      "countries": [
+        "金苹果群岛"
+      ],
+      "areaCodes": [
+        "A:APPLE:1_6"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861402591",
+      "title": "谨慎的探索 Cautious Explorers",
+      "originText": "金苹果群岛",
+      "category": "special-map",
+      "countries": [
+        "金苹果群岛"
+      ],
+      "areaCodes": [
+        "A:APPLE:1_6"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861403390",
+      "title": "光彩渐逝的故事 In Stories of Fading Light",
+      "originText": "金苹果群岛",
+      "category": "special-map",
+      "countries": [
+        "金苹果群岛"
+      ],
+      "areaCodes": [
+        "A:APPLE:1_6"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861402595",
+      "title": "闲适的陪伴 Cozy Company",
+      "originText": "金苹果群岛",
+      "category": "special-map",
+      "countries": [
+        "金苹果群岛"
+      ],
+      "areaCodes": [
+        "A:APPLE:1_6"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861403392",
+      "title": "往昔的诉说 Reminiscence of the Old Days",
+      "originText": "金苹果群岛",
+      "category": "special-map",
+      "countries": [
+        "金苹果群岛"
+      ],
+      "areaCodes": [
+        "A:APPLE:1_6"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861402597",
+      "title": "遥远的嘱托 Faraway Solicitude",
+      "originText": "金苹果群岛",
+      "category": "special-map",
+      "countries": [
+        "金苹果群岛"
+      ],
+      "areaCodes": [
+        "A:APPLE:1_6"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861577590",
+      "title": "烈风的序章 Overture of Storms",
+      "originText": "活动·风花节",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861577539",
+      "title": "火花的初遇 A Sparky Clash",
+      "originText": "可莉相关剧情",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861576557",
+      "title": "无虑无猜的岁月 Innocent Age",
+      "originText": "可莉相关剧情\n《原神》EP - 炎夏炽宝之踪",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861577580",
+      "title": "欢愉的源泉 Whence the Flow Cometh",
+      "originText": "可莉相关剧情",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861577540",
+      "title": "美食寻踪 Hunt for Delicacy",
+      "originText": "活动·佳肴尚温",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861576535",
+      "title": "小小恶作剧 Sneaky & Mischievous",
+      "originText": "可莉相关剧情",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861576558",
+      "title": "微醺的回忆 Mellow Memories",
+      "originText": "蒙德",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:MENGDE",
+        "A:MD:XUESHAN",
+        "A:MD:FENGXISHAN",
+        "A:MD:SHENDIAN"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:6557",
+        "kongying:6554",
+        "kongying:6555",
+        "kongying:6558",
+        "kongying:6556",
+        "kongying:115465"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861576536",
+      "title": "狼般的少年 The Wolf Boy",
+      "originText": "阿贝多大团长相关剧情",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861576553",
+      "title": "秣马厉兵 Battle Preparation",
+      "originText": "战斗BGM",
+      "category": "battle-limited",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861577560",
+      "title": "候汝久时 The Astrologist Awaiting",
+      "originText": "莫娜相关剧情",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861577581",
+      "title": "星知晓的旧梦 The Starlit Past",
+      "originText": "莫娜相关剧情",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861576559",
+      "title": "炉边小憩 Fireside Rest",
+      "originText": "蒙德野外\n《原神》EP - 晨光拂晓之时",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:MENGDE"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:6290",
+        "kongying:6292",
+        "kongying:6295",
+        "kongying:6557",
+        "kongying:6289",
+        "kongying:6284",
+        "kongying:6555",
+        "kongying:7290",
+        "kongying:6286",
+        "kongying:6285",
+        "kongying:6282",
+        "kongying:6283",
+        "kongying:6287",
+        "kongying:6288",
+        "kongying:6291",
+        "kongying:6294",
+        "kongying:7298",
+        "kongying:6293",
+        "kongying:115467",
+        "kongying:6556"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861577587",
+      "title": "凶险的密谋 A Wicked Plot",
+      "originText": "剧情战斗",
+      "category": "battle-limited",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861576554",
+      "title": "吟游诗人的把戏 A Cunning Trick",
+      "originText": "温迪相关剧情",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861577589",
+      "title": "女士驾临 L'arrivo della Signora",
+      "originText": "主线·序章尾声",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861577582",
+      "title": "希望的和风 A Yearning Breeze",
+      "originText": "蒙德",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:MENGDE",
+        "A:MD:XUESHAN",
+        "A:MD:FENGXISHAN",
+        "A:MD:SHENDIAN"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:6557",
+        "kongying:6554",
+        "kongying:6555",
+        "kongying:6558",
+        "kongying:6556",
+        "kongying:115465"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861577584",
+      "title": "白日梦的涟漪 Ripples of Daydream",
+      "originText": "蒙德",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:MENGDE",
+        "A:MD:XUESHAN",
+        "A:MD:FENGXISHAN",
+        "A:MD:SHENDIAN"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:6557",
+        "kongying:6554",
+        "kongying:6555",
+        "kongying:6558",
+        "kongying:6556",
+        "kongying:115465"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861576562",
+      "title": "重归青天的歌 Welcome Back, My Companion",
+      "originText": "风魔龙战后",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861577586",
+      "title": "岩主的骤崩 The Sudden Collapse",
+      "originText": "群玉阁相关剧情",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861577583",
+      "title": "天权为尊 The Lunar-Eclipsing Palace",
+      "originText": "群玉阁",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861577578",
+      "title": "意料之外的救星 Unexpected Savior",
+      "originText": "群玉阁之战",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861576556",
+      "title": "异乡的归书 A Letter From Afar",
+      "originText": "璃月\n《原神》EP - 异乡流泊的武人",
+      "category": "scene",
+      "countries": [
+        "璃月"
+      ],
+      "areaCodes": [
+        "A:LY:LIYUE",
+        "A:LY:CENGYAN",
+        "A:LY:CENGYAN_UG",
+        "A:LY:CHENYUGU"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:67187",
+        "kongying:67188",
+        "kongying:6614",
+        "kongying:6613",
+        "kongying:6611",
+        "kongying:6615",
+        "kongying:21171",
+        "kongying:6612"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861577585",
+      "title": "蒲苇如丝 Lovers' Oath",
+      "originText": "阿贝多大团长传说任务",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861579691",
+      "title": "不冻的激浪 All-Conquering Tide",
+      "originText": "龙脊雪山 战斗BGM",
+      "category": "battle-generic",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:XUESHAN"
+      ],
+      "matchedTerms": [
+        "龙脊雪山"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:6562",
+        "kongying:6566",
+        "kongying:6567",
+        "kongying:6570",
+        "kongying:6563",
+        "kongying:6564",
+        "kongying:6565",
+        "kongying:6568",
+        "kongying:6569",
+        "kongying:6571",
+        "kongying:6572",
+        "kongying:6558"
+      ],
+      "reason": "通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861578701",
+      "title": "永无谢幕的演出 Never-Ending Performance",
+      "originText": "黄金屋·公子战",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:SY"
+      ],
+      "matchedTerms": [
+        "金屋"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:119929"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861578697",
+      "title": "斩破风暴的魔鲸 Wrath of Monoceros Caeli",
+      "originText": "公子第二阶段",
+      "category": "battle-limited",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861578700",
+      "title": "同漩涡共舞 Dance with the Great Vortex",
+      "originText": "群玉阁决战",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861578699",
+      "title": "天遒歌 Ode to Azhdaha",
+      "originText": "若陀龙王战斗",
+      "category": "battle-limited",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861578703",
+      "title": "岩壑之崩 Rage Beneath the Mountains",
+      "originText": "若陀龙王战斗",
+      "category": "battle-limited",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861579781",
+      "title": "珍珠之歌 Hymn of the Pearl",
+      "originText": "专辑标题曲",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861579780",
+      "title": "陨落之星 Overture of Falling Stars",
+      "originText": "未归的熄星活动",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861579821",
+      "title": "浮浪人的心机 Ominous Fandango",
+      "originText": "公子相关剧情",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861579818",
+      "title": "直面纷争的狂喜 Rapture of the Chaos",
+      "originText": "战斗BGM",
+      "category": "battle-limited",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861579782",
+      "title": "魔王武装 Foul Legacy",
+      "originText": "公子魔王武装形态",
+      "category": "battle-limited",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861579820",
+      "title": "黄金沉眠之处 Golden Dreams",
+      "originText": "黄金屋",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:SY"
+      ],
+      "matchedTerms": [
+        "金屋"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:119929"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861579819",
+      "title": "玉影徘徊 Palace of Jadeite",
+      "originText": "群玉阁\n《原神》EP - 仙泽麟行之迹",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861579804",
+      "title": "掩月之阁 Moon-Eclipsing Chamber",
+      "originText": "群玉阁",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861578815",
+      "title": "凯歌的前奏 The Imminent Triumph",
+      "originText": "剧情战斗",
+      "category": "battle-limited",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861579833",
+      "title": "高贵的诀别 A Noble Sacrifice",
+      "originText": "剧情BGM",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861578817",
+      "title": "柔情留忆 Lingering Bitterness",
+      "originText": "剧情BGM",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861578803",
+      "title": "寒寂中盛放 Frostbiting Bloom",
+      "originText": "龙脊雪山",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:XUESHAN"
+      ],
+      "matchedTerms": [
+        "龙脊雪山"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:6562",
+        "kongying:6566",
+        "kongying:6567",
+        "kongying:6570",
+        "kongying:6563",
+        "kongying:6564",
+        "kongying:6565",
+        "kongying:6568",
+        "kongying:6569",
+        "kongying:6571",
+        "kongying:6572",
+        "kongying:6558"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861578818",
+      "title": "夜叉的回叙 Tale of the Yakshas",
+      "originText": "夜叉相关剧情",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861579822",
+      "title": "风花的邀约 Invitation of Windblume",
+      "originText": "活动·风花节",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861579803",
+      "title": "灾厄的一击 An Inauspicious Blow",
+      "originText": "战斗BGM",
+      "category": "battle-limited",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861579806",
+      "title": "深渊下的离别 Fateful Departing",
+      "originText": "主线剧情",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861578804",
+      "title": "游击骑士 Reconnaissance Captain",
+      "originText": "战斗BGM",
+      "category": "battle-limited",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861578821",
+      "title": "磐峦的恶意 Ominous Monolith",
+      "originText": "战斗BGM",
+      "category": "battle-limited",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861579823",
+      "title": "创龙点睛 Through the Eyes of a Dragon",
+      "originText": "若陀龙王相关",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861578765",
+      "title": "特瓦林，抵达！ Dvalin Is Landing",
+      "originText": "风魔龙战斗",
+      "category": "battle-limited",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:MENGDE"
+      ],
+      "matchedTerms": [
+        "风龙废墟"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6554",
+        "kongying:6279",
+        "kongying:6280",
+        "kongying:6278",
+        "kongying:6281"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861579817",
+      "title": "盛夏乐园 Summertime Wonderland",
+      "originText": "金苹果群岛",
+      "category": "special-map",
+      "countries": [
+        "金苹果群岛"
+      ],
+      "areaCodes": [
+        "A:APPLE:1_6"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861579784",
+      "title": "夏日新冒险！ A New Summer Adventure!",
+      "originText": "金苹果群岛",
+      "category": "special-map",
+      "countries": [
+        "金苹果群岛"
+      ],
+      "areaCodes": [
+        "A:APPLE:1_6"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861579836",
+      "title": "山巅雪国的记忆 Tales From the Snow Mountain",
+      "originText": "龙脊雪山（童声合唱）",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:XUESHAN"
+      ],
+      "matchedTerms": [
+        "龙脊雪山"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:6562",
+        "kongying:6566",
+        "kongying:6567",
+        "kongying:6570",
+        "kongying:6563",
+        "kongying:6564",
+        "kongying:6565",
+        "kongying:6568",
+        "kongying:6569",
+        "kongying:6571",
+        "kongying:6572",
+        "kongying:6558"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "珍珠之歌",
+      "id": "netease:1861578838",
+      "title": "命定的离别 Destined Parting",
+      "originText": "剧情BGM",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973622666",
+      "title": "白鹭舒翼 Pathos of Shirasagi",
+      "originText": "神里绫华传说任务",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973622667",
+      "title": "妙策急袭 The Comrades' Ambush",
+      "originText": "魔神任务-第2章-第3幕",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973619532",
+      "title": "雷霆之判 Trial of Thunder",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973619533",
+      "title": "裁决已定…？ Shogun's Abdication",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973622668",
+      "title": "未料的密谋 Unpredicted Conspiracy",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973622669",
+      "title": "危急的预觉 A Sense of Foreboding",
+      "originText": "魔神任务-第2章-第3幕",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973619534",
+      "title": "虚荣的落幕 Wreck of Eternal Bane",
+      "originText": "魔神任务-第2章-第3幕",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973619535",
+      "title": "向着胜利 Marching to Victory",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973619536",
+      "title": "疾雷万钧 Approaching Thunder",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973622670",
+      "title": "苦涩的凯旋 Bitter Triumph",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973622671",
+      "title": "殊胜之身 Her Imperial Majesty",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973619537",
+      "title": "灵光乍现 Eureka Moment",
+      "originText": "珊瑚宫心海传说任务",
+      "category": "task",
+      "countries": [
+        "稻妻"
+      ],
+      "areaCodes": [
+        "A:DQ:2"
+      ],
+      "matchedTerms": [
+        "珊瑚宫"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:13899"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973622672",
+      "title": "另一段旅途 Odyssey to the Uncharted",
+      "originText": "诀箓阴阳寮（2.2活动）",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973622673",
+      "title": "急转直下 Unforeseen Disaster",
+      "originText": "皑尘与雪影（2.3活动）",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973622674",
+      "title": "晶明的怒火 Fury Unleashed",
+      "originText": "皑尘与雪影（2.3活动）",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973619538",
+      "title": "命途两歧 Separate Ways",
+      "originText": "皑尘与雪影（2.3活动）",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973622675",
+      "title": "救星登场 Take This!",
+      "originText": "荒泷一斗传说任务",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973619539",
+      "title": "爱别离苦 Suffering of Parting",
+      "originText": "荒泷一斗传说任务",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973622676",
+      "title": "风定天晴 Under the Sun",
+      "originText": "荒泷一斗传说任务",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973619540",
+      "title": "渐淡的旧事 Vanished Beyond Recall",
+      "originText": "三界路飨祭（2.5活动）",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973619541",
+      "title": "泡沫的永恒 Nothing but a Dream",
+      "originText": "三界路飨祭（2.5活动）",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973619542",
+      "title": "郁郁的形影 Illusory Apparitions",
+      "originText": "三界路飨祭（2.5活动）",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973622677",
+      "title": "蒙德的午夜 Midnight in Mondstadt",
+      "originText": "蒙德-坠星山谷-蒙德城",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:MENGDE"
+      ],
+      "matchedTerms": [
+        "蒙德城"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6626",
+        "kongying:6625"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973622678",
+      "title": "挽夜的晓歌 Tagelied nächtlicher Gedanken",
+      "originText": "谢皇堡秘境非战斗音乐",
+      "category": "special-map",
+      "countries": [
+        "金苹果群岛"
+      ],
+      "areaCodes": [
+        "A:APPLE:2_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973619543",
+      "title": "暮景遐思·其一 Traum durch die Dämmerung, erster Satz",
+      "originText": "谢皇堡秘境非战斗音乐",
+      "category": "special-map",
+      "countries": [
+        "金苹果群岛"
+      ],
+      "areaCodes": [
+        "A:APPLE:2_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973619544",
+      "title": "暮景遐思·其二 Traum durch die Dämmerung, zweiter Satz",
+      "originText": "谢皇堡秘境非战斗音乐",
+      "category": "special-map",
+      "countries": [
+        "金苹果群岛"
+      ],
+      "areaCodes": [
+        "A:APPLE:2_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973619545",
+      "title": "圣眷的净土 Das Folkwanglied",
+      "originText": "谢皇堡秘境非战斗音乐",
+      "category": "special-map",
+      "countries": [
+        "金苹果群岛"
+      ],
+      "areaCodes": [
+        "A:APPLE:2_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973622679",
+      "title": "鸲翮的皇庭 Ein vogellin, so wol getan",
+      "originText": "谢皇堡秘境非战斗音乐",
+      "category": "special-map",
+      "countries": [
+        "金苹果群岛"
+      ],
+      "areaCodes": [
+        "A:APPLE:2_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973619546",
+      "title": "幽星的独言 Soliloquy of the Star",
+      "originText": "莫娜秘境非战斗音乐",
+      "category": "special-map",
+      "countries": [
+        "金苹果群岛"
+      ],
+      "areaCodes": [
+        "A:APPLE:2_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973619547",
+      "title": "熙焰明光 Flickering Brightness",
+      "originText": "辛焱秘境非战斗音乐，璃月版",
+      "category": "special-map",
+      "countries": [
+        "金苹果群岛"
+      ],
+      "areaCodes": [
+        "A:APPLE:2_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973619548",
+      "title": "烈火轰雷 Burst Into Flames",
+      "originText": "辛焱秘境战斗音乐，摇滚版",
+      "category": "special-map",
+      "countries": [
+        "金苹果群岛"
+      ],
+      "areaCodes": [
+        "A:APPLE:2_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973619549",
+      "title": "仲夏夜绮思 Die Mittsommernacht-Fantasie",
+      "originText": "菲谢尔秘境战斗音乐",
+      "category": "special-map",
+      "countries": [
+        "金苹果群岛"
+      ],
+      "areaCodes": [
+        "A:APPLE:2_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973622680",
+      "title": "且看今朝 The Liyue Romans-Fleuves",
+      "originText": "2.1版本逐月节PV音乐",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973619550",
+      "title": "缟鹤怀霜 Bravery and Tenderness",
+      "originText": "魔神任务《风起鹤归》高潮",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973622681",
+      "title": "雷霆猛震 Rumble of Thunder",
+      "originText": "雷电将军传说任务二",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973622682",
+      "title": "永恒的脉络 Roots of Tranquil Eternity",
+      "originText": "雷电将军传说任务二",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973619551",
+      "title": "神子的机思 Miko's Ingenuity",
+      "originText": "八重神子传说任务",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973619552",
+      "title": "重现的国度 A Region Rediscovered",
+      "originText": "渊下宫大门初开过场",
+      "category": "task",
+      "countries": [
+        "稻妻"
+      ],
+      "areaCodes": [
+        "A:DQ:YUANXIAGONG"
+      ],
+      "matchedTerms": [
+        "渊下宫"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:33183",
+        "kongying:19615",
+        "kongying:19602"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973619553",
+      "title": "尚未消殒的光 Cold Light",
+      "originText": "渊下宫大日御舆过场",
+      "category": "task",
+      "countries": [
+        "稻妻"
+      ],
+      "areaCodes": [
+        "A:DQ:YUANXIAGONG"
+      ],
+      "matchedTerms": [
+        "大日御舆",
+        "渊下宫"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:19608",
+        "kongying:33183",
+        "kongying:19607",
+        "kongying:19610",
+        "kongying:19609",
+        "kongying:19606",
+        "kongying:19615",
+        "kongying:19602"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973619554",
+      "title": "破裂的剑刃 Broken Blade",
+      "originText": "魔神任务2-4（层岩）",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973619555",
+      "title": "未竟之志 Unfulfilled Aspirations",
+      "originText": "魔神任务2-4（层岩）",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973619556",
+      "title": "贞柏临风 Evergreen Cypress",
+      "originText": "神里绫人传说任务",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973622683",
+      "title": "灼灼容彩 Magnificent Irodori",
+      "originText": "2.6版本容彩祭剧情PV",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973622684",
+      "title": "孤注一掷 Breaking Point",
+      "originText": "魔神任务间章（层岩）",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973619557",
+      "title": "奇诡难测 A Clueless Case",
+      "originText": "魔神任务间章（层岩）",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973622685",
+      "title": "命悬一线 Hang by a Thread",
+      "originText": "魔神任务间章（层岩）",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973622686",
+      "title": "夜叉的追想 Yaksha's Reminiscence",
+      "originText": "2.7版本魔神任务间章（层岩），夜叉PV",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973619558",
+      "title": "知易行难 Easier Said Than Done",
+      "originText": "夜兰传说任务结尾",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973619559",
+      "title": "一念一心 A Single Thought",
+      "originText": "枫原万叶传说任务",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973619560",
+      "title": "动变的前奏 Prelude of Change",
+      "originText": "2.8版本海岛幻境初现",
+      "category": "special-map",
+      "countries": [
+        "金苹果群岛"
+      ],
+      "areaCodes": [
+        "A:APPLE:2_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973622916",
+      "title": "华梦组曲 Phantasm Suite",
+      "originText": "2.8版本海岛剧情PV",
+      "category": "special-map",
+      "countries": [
+        "金苹果群岛"
+      ],
+      "areaCodes": [
+        "A:APPLE:2_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973622917",
+      "title": "无尽的挑战 The Everlasting Trail",
+      "originText": "2.5版本百人一揆",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973626810",
+      "title": "煜煜连星 Dazzling Stars",
+      "originText": "2021TGA获奖展示动画音乐",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973626811",
+      "title": "浮光掠影 The Floating World",
+      "originText": "稻妻CM动画音乐",
+      "category": "scene",
+      "countries": [
+        "稻妻"
+      ],
+      "areaCodes": [
+        "A:DQ:1",
+        "A:DQ:2",
+        "A:DQ:HEGUAN",
+        "A:DQ:YUANXIAGONG"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:13406",
+        "kongying:13901",
+        "kongying:13407",
+        "kongying:13900",
+        "kongying:13408",
+        "kongying:16756"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973626812",
+      "title": "振飞之时 Soar in the Wind",
+      "originText": "稻妻CM动画音乐",
+      "category": "scene",
+      "countries": [
+        "稻妻"
+      ],
+      "areaCodes": [
+        "A:DQ:1",
+        "A:DQ:2",
+        "A:DQ:HEGUAN",
+        "A:DQ:YUANXIAGONG"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:13406",
+        "kongying:13901",
+        "kongying:13407",
+        "kongying:13900",
+        "kongying:13408",
+        "kongying:16756"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973626813",
+      "title": "熛烬的悼咏 Elogia Cinerosa",
+      "originText": "冬夜愚戏PV音乐",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌2",
+      "id": "netease:1973626814",
+      "title": "纯真的歌谣 Song of Innocence",
+      "originText": "鹤观印象曲",
+      "category": "task",
+      "countries": [
+        "稻妻"
+      ],
+      "areaCodes": [
+        "A:DQ:HEGUAN"
+      ],
+      "matchedTerms": [
+        "鹤观"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:17136",
+        "kongying:16759",
+        "kongying:16757",
+        "kongying:16758",
+        "kongying:16756"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982788",
+      "title": "逸兴欢跃 Euphoric Ride",
+      "originText": "琉形蜃景 白天1 清夏！乐园？大秘境",
+      "category": "special-map",
+      "countries": [
+        "琉形蜃境"
+      ],
+      "areaCodes": [
+        "A:VELURIYAM:3_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068981335",
+      "title": "飞车出发啦！ Let's Get Started!",
+      "originText": "琉形蜃景 过山车音乐",
+      "category": "special-map",
+      "countries": [
+        "琉形蜃境"
+      ],
+      "areaCodes": [
+        "A:VELURIYAM:3_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068981336",
+      "title": "市阛繁漫 Bustling Bazaar",
+      "originText": "琉形蜃景 集市白天",
+      "category": "special-map",
+      "countries": [
+        "琉形蜃境"
+      ],
+      "areaCodes": [
+        "A:VELURIYAM:3_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982789",
+      "title": "遐游香榭 Flanerie sur le marche",
+      "originText": "琉形蜃景 街道",
+      "category": "special-map",
+      "countries": [
+        "琉形蜃境"
+      ],
+      "areaCodes": [
+        "A:VELURIYAM:3_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068981337",
+      "title": "夜静更阑 Soothing Nightfall",
+      "originText": "琉形蜃景 夜晚1",
+      "category": "special-map",
+      "countries": [
+        "琉形蜃境"
+      ],
+      "areaCodes": [
+        "A:VELURIYAM:3_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982790",
+      "title": "暮夜绮想 Eventide Caprice",
+      "originText": "琉形蜃景 夜晚2",
+      "category": "special-map",
+      "countries": [
+        "琉形蜃境"
+      ],
+      "areaCodes": [
+        "A:VELURIYAM:3_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068981338",
+      "title": "欢笑的凯旋 Triumph of Mirth",
+      "originText": "琉形蜃景 挑战完成",
+      "category": "special-map",
+      "countries": [
+        "琉形蜃境"
+      ],
+      "areaCodes": [
+        "A:VELURIYAM:3_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982791",
+      "title": "畅舒的行歌 Cheerful March",
+      "originText": "琉形蜃景 行进",
+      "category": "special-map",
+      "countries": [
+        "琉形蜃境"
+      ],
+      "areaCodes": [
+        "A:VELURIYAM:3_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068981339",
+      "title": "谐惬的俚曲 Blissful Little Ditty",
+      "originText": "琉形蜃景 休闲",
+      "category": "special-map",
+      "countries": [
+        "琉形蜃境"
+      ],
+      "areaCodes": [
+        "A:VELURIYAM:3_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068981340",
+      "title": "适趣的韵调 Chirping With Glee",
+      "originText": "琉形蜃景 庭院",
+      "category": "special-map",
+      "countries": [
+        "琉形蜃境"
+      ],
+      "areaCodes": [
+        "A:VELURIYAM:3_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982792",
+      "title": "黑水晶的远航 Voyage of the Black Crystal",
+      "originText": "琉形蜃景 水上航行",
+      "category": "special-map",
+      "countries": [
+        "琉形蜃境"
+      ],
+      "areaCodes": [
+        "A:VELURIYAM:3_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068981341",
+      "title": "森萃的幻戏 Fantastical Fairytale",
+      "originText": "琉形蜃景 幻梦林地",
+      "category": "special-map",
+      "countries": [
+        "琉形蜃境"
+      ],
+      "areaCodes": [
+        "A:VELURIYAM:3_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982793",
+      "title": "澄寂的蜃梦 Soothing Slumber",
+      "originText": "琉形蜃景 秘境幻梦",
+      "category": "special-map",
+      "countries": [
+        "琉形蜃境"
+      ],
+      "areaCodes": [
+        "A:VELURIYAM:3_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982794",
+      "title": "褪淡的思眷 Pensees tranquilles",
+      "originText": "琉形蜃景 回忆场景",
+      "category": "special-map",
+      "countries": [
+        "琉形蜃境"
+      ],
+      "areaCodes": [
+        "A:VELURIYAM:3_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982795",
+      "title": "轻绎的柔愿 Les tendres souhaits",
+      "originText": "琉形蜃景 温馨场景",
+      "category": "special-map",
+      "countries": [
+        "琉形蜃境"
+      ],
+      "areaCodes": [
+        "A:VELURIYAM:3_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068981342",
+      "title": "星芒若铃 Astral Chime",
+      "originText": "琉形蜃景 星光场景",
+      "category": "special-map",
+      "countries": [
+        "琉形蜃境"
+      ],
+      "areaCodes": [
+        "A:VELURIYAM:3_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068981343",
+      "title": "清梦幽思 Dreamlike Reflection",
+      "originText": "琉形蜃景 月夜",
+      "category": "special-map",
+      "countries": [
+        "琉形蜃境"
+      ],
+      "areaCodes": [
+        "A:VELURIYAM:3_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982796",
+      "title": "月露之行 Journey by the Moonlight",
+      "originText": "琉形蜃景 月下漫游",
+      "category": "special-map",
+      "countries": [
+        "琉形蜃境"
+      ],
+      "areaCodes": [
+        "A:VELURIYAM:3_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982797",
+      "title": "鸱枭孤歌之夜 The Owls' Nocturne",
+      "originText": "琉形蜃景 深夜野外",
+      "category": "special-map",
+      "countries": [
+        "琉形蜃境"
+      ],
+      "areaCodes": [
+        "A:VELURIYAM:3_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982798",
+      "title": "登临幽悄之塔 Towers of Afrasiab",
+      "originText": "琉形蜃景 高塔场景",
+      "category": "special-map",
+      "countries": [
+        "琉形蜃境"
+      ],
+      "areaCodes": [
+        "A:VELURIYAM:3_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068981344",
+      "title": "悠远的绘染 Foregone Depiction",
+      "originText": "琉形蜃景 壁画遗迹",
+      "category": "special-map",
+      "countries": [
+        "琉形蜃境"
+      ],
+      "areaCodes": [
+        "A:VELURIYAM:3_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068981345",
+      "title": "遥天的图景 Distant Portrayal",
+      "originText": "琉形蜃景 远景眺望",
+      "category": "special-map",
+      "countries": [
+        "琉形蜃境"
+      ],
+      "areaCodes": [
+        "A:VELURIYAM:3_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982799",
+      "title": "险峙之刻 Moment of Conflict",
+      "originText": "琉形蜃景 遭遇战斗",
+      "category": "special-map",
+      "countries": [
+        "琉形蜃境"
+      ],
+      "areaCodes": [
+        "A:VELURIYAM:3_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982800",
+      "title": "白枝之梦 Dream of White Branches",
+      "originText": "琉形蜃景 幻境",
+      "category": "special-map",
+      "countries": [
+        "琉形蜃境"
+      ],
+      "areaCodes": [
+        "A:VELURIYAM:3_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068981346",
+      "title": "趣求法乐 With Witty Wit",
+      "originText": "琉形蜃景 解谜",
+      "category": "special-map",
+      "countries": [
+        "琉形蜃境"
+      ],
+      "areaCodes": [
+        "A:VELURIYAM:3_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982801",
+      "title": "柔风浅酌 Sipping in the Soft Breeze",
+      "originText": "琉形蜃景 休憩",
+      "category": "special-map",
+      "countries": [
+        "琉形蜃境"
+      ],
+      "areaCodes": [
+        "A:VELURIYAM:3_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068981348",
+      "title": "杏林静憩 Sanctuary for the Sick",
+      "originText": "琉形蜃景 疗养庭院\n《原神》EP - 百草余芳之忆",
+      "category": "special-map",
+      "countries": [
+        "琉形蜃境"
+      ],
+      "areaCodes": [
+        "A:VELURIYAM:3_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982802",
+      "title": "浮白载笔 Tipsy Poetry",
+      "originText": "琉形蜃景 诗酒场景",
+      "category": "special-map",
+      "countries": [
+        "琉形蜃境"
+      ],
+      "areaCodes": [
+        "A:VELURIYAM:3_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982803",
+      "title": "无忧的曲调 Melody of Utsava",
+      "originText": "世界任务 兰纳罗大合唱",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982804",
+      "title": "赤砂的承守 Descendants of Deshret",
+      "originText": "须弥主线 艾尔海森获取罐装知识过场",
+      "category": "task",
+      "countries": [
+        "须弥"
+      ],
+      "areaCodes": [
+        "A:XM:FOREST",
+        "A:XM:DESERT",
+        "A:XM:DESERT2",
+        "A:XM:DESERT3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:24563",
+        "kongying:24562",
+        "kongying:26042",
+        "kongying:39412",
+        "kongying:34908",
+        "kongying:28827",
+        "kongying:24565",
+        "kongying:28825",
+        "kongying:24567",
+        "kongying:24566",
+        "kongying:28826",
+        "kongying:39413",
+        "kongying:24564"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068981349",
+      "title": "花与梦的祝诞 Dance of Sabzeruz",
+      "originText": "花神诞祭 妮露跳舞",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068981350",
+      "title": "灾咎之音 Note of Calamity",
+      "originText": "须弥主线 世界树被污染",
+      "category": "scene",
+      "countries": [
+        "须弥"
+      ],
+      "areaCodes": [
+        "A:XM:FOREST",
+        "A:XM:DESERT",
+        "A:XM:DESERT2",
+        "A:XM:DESERT3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:24563",
+        "kongying:24562",
+        "kongying:26042",
+        "kongying:39412",
+        "kongying:34908",
+        "kongying:28827",
+        "kongying:24565",
+        "kongying:28825",
+        "kongying:24567",
+        "kongying:24566",
+        "kongying:28826",
+        "kongying:39413",
+        "kongying:24564"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068981351",
+      "title": "祸兆之律 Foreboding Beat",
+      "originText": "须弥主线 世界树被污染",
+      "category": "scene",
+      "countries": [
+        "须弥"
+      ],
+      "areaCodes": [
+        "A:XM:FOREST",
+        "A:XM:DESERT",
+        "A:XM:DESERT2",
+        "A:XM:DESERT3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:24563",
+        "kongying:24562",
+        "kongying:26042",
+        "kongying:39412",
+        "kongying:34908",
+        "kongying:28827",
+        "kongying:24565",
+        "kongying:28825",
+        "kongying:24567",
+        "kongying:24566",
+        "kongying:28826",
+        "kongying:39413",
+        "kongying:24564"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068981352",
+      "title": "虚愿难遂 Unrequited Yearning",
+      "originText": "提纳里传说任务 卡卡塔剧情",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068981353",
+      "title": "诡越趋迎 Eccentric Reception",
+      "originText": "博士出场过场",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982805",
+      "title": "花镜百韵 Hyakuin of Blossoming Mirage",
+      "originText": "须弥主线第三幕 神之意过场",
+      "category": "task",
+      "countries": [
+        "须弥"
+      ],
+      "areaCodes": [
+        "A:XM:FOREST",
+        "A:XM:DESERT",
+        "A:XM:DESERT2",
+        "A:XM:DESERT3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:24563",
+        "kongying:24562",
+        "kongying:26042",
+        "kongying:39412",
+        "kongying:34908",
+        "kongying:28827",
+        "kongying:24565",
+        "kongying:28825",
+        "kongying:24567",
+        "kongying:24566",
+        "kongying:28826",
+        "kongying:39413",
+        "kongying:24564"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982806",
+      "title": "末劫末见之刻 Moment of Tribulation",
+      "originText": "须弥主线 凯旋过场",
+      "category": "task",
+      "countries": [
+        "须弥"
+      ],
+      "areaCodes": [
+        "A:XM:FOREST",
+        "A:XM:DESERT",
+        "A:XM:DESERT2",
+        "A:XM:DESERT3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:24563",
+        "kongying:24562",
+        "kongying:26042",
+        "kongying:39412",
+        "kongying:34908",
+        "kongying:28827",
+        "kongying:24565",
+        "kongying:28825",
+        "kongying:24567",
+        "kongying:24566",
+        "kongying:28826",
+        "kongying:39413",
+        "kongying:24564"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982807",
+      "title": "窥间伺隙 Smiting Scope",
+      "originText": "须弥主线第三幕 剑拔弩张",
+      "category": "scene",
+      "countries": [
+        "须弥"
+      ],
+      "areaCodes": [
+        "A:XM:FOREST",
+        "A:XM:DESERT",
+        "A:XM:DESERT2",
+        "A:XM:DESERT3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:24563",
+        "kongying:24562",
+        "kongying:26042",
+        "kongying:39412",
+        "kongying:34908",
+        "kongying:28827",
+        "kongying:24565",
+        "kongying:28825",
+        "kongying:24567",
+        "kongying:24566",
+        "kongying:28826",
+        "kongying:39413",
+        "kongying:24564"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982808",
+      "title": "炽砂的崩坼 Crumbling Sands",
+      "originText": "须弥魔神任务第四幕过场",
+      "category": "task",
+      "countries": [
+        "须弥"
+      ],
+      "areaCodes": [
+        "A:XM:FOREST",
+        "A:XM:DESERT",
+        "A:XM:DESERT2",
+        "A:XM:DESERT3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:24563",
+        "kongying:24562",
+        "kongying:26042",
+        "kongying:39412",
+        "kongying:34908",
+        "kongying:28827",
+        "kongying:24565",
+        "kongying:28825",
+        "kongying:24567",
+        "kongying:24566",
+        "kongying:28826",
+        "kongying:39413",
+        "kongying:24564"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982809",
+      "title": "归风的轻语 Whisper of Weinlesefest",
+      "originText": "佳酿节过场动画",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068981354",
+      "title": "七荣的嗣世 Parcener of Heptas",
+      "originText": "赛诺传说任务 终归沉寂",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982810",
+      "title": "况复两心同 Two Hearts Rejoice",
+      "originText": "妮露传说任务第一幕结尾",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982811",
+      "title": "指动字成 The Moving Finger Writes",
+      "originText": "须弥主线第五幕 艾尔海森演戏",
+      "category": "scene",
+      "countries": [
+        "须弥"
+      ],
+      "areaCodes": [
+        "A:XM:FOREST",
+        "A:XM:DESERT",
+        "A:XM:DESERT2",
+        "A:XM:DESERT3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:24563",
+        "kongying:24562",
+        "kongying:26042",
+        "kongying:39412",
+        "kongying:34908",
+        "kongying:28827",
+        "kongying:24565",
+        "kongying:28825",
+        "kongying:24567",
+        "kongying:24566",
+        "kongying:28826",
+        "kongying:39413",
+        "kongying:24564"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982812",
+      "title": "莲光的流沔 Inebriation of Raghs-e-Nilou",
+      "originText": "3.2版本 妮露跳舞过场",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068981355",
+      "title": "三时三觉 Trifaria Conscientia",
+      "originText": "正机之神战斗阶段1",
+      "category": "battle-limited",
+      "countries": [
+        "须弥"
+      ],
+      "areaCodes": [
+        "A:XM:FOREST"
+      ],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "限定战斗缺少对应地点/附近点位证据，保留目录，不扩大到全区域。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068981356",
+      "title": "一空一切空 All in One, All in Vain",
+      "originText": "正机之神战斗阶段2",
+      "category": "battle-limited",
+      "countries": [
+        "须弥"
+      ],
+      "areaCodes": [
+        "A:XM:FOREST"
+      ],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "限定战斗缺少对应地点/附近点位证据，保留目录，不扩大到全区域。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068981357",
+      "title": "幽玄有心 Heart of Yuugen",
+      "originText": "3.3版本 流浪者获得神之眼过场",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068981358",
+      "title": "秋津的思忆 Remembrance of Akitsu",
+      "originText": "活动秋津森夜试胆会过场",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982813",
+      "title": "桃枝火鳞 The Blaze Lilies",
+      "originText": "3.4版本 胡桃萍姥姥归终动画",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982814",
+      "title": "寒木春华 First Blossom of Spring",
+      "originText": "艾尔海森传说任务第一幕过场",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982815",
+      "title": "其名为群 The Name is Legion",
+      "originText": "魔神任务第三章第六幕 卡利贝尔摘面具",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982816",
+      "title": "遥世的夜歌 Serenade of the Distant Realm",
+      "originText": "魔神任务第三章第六幕 坎瑞亚王子公主剧情",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068981359",
+      "title": "缄锁的灾沴 Occluded Blight",
+      "originText": "3.5版本风花的呼吸 魔女茶会",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068981360",
+      "title": "风念月思 Love Is in the Air",
+      "originText": "迪希雅传说任务胜利过场",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982817",
+      "title": "煌绚的旅路 Heliacal Path",
+      "originText": "纳西妲传说任务第二幕 阿佩普剧情",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982818",
+      "title": "初火的残辉 Glowing Embers",
+      "originText": "纳西妲传说任务第二幕 归乡",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982819",
+      "title": "白草的决彻 Purposeful Purity",
+      "originText": "白术传说任务 长生",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068981361",
+      "title": "春脉如弦 Pulse of Spring",
+      "originText": "3.6盛典与慧业过场荣冕",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982820",
+      "title": "正识的荣冕 Coronation of Providence",
+      "originText": "3.7决斗召唤之巅 牌中秘宝过场",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982821",
+      "title": "余叹远昔 A Pensive Sigh",
+      "originText": "3.8清夏乐园大秘境第三幕过场",
+      "category": "special-map",
+      "countries": [
+        "琉形蜃境"
+      ],
+      "areaCodes": [
+        "A:VELURIYAM:3_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068981362",
+      "title": "共逐星华 Chasing Starlight With You",
+      "originText": "3.7版本 宵宫传说任务第二幕 过场 流星知愿",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982822",
+      "title": "清晶的绮梦 Crystalline Reverie",
+      "originText": "3.8版本活动 清夏！乐园？大秘境！ 第三幕 过场",
+      "category": "special-map",
+      "countries": [
+        "琉形蜃境"
+      ],
+      "areaCodes": [
+        "A:VELURIYAM:3_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982823",
+      "title": "诸相忆念 Dharana Iaksana",
+      "originText": "须弥版本预告片 派蒙笔记",
+      "category": "scene",
+      "countries": [
+        "须弥"
+      ],
+      "areaCodes": [
+        "A:XM:FOREST",
+        "A:XM:DESERT",
+        "A:XM:DESERT2",
+        "A:XM:DESERT3"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:24563",
+        "kongying:24562",
+        "kongying:26042",
+        "kongying:39412",
+        "kongying:34908",
+        "kongying:28827",
+        "kongying:24565",
+        "kongying:28825",
+        "kongying:24567",
+        "kongying:24566",
+        "kongying:28826",
+        "kongying:39413",
+        "kongying:24564"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982824",
+      "title": "召唤王的决意 Invokation Game",
+      "originText": "3.3版本预告PV七圣召唤",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068981363",
+      "title": "千景巡歌 Voyage Suite",
+      "originText": "TGA2022宣传片",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068981364",
+      "title": "三千娑世御咏歌(演绎版) Polumnia Omnia (Performance Version)",
+      "originText": "散兵周本战斗曲",
+      "category": "battle-limited",
+      "countries": [
+        "须弥"
+      ],
+      "areaCodes": [
+        "A:XM:FOREST"
+      ],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "限定战斗缺少对应地点/附近点位证据，保留目录，不扩大到全区域。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982826",
+      "title": "空谷皎皎 Virtuous Guardian",
+      "originText": "3.4发布PV短片‑诸苦无隙",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌3",
+      "id": "netease:2068982827",
+      "title": "致终幕的欢宴 The Final Feast",
+      "originText": "4.0版本预告PV",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484725",
+      "title": "风轻云暖 Snuggy Breeze",
+      "originText": "",
+      "category": "special-map",
+      "countries": [
+        "希穆兰卡"
+      ],
+      "areaCodes": [
+        "A:SIMULANKA:4_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484726",
+      "title": "巧遇的漫想 Romantic Encounter",
+      "originText": "",
+      "category": "special-map",
+      "countries": [
+        "希穆兰卡"
+      ],
+      "areaCodes": [
+        "A:SIMULANKA:4_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484727",
+      "title": "夜色温柔 Tender Is the Night",
+      "originText": "",
+      "category": "special-map",
+      "countries": [
+        "希穆兰卡"
+      ],
+      "areaCodes": [
+        "A:SIMULANKA:4_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482855",
+      "title": "醺时轻斟 Tipsy Sips",
+      "originText": "",
+      "category": "special-map",
+      "countries": [
+        "希穆兰卡"
+      ],
+      "areaCodes": [
+        "A:SIMULANKA:4_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482856",
+      "title": "炜煌的星阙 Glorious Metropole",
+      "originText": "",
+      "category": "special-map",
+      "countries": [
+        "希穆兰卡"
+      ],
+      "areaCodes": [
+        "A:SIMULANKA:4_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482857",
+      "title": "荣映的瑰景 Honorable Landscape",
+      "originText": "",
+      "category": "special-map",
+      "countries": [
+        "希穆兰卡"
+      ],
+      "areaCodes": [
+        "A:SIMULANKA:4_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482858",
+      "title": "遐愿之地 The Land of Heart's Desire",
+      "originText": "",
+      "category": "special-map",
+      "countries": [
+        "希穆兰卡"
+      ],
+      "areaCodes": [
+        "A:SIMULANKA:4_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482859",
+      "title": "行于繁花侧畔 Down by the Forgotten Gardens",
+      "originText": "",
+      "category": "special-map",
+      "countries": [
+        "希穆兰卡"
+      ],
+      "areaCodes": [
+        "A:SIMULANKA:4_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482860",
+      "title": "夕暮漫远 Twilight Wanderings",
+      "originText": "",
+      "category": "special-map",
+      "countries": [
+        "希穆兰卡"
+      ],
+      "areaCodes": [
+        "A:SIMULANKA:4_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482861",
+      "title": "画景的游憩 Leisure in Painting",
+      "originText": "",
+      "category": "special-map",
+      "countries": [
+        "希穆兰卡"
+      ],
+      "areaCodes": [
+        "A:SIMULANKA:4_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484728",
+      "title": "林中晨歌 Morning Song in the Forest",
+      "originText": "",
+      "category": "special-map",
+      "countries": [
+        "希穆兰卡"
+      ],
+      "areaCodes": [
+        "A:SIMULANKA:4_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484729",
+      "title": "飞鼠进行曲 The Parade of Flying Squirrels",
+      "originText": "",
+      "category": "special-map",
+      "countries": [
+        "希穆兰卡"
+      ],
+      "areaCodes": [
+        "A:SIMULANKA:4_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482862",
+      "title": "鹪鹩之歌 The Songs of the Wrens",
+      "originText": "",
+      "category": "special-map",
+      "countries": [
+        "希穆兰卡"
+      ],
+      "areaCodes": [
+        "A:SIMULANKA:4_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482863",
+      "title": "松风拂煦 Gentle Breeze Through the Pines",
+      "originText": "",
+      "category": "special-map",
+      "countries": [
+        "希穆兰卡"
+      ],
+      "areaCodes": [
+        "A:SIMULANKA:4_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482864",
+      "title": "山间悠谈 Tales From the Hills",
+      "originText": "",
+      "category": "special-map",
+      "countries": [
+        "希穆兰卡"
+      ],
+      "areaCodes": [
+        "A:SIMULANKA:4_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484730",
+      "title": "日影斑驳 Patches of Sunlight",
+      "originText": "",
+      "category": "special-map",
+      "countries": [
+        "希穆兰卡"
+      ],
+      "areaCodes": [
+        "A:SIMULANKA:4_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482865",
+      "title": "晨晓的萦忆 The Hour Before the Dawn",
+      "originText": "",
+      "category": "special-map",
+      "countries": [
+        "希穆兰卡"
+      ],
+      "areaCodes": [
+        "A:SIMULANKA:4_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484731",
+      "title": "眠于柔静之月 Per Amica Silentia Lunae",
+      "originText": "",
+      "category": "special-map",
+      "countries": [
+        "希穆兰卡"
+      ],
+      "areaCodes": [
+        "A:SIMULANKA:4_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484732",
+      "title": "幽域的先导 Pathfinder of Darkness",
+      "originText": "",
+      "category": "special-map",
+      "countries": [
+        "希穆兰卡"
+      ],
+      "areaCodes": [
+        "A:SIMULANKA:4_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484733",
+      "title": "祝颂如梦 Benediction of Dreams",
+      "originText": "",
+      "category": "special-map",
+      "countries": [
+        "希穆兰卡"
+      ],
+      "areaCodes": [
+        "A:SIMULANKA:4_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482866",
+      "title": "颂梦的祝祷 Benedictio Somnii",
+      "originText": "",
+      "category": "special-map",
+      "countries": [
+        "希穆兰卡"
+      ],
+      "areaCodes": [
+        "A:SIMULANKA:4_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484734",
+      "title": "踏浪逐波 Tread the Tide",
+      "originText": "",
+      "category": "special-map",
+      "countries": [
+        "希穆兰卡"
+      ],
+      "areaCodes": [
+        "A:SIMULANKA:4_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484735",
+      "title": "欢夏的存念 Summer Souvenir",
+      "originText": "",
+      "category": "special-map",
+      "countries": [
+        "希穆兰卡"
+      ],
+      "areaCodes": [
+        "A:SIMULANKA:4_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484736",
+      "title": "魔女的茶话会 Teegesellschaft of the Hexenzirkel",
+      "originText": "",
+      "category": "special-map",
+      "countries": [
+        "希穆兰卡"
+      ],
+      "areaCodes": [
+        "A:SIMULANKA:4_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484737",
+      "title": "终久的夙诺 Everlasting Promise",
+      "originText": "",
+      "category": "special-map",
+      "countries": [
+        "希穆兰卡"
+      ],
+      "areaCodes": [
+        "A:SIMULANKA:4_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484738",
+      "title": "相遇，相别 Meeting and Passing",
+      "originText": "",
+      "category": "special-map",
+      "countries": [
+        "希穆兰卡"
+      ],
+      "areaCodes": [
+        "A:SIMULANKA:4_8"
+      ],
+      "matchedTerms": [],
+      "matchType": null,
+      "anchorIds": [],
+      "reason": "特殊地图只记录地区目录，不挂当前点位。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482867",
+      "title": "夜中幻剧 La nuit fantastique",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484739",
+      "title": "不虞之险 Unforeseen Peril",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482868",
+      "title": "蔷薇与烛影之舞 Pas de deux di Rosula e Candela",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484740",
+      "title": "诉辩未决 Pendente Lite",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482869",
+      "title": "梦兆的鲸歌 Whale Dream",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482870",
+      "title": "汹溃之刻 Surging Calamity",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482871",
+      "title": "深水的晓谕 Oracle of Deep Waters",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482872",
+      "title": "失坠的征咎 La tristezza della Rosula",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482873",
+      "title": "未竟的告白 La confession interrompue",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484741",
+      "title": "幽厄的不谐音 Lightless Dissonance",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482874",
+      "title": "欢呼吧，终幕已至 La comedie ni humaine ni divine",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484742",
+      "title": "曲终奏雅 Tout est bien qui finit bien",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484743",
+      "title": "裂隙的丝茧 Sheaths of Void",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484744",
+      "title": "她曾梦见的晴空 Le ciel clair qu'elle avait songe",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482875",
+      "title": "清泉之诗 Callirhoe's Prayer",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482876",
+      "title": "咎证终显 Revealed Retribution",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482877",
+      "title": "转生成为鬼兜虫然后撞翻世界（纯享版） I Got Reincarnated as an Onikabuto... And Flipped the World Upside Down (Instrumental)",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482878",
+      "title": "旧宴新歌 Twice-Told Tales",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482879",
+      "title": "定极的轨途 Constant Trajectory",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484745",
+      "title": "折轴之刻 When the Axles Break",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482880",
+      "title": "枕上朝露 Makurakotoba of Dew",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484746",
+      "title": "秘逸之荣 Shrouded Honor",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482881",
+      "title": "砭骨之诫 Glacial Castigation",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484747",
+      "title": "一雨洗尘痕 All Passed With the Rain",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484748",
+      "title": "刺玫的律度 La condotta della Rosula",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482882",
+      "title": "染羽裁锦 Weaving Nishiki",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482883",
+      "title": "厄月的殛罚 Balemoon's Chastisement",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484749",
+      "title": "最初的告别 The Last Promise",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484750",
+      "title": "炽砂的密谕 Secret Orders of the Sands",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484751",
+      "title": "烛影之狩 Madrigale della Candela",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482884",
+      "title": "温恂的思愿 Beautiful, Delightful Vision",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484752",
+      "title": "宿昔的暖意 Timeless Warmth",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482885",
+      "title": "唯存香迹 Hidden Sillage",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484753",
+      "title": "众水的追忆 A la recherche des grandes eaux",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482886",
+      "title": "烬中歌 The Song Burning in the Embers",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484754",
+      "title": "寻星的游踪 Starlight Voyage",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482887",
+      "title": "古国的残梦 Dreams of the Ancient Realm",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484755",
+      "title": "遗城的萦思 Memories of a Lost Castle",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484756",
+      "title": "星界的眷盼 Astral Yearning",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613484757",
+      "title": "龙与勇者的决意 Dragon and Determination",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌4",
+      "id": "netease:2613482888",
+      "title": "灼夜归火 Night of the Sacred Flame",
+      "originText": "",
+      "category": "missing-source",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737530024",
+      "title": "休暑且纵意 Indulgence Beneath the Sun",
+      "originText": "悠悠度假村",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [
+        "悠悠度假村"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:103305",
+        "kongying:103306",
+        "kongying:103308",
+        "kongying:103307",
+        "kongying:103301",
+        "kongying:103296",
+        "kongying:103294",
+        "kongying:103293",
+        "kongying:103258",
+        "kongying:103291",
+        "kongying:103097",
+        "kongying:103098",
+        "kongying:104506",
+        "kongying:104499",
+        "kongying:104521"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737529153",
+      "title": "悠适的光景 Idle Days of Ease",
+      "originText": "悠悠度假村·悠悠集市",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [
+        "悠悠集市"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:103292",
+        "kongying:103209"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737532154",
+      "title": "蜜浆初酿 When the Mead First Ferments",
+      "originText": "悠悠度假村",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [
+        "悠悠度假村"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:103305",
+        "kongying:103306",
+        "kongying:103308",
+        "kongying:103307",
+        "kongying:103301",
+        "kongying:103296",
+        "kongying:103294",
+        "kongying:103293",
+        "kongying:103258",
+        "kongying:103291",
+        "kongying:103097",
+        "kongying:103098",
+        "kongying:104506",
+        "kongying:104499",
+        "kongying:104521"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737530025",
+      "title": "铺巷间的信步 A Ramble Through the Market Lanes",
+      "originText": "悠悠度假村",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [
+        "悠悠度假村"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:103305",
+        "kongying:103306",
+        "kongying:103308",
+        "kongying:103307",
+        "kongying:103301",
+        "kongying:103296",
+        "kongying:103294",
+        "kongying:103293",
+        "kongying:103258",
+        "kongying:103291",
+        "kongying:103097",
+        "kongying:103098",
+        "kongying:104506",
+        "kongying:104499",
+        "kongying:104521"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737532155",
+      "title": "如云团飘悠 Drifting Like Clusters of Cloud",
+      "originText": "悠悠度假村",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [
+        "悠悠度假村"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:103305",
+        "kongying:103306",
+        "kongying:103308",
+        "kongying:103307",
+        "kongying:103301",
+        "kongying:103296",
+        "kongying:103294",
+        "kongying:103293",
+        "kongying:103258",
+        "kongying:103291",
+        "kongying:103097",
+        "kongying:103098",
+        "kongying:104506",
+        "kongying:104499",
+        "kongying:104521"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737530026",
+      "title": "午日慵眠 Languid Noon Siesta",
+      "originText": "悠悠度假村",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [
+        "悠悠度假村"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:103305",
+        "kongying:103306",
+        "kongying:103308",
+        "kongying:103307",
+        "kongying:103301",
+        "kongying:103296",
+        "kongying:103294",
+        "kongying:103293",
+        "kongying:103258",
+        "kongying:103291",
+        "kongying:103097",
+        "kongying:103098",
+        "kongying:104506",
+        "kongying:104499",
+        "kongying:104521"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737532156",
+      "title": "余温驻丘原 Warmth Upon the Hills",
+      "originText": "悠悠度假村",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [
+        "悠悠度假村"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:103305",
+        "kongying:103306",
+        "kongying:103308",
+        "kongying:103307",
+        "kongying:103301",
+        "kongying:103296",
+        "kongying:103294",
+        "kongying:103293",
+        "kongying:103258",
+        "kongying:103291",
+        "kongying:103097",
+        "kongying:103098",
+        "kongying:104506",
+        "kongying:104499",
+        "kongying:104521"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737530027",
+      "title": "彩染的绮绘 Tapestry of Resplendent Hues",
+      "originText": "悠悠度假村·彩彩崖（白天）",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [
+        "彩彩崖"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:103302",
+        "kongying:103303"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737530028",
+      "title": "依风翩翻 Fluttering Upon the Wind",
+      "originText": "悠悠度假村·彩彩崖（夜晚）",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [
+        "彩彩崖"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:103302",
+        "kongying:103303"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737530029",
+      "title": "柔睦的晚梦 The Wild Soft Summer Darkness",
+      "originText": "悠悠度假村",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [
+        "悠悠度假村"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:103305",
+        "kongying:103306",
+        "kongying:103308",
+        "kongying:103307",
+        "kongying:103301",
+        "kongying:103296",
+        "kongying:103294",
+        "kongying:103293",
+        "kongying:103258",
+        "kongying:103291",
+        "kongying:103097",
+        "kongying:103098",
+        "kongying:104506",
+        "kongying:104499",
+        "kongying:104521"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737532157",
+      "title": "如盛夏般绚缦 Splendors of High Summer",
+      "originText": "悠悠度假村·浪浪湾",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [
+        "浪浪湾"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:103298",
+        "kongying:103299",
+        "kongying:103300",
+        "kongying:103297",
+        "kongying:103295"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737530030",
+      "title": "热际率舞 Dance at the Realm of Heat",
+      "originText": "悠悠度假村·提提岛 绘夏！烈日？度假村！其三过场动画",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [
+        "提提岛"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:103305",
+        "kongying:103306",
+        "kongying:103308",
+        "kongying:103307"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737532158",
+      "title": "客船悠悠摇曳 The Traveling Boat's Gentle Rocking",
+      "originText": "悠悠度假村·浪浪湾 冲浪挑战剧情音乐",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [
+        "浪浪湾"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:103298",
+        "kongying:103299",
+        "kongying:103300",
+        "kongying:103297",
+        "kongying:103295"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737532159",
+      "title": "海垂的珠贝 Shells at the Hem of the Sea",
+      "originText": "悠悠度假村·浪浪湾",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [
+        "浪浪湾"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:103298",
+        "kongying:103299",
+        "kongying:103300",
+        "kongying:103297",
+        "kongying:103295"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737532160",
+      "title": "宿浪抚沙岸 Waves Curl Over Drifting Sand",
+      "originText": "悠悠度假村",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [
+        "悠悠度假村"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:103305",
+        "kongying:103306",
+        "kongying:103308",
+        "kongying:103307",
+        "kongying:103301",
+        "kongying:103296",
+        "kongying:103294",
+        "kongying:103293",
+        "kongying:103258",
+        "kongying:103291",
+        "kongying:103097",
+        "kongying:103098",
+        "kongying:104506",
+        "kongying:104499",
+        "kongying:104521"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737532161",
+      "title": "沐泳鳍波 Bathing in Shifting Waves",
+      "originText": "悠悠度假村",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [
+        "悠悠度假村"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:103305",
+        "kongying:103306",
+        "kongying:103308",
+        "kongying:103307",
+        "kongying:103301",
+        "kongying:103296",
+        "kongying:103294",
+        "kongying:103293",
+        "kongying:103258",
+        "kongying:103291",
+        "kongying:103097",
+        "kongying:103098",
+        "kongying:104506",
+        "kongying:104499",
+        "kongying:104521"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737530031",
+      "title": "不绵的守望 The Watch of a Sleepless Sheep",
+      "originText": "悠悠度假村·刺梨岩（地下）",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [
+        "刺梨岩"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:103304"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737532162",
+      "title": "灼日下的决斗 Duel at High Noon",
+      "originText": "绘夏！烈日？度假村！其二 游船追击乔克力老大剧情音乐",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:103097"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737532163",
+      "title": "飘尘的崖壑 Wind‑Blown Ravines",
+      "originText": "绘夏！烈日？度假村！其二 班尼特喷绘比赛剧情音乐",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:103097"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737532164",
+      "title": "饫饮后的醺酣 The Pleasant Tipsiness After the Feast",
+      "originText": "悠悠度假村（白天）",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [
+        "悠悠度假村"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:103305",
+        "kongying:103306",
+        "kongying:103308",
+        "kongying:103307",
+        "kongying:103301",
+        "kongying:103296",
+        "kongying:103294",
+        "kongying:103293",
+        "kongying:103258",
+        "kongying:103291",
+        "kongying:103097",
+        "kongying:103098",
+        "kongying:104506",
+        "kongying:104499",
+        "kongying:104521"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737532165",
+      "title": "晴光漫野 Sunlit Expanse",
+      "originText": "悠悠度假村（夜晚）",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [
+        "悠悠度假村"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:103305",
+        "kongying:103306",
+        "kongying:103308",
+        "kongying:103307",
+        "kongying:103301",
+        "kongying:103296",
+        "kongying:103294",
+        "kongying:103293",
+        "kongying:103258",
+        "kongying:103291",
+        "kongying:103097",
+        "kongying:103098",
+        "kongying:104506",
+        "kongying:104499",
+        "kongying:104521"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737532166",
+      "title": "入港的煦风 Harbor‑Bound Warm Breeze",
+      "originText": "悠悠度假村（夜晚）",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [
+        "悠悠度假村"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:103305",
+        "kongying:103306",
+        "kongying:103308",
+        "kongying:103307",
+        "kongying:103301",
+        "kongying:103296",
+        "kongying:103294",
+        "kongying:103293",
+        "kongying:103258",
+        "kongying:103291",
+        "kongying:103097",
+        "kongying:103098",
+        "kongying:104506",
+        "kongying:104499",
+        "kongying:104521"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737530032",
+      "title": "藏于海贝的心绪 Feelings Nested in a Seashell",
+      "originText": "悠悠度假村",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [
+        "悠悠度假村"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:103305",
+        "kongying:103306",
+        "kongying:103308",
+        "kongying:103307",
+        "kongying:103301",
+        "kongying:103296",
+        "kongying:103294",
+        "kongying:103293",
+        "kongying:103258",
+        "kongying:103291",
+        "kongying:103097",
+        "kongying:103098",
+        "kongying:104506",
+        "kongying:104499",
+        "kongying:104521"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737532167",
+      "title": "软沙印下忆记 Memories Imprinted in Soft Sand",
+      "originText": "悠悠度假村",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [
+        "悠悠度假村"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:103305",
+        "kongying:103306",
+        "kongying:103308",
+        "kongying:103307",
+        "kongying:103301",
+        "kongying:103296",
+        "kongying:103294",
+        "kongying:103293",
+        "kongying:103258",
+        "kongying:103291",
+        "kongying:103097",
+        "kongying:103098",
+        "kongying:104506",
+        "kongying:104499",
+        "kongying:104521"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737530033",
+      "title": "海潮的闲歌 The Tide's Leisurely Tune",
+      "originText": "悠悠度假村",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [
+        "悠悠度假村"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:103305",
+        "kongying:103306",
+        "kongying:103308",
+        "kongying:103307",
+        "kongying:103301",
+        "kongying:103296",
+        "kongying:103294",
+        "kongying:103293",
+        "kongying:103258",
+        "kongying:103291",
+        "kongying:103097",
+        "kongying:103098",
+        "kongying:104506",
+        "kongying:104499",
+        "kongying:104521"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737530034",
+      "title": "细浪所诉的遐思 Rippling Reveries",
+      "originText": "悠悠度假村",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [
+        "悠悠度假村"
+      ],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:103305",
+        "kongying:103306",
+        "kongying:103308",
+        "kongying:103307",
+        "kongying:103301",
+        "kongying:103296",
+        "kongying:103294",
+        "kongying:103293",
+        "kongying:103258",
+        "kongying:103291",
+        "kongying:103097",
+        "kongying:103098",
+        "kongying:104506",
+        "kongying:104499",
+        "kongying:104521"
+      ],
+      "reason": "野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737532168",
+      "title": "煨烬之燧 A Spark Forged in Ash",
+      "originText": "悠悠度假村·烬寂海",
+      "category": "scene",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [
+        "悠悠度假村"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:103296",
+        "kongying:103294",
+        "kongying:103293",
+        "kongying:103258",
+        "kongying:103291",
+        "kongying:103097",
+        "kongying:103098"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737530035",
+      "title": "辩言与讱默的对峙 The Clash of Slander and Silence",
+      "originText": "坠星山谷·蒙德城西风骑士团审判厅 间章第四幕「悖理」庭审剧情音乐",
+      "category": "task",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:MENGDE"
+      ],
+      "matchedTerms": [
+        "蒙德城"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:6626",
+        "kongying:6625"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737530036",
+      "title": "宴饮皆世间 Delices de ce monde",
+      "originText": "香糕塔之章第一幕「珍上至珍」剧情音乐",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737532169",
+      "title": "列阵珍馐 An Array of Sumptuous Fare",
+      "originText": "香糕塔之章第一幕「珍上至珍」剧情音乐",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737530037",
+      "title": "簇拥的暖意 Snug Bundle of Warmth",
+      "originText": "海薇玛映影城；绘夏！烈日？度假村！小游戏遥遥同旅",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:103097"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737532170",
+      "title": "幕布下的映梦 Dream Reels Behind the Canvas",
+      "originText": "和旋舞剧小游戏妙影名篇",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737532171",
+      "title": "锈红的注目 The Gaze of the Red Death",
+      "originText": "第五章第五幕「炽烈的还魂诗」死之执政现身奥奇卡纳塔剧情音乐",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA2"
+      ],
+      "matchedTerms": [
+        "奥奇卡纳塔"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:84663",
+        "kongying:84664",
+        "kongying:84668",
+        "kongying:86247",
+        "kongying:84686",
+        "kongying:84667",
+        "kongying:84669",
+        "kongying:84671",
+        "kongying:84662",
+        "kongying:84647",
+        "kongying:84661"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737532172",
+      "title": "歌弦里的故星 The Homeland Held in Song",
+      "originText": "磷星之章第一幕「星与夜的低语」剧情音乐",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737530038",
+      "title": "罅隙边缘的孑影 Alone at the Rift's Edge",
+      "originText": "磷星之章第一幕「星与夜的低语」训练秘境剧情音乐",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737530039",
+      "title": "过客的轨途 The Wanderer's Trace",
+      "originText": "磷星之章第一幕「星与夜的低语」训练秘境剧情音乐",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737530040",
+      "title": "临界游弋 Crossing the Liminal Threshold",
+      "originText": "磷星之章第一幕「星与夜的低语」训练秘境剧情音乐",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737532173",
+      "title": "滞于一刹的叹息 A Sigh Caught in Still Time",
+      "originText": "第五章第六幕「你存在的时空」剧情音乐",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737538281",
+      "title": "悬于猎人之钩 Caught on the Hunter's Hook",
+      "originText": "和旋舞剧第三幕「旋舞谢幕礼」剧情PV过场动画",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737538282",
+      "title": "流动的飨宴 Fontaine est une fete",
+      "originText": "香糕塔之章第一幕「珍上至珍」过场动画最终料理对决",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737538283",
+      "title": "覆子之上 Beyond the Royal Fork",
+      "originText": "间章第四幕「悖理」BOSS战转阶段动画",
+      "category": "battle-limited",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737536422",
+      "title": "逆行的秘径 Reversed Paths to Yesod",
+      "originText": "间章第四幕「悖理」过场动画伟业",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737536423",
+      "title": "伤痍与沉寂 A Wound Unheeded in Quiet",
+      "originText": "磷星之章第一幕「星与夜的低语」过场动画谋算",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737538284",
+      "title": "始末的微光 End of the Beginning",
+      "originText": "磷星之章第一幕「星与夜的低语」剧情PV溯渊成河，星轨永延",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737536424",
+      "title": "膺受的资质 The Unbearable Weight of Being",
+      "originText": "磷星之章第一幕「星与夜的低语」过场动画噬暗终寂",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737538285",
+      "title": "古昔的灾虞 The Ancient Doom Descends",
+      "originText": "第五章第六幕「你存在的时空」过场动画灾变叠影",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737538286",
+      "title": "良时易逝 Nothing Gold Can Stay",
+      "originText": "第五章第六幕「你存在的时空」过场动画一切只关乎你我",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737536425",
+      "title": "闪烁的笑颜 The Sparkle in Your Smile",
+      "originText": "绘夏！烈日？度假村！其三剧情PV最幸运的孩子",
+      "category": "task",
+      "countries": [
+        "纳塔"
+      ],
+      "areaCodes": [
+        "A:NT:NATA5"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:103097"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737536426",
+      "title": "系心之诺 A Promise to the Heart",
+      "originText": "空月之歌序奏过场动画挣脱枷锁",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737538287",
+      "title": "黄金城的祷颂 Kathisma Chrysopoleos",
+      "originText": "空月之歌前瞻H5网页活动",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737536427",
+      "title": "临月茶叙 Fortune at the Tea Table",
+      "originText": "挪德卡莱前瞻PV——为月光作序",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL",
+        "A:NDKL:NDKL2",
+        "A:NDKL:NDKL3",
+        "A:NDKL:SY"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737536428",
+      "title": "无谬之果 Infallibilitas Deitates",
+      "originText": "幕间PV——神的局限性",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737536429",
+      "title": "如高天安固 Flectere Si Nequeo Superos",
+      "originText": "幕间PV——神的局限性",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737538288",
+      "title": "堑黑将沉时 When Night Deepens, the Moon Falls",
+      "originText": "空月之歌PV——月夜的叙事诗",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737536430",
+      "title": "囿于棋格中 Ensnared Upon the Chessboard",
+      "originText": "门扉前的弈局 战斗曲一阶段",
+      "category": "battle-limited",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737536431",
+      "title": "方寸颠倒 Order in Chaos",
+      "originText": "门扉前的弈局 战斗曲二阶段",
+      "category": "battle-limited",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737538289",
+      "title": "累棋之危 In Mating Nets",
+      "originText": "门扉前的弈局 战斗曲",
+      "category": "battle-limited",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737538290",
+      "title": "梭巡于渊隙 Shuttling Through the Abyssal Rift",
+      "originText": "磷星之章第一幕「星与夜的低语」任务秘境战斗曲",
+      "category": "battle-limited",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌5",
+      "id": "netease:2737536432",
+      "title": "燹火的祈咏歌 Prayer in a Land of War",
+      "originText": "巴窟纳瓦 BOSS战斗曲",
+      "category": "battle-limited",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268912",
+      "title": "自穹苍而来 From the Great Sky",
+      "originText": "雾灵渚",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268289",
+      "title": "降入深冥 Descent Into the Underworld",
+      "originText": "杜南纳前进站",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [
+        "杜南纳前进站"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121600"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268913",
+      "title": "失色的流岚 Tarnished Storm",
+      "originText": "登月飞船 古月风暴研究所",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:SY"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268290",
+      "title": "身光微暗 Dimming Radiance",
+      "originText": "伊比尼伯龙之眼",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:SY"
+      ],
+      "matchedTerms": [
+        "伊比尼伯龙之眼"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:119899",
+        "kongying:119898",
+        "kongying:119939"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268914",
+      "title": "无秽的欣求 Immaculate Yearning",
+      "originText": "伊比尼伯龙之眼 高速换行",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:SY"
+      ],
+      "matchedTerms": [
+        "伊比尼伯龙之眼"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:119899",
+        "kongying:119898",
+        "kongying:119939"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268915",
+      "title": "别离本无期 Unpromised Farewell",
+      "originText": "伊比尼伯龙之眼 金屋",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:SY"
+      ],
+      "matchedTerms": [
+        "伊比尼伯龙之眼",
+        "金屋"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:119899",
+        "kongying:119898",
+        "kongying:119939",
+        "kongying:119929"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268916",
+      "title": "岁云夕矣 An Era Wanes",
+      "originText": "伊比尼伯龙之眼",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:SY"
+      ],
+      "matchedTerms": [
+        "伊比尼伯龙之眼"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:119899",
+        "kongying:119898",
+        "kongying:119939"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268291",
+      "title": "金屋余哀 Peptoke Chrysous Oikos",
+      "originText": "伊比尼伯龙之眼 金屋",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:SY"
+      ],
+      "matchedTerms": [
+        "伊比尼伯龙之眼",
+        "金屋"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:119899",
+        "kongying:119898",
+        "kongying:119939",
+        "kongying:119929"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268917",
+      "title": "空梦至诚 Sincere and Empty",
+      "originText": "伊比尼伯龙之眼 至乌吉恩圈 登月任务剧情开始与结尾",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:SY"
+      ],
+      "matchedTerms": [
+        "伊比尼伯龙之眼",
+        "乌吉恩圈"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:119899",
+        "kongying:119898",
+        "kongying:119907",
+        "kongying:119939",
+        "kongying:119908",
+        "kongying:119903",
+        "kongying:119905",
+        "kongying:119904",
+        "kongying:119906",
+        "kongying:119911"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268292",
+      "title": "永夜的悼挽 Everlasting Dirge",
+      "originText": "乌吉恩圈",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:SY"
+      ],
+      "matchedTerms": [
+        "乌吉恩圈"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:119907",
+        "kongying:119908",
+        "kongying:119903",
+        "kongying:119905",
+        "kongying:119904",
+        "kongying:119906",
+        "kongying:119911"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268918",
+      "title": "须臾的舒闲 Transient Tranquility",
+      "originText": "乌吉恩圈",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:SY"
+      ],
+      "matchedTerms": [
+        "乌吉恩圈"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:119907",
+        "kongying:119908",
+        "kongying:119903",
+        "kongying:119905",
+        "kongying:119904",
+        "kongying:119906",
+        "kongying:119911"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268919",
+      "title": "尘落如雨 Dust Cascade",
+      "originText": "乌吉恩圈 月表",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:SY"
+      ],
+      "matchedTerms": [
+        "乌吉恩圈"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:119907",
+        "kongying:119908",
+        "kongying:119903",
+        "kongying:119905",
+        "kongying:119904",
+        "kongying:119906",
+        "kongying:119911"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268920",
+      "title": "旧年不复 Old Long Since",
+      "originText": "数据秘源龙像（贪吃蛇）",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268921",
+      "title": "地上的仰望 We Choose the Moon",
+      "originText": "星空生物捕捉站",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:SY"
+      ],
+      "matchedTerms": [
+        "星空生物捕捉站"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:119915"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268293",
+      "title": "四十万里的远行 Lunaric Voyager",
+      "originText": "望月者号",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:SY"
+      ],
+      "matchedTerms": [
+        "望月者号"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:119916"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268922",
+      "title": "八十世界环月旅 Around the Moon in Eighty Worlds",
+      "originText": "星空生物捕捉站返回月表、挪德卡莱主题变奏",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:SY"
+      ],
+      "matchedTerms": [
+        "星空生物捕捉站"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:119915"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268923",
+      "title": "孤棹一声 Many Fallen Dreams",
+      "originText": "浮沤泊",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268294",
+      "title": "空花浮沤 Ephemeral Foam",
+      "originText": "浮沤泊",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268295",
+      "title": "寂石的哀忆 Memories of Stone",
+      "originText": "努尔寂石阵列 地下 高速换行",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:SY"
+      ],
+      "matchedTerms": [
+        "努尔寂石阵列"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:119919"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268296",
+      "title": "此去几时归 When to Return",
+      "originText": "努尔寂石阵列",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:SY"
+      ],
+      "matchedTerms": [
+        "努尔寂石阵列"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:119919"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268924",
+      "title": "丰饶之海 Sea of Fecundity",
+      "originText": "月荡海",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:SY"
+      ],
+      "matchedTerms": [
+        "月荡海"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:119924",
+        "kongying:119923",
+        "kongying:119927",
+        "kongying:119921",
+        "kongying:119922",
+        "kongying:121561",
+        "kongying:119925"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268297",
+      "title": "斜月如水 Lunar Ripples",
+      "originText": "月荡海",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:SY"
+      ],
+      "matchedTerms": [
+        "月荡海"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:119924",
+        "kongying:119923",
+        "kongying:119927",
+        "kongying:119921",
+        "kongying:119922",
+        "kongying:121561",
+        "kongying:119925"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268298",
+      "title": "笼中遗事 Inside the Cage",
+      "originText": "月荡海 幕形态黑体物质笼实验室",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:SY"
+      ],
+      "matchedTerms": [
+        "月荡海"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:119924",
+        "kongying:119923",
+        "kongying:119927",
+        "kongying:119921",
+        "kongying:119922",
+        "kongying:121561",
+        "kongying:119925"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268299",
+      "title": "月阶杳杳 Stairway to the Moon",
+      "originText": "月心",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:SY"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268300",
+      "title": "沦灭的悬诗 Hanging in Quiet Desperation",
+      "originText": "乌吉恩圈、动力引擎、月荡海前往月之暗面",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:SY"
+      ],
+      "matchedTerms": [
+        "乌吉恩圈",
+        "月荡海",
+        "月之暗面"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:119907",
+        "kongying:119924",
+        "kongying:119923",
+        "kongying:119935",
+        "kongying:119908",
+        "kongying:119936",
+        "kongying:119903",
+        "kongying:119927",
+        "kongying:119921",
+        "kongying:119922",
+        "kongying:121561",
+        "kongying:119925",
+        "kongying:119905",
+        "kongying:119934",
+        "kongying:119937",
+        "kongying:119938",
+        "kongying:119904",
+        "kongying:119906",
+        "kongying:119911"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268925",
+      "title": "无言的忧惧 Same Old Fears",
+      "originText": "前往月之暗面剧情音乐",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:SY"
+      ],
+      "matchedTerms": [
+        "月之暗面"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:119935",
+        "kongying:119936",
+        "kongying:119934",
+        "kongying:119937",
+        "kongying:119938"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268301",
+      "title": "死夜深黯 Darker Than Night",
+      "originText": "月心深坑天基武器内",
+      "category": "scene",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:SY"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268302",
+      "title": "望月者的心愿 Nin-Kiggia‘s Message",
+      "originText": "伊比尼伯龙之眼（游步欣愉变奏） 望月者计划信号发射剧情背景音乐",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:SY"
+      ],
+      "matchedTerms": [
+        "伊比尼伯龙之眼"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:119899",
+        "kongying:119898",
+        "kongying:119939"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268926",
+      "title": "晴波跃金 Gold Waves in Sunlight",
+      "originText": "荆夫港（白天1）",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:FENGXISHAN"
+      ],
+      "matchedTerms": [
+        "荆夫港"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:115472",
+        "kongying:115470",
+        "kongying:115471"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268927",
+      "title": "松籁入港 Pinesong to Harbor",
+      "originText": "荆夫港（白天2）",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:FENGXISHAN"
+      ],
+      "matchedTerms": [
+        "荆夫港"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:115472",
+        "kongying:115470",
+        "kongying:115471"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268928",
+      "title": "蔚然梦萦 Bloudila blankytnymi pasky",
+      "originText": "荆夫港（夜晚1）",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:FENGXISHAN"
+      ],
+      "matchedTerms": [
+        "荆夫港"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:115472",
+        "kongying:115470",
+        "kongying:115471"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268304",
+      "title": "幽独的喧嚣 Too Loud a Solitude",
+      "originText": "荆夫港（夜晚2）",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:FENGXISHAN"
+      ],
+      "matchedTerms": [
+        "荆夫港"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:115472",
+        "kongying:115470",
+        "kongying:115471"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268929",
+      "title": "铃风的柔歌 A Little Song of Spring",
+      "originText": "风车镇（白天1）",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:FENGXISHAN"
+      ],
+      "matchedTerms": [
+        "风车镇"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:115466"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268305",
+      "title": "春序将临 Gekommen ist der Maie",
+      "originText": "风车镇（白天2）",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:FENGXISHAN"
+      ],
+      "matchedTerms": [
+        "风车镇"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:115466"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268306",
+      "title": "夜咏归途 Der Nachhauseweg",
+      "originText": "风车镇（夜晚1）",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:FENGXISHAN"
+      ],
+      "matchedTerms": [
+        "风车镇"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:115466"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268307",
+      "title": "乡谣渐阑 Fairy Tales From Our Village",
+      "originText": "风车镇（夜晚2）",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:FENGXISHAN"
+      ],
+      "matchedTerms": [
+        "风车镇"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:115466"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268308",
+      "title": "致幸福的愿景 The Will to Happiness",
+      "originText": "疗养院旧址（白天）",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268309",
+      "title": "堕天,或早至的忧愁 Disorder and Early Sorrow",
+      "originText": "疗养院旧址（夜晚）",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268310",
+      "title": "失佚的遥途 To the Garden of Remembrance",
+      "originText": "遗世之路",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268311",
+      "title": "岁时何处 Tempus Carpite",
+      "originText": "空之神殿1",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:SHENDIAN"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268312",
+      "title": "生年不满百 Vive Hodie",
+      "originText": "空之神殿2",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:SHENDIAN"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268930",
+      "title": "七狱空待 Seven Tabaqat of Asmoday",
+      "originText": "山中好长日·序章；疗养院旧址初见虚无；空之神殿战斗曲变奏",
+      "category": "battle-limited",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:SHENDIAN"
+      ],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "限定战斗缺少对应地点/附近点位证据，保留目录，不扩大到全区域。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268931",
+      "title": "晚来云似墨 Inkfall Clouds",
+      "originText": "麓阳书院（解放前）",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:SHENDIAN"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268313",
+      "title": "一画开天 Brush of Creation",
+      "originText": "麓阳书院（解放后）",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:SHENDIAN"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268314",
+      "title": "缣缃万轴 Omniscient Scripture",
+      "originText": "大方广之间（解放后）",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:SHENDIAN"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268932",
+      "title": "骑士王的誓言 Merciles Beaute d'Aerinny",
+      "originText": "大方广之间·书页内",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:SHENDIAN"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268315",
+      "title": "无想天变 Wonderful Parinama",
+      "originText": "无想之间（中文佛教向歌词）",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:SHENDIAN"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268933",
+      "title": "法性随妄 Erroneous Dharmata",
+      "originText": "山中好长日·审判；无限回廊",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:SHENDIAN"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268316",
+      "title": "寄予风的信笺 Raumhilda‘s Rhyme",
+      "originText": "无所有廊",
+      "category": "scene",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:SHENDIAN"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411268934",
+      "title": "风息的离别诗 Zeitlind’s Poem",
+      "originText": "无所有廊·回忆",
+      "category": "task",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:SHENDIAN"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411282685",
+      "title": "是耶非耶 To Be or to Seem",
+      "originText": "富人剧情音乐1",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411282686",
+      "title": "未决的隐谜 Undetermined Myth",
+      "originText": "富人剧情音乐2",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411282687",
+      "title": "防意如城 Inner Citadel",
+      "originText": "杜南纳前进站剧情音乐",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:NDKL3"
+      ],
+      "matchedTerms": [
+        "杜南纳前进站"
+      ],
+      "matchType": "place-match",
+      "anchorIds": [
+        "kongying:121600"
+      ],
+      "reason": "出处地名与点位地理标题交叉匹配，实际音区仍待校对。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411282688",
+      "title": "万金难挽 What Gold Cannot Touch",
+      "originText": "富人主题钢琴剧情音乐",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411283496",
+      "title": "泪尽夜终 La mare de larmes",
+      "originText": "动画短片《最后的遗产》",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411282689",
+      "title": "淑女最后的答案 La derniere question, et sa reponse",
+      "originText": "柜上的淑女重置版",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411282690",
+      "title": "千星远烁时 Twinkling Miliastra",
+      "originText": "千星奇域玩法宣传片",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411283497",
+      "title": "灵光照梦 Inspiring Somnium",
+      "originText": "千星奇域PV《梦与灵光》",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411282691",
+      "title": "形貌的随想 Cosmetic Whimsy",
+      "originText": "奇偶唤醒界面",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411283498",
+      "title": "颂愿的轻唱 Aria of Odes",
+      "originText": "千星奇偶装扮颂愿",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411282692",
+      "title": "狂欢的幽响 Echo of Revelry",
+      "originText": "「月之二」版本传说套装PV",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411283499",
+      "title": "烛影夜游 Candlelit Nightwalk",
+      "originText": "月之二·烛影夜游·幽静聚会",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411282693",
+      "title": "静谧雪庭 Tranquil Snow Courtyard",
+      "originText": "月之三·静谧雪庭·皓白冬日",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411283500",
+      "title": "云端卫城 Skyward Citadel",
+      "originText": "月之五·云端卫城·华美柱石",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411283501",
+      "title": "鳞锋的破鸣 Scaleblade‘s Shattering Pitch",
+      "originText": "「月之六」版本传说套装PV",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411283502",
+      "title": "烽燧阵线 Beacon Front",
+      "originText": "月之六·烽燧阵线·炽烈之境",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411282694",
+      "title": "花舞蝶宫 Where the Butterflies Prance",
+      "originText": "月之七·花舞蝶宫·紫绒回廊",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411282695",
+      "title": "遗世海屿 Secluded Isle",
+      "originText": "月之八·遗世海屿·湛蓝波光",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411282696",
+      "title": "听凭风引 Let the Wind Lead",
+      "originText": "法尔伽传说 过场动画",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411282697",
+      "title": "霜结的进军 Frost King’s March",
+      "originText": "莉奈娅传说 过场动画",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411282698",
+      "title": "云映远天斜照明 As the East Wind Rises",
+      "originText": "活动「礁与浪的相逢」过场动画",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411283503",
+      "title": "妙慧无染 Unstained Jnanakanda",
+      "originText": "过场动画1《异栖之木》",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411283504",
+      "title": "六解一亡 Discernment of Mumukshutva",
+      "originText": "过场动画2《三千明光》",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411283505",
+      "title": "我法俱有自性颂 Manobuddhyahankara Atmashatkam",
+      "originText": "过场动画3《虚世净火》",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411283506",
+      "title": "火界三昧 Fire Realm Contemplation",
+      "originText": "过场动画4《因果熔炉》",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411283507",
+      "title": "众罪如霜露 Myriad Sins",
+      "originText": "剧情PV《不向光者》",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411282699",
+      "title": "星之所诞 Star‘s Birth",
+      "originText": "登月飞船，世界任务过场-起飞",
+      "category": "task",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:SY"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [],
+      "reason": "地区可确定，但本范围无匹配点位且没有可归档神像；只保留地区目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411282700",
+      "title": "遐方不待 Beyond the Cradle",
+      "originText": "世界任务过场-坠机",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411282701",
+      "title": "镜子的另一侧 De l’autre cote du miroir",
+      "originText": "活动过场1「何物映自身于镜水」",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411283508",
+      "title": "水仙十字终曲 A Narcissus Postlude",
+      "originText": "活动过场2「安眠于众水」",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411283509",
+      "title": "假如她梦到你 If She‘s Dreaming About You",
+      "originText": "活动过场3「若我们再次相见」",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411283510",
+      "title": "夜客的致礼 Svetilinicnaya Nosti",
+      "originText": "gamescom 2025；织向夜的笼灯",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411282702",
+      "title": "待至冬临 Till the Night Comes",
+      "originText": "2026/05/08至冬前瞻短片",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411283511",
+      "title": "群魔的行进 A Besy Campaign",
+      "originText": "2026/06/18至冬生态短片",
+      "category": "scene",
+      "countries": [
+        "至冬"
+      ],
+      "areaCodes": [
+        "A:ZD:ZHIDONG1"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-archive",
+      "anchorIds": [
+        "kongying:121651",
+        "kongying:121661",
+        "kongying:121654",
+        "kongying:121662",
+        "kongying:121657"
+      ],
+      "reason": "缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411282703",
+      "title": "冬日的安魂歌 Rekviem of Snezhnaya",
+      "originText": "2026/06/26超越PV",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411282704",
+      "title": "铁铸的洪流(变奏) The Iron-Cast Torrent (Variation)",
+      "originText": "月之二主线剧情",
+      "category": "task",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411282705",
+      "title": "冰封交响曲(变奏) Symphony of Boreal Wind (Variation)",
+      "originText": "玻瑞亚斯之影战斗曲",
+      "category": "battle-limited",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411282706",
+      "title": "西风之歌(合奏) Das Favoniuslied (Ensemble)",
+      "originText": "法尔伽主题战斗曲",
+      "category": "battle-limited",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411282707",
+      "title": "天光的外典 Pseudepigrapha of Zohar",
+      "originText": "山中好长日BOSS 梅兰塔/大世界BOSS 开眼者",
+      "category": "battle-limited",
+      "countries": [
+        "蒙德"
+      ],
+      "areaCodes": [
+        "A:MD:SHENDIAN"
+      ],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "限定战斗缺少对应地点/附近点位证据，保留目录，不扩大到全区域。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411282708",
+      "title": "八苦相显 Beyond the Sphere of Duhkha",
+      "originText": "「左道的胜义尊」1阶段",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411283512",
+      "title": "十界一念无二论 Advaita of the Perpetual World",
+      "originText": "「左道的胜义尊」2阶段",
+      "category": "scene",
+      "countries": [],
+      "areaCodes": [],
+      "matchedTerms": [],
+      "matchType": "place-match",
+      "anchorIds": [],
+      "reason": "来源与多地区回顾专辑均不能确定地区，保留未定位目录。"
+    },
+    {
+      "album": "珍珠之歌6",
+      "id": "netease:3411283513",
+      "title": "寂夜月如锋 Selenic Ascension",
+      "originText": "霜月战斗曲",
+      "category": "battle-generic",
+      "countries": [
+        "挪德卡莱"
+      ],
+      "areaCodes": [
+        "A:NDKL:SY"
+      ],
+      "matchedTerms": [],
+      "matchType": "region-scope",
+      "anchorIds": [
+        "kongying:119915",
+        "kongying:119899",
+        "kongying:119898",
+        "kongying:119907",
+        "kongying:119924",
+        "kongying:119923",
+        "kongying:119939",
+        "kongying:119935",
+        "kongying:119951",
+        "kongying:119908",
+        "kongying:119916",
+        "kongying:119936",
+        "kongying:119903",
+        "kongying:119902",
+        "kongying:119930",
+        "kongying:119929",
+        "kongying:119910",
+        "kongying:119912",
+        "kongying:119913",
+        "kongying:119927",
+        "kongying:119921",
+        "kongying:119922",
+        "kongying:121561",
+        "kongying:119925",
+        "kongying:119919",
+        "kongying:119905",
+        "kongying:119934",
+        "kongying:119937",
+        "kongying:119938",
+        "kongying:119904",
+        "kongying:119906",
+        "kongying:119911",
+        "kongying:119914"
+      ],
+      "reason": "通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。"
     }
   ]
 }
