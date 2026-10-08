@@ -66,3 +66,5 @@ src/services/music-player.ts负责全应用媒体、资源解析、竞态与播�
 
 scripts/playback-service.ts注册Vite dev和preview本机API：白名单曲目→MySQL原始ID/标题→本机音频或官方CLI可用性核实。CLI无网页URL，暂不构造网易ready。流读取本机文件支持Range、无凭据返回。JSON曲库用于展示/地理，MySQL查询播放身份；不宣称历史数据库地理关系同步。PLAYBACK_INTERFACE明确接口及存储边界，STAGE4_REVIEW明确真实音频未验收。
 阶段4外链增量：播放service本机文件后备仍支持，缺本机文件现在调用resolveNeteaseOuter，固定网易公开媒体入口按数据库数字ID、无凭据HEAD探测后返回稳定Audio.src。官方CLI不再参与网站播放资源解析，开发者权限与公开入口分开。provider=netease-outer/preview=null，不保存重定向CDN签名；前端playing事件保证真实状态。7针对性页面包含两首真实媒体全控制与刷新通过，见NETEASE_OUTER_REVIEW。
+
+阶段4 UI返修：library-panel.ts独立持有左栏业务与待添加曲/歌单草稿，explorer注入favorites getter做响应式交集筛选，editingEnabled默认关闭且业务门控。App持有collection/explorer/player/panel；两侧组件只消费服务，TrackActions每实例绑定具体曲目，UiButton共享SVG和body级tooltip。个人评价仅保留历史存储/契约兼容，网页编辑/检索入口撤下；音乐库导入导出不提供产品入口。DEV编辑必须主动开启，生产无入口。详情STAGE4_UI_REFINEMENT。

@@ -5,16 +5,17 @@ import { resolveMap } from '../adapters/kongying-config';
 import { usePersonalNotes } from './personal-notes';
 import type { AssociationEdits, EditOperation } from '../domain/association-edits';
 
-export function useExplorer() {
+export function useExplorer(options:{favorites?:()=>string[]}={}) {
   let libraryRevision=0;
   const notes=usePersonalNotes();
   const snapshot=ref<MapSnapshot|null>(null),library=ref<MusicLibrary>({schemaVersion:1,tracks:[],associations:[]});
   const loading=ref(false),error=ref(''),importMessage=ref(''),query=ref('');
   const areaCode=ref('A:MD:MENGDE'),selectedAnchorId=ref(''),selectedTrackId=ref('');
   const typeFilter=ref<'all'|'waypoint'|'statue'>('all'),layerFilter=ref('all');
-  const albumFilter=ref(''),regionFilter=ref('');
+  const albumFilter=ref(''),regionFilter=ref(''),favoritesOnly=ref(false);
   const developmentMode=import.meta.env?.DEV===true;
-  const editingAvailable=ref(false),editBusy=ref(false),editMessage=ref('');
+  const editingAvailable=ref(false),editingEnabled=ref(false),editBusy=ref(false),editMessage=ref('');
+  function setEditingEnabled(value:boolean){editingEnabled.value=developmentMode&&value;}
   const manualEdits=ref<AssociationEdits>({schemaVersion:1,edits:[]});
   const highlightedIds=ref<string[]>([]),focusRequest=ref(0),mapStatus=ref('等待加载地图');
   const areas=computed(()=>snapshot.value?.areas??[]),anchors=computed(()=>snapshot.value?.anchors??[]);
@@ -75,7 +76,7 @@ export function useExplorer() {
   const searchTracks=computed(()=>{
     const q=query.value.trim().toLocaleLowerCase();
     return tracks.value.filter(t=>(!albumFilter.value||t.album===albumFilter.value)&&(!regionFilter.value||trackRegionValues(t.id).includes(regionFilter.value))
-      &&(!q||searchCorpus.value.get(t.id)?.includes(q)||notes.personalNoteFor(t.id,t.personalNote??'').toLocaleLowerCase().includes(q)));
+      &&(!favoritesOnly.value||options.favorites?.().includes(t.id))&&(!q||searchCorpus.value.get(t.id)?.includes(q)));
   });
   function trackRegionValues(id:string){
     const track=trackById.value.get(id),scopes=track?.sceneInfo?.geographicScopes??[];
@@ -121,7 +122,7 @@ export function useExplorer() {
   function associationStatus(trackId:string){const links=library.value.associations.filter(a=>a.trackId===trackId);return links.length?`关联${links.length}处：已核实${links.filter(a=>a.evidenceStatus==='verified').length}，待核实${links.filter(a=>a.evidenceStatus==='pending').length}；无播放资源`:'暂无地点关联；无播放资源';}
   function hasManualEdit(trackId:string,anchorId:string){return manualEdits.value.edits.some(e=>e.trackId===trackId&&e.anchorId===anchorId);}
   async function editAssociation(op:EditOperation,trackId:string,anchorId:string){
-    if(!import.meta.env?.DEV||!editingAvailable.value||editBusy.value)return false;
+    if(!import.meta.env?.DEV||!editingEnabled.value||!editingAvailable.value||editBusy.value)return false;
     editBusy.value=true;editMessage.value='正在保存关联…';
     try{
       const result=await (await import('./development-links')).developmentLibrary({op,trackId,anchorId});
@@ -145,7 +146,7 @@ export function useExplorer() {
     }catch(cause){importMessage.value=`导入失败：${cause instanceof Error?cause.message:'未知错误'}；原曲库保持不变。`;}
   }
   return {loading,error,areas,areaCode,selectedArea,roots,areaOptions,typeFilter,query,visibleAnchors,anchors,selectedAnchor,selectedAnchorId,highlightedIds,focusRequest,
-    tracks,searchTracks,albumFilter,regionFilter,albumOptions,regionOptions,anchorTracks,selectedTrack,trackLocations,trackAssociations,associationFor,trackLocationLabels,anchorMusicContexts,musicLocations,...notes,
-    developmentMode,editingAvailable,editBusy,editMessage,hasManualEdit,addTrackToAnchor,removeTrackFromAnchor,restoreTrackAnchor,exportEditedLibrary,
+    tracks,searchTracks,albumFilter,regionFilter,favoritesOnly,albumOptions,regionOptions,anchorTracks,selectedTrack,trackLocations,trackAssociations,associationFor,trackLocationLabels,anchorMusicContexts,musicLocations,...notes,
+    developmentMode,editingAvailable,editingEnabled,setEditingEnabled,editBusy,editMessage,hasManualEdit,addTrackToAnchor,removeTrackFromAnchor,restoreTrackAnchor,exportEditedLibrary,
     mapConfig,mapStatus,importMessage,layerOptions,layerFilter,load,selectArea,selectAnchor,selectTrack,locateTrack,associationStatus,importLibrary};
 }

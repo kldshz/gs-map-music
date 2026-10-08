@@ -12,7 +12,7 @@ test('所有国家神像可从目录/地图进入，新月神像可查看归档�
   await expect(page.locator('.anchor-list button')).toHaveCount(count);await expect(page.locator('.music-anchor')).toHaveCount(count);
  }
  await page.getByLabel('选择地区').selectOption('A:NDKL:NDKL');
- await page.getByRole('searchbox').fill('105784');await page.locator('.anchor-list button').click();
+ await page.getByRole('searchbox',{name:'搜索点位、曲目、专辑、地区或细分目录',exact:true}).fill('105784');await page.locator('.anchor-list button').click();
  await expect(page.locator('.sidebar-detail-title')).toContainText('新月神像');
  await expect(page.locator('.detail-view')).toContainText(`关联音乐（${library.associations.filter((a:any)=>a.anchorId==='kongying:105784').length}）`);
  await expect(page.locator('.detail-view')).not.toContainText('暂无关联音乐');
@@ -25,18 +25,18 @@ test('所有国家神像可从目录/地图进入，新月神像可查看归档�
 test('空之神殿目录去重，专曲与父级回退显示在右栏；角色与Boss具有神像存储',async({page})=>{
  await page.goto('/');await expect(page.locator('.anchor-list button')).toHaveCount(27);
  await page.getByLabel('选择地区').selectOption('A:MD:SHENDIAN');
- await page.getByRole('searchbox').fill('116365');await page.locator('.anchor-list button').click();
+ await page.getByRole('searchbox',{name:'搜索点位、曲目、专辑、地区或细分目录',exact:true}).fill('116365');await page.locator('.anchor-list button').click();
  await expect(page.locator('.anchor-info').first()).toContainText('麓阳书院');
  // The original source description still contains the full header; test the dedicated geographic field.
  await expect(page.locator('.anchor-info').first().locator('dd').nth(4)).toHaveText('麓阳书院');
  await expect(page.locator('.tracks-list')).toContainText('一画开天');await expect(page.locator('.tracks-list')).not.toContainText('岁时何处');
- await page.getByRole('button',{name:'点位目录',exact:true}).click();await page.getByRole('searchbox').fill('116354');await page.locator('.anchor-list button').click();
+ await page.getByRole('button',{name:'点位目录',exact:true}).click();await page.getByRole('searchbox',{name:'搜索点位、曲目、专辑、地区或细分目录',exact:true}).fill('116354');await page.locator('.anchor-list button').click();
  await expect(page.locator('.anchor-info').first().locator('dd').nth(4)).toHaveText('未细分');
  await expect(page.locator('.tracks-list')).toContainText('岁时何处');await expect(page.locator('.tracks-list')).toContainText('生年不满百');
  await expect(page.locator('.tracks-list')).not.toContainText('一画开天');
  await page.screenshot({path:'.local/browser-tests/music-temple-fallback.png'});
  await page.getByRole('button',{name:'曲目检索',exact:true}).click();
- const track=library.tracks.find((t:any)=>t.sceneInfo.wikiTitle==='冰封交响曲');await page.getByRole('searchbox').fill(track.neteaseId);await page.locator('.track-list button').click();
+ const track=library.tracks.find((t:any)=>t.sceneInfo.wikiTitle==='冰封交响曲');await page.getByRole('searchbox',{name:'搜索点位、曲目、专辑、地区或细分目录',exact:true}).fill(track.neteaseId);await page.locator('.track-list .track-item').click();
  await page.locator('summary').filter({hasText:/^关联点位/}).click();
  const links=page.locator('.location-list button');await expect(links).toHaveCount(library.associations.filter((a:any)=>a.trackId===track.id).length);
  for(const text of await links.allTextContents())expect(text).toContain('神像');

@@ -34,8 +34,8 @@ export function useMusicCollection(storage?:Storage){
   function toggleFavorite(id:string){if(!id||id.length>100)return;save(isFavorite(id)?favorites.value.filter(x=>x!==id):[...favorites.value,id],playlists.value);}
   function createPlaylist(name:string){name=name.trim();if(!name||name.length>100){message.value='列表名称应为1至100字。';return null;}const id=crypto.randomUUID();return save([...favorites.value],[...playlists.value,{id,name,trackIds:[]}])?id:null;}
   function renamePlaylist(id:string,name:string){name=name.trim();if(!name||name.length>100){message.value='列表名称应为1至100字。';return false;}return change(id,p=>({...p,name}));}
-  function deletePlaylist(id:string){save([...favorites.value],playlists.value.filter(p=>p.id!==id));}
-  function addToPlaylist(id:string,trackId:string){if(!trackId||trackId.length>100)return;change(id,p=>({...p,trackIds:[...new Set([...p.trackIds,trackId])]}));}
+  function deletePlaylist(id:string){return save([...favorites.value],playlists.value.filter(p=>p.id!==id));}
+  function addToPlaylist(id:string,trackId:string){if(!trackId||trackId.length>100||!playlists.value.some(p=>p.id===id))return false;return change(id,p=>({...p,trackIds:[...new Set([...p.trackIds,trackId])]}));}
   function removeFromPlaylist(id:string,trackId:string){change(id,p=>({...p,trackIds:p.trackIds.filter(x=>x!==trackId)}));}
   function movePlaylistTrack(id:string,trackId:string,direction:-1|1){change(id,p=>{const at=p.trackIds.indexOf(trackId),to=at+direction;if(at>=0&&to>=0&&to<p.trackIds.length)[p.trackIds[at],p.trackIds[to]]=[p.trackIds[to],p.trackIds[at]];return p;});}
   return {favorites,playlists,message,isFavorite,toggleFavorite,createPlaylist,renamePlaylist,deletePlaylist,addToPlaylist,removeFromPlaylist,movePlaylistTrack};

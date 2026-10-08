@@ -156,3 +156,13 @@ Claude主导PlayerBar/PersonalLibrary、侧栏播放收藏列表入口与专辑�
 ## C4-02：网易公开外链业务接入
 
 2026-10-08，用户提醒media/outer/url独立播放方案，Codex核实两首真实原神媒体并实现后端资源适配、PlaybackResource来源/试听未知契约与播放器来源状态文字、测试和记录。没有改变布局/视觉交互，沿用Claude C4-01交付，本轮无追加Claude调用或设计模型替换。未发送凭据、没有音频文件/CDN签名入库。真实两曲操作/循环/连续/刷新补验通过，62业务与7针对性UI/类型构建通过，见NETEASE_OUTER_REVIEW。
+
+## C4-03：播放器及左右边栏返修（2026-10-08）
+
+用户明确Codex负责边栏业务，Claude负责UI。工单S4-REFINE-SHELL-001与SIDEBAR-001分配不同文件；固定本机CLI2.1.291、claude-opus-5-5/--effort high、stdin和禁用工具。SHELL900秒超时无可用交付，拆为CONTROLS-R1与LAYOUT-R1，仍相同模型/high；成功的SIDEBAR、CONTROLS、LAYOUT唯一modelUsage均一致。Codex核对白名单、去掉返回JSON围栏后整合，没有模型替换。时长与采纳情况见[结果](WORK_ORDERS/S4-REFINE-UI.RESULT.json)。
+
+Claude主导应用壳、左右栏、播放器、共享SVG/按钮提示与歌曲卡片。Codex负责library-panel业务、收藏交集、开发编辑默认门控、真实契约整合、测试与Git；修正reactive自动解包、误用addToQueue、TrackActions传参、反馈仅属于当前操作卡片、键盘焦点/菜单Escape及tooltip监听/计时器卸载清理。实际截图发现旧CSS导致新grid只占左侧；VISUAL-R2返回但未采纳（未定义暗色回退、选择器优先级与手机把手位置问题），VISUAL-R3继续同模型精确返修。
+
+上下文仅指定源码与样式片段，没有网易/MySQL/Claude凭据。原始输出在忽略目录.local/claude-runs，结果摘要不含费用、token或内部推理。既有网关上游身份与内部effort不能独立认证的限制沿用。UI实现不等同验收通过，实际检查与最终结果见STAGE4_UI_REFINEMENT和ACCEPTANCE。
+
+补充：VISUAL-R3在600秒超时无可用交付，拆为PLAYER-CSS-R4（39692ms）和SIDEBAR-CSS-R4（63921ms）成功，唯一modelUsage一致。Codex仅映射实际类名与open class、修旧CSS优先级/层级及颜色对比，沿用Claude居中grid/边缘侧栏/菜单flow设计；不是替换设计模型。最终实际桌面/手机查看及定向回归通过。

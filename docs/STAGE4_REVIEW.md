@@ -37,3 +37,5 @@
 ```text
 读取项目说明、AGENTS.md、PROJECT_STATUS、STAGE4_REVIEW、PLAYBACK_INTERFACE、COLLABORATION和ACCEPTANCE，继续只完成阶段4。核实resources/local/audio/genshin内至少两首数字ID命名的合法原神音频，或已开通的网易网页API权限；不把账号登录当播放授权，不替换非原神音乐。用实际原神音频验证播放暂停、上下首、进度、音量、队列、随机及单曲/列表循环，地图/面板不断播、刷新恢复不自动发声、真实错误与连续操作竞态。保留曲库、pending关联、人工增删及评价。更新验收限制并检查提交推送；阶段4全面验收后再给阶段5提示词，本轮不开发路线。
 ```
+
+最新UI返修及验收见STAGE4_UI_REFINEMENT；该记录覆盖旧右栏个人库、评价/导入导出及历史音源阻塞描述，播放能力已通过真实音频补验。

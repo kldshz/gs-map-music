@@ -1,225 +1,267 @@
 <template>
   <div class="personal-library">
-    <div class="library-tabs" role="group" aria-label="个人库切换">
+    <header class="s4r-library-header">
+      <h2 class="s4r-library-title" tabindex="-1">个人库</h2>
+      <UiButton
+        class="s4r-library-close"
+        :label="'收起个人库'"
+        @click="state.close()"
+       icon="close" />
+    </header>
+
+    <div class="s4r-library-tabs" role="group" aria-label="个人库切换">
       <button
         type="button"
-        :class="['lib-tab-btn', { active: activeTab === 'favorites' }]"
-        :aria-pressed="activeTab === 'favorites'"
-        @click="activeTab = 'favorites'"
-      >收藏 ({{ state.favorites.length }})</button>
+
+        :aria-pressed="state.tab === 'favorites'"
+        :class="['s4r-tab-btn', { active: state.tab === 'favorites' }]"
+        title="检索并播放收藏歌曲" @click="state.tab = 'favorites'"
+      >
+        收藏 ({{ state.favoriteIds.length }})
+      </button>
       <button
         type="button"
-        :class="['lib-tab-btn', { active: activeTab === 'playlists' }]"
-        :aria-pressed="activeTab === 'playlists'"
-        @click="activeTab = 'playlists'"
-      >播放列表 ({{ state.playlists.length }})</button>
+
+        :aria-pressed="state.tab === 'playlists'"
+        :class="['s4r-tab-btn', { active: state.tab === 'playlists' }]"
+        title="创建与管理自己的歌单" @click="state.tab = 'playlists'"
+      >
+        播放列表 ({{ collection.playlists.length }})
+      </button>
     </div>
 
-    <div v-if="activeTab === 'favorites'" class="library-content">
-      <p class="library-note">保存在此浏览器</p>
-      <p v-if="state.message" class="library-message" role="status" aria-live="polite">{{ state.message }}</p>
-      <p v-if="!state.favorites.length" class="library-empty">尚无收藏曲目</p>
-      <ul v-else class="library-list">
-        <li v-for="id in state.favorites" :key="id" class="library-item">
-          <div v-if="getTrack(id)" class="library-track">
-            <div class="library-track-info">
-              <span class="library-track-title">{{ trackTitle(getTrack(id)!) }}</span>
-              <span class="library-track-artist">{{ trackArtist(getTrack(id)!) }}</span>
-            </div>
-            <div class="library-track-actions">
-              <button
-                type="button"
-                class="library-action-btn"
-                aria-label="播放"
-                @click="handlePlay(id, state.favorites)"
-              >▶</button>
-              <button
-                type="button"
-                class="library-action-btn"
-                aria-label="加入队列"
-                @click="handleEnqueue(id)"
-              >+</button>
-              <button
-                type="button"
-                class="library-action-btn remove-btn"
-                aria-label="取消收藏"
-                @click="state.toggleFavorite(id)"
-              >×</button>
-            </div>
-          </div>
-          <div v-else class="library-track-unavailable">
-            <span class="unavailable-label">曲库中已不可用</span>
-            <button
-              type="button"
-              class="library-action-btn remove-btn"
-              aria-label="移除"
-              @click="state.toggleFavorite(id)"
-            >×</button>
-          </div>
-        </li>
-      </ul>
-    </div>
+    <p class="s4r-library-note">播放列表就是你整理的歌单，仅在此浏览器保存。</p>
+    <div class="s4r-library-body">
+      <p v-if="collection.message" class="s4r-library-message" role="status" aria-live="polite">{{ collection.message }}</p>
 
-    <div v-else-if="activeTab === 'playlists'" class="library-content">
-      <p class="library-note">保存在此浏览器</p>
-      <p v-if="state.message" class="library-message" role="status" aria-live="polite">{{ state.message }}</p>
-      <div class="playlist-create">
-        <input
-          v-model="newPlaylistName"
-          type="text"
-          class="playlist-name-input"
-          placeholder="新建播放列表"
-          maxlength="100"
-          aria-label="新建播放列表名称"
-          @keydown.enter="handleCreatePlaylist"
-        />
-        <button
-          type="button"
-          class="playlist-create-btn"
-          :disabled="!newPlaylistName.trim()"
-          aria-label="创建播放列表"
-          @click="handleCreatePlaylist"
-        >创建</button>
-      </div>
-      <p v-if="!state.playlists.length" class="library-empty">尚无播放列表</p>
-      <ul v-else class="playlist-list">
-        <li v-for="list in state.playlists" :key="list.id" class="playlist-item">
-          <details class="playlist-details">
-            <summary class="playlist-summary">
-              <span class="playlist-name">{{ list.name }}</span>
-              <span class="playlist-count">({{ list.trackIds.length }})</span>
-            </summary>
-            <div class="playlist-content">
-              <div class="playlist-header-actions">
-                <button
-                  type="button"
-                  class="playlist-action-btn"
-                  :disabled="!list.trackIds.length"
-                  aria-label="播放全部"
-                  @click="handlePlayPlaylist(list.id)"
-                >播放全部</button>
-                <button
-                  v-if="renamingPlaylistId !== list.id"
-                  type="button"
-                  class="playlist-action-btn"
-                  aria-label="重命名"
-                  @click="handleRenamePlaylist(list.id, list.name)"
-                >重命名</button>
-                <button
-                  type="button"
-                  class="playlist-action-btn delete-btn"
-                  aria-label="删除播放列表"
-                  @click="handleDeletePlaylist(list.id)"
-                >删除</button>
+      <div v-if="state.tab === 'favorites'" class="s4r-favorites-view">
+        <div class="s4r-search-box">
+          <input
+            v-model="state.query"
+            type="search"
+            class="s4r-search-input"
+            placeholder="搜索收藏"
+            aria-label="搜索收藏"
+          />
+        </div>
+        <p v-if="!collection.favorites.length" class="s4r-empty-state">尚无收藏曲目</p>
+        <p v-else-if="!state.favoriteIds.length" class="s4r-empty-state">无匹配结果</p>
+        <div v-else class="s4r-track-list">
+          <UiButton
+            v-if="state.favoriteIds.length > 1"
+            class="s4r-play-all"
+            label="播放全部收藏"
+            icon="play"
+            @click="state.playAll()"
+          />
+          <div v-for="id in state.favoriteIds" :key="id" class="s4r-track-item">
+            <div v-if="state.trackMap.has(id)" class="s4r-track-content">
+              <div class="s4r-track-info">
+                <span class="s4r-track-title">{{ trackTitle(state.trackMap.get(id)!) }}</span>
+                <span class="s4r-track-artist">{{ trackArtist(state.trackMap.get(id)!) }}</span>
               </div>
-              <div v-if="renamingPlaylistId === list.id" class="playlist-rename-form">
+              <div class="s4r-track-actions">
+                <TrackActions :track="state.trackMap.get(id)!" :player="props.player" :collection="props.collection" :context-ids="state.favoriteIds" @open-library="state.show('playlists', $event.trackId)" />
+                <UiButton label="查看曲目详情" icon="info" @click="$emit('show-track', id)" />
+
+              </div>
+            </div>
+            <div v-else class="s4r-track-unavailable">
+              <span class="s4r-unavailable-label">曲库中已不可用</span>
+              <UiButton
+                class="s4r-remove-btn"
+                label="移除"
+                icon="close"
+                @click="collection.toggleFavorite(id)"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div v-else-if="state.tab === 'playlists'" class="s4r-playlists-view">
+        <div v-if="state.pendingTrackId" class="s4r-pending-track">
+          <div class="s4r-pending-info">
+            <UiIcon name="queue" />
+            <span v-if="state.trackMap.has(state.pendingTrackId)" class="s4r-pending-title">
+              {{ trackTitle(state.trackMap.get(state.pendingTrackId)!) }}
+            </span>
+            <span v-else class="s4r-pending-title">待添加曲目</span>
+          </div>
+          <UiButton
+            class="s4r-cancel-pending"
+            :label="'取消'"
+            @click="state.pendingTrackId = ''"
+           icon="close" />
+        </div>
+
+        <div class="s4r-create-playlist">
+          <input
+            v-model="state.newName"
+            type="text"
+            class="s4r-playlist-input"
+            placeholder="新建播放列表"
+            maxlength="100"
+            aria-label="新建播放列表名称"
+            @keydown.enter="handleCreate"
+          />
+          <UiButton
+            label="创建播放列表" text="创建"
+            icon="plus"
+            :disabled="!state.newName.trim()"
+            @click="handleCreate"
+          />
+        </div>
+
+        <p v-if="!collection.playlists.length" class="s4r-empty-state">
+          尚无播放列表。<br>
+          播放列表仅保存在此浏览器中。
+        </p>
+
+        <div v-else class="s4r-playlist-list">
+          <div v-for="list in collection.playlists" :key="list.id" class="s4r-playlist-item">
+            <div class="playlist-summary">
+              <button type="button" class="s4r-playlist-name-row" :aria-expanded="state.selectedPlaylistId === list.id" :aria-label="`查看播放列表 ${list.name}`" @click="togglePlaylist(list.id)">
+                <UiIcon :name="state.selectedPlaylistId === list.id ? 'chevron-down' : 'chevron-right'" />
+                <span class="s4r-playlist-name">{{ list.name }}</span>
+                <span class="s4r-playlist-count">({{ list.trackIds.length }})</span>
+              </button>
+              <UiButton
+                v-if="state.pendingTrackId"
+                class="s4r-add-to-playlist"
+                :label="`添加到 ${list.name}`"
+                icon="plus"
+                @click.stop="state.addPending(list.id)"
+              />
+            </div>
+
+            <div v-if="state.selectedPlaylistId === list.id" class="s4r-playlist-detail">
+              <div class="s4r-playlist-controls">
+                <UiButton
+                  v-if="!state.renameId"
+                  label="播放全部"
+                  icon="play"
+                  :disabled="!list.trackIds.length"
+                  @click="state.playAll()"
+                />
+                <UiButton
+                  v-if="!state.renameId"
+                  label="重命名"
+                  icon="edit"
+                  @click="state.beginRename(list.id)"
+                />
+                <UiButton
+                  v-if="!state.renameId"
+                  label="删除"
+                  icon="trash"
+                  @click="state.removePlaylist(list.id)"
+                />
+              </div>
+
+              <div v-if="state.renameId === list.id" class="s4r-rename-form">
                 <input
-                  v-model="renameInputValue"
+                  v-model="state.renameName"
                   type="text"
-                  class="playlist-name-input"
+                  class="s4r-playlist-input"
                   maxlength="100"
                   aria-label="播放列表新名称"
-                  @keydown.enter="handleSaveRename"
-                  @keydown.escape="handleCancelRename"
+                  @keydown.enter="state.saveRename()"
+                  @keydown.escape.stop.prevent="state.cancelRename()"
                 />
-                <button
-                  type="button"
-                  class="playlist-action-btn"
-                  aria-label="保存名称"
-                  :disabled="!renameInputValue.trim()"
-                  @click="handleSaveRename"
-                >保存</button>
-                <button
-                  type="button"
-                  class="playlist-action-btn"
-                  aria-label="取消"
-                  @click="handleCancelRename"
-                >取消</button>
+                <UiButton
+                  label="保存名称" text="保存"
+                  icon="plus"
+                  :disabled="!state.renameName.trim()"
+                  @click="state.saveRename()"
+                />
+                <UiButton
+                  label="取消"
+                  icon="close"
+                  @click="state.cancelRename()"
+                />
               </div>
-              <p v-if="!list.trackIds.length" class="playlist-empty">播放列表为空</p>
-              <ul v-else class="playlist-tracks">
-                <li v-for="(trackId, idx) in list.trackIds" :key="trackId" class="playlist-track-item">
-                  <div v-if="getTrack(trackId)" class="library-track">
-                    <div class="library-track-info">
-                      <span class="library-track-title">{{ trackTitle(getTrack(trackId)!) }}</span>
-                      <span class="library-track-artist">{{ trackArtist(getTrack(trackId)!) }}</span>
+
+              <div class="s4r-search-box">
+                <input
+                  v-model="state.query"
+                  type="search"
+                  class="s4r-search-input"
+                  placeholder="搜索歌单"
+                  aria-label="搜索歌单"
+                />
+              </div>
+
+              <p v-if="!list.trackIds.length" class="playlist-empty">
+                播放列表为空。可从右侧面板添加歌曲。
+              </p>
+              <p v-else-if="!state.playlistIds.length" class="s4r-empty-state">无匹配结果</p>
+              <div v-else class="playlist-tracks">
+                <div v-for="(trackId, idx) in state.playlistIds" :key="trackId" class="s4r-track-item">
+                  <div v-if="state.trackMap.has(trackId)" class="s4r-track-content">
+                    <div class="s4r-track-info">
+                      <span class="s4r-track-title">{{ trackTitle(state.trackMap.get(trackId)!) }}</span>
+                      <span class="s4r-track-artist">{{ trackArtist(state.trackMap.get(trackId)!) }}</span>
                     </div>
-                    <div class="library-track-actions">
-                      <button
-                        type="button"
-                        class="library-action-btn"
-                        :disabled="idx === 0"
-                        aria-label="上移"
-                        @click="state.movePlaylistTrack(list.id, trackId, -1)"
-                      >↑</button>
-                      <button
-                        type="button"
-                        class="library-action-btn"
-                        :disabled="idx === list.trackIds.length - 1"
-                        aria-label="下移"
-                        @click="state.movePlaylistTrack(list.id, trackId, 1)"
-                      >↓</button>
-                      <button
-                        type="button"
-                        class="library-action-btn"
-                        aria-label="播放"
-                        @click="handlePlay(trackId, list.trackIds)"
-                      >▶</button>
-                      <button
-                        type="button"
-                        class="library-action-btn"
-                        aria-label="加入队列"
-                        @click="handleEnqueue(trackId)"
-                      >+</button>
-                      <button
-                        type="button"
-                        class="library-action-btn remove-btn"
-                        aria-label="从列表移除"
-                        @click="state.removeFromPlaylist(list.id, trackId)"
-                      >×</button>
+                    <div class="s4r-track-actions">
+                      <UiButton
+                        class="s4r-move-btn"
+                        :disabled="list.trackIds.indexOf(trackId) === 0"
+                        :label="'上移'"
+                        @click="collection.movePlaylistTrack(list.id, trackId, -1)"
+                       icon="arrow-up" />
+                      <UiButton
+                        class="s4r-move-btn"
+                        :disabled="list.trackIds.indexOf(trackId) === list.trackIds.length - 1"
+                        :label="'下移'"
+                        @click="collection.movePlaylistTrack(list.id, trackId, 1)"
+                       icon="arrow-down" />
+                      <TrackActions :track="state.trackMap.get(trackId)!" :player="props.player" :collection="props.collection" :context-ids="state.playlistIds" @open-library="state.show('playlists', $event.trackId)" />
+                <UiButton label="查看曲目详情" icon="info" @click="$emit('show-track', trackId)" />
+                <UiButton label="从列表移除" icon="close" @click="collection.removeFromPlaylist(list.id, trackId)" />
                     </div>
                   </div>
-                  <div v-else class="library-track-unavailable">
-                    <span class="unavailable-label">曲库中已不可用</span>
-                    <button
-                      type="button"
-                      class="library-action-btn remove-btn"
-                      aria-label="移除"
-                      @click="state.removeFromPlaylist(list.id, trackId)"
-                    >×</button>
+                  <div v-else class="s4r-track-unavailable">
+                    <span class="s4r-unavailable-label">曲库中已不可用</span>
+                    <UiButton
+                      class="s4r-remove-btn"
+                      :label="'移除'"
+                      @click="collection.removeFromPlaylist(list.id, trackId)"
+                     icon="close" />
                   </div>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
-          </details>
-        </li>
-      </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { reactive, ref } from 'vue';
+import { reactive } from 'vue';
+import UiIcon from './UiIcon.vue';
+import UiButton from './UiButton.vue';
+import TrackActions from './TrackActions.vue';
 import type { MusicTrack } from '../domain/contracts';
+import type { useLibraryPanel } from '../services/library-panel';
 import type { useMusicPlayer } from '../services/music-player';
 import type { useMusicCollection } from '../services/music-collection';
 
 const props = defineProps<{
+  panel: ReturnType<typeof useLibraryPanel>;
   player: ReturnType<typeof useMusicPlayer>;
   collection: ReturnType<typeof useMusicCollection>;
   tracks: MusicTrack[];
 }>();
 
-const state = reactive(props.collection);
-const playerState = reactive(props.player);
-const activeTab = ref<'favorites' | 'playlists'>('favorites');
-const newPlaylistName = ref('');
-const renamingPlaylistId = ref<string | null>(null);
-const renameInputValue = ref('');
+const emit = defineEmits<{
+  'show-track': [id: string];
+}>();
 
-function getTrack(id: string): MusicTrack | undefined {
-  return props.tracks.find(t => t.id === id);
-}
+const state = reactive(props.panel);
+const collection = reactive(props.collection);
+const player = reactive(props.player);
 
 function trackTitle(track: MusicTrack): string {
   if (track.sceneInfo) {
@@ -232,51 +274,15 @@ function trackArtist(track: MusicTrack): string {
   return track.artists.length ? track.artists.join('、') : '未知';
 }
 
-async function handlePlay(id: string, contextIds?: string[]): Promise<void> {
-  await playerState.playTrack(id, contextIds);
+function handleCreate(): void {
+  state.create();
 }
 
-function handleEnqueue(id: string): void {
-  playerState.enqueue(id);
-}
-
-async function handlePlayPlaylist(listId: string): Promise<void> {
-  const list = state.playlists.find(p => p.id === listId);
-  if (!list || !list.trackIds.length) return;
-  const validIds = list.trackIds.filter(id => props.tracks.some(t => t.id === id));
-  if (!validIds.length) return;
-  await playerState.playTrack(validIds[0], validIds);
-}
-
-async function handleCreatePlaylist(): Promise<void> {
-  const name = newPlaylistName.value.trim();
-  if (!name) return;
-  const result = await state.createPlaylist(name);
-  if (result) {
-    newPlaylistName.value = '';
+function togglePlaylist(id: string): void {
+  if (state.selectedPlaylistId === id) {
+    state.selectedPlaylistId = '';
+  } else {
+    state.selectPlaylist(id);
   }
-}
-
-function handleRenamePlaylist(listId: string, currentName: string): void {
-  renamingPlaylistId.value = listId;
-  renameInputValue.value = currentName;
-}
-
-function handleSaveRename(): void {
-  const name = renameInputValue.value.trim();
-  if (name && renamingPlaylistId.value) {
-    if (!state.renamePlaylist(renamingPlaylistId.value, name)) return;
-  }
-  renamingPlaylistId.value = null;
-  renameInputValue.value = '';
-}
-
-function handleCancelRename(): void {
-  renamingPlaylistId.value = null;
-  renameInputValue.value = '';
-}
-
-function handleDeletePlaylist(listId: string): void {
-  state.deletePlaylist(listId);
 }
 </script>

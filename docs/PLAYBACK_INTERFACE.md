@@ -27,3 +27,5 @@ GET/HEAD /api/playback/audio?trackId=...：仅流resources/local/audio/genshin/<
 未来有明确网页API资格后在本机服务扩展provider=netease的短时URL，沿用PlaybackResource expiresAt/preview；URL不持久化、过期重取。当前公开外链与开发者API资格分开，未实施厂商签名协议。静态托管不能运行本机MySQL/文件插件，也不能直接嵌入本机凭据；本轮仅验收本机dev/preview，不宣称HTTPS部署的跨源/HTTP媒体重定向行为已测。
 
 个人库与播放器各用版本化localStorage（gs-map-music.collection.v1、gs-map-music.player.v1）；只浏览器保存。既有评价、JSON与开发关联文件不自动同步；本轮MySQL只读。删除播放列表会删除当前浏览器副本，界面按钮明确。无账户跨设备同步，清浏览器数据会丢个人库。
+
+阶段4 UI返修：正常音源提供者与播放文字不在播放器显示，真实失败/浏览器限制/储存异常保留；资源接口与媒体实例不变。左栏收藏与歌单由library-panel.ts管理，个人评价产品入口撤下而旧存储不删除；详见STAGE4_UI_REFINEMENT。

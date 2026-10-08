@@ -4,7 +4,18 @@ const countAt=(id:string)=>builtin.associations.filter((a:any)=>a.anchorId===id)
 import { test, expect } from '@playwright/test';
 
 test.setTimeout(60000);
-async function ready(page:any){await page.goto('/');await expect(page.locator('.anchor-list button')).toHaveCount(27);await expect(page.locator('.dev-section')).toContainText('开发编辑');}
+test('开发环境普通浏览默认不显示关联编辑，主动启用才出现',async({page})=>{
+  await page.goto('/');await expect(page.locator('.anchor-list button')).toHaveCount(27);
+  await expect(page.getByRole('checkbox',{name:'开发关联编辑',exact:true})).not.toBeChecked();
+  await page.locator('.anchor-list button').first().click();
+  await expect(page.getByRole('button',{name:'移除关联',exact:true})).toHaveCount(0);
+  await expect(page.getByPlaceholder('搜索全部曲目')).toHaveCount(0);
+  await page.getByRole('checkbox',{name:'开发关联编辑',exact:true}).check();
+  await expect(page.getByRole('button',{name:'移除关联',exact:true}).first()).toBeVisible();
+  await page.getByRole('checkbox',{name:'开发关联编辑',exact:true}).uncheck();
+  await expect(page.getByRole('button',{name:'移除关联',exact:true})).toHaveCount(0);
+});
+async function ready(page:any){await page.goto('/');await expect(page.locator('.anchor-list button')).toHaveCount(27);await page.getByRole('checkbox',{name:'开发关联编辑',exact:true}).check();}
 
 test('开发模式点位方向增删、恢复和刷新保存',async({page})=>{
   await ready(page);
@@ -36,12 +47,12 @@ test('开发模式点位方向增删、恢复和刷新保存',async({page})=>{
   await page.screenshot({path:'.local/dev-browser-tests/editor-anchor.png',fullPage:true});
 });
 
-test('开发模式歌曲方向按地区筛选点位并导出',async({page})=>{
-  await ready(page);await page.getByRole('button',{name:'曲目检索',exact:true}).click();await page.getByRole('searchbox').fill('风所爱之城');await page.locator('.track-list button').click();
+test('开发模式歌曲方向按地区筛选点位，无导出入口',async({page})=>{
+  await ready(page);await page.getByRole('button',{name:'曲目检索',exact:true}).click();await page.getByRole('searchbox',{name:'搜索点位、曲目、专辑、地区或细分目录',exact:true}).fill('风所爱之城');await page.locator('.track-list .track-item').click();
   await page.locator('summary').filter({hasText:/关联点位/}).click();
-  await page.getByLabel('按地区筛选').selectOption('A:MD:MENGDE');await page.getByRole('searchbox',{name:'搜索点位',exact:true}).fill('星落湖');
+  await page.getByLabel('按地区筛选候选点位').selectOption('A:MD:MENGDE');await page.getByRole('searchbox',{name:'搜索候选点位',exact:true}).fill('星落湖');
   await expect(page.getByRole('button',{name:/添加到所选点位/}).first()).toBeVisible();await page.getByRole('button',{name:/添加到所选点位/}).first().click();
   await expect(page.locator('.location-list')).toContainText('星落湖');
   await page.screenshot({path:'.local/dev-browser-tests/editor-track.png',fullPage:true});
-  const download=page.waitForEvent('download');await page.getByRole('button',{name:'导出当前曲库'}).click();const file=await download;expect(file.suggestedFilename()).toBe('music-library-edited.json');
+  await expect(page.getByRole('button',{name:'导出当前曲库'})).toHaveCount(0);
 });

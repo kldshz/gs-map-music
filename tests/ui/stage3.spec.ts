@@ -33,24 +33,25 @@ test('切换至冬与纳塔实际点位/分层、缩放、文字空结果',async
   await expect.poll(()=>page.locator('.leaflet-tile-loaded').count(),{timeout:30000}).toBeGreaterThan(0);
   await page.getByLabel('选择地区').selectOption('A:NT:NATA2');await expect(page.locator('.anchor-list button')).toHaveCount(39);
   await page.getByLabel('地图分层').selectOption('LEGEND_SKYSERPENT_SHIP');await expect(page.locator('.leaflet-image-layer')).toHaveCount(1);
-  await page.getByLabel('地图分层').selectOption('surface');await page.getByLabel('搜索点位、曲目、专辑、地区、细分目录或个人评价').fill('不存在的点位');
-  await expect(page.getByText('当前筛选无点位')).toBeVisible();await page.getByLabel('搜索点位、曲目、专辑、地区、细分目录或个人评价').fill('');
+  await page.getByLabel('地图分层').selectOption('surface');await page.getByLabel('搜索点位、曲目、专辑、地区或细分目录').fill('不存在的点位');
+  await expect(page.getByText('当前筛选无点位')).toBeVisible();await page.getByLabel('搜索点位、曲目、专辑、地区或细分目录').fill('');
   await page.getByRole('button',{name:'Zoom in',exact:true}).click();
 });
 
-test('空曲库/校验失败及多对多反向定位；缺值未知、pending显式',async({page})=>{
-  await page.route('**/data/music-library.json',r=>r.fulfill({json:{schemaVersion:1,tracks:[],associations:[]}}));
-  await ready(page);await page.getByRole('button',{name:'曲目检索',exact:true}).click();await expect(page.getByText('曲库尚未导入')).toBeVisible();
-  await page.locator('input[type=file]').setInputFiles({name:'metadata.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(fixture))});
-  await expect(page.locator('.import-message').first()).toContainText('已导入1首曲目');
-  await page.getByLabel('搜索点位、曲目、专辑、地区、细分目录或个人评价').fill('测试元数据专辑');await expect(page.locator('.track-list button')).toHaveCount(1);
-  await page.locator('.track-list button').focus();await page.keyboard.press('Space');await expect(page.locator('.detail-view')).toBeVisible();
+test('空曲库/加载校验失败及多对多反向定位；缺值未知，无导入入口',async({page})=>{
+  let response:any={schemaVersion:1,tracks:[],associations:[]};
+  await page.route('**/data/music-library.json',r=>r.fulfill({json:response}));
+  await ready(page);await page.getByRole('button',{name:'曲目检索',exact:true}).click();await expect(page.getByText('曲库暂无曲目')).toBeVisible();
+  await expect(page.locator('input[type=file]')).toHaveCount(0);
+  response=fixture;await page.reload();await expect(page.locator('.anchor-list button')).toHaveCount(27);
+  await page.getByRole('button',{name:'曲目检索',exact:true}).click();await page.getByLabel('搜索点位、曲目、专辑、地区或细分目录').fill('测试元数据专辑');await expect(page.locator('.track-list .track-item')).toHaveCount(1);
+  await page.locator('.track-list .track-item').focus();await page.keyboard.press('Space');await expect(page.locator('.detail-view')).toBeVisible();
   await expect(page.locator('.detail-view')).toContainText('未知');await expect(page.locator('.association-status')).toHaveCount(0);
   await page.getByText('关联点位（2）',{exact:true}).click();await expect(page.locator('.location-list button')).toHaveCount(2);await page.getByRole('button',{name:'在地图上定位全部'}).click();
   await expect(page.locator('.detail-view')).toBeVisible();await expect(page.locator('dialog')).toHaveCount(0);await expect(page.locator('.music-anchor.is-highlighted')).toHaveCount(2);
-  await page.locator('input[type=file]').setInputFiles({name:'bad.json',mimeType:'application/json',buffer:Buffer.from('{broken')});
-  await expect(page.locator('.import-message').first()).toContainText('导入失败');await page.getByRole('button',{name:'曲目检索',exact:true}).click();await expect(page.locator('.track-list button')).toHaveCount(1);
-  await page.getByLabel('搜索点位、曲目、专辑、地区、细分目录或个人评价').fill('没有这首曲目');await expect(page.locator('.empty-state')).toContainText('没有匹配');
+  response={schemaVersion:1,tracks:[{id:'invalid'}],associations:[]};await page.reload();await expect(page.getByRole('alert')).toBeVisible();
+  response=fixture;await page.getByRole('button',{name:'重试加载'}).click();await page.getByRole('button',{name:'曲目检索',exact:true}).click();await expect(page.locator('.track-list .track-item')).toHaveCount(1);
+  await page.getByLabel('搜索点位、曲目、专辑、地区或细分目录').fill('没有这首曲目');await expect(page.locator('.empty-state')).toContainText('没有匹配');
 });
 
 test('实际触发地图数据与瓦片加载失败并重试',async({page})=>{
@@ -62,7 +63,7 @@ test('实际触发地图数据与瓦片加载失败并重试',async({page})=>{
 
 for(const width of [390,320])test(`手机${width}px布局/面板/键盘可用`,async({page})=>{
   await page.setViewportSize({width,height:844});await ready(page);
-  await expect(page.locator('.leaflet-music-map')).toBeVisible();await expect(page.locator('.player-status')).toContainText('选择歌曲后点击播放');
+  await expect(page.locator('.leaflet-music-map')).toBeVisible();await expect(page.locator('.player-bar').getByRole('button',{name:'播放',exact:true})).toBeDisabled();
   const bounds=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,width:innerWidth,map:document.querySelector('.map-container')!.getBoundingClientRect().height,footer:document.querySelector('footer')!.getBoundingClientRect().bottom}));
   expect(bounds.scroll).toBeLessThanOrEqual(width);expect(bounds.map).toBeGreaterThanOrEqual(240);expect(bounds.footer).toBeLessThanOrEqual(845);
   await page.getByRole('button',{name:'收起面板'}).click();await page.getByRole('button',{name:'展开面板'}).click();
@@ -93,14 +94,13 @@ test('三个不共线源点在原V3投影及半级缩放后贴合',async({page})
 
 test('无坐标关联显示待核实，全部定位不虚构位置',async({page})=>{
   const missing=structuredClone(snapshot);missing.anchors.find(a=>a.id===waypoint.id)!.position=null;
-  await page.route('**/data/kongying-map.json',r=>r.fulfill({json:missing}));await ready(page);
+  await page.route('**/data/kongying-map.json',r=>r.fulfill({json:missing}));await page.route('**/data/music-library.json',r=>r.fulfill({json:{...fixture,associations:[fixture.associations[1]]}}));await ready(page);
   await page.getByRole('button',{name:'曲目检索',exact:true}).click();
-  await page.locator('input[type=file]').setInputFiles({name:'missing.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({...fixture,associations:[fixture.associations[1]]}))});
-  await page.locator('.track-list button').click();await page.getByText('关联点位（1）',{exact:true}).click();await expect(page.locator('.location-list')).toContainText('坐标待核实');
+  await page.locator('.track-list .track-item').click();await page.getByText('关联点位（1）',{exact:true}).click();await expect(page.locator('.location-list')).toContainText('坐标待核实');
   await page.getByRole('button',{name:'在地图上定位全部'}).click();
   await expect(page.locator('.map-status')).toContainText('没有可用坐标');
   await expect(page.locator(`[data-anchor-id="${waypoint.id}"]`)).toHaveCount(0);
-  await page.getByLabel('搜索点位、曲目、专辑、地区、细分目录或个人评价').fill('完全不存在的点');
+  await page.getByLabel('搜索点位、曲目、专辑、地区或细分目录').fill('完全不存在的点');
   await page.getByRole('button',{name:'点位目录',exact:true}).click();await expect(page.getByText('当前筛选无点位')).toBeVisible();
 });
 
