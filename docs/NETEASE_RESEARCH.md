@@ -46,3 +46,6 @@ FAQ 的原文包括：“个人场景：暂不支持……仅可使用 ncm-cli �
 官方CLI0.1.7登录检查成功，MySQL1663曲/1663加密ID真实读取。数据库晨曦酒庄1455706951及Windborne Hymn1481390533严格originalId匹配查询visible=false/playFlag=false；不是可播放授权。官方FAQ docId=3b75ab8e475d41ca93d91ebd4dfd383f的实际文档接口HTTP200仍说明个人仅CLI，直接API暂不支持，CLI无浏览器URL命令。保留.local/research原始查询，不提交账号/认证字段。没有调用不可见曲播放、截获网络URL、逆向签名或替换翻奏。
 
 本机/api/playback/resolve真实查询返回permission/unavailable；如用户本机提供数字ID普通原神音频可经同源Range流播放，这不是网易接口获取资源成功。目录目前为空，真实解码发声验收阻塞。厂商网页API权限需另行确认，已提供appid/privateKey无需重问。详见STAGE4_REVIEW/PLAYBACK_INTERFACE。
+## 2026-10-08：用户提供NetStart第三方接口
+
+实际查文档与当前原神歌曲探针：song/url单/双曲均HTTP404/Not Found，check/music返回暂无版权，没有取得音频URL。本轮不改默认provider、不发送官方平台凭据，不以第三方文档当官方资格或素材授权。详细URL/参数/响应见NETSTART_API_REVIEW；不是对全站永久失效的判断。
