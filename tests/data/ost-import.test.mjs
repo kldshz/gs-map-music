@@ -31,8 +31,8 @@ test('通用战斗排除独占Boss和城市，补风息山；限定Boss不扩散
  assert(general.points.length>0);assert(!general.points.some(a=>a.content.includes('风龙废墟')));assert(general.points.some(a=>a.areaCode==='A:MD:FENGXISHAN'));assert(general.points.every(a=>!isCity(a)));
  const forest=candidates.find(c=>c.track.wikiTitle==='洄映的漩流').classification;assert(forest.points.length);assert(forest.points.every(a=>a.areaCode==='A:XM:FOREST'&&!isCity(a)));
  const boss=candidates.find(c=>c.track.wikiTitle==='终天的闭幕曲').classification;assert.equal(boss.points.length,5);assert(boss.points.every(a=>a.content.includes('风龙废墟')));
- const limited=candidates.find(c=>c.track.wikiTitle==='六轮一露狂诗曲').classification;assert.equal(limited.points.length,0);assert.deepEqual(limited.countries,['须弥']);
- const unknown=candidates.find(c=>c.album.title==='珍珠之歌'&&c.track.wikiTitle==='游击骑士').classification;assert.equal(unknown.points.length,0);assert.equal(unknown.countries.length,0);
+ const limited=candidates.find(c=>c.track.wikiTitle==='六轮一露狂诗曲').classification;assert.equal(limited.method,'region-archive');assert(limited.points.length>0);assert(limited.points.every(a=>a.kind==='statue'&&a.country==='须弥'));
+ const unknown=candidates.find(c=>c.album.title==='珍珠之歌'&&c.track.wikiTitle==='游击骑士').classification;assert.equal(unknown.method,'region-archive');assert.deepEqual(unknown.countries,['蒙德','璃月']);assert(unknown.points.every(a=>a.kind==='statue'));assert(unknown.archiveBasis.includes('专辑目录范围'));
 });
 test('野外只补普通场景空白；任务与战斗不占用场景；城市说明只看地理标题',()=>{
  const outdoor=candidates.find(c=>c.album.title==='风与异乡人'&&c.track.originText.startsWith('蒙德野外')).classification;

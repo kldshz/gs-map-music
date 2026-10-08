@@ -40,6 +40,6 @@ test('补充出处中文可见，无出处仅神像归档；沉玉谷补战斗�
   if(!hasOrigin({...t.sceneInfo,id:t.id})){assert.equal(t.sceneInfo.originText,'缺少出处');assert(library.associations.filter(a=>a.trackId===t.id).every(a=>map.anchors.find(p=>p.id===a.anchorId).kind==='statue'));}
  }
  for(const p of map.anchors.filter(p=>p.areaCode==='A:LY:CHENYUGU'&&!isCity(p)&&p.hiddenFlag!==3)){assert(library.associations.some(a=>a.anchorId===p.id&&category({...library.tracks.find(t=>t.id===a.trackId).sceneInfo,id:a.trackId}).startsWith('battle-')));}
- for(const a of library.associations.filter(a=>map.anchors.find(p=>p.id===a.anchorId).areaCode==='A:NT:NATA5'))assert(!category({...library.tracks.find(t=>t.id===a.trackId).sceneInfo,id:a.trackId}).startsWith('battle-'));
+ for(const a of library.associations.filter(a=>a.matchType!=='region-archive'&&map.anchors.find(p=>p.id===a.anchorId).areaCode==='A:NT:NATA5'))assert(!category({...library.tracks.find(t=>t.id===a.trackId).sceneInfo,id:a.trackId}).startsWith('battle-'));
  const e=[...jaEvidence.values()].find(e=>e.role==='battle');assert.equal(category({id:e.trackId,originText:'非战斗场景',discTitle:''}),'scene');
 });

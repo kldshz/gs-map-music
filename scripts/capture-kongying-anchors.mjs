@@ -22,7 +22,7 @@ try{
  const items=[];
  for(const area of areas.filter(a=>a.isFinal)){
   const data=await request('/item/get/list',{typeIdList:[],areaIdList:[area.id],current:0,size:9999,sort:['sortIndex-']});
-  items.push(...data.record.filter(x=>['传送锚点','七天神像'].includes(x.name)));
+  items.push(...data.record.filter(x=>['传送锚点','七天神像','新月神像'].includes(x.name)));
  }
  console.log('anchor items',items.length,'names', [...new Set(items.map(x=>x.name))]);
  await fs.writeFile(out+'/anchor-items.json',JSON.stringify({areas,items},null,2));

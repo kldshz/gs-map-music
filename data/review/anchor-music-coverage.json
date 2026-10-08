@@ -1,213 +1,12 @@
 {
   "summary": {
     "nonCityWaypoints": 737,
-    "withBoth": 605,
-    "battleOnly": 61,
-    "missingScene": 103,
+    "withBoth": 662,
+    "battleOnly": 4,
+    "missingScene": 14,
     "missingBattle": 71
   },
   "missingScene": [
-    {
-      "id": "kongying:60406",
-      "areaCode": "A:FD:FENGDAN",
-      "place": "枫丹 苍晶区",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:60462",
-      "areaCode": "A:FD:FENGDAN3",
-      "place": "枫丹 卡布狄斯堡遗迹",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:60461",
-      "areaCode": "A:FD:FENGDAN3",
-      "place": "枫丹 莫尔泰区",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:60460",
-      "areaCode": "A:FD:FENGDAN3",
-      "place": "枫丹 莫尔泰区",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:60465",
-      "areaCode": "A:FD:FENGDAN3",
-      "place": "枫丹 莫尔泰区",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:60457",
-      "areaCode": "A:FD:FENGDAN3",
-      "place": "枫丹 秋分山东侧",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:60463",
-      "areaCode": "A:FD:FENGDAN3",
-      "place": "枫丹 卡布狄斯堡遗迹",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:60458",
-      "areaCode": "A:FD:FENGDAN3",
-      "place": "枫丹 莫尔泰区",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:116172",
-      "areaCode": "A:MD:SHENDIAN",
-      "place": "空之神殿 柱殿中央区",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:60464",
-      "areaCode": "A:FD:FENGDAN3",
-      "place": "枫丹 莫尔泰区",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:60454",
-      "areaCode": "A:FD:FENGDAN3",
-      "place": "枫丹 伊黎耶林区",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:48802",
-      "areaCode": "A:FD:FENGDAN",
-      "place": "枫丹 塔拉塔海谷",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:116389",
-      "areaCode": "A:MD:SHENDIAN",
-      "place": "空之神殿 非有非无有之笼 · 偏观",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:60466",
-      "areaCode": "A:FD:FENGDAN3",
-      "place": "枫丹 卡布狄斯堡遗迹",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:84672",
-      "areaCode": "A:NT:NATA2",
-      "place": "纳塔 烬火炽燃所",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2635291873",
-        "netease:2635292812",
-        "netease:2635292813"
-      ]
-    },
-    {
-      "id": "kongying:84660",
-      "areaCode": "A:NT:NATA2",
-      "place": "纳塔 翘枝崖",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2635291873",
-        "netease:2635292812",
-        "netease:2635292813"
-      ]
-    },
-    {
-      "id": "kongying:84657",
-      "areaCode": "A:NT:NATA2",
-      "place": "纳塔 翘枝崖",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2635291873",
-        "netease:2635292812",
-        "netease:2635292813"
-      ]
-    },
-    {
-      "id": "kongying:84655",
-      "areaCode": "A:NT:NATA2",
-      "place": "纳塔 翘枝崖",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2635291873",
-        "netease:2635292812",
-        "netease:2635292813"
-      ]
-    },
-    {
-      "id": "kongying:84656",
-      "areaCode": "A:NT:NATA2",
-      "place": "纳塔 翘枝崖",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2635291873",
-        "netease:2635292812",
-        "netease:2635292813"
-      ]
-    },
     {
       "id": "kongying:119951",
       "areaCode": "A:NDKL:SY",
@@ -223,248 +22,6 @@
       "place": "三界路飨祭 渊下宫",
       "sceneTrackIds": [],
       "battleTrackIds": []
-    },
-    {
-      "id": "kongying:48779",
-      "areaCode": "A:FD:FENGDAN",
-      "place": "枫丹 苍晶区",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:48776",
-      "areaCode": "A:FD:FENGDAN",
-      "place": "枫丹 秋分山西侧",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:48762",
-      "areaCode": "A:FD:FENGDAN",
-      "place": "枫丹 枫丹廷区",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:48784",
-      "areaCode": "A:FD:FENGDAN",
-      "place": "枫丹 厄里那斯",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:116987",
-      "areaCode": "A:MD:FENGXISHAN",
-      "place": "蒙德 风息山",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:1455706971",
-        "netease:1481390929",
-        "netease:1481392863"
-      ]
-    },
-    {
-      "id": "kongying:116988",
-      "areaCode": "A:MD:FENGXISHAN",
-      "place": "蒙德 风息山",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:1455706971",
-        "netease:1481390929",
-        "netease:1481392863"
-      ]
-    },
-    {
-      "id": "kongying:48772",
-      "areaCode": "A:FD:FENGDAN",
-      "place": "枫丹 茉洁站",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:116359",
-      "areaCode": "A:MD:SHENDIAN",
-      "place": "空之神殿 柱殿中央区",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:116365",
-      "areaCode": "A:MD:SHENDIAN",
-      "place": "空之神殿 麓阳书院",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:116326",
-      "areaCode": "A:MD:SHENDIAN",
-      "place": "空之神殿 大方广",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:51938",
-      "areaCode": "A:FD:FENGDAN",
-      "place": "枫丹「很明亮的地方」",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:116381",
-      "areaCode": "A:MD:SHENDIAN",
-      "place": "空之神殿 麓阳书院",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:116354",
-      "areaCode": "A:MD:SHENDIAN",
-      "place": "空之神殿 空之神殿",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:116364",
-      "areaCode": "A:MD:SHENDIAN",
-      "place": "空之神殿 「沙上楼阁」",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:116361",
-      "areaCode": "A:MD:SHENDIAN",
-      "place": "空之神殿 柱殿中央区",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:116380",
-      "areaCode": "A:MD:SHENDIAN",
-      "place": "空之神殿 麓阳书院",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:116379",
-      "areaCode": "A:MD:SHENDIAN",
-      "place": "空之神殿 麓阳书院",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:116388",
-      "areaCode": "A:MD:SHENDIAN",
-      "place": "空之神殿 「无想之间」",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:116391",
-      "areaCode": "A:MD:SHENDIAN",
-      "place": "空之神殿 空之神殿",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:48791",
-      "areaCode": "A:FD:FENGDAN",
-      "place": "枫丹 枫丹廷区",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:48799",
-      "areaCode": "A:FD:FENGDAN",
-      "place": "枫丹 塔拉塔海谷",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:48789",
-      "areaCode": "A:FD:FENGDAN",
-      "place": "枫丹 苍晶区",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:48790",
-      "areaCode": "A:FD:FENGDAN",
-      "place": "枫丹 塞洛海原",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:48773",
-      "areaCode": "A:FD:FENGDAN",
-      "place": "枫丹 露景泉",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:60445",
-      "areaCode": "A:FD:FENGDAN3",
-      "place": "枫丹 伊黎耶林区",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:48781",
-      "areaCode": "A:FD:FENGDAN",
-      "place": "枫丹 苍晶区",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
     },
     {
       "id": "kongying:119902",
@@ -490,59 +47,6 @@
       "place": "三界路飨祭 渊下宫",
       "sceneTrackIds": [],
       "battleTrackIds": []
-    },
-    {
-      "id": "kongying:116327",
-      "areaCode": "A:MD:SHENDIAN",
-      "place": "空之神殿 大方广",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:116363",
-      "areaCode": "A:MD:SHENDIAN",
-      "place": "空之神殿「沙上楼阁」",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:116282",
-      "areaCode": "A:MD:SHENDIAN",
-      "place": "空之神殿 遗世之路",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:116362",
-      "areaCode": "A:MD:SHENDIAN",
-      "place": "空之神殿 柱殿中央区",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:116321",
-      "areaCode": "A:MD:SHENDIAN",
-      "place": "空之神殿 空之神殿",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:116390",
-      "areaCode": "A:MD:SHENDIAN",
-      "place": "空之神殿 非有非无有之笼",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:115494",
-      "areaCode": "A:MD:FENGXISHAN",
-      "place": "蒙德 风息山",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:1455706971",
-        "netease:1481390929",
-        "netease:1481392863"
-      ]
     },
     {
       "id": "kongying:119910",
@@ -596,119 +100,6 @@
       "battleTrackIds": []
     },
     {
-      "id": "kongying:117277",
-      "areaCode": "A:MD:SHENDIAN",
-      "place": "空之神殿 大方广",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:72802",
-      "areaCode": "A:FD:ANCIENT_SEA",
-      "place": "枫丹 卡皮托林山",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:72795",
-      "areaCode": "A:FD:ANCIENT_SEA",
-      "place": "枫丹 安提库旧港",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:72801",
-      "areaCode": "A:FD:ANCIENT_SEA",
-      "place": "枫丹 卡皮托林山",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:72803",
-      "areaCode": "A:FD:ANCIENT_SEA",
-      "place": "枫丹 黄金的大宫",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:72791",
-      "areaCode": "A:FD:ANCIENT_SEA",
-      "place": "枫丹 雅努斯之门",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:72798",
-      "areaCode": "A:FD:ANCIENT_SEA",
-      "place": "枫丹 崇高大道",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:72792",
-      "areaCode": "A:FD:ANCIENT_SEA",
-      "place": "枫丹 雅努斯之门",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:72799",
-      "areaCode": "A:FD:ANCIENT_SEA",
-      "place": "枫丹 旧日之海",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:72790",
-      "areaCode": "A:FD:ANCIENT_SEA",
-      "place": "枫丹 旧日之海",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:72797",
-      "areaCode": "A:FD:ANCIENT_SEA",
-      "place": "枫丹 崇高大道",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:74074",
-      "areaCode": "A:FD:ANCIENT_SEA",
-      "place": "枫丹 旧日之海",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:74075",
-      "areaCode": "A:FD:ANCIENT_SEA",
-      "place": "枫丹 卡皮托林山",
-      "sceneTrackIds": [],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:48774",
-      "areaCode": "A:FD:FENGDAN",
-      "place": "枫丹 秋分山西侧",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:48777",
-      "areaCode": "A:FD:FENGDAN",
-      "place": "枫丹 苍晶区",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
       "id": "kongying:20551",
       "areaCode": "A:DQ:SANJIE",
       "place": "三界路飨祭 渊下宫",
@@ -716,253 +107,11 @@
       "battleTrackIds": []
     },
     {
-      "id": "kongying:47862",
-      "areaCode": "A:FD:FENGDAN",
-      "place": "枫丹 枫丹廷区",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:60459",
-      "areaCode": "A:FD:FENGDAN3",
-      "place": "枫丹 莫尔泰区",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
       "id": "kongying:20672",
       "areaCode": "A:DQ:SANJIE",
       "place": "三界路飨祭 渊下宫",
       "sceneTrackIds": [],
       "battleTrackIds": []
-    },
-    {
-      "id": "kongying:48763",
-      "areaCode": "A:FD:FENGDAN",
-      "place": "枫丹 枫丹廷区",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:48768",
-      "areaCode": "A:FD:FENGDAN",
-      "place": "枫丹 枫丹廷区",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:48778",
-      "areaCode": "A:FD:FENGDAN",
-      "place": "枫丹 白露区",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:48780",
-      "areaCode": "A:FD:FENGDAN",
-      "place": "枫丹 苍晶区",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:48782",
-      "areaCode": "A:FD:FENGDAN",
-      "place": "枫丹 厄里那斯",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:48783",
-      "areaCode": "A:FD:FENGDAN",
-      "place": "枫丹 厄里那斯",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:48788",
-      "areaCode": "A:FD:FENGDAN",
-      "place": "枫丹 苍晶区",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:48792",
-      "areaCode": "A:FD:FENGDAN",
-      "place": "枫丹 希望之路",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:48793",
-      "areaCode": "A:FD:FENGDAN",
-      "place": "枫丹 枫丹廷区",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:48798",
-      "areaCode": "A:FD:FENGDAN",
-      "place": "枫丹 塞洛海原",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:48800",
-      "areaCode": "A:FD:FENGDAN",
-      "place": "枫丹 塞洛海原",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:48801",
-      "areaCode": "A:FD:FENGDAN",
-      "place": "枫丹 塞洛海原",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:60444",
-      "areaCode": "A:FD:FENGDAN3",
-      "place": "枫丹 伊黎耶林区",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:60448",
-      "areaCode": "A:FD:FENGDAN3",
-      "place": "枫丹 伊黎耶林区",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:60451",
-      "areaCode": "A:FD:FENGDAN3",
-      "place": "枫丹 伊黎耶林区",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:60456",
-      "areaCode": "A:FD:FENGDAN3",
-      "place": "枫丹 莫尔泰区",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:60467",
-      "areaCode": "A:FD:FENGDAN3",
-      "place": "枫丹 莫尔泰区",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:2085833561",
-        "netease:2085836773",
-        "netease:2085836774"
-      ]
-    },
-    {
-      "id": "kongying:115468",
-      "areaCode": "A:MD:FENGXISHAN",
-      "place": "蒙德 风息山",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:1455706971",
-        "netease:1481390929",
-        "netease:1481392863"
-      ]
-    },
-    {
-      "id": "kongying:115469",
-      "areaCode": "A:MD:FENGXISHAN",
-      "place": "蒙德 风息山",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:1455706971",
-        "netease:1481390929",
-        "netease:1481392863"
-      ]
-    },
-    {
-      "id": "kongying:115474",
-      "areaCode": "A:MD:FENGXISHAN",
-      "place": "蒙德 风息山",
-      "sceneTrackIds": [],
-      "battleTrackIds": [
-        "netease:1455706971",
-        "netease:1481390929",
-        "netease:1481392863"
-      ]
     }
   ],
   "missingBattle": [
@@ -970,14 +119,20 @@
       "id": "kongying:116172",
       "areaCode": "A:MD:SHENDIAN",
       "place": "空之神殿 柱殿中央区",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:3411268311",
+        "netease:3411268312"
+      ],
       "battleTrackIds": []
     },
     {
       "id": "kongying:116389",
       "areaCode": "A:MD:SHENDIAN",
       "place": "空之神殿 非有非无有之笼 · 偏观",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:3411268311",
+        "netease:3411268312"
+      ],
       "battleTrackIds": []
     },
     {
@@ -1407,77 +562,109 @@
       "id": "kongying:116359",
       "areaCode": "A:MD:SHENDIAN",
       "place": "空之神殿 柱殿中央区",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:3411268311",
+        "netease:3411268312"
+      ],
       "battleTrackIds": []
     },
     {
       "id": "kongying:116365",
       "areaCode": "A:MD:SHENDIAN",
       "place": "空之神殿 麓阳书院",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:3411268313",
+        "netease:3411268931"
+      ],
       "battleTrackIds": []
     },
     {
       "id": "kongying:116326",
       "areaCode": "A:MD:SHENDIAN",
       "place": "空之神殿 大方广",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:3411268314",
+        "netease:3411268932"
+      ],
       "battleTrackIds": []
     },
     {
       "id": "kongying:116381",
       "areaCode": "A:MD:SHENDIAN",
       "place": "空之神殿 麓阳书院",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:3411268313",
+        "netease:3411268931"
+      ],
       "battleTrackIds": []
     },
     {
       "id": "kongying:116354",
       "areaCode": "A:MD:SHENDIAN",
       "place": "空之神殿 空之神殿",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:3411268311",
+        "netease:3411268312"
+      ],
       "battleTrackIds": []
     },
     {
       "id": "kongying:116364",
       "areaCode": "A:MD:SHENDIAN",
       "place": "空之神殿 「沙上楼阁」",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:3411268311",
+        "netease:3411268312"
+      ],
       "battleTrackIds": []
     },
     {
       "id": "kongying:116361",
       "areaCode": "A:MD:SHENDIAN",
       "place": "空之神殿 柱殿中央区",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:3411268311",
+        "netease:3411268312"
+      ],
       "battleTrackIds": []
     },
     {
       "id": "kongying:116380",
       "areaCode": "A:MD:SHENDIAN",
       "place": "空之神殿 麓阳书院",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:3411268313",
+        "netease:3411268931"
+      ],
       "battleTrackIds": []
     },
     {
       "id": "kongying:116379",
       "areaCode": "A:MD:SHENDIAN",
       "place": "空之神殿 麓阳书院",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:3411268313",
+        "netease:3411268931"
+      ],
       "battleTrackIds": []
     },
     {
       "id": "kongying:116388",
       "areaCode": "A:MD:SHENDIAN",
       "place": "空之神殿 「无想之间」",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:3411268315"
+      ],
       "battleTrackIds": []
     },
     {
       "id": "kongying:116391",
       "areaCode": "A:MD:SHENDIAN",
       "place": "空之神殿 空之神殿",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:3411268311",
+        "netease:3411268312"
+      ],
       "battleTrackIds": []
     },
     {
@@ -1491,42 +678,59 @@
       "id": "kongying:116327",
       "areaCode": "A:MD:SHENDIAN",
       "place": "空之神殿 大方广",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:3411268314",
+        "netease:3411268932"
+      ],
       "battleTrackIds": []
     },
     {
       "id": "kongying:116363",
       "areaCode": "A:MD:SHENDIAN",
       "place": "空之神殿「沙上楼阁」",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:3411268311",
+        "netease:3411268312"
+      ],
       "battleTrackIds": []
     },
     {
       "id": "kongying:116282",
       "areaCode": "A:MD:SHENDIAN",
       "place": "空之神殿 遗世之路",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:3411268310"
+      ],
       "battleTrackIds": []
     },
     {
       "id": "kongying:116362",
       "areaCode": "A:MD:SHENDIAN",
       "place": "空之神殿 柱殿中央区",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:3411268311",
+        "netease:3411268312"
+      ],
       "battleTrackIds": []
     },
     {
       "id": "kongying:116321",
       "areaCode": "A:MD:SHENDIAN",
       "place": "空之神殿 空之神殿",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:3411268311",
+        "netease:3411268312"
+      ],
       "battleTrackIds": []
     },
     {
       "id": "kongying:116390",
       "areaCode": "A:MD:SHENDIAN",
       "place": "空之神殿 非有非无有之笼",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:3411268311",
+        "netease:3411268312"
+      ],
       "battleTrackIds": []
     },
     {
@@ -1575,14 +779,27 @@
       "id": "kongying:117277",
       "areaCode": "A:MD:SHENDIAN",
       "place": "空之神殿 大方广",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:3411268314",
+        "netease:3411268932"
+      ],
       "battleTrackIds": []
     },
     {
       "id": "kongying:72802",
       "areaCode": "A:FD:ANCIENT_SEA",
       "place": "枫丹 卡皮托林山",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:2130084896",
+        "netease:2156623362",
+        "netease:2156623363",
+        "netease:2156623364",
+        "netease:2156623365",
+        "netease:2156624895",
+        "netease:2156624896",
+        "netease:2156624897",
+        "netease:2156624900"
+      ],
       "battleTrackIds": []
     },
     {
@@ -1598,7 +815,17 @@
       "id": "kongying:72795",
       "areaCode": "A:FD:ANCIENT_SEA",
       "place": "枫丹 安提库旧港",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:2130084896",
+        "netease:2156623362",
+        "netease:2156623363",
+        "netease:2156623364",
+        "netease:2156623365",
+        "netease:2156624895",
+        "netease:2156624896",
+        "netease:2156624897",
+        "netease:2156624900"
+      ],
       "battleTrackIds": []
     },
     {
@@ -1622,28 +849,68 @@
       "id": "kongying:72801",
       "areaCode": "A:FD:ANCIENT_SEA",
       "place": "枫丹 卡皮托林山",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:2130084896",
+        "netease:2156623362",
+        "netease:2156623363",
+        "netease:2156623364",
+        "netease:2156623365",
+        "netease:2156624895",
+        "netease:2156624896",
+        "netease:2156624897",
+        "netease:2156624900"
+      ],
       "battleTrackIds": []
     },
     {
       "id": "kongying:72803",
       "areaCode": "A:FD:ANCIENT_SEA",
       "place": "枫丹 黄金的大宫",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:2130084896",
+        "netease:2156623362",
+        "netease:2156623363",
+        "netease:2156623364",
+        "netease:2156623365",
+        "netease:2156624895",
+        "netease:2156624896",
+        "netease:2156624897",
+        "netease:2156624900"
+      ],
       "battleTrackIds": []
     },
     {
       "id": "kongying:72791",
       "areaCode": "A:FD:ANCIENT_SEA",
       "place": "枫丹 雅努斯之门",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:2130084896",
+        "netease:2156623362",
+        "netease:2156623363",
+        "netease:2156623364",
+        "netease:2156623365",
+        "netease:2156624895",
+        "netease:2156624896",
+        "netease:2156624897",
+        "netease:2156624900"
+      ],
       "battleTrackIds": []
     },
     {
       "id": "kongying:72798",
       "areaCode": "A:FD:ANCIENT_SEA",
       "place": "枫丹 崇高大道",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:2130084896",
+        "netease:2156623362",
+        "netease:2156623363",
+        "netease:2156623364",
+        "netease:2156623365",
+        "netease:2156624895",
+        "netease:2156624896",
+        "netease:2156624897",
+        "netease:2156624900"
+      ],
       "battleTrackIds": []
     },
     {
@@ -1659,14 +926,34 @@
       "id": "kongying:72792",
       "areaCode": "A:FD:ANCIENT_SEA",
       "place": "枫丹 雅努斯之门",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:2130084896",
+        "netease:2156623362",
+        "netease:2156623363",
+        "netease:2156623364",
+        "netease:2156623365",
+        "netease:2156624895",
+        "netease:2156624896",
+        "netease:2156624897",
+        "netease:2156624900"
+      ],
       "battleTrackIds": []
     },
     {
       "id": "kongying:72799",
       "areaCode": "A:FD:ANCIENT_SEA",
       "place": "枫丹 旧日之海",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:2130084896",
+        "netease:2156623362",
+        "netease:2156623363",
+        "netease:2156623364",
+        "netease:2156623365",
+        "netease:2156624895",
+        "netease:2156624896",
+        "netease:2156624897",
+        "netease:2156624900"
+      ],
       "battleTrackIds": []
     },
     {
@@ -1682,7 +969,17 @@
       "id": "kongying:72790",
       "areaCode": "A:FD:ANCIENT_SEA",
       "place": "枫丹 旧日之海",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:2130084896",
+        "netease:2156623362",
+        "netease:2156623363",
+        "netease:2156623364",
+        "netease:2156623365",
+        "netease:2156624895",
+        "netease:2156624896",
+        "netease:2156624897",
+        "netease:2156624900"
+      ],
       "battleTrackIds": []
     },
     {
@@ -1698,21 +995,51 @@
       "id": "kongying:72797",
       "areaCode": "A:FD:ANCIENT_SEA",
       "place": "枫丹 崇高大道",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:2130084896",
+        "netease:2156623362",
+        "netease:2156623363",
+        "netease:2156623364",
+        "netease:2156623365",
+        "netease:2156624895",
+        "netease:2156624896",
+        "netease:2156624897",
+        "netease:2156624900"
+      ],
       "battleTrackIds": []
     },
     {
       "id": "kongying:74074",
       "areaCode": "A:FD:ANCIENT_SEA",
       "place": "枫丹 旧日之海",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:2130084896",
+        "netease:2156623362",
+        "netease:2156623363",
+        "netease:2156623364",
+        "netease:2156623365",
+        "netease:2156624895",
+        "netease:2156624896",
+        "netease:2156624897",
+        "netease:2156624900"
+      ],
       "battleTrackIds": []
     },
     {
       "id": "kongying:74075",
       "areaCode": "A:FD:ANCIENT_SEA",
       "place": "枫丹 卡皮托林山",
-      "sceneTrackIds": [],
+      "sceneTrackIds": [
+        "netease:2130084896",
+        "netease:2156623362",
+        "netease:2156623363",
+        "netease:2156623364",
+        "netease:2156623365",
+        "netease:2156624895",
+        "netease:2156624896",
+        "netease:2156624897",
+        "netease:2156624900"
+      ],
       "battleTrackIds": []
     },
     {

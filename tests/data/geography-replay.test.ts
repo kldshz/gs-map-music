@@ -7,7 +7,7 @@ import {applyAssociationEdits,updateAssociationEdit} from '../../src/domain/asso
 import {validateLibrary,validateSnapshot} from '../../src/domain/validation';
 test('隔离重建保留人工增删/恢复、verified及评价；重复执行字节一致',()=>{
  const root=fs.mkdtempSync(path.join(process.cwd(),'.local/geography-replay-'));
- const paths=['scripts/reclassify-geography.mjs','scripts/audit-anchor-music.mjs','scripts/lib/geography.mjs','scripts/lib/ost-associations.mjs','scripts/lib/ja-bgm-evidence.mjs','data/sources/official-map-labels.json','data/sources/ja-bgm-crosscheck.json','data/sources/ost-bulk-source.json','public/data/kongying-map.json','public/data/music-library.json'];
+ const paths=['scripts/reclassify-geography.mjs','scripts/audit-anchor-music.mjs','scripts/lib/geography.mjs','scripts/lib/ost-associations.mjs','scripts/lib/ja-bgm-evidence.mjs','data/sources/official-map-labels.json','data/sources/new-moon-statues.json','data/sources/ja-bgm-crosscheck.json','data/sources/ost-bulk-source.json','public/data/kongying-map.json','public/data/music-library.json'];
  for(const p of paths){fs.mkdirSync(path.dirname(path.join(root,p)),{recursive:true});fs.copyFileSync(p,path.join(root,p));}
  fs.mkdirSync(path.join(root,'docs'),{recursive:true});fs.mkdirSync(path.join(root,'data/review'),{recursive:true});
  const read=(p:string)=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));

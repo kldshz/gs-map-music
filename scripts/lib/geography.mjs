@@ -43,12 +43,21 @@ export function classifyAnchor(a,catalog){
  if(a.id==='kongying:121680'){primary='古兽冰原';secondary='巡猎者木屋';method='landmark-distance';dist=Math.round(distance(a.position,catalog.secondaries.find(l=>l.name===secondary).position));}
  if(a.id==='kongying:121678'){primary='古兽冰原';secondary=null;dist=null;}
  if(/^枫丹廷(?:区)?·(?:纳博内区|利奥奈区|灰河|沫芒宫)/.test(place)){primary='枫丹廷区';secondary='枫丹廷';method='source-header';dist=null;}
+ // Independent-map headers use the map name where other headers use a country.
+ // Keep the actual leaf, and never invent a secondary that repeats its parent.
+ if(primary&&(secondary===primary||a.areaCode==='A:MD:SHENDIAN'&&secondary?.startsWith(primary))){
+  while(secondary?.startsWith(primary))secondary=secondary.slice(primary.length).replace(/^[\s·-]+/,'')||null;
+  if(!secondary&&a.underground)secondary=normalizePlace(a.content.match(/(?:地下|水下|空中)「([^」]+)」/)?.[1]??'')||null;
+ }
+ if(secondary===primary)secondary=null;
+ if(secondary===a.country)secondary=null;
  if(!primary&&!secondary)method='unresolved';
  return {country:a.country,primary,secondary,method,evidenceStatus:'pending',distance:dist,sourceUrl:method==='landmark-distance'?catalog.sourceUrl:a.sourceUrl};
 }
 export function geographyTokens(map,catalog){
- const rows=[...map.anchors.filter(a=>a.hiddenFlag!==3&&!/^A:(APPLE|VELURIYAM|SIMULANKA):/.test(a.areaCode)).map(a=>a.geography),...catalog.secondaries.map(l=>({country:l.country,primary:l.primary,secondary:l.name})),...catalog.primary.map(l=>({country:l.country,primary:l.name,secondary:null}))].filter(Boolean);
- return [...new Map(rows.map(s=>{const g={country:s.country,primary:s.primary??null,secondary:s.secondary??null};return [scopeKey(g),g]})).values()];
+ const anchors=map.anchors.filter(a=>a.hiddenFlag!==3&&!/^A:(APPLE|VELURIYAM|SIMULANKA):/.test(a.areaCode));
+ const rows=[...anchors.map(a=>a.geography),...anchors.filter(a=>a.geography?.primary).map(a=>({...a.geography,secondary:null})),...catalog.secondaries.map(l=>({country:l.country,primary:l.primary,secondary:l.name})),...catalog.primary.map(l=>({country:l.country,primary:l.name,secondary:null}))].filter(Boolean);
+ return [...new Map(rows.map(s=>{const g={country:s.country,primary:s.primary??null,secondary:s.secondary===s.primary||s.secondary===s.country?null:s.secondary??null};return [scopeKey(g),g]})).values()];
 }
 export function findScopes(text,rows){
  const o=normalizePlace(text),hits=rows.filter(s=>s.secondary&&o.includes(normalizePlace(s.secondary)));
@@ -56,4 +65,8 @@ export function findScopes(text,rows){
  const parents=rows.filter(s=>!s.secondary&&s.primary&&o.includes(normalizePlace(s.primary))&&!fine.some(f=>f.country===s.country&&f.primary===s.primary));
  return [...new Map([...fine,...parents].map(s=>[scopeKey(s),s])).values()];
 }
-export function matchesScope(a,s){const g=a.geography;return !!g&&g.country===s.country&&(!s.primary||g.primary===s.primary)&&(!s.secondary||g.secondary===s.secondary||g.secondary?.startsWith(s.secondary+'·'));}
+export function matchesScope(a,s){
+ const g=a.geography;
+ const parentMatches=g&&(!s.primary||g.primary===s.primary||g.primary?.startsWith(s.primary+'·')||s.primary==='苍漠囿土'&&a.areaCode==='A:XM:DESERT3'&&['浮罗囿','荒石苍漠'].includes(g.primary));
+ return !!g&&g.country===s.country&&parentMatches&&(!s.secondary||g.secondary===s.secondary||g.secondary?.startsWith(s.secondary+'·'));
+}

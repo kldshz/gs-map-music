@@ -139,26 +139,66 @@ export function legacyGenerateAssociations(source,map,existing) {
 
 // Fine geography policy supersedes album/disc coverage inference. Shared by all import entry points.
 const catalogs=new WeakMap();
+const locationText = s => (s??'').split('\n').filter(x=>!x.includes('《原神》EP')&&!x.includes('旅行历程')).join('、').replace(/^日文Wiki补充（中文）：/,'');
+const mainFontaine=['A:FD:FENGDAN','A:FD:FENGDAN2','A:FD:FENGDAN3','A:FD:FENGDAN4'];
+const isUnderwater = a => /水下/.test(a.content);
+
+function broadScene(text,legacy){
+ if(/枫丹地域/.test(text))return {codes:mainFontaine,medium:'land'};
+ if(/枫丹[（(]水中/.test(text))return {codes:mainFontaine,medium:'water'};
+ if(/蒙德野外/.test(text)||text.trim()==='蒙德')return {codes:['A:MD:MENGDE','A:MD:FENGXISHAN']};
+ // An explicit underground range remains within the album's source-map namespace.
+ if(/纳塔[（(]地下/.test(text))return {codes:legacy.areaCodes,medium:'underground'};
+ return null;
+}
+
+function archiveAtStatues(album,result,map){
+ const available=map.anchors.filter(a=>a.kind==='statue'&&!bannedArea(a.areaCode)&&a.hiddenFlag!==3);
+ // Source catalog describes the retrospective album's region(s). This is an archive
+ // namespace only, never evidence that a character/boss track plays at these statues.
+ if(!result.countries.length){
+  result.countries=map.areas.filter(a=>a.parentId===-1&&!bannedArea(a.code)&&a.hiddenFlag!==3&&(album.scope??'').includes(a.name)).map(a=>a.name);
+  result.archiveBasis='专辑目录范围：'+(album.scope??'未提供');
+ }
+ const scopes=result.geographicScopes??[];
+ let points=available.filter(a=>scopes.some(s=>matchesScope(a,s)));
+ if(!points.length)points=available.filter(a=>scopes.some(s=>matchesScope(a,{...s,secondary:null})));
+ if(!points.length)points=available.filter(a=>result.areaCodes.includes(a.areaCode));
+ if(!points.length)points=available.filter(a=>result.countries.includes(a.country));
+ result.points=points;result.method='region-archive';
+ result.reason='无可挂载的精确播放点；按来源地区/专辑目录归档到神像，不代表实际播放，不计常态/战斗覆盖。'+(result.archiveBasis??'');
+ if(!scopes.length)result.geographicScopes=result.countries.map(country=>({country,primary:null,secondary:null}));
+ return result;
+}
+
 export function classifyOne(album,t,map){
  const legacy=legacyClassifyOne(album,t,map);
  if(!map.anchors.some(a=>a.geography))return legacy;
  let rows=catalogs.get(map);if(!rows){rows=geographyTokens(map,makeCatalog(map));catalogs.set(map,rows);}
- const evidence=jaEvidence.get(t.id??'netease:'+t.neteaseId),origin=primary(t.originText??'');
+ const evidence=jaEvidence.get(t.id??'netease:'+t.neteaseId),origin=locationText(t.originText);
  const text=useful(origin)?origin:evidence?.placeZh??'';
  let scopes=findScopes(text,rows);
+ // A variation credit mentions the music it derives from, not a second battle area.
+ if(legacy.kind==='battle-limited'&&/变奏/.test(text)&&scopes.some(s=>s.secondary))scopes=scopes.filter(s=>s.secondary);
  // Existing pilot evidence explicitly uses the city's directory for its indoor venues.
  if(/西风大教堂|蒙德教堂|西风骑士团|天使的馈赠/.test(text))scopes=[{country:'蒙德',primary:'坠星山谷',secondary:'蒙德城'}];
  if(legacy.kind==='special-map')return {...legacy,geographicScopes:legacy.countries.map(country=>({country,primary:null,secondary:null}))};
  const result={...legacy,geographicScopes:scopes,points:[],method:'place-match',reason:'统一国家/一级/二级目录与出处匹配；全部pending，地标距离候选不代表官方音区。'};
  if(scopes.length){result.countries=[...new Set(scopes.map(s=>s.country))];result.areaCodes=[...new Set(map.anchors.filter(a=>scopes.some(s=>matchesScope(a,s))).map(a=>a.areaCode))];}
  const available=map.anchors.filter(a=>!bannedArea(a.areaCode)&&a.hiddenFlag!==3);
+ const broad=legacy.kind==='scene'?broadScene(text,legacy):null;
  if(!hasOrigin(t)){
-  result.method='region-archive';result.points=available.filter(a=>a.kind==='statue'&&legacy.areaCodes.includes(a.areaCode));
+  archiveAtStatues(album,result,map);
  }else if(legacy.kind==='battle-generic'){
   let codes=legacy.areaCodes.filter(c=>!['A:NT:NATA5','A:FD:ANCIENT_SEA','A:MD:SHENDIAN'].includes(c));
   if(codes.includes('A:MD:MENGDE'))codes=[...codes,'A:MD:FENGXISHAN'];
   result.points=available.filter(a=>!isCity(a)&&(scopes.length?scopes.some(s=>matchesScope(a,s)):codes.includes(a.areaCode)));
   result.method='region-scope';
+ }else if(broad){
+  result.points=available.filter(a=>broad.codes.includes(a.areaCode)&&!isCity(a)&&(broad.medium==='water'?isUnderwater(a):broad.medium==='land'?!isUnderwater(a):broad.medium==='underground'?a.underground:true));
+  result.areaCodes=broad.codes;result.method='region-scope';
+  result.countries=[...new Set(result.points.map(a=>a.country))];
+  result.geographicScopes=[...scopes,...result.countries.filter(country=>!scopes.some(s=>s.country===country&&!s.primary)).map(country=>({country,primary:null,secondary:null}))];
  }else if(scopes.length){
   result.points=available.filter(a=>scopes.some(s=>matchesScope(a,s)));
   result.method=scopes.some(s=>s.secondary)?'place-match':'region-scope';
@@ -168,15 +208,15 @@ export function classifyOne(album,t,map){
   // Existing explicitly researched boss location is retained; no national fallback for a boss.
   result.points=legacy.points;result.method='place-match';
  }else if(legacy.countries.length){
-  result.points=available.filter(a=>a.kind==='statue'&&legacy.areaCodes.includes(a.areaCode));result.method='region-archive';
+  archiveAtStatues(album,result,map);
  }
+ if(!result.points.length)archiveAtStatues(album,result,map);
  if(!result.geographicScopes.length)result.geographicScopes=result.countries.map(country=>({country,primary:null,secondary:null}));
- if(result.method==='region-archive')result.reason='出处无可定位地点；仅按已确定地区/专辑归档到神像，不代表实际播放。';
  if(!result.countries.length){result.points=[];result.areaCodes=[];result.geographicScopes=[];}
  result.points=[...new Map(result.points.map(a=>[a.id,a])).values()];
  return result;
 }
-export function generateAssociations(source,map,existing){
+export function generateAssociations(source,map,existing,{removedPairs=new Set()}={}){
  const candidates=source.albums.flatMap(album=>album.tracks.map(track=>({album,track,classification:classifyOne(album,track,map)})));
  const scene=new Map(),battle=new Map();
  const rank=(r,p)=>r.kind==='battle-limited'?3:r.geographicScopes?.some(s=>s.secondary&&matchesScope(p,s))?2:r.geographicScopes?.some(s=>s.primary&&matchesScope(p,s))?1:0;
@@ -184,7 +224,8 @@ export function generateAssociations(source,map,existing){
   const track=existing.tracks.find(t=>t.id===a.trackId),role=track?category({...track.sceneInfo,id:track.id}):null;
   if(role==='scene')scene.set(a.anchorId,3);if(role?.startsWith('battle-'))battle.set(a.anchorId,3);
  }
- for(const c of candidates){const r=c.classification;if(r.method!=='region-archive')for(const p of r.points){if(r.kind==='scene')scene.set(p.id,Math.max(scene.get(p.id)??-1,rank(r,p)));if(r.kind.startsWith('battle-'))battle.set(p.id,Math.max(battle.get(p.id)??-1,rank(r,p)));}}
- for(const c of candidates){const r=c.classification;if(r.method!=='region-archive'){if(r.kind==='scene')r.points=r.points.filter(p=>rank(r,p)>=(scene.get(p.id)??-1));if(r.kind.startsWith('battle-'))r.points=r.points.filter(p=>rank(r,p)>=(battle.get(p.id)??-1));}}
+ const removed=(c,p)=>removedPairs.has((c.track.id??'netease:'+c.track.neteaseId)+'|'+p.id);
+ for(const c of candidates){const r=c.classification;if(r.method!=='region-archive')for(const p of r.points){if(removed(c,p))continue;if(r.kind==='scene')scene.set(p.id,Math.max(scene.get(p.id)??-1,rank(r,p)));if(r.kind.startsWith('battle-'))battle.set(p.id,Math.max(battle.get(p.id)??-1,rank(r,p)));}}
+ for(const c of candidates){const r=c.classification;if(r.method!=='region-archive'){if(r.kind==='scene')r.points=r.points.filter(p=>removed(c,p)||rank(r,p)>=(scene.get(p.id)??-1));if(r.kind.startsWith('battle-'))r.points=r.points.filter(p=>removed(c,p)||rank(r,p)>=(battle.get(p.id)??-1));if(!r.points.length&&r.kind!=='special-map')archiveAtStatues(c.album,r,map);}}
  return candidates;
 }

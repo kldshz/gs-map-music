@@ -18,8 +18,10 @@ test('全批次检索/原出处/限定未挂与特殊地图零挂载，保留全
  await expect(page.locator('.location-list button')).toHaveCount(0);await expect(page.locator('.detail-view')).toContainText(special.countries[0]);
  await expect(page.locator('.association-status')).toHaveCount(0);await expect(page.getByRole('button',{name:'在地图上定位全部'})).toHaveCount(0);
  const boss=review.tracks.find((t:any)=>t.title.startsWith('六轮一露狂诗曲'));await open(page,boss.id);
- await expect(page.locator('.location-list button')).toHaveCount(0);await expect(page.locator('.origin-text')).toContainText('正机之神');
- const unknown=review.tracks.find((t:any)=>!t.countries.length);await open(page,unknown.id);await expect(page.locator('.detail-view')).toContainText('未定位');
+  await expect(page.locator('.location-list button')).toHaveCount(library.associations.filter((a:any)=>a.trackId===boss.id).length);await expect(page.locator('.origin-text')).toContainText('正机之神');
+  for(const text of await page.locator('.location-list button').allTextContents())expect(text).toContain('神像');
+  const unknown=review.tracks.find((t:any)=>t.archiveBasis&&t.title==='游击骑士');await open(page,unknown.id);
+  const archived=library.tracks.find((t:any)=>t.id===unknown.id);await expect(page.locator('.detail-view')).toContainText(archived.sceneInfo.geographicScopes[0].country);
  const battle=review.tracks.find((t:any)=>t.title.startsWith('战斗的秘仪'));await open(page,battle.id);
  const count=library.associations.filter((a:any)=>a.trackId===battle.id).length;await expect(page.locator('.location-list button')).toHaveCount(count);await page.getByRole('button',{name:'在地图上定位全部'}).click();await expect(page.locator('.music-anchor.is-highlighted')).toHaveCount(count);
  await expect(page.locator('.association-detail')).toHaveCount(0);await page.screenshot({path:'.local/browser-tests/ost-bulk-battle.png'});

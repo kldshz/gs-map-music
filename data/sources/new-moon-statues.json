@@ -1,0 +1,174 @@
+{
+  "capturedOn": "2026-10-08",
+  "source": "Kongying V3 guest read-only API",
+  "endpoints": [
+    "/api/item/get/list",
+    "/api/marker/get/list_byinfo",
+    "/api/marker/get/list_byid",
+    "/api/icon/get/list"
+  ],
+  "note": "新月神像为挪德卡莱实际点位；此前仅过滤七天神像而遗漏。原点位说明/坐标不改，不代表音乐实际播放点。",
+  "anchors": [
+    {
+      "id": "kongying:105784",
+      "sourceId": 105784,
+      "name": "新月神像",
+      "kind": "statue",
+      "areaId": 51,
+      "areaCode": "A:NDKL:NDKL",
+      "country": "挪德卡莱",
+      "areaName": "伦波岛、希汐岛、帕哈岛",
+      "content": "【挪德卡莱 伦波岛】",
+      "position": [
+        -12135,
+        -3138.25
+      ],
+      "underground": false,
+      "layerValues": [],
+      "iconUrl": "https://assets.yuanshen.site/icons/125.png",
+      "sourceUrl": "https://v3.yuanshen.site/",
+      "itemId": 2873,
+      "version": 5,
+      "hiddenFlag": 0,
+      "sourceUpdateTime": 1757513924363
+    },
+    {
+      "id": "kongying:105786",
+      "sourceId": 105786,
+      "name": "新月神像",
+      "kind": "statue",
+      "areaId": 51,
+      "areaCode": "A:NDKL:NDKL",
+      "country": "挪德卡莱",
+      "areaName": "伦波岛、希汐岛、帕哈岛",
+      "content": "【挪德卡莱 希汐岛】",
+      "position": [
+        -13350.468764325291,
+        -3021.929947416692
+      ],
+      "underground": false,
+      "layerValues": [],
+      "iconUrl": "https://assets.yuanshen.site/icons/125.png",
+      "sourceUrl": "https://v3.yuanshen.site/",
+      "itemId": 2873,
+      "version": 5,
+      "hiddenFlag": 0,
+      "sourceUpdateTime": 1757513924577
+    },
+    {
+      "id": "kongying:105787",
+      "sourceId": 105787,
+      "name": "新月神像",
+      "kind": "statue",
+      "areaId": 51,
+      "areaCode": "A:NDKL:NDKL",
+      "country": "挪德卡莱",
+      "areaName": "伦波岛、希汐岛、帕哈岛",
+      "content": "【挪德卡莱 绯沙盐沼】",
+      "position": [
+        -12049.5,
+        -4880
+      ],
+      "underground": false,
+      "layerValues": [],
+      "iconUrl": "https://assets.yuanshen.site/icons/125.png",
+      "sourceUrl": "https://v3.yuanshen.site/",
+      "itemId": 2873,
+      "version": 5,
+      "hiddenFlag": 0,
+      "sourceUpdateTime": 1757513923184
+    },
+    {
+      "id": "kongying:111836",
+      "sourceId": 111836,
+      "name": "新月神像",
+      "kind": "statue",
+      "areaId": 52,
+      "areaCode": "A:NDKL:NDKL2",
+      "country": "挪德卡莱",
+      "areaName": "虚海望、逐浪野、烟硌山峰",
+      "content": "【挪德卡莱 虚海望】",
+      "position": [
+        -12312.367229710337,
+        -7457.766100482987
+      ],
+      "underground": false,
+      "layerValues": [],
+      "iconUrl": "https://assets.yuanshen.site/icons/125.png",
+      "sourceUrl": "https://v3.yuanshen.site/",
+      "itemId": 4233,
+      "version": 1,
+      "hiddenFlag": 0,
+      "sourceUpdateTime": 1764705148691
+    },
+    {
+      "id": "kongying:111837",
+      "sourceId": 111837,
+      "name": "新月神像",
+      "kind": "statue",
+      "areaId": 52,
+      "areaCode": "A:NDKL:NDKL2",
+      "country": "挪德卡莱",
+      "areaName": "虚海望、逐浪野、烟硌山峰",
+      "content": "【挪德卡莱 逐浪野】",
+      "position": [
+        -12356.434561180053,
+        -8244.677418881827
+      ],
+      "underground": false,
+      "layerValues": [],
+      "iconUrl": "https://assets.yuanshen.site/icons/125.png",
+      "sourceUrl": "https://v3.yuanshen.site/",
+      "itemId": 4233,
+      "version": 2,
+      "hiddenFlag": 0,
+      "sourceUpdateTime": 1765979191960
+    },
+    {
+      "id": "kongying:111838",
+      "sourceId": 111838,
+      "name": "新月神像",
+      "kind": "statue",
+      "areaId": 52,
+      "areaCode": "A:NDKL:NDKL2",
+      "country": "挪德卡莱",
+      "areaName": "虚海望、逐浪野、烟硌山峰",
+      "content": "【挪德卡莱 烟硌山峰】",
+      "position": [
+        -12633.151119651926,
+        -8929.902768031132
+      ],
+      "underground": false,
+      "layerValues": [],
+      "iconUrl": "https://assets.yuanshen.site/icons/125.png",
+      "sourceUrl": "https://v3.yuanshen.site/",
+      "itemId": 4233,
+      "version": 1,
+      "hiddenFlag": 0,
+      "sourceUpdateTime": 1764705207434
+    },
+    {
+      "id": "kongying:119953",
+      "sourceId": 119953,
+      "name": "新月神像",
+      "kind": "statue",
+      "areaId": 53,
+      "areaCode": "A:NDKL:NDKL3",
+      "country": "挪德卡莱",
+      "areaName": "杜南纳深坑",
+      "content": "【挪德卡莱 雾灵渚】",
+      "position": [
+        -11412.516565708931,
+        -8160.545709343506
+      ],
+      "underground": false,
+      "layerValues": [],
+      "iconUrl": "https://assets.yuanshen.site/icons/125.png",
+      "sourceUrl": "https://v3.yuanshen.site/",
+      "itemId": 4485,
+      "version": 2,
+      "hiddenFlag": 0,
+      "sourceUpdateTime": 1786503796989
+    }
+  ]
+}

@@ -12,7 +12,7 @@ const anchors=raw.markers.map(p=>{
  const position=p.position?.split(',').map(Number);
  if(position?.length!==2||position.some(x=>!Number.isFinite(x)))throw new Error('Invalid point '+p.id);
  let extra=p.extra??{};if(typeof extra==='string')extra=JSON.parse(extra);
- return {id:'kongying:'+p.id,sourceId:p.id,name:p.markerTitle||item.name,kind:item.name==='七天神像'?'statue':'waypoint',
+ return {id:'kongying:'+p.id,sourceId:p.id,name:p.markerTitle||item.name,kind:['七天神像','新月神像'].includes(item.name)?'statue':'waypoint',
   areaId:area.id,areaCode:area.code,country:country?.name??'',areaName:area.name,content:p.content??'',position,
   underground:!!extra.underground?.is_underground,layerValues:extra.underground?.region_levels??[],iconUrl:iconMap.get(item.iconId)??null,
   sourceUrl:'https://v3.yuanshen.site/',itemId:item.id,

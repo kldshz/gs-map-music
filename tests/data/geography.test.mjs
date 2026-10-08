@@ -48,7 +48,7 @@ test('常态/战斗独立优先级：精确场景不阻挡通用战斗，独占B
  assert(cs[2].classification.points.every(a=>!isCity(a)));
 });
 test('风息山/沉玉谷补战斗；悠悠、旧日之海、空之神殿不借用国家战斗曲',()=>{
- const battle=new Set(library.associations.filter(a=>category({...library.tracks.find(t=>t.id===a.trackId).sceneInfo,id:a.trackId}).startsWith('battle-')).map(a=>a.anchorId));
+ const battle=new Set(library.associations.filter(a=>a.matchType!=='region-archive'&&category({...library.tracks.find(t=>t.id===a.trackId).sceneInfo,id:a.trackId}).startsWith('battle-')).map(a=>a.anchorId));
  for(const code of ['A:MD:FENGXISHAN','A:LY:CHENYUGU'])for(const p of map.anchors.filter(p=>p.areaCode===code&&!isCity(p)&&p.hiddenFlag!==3))assert(battle.has(p.id));
  for(const code of ['A:NT:NATA5','A:FD:ANCIENT_SEA','A:MD:SHENDIAN'])for(const p of map.anchors.filter(p=>p.areaCode===code))assert(!battle.has(p.id));
 });

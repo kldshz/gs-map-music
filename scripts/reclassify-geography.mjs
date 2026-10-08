@@ -5,6 +5,13 @@ import {generateAssociations} from './lib/ost-associations.mjs';
 import {auditCoverage} from './audit-anchor-music.mjs';
 const read=async p=>JSON.parse(await fs.readFile(p,'utf8'));
 const map=await read('public/data/kongying-map.json'),library=await read('public/data/music-library.json'),edits=await read('data/association-edits.json');
+const statues=await read('data/sources/new-moon-statues.json');
+for(const a of statues.anchors){
+ assert.equal(a.kind,'statue');assert.equal(a.country,'挪德卡莱');
+ assert.equal(a.position.length,2);assert(a.position.every(Number.isFinite));
+ assert(map.areas.some(area=>area.id===a.areaId&&area.code===a.areaCode));
+ if(!map.anchors.some(existing=>existing.id===a.id))map.anchors.push(a);
+}
 const previous=structuredClone(library),catalog=makeCatalog(map);
 // Optional migration baseline is local-only and read-only; preserve a complete, reviewable first diff.
 const baseline=process.argv.includes('--baseline')?await read(process.argv[process.argv.indexOf('--baseline')+1]):null;
@@ -20,9 +27,9 @@ for(const track of library.tracks){
 }
 const effective=structuredClone(library);
 for(const edit of edits.edits){const at=effective.associations.findIndex(a=>a.trackId===edit.trackId&&a.anchorId===edit.anchorId);if(edit.action==='remove'&&at>=0)effective.associations.splice(at,1);if(edit.action==='add'&&at<0)effective.associations.push({trackId:edit.trackId,anchorId:edit.anchorId,matchType:'manual',evidenceStatus:'pending'});}
-const candidates=generateAssociations({albums:[...groups.values()]},map,effective);
-const protectedLinks=library.associations.filter(a=>a.evidenceStatus==='verified'||a.matchType==='manual');
 const removals=new Set(edits.edits.filter(e=>e.action==='remove').map(e=>e.trackId+'|'+e.anchorId));
+const candidates=generateAssociations({albums:[...groups.values()]},map,effective,{removedPairs:removals});
+const protectedLinks=library.associations.filter(a=>a.evidenceStatus==='verified'||a.matchType==='manual');
 const edges=new Map(protectedLinks.map(a=>[a.trackId+'|'+a.anchorId,a]));
 const byTrack=new Map(library.tracks.map(t=>[t.id,t]));
 const classifications=[];
@@ -33,7 +40,7 @@ for(const {track,classification:r} of candidates){
   const key=t.id+'|'+point.id;if(edges.has(key))continue;
   edges.set(key,{id:`geo:${t.neteaseId}:${point.sourceId}`,trackId:t.id,anchorId:point.id,evidenceStatus:'pending',matchType:r.method,evidenceNote:`出处：${t.sceneInfo.originText||'未提供'}。${r.reason}`,sourceUrl:t.sceneInfo.wikiSourceUrl});
  }
- classifications.push({trackId:t.id,title:t.sceneInfo.wikiTitle,originText:t.sceneInfo.originText,category:r.kind,method:r.method,scopes:r.geographicScopes,anchorIds:r.points.filter(p=>!removals.has(t.id+'|'+p.id)).map(p=>p.id)});
+ classifications.push({trackId:t.id,title:t.sceneInfo.wikiTitle,originText:t.sceneInfo.originText,category:r.kind,method:r.method,scopes:r.geographicScopes,...(r.archiveBasis?{archiveBasis:r.archiveBasis}:{}),anchorIds:r.points.filter(p=>!removals.has(t.id+'|'+p.id)).map(p=>p.id)});
 }
 library.associations=[...edges.values()].sort((a,b)=>a.trackId.localeCompare(b.trackId)||a.anchorId.localeCompare(b.anchorId));
 const oldEdges=new Map((baseline??previous).associations.map(a=>[a.trackId+'|'+a.anchorId,a]));
@@ -42,17 +49,21 @@ const added=[...edges].filter(([key])=>!oldEdges.has(key)).map(([,a])=>({trackId
 const controls=['kongying:121680','kongying:121678'].map(id=>map.anchors.find(a=>a.id===id));
 assert.equal(controls[0].geography.secondary,'巡猎者木屋');assert.equal(controls[1].geography.secondary,null);
 assert.equal(library.tracks.length,1663);assert.equal(edges.size,library.associations.length);
-for(const t of library.tracks){const old=previous.tracks.find(p=>p.id===t.id);assert.equal(t.personalNote,old.personalNote);assert.equal(t.sceneInfo.originText,old.sceneInfo.originText);}
+for(const t of library.tracks){
+ const old=previous.tracks.find(p=>p.id===t.id);
+ const metadata=track=>{const copy=structuredClone(track);delete copy.sceneInfo.geographicScopes;delete copy.sceneInfo.mainRegions;return copy;};
+ assert.deepEqual(metadata(t),metadata(old));
+}
 for(const p of protectedLinks)assert.deepEqual(edges.get(p.trackId+'|'+p.anchorId),p);
 const existingReport=await read('data/review/geography-reclassification.json').catch(e=>{if(e.code!=='ENOENT')throw e;return null});
 const taxonomy=[...new Map(map.anchors.map(a=>[scopeKey(a.geography),{country:a.country,primary:a.geography.primary,secondary:a.geography.secondary}])).values()];
-const report={policy:'2026-10-08 精细目录优先；同类独占阻止通用补充；无证据不以专辑地点曲填覆盖；全部pending，人工覆盖优先。',summary:{tracks:library.tracks.length,associations:library.associations.length,anchors:map.anchors.length,secondaryAssigned:map.anchors.filter(a=>a.geography.secondary).length,secondaryEmpty:map.anchors.filter(a=>!a.geography.secondary).length,distanceCandidates:map.anchors.filter(a=>a.geography.method==='landmark-distance').length,primaryEmpty:map.anchors.filter(a=>!a.geography.primary).length,unlocated:classifications.filter(c=>!c.scopes.length).length,withoutPoint:classifications.filter(c=>!c.anchorIds.length).length,archivedTracks:classifications.filter(c=>c.method==='region-archive'&&c.anchorIds.length).length,removed:removed.length,added:added.length},controls:controls.map(a=>({id:a.id,geography:a.geography})),coverage:auditCoverage(map,library,edits),taxonomy,classifications};
+const report={policy:'2026-10-08 二级特有曲优先，无特有曲则回退一级/适用野外；常态与战斗独立。未匹配曲按来源地区或专辑目录神像归档，归档不算播放覆盖；特殊地图不借点。新月神像纳入；全部pending，人工覆盖优先。',summary:{tracks:library.tracks.length,associations:library.associations.length,anchors:map.anchors.length,statues:map.anchors.filter(a=>a.kind==='statue').length,secondaryAssigned:map.anchors.filter(a=>a.geography.secondary).length,secondaryEmpty:map.anchors.filter(a=>!a.geography.secondary).length,distanceCandidates:map.anchors.filter(a=>a.geography.method==='landmark-distance').length,primaryEmpty:map.anchors.filter(a=>!a.geography.primary).length,unlocated:classifications.filter(c=>!c.scopes.length).length,withoutPoint:classifications.filter(c=>!c.anchorIds.length).length,archivedTracks:classifications.filter(c=>c.method==='region-archive'&&c.anchorIds.length).length,removed:removed.length,added:added.length},controls:controls.map(a=>({id:a.id,geography:a.geography})),coverage:auditCoverage(map,library,edits),taxonomy,classifications};
 // Preserve the first migration diff on an idempotent rerun.
 if(existingReport&&!removed.length&&!added.length){report.summary.removed=existingReport.summary.removed;report.summary.added=existingReport.summary.added;report.removed=existingReport.removed;report.added=existingReport.added;}
 else {report.removed=removed;report.added=added;}
 await fs.writeFile('public/data/kongying-map.json',JSON.stringify(map)+'\n');
 await fs.writeFile('public/data/music-library.json',JSON.stringify(library,null,2)+'\n');
 await fs.writeFile('data/review/geography-reclassification.json',JSON.stringify(report,null,2)+'\n');
-const lines=['# 统一地理目录与音乐挂载校对','',`当前 ${report.summary.tracks} 曲 / ${report.summary.associations} 关系，全部新生成关系pending。原说明、出处、个人评价和人工记录保持。`,'',`877点位：二级已填 ${report.summary.secondaryAssigned}，留空 ${report.summary.secondaryEmpty}，地标距离候选 ${report.summary.distanceCandidates}，一级待确定 ${report.summary.primaryEmpty}。`,'',`迁移新增 ${report.summary.added} / 移除 ${report.summary.removed} 关系；没有点位的曲目 ${report.summary.withoutPoint}，未确定地区 ${report.summary.unlocated}，神像归档 ${report.summary.archivedTracks}。`,'','官方地名来自实际渲染DOM的63一级/229二级标签。地标是文本标注位置，不是边界/建筑入口。V3转换为近似图像变换；同地区350单位以内、次近距离至少差80单位才自动归二级，地下不按地表距离归类。点位原说明中明确细地点优先。所有分类仍待校对；不是官方点位到区域API。','',...controls.map(a=>`- ${a.id}：${scopeLabel(a.geography)}${a.geography.secondary?'':' / 二级留空'}`),'','## 统一目录','', '| 国家 | 一级地区 | 二级地点 | 点位数 |','| --- | --- | --- | --- |',...taxonomy.sort((a,b)=>scopeKey(a).localeCompare(scopeKey(b),'zh-CN')).map(s=>`| ${s.country} | ${s.primary??'待确定'} | ${s.secondary??'（空）'} | ${map.anchors.filter(a=>scopeKey(a.geography)===scopeKey(s)).length} |`),'','## 无点位曲目','', '| 曲目ID | 曲名 | 统一分类 | 原出处 |','| --- | --- | --- | --- |',...classifications.filter(c=>!c.anchorIds.length).map(c=>`| ${c.trackId} | ${c.title} | ${c.scopes.map(scopeLabel).join('；')||'未定位'} | ${c.originText.replaceAll('\n','；').replaceAll('|','／')} |`),'','完整逐曲分类、迁移删加清单见data/review/geography-reclassification.json。MySQL历史数据未自动迁移，网页JSON为当前修订。'];
+const lines=['# 统一地理目录与音乐挂载校对','',`当前 ${report.summary.tracks} 曲 / ${report.summary.associations} 关系，全部新生成关系pending。原说明、出处、个人评价和人工记录保持。`,'',`${report.summary.anchors}点位（含${report.summary.statues}神像）：二级已填 ${report.summary.secondaryAssigned}，留空 ${report.summary.secondaryEmpty}，地标距离候选 ${report.summary.distanceCandidates}，一级待确定 ${report.summary.primaryEmpty}。`,'',`本轮新增 ${report.summary.added} / 移除 ${report.summary.removed} 关系；没有点位的曲目 ${report.summary.withoutPoint}，未确定地区 ${report.summary.unlocated}，神像归档 ${report.summary.archivedTracks}。`,'',report.policy,'','官方地名来自实际渲染DOM的63一级/229二级标签。地标是文本标注位置，不是边界/建筑入口。V3转换为近似图像变换；同地区350单位以内、次近距离至少差80单位才自动归二级，地下不按地表距离归类。点位原说明中明确细地点优先。所有分类仍待校对；不是官方点位到区域API。','',...controls.map(a=>`- ${a.id}：${scopeLabel(a.geography)}${a.geography.secondary?'':' / 二级留空'}`),'','## 统一目录','', '| 国家 | 一级地区 | 二级地点 | 点位数 |','| --- | --- | --- | --- |',...taxonomy.sort((a,b)=>scopeKey(a).localeCompare(scopeKey(b),'zh-CN')).map(s=>`| ${s.country} | ${s.primary??'待确定'} | ${s.secondary??'（空）'} | ${map.anchors.filter(a=>scopeKey(a.geography)===scopeKey(s)).length} |`),'','## 神像归档','', '无精确点位的Boss/角色/任务与无出处曲目均可归档。归档仅是校对仓库，不代表神像处的实际音乐，也不计常态/战斗覆盖。地区明确时先本范围神像，无神像则同国家；未知回顾曲按来源目录的专辑范围（可能多个国家）归档，不任取一个国家。','', '| 国家 | 神像数 | 归档关系数 |','| --- | --- | --- |',...[...new Set(map.anchors.filter(a=>a.kind==='statue').map(a=>a.country))].map(country=>`| ${country} | ${map.anchors.filter(a=>a.kind==='statue'&&a.country===country).length} | ${library.associations.filter(a=>a.matchType==='region-archive'&&map.anchors.find(p=>p.id===a.anchorId)?.country===country).length} |`),'','## 无点位曲目','', '| 曲目ID | 曲名 | 统一分类 | 原出处 |','| --- | --- | --- | --- |',...classifications.filter(c=>!c.anchorIds.length).map(c=>`| ${c.trackId} | ${c.title} | ${c.scopes.map(scopeLabel).join('；')||'未定位'} | ${c.originText.replaceAll('\n','；').replaceAll('|','／')} |`),'','完整逐曲分类、迁移删加清单见data/review/geography-reclassification.json。MySQL历史数据未自动迁移，网页JSON为当前修订。'];
 await fs.writeFile('docs/GEOGRAPHY_REVIEW.md',lines.join('\n')+'\n');
 console.log(JSON.stringify({changed:{removed:removed.length,added:added.length},...report.summary,coverage:report.coverage.summary},null,2));

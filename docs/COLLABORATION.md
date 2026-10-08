@@ -141,3 +141,7 @@ C3-04最终整合：Claude的原说明/出处设计沿用，Codex负责24专辑�
 ## C3-05：统一地理目录展示（2026-10-08）
 
 工单[ S3-GEOGRAPHY-UI-001 ](WORK_ORDERS/S3-GEOGRAPHY-UI-001.md)通过本机CLI2.1.291既有网关/stdin、禁用工具，固定--model claude-opus-5-5 --effort high。第一次命令的ContextFiles拼接失败未发模型，修正数组参数后成功；唯一modelUsage一致，无替换。Codex核对success/is_error/工单/文件白名单/唯一旧串后落盘MusicSidebar精确替换及CSS追加；结果摘要见WORK_ORDERS/S3-GEOGRAPHY-UI-001.RESULT.json。Claude主导一级/二级路径、折叠证据、单曲目录和开发候选展示，Codex负责来源/分类/重建/验证及Git，调用期间无同文件并发编辑，无凭据/内部推理入库。既有网关上游身份不可独立认证、内部effort无回显限制沿用。
+
+## C3-06：常态回退与神像存储数据修订
+
+2026-10-08，本轮没有前端文件改动，复用C3-05的右栏/目录/开发编辑设计，没有追加Claude调用或替换设计模型。Codex负责V3新月神像只读来源、分类/父范围回退/神像归档、生成数据、测试及记录/Git。48数据检查、6定向生产UI、2开发编辑UI与类型/构建通过；实际查看空之神殿回退/书院专曲、新月神像和蒙德神像。人工覆盖/评价保留、MySQL未同步。细节见MUSIC_FALLBACK_REVIEW.md。
