@@ -194,3 +194,6 @@ Claude实际工单S3-GEOGRAPHY-UI-001，CLI2.1.291，固定claude-opus-5-5/--eff
 阶段4采用App独立HTMLAudioElement与只读MySQL本机Vite服务；曲目浏览和播放分离。官方CLI不能取得浏览器URL/样本不可播时返回unavailable，不隐藏错误、不伪造进度，不截取或自行签名。用户提供按网易数字ID命名的原神本机文件可后备播放，Range支持seek；纯静态部署暂无服务。文件目录为空使真实音频验收阻塞，须补验后才宣称阶段4全通过。接口详见PLAYBACK_INTERFACE。
 
 收藏/播放列表与播放器用独立版本化localStorage；刷新不自动发声、不保存短时URL。数据损坏不覆盖，写失败反馈并保留已存个人库。现有评价/人工关联/地理JSON不迁移，MySQL只读不冒充最新地理同步。pending规则不变，未开发路线。用户本轮专辑/地区筛选以当前统一目录与文字交集实现，不联动切图。
+## D4-02：按数据库ID使用网易公开外链
+
+用户提出独立media/outer/url方案，两首实际200音频与浏览器控制/刷新通过，替代D4-01仅CLI判断音源的运行路径。当前本机文件优先，缺文件则网易公开入口；CLI的visible=false属于开发者应用，不作为独立公开入口的失败判断。无需新增前端设计或厂商凭据，provider标明netease-outer，preview未知null，CDN短时签名不持久化。失败仍如实反馈，不换同名替代。只验本机两首，不保证全曲库/长期服务/公网部署。细节NETEASE_OUTER_REVIEW。

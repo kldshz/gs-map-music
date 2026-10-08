@@ -1,5 +1,7 @@
 # NetStart音乐API可用性核实（2026-10-08，阶段4）
 
+追加：用户提醒文档中的独立网易media/outer/url入口，经实测两首原神音频可播放且已接入。此处NetStart托管API的404结论不覆盖网易公开外链；最新验收见[NETEASE_OUTER_REVIEW](NETEASE_OUTER_REVIEW.md)，历史阻塞描述仅限当时已测路径。
+
 用户提出使用 https://apis.netstart.cn/music/#/?id=获取音乐-url 。本轮实际读取站点HTML及其Docsify README.md，未读取或发送本机网易凭据、账号cookie、appId/privateKey。
 
 ## 文档事实

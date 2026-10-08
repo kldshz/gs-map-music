@@ -153,3 +153,6 @@ C3-04最终整合：Claude的原说明/出处设计沿用，Codex负责24专辑�
 Claude主导PlayerBar/PersonalLibrary、侧栏播放收藏列表入口与专辑地区筛选及CSS，R2实现侧栏内重命名/失败保留草稿与播放上下文。Codex审查工单文件白名单、唯一old替换落盘；局部修复未转义JSON引号、reactive解包、单曲入口位置、真实状态/未知时长、失效队列、个人库聚焦、手机队列遮挡/footer截断、储存失败反馈。Codex负责播放器/收藏存储/服务/数据库权限探针及验证，未替代Claude整体设计。结果摘要WORK_ORDERS/S4-PLAYER-UI-001.RESULT.json；原始响应仅.local/claude-runs。既有网关上游认证及内部effort无独立回显限制保持。
 
 实际网易skill位于.local/reference-netease-skills/netease-music-cli/SKILL.md；遵守不可播放visible=false、未调用其play或队列。真实原神音频缺失，未把模型交付或模拟媒体测试当发声通过。
+## C4-02：网易公开外链业务接入
+
+2026-10-08，用户提醒media/outer/url独立播放方案，Codex核实两首真实原神媒体并实现后端资源适配、PlaybackResource来源/试听未知契约与播放器来源状态文字、测试和记录。没有改变布局/视觉交互，沿用Claude C4-01交付，本轮无追加Claude调用或设计模型替换。未发送凭据、没有音频文件/CDN签名入库。真实两曲操作/循环/连续/刷新补验通过，62业务与7针对性UI/类型构建通过，见NETEASE_OUTER_REVIEW。

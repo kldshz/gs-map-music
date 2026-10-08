@@ -49,3 +49,6 @@ FAQ 的原文包括：“个人场景：暂不支持……仅可使用 ncm-cli �
 ## 2026-10-08：用户提供NetStart第三方接口
 
 实际查文档与当前原神歌曲探针：song/url单/双曲均HTTP404/Not Found，check/music返回暂无版权，没有取得音频URL。本轮不改默认provider、不发送官方平台凭据，不以第三方文档当官方资格或素材授权。详细URL/参数/响应见NETSTART_API_REVIEW；不是对全站永久失效的判断。
+## 2026-10-08：独立网易公开media/outer/url入口实测
+
+NetStart托管API404/官方CLI应用不可见不说明公开媒体不可用；此前遗漏该路径核实。用户明确引用外链后，1455706951/1455706952各302→网易audio/mpeg 200，实际Edge音频68.32/50.14秒与元数据相符。无开发者凭据/CLI令牌，不访问NetStart登录，不使用签名实现。现后端用MySQL数字ID探测固定外链再交Audio.src，临时CDN不持久化；preview=null/完整性未知不按全库承诺。真实控制/循环/连续/刷新及非静音解码通过，详见NETEASE_OUTER_REVIEW。

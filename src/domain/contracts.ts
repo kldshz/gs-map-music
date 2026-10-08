@@ -60,6 +60,7 @@ export interface TrackAnchor {
 }
 export interface MusicLibrary { schemaVersion:1; tracks:MusicTrack[]; associations:TrackAnchor[]; musicLocations?:MusicLocation[] }
 /** Runtime playback resolution. Short-lived URLs and audio files never enter the catalog or storage. */
+// preview=null means the provider does not report whether the resource is a preview.
 export type PlaybackResource =
-  | { status:'ready'; provider:'netease'|'local'; url:string; expiresAt:string|null; preview:boolean }
+  | { status:'ready'; provider:'netease'|'netease-outer'|'local'; url:string; expiresAt:string|null; preview:boolean|null }
   | { status:'unavailable'; reason:'missing'|'authentication'|'permission'|'copyright'|'expired'|'network'; message:string };

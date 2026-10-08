@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { useMusicPlayer, PLAYER_KEY } from '../../src/services/music-player';
 import { useMusicCollection, COLLECTION_KEY } from '../../src/services/music-collection';
-import { officialAvailability, parseRange } from '../../scripts/playback-service';
+import { officialAvailability, parseRange, resolveNeteaseOuter } from '../../scripts/playback-service';
 import type { MusicTrack, PlaybackResource } from '../../src/domain/contracts';
 
 class MemoryStorage implements Storage {
@@ -83,4 +83,18 @@ test('损坏个人库与存储写失败不会覆盖旧数据',()=>{
 });
 test('本机音频Range支持进度拖动，不接受多范围/越界请求',()=>{
  assert.equal(parseRange(undefined,100),null);assert.deepEqual(parseRange('bytes=30-',100),{start:30,end:99});assert.deepEqual(parseRange('bytes=-20',100),{start:80,end:99});assert.deepEqual(parseRange('bytes=0-1000',100),{start:0,end:99});assert.equal(parseRange('bytes=100-',100),false);assert.equal(parseRange('bytes=0-1,10-20',100),false);assert.equal(parseRange('bytes=-0',100),false);
+});
+
+test('网易公开外链只按数字ID探测：有效音频才ready，不暴露临时URL或把HTML/403当成功',async()=>{
+ let called=0;
+ const request=(async(url:string|URL|Request,options?:RequestInit)=>{
+  called++;assert.equal(String(url),'https://music.163.com/song/media/outer/url?id=1455706951.mp3');assert.equal(options?.method,'HEAD');
+  const result=new Response(null,{status:200,headers:{'Content-Type':'audio/mpeg'}});Object.defineProperty(result,'url',{value:'https://m10.music.126.net/temporary.mp3'});return result;
+ }) as typeof fetch;
+ const ready=await resolveNeteaseOuter('1455706951',request);assert.equal(ready.status,'ready');if(ready.status==='ready'){assert.equal(ready.provider,'netease-outer');assert.match(ready.url,/id=1455706951\.mp3$/);assert.equal(ready.preview,null);}
+ assert.equal((await resolveNeteaseOuter('../credentials',request)).status,'unavailable');assert.equal(called,1);
+ for(const [status,type,host] of [[403,'audio/mpeg','m10.music.126.net'],[200,'text/html','m10.music.126.net'],[200,'audio/mpeg','example.com']] as const){
+  const denied=await resolveNeteaseOuter('1455706951',(async()=>{const r=new Response(null,{status,headers:{'Content-Type':type}});Object.defineProperty(r,'url',{value:`https://${host}/file`});return r;}) as typeof fetch);assert.equal(denied.status,'unavailable');
+ }
+ assert.equal((await resolveNeteaseOuter('1455706951',(async()=>{throw Error('timeout');}) as typeof fetch)).status,'unavailable');
 });

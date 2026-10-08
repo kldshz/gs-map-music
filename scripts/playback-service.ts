@@ -10,15 +10,32 @@ import type { PlaybackResource } from '../src/domain/contracts';
 const run=promisify(execFile);
 const types:Record<string,string>={mp3:'audio/mpeg',flac:'audio/flac',wav:'audio/wav',ogg:'audio/ogg',m4a:'audio/mp4'};
 interface DatabaseTrack {id:string;title:string;neteaseId:string|null;encryptedId:string|null}
-const unavailable=(reason:'missing'|'authentication'|'permission'|'network',message:string):PlaybackResource=>({status:'unavailable',reason,message});
+const unavailable=(reason:'missing'|'authentication'|'permission'|'copyright'|'network',message:string):PlaybackResource=>({status:'unavailable',reason,message});
 
-/** Only the documented CLI is used. No signature extraction, URL interception or hidden API. */
+/** Historical developer-platform availability check; separate from the public media link. */
 export function officialAvailability(records:unknown,id:string):PlaybackResource{
   if(!Array.isArray(records))return unavailable('network','网易接口没有返回有效歌曲信息，请重试');
   const song=records.find(r=>r&&String(r.originalId)===id);
   if(!song)return unavailable('missing','网易查询没有找到当前数据库歌曲；未替换为同名歌曲');
   if(song.visible===false||song.playFlag===false)return unavailable('permission','网易当前应用不允许播放此曲，且未找到本机音频');
   return unavailable('permission','网易个人 CLI 不提供浏览器播放 URL；请使用本机音频或开通网页播放 API');
+}
+
+/** Public media link: no CLI authorization, account cookies or developer credentials. */
+export async function resolveNeteaseOuter(id:string,request:typeof fetch=fetch):Promise<PlaybackResource>{
+  if(!/^\d{1,20}$/.test(id))return unavailable('missing','没有有效的网易歌曲 ID');
+  const url=`https://music.163.com/song/media/outer/url?id=${id}.mp3`;
+  try{
+    const response=await request(url,{method:'HEAD',redirect:'follow',credentials:'omit',signal:AbortSignal.timeout(10000)});
+    const destination=new URL(response.url);
+    const mediaHost=destination.hostname==='music.126.net'||destination.hostname.endsWith('.music.126.net');
+    if(response.ok&&mediaHost&&['http:','https:'].includes(destination.protocol)&&/^audio\//i.test(response.headers.get('Content-Type')??'')){
+      // Keep the stable ID link; do not expose or persist its temporary signed CDN redirect.
+      return {status:'ready',provider:'netease-outer',url,expiresAt:null,preview:null};
+    }
+    if(response.status===403||response.status===404||!mediaHost)return unavailable('copyright','网易公开外链暂无可播放资源；可能受版权或服务限制');
+    return unavailable('network','网易公开外链没有返回有效音频，请稍后重试');
+  }catch{return unavailable('network','网易公开外链请求失败或超时，请检查网络后重试');}
 }
 
 export function parseRange(header:string|undefined,size:number):{start:number;end:number}|null|false{
@@ -36,7 +53,6 @@ export function playbackService():Plugin{
   let root='';
   const cached=new Map<string,{until:number,result:PlaybackResource}>(),pending=new Map<string,Promise<PlaybackResource>>();
   const dbCached=new Map<string,{until:number,track:DatabaseTrack}>();
-  let rateBlockedUntil=0;
   async function databaseTrack(id:string):Promise<DatabaseTrack|null>{
     if(!/^netease:\d{1,20}$/.test(id))return null;
     const existing=dbCached.get(id);if(existing&&existing.until>Date.now())return existing.track;
@@ -61,20 +77,12 @@ export function playbackService():Plugin{
   async function resolveTrack(track:DatabaseTrack):Promise<PlaybackResource>{
     if(await localFile(track))return {status:'ready',provider:'local',url:`/api/playback/audio?trackId=${encodeURIComponent(track.id)}`,expiresAt:null,preview:false};
     const saved=cached.get(track.id);if(saved&&saved.until>Date.now())return saved.result;
-    if(rateBlockedUntil>Date.now())return unavailable('permission','网易接口请求总量超限，请稍后再试；没有替代音源');
     const inFlight=pending.get(track.id);if(inFlight)return inFlight;
     const task=(async()=>{
       try{
-        const cli=resolve(process.env.LOCALAPPDATA??'', 'gs-map-music-tools/node_modules/@music163/ncm-cli/dist/index.js');
-        const {stdout}=await run(process.execPath,[cli,'search','song','--keyword',track.title,'--userInput','用户请求在原神地图音乐播放器中核实数据库歌曲播放权限，仅检索此原神曲目，不上传或下载'],{windowsHide:true,maxBuffer:8*1024*1024,timeout:20000});
-        if(/请求总量超限/.test(stdout)){rateBlockedUntil=Date.now()+60000;return unavailable('permission','网易接口请求总量超限，请稍后再试');}
-        const value=JSON.parse(stdout);
-        let result:PlaybackResource;
-        if(/未登录|请先登录|未授权|授权过期/.test(String(value.message??'')))result=unavailable('authentication','网易登录已失效，请在本机官方 CLI 重新登录');
-        else if(value.code!==200)result=unavailable('permission','网易接口未允许此请求，请检查本机应用权限');
-        else result=officialAvailability(value.data?.records,track.neteaseId!);
-        cached.set(track.id,{until:Date.now()+5*60000,result});return result;
-      }catch{return unavailable('network','网易官方 CLI 请求失败，请检查本机配置、登录与网络');}
+        const result=await resolveNeteaseOuter(track.neteaseId!);
+        cached.set(track.id,{until:Date.now()+(result.status==='ready'?60000:30000),result});return result;
+      }catch{return unavailable('network','网易公开外链请求失败，请稍后重试');}
       finally{pending.delete(track.id);}
     })();pending.set(track.id,task);return task;
   }

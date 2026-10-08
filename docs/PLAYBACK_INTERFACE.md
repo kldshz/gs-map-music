@@ -8,16 +8,22 @@ GET /api/playback/resolve?trackId=netease%3A1455706951：
 {"status":"ready","provider":"local","url":"/api/playback/audio?trackId=netease%3A1455706951","expiresAt":null,"preview":false}
 ```
 
-只在匹配本机文件存在且非空时返回ready。没有文件则官方CLI按数据库标题查询并严格匹配originalId；不可见/不可播、无匹配、认证、配额、网络均返回unavailable，不换同名歌曲。当前CLI没有网页URL，故不返回网易ready。该接口是项目本机服务，不是网易官方HTTP端点。
+匹配本机文件存在且非空时返回local ready。没有文件时，使用数据库数字ID组成网易公开媒体外链：`https://music.163.com/song/media/outer/url?id=<数字ID>.mp3`，无账号cookie或开发者凭据HEAD跟随重定向核实最终音频，再返回稳定ID链接给Audio.src。不是NetStart托管API，也不依赖官方CLI应用可见性。只有audio类型/网易music.126.net媒体域/成功状态才ready；HTML、403/404、超时返回unavailable，不换同名歌曲。该接口是项目本机服务，不是网易官方HTTP端点。
+
+```json
+{"status":"ready","provider":"netease-outer","url":"https://music.163.com/song/media/outer/url?id=1455706951.mp3","expiresAt":null,"preview":null}
+```
+
+preview=null表示公开外链不提供明确试听字段，不能默认宣称全曲。expiresAt=null表示稳定ID入口不报告过期时间，不表示重定向的CDN签名永久有效。CDN临时地址不返回/不持久化，下次解析/加载入口由网易重定向。实际浏览器playing事件才确认播放成功，HEAD成功不替代发声验收；CDN资源失败仍反馈媒体错误并可重试。已实测两首时长与目录相符，未全库验证或保证长期可用。
 
 ```json
 {"status":"unavailable","reason":"permission","message":"网易当前应用不允许播放此曲，且未找到本机音频"}
 ```
 
-reason包含missing/authentication/permission/network；不可用通常HTTP200供播放器展示，数据库读取失败503。曲目ID及网易ID不暴露密钥/账号/加密认证响应。数据库读取缓存60秒、官方不可用结果5分钟/同曲并发合并，配额暂停1分钟。
+reason包含missing/authentication/permission/copyright/expired/network；不可用通常HTTP200供播放器展示，数据库读取失败503。曲目ID及网易ID不暴露密钥/账号/加密认证响应。数据库读取缓存60秒、外链成功60秒/失败30秒/同曲并发合并，探测超时10秒。当前播放请求不调用CLI搜索、play或队列。
 
 GET/HEAD /api/playback/audio?trackId=...：仅流resources/local/audio/genshin/<数据库网易数字ID>.<小写扩展名>，mp3/flac/wav/ogg/m4a。200全量、206单Range、416无效/多Range、404文件移除；Accept-Ranges与Content-Type正确，无缓存。文件不转存public，不提交，不处理.ncm。文件存在不证明内容身份/许可，用户提供资源须与原神曲目一致，真实补验需核实解码。
 
-未来有明确网页API资格后在本机服务扩展provider=netease的短时URL，沿用PlaybackResource expiresAt/preview；URL不持久化、过期重取。当前没有实施未授权官方签名协议。静态托管不能运行MySQL/CLI插件，也不能直接嵌入本机凭据。
+未来有明确网页API资格后在本机服务扩展provider=netease的短时URL，沿用PlaybackResource expiresAt/preview；URL不持久化、过期重取。当前公开外链与开发者API资格分开，未实施厂商签名协议。静态托管不能运行本机MySQL/文件插件，也不能直接嵌入本机凭据；本轮仅验收本机dev/preview，不宣称HTTPS部署的跨源/HTTP媒体重定向行为已测。
 
 个人库与播放器各用版本化localStorage（gs-map-music.collection.v1、gs-map-music.player.v1）；只浏览器保存。既有评价、JSON与开发关联文件不自动同步；本轮MySQL只读。删除播放列表会删除当前浏览器副本，界面按钮明确。无账户跨设备同步，清浏览器数据会丢个人库。

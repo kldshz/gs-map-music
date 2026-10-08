@@ -60,7 +60,7 @@ export function useMusicPlayer(tracks:()=>MusicTrack[],options:PlayerOptions={})
       if(typeof resource.url!=='string'||!resource.url||!(/^(https?:\/\/|\/api\/playback\/audio\?)/.test(resource.url))){throw Error('无效音源');}
       expiry=resource.expiresAt?Date.parse(resource.expiresAt):null;
       if(expiry!==null&&(!Number.isFinite(expiry)||expiry<=Date.now())){status.value='unavailable';message.value='播放资源已过期，请重试';wantPlay=false;return;}
-      sourceNote=resource.preview?'试听资源':'真实音频';
+      sourceNote=resource.preview?'试听资源':resource.provider==='netease-outer'?'网易公开外链':'真实音频';
       const media=(options.createAudio??(()=>new Audio()))();audio=media;media.preload='metadata';media.volume=volume.value;
       if(!options.createAudio){media.hidden=true;media.setAttribute('aria-hidden','true');media.dataset.playerAudio='true';document.body.append(media);}
       const active=()=>token===version&&audio===media&&!disposed;

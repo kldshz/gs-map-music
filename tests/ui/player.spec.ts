@@ -39,9 +39,10 @@ test('播放资源请求可暂停取消，迟到响应不创建媒体',async({pa
  await page.route('**/api/playback/resolve?*',async route=>{await delay;await route.fulfill({json:{status:'unavailable',reason:'permission',message:'测试迟到响应'}});});
  await page.goto('/');await expect(page.locator('.anchor-list button')).toHaveCount(27);await selectTrack(page);await page.getByRole('button',{name:'播放此曲',exact:true}).click();await expect(page.locator('.player-status')).toContainText('获取');await page.locator('.player-bar').getByRole('button',{name:'暂停',exact:true}).click();release();await expect(page.locator('.player-status')).toContainText('已暂停');await expect(page.locator('audio')).toHaveCount(0);
 });
-test('真实MySQL/官方CLI读取不可用结果，不回退到外站同名曲或泄露配置',async({request})=>{
+test('真实MySQL读取数字ID解析网易外链，不回退到外站同名曲或泄露配置',async({request})=>{
  const r=await request.get('/api/playback/resolve?trackId=netease%3A1455706951');expect(r.status()).toBe(200);const result=await r.json();expect(['ready','unavailable']).toContain(result.status);if(result.status==='unavailable')expect(result.message).toContain('网易');
  expect(JSON.stringify(result)).not.toMatch(/privateKey|accessToken|AUTH_TOKEN/);
+ if(result.status==='ready')expect(result.url).toMatch(/^(https:\/\/music\.163\.com\/song\/media\/outer\/url\?id=1455706951\.mp3|\/api\/playback\/audio\?trackId=netease%3A1455706951)$/);
  const denied=await request.get('/api/playback/resolve?trackId=netease%3A1455706951',{headers:{Origin:'https://example.com'}});expect(denied.status()).toBe(403);
  const missing=await request.get('/api/playback/resolve?trackId=netease%3A000');expect((await missing.json()).status).toBe('unavailable');
 });
