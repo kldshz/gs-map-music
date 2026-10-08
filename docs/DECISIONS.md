@@ -140,3 +140,19 @@ API地区ID与本项目生成的目录节点键分开；地下目录自身API地
 通用战斗独立于普通场景覆盖，蒙德战斗覆盖蒙德源地区所有非城市点位，包括风龙废墟；野外场景仍优先精确音区。主键保留netease:，数字ID独立。新增关联pending，人工编辑优先，特殊地图不得借其他地区挂载。
 
 D3-OST-02：批量来源事实/候选分离；缺作曲null、不按曲序猜ID，空出处保留原文，区域归属优先实际说明其次明确场景专辑。未定位目录成对null，跨国回顾专辑不能一概归某国。完整区域名不是细地点专属普通场景，不挤掉同区野外补充；通用战斗独立覆盖，限定不扩大。来源和候选详见OST_BULK_IMPORT/OST_REVIEW。
+
+## 2026-10-08 常态与战斗覆盖补缺
+
+用户要求两类独立覆盖，并授权专辑/分碟低精度pending候选。范围修复新增446关系，独立地图补缺545关系，当前1663曲/8066关系；MySQL导入一致，人工编辑未改。非城市744锚点，两类均有609，仅战斗0，缺常态10（三界路飨祭），缺战斗135。空出处候选限定性仍需校对；详见docs/ANCHOR_MUSIC_REVIEW.md及docs/TRACK_SOURCE_GAPS.md，30组/545推定见data/review/anchor-music-fill.json。
+
+原出处不改写，城市不补通用战斗，明确Boss/任务曲不扩散，未展示特殊地图不挂载。新增pending不参加路线选曲，归档不计常态，人工删除优先。27数据测试、类型/构建通过；补缺及批量导入重复执行新增0。本轮无UI改动、无追加Claude调用或浏览器检查。复现顺序（node scripts/）：import-ost-batch.mjs retrospective → fill-anchor-music.mjs → audit-anchor-music.mjs → write-anchor-music-review.mjs。历史数量以本段为最新补充。
+
+## 2026-10-08 日文Wiki与词典交叉核对（最新）
+
+用户提供wikiwiki.jp/genshinwiki/BGM及genshin-dictionary.com/zh-CN。25专辑以专辑内唯一英文曲名对照1562首（不同珍珠卷严格分开），87首日文战斗相关，另21首两源描述不同保留原战斗属性待校对；578首原BWIKI出处缺失中565首取得补充信息。321词典词条用于地名，未收录词保留日文。原BWIKI原文及人工编辑/评价保持，补充分类、原文、译文和URL在metadataNotes，页面歌曲信息可见。
+
+网页JSON当前1663曲/9774关系，全部pending。自动候选按新证据修正，旧低精度/自动关系撤销留审查记录，人工覆盖不变；不按相邻序号猜歌曲ID。非城市740锚点（荆夫港/风车镇明确排除），两类均有650，缺常态0，仅战斗0，缺战斗90：空之神殿20、悠悠度假村24、三界路飨祭10、沉玉谷29、风息山7。覆盖含专辑推定，不等于实际音区验证。
+
+日文战斗/未匹配清单见docs/JA_BGM_REVIEW.md；点位清单见docs/ANCHOR_MUSIC_REVIEW.md；原出处缺失见docs/TRACK_SOURCE_GAPS.md。新的来源事实在data/sources/ja-bgm-crosscheck.json。普通战斗与Boss/限定音区分开（层岩势若风雷限定危途疑踪；临阵的战栗通用；渊下宫独立；冰风组曲不铺全图）。隐藏特殊地图不挂载，归档不计场景。未唯一匹配或词典未收录部分仍需人工校对。
+
+重放顺序：import-ost-batch.mjs retrospective → import-ja-bgm.mjs → fill-anchor-music.mjs → audit-anchor-music.mjs → write-anchor-music-review.mjs → write-ja-bgm-review.mjs（均node scripts/）。重复导入及补缺新增/删除0；32数据检查与类型/构建通过，2项批量OST浏览器测试通过。无UI代码改动、无追加Claude调用。本轮未把新修订覆盖到MySQL；其既有增量导入保留旧候选/元数据，不宣称与网页同步。仍阶段3，未启动播放/路线。

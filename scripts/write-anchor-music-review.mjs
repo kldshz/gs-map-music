@@ -1,0 +1,28 @@
+import fs from 'node:fs/promises';
+const read=async path=>JSON.parse(await fs.readFile(path,'utf8'));
+const coverage=await read('data/review/anchor-music-coverage.json'),fill=await read('data/review/anchor-music-fill.json');
+const map=await read('public/data/kongying-map.json'),library=await read('public/data/music-library.json');
+const anchors=new Map(map.anchors.map(p=>[p.id,p])),tracks=new Map(library.tracks.map(t=>[t.id,t]));
+const cell=v=>String(v??'').replaceAll('|','／').replaceAll('\n','；');
+let md='# 锚点音乐缺失与推定校对清单\n\n2026-10-08。按有效曲库（含人工增删）统计；排除城市、神像、隐藏点位及未挂载特殊地图。所有关联仍待校对，覆盖不是实际游戏播放验证。\n\n';
+md+=`非城市锚点 ${coverage.summary.nonCityWaypoints} 个；两类均有 ${coverage.summary.withBoth} 个；仅战斗 ${coverage.summary.battleOnly} 个；缺常态 ${coverage.summary.missingScene} 个；缺战斗 ${coverage.summary.missingBattle} 个（两类缺失可重叠）。\n\n`;
+md+='## 1. 仍缺常态音乐\n\n';
+md+='| 地区 | 点位说明 | 点位 ID | 你的校对（歌曲或无音乐例外） |\n| --- | --- | --- | --- |\n';
+for(const p of coverage.missingScene)md+=`| ${cell(anchors.get(p.id).areaName)} | ${cell(p.place)} | ${p.id} | |\n`;
+md+='\n## 2. 仍缺通用战斗音乐\n\n不借用其他独立地图的战斗曲，不把已知 Boss 限定曲扩散。请检查是否存在通用曲或该点位确属例外。\n\n';
+md+='| 地区 | 点位说明 | 点位 ID | 你的校对（歌曲或例外） |\n| --- | --- | --- | --- |\n';
+for(const p of coverage.missingBattle)md+=`| ${cell(anchors.get(p.id).areaName)} | ${cell(p.place)} | ${p.id} | |\n`;
+md+='\n## 3. 本轮低精度推定，优先检查\n\n按专辑/分碟补缺，不是逐点确认。空出处曲目可能实际属于城市、任务或限定战斗，请重点校对。地区内只补缺失类别，已有精确曲目不替换。\n\n';
+const groups=new Map();
+const active=new Set(library.associations.filter(a=>a.id.startsWith('coverage:')).map(a=>a.trackId+'|'+a.anchorId));
+const seen=new Set();
+for(const a of fill.additions){const pair=a.trackId+'|'+a.anchorId;if(!active.has(pair)||seen.has(pair))continue;seen.add(pair);const key=a.areaCode+'|'+a.role+'|'+a.trackId;const g=groups.get(key)??{...a,anchors:[]};g.anchors.push(a.anchorId);groups.set(key,g);}
+md+='| 地区 | 类别 | 候选曲目／ID | 专辑与分碟 | 原出处 | 补入点位数 | 你的校对 |\n| --- | --- | --- | --- | --- | --- | --- |\n';
+for(const g of groups.values())md+=`| ${cell(anchors.get(g.anchorId).areaName)} | ${g.role==='scene'?'常态':'战斗'} | ${cell(tracks.get(g.trackId).title)}／${g.trackId} | ${cell(g.album+' / '+g.discTitle)} | ${cell(g.originText||'缺失')} | ${g.anchors.length} | |\n`;
+md+='\n精确的候选—点位列表见 `data/review/anchor-music-fill.json` 的 additions。歌曲原出处缺失清单见 [曲目出处缺失](TRACK_SOURCE_GAPS.md)。你可以填写表格的校对列，或通过开发网页增删关联；不要直接将 pending 批量改成 verified。\n';
+await fs.writeFile('docs/ANCHOR_MUSIC_REVIEW.md',md);
+const missing=library.tracks.filter(t=>!t.sceneInfo?.originText?.trim()||/^[\s/—-]+$/.test(t.sceneInfo.originText));
+let gaps=`# 曲目出处缺失\n\n当前曲库 ${missing.length} 首原始出处为空或占位符。按专辑/分碟推定不会改写原出处；已有曲目来源页面仍可查阅。\n\n| 专辑 | 曲目／ID | 分碟 | 来源 | 你的补充（地点与依据） |\n| --- | --- | --- | --- | --- |\n`;
+for(const t of missing)gaps+=`| ${cell(t.album)} | ${cell(t.title)}／${t.id} | ${cell(t.sceneInfo?.discTitle)} | ${cell(t.sceneInfo?.wikiSourceUrl||t.sourceUrl)} | |\n`;
+await fs.writeFile('docs/TRACK_SOURCE_GAPS.md',gaps);
+console.log(JSON.stringify({missingOrigins:missing.length,inferredGroups:groups.size}));

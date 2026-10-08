@@ -1,9 +1,10 @@
 /** Candidate geography uses source origin and actual point headers, never song titles. */
+import {jaEvidence,supplementalKind,supplementalScopes} from './ja-bgm-evidence.mjs';
 export const bannedArea = code => /^A:(APPLE|VELURIYAM|SIMULANKA):/.test(code);
 export const pointHeader = a => a.content.match(/【([^】]+)】/)?.[1] ?? '';
 export function isCity(a) {
   // Inspect the geographic header, not quest unlock instructions mentioning a distant city.
-  return /蒙德城|璃月港|稻妻城|须弥城|枫丹廷(?:区)?\s*·\s*(?:纳博内区|利奥奈区|灰河)|枫丹廷\s*·\s*沫芒宫|那夏镇|皮拉米达城|至冬堡|凝露镇|海屑镇|彩冰镇|奥古洛夫镇|白淞镇|离岛|奥摩斯港/.test(pointHeader(a));
+  return /蒙德城|璃月港|稻妻城|须弥城|枫丹廷(?:区)?\s*·\s*(?:纳博内区|利奥奈区|灰河)|枫丹廷\s*·\s*沫芒宫|那夏镇|皮拉米达城|至冬堡|凝露镇|海屑镇|彩冰镇|奥古洛夫镇|白淞镇|离岛|奥摩斯港|荆夫港|风车镇/.test(pointHeader(a));
 }
 const albumAreas = {
  '风与异乡人':['A:MD:MENGDE'],'皎月云间之梦':['A:LY:LIYUE'],'漩涡、落星与冰山':['A:MD:XUESHAN'],
@@ -28,11 +29,15 @@ const broadScopes = [
  [/^远古圣山(?:$|[（(])/,['A:NT:NATA4']],
  [/远古圣山战斗/,['A:NT:NATA4']],
  [/霜月战斗/,['A:NDKL:SY']],
+ [/^野外\s*(?:白天|夜晚)/,['A:ZD:ZHIDONG1']],
 ];
 const primary = s => s.split('\n').filter(x=>!x.includes('《原神》EP')&&!x.includes('旅行历程'))[0]??'';
 const useful = s => s.trim()&&!/^[\s/—-]+$/.test(s);
 const clean = s => s.replace(/[「」『』“”]/g,'').trim();
 export function category(t) {
+  const extra=jaEvidence.get(t.id??(t.neteaseId?'netease:'+t.neteaseId:''));
+  const supplemented=supplementalKind(extra);if(supplemented)return supplemented;
+  const note=t.metadataNotes?.find(n=>n.startsWith('日文Wiki分类：'));if(note)return note.slice('日文Wiki分类：'.length);
   const o=primary(t.originText);
   if(!useful(o))return 'missing-source';
   if(/非战斗|战斗状态仍然使用/.test(o))return 'scene';
@@ -52,7 +57,8 @@ function special(album,t) {
   return null;
 }
 export function classifyOne(album,t,map) {
-  const kind=category(t),o=clean(primary(t.originText));
+  const extra=jaEvidence.get(t.id??'netease:'+t.neteaseId);
+  const kind=category(t),o=clean(extra?.conflict?primary(t.originText):kind.startsWith('battle-')&&extra?.placeZh?.trim()?extra.placeZh:[primary(t.originText),extra?.placeZh].filter(s=>s&&useful(s)).join('、'));
   const specialCode=special(album,t);
   if(specialCode)return {kind:'special-map',areaCodes:[specialCode],countries:[map.areas.find(a=>a.code===specialCode).name.replace(/\(.+\)/,'')],points:[],terms:[],reason:'特殊地图只记录地区目录，不挂当前点位。'};
   const tokens=[];
@@ -83,15 +89,16 @@ export function classifyOne(album,t,map) {
     for(const code of areaCodes){const area=map.areas.find(a=>a.code===code);const root=map.areas.find(a=>a.id===area.parentId);if(!countries.includes(root.name))countries.push(root.name);}
   }
   if(!areaCodes.length&&countries.length)areaCodes=map.areas.filter(a=>a.isFinal&&countries.includes(map.areas.find(p=>p.id===a.parentId)?.name)&&a.hiddenFlag!==3).map(a=>a.code);
-  const broad=broadScopes.find(([r])=>r.test(o));
+  const broad=broadScopes.find(([r])=>[o,primary(t.originText),extra?.placeZh??''].some(s=>r.test(s))&&(!r.source.startsWith('^野外')||album.title==='悯宥慈怜之垠'));
   if(broad&&(kind==='battle-generic'||kind==='scene'))areaCodes=broad[1];
   if(kind==='battle-generic'&&album.title==='悯宥慈怜之垠')areaCodes=['A:ZD:ZHIDONG1'];
+  const extraScopes=supplementalScopes(extra,map);if(extraScopes)areaCodes=extraScopes;
   let points=exact.map(({a})=>a);
   let method='place-match',reason='出处地名与点位地理标题交叉匹配，实际音区仍待校对。';
   if(kind==='battle-generic'){
-    points=map.anchors.filter(a=>areaCodes.includes(a.areaCode)&&!isCity(a)&&!bannedArea(a.areaCode));method='region-scope';reason='通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。';
-  }else if(kind==='scene'&&broad){
-    points=map.anchors.filter(a=>areaCodes.includes(a.areaCode)&&!isCity(a)&&!bannedArea(a.areaCode));method='region-scope';reason='野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。';
+    points=map.anchors.filter(a=>areaCodes.includes(a.areaCode)&&!isCity(a)&&!bannedArea(a.areaCode)&&a.hiddenFlag!==3);method='region-scope';reason='通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。';
+  }else if(kind==='scene'&&(broad||extraScopes)){
+    points=map.anchors.filter(a=>areaCodes.includes(a.areaCode)&&!isCity(a)&&!bannedArea(a.areaCode)&&a.hiddenFlag!==3);method='region-scope';reason='野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。';
   }else if(!points.length&&kind!=='battle-limited'&&countries.length){
     // Archive only within a known namespace, never turn the absence of coordinates into a fact.
     points=map.anchors.filter(a=>a.kind==='statue'&&areaCodes.includes(a.areaCode)&&!bannedArea(a.areaCode)&&a.hiddenFlag!==3);method='region-archive';reason='缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。';
@@ -109,5 +116,14 @@ export function generateAssociations(source,map,existing) {
   const broadNames=new Set(map.areas.filter(a=>a.isFinal).flatMap(a=>[a.name,...a.name.split('、')]));
   for(const c of candidates)if(c.classification.kind==='scene'&&c.classification.method==='place-match'&&c.classification.terms.some(t=>!broadNames.has(t)))for(const p of c.classification.points)occupied.add(p.id);
   for(const c of candidates){if(c.classification.kind==='scene'&&c.classification.method==='region-scope')c.classification.points=c.classification.points.filter(p=>!occupied.has(p.id));}
+  // Geographic parent scopes fill only scene gaps, independently of battle/task links.
+  const sceneCovered=new Set(occupied);
+  for(const c of candidates)if(c.classification.kind==='scene'&&c.classification.method!=='region-archive')for(const p of c.classification.points)sceneCovered.add(p.id);
+  for(const p of map.anchors){
+    if(p.kind!=='waypoint'||isCity(p)||bannedArea(p.areaCode)||p.hiddenFlag===3||sceneCovered.has(p.id))continue;
+    const header=clean(pointHeader(p).replace(new RegExp('^'+p.country+'\\s*'),''));
+    const parents=candidates.filter(c=>c.classification.kind==='scene'&&c.classification.method==='place-match'&&c.classification.areaCodes.includes(p.areaCode)&&c.classification.terms.some(term=>header.startsWith(term+' · ')||header.startsWith(term+'·')||header.startsWith(term+'-')));
+    for(const c of parents){c.classification.points.push(p);c.classification.reason='出处地名匹配同地区点位地理标题的父级范围；仅补缺少常态场景音乐的点位，实际音区待校对。';}
+  }
   return candidates;
 }

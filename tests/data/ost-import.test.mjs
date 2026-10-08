@@ -2,10 +2,25 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {generateAssociations,category,isCity,bannedArea} from '../../scripts/lib/ost-associations.mjs';
+import {auditCoverage} from '../../scripts/audit-anchor-music.mjs';
 const source=JSON.parse(fs.readFileSync('data/sources/ost-bulk-source.json'));
 const map=JSON.parse(fs.readFileSync('public/data/kongying-map.json'));
 const library=JSON.parse(fs.readFileSync('public/data/music-library.json'));
 const candidates=generateAssociations(source,map,library);
+test('至冬明确野外出处补常态缺口，战斗关联不阻止补充；父级地点包含子点位',()=>{
+ const outdoor=candidates.find(c=>c.album.title==='悯宥慈怜之垠'&&c.track.originText==='野外 白天2');
+ assert.equal(outdoor.classification.method,'region-scope');assert(outdoor.classification.points.length>0);
+ assert(outdoor.classification.points.every(p=>p.areaCode==='A:ZD:ZHIDONG1'&&!isCity(p)));
+ const moon=candidates.find(c=>c.album.title==='珍珠之歌6'&&c.track.originText==='乌吉恩圈');
+ assert(moon.classification.points.some(p=>p.content.includes('乌吉恩圈 · 动力引擎')));
+});
+test('覆盖审计分别统计常态与战斗，归档不算场景，尊重人工删除',()=>{
+ const snapshot={anchors:[{id:'p',kind:'waypoint',areaCode:'A:MD:MENGDE',hiddenFlag:0,content:'【蒙德 望风山地】'}]};
+ const data={tracks:[{id:'s',sceneInfo:{originText:'蒙德野外',discTitle:''}},{id:'b',sceneInfo:{originText:'蒙德战斗',discTitle:''}}],associations:[{trackId:'s',anchorId:'p',matchType:'region-scope'},{trackId:'b',anchorId:'p',matchType:'region-scope'}]};
+ assert.equal(auditCoverage(snapshot,data,{edits:[]}).summary.withBoth,1);
+ assert.equal(auditCoverage(snapshot,data,{edits:[{trackId:'s',anchorId:'p',action:'remove'}]}).summary.battleOnly,1);
+ assert.equal(auditCoverage(snapshot,{...data,associations:[{trackId:'s',anchorId:'p',matchType:'region-archive'}]},{edits:[]}).summary.missingScene,1);
+});
 test('24张专辑官方ID/标题一一匹配；作曲缺失留空，重复caption与标题差异保留',()=>{
  assert.equal(source.albums.length,24);assert(!source.conflicts.some(c=>c.type==='song-match'));
  const seen=new Set();for(const a of source.albums){assert.equal(a.tracks.length,a.expectedTracks);assert.equal(a.unmatchedNetease.length,0);for(const t of a.tracks){assert.match(t.neteaseId,/^\d+$/);assert.match(t.neteaseEncryptedId,/^[A-Fa-f0-9]{32}$/);assert(!seen.has(t.neteaseId));seen.add(t.neteaseId);assert(!t.composers.includes('/'));}}
