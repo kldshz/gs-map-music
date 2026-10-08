@@ -26,9 +26,9 @@ test('24张专辑官方ID/标题一一匹配；作曲缺失留空，重复captio
  const seen=new Set();for(const a of source.albums){assert.equal(a.tracks.length,a.expectedTracks);assert.equal(a.unmatchedNetease.length,0);for(const t of a.tracks){assert.match(t.neteaseId,/^\d+$/);assert.match(t.neteaseEncryptedId,/^[A-Fa-f0-9]{32}$/);assert(!seen.has(t.neteaseId));seen.add(t.neteaseId);assert(!t.composers.includes('/'));}}
  assert(source.conflicts.some(c=>c.type==='album-version'));assert(source.conflicts.some(c=>c.type==='disc-caption'));
 });
-test('通用战斗覆盖非城市专属点位；限定Boss不扩散；来源未知战斗不猜全图',()=>{
+test('通用战斗排除独占Boss和城市，补风息山；限定Boss不扩散；来源未知不猜全图',()=>{
  const general=candidates.find(c=>c.track.wikiTitle==='战斗的秘仪').classification;
- assert.equal(general.points.length,25);assert(general.points.some(a=>a.content.includes('风龙废墟')));assert(general.points.every(a=>!isCity(a)));
+ assert(general.points.length>0);assert(!general.points.some(a=>a.content.includes('风龙废墟')));assert(general.points.some(a=>a.areaCode==='A:MD:FENGXISHAN'));assert(general.points.every(a=>!isCity(a)));
  const forest=candidates.find(c=>c.track.wikiTitle==='洄映的漩流').classification;assert(forest.points.length);assert(forest.points.every(a=>a.areaCode==='A:XM:FOREST'&&!isCity(a)));
  const boss=candidates.find(c=>c.track.wikiTitle==='终天的闭幕曲').classification;assert.equal(boss.points.length,5);assert(boss.points.every(a=>a.content.includes('风龙废墟')));
  const limited=candidates.find(c=>c.track.wikiTitle==='六轮一露狂诗曲').classification;assert.equal(limited.points.length,0);assert.deepEqual(limited.countries,['须弥']);

@@ -12,10 +12,10 @@ test('未定位目录成对null且不引用虚构地区，保留来源与多对�
  sample.musicLocations[0].areaCode='A:MD:MENGDE';assert.throws(()=>validateLibrary(sample,ids,map));
 });
 test('扩库后人工remove覆盖基线，重复应用不恢复或复制；新增pending与个人评价保持',()=>{
- const base=validateLibrary(raw,ids,map),a=base.associations.find(a=>a.id.startsWith('ost:'))!;
+ const base=validateLibrary(raw,ids,map),a=base.associations.find(a=>a.id.startsWith('geo:'))!;
  const edits={schemaVersion:1,edits:[{trackId:a.trackId,anchorId:a.anchorId,action:'remove',updatedAt:'2026-10-07T12:00:00Z'}]};
  const effective=applyAssociationEdits(base,map,edits);
  assert(!effective.associations.some(x=>x.trackId===a.trackId&&x.anchorId===a.anchorId));
  assert.deepEqual(applyAssociationEdits(effective,map,edits),effective);assert.deepEqual(effective.tracks,base.tracks);
- assert(base.associations.filter(a=>a.id.startsWith('ost:')).every(a=>a.evidenceStatus==='pending'));
+ assert(base.associations.filter(a=>a.id.startsWith('geo:')).every(a=>a.evidenceStatus==='pending'));
 });

@@ -1,7 +1,9 @@
 import {test,expect} from '@playwright/test';
 import fs from 'node:fs';
 const library=JSON.parse(fs.readFileSync('public/data/music-library.json','utf8'));
-const review=JSON.parse(fs.readFileSync('data/review/ost-association-review.json','utf8'));
+const map=JSON.parse(fs.readFileSync('public/data/kongying-map.json','utf8'));
+const report=JSON.parse(fs.readFileSync('data/review/geography-reclassification.json','utf8'));
+const review={tracks:report.classifications.map((t:any)=>({...t,id:t.trackId,countries:[...new Set(t.scopes.map((s:any)=>s.country))],areaCodes:[...new Set(t.anchorIds.map((id:string)=>map.anchors.find((a:any)=>a.id===id).areaCode))]}))};
 test.setTimeout(60000);
 async function open(page:any,id:string){
  await page.getByRole('button',{name:'曲目检索',exact:true}).click();
@@ -19,7 +21,7 @@ test('全批次检索/原出处/限定未挂与特殊地图零挂载，保留全
  await expect(page.locator('.location-list button')).toHaveCount(0);await expect(page.locator('.origin-text')).toContainText('正机之神');
  const unknown=review.tracks.find((t:any)=>!t.countries.length);await open(page,unknown.id);await expect(page.locator('.detail-view')).toContainText('未定位');
  const battle=review.tracks.find((t:any)=>t.title.startsWith('战斗的秘仪'));await open(page,battle.id);
- await expect(page.locator('.location-list button')).toHaveCount(25);await page.getByRole('button',{name:'在地图上定位全部'}).click();await expect(page.locator('.music-anchor.is-highlighted')).toHaveCount(25);
+ const count=library.associations.filter((a:any)=>a.trackId===battle.id).length;await expect(page.locator('.location-list button')).toHaveCount(count);await page.getByRole('button',{name:'在地图上定位全部'}).click();await expect(page.locator('.music-anchor.is-highlighted')).toHaveCount(count);
  await expect(page.locator('.association-detail')).toHaveCount(0);await page.screenshot({path:'.local/browser-tests/ost-bulk-battle.png'});
 });
 test('悠悠度假村与霜月真实点位支持反向定位，手机长说明可读',async({page})=>{

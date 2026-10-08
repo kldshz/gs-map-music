@@ -13,14 +13,14 @@ for(const p of coverage.missingScene)md+=`| ${cell(anchors.get(p.id).areaName)} 
 md+='\n## 2. 仍缺通用战斗音乐\n\n不借用其他独立地图的战斗曲，不把已知 Boss 限定曲扩散。请检查是否存在通用曲或该点位确属例外。\n\n';
 md+='| 地区 | 点位说明 | 点位 ID | 你的校对（歌曲或例外） |\n| --- | --- | --- | --- |\n';
 for(const p of coverage.missingBattle)md+=`| ${cell(anchors.get(p.id).areaName)} | ${cell(p.place)} | ${p.id} | |\n`;
-md+='\n## 3. 本轮低精度推定，优先检查\n\n按专辑/分碟补缺，不是逐点确认。仍无出处的曲目已移除普通锚点挂载；下列候选仍需核验音区。地区内只补缺失类别，已有精确曲目不替换。\n\n';
+md+='\n## 3. 历史专辑/分碟推定（已撤销自动补缺规则）\n\n当前以 [统一地理目录](GEOGRAPHY_REVIEW.md) 和 `data/review/geography-reclassification.json` 为准；不能再从整张专辑任取地点曲填满空点。下表仅显示仍有效的历史coverage关系（当前为零）。无证据保留缺口；悠悠度假村、旧日之海、空之神殿不借国家战斗音乐。\n\n';
 const groups=new Map();
 const active=new Set(library.associations.filter(a=>a.id.startsWith('coverage:')).map(a=>a.trackId+'|'+a.anchorId));
 const seen=new Set();
 for(const a of fill.additions){const pair=a.trackId+'|'+a.anchorId;if(!active.has(pair)||seen.has(pair))continue;seen.add(pair);const key=a.areaCode+'|'+a.role+'|'+a.trackId;const g=groups.get(key)??{...a,anchors:[]};g.anchors.push(a.anchorId);groups.set(key,g);}
 md+='| 地区 | 类别 | 候选曲目／ID | 专辑与分碟 | 原出处 | 补入点位数 | 你的校对 |\n| --- | --- | --- | --- | --- | --- | --- |\n';
 for(const g of groups.values())md+=`| ${cell(anchors.get(g.anchorId).areaName)} | ${g.role==='scene'?'常态':'战斗'} | ${cell(tracks.get(g.trackId).title)}／${g.trackId} | ${cell(g.album+' / '+g.discTitle)} | ${cell(g.originText||'缺失')} | ${g.anchors.length} | |\n`;
-md+='\n精确的候选—点位列表见 `data/review/anchor-music-fill.json` 的 additions。歌曲原出处缺失清单见 [曲目出处缺失](TRACK_SOURCE_GAPS.md)。你可以填写表格的校对列，或通过开发网页增删关联；不要直接将 pending 批量改成 verified。\n';
+md+='\n历史推定来源保留 `data/review/anchor-music-fill.json` 的 additions，不代表当前挂载。当前统一目录/迁移清单见 [地理校对](GEOGRAPHY_REVIEW.md)。歌曲原出处缺失清单见 [曲目出处缺失](TRACK_SOURCE_GAPS.md)。可以填写校对列或通过开发网页增删关联；不要直接将 pending 批量改成 verified。\n';
 await fs.writeFile('docs/ANCHOR_MUSIC_REVIEW.md',md);
 const missing=library.tracks.filter(t=>!hasOrigin({...t.sceneInfo,id:t.id}));
 let gaps=`# 曲目出处缺失\n\n当前曲库 ${missing.length} 首在中文与日文对照后仍缺少出处。仅按可确定地区神像归档，不能确定地区或没有神像则不挂载。\n\n| 专辑 | 曲目／ID | 分碟 | 来源 | 你的补充（地点与依据） |\n| --- | --- | --- | --- | --- |\n`;

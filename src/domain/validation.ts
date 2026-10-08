@@ -5,6 +5,7 @@ const nullable=(v:unknown)=>v===null||text(v);
 const texts=(v:unknown)=>Array.isArray(v)&&v.every(text);
 const pair=(v:unknown)=>Array.isArray(v)&&v.length===2&&v.every(n=>typeof n==='number'&&Number.isFinite(n));
 const url=(v:unknown)=>{if(v===null)return true;if(!text(v))return false;try{return ['http:','https:'].includes(new URL(v).protocol)}catch{return false}};
+const geographicScope=(v:unknown)=>record(v)&&text(v.country)&&nullable(v.primary)&&nullable(v.secondary)&&(!v.secondary||!!v.primary);
 function unique(rows:unknown[],label:string){const keys=new Set();for(const row of rows){if(!record(row)||!text(row.id)||!row.id.trim())throw new Error(`${label}ID无效`);if(keys.has(row.id))throw new Error(`${label}ID重复：${row.id}`);keys.add(row.id)}}
 export function validateSnapshot(value:unknown):MapSnapshot {
   if(!record(value)||value.schemaVersion!==1||!Array.isArray(value.areas)||!Array.isArray(value.anchors)||!record(value.tiles)||!record(value.plugins)||!text(value.capturedOn))throw new Error('地图资源包格式错误');
@@ -26,6 +27,7 @@ export function validateSnapshot(value:unknown):MapSnapshot {
   unique(value.anchors,'点位');
   for(const a of value.anchors){
     if(!record(a)||!text(a.name)||!Number.isInteger(a.sourceId)||!text(a.country)||!text(a.areaName)||!['waypoint','statue'].includes(String(a.kind))||!value.areas.some(area=>area.id===a.areaId&&area.code===a.areaCode)||!(a.position===null||pair(a.position))||!texts(a.layerValues)||typeof a.underground!=='boolean'||!text(a.content)||!text(a.sourceUrl)||!url(a.sourceUrl)||!url(a.iconUrl))throw new Error(`点位字段无效：${a?.id}`);
+    if(a.geography!==undefined){const g=a.geography;if(!geographicScope(g)||!record(g)||g.country!==a.country||!['source-header','landmark-distance','unresolved'].includes(String(g.method))||g.evidenceStatus!=='pending'||!(g.distance===null||(typeof g.distance==='number'&&Number.isFinite(g.distance)&&g.distance>=0))||!text(g.sourceUrl)||!url(g.sourceUrl))throw new Error('统一点位地理分类无效');}
   }
   for(const [key,t] of Object.entries(value.tiles)){
     if(!record(t)||(t.extend!==undefined&&!text(t.extend)))throw new Error(`地图配置无效：${key}`);
@@ -53,6 +55,7 @@ export function validateLibrary(value:unknown,anchorIds:Set<string>,snapshot?:Ma
     if(t.sceneInfo!==undefined){
       const s=t.sceneInfo;
       if(!record(s)||!text(s.wikiTitle)||!text(s.englishTitle)||!Number.isInteger(s.discNumber)||Number(s.discNumber)<1||!text(s.discTitle)||!Number.isInteger(s.trackNumber)||Number(s.trackNumber)<1||!text(s.originText)||!texts(s.mainRegions)||!texts(s.musicLocationIds)||!(s.musicLocationIds as string[]).every(id=>locationIds.has(id))||!text(s.wikiSourceUrl)||!url(s.wikiSourceUrl)||!text(s.wikiRevisionId)||!texts(s.metadataNotes))throw new Error('Wiki出处字段或地点引用无效');
+      if(s.geographicScopes!==undefined&&(!Array.isArray(s.geographicScopes)||!s.geographicScopes.every(geographicScope)))throw new Error('统一歌曲地理分类无效');
     }
   }
   const edges=new Set<string>(),anchorById=new Map(snapshot?.anchors.map(a=>[a.id,a]));
@@ -66,7 +69,7 @@ export function validateLibrary(value:unknown,anchorIds:Set<string>,snapshot?:Ma
     const edge=JSON.stringify([a.trackId,a.anchorId]);if(edges.has(edge))throw new Error('重复曲目—点位关联');edges.add(edge);
   }
   return {schemaVersion:1,tracks:value.tracks.map(t=>({id:t.id,title:t.title,artists:t.artists,composers:t.composers,album:t.album,releaseDate:t.releaseDate,durationSeconds:t.durationSeconds,description:t.description,neteaseId:t.neteaseId,sourceUrl:t.sourceUrl,
-    ...(t.personalNote!==undefined?{personalNote:t.personalNote}:{}),...(t.neteaseEncryptedId!==undefined?{neteaseEncryptedId:t.neteaseEncryptedId}:{}),...(t.sceneInfo?{sceneInfo:{wikiTitle:t.sceneInfo.wikiTitle,englishTitle:t.sceneInfo.englishTitle,discNumber:t.sceneInfo.discNumber,discTitle:t.sceneInfo.discTitle,trackNumber:t.sceneInfo.trackNumber,originText:t.sceneInfo.originText,mainRegions:t.sceneInfo.mainRegions,musicLocationIds:t.sceneInfo.musicLocationIds,wikiSourceUrl:t.sceneInfo.wikiSourceUrl,wikiRevisionId:t.sceneInfo.wikiRevisionId,metadataNotes:t.sceneInfo.metadataNotes}}:{})} as MusicTrack)),
+    ...(t.personalNote!==undefined?{personalNote:t.personalNote}:{}),...(t.neteaseEncryptedId!==undefined?{neteaseEncryptedId:t.neteaseEncryptedId}:{}),...(t.sceneInfo?{sceneInfo:{wikiTitle:t.sceneInfo.wikiTitle,englishTitle:t.sceneInfo.englishTitle,discNumber:t.sceneInfo.discNumber,discTitle:t.sceneInfo.discTitle,trackNumber:t.sceneInfo.trackNumber,originText:t.sceneInfo.originText,mainRegions:t.sceneInfo.mainRegions,musicLocationIds:t.sceneInfo.musicLocationIds,wikiSourceUrl:t.sceneInfo.wikiSourceUrl,wikiRevisionId:t.sceneInfo.wikiRevisionId,metadataNotes:t.sceneInfo.metadataNotes,...(t.sceneInfo.geographicScopes!==undefined?{geographicScopes:t.sceneInfo.geographicScopes.map((g:any)=>({country:g.country,primary:g.primary,secondary:g.secondary}))}:{})}}:{})} as MusicTrack)),
     associations:value.associations.map(a=>({id:a.id,trackId:a.trackId,anchorId:a.anchorId,evidenceStatus:a.evidenceStatus,evidenceNote:a.evidenceNote,sourceUrl:a.sourceUrl,...(a.matchType?{matchType:a.matchType}:{})} as TrackAnchor)),
     ...(locations.length?{musicLocations:locations.map(p=>({id:p.id,name:p.name,country:p.country,areaId:p.areaId,areaCode:p.areaCode,kind:p.kind,sourceUrl:p.sourceUrl,notes:p.notes} as MusicLocation))}:{})};
 }

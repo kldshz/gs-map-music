@@ -26,7 +26,7 @@ MusicTrack存title/artists/composers/album/releaseDate/durationSeconds/descripti
 
 `public/data/music-library.json`当前63曲/394条pending/40目录，来源与显式规则见[CITY_WINDS_PILOT](CITY_WINDS_PILOT.md)。MusicTrack新增可选personalNote、neteaseEncryptedId、sceneInfo（Wiki曲序/原文/地区/目录/修订/备注）。MusicLocation按国家/源地区/细地点或场景，引用areaId/code，scene不冒充所在地。TrackAnchor.matchType为地点直接/父级地点/神像归档/地区范围候选/用户手动挂载；归档强制pending且仅神像，region-scope与manual强制pending。目录不改变点位content/坐标，建筑借城级点，不虚构室内点位。
 
-快照加载会检查格式、唯一地区/点位ID、父引用/循环、点位地区ID与代码一致、坐标与链接。音乐JSON导入检查schemaVersion1、必填字段/类型、唯一ID、重复关系、引用、时长、网易纯数字ID、安全HTTP(S)链接、verified证据字段。限制8MB/10000曲/50000关系，失败保留旧库，未知字段挑选剔除，不接受音频URL。当前没有任意地图包上传界面；地图替换需更新快照并运行检查。
+快照加载会检查格式、唯一地区/点位ID、父引用/循环、点位地区ID与代码一致、坐标与链接。音乐JSON导入检查schemaVersion1、必填字段/类型、唯一ID、重复关系、引用、时长、网易纯数字ID、安全HTTP(S)链接、verified证据字段。限制16MB/10000曲/50000关系，失败保留旧库，未知字段挑选剔除，不接受音频URL。当前没有任意地图包上传界面；地图替换需更新快照并运行检查。
 
 ## 检索与定位
 
@@ -52,3 +52,8 @@ MusicTrack存title/artists/composers/album/releaseDate/durationSeconds/descripti
 Vite只在开发服务提供本机/__dev/music-links，记录写data/association-edits.json，按稳定曲目ID与点位ID保存add/remove覆盖。该文件为空基线纳入版本管理，用户编辑表现为可审查的Git修改；构建应用这些记录到静态曲库。生产页面没有编辑控件/写接口。仅本机Host与同源JSON请求可写，测试用.local独立文件，不污染用户修改。可导出当前曲库JSON；临时导入后编辑禁用，刷新回内置库。没有MySQL自动同步，修改评价仍只保存在当前浏览器。
 
 阶段3批量增量：MusicLocation.areaId/areaCode允许成对null表示真实未知；校验拒绝单边null或虚构地区。基于track/anchor/pair索引检索与点选，避免扩库后逐曲逐点扫描全部关联。候选生成规则与批次入口见OST_BULK_IMPORT.md；保留原63数据/人工覆盖/评价。
+
+
+## 2026-10-08 统一地理目录
+
+Anchor.geography与SceneInfo.geographicScopes使用country/primary/secondary(nullable)；独立于源Area47组。来源/距离/待核实在点位地理字段保留，原说明不改。地图快照校验该结构，曲库导入挑选保留并拒绝二级无一级。探索/搜索优先统一目录，旧musicLocations仅保留历史引用。重建入口scripts/reclassify-geography.mjs，规则与局限见GEOGRAPHY_REVIEW.md和PROJECT_STATUS末尾。MySQL尚无geography迁移，不能声称JSON已同步。

@@ -1054,3 +1054,9 @@ details[open] .detail-summary::before {
 .candidate-info .anchor-meta .anchor-kind {
   margin-right: 4px;
 }
+
+/* S3-GEOGRAPHY-UI-001 统一地理目录 */
+.anchor-item .anchor-geo-path{overflow-wrap:anywhere}
+.candidate-info .anchor-geo-path{display:block;margin-top:2px;font-size:.8em;opacity:.85;overflow-wrap:anywhere}
+.geography-evidence .context-note{margin:4px 0 6px;font-size:.8em;opacity:.8}
+.geo-scope-list li{overflow-wrap:anywhere}

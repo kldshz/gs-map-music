@@ -6,6 +6,13 @@ export interface Anchor {
   /** Original V3 Leaflet image coordinates, not geographic degrees. */
   position:[number,number]|null; underground:boolean; layerValues:string[]; iconUrl:string|null; sourceUrl:string;
   itemId:number; version:number; hiddenFlag:number; sourceUpdateTime:number;
+  geography?:AnchorGeography;
+}
+/** Independent of upstream combined area groups; names share the track scope vocabulary. */
+export interface GeographicScope { country:string; primary:string|null; secondary:string|null }
+export interface AnchorGeography extends GeographicScope {
+  method:'source-header'|'landmark-distance'|'unresolved'; evidenceStatus:'pending';
+  distance:number|null; sourceUrl:string;
 }
 export interface LayerChunk { value:string; bounds:[[number,number],[number,number]] }
 export interface LayerNode { label:string; value:string; children?:LayerNode[]; chunks?:LayerChunk[] }
@@ -39,6 +46,7 @@ export interface SceneInfo {
   wikiTitle:string; englishTitle:string; discNumber:number; discTitle:string; trackNumber:number;
   originText:string; mainRegions:string[]; musicLocationIds:string[];
   wikiSourceUrl:string; wikiRevisionId:string; metadataNotes:string[];
+  geographicScopes?:GeographicScope[];
 }
 export interface MusicLocation {
   id:string; name:string; country:string; areaId:number|null; areaCode:string|null;

@@ -44,3 +44,6 @@ const path='data/review/ja-bgm-import.json',previous=await read(path).catch(e=>{
 const report={date:'2026-10-08',matched:jaEvidence.size,removed:[...previous.removed,...removed],totalAssociations:library.associations.length};
 await fs.writeFile(path,JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify({matched:jaEvidence.size,added,removed:removed.length,totalAssociations:library.associations.length}));
+
+// Always finish imports using the current fine-geography policy.
+if(map.anchors.some(a=>a.geography))await import('./reclassify-geography.mjs');

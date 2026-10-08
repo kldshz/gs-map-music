@@ -28,7 +28,7 @@ test('个人评价保存后刷新可见、检索、跨曲不串、清空和恢�
 });
 
 test('来源只到璃月的秘境按五个神像归档，雪山按源地区单神像；无可播放音源',async({page})=>{
-  await ready(page);await track(page,'太山府');await expect(page.locator('.location-list button')).toHaveCount(5);await expect(page.locator('.detail-view')).toContainText('璃月 / 璃月 / 太山府');
+  await ready(page);await track(page,'太山府');await expect(page.locator('.location-list button')).toHaveCount(5);await expect(page.locator('.detail-view')).toContainText('统一分类路径');await expect(page.locator('.geo-scope-list')).toContainText('璃月');await expect(page.locator('.origin-text')).toContainText('太山府');
   await page.getByRole('button',{name:'在地图上定位全部'}).click();await expect(page.getByLabel('选择地区')).toHaveValue('A:LY:LIYUE');await expect(page.locator('.music-anchor.is-highlighted')).toHaveCount(5);
   await track(page,'芬德尼尔之顶');await expect(page.locator('.location-list button')).toHaveCount(1);await page.getByRole('button',{name:'在地图上定位全部'}).click();await expect(page.getByLabel('选择地区')).toHaveValue('A:MD:XUESHAN');await expect(page.locator('.music-anchor.is-highlighted')).toHaveCount(1);
   await expect(page.getByRole('button',{name:'播放',exact:true})).toBeDisabled();await expect(page.locator('audio')).toHaveCount(0);

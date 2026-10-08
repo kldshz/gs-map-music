@@ -47,3 +47,6 @@ async function saveAtomic(path,content,expected){
 await saveAtomic('public/data/music-library.json',JSON.stringify(library,null,2)+'\n',originalLibraryText);
 await fs.mkdir('data/review',{recursive:true});await saveAtomic('data/review/ost-association-review.json',JSON.stringify(review,null,2)+'\n');
 console.log(JSON.stringify({batch:through,addedTracks,addedLinks,...review.summary,libraryBytes:Buffer.byteLength(JSON.stringify(library,null,2))},null,2));
+
+// Always finish imports using the current fine-geography policy.
+if(map.anchors.some(a=>a.geography))await import('./reclassify-geography.mjs');

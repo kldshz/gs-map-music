@@ -136,3 +136,8 @@ Claude主导三栏、可折叠信息、开发编辑控件、移动端和焦点�
 实际工单[S3-OST-DISPLAY-001](WORK_ORDERS/S3-OST-DISPLAY-001.md)，本机CLI2.1.291固定claude-opus-5-5/--effort high，stdin、禁用工具，唯一modelUsage一致，success/is_error=false，91163ms。Claude交付MusicSidebar精确替换与CSS，Codex核对唯一old/白名单整合，构建通过；原始响应仅.local。首次CLI参数拼接未发模型，修正后成功，没有模型替换。
 
 C3-04最终整合：Claude的原说明/出处设计沿用，Codex负责24专辑净化匹配、范围/城市/限定规则、目录与MySQL、索引性能、批次检查与校对报告。没有追加视觉模型或替代模型。扩库后25数据与15生产UI（含定向复测）、2开发UI/构建通过；桌面/手机实际查看。
+
+
+## C3-05：统一地理目录展示（2026-10-08）
+
+工单[ S3-GEOGRAPHY-UI-001 ](WORK_ORDERS/S3-GEOGRAPHY-UI-001.md)通过本机CLI2.1.291既有网关/stdin、禁用工具，固定--model claude-opus-5-5 --effort high。第一次命令的ContextFiles拼接失败未发模型，修正数组参数后成功；唯一modelUsage一致，无替换。Codex核对success/is_error/工单/文件白名单/唯一旧串后落盘MusicSidebar精确替换及CSS追加；结果摘要见WORK_ORDERS/S3-GEOGRAPHY-UI-001.RESULT.json。Claude主导一级/二级路径、折叠证据、单曲目录和开发候选展示，Codex负责来源/分类/重建/验证及Git，调用期间无同文件并发编辑，无凭据/内部推理入库。既有网关上游身份不可独立认证、内部effort无回显限制沿用。

@@ -1,0 +1,17 @@
+{
+  "ticket": "S3-GEOGRAPHY-UI-001",
+  "status": "reviewed-integrated",
+  "cli": "2.1.291",
+  "requestedModel": "claude-opus-5-5",
+  "requestedEffort": "high",
+  "reportedModels": [
+    "claude-opus-5-5"
+  ],
+  "durationMs": 83461,
+  "files": [
+    "src/components/MusicSidebar.vue",
+    "src/style.css"
+  ],
+  "summary": "点位目录项用统一“国家 / 一级 / 二级”路径替换源areaName，并保留说明摘要。缺失geography显示“统一目录未归类”，一级为空显示“未确定”，二级为空显示“未细分”。点位详情新增一级地区和二级地点，国家优先取统一目录。源areaName改用“源地图分组”标签展示，原说明、坐标、来源保留。新增默认折叠的“归类证据”区，含归类方式、待核实状态、V3图像单位距离（注明非米）和归类来源，并注明距离候选仅供校对，不代表官方边界。单曲完整元数据新增“统一分类路径”，直接读取sceneInfo.geographicScopes，不显示理由、计数或资源状态，出处保留。开发添加点位搜索文本加入geography的国家、一级、二级字段，候选项显示路径；关联点位列表不变。未增加弹窗，未改键盘/移动端/编辑/评价/定位逻辑。",
+  "limitations": "既有网关上游身份不能独立认证；内部effort无回显，固定参数没有替换。"
+}

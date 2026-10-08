@@ -64,6 +64,31 @@ test('地图数据HTTP失败有错误状态，可重试',async()=>{
   const oldFetch=globalThis.fetch;globalThis.fetch=async()=>new Response('',{status:503});
   try{const e=useExplorer();await e.load();assert.match(e.error.value,/503/);assert.equal(e.loading.value,false);}finally{globalThis.fetch=oldFetch;}
 });
+test('稍后返回的初始曲库不能覆盖用户先完成的本地导入，地理分类经校验保留',async()=>{
+  const oldFetch=globalThis.fetch;let release!:(response:Response)=>void;
+  const response=new Promise<Response>(resolve=>{release=resolve});
+  globalThis.fetch=async(input)=>String(input).includes('kongying-map')?new Response(JSON.stringify(snapshot)):response;
+  try{
+    const e=useExplorer(),load=e.load();
+    while(!e.anchors.value.length)await new Promise(resolve=>setTimeout(resolve,0));
+    await e.importLibrary(new File([JSON.stringify(library)],'fixture.json'));
+    release(new Response(JSON.stringify({schemaVersion:1,tracks:[],associations:[]})));await load;
+    assert.equal(e.tracks.value[0].id,'test-fixture-1');
+    const full=JSON.parse(await readFile('public/data/music-library.json','utf8'));
+    const cleaned=validateLibrary(full,ids,snapshot);assert.deepEqual(cleaned.tracks[0].sceneInfo?.geographicScopes,full.tracks[0].sceneInfo.geographicScopes);
+    full.tracks[0].sceneInfo.geographicScopes=[{country:'蒙德',primary:null,secondary:'虚构层级'}];assert.throws(()=>validateLibrary(full,ids,snapshot),/地理分类/);
+    const broken=structuredClone(snapshot);broken.anchors[0].geography!.country='错误国家';assert.throws(()=>validateSnapshot(broken),/地理分类/);
+  }finally{globalThis.fetch=oldFetch;}
+});
+test('带统一目录的实际曲库可导出再导入，超过16MB拒绝且保留原库',async()=>{
+  const oldFetch=globalThis.fetch;globalThis.fetch=async()=>new Response(JSON.stringify(snapshot));
+  try{
+    const e=useExplorer();await e.load();
+    const text=await readFile('public/data/music-library.json','utf8');await e.importLibrary(new File([text],'library.json'));
+    assert.equal(e.tracks.value.length,1663);assert(e.tracks.value[0].sceneInfo?.geographicScopes);
+    await e.importLibrary(new File([' '.repeat(16*1024*1024+1)],'large.json'));assert.match(e.importMessage.value,/超过16MB/);assert.equal(e.tracks.value.length,1663);
+  }finally{globalThis.fetch=oldFetch;}
+});
 
 test('全部定位覆盖同瓦片集的不同地区，并提示独立地图的逐点入口',async()=>{
   const md=snapshot.anchors.find(a=>a.areaCode==='A:MD:MENGDE')!;

@@ -6,6 +6,7 @@ import { usePersonalNotes } from './personal-notes';
 import type { AssociationEdits, EditOperation } from '../domain/association-edits';
 
 export function useExplorer() {
+  let libraryRevision=0;
   const notes=usePersonalNotes();
   const snapshot=ref<MapSnapshot|null>(null),library=ref<MusicLibrary>({schemaVersion:1,tracks:[],associations:[]});
   const loading=ref(false),error=ref(''),importMessage=ref(''),query=ref('');
@@ -45,6 +46,7 @@ export function useExplorer() {
   function associationFor(trackId:string,anchorId:string){return associationIndex.value.byPair.get(JSON.stringify([trackId,anchorId]));}
   function trackLocationLabels(trackId:string){
     const track=trackById.value.get(trackId);
+    if(track?.sceneInfo?.geographicScopes)return track.sceneInfo.geographicScopes.length?[...new Set(track.sceneInfo.geographicScopes.map(s=>[s.country,s.primary,s.secondary].filter(Boolean).join(' / ')))]:['未定位'];
     return (track?.sceneInfo?.musicLocationIds??[]).flatMap(id=>{
       const p=locationById.value.get(id);return p?[p.areaId===null?`未定位 / ${p.name}`:`${p.country} / ${areas.value.find(a=>a.id===p.areaId)?.name??p.areaCode} / ${p.name}`]:[];
     });
@@ -65,24 +67,28 @@ export function useExplorer() {
     return a.layerValues.some(v=>values.has(v));
   }
   const visibleAnchors=computed(()=>anchors.value.filter(a=>(a.areaCode===areaCode.value||(highlightedIds.value.includes(a.id)&&snapshot.value&&resolveMap(snapshot.value,a.areaCode).code===mapConfig.value?.code))&&(typeFilter.value==='all'||a.kind===typeFilter.value)&&layerMatch(a)
-    &&includes([a.name,a.content,a.country,a.areaName,a.sourceId])));
+    &&includes([a.name,a.content,a.country,a.areaName,a.sourceId,a.geography?.primary,a.geography?.secondary])));
   const searchCorpus=computed(()=>new Map(tracks.value.map(t=>[t.id,[t.title,...t.artists,...(t.composers??[]),t.album,t.description,t.neteaseId,
     t.sceneInfo?.wikiTitle,t.sceneInfo?.englishTitle,t.sceneInfo?.originText,...(t.sceneInfo?.mainRegions??[]),...trackLocationLabels(t.id),
-    ...(associationIndex.value.byTrack.get(t.id)??[]).flatMap(link=>{const p=anchorById.value.get(link.anchorId);return p?[p.areaName,p.country,p.content]:[]})].join(' ').toLocaleLowerCase()])));
+    ...(associationIndex.value.byTrack.get(t.id)??[]).flatMap(link=>{const p=anchorById.value.get(link.anchorId);return p?[p.areaName,p.country,p.content,p.geography?.primary,p.geography?.secondary]:[]})].join(' ').toLocaleLowerCase()])));
   const searchTracks=computed(()=>{
     const q=query.value.trim().toLocaleLowerCase();if(!q)return tracks.value;
     return tracks.value.filter(t=>searchCorpus.value.get(t.id)?.includes(q)||notes.personalNoteFor(t.id,t.personalNote??'').toLocaleLowerCase().includes(q));
   });
   async function load(){
+    const revision=++libraryRevision;
     loading.value=true;error.value='';
     try{
       const response=await fetch('/data/kongying-map.json');if(!response.ok)throw new Error(`地图数据HTTP ${response.status}`);
       const next=validateSnapshot(await response.json());for(const a of next.areas.filter(a=>a.isFinal))resolveMap(next,a.code);
       snapshot.value=next;
       const music=await fetch('/data/music-library.json');if(!music.ok)throw new Error(`曲库数据HTTP ${music.status}`);
-      library.value=validateLibrary(await music.json(),new Set(next.anchors.map(a=>a.id)),next);
+      const builtin=validateLibrary(await music.json(),new Set(next.anchors.map(a=>a.id)),next);
+      if(revision!==libraryRevision)return;
+      library.value=builtin;
       if(import.meta.env?.DEV){
         try{const result=await (await import('./development-links')).developmentLibrary();
+          if(revision!==libraryRevision)return;
           library.value=validateLibrary(result.library,new Set(next.anchors.map(a=>a.id)),next);manualEdits.value=result.edits;editingAvailable.value=true;
         }catch{editingAvailable.value=false;editMessage.value='开发编辑服务加载失败，请重试加载；仍可浏览原曲库。';}
       }
@@ -122,8 +128,8 @@ export function useExplorer() {
     const link=document.createElement('a');link.href=href;link.download='music-library-edited.json';link.click();setTimeout(()=>URL.revokeObjectURL(href),1000);
   }
   async function importLibrary(file:File){
-    try{if(file.size>8*1024*1024)throw new Error('JSON文件超过8MB');const next=validateLibrary(JSON.parse(await file.text()),new Set(anchors.value.map(a=>a.id)),snapshot.value??undefined);
-      library.value=next;selectedTrackId.value='';highlightedIds.value=[];importMessage.value=`已导入${next.tracks.length}首曲目、${next.associations.length}条关联；仅本次会话，无音源。请仅导入原神音乐。`;
+    try{if(file.size>16*1024*1024)throw new Error('JSON文件超过16MB');const next=validateLibrary(JSON.parse(await file.text()),new Set(anchors.value.map(a=>a.id)),snapshot.value??undefined);
+      libraryRevision++;library.value=next;selectedTrackId.value='';highlightedIds.value=[];importMessage.value=`已导入${next.tracks.length}首曲目、${next.associations.length}条关联；仅本次会话，无音源。请仅导入原神音乐。`;
       if(import.meta.env?.DEV){editingAvailable.value=false;editMessage.value='当前为临时导入库；刷新后可编辑本机内置库。';}
     }catch(cause){importMessage.value=`导入失败：${cause instanceof Error?cause.message:'未知错误'}；原曲库保持不变。`;}
   }

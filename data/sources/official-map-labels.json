@@ -1,0 +1,2413 @@
+{
+  "capturedOn": "2026-10-08",
+  "sourceUrl": "https://act.mihoyo.com/ys/app/interactive-map/index.html?lang=zh-cn#/map/2?shown_types=2,3,154,693,319,338,761,517,658,659,685,686,518,831,192&center=-1191.90,-3913.07&zoom=-2.00",
+  "method": "读取实际渲染的location-name DOM；官方平面x向右/y向下。不是API或区域边界。",
+  "views": [
+    {
+      "url": "https://act.mihoyo.com/ys/app/interactive-map/index.html?lang=zh-cn#/map/2?shown_types=2,3,154,693,319,338,761,517,658,659,685,686,518,831,192&center=-1191.90,-3913.07&zoom=-2.00",
+      "width": 939,
+      "height": 871,
+      "pane": "transform: translate3d(0px, 0px, 0px);"
+    },
+    {
+      "url": "https://act.mihoyo.com/ys/app/interactive-map/index.html?lang=zh-cn#/map/2?shown_types=2,3,154,693,319,338,761,517,658,659,685,686,518,831,192&center=-1191.90,-3913.07&zoom=-1.00",
+      "width": 939,
+      "height": 871,
+      "pane": "transform: translate3d(0px, 0px, 0px);"
+    }
+  ],
+  "transform": {
+    "scale": 1.3333333333333333,
+    "offset": [
+      1520,
+      -3904
+    ],
+    "status": "approximate",
+    "note": "基于全国同名地标/源说明校核比例，并实际查看至冬木屋、枫丹柔灯港、蒙德城锚点图形位置。约几十图像单位误差，不用于官方边界判断或地下最近邻。",
+    "controls": [
+      {
+        "anchorId": "kongying:121680",
+        "center": [
+          -8878.07,
+          -5550.9
+        ],
+        "pixel": [
+          490,
+          317
+        ],
+        "viewport": [
+          939,
+          871
+        ]
+      },
+      {
+        "anchorId": "kongying:60449",
+        "center": [
+          -3586.07,
+          -872.9
+        ],
+        "pixel": [
+          417,
+          412
+        ],
+        "viewport": [
+          939,
+          871
+        ]
+      },
+      {
+        "anchorId": "kongying:6625",
+        "center": [
+          79.93,
+          11.1
+        ],
+        "pixel": [
+          393,
+          473
+        ],
+        "viewport": [
+          939,
+          871
+        ]
+      }
+    ]
+  },
+  "labels": [
+    {
+      "name": "焰羽谷",
+      "tier": "primary",
+      "officialPosition": [
+        -9327.07,
+        -6513.9
+      ]
+    },
+    {
+      "name": "古兽冰原",
+      "tier": "primary",
+      "officialPosition": [
+        -8387.07,
+        -5793.9
+      ]
+    },
+    {
+      "name": "霜殛寒峰",
+      "tier": "primary",
+      "officialPosition": [
+        -7067.07,
+        -5913.9
+      ]
+    },
+    {
+      "name": "永凝冻土",
+      "tier": "primary",
+      "officialPosition": [
+        -7879.07,
+        -6753.9
+      ]
+    },
+    {
+      "name": "白桦雪葬地",
+      "tier": "primary",
+      "officialPosition": [
+        -6267.07,
+        -7849.9
+      ]
+    },
+    {
+      "name": "杜南纳深坑",
+      "tier": "primary",
+      "officialPosition": [
+        -9419.07,
+        -3233.9
+      ]
+    },
+    {
+      "name": "风息山",
+      "tier": "primary",
+      "officialPosition": [
+        -343.07000000000016,
+        -1373.9
+      ]
+    },
+    {
+      "name": "烟硌山峰",
+      "tier": "primary",
+      "officialPosition": [
+        -10667.07,
+        -3969.9
+      ]
+    },
+    {
+      "name": "逐浪野",
+      "tier": "primary",
+      "officialPosition": [
+        -10627.07,
+        -3409.9
+      ]
+    },
+    {
+      "name": "虚海望",
+      "tier": "primary",
+      "officialPosition": [
+        -10259.07,
+        -3013.9
+      ]
+    },
+    {
+      "name": "伦波岛",
+      "tier": "primary",
+      "officialPosition": [
+        -10199.07,
+        270.0999999999999
+      ]
+    },
+    {
+      "name": "希汐岛",
+      "tier": "primary",
+      "officialPosition": [
+        -11491.07,
+        354.0999999999999
+      ]
+    },
+    {
+      "name": "帕哈岛",
+      "tier": "primary",
+      "officialPosition": [
+        -10839.07,
+        -1141.9
+      ]
+    },
+    {
+      "name": "悠悠度假村",
+      "tier": "primary",
+      "officialPosition": [
+        -15215.07,
+        1518.1
+      ]
+    },
+    {
+      "name": "安饶之野",
+      "tier": "primary",
+      "officialPosition": [
+        -10855.07,
+        5234.1
+      ]
+    },
+    {
+      "name": "镜璧山",
+      "tier": "primary",
+      "officialPosition": [
+        -10443.07,
+        3918.1
+      ]
+    },
+    {
+      "name": "翘枝崖",
+      "tier": "primary",
+      "officialPosition": [
+        -10311.07,
+        3514.1
+      ]
+    },
+    {
+      "name": "奥奇卡纳塔",
+      "tier": "primary",
+      "officialPosition": [
+        -10667.07,
+        2682.1
+      ]
+    },
+    {
+      "name": "踞石山",
+      "tier": "primary",
+      "officialPosition": [
+        -8671.07,
+        4418.1
+      ]
+    },
+    {
+      "name": "涌流地",
+      "tier": "primary",
+      "officialPosition": [
+        -9471.07,
+        5162.1
+      ]
+    },
+    {
+      "name": "万火之瓯",
+      "tier": "primary",
+      "officialPosition": [
+        -9755.07,
+        4146.1
+      ]
+    },
+    {
+      "name": "坚岩隘谷",
+      "tier": "primary",
+      "officialPosition": [
+        -8883.07,
+        3774.1
+      ]
+    },
+    {
+      "name": "诺思托伊区",
+      "tier": "primary",
+      "officialPosition": [
+        -5063.07,
+        1082.1
+      ]
+    },
+    {
+      "name": "来歆山",
+      "tier": "primary",
+      "officialPosition": [
+        -3567.07,
+        818.0999999999999
+      ]
+    },
+    {
+      "name": "沉玉谷·南陵",
+      "tier": "primary",
+      "officialPosition": [
+        -2747.07,
+        814.0999999999999
+      ]
+    },
+    {
+      "name": "沉玉谷·上谷",
+      "tier": "primary",
+      "officialPosition": [
+        -2739.07,
+        22.09999999999991
+      ]
+    },
+    {
+      "name": "伊黎耶林区",
+      "tier": "primary",
+      "officialPosition": [
+        -3907.07,
+        -1469.9
+      ]
+    },
+    {
+      "name": "莫尔泰区",
+      "tier": "primary",
+      "officialPosition": [
+        -3943.07,
+        -341.9000000000001
+      ]
+    },
+    {
+      "name": "黎翡区",
+      "tier": "primary",
+      "officialPosition": [
+        -5699.07,
+        -2317.9
+      ]
+    },
+    {
+      "name": "枫丹动能工程科学研究院区",
+      "tier": "primary",
+      "officialPosition": [
+        -4783.07,
+        -2357.9
+      ]
+    },
+    {
+      "name": "枫丹廷区",
+      "tier": "primary",
+      "officialPosition": [
+        -5251.07,
+        -1189.9
+      ]
+    },
+    {
+      "name": "苍晶区",
+      "tier": "primary",
+      "officialPosition": [
+        -5755.07,
+        -173.9000000000001
+      ]
+    },
+    {
+      "name": "白露区",
+      "tier": "primary",
+      "officialPosition": [
+        -4783.07,
+        -93.90000000000009
+      ]
+    },
+    {
+      "name": "荒石苍漠",
+      "tier": "primary",
+      "officialPosition": [
+        -7383.07,
+        1710.1
+      ]
+    },
+    {
+      "name": "浮罗囿",
+      "tier": "primary",
+      "officialPosition": [
+        -6491.07,
+        1646.1
+      ]
+    },
+    {
+      "name": "千壑沙地",
+      "tier": "primary",
+      "officialPosition": [
+        -5975.07,
+        3062.1
+      ]
+    },
+    {
+      "name": "列柱沙原",
+      "tier": "primary",
+      "officialPosition": [
+        -6267.07,
+        4662.1
+      ]
+    },
+    {
+      "name": "上风蚀地",
+      "tier": "primary",
+      "officialPosition": [
+        -5307.07,
+        5378.1
+      ]
+    },
+    {
+      "name": "下风蚀地",
+      "tier": "primary",
+      "officialPosition": [
+        -5143.07,
+        4106.1
+      ]
+    },
+    {
+      "name": "失落的苗圃",
+      "tier": "primary",
+      "officialPosition": [
+        -4679.07,
+        3058.1
+      ]
+    },
+    {
+      "name": "阿陀河谷",
+      "tier": "primary",
+      "officialPosition": [
+        -2963.07,
+        3790.1
+      ]
+    },
+    {
+      "name": "善见地",
+      "tier": "primary",
+      "officialPosition": [
+        -4059.07,
+        4014.1
+      ]
+    },
+    {
+      "name": "桓那兰那",
+      "tier": "primary",
+      "officialPosition": [
+        -4307.07,
+        2486.1
+      ]
+    },
+    {
+      "name": "二净甸",
+      "tier": "primary",
+      "officialPosition": [
+        -4031.07,
+        3034.1
+      ]
+    },
+    {
+      "name": "道成林",
+      "tier": "primary",
+      "officialPosition": [
+        -3283.07,
+        2754.1
+      ]
+    },
+    {
+      "name": "护世森",
+      "tier": "primary",
+      "officialPosition": [
+        -3163.07,
+        2010.1
+      ]
+    },
+    {
+      "name": "层岩巨渊",
+      "tier": "primary",
+      "officialPosition": [
+        -2519.07,
+        2994.1
+      ]
+    },
+    {
+      "name": "鹤观",
+      "tier": "primary",
+      "officialPosition": [
+        2168.93,
+        8602.1
+      ]
+    },
+    {
+      "name": "清籁岛",
+      "tier": "primary",
+      "officialPosition": [
+        3464.93,
+        6978.1
+      ]
+    },
+    {
+      "name": "海祇岛",
+      "tier": "primary",
+      "officialPosition": [
+        68.92999999999984,
+        6126.1
+      ]
+    },
+    {
+      "name": "神无冢",
+      "tier": "primary",
+      "officialPosition": [
+        2464.93,
+        5838.1
+      ]
+    },
+    {
+      "name": "八酝岛",
+      "tier": "primary",
+      "officialPosition": [
+        1432.9299999999998,
+        6070.1
+      ]
+    },
+    {
+      "name": "鸣神岛",
+      "tier": "primary",
+      "officialPosition": [
+        3512.93,
+        4934.1
+      ]
+    },
+    {
+      "name": "龙脊雪山",
+      "tier": "primary",
+      "officialPosition": [
+        0.9299999999998363,
+        1166.1
+      ]
+    },
+    {
+      "name": "坠星山谷",
+      "tier": "primary",
+      "officialPosition": [
+        488.92999999999984,
+        -177.9000000000001
+      ]
+    },
+    {
+      "name": "苍风高地",
+      "tier": "primary",
+      "officialPosition": [
+        -431.07000000000016,
+        266.0999999999999
+      ]
+    },
+    {
+      "name": "风啸山坡",
+      "tier": "primary",
+      "officialPosition": [
+        728.9299999999998,
+        606.0999999999999
+      ]
+    },
+    {
+      "name": "明冠山地",
+      "tier": "primary",
+      "officialPosition": [
+        -663.0700000000002,
+        -329.9000000000001
+      ]
+    },
+    {
+      "name": "碧水原",
+      "tier": "primary",
+      "officialPosition": [
+        -1291.0700000000002,
+        1050.1
+      ]
+    },
+    {
+      "name": "琼玑野",
+      "tier": "primary",
+      "officialPosition": [
+        -883.0700000000002,
+        1798.1
+      ]
+    },
+    {
+      "name": "珉林",
+      "tier": "primary",
+      "officialPosition": [
+        -2371.07,
+        1698.1
+      ]
+    },
+    {
+      "name": "璃沙郊",
+      "tier": "primary",
+      "officialPosition": [
+        -1755.0700000000002,
+        2962.1
+      ]
+    },
+    {
+      "name": "云来海",
+      "tier": "primary",
+      "officialPosition": [
+        -523.0700000000002,
+        2822.1
+      ]
+    },
+    {
+      "name": "凝露镇",
+      "tier": "secondary",
+      "officialPosition": [
+        -8460.07,
+        -5326.9
+      ]
+    },
+    {
+      "name": "巡猎者木屋",
+      "tier": "secondary",
+      "officialPosition": [
+        -8878.07,
+        -5550.9
+      ]
+    },
+    {
+      "name": "曙光车站",
+      "tier": "secondary",
+      "officialPosition": [
+        -8572.07,
+        -6188.9
+      ]
+    },
+    {
+      "name": "汐歌洞窟",
+      "tier": "secondary",
+      "officialPosition": [
+        -7242.07,
+        -5530.9
+      ]
+    },
+    {
+      "name": "赫斯珀利德斯之馆",
+      "tier": "secondary",
+      "officialPosition": [
+        -6884.07,
+        -5924.9
+      ]
+    },
+    {
+      "name": "霜精的村落",
+      "tier": "secondary",
+      "officialPosition": [
+        -6856.07,
+        -6720.9
+      ]
+    },
+    {
+      "name": "彩冰镇",
+      "tier": "secondary",
+      "officialPosition": [
+        -7258.07,
+        -6336.9
+      ]
+    },
+    {
+      "name": "海屑镇",
+      "tier": "secondary",
+      "officialPosition": [
+        -8348.07,
+        -7284.9
+      ]
+    },
+    {
+      "name": "悲悼的圣所",
+      "tier": "secondary",
+      "officialPosition": [
+        -7104.07,
+        -7770.9
+      ]
+    },
+    {
+      "name": "格鲁波夫",
+      "tier": "secondary",
+      "officialPosition": [
+        -7470.07,
+        -7640.9
+      ]
+    },
+    {
+      "name": "至冬堡",
+      "tier": "secondary",
+      "officialPosition": [
+        -7390.07,
+        -7294.9
+      ]
+    },
+    {
+      "name": "至冬宫",
+      "tier": "secondary",
+      "officialPosition": [
+        -7232.07,
+        -7476.9
+      ]
+    },
+    {
+      "name": "冬契军总部",
+      "tier": "secondary",
+      "officialPosition": [
+        -7204.07,
+        -7260.9
+      ]
+    },
+    {
+      "name": "科洛列夫茨基剧院",
+      "tier": "secondary",
+      "officialPosition": [
+        -7230.07,
+        -7008.9
+      ]
+    },
+    {
+      "name": "列车总站",
+      "tier": "secondary",
+      "officialPosition": [
+        -7626.07,
+        -7004.9
+      ]
+    },
+    {
+      "name": "白冕宫",
+      "tier": "secondary",
+      "officialPosition": [
+        -6264.07,
+        -7994.9
+      ]
+    },
+    {
+      "name": "谒圣山峡",
+      "tier": "secondary",
+      "officialPosition": [
+        -6540.07,
+        -7240.9
+      ]
+    },
+    {
+      "name": "杜南纳前进站",
+      "tier": "secondary",
+      "officialPosition": [
+        -9320.07,
+        -3344.9
+      ]
+    },
+    {
+      "name": "雾灵渚",
+      "tier": "secondary",
+      "officialPosition": [
+        -9728.07,
+        -3148.9
+      ]
+    },
+    {
+      "name": "风车镇",
+      "tier": "secondary",
+      "officialPosition": [
+        -584.0700000000002,
+        -830.9000000000001
+      ]
+    },
+    {
+      "name": "荆夫港",
+      "tier": "secondary",
+      "officialPosition": [
+        -484.07000000000016,
+        -1188.9
+      ]
+    },
+    {
+      "name": "疗养院旧址",
+      "tier": "secondary",
+      "officialPosition": [
+        -222.07000000000016,
+        -1556.9
+      ]
+    },
+    {
+      "name": "苦壑崖",
+      "tier": "secondary",
+      "officialPosition": [
+        -10782.07,
+        -4000.9
+      ]
+    },
+    {
+      "name": "特辖地研究所",
+      "tier": "secondary",
+      "officialPosition": [
+        -10276.07,
+        -3968.9
+      ]
+    },
+    {
+      "name": "望崖营壁",
+      "tier": "secondary",
+      "officialPosition": [
+        -10718.07,
+        -3798.9
+      ]
+    },
+    {
+      "name": "凯雷丝之翼",
+      "tier": "secondary",
+      "officialPosition": [
+        -11102.07,
+        -3448.9
+      ]
+    },
+    {
+      "name": "厄布拉神柱",
+      "tier": "secondary",
+      "officialPosition": [
+        -10726.07,
+        -3298.9
+      ]
+    },
+    {
+      "name": "西风戍垒",
+      "tier": "secondary",
+      "officialPosition": [
+        -10524.07,
+        -3584.9
+      ]
+    },
+    {
+      "name": "安瓦蒂尼尔湖",
+      "tier": "secondary",
+      "officialPosition": [
+        -10336.07,
+        -3726.9
+      ]
+    },
+    {
+      "name": "噩影泽地",
+      "tier": "secondary",
+      "officialPosition": [
+        -10280.07,
+        -3258.9
+      ]
+    },
+    {
+      "name": "皮拉米达城",
+      "tier": "secondary",
+      "officialPosition": [
+        -10300.07,
+        -2818.9
+      ]
+    },
+    {
+      "name": "叮铃哐啷蛋卷工坊",
+      "tier": "secondary",
+      "officialPosition": [
+        -10688.07,
+        757.0999999999999
+      ]
+    },
+    {
+      "name": "那夏镇",
+      "tier": "secondary",
+      "officialPosition": [
+        -10134.07,
+        791.0999999999999
+      ]
+    },
+    {
+      "name": "苔骨荒原",
+      "tier": "secondary",
+      "officialPosition": [
+        -10034.07,
+        369.0999999999999
+      ]
+    },
+    {
+      "name": "星砂滩",
+      "tier": "secondary",
+      "officialPosition": [
+        -10418.07,
+        169.0999999999999
+      ]
+    },
+    {
+      "name": "刻拉蒂之眼",
+      "tier": "secondary",
+      "officialPosition": [
+        -9482.07,
+        85.09999999999991
+      ]
+    },
+    {
+      "name": "蓝珀湖",
+      "tier": "secondary",
+      "officialPosition": [
+        -9868.07,
+        63.09999999999991
+      ]
+    },
+    {
+      "name": "空寂走廊",
+      "tier": "secondary",
+      "officialPosition": [
+        -9920.07,
+        -326.9000000000001
+      ]
+    },
+    {
+      "name": "霜月之坊",
+      "tier": "secondary",
+      "officialPosition": [
+        -11194.07,
+        591.0999999999999
+      ]
+    },
+    {
+      "name": "沐光之台",
+      "tier": "secondary",
+      "officialPosition": [
+        -11336.07,
+        277.0999999999999
+      ]
+    },
+    {
+      "name": "终夜长茔",
+      "tier": "secondary",
+      "officialPosition": [
+        -9980.07,
+        -1422.9
+      ]
+    },
+    {
+      "name": "月矩力试验设计局",
+      "tier": "secondary",
+      "officialPosition": [
+        -10576.07,
+        -948.9000000000001
+      ]
+    },
+    {
+      "name": "提提岛",
+      "tier": "secondary",
+      "officialPosition": [
+        -15824.07,
+        795.0999999999999
+      ]
+    },
+    {
+      "name": "刺梨岩",
+      "tier": "secondary",
+      "officialPosition": [
+        -14870.07,
+        1015.0999999999999
+      ]
+    },
+    {
+      "name": "悠悠集市",
+      "tier": "secondary",
+      "officialPosition": [
+        -14612.07,
+        2197.1
+      ]
+    },
+    {
+      "name": "彩彩崖",
+      "tier": "secondary",
+      "officialPosition": [
+        -14526.07,
+        1575.1
+      ]
+    },
+    {
+      "name": "呼呼丘",
+      "tier": "secondary",
+      "officialPosition": [
+        -14818.07,
+        1507.1
+      ]
+    },
+    {
+      "name": "浪浪湾",
+      "tier": "secondary",
+      "officialPosition": [
+        -15326.07,
+        1549.1
+      ]
+    },
+    {
+      "name": "石火坠陨处",
+      "tier": "secondary",
+      "officialPosition": [
+        -11320.07,
+        4935.1
+      ]
+    },
+    {
+      "name": "沃陆之邦",
+      "tier": "secondary",
+      "officialPosition": [
+        -11006.07,
+        5023.1
+      ]
+    },
+    {
+      "name": "孑遗的留迹",
+      "tier": "secondary",
+      "officialPosition": [
+        -10882.07,
+        5491.1
+      ]
+    },
+    {
+      "name": "烟谜主",
+      "tier": "secondary",
+      "officialPosition": [
+        -10460.07,
+        3873.1
+      ]
+    },
+    {
+      "name": "浮羽之湾",
+      "tier": "secondary",
+      "officialPosition": [
+        -11260.07,
+        3835.1
+      ]
+    },
+    {
+      "name": "花羽会",
+      "tier": "secondary",
+      "officialPosition": [
+        -10238.07,
+        3543.1
+      ]
+    },
+    {
+      "name": "彩石顶",
+      "tier": "secondary",
+      "officialPosition": [
+        -9070.07,
+        4593.1
+      ]
+    },
+    {
+      "name": "祖遗庙宇",
+      "tier": "secondary",
+      "officialPosition": [
+        -8718.07,
+        4517.1
+      ]
+    },
+    {
+      "name": "悬木人",
+      "tier": "secondary",
+      "officialPosition": [
+        -9306.07,
+        4481.1
+      ]
+    },
+    {
+      "name": "溶水域",
+      "tier": "secondary",
+      "officialPosition": [
+        -9468.07,
+        4825.1
+      ]
+    },
+    {
+      "name": "流泉之众",
+      "tier": "secondary",
+      "officialPosition": [
+        -9766.07,
+        5125.1
+      ]
+    },
+    {
+      "name": "柴薪之丘",
+      "tier": "secondary",
+      "officialPosition": [
+        -9760.07,
+        3729.1
+      ]
+    },
+    {
+      "name": "硫晶支脉",
+      "tier": "secondary",
+      "officialPosition": [
+        -9190.07,
+        3793.1
+      ]
+    },
+    {
+      "name": "圣火竞技场",
+      "tier": "secondary",
+      "officialPosition": [
+        -9832.07,
+        4201.1
+      ]
+    },
+    {
+      "name": "回声之子",
+      "tier": "secondary",
+      "officialPosition": [
+        -8430.07,
+        3669.1
+      ]
+    },
+    {
+      "name": "隆崛坡",
+      "tier": "secondary",
+      "officialPosition": [
+        -8592.07,
+        3985.1
+      ]
+    },
+    {
+      "name": "佩特莉可镇",
+      "tier": "secondary",
+      "officialPosition": [
+        -5058.07,
+        1093.1
+      ]
+    },
+    {
+      "name": "赤望台",
+      "tier": "secondary",
+      "officialPosition": [
+        -3540.07,
+        815.0999999999999
+      ]
+    },
+    {
+      "name": "悬练山",
+      "tier": "secondary",
+      "officialPosition": [
+        -2648.07,
+        1133.1
+      ]
+    },
+    {
+      "name": "赤璋城垣",
+      "tier": "secondary",
+      "officialPosition": [
+        -2960.07,
+        863.0999999999999
+      ]
+    },
+    {
+      "name": "古茶树坡",
+      "tier": "secondary",
+      "officialPosition": [
+        -2432.07,
+        499.0999999999999
+      ]
+    },
+    {
+      "name": "药蝶谷",
+      "tier": "secondary",
+      "officialPosition": [
+        -2416.07,
+        753.0999999999999
+      ]
+    },
+    {
+      "name": "翘英庄",
+      "tier": "secondary",
+      "officialPosition": [
+        -2232.07,
+        13.099999999999909
+      ]
+    },
+    {
+      "name": "灵濛山",
+      "tier": "secondary",
+      "officialPosition": [
+        -2760.07,
+        157.0999999999999
+      ]
+    },
+    {
+      "name": "遗珑埠",
+      "tier": "secondary",
+      "officialPosition": [
+        -3150.07,
+        -164.9000000000001
+      ]
+    },
+    {
+      "name": "暝垣山",
+      "tier": "secondary",
+      "officialPosition": [
+        -3382.07,
+        21.09999999999991
+      ]
+    },
+    {
+      "name": "宝玦口",
+      "tier": "secondary",
+      "officialPosition": [
+        -3170.07,
+        329.0999999999999
+      ]
+    },
+    {
+      "name": "优兰尼娅湖",
+      "tier": "secondary",
+      "officialPosition": [
+        -3980.07,
+        -1748.9
+      ]
+    },
+    {
+      "name": "湖中垂柳",
+      "tier": "secondary",
+      "officialPosition": [
+        -3926.07,
+        -1476.9
+      ]
+    },
+    {
+      "name": "幽林雾道",
+      "tier": "secondary",
+      "officialPosition": [
+        -3962.07,
+        -1096.9
+      ]
+    },
+    {
+      "name": "柔灯港",
+      "tier": "secondary",
+      "officialPosition": [
+        -3586.07,
+        -872.9000000000001
+      ]
+    },
+    {
+      "name": "卡布狄斯堡遗迹",
+      "tier": "secondary",
+      "officialPosition": [
+        -4070.07,
+        -490.9000000000001
+      ]
+    },
+    {
+      "name": "芒索斯山东麓",
+      "tier": "secondary",
+      "officialPosition": [
+        -5844.07,
+        -2136.9
+      ]
+    },
+    {
+      "name": "新枫丹科学院",
+      "tier": "secondary",
+      "officialPosition": [
+        -5030.07,
+        -2428.9
+      ]
+    },
+    {
+      "name": "中央实验室遗址",
+      "tier": "secondary",
+      "officialPosition": [
+        -4644.07,
+        -2400.9
+      ]
+    },
+    {
+      "name": "枫丹廷",
+      "tier": "secondary",
+      "officialPosition": [
+        -5292.07,
+        -1198.9
+      ]
+    },
+    {
+      "name": "茉洁站",
+      "tier": "secondary",
+      "officialPosition": [
+        -4554.07,
+        -1422.9
+      ]
+    },
+    {
+      "name": "露景泉",
+      "tier": "secondary",
+      "officialPosition": [
+        -4348.07,
+        -1164.9
+      ]
+    },
+    {
+      "name": "欧庇克莱歌剧院",
+      "tier": "secondary",
+      "officialPosition": [
+        -4520.07,
+        -1022.9000000000001
+      ]
+    },
+    {
+      "name": "厄里那斯",
+      "tier": "secondary",
+      "officialPosition": [
+        -5744.07,
+        -514.9000000000001
+      ]
+    },
+    {
+      "name": "白淞镇",
+      "tier": "secondary",
+      "officialPosition": [
+        -5022.07,
+        -424.9000000000001
+      ]
+    },
+    {
+      "name": "秋分山西侧",
+      "tier": "secondary",
+      "officialPosition": [
+        -4846.07,
+        -182.9000000000001
+      ]
+    },
+    {
+      "name": "聚香海岸",
+      "tier": "secondary",
+      "officialPosition": [
+        -7412.07,
+        1207.1
+      ]
+    },
+    {
+      "name": "阻勒隘",
+      "tier": "secondary",
+      "officialPosition": [
+        -7636.07,
+        1953.1
+      ]
+    },
+    {
+      "name": "荼泥黑渊",
+      "tier": "secondary",
+      "officialPosition": [
+        -7228.07,
+        1821.1
+      ]
+    },
+    {
+      "name": "铁穆山",
+      "tier": "secondary",
+      "officialPosition": [
+        -6964.07,
+        2079.1
+      ]
+    },
+    {
+      "name": "跋松顶",
+      "tier": "secondary",
+      "officialPosition": [
+        -6612.07,
+        1331.1
+      ]
+    },
+    {
+      "name": "锋刃林泽",
+      "tier": "secondary",
+      "officialPosition": [
+        -6682.07,
+        1529.1
+      ]
+    },
+    {
+      "name": "甘露花海",
+      "tier": "secondary",
+      "officialPosition": [
+        -6462.07,
+        1735.1
+      ]
+    },
+    {
+      "name": "塔尼特露营地",
+      "tier": "secondary",
+      "officialPosition": [
+        -5836.07,
+        3825.1
+      ]
+    },
+    {
+      "name": "巨人峡谷",
+      "tier": "secondary",
+      "officialPosition": [
+        -6066.07,
+        3609.1
+      ]
+    },
+    {
+      "name": "亡者狭廊",
+      "tier": "secondary",
+      "officialPosition": [
+        -5600.07,
+        3387.1
+      ]
+    },
+    {
+      "name": "啁哳之沙",
+      "tier": "secondary",
+      "officialPosition": [
+        -5264.07,
+        3183.1
+      ]
+    },
+    {
+      "name": "镔铁沙丘",
+      "tier": "secondary",
+      "officialPosition": [
+        -5146.07,
+        2923.1
+      ]
+    },
+    {
+      "name": "五绿洲的孑遗",
+      "tier": "secondary",
+      "officialPosition": [
+        -5354.07,
+        2583.1
+      ]
+    },
+    {
+      "name": "折胫谷",
+      "tier": "secondary",
+      "officialPosition": [
+        -6588.07,
+        3141.1
+      ]
+    },
+    {
+      "name": "愚妄行宫",
+      "tier": "secondary",
+      "officialPosition": [
+        -5532.07,
+        3067.1
+      ]
+    },
+    {
+      "name": "三运河之地",
+      "tier": "secondary",
+      "officialPosition": [
+        -6138.07,
+        2755.1
+      ]
+    },
+    {
+      "name": "达马山",
+      "tier": "secondary",
+      "officialPosition": [
+        -6064.07,
+        3177.1
+      ]
+    },
+    {
+      "name": "神的棋盘",
+      "tier": "secondary",
+      "officialPosition": [
+        -6366.07,
+        3737.1
+      ]
+    },
+    {
+      "name": "秘仪圣殿",
+      "tier": "secondary",
+      "officialPosition": [
+        -5756.07,
+        4659.1
+      ]
+    },
+    {
+      "name": "赤王陵",
+      "tier": "secondary",
+      "officialPosition": [
+        -6270.07,
+        4665.1
+      ]
+    },
+    {
+      "name": "避让之丘",
+      "tier": "secondary",
+      "officialPosition": [
+        -5944.07,
+        5125.1
+      ]
+    },
+    {
+      "name": "铄石之丘",
+      "tier": "secondary",
+      "officialPosition": [
+        -6542.07,
+        5163.1
+      ]
+    },
+    {
+      "name": "饱饮之丘",
+      "tier": "secondary",
+      "officialPosition": [
+        -6046.07,
+        4227.1
+      ]
+    },
+    {
+      "name": "丰饶绿洲",
+      "tier": "secondary",
+      "officialPosition": [
+        -5544.07,
+        4803.1
+      ]
+    },
+    {
+      "name": "荼诃落谷",
+      "tier": "secondary",
+      "officialPosition": [
+        -5210.07,
+        5471.1
+      ]
+    },
+    {
+      "name": "活力之家",
+      "tier": "secondary",
+      "officialPosition": [
+        -4734.07,
+        4599.1
+      ]
+    },
+    {
+      "name": "阿如村",
+      "tier": "secondary",
+      "officialPosition": [
+        -4906.07,
+        4285.1
+      ]
+    },
+    {
+      "name": "舍身陷坑",
+      "tier": "secondary",
+      "officialPosition": [
+        -5294.07,
+        4405.1
+      ]
+    },
+    {
+      "name": "圣显厅",
+      "tier": "secondary",
+      "officialPosition": [
+        -5242.07,
+        3789.1
+      ]
+    },
+    {
+      "name": "觉王之殿",
+      "tier": "secondary",
+      "officialPosition": [
+        -4348.07,
+        2929.1
+      ]
+    },
+    {
+      "name": "往昔的桓那兰那",
+      "tier": "secondary",
+      "officialPosition": [
+        -4680.07,
+        2943.1
+      ]
+    },
+    {
+      "name": "降诸魔山",
+      "tier": "secondary",
+      "officialPosition": [
+        -3110.07,
+        3693.1
+      ]
+    },
+    {
+      "name": "维摩庄",
+      "tier": "secondary",
+      "officialPosition": [
+        -3428.07,
+        3431.1
+      ]
+    },
+    {
+      "name": "奥摩斯港",
+      "tier": "secondary",
+      "officialPosition": [
+        -3274.07,
+        4245.1
+      ]
+    },
+    {
+      "name": "水天丛林",
+      "tier": "secondary",
+      "officialPosition": [
+        -3994.07,
+        3953.1
+      ]
+    },
+    {
+      "name": "荼诃之座",
+      "tier": "secondary",
+      "officialPosition": [
+        -4420.07,
+        4115.1
+      ]
+    },
+    {
+      "name": "喀万驿",
+      "tier": "secondary",
+      "officialPosition": [
+        -4598.07,
+        3921.1
+      ]
+    },
+    {
+      "name": "拜达港",
+      "tier": "secondary",
+      "officialPosition": [
+        -4018.07,
+        1857.1
+      ]
+    },
+    {
+      "name": "禅那园",
+      "tier": "secondary",
+      "officialPosition": [
+        -3936.07,
+        3393.1
+      ]
+    },
+    {
+      "name": "谒颂幽境",
+      "tier": "secondary",
+      "officialPosition": [
+        -4418.07,
+        3397.1
+      ]
+    },
+    {
+      "name": "天臂池",
+      "tier": "secondary",
+      "officialPosition": [
+        -3574.07,
+        2879.1
+      ]
+    },
+    {
+      "name": "须弥城",
+      "tier": "secondary",
+      "officialPosition": [
+        -3518.07,
+        2687.1
+      ]
+    },
+    {
+      "name": "茸蕈窟",
+      "tier": "secondary",
+      "officialPosition": [
+        -3608.07,
+        2383.1
+      ]
+    },
+    {
+      "name": "卡萨扎莱宫",
+      "tier": "secondary",
+      "officialPosition": [
+        -3388.07,
+        2245.1
+      ]
+    },
+    {
+      "name": "离渡谷",
+      "tier": "secondary",
+      "officialPosition": [
+        -3316.07,
+        2879.1
+      ]
+    },
+    {
+      "name": "香醉坡",
+      "tier": "secondary",
+      "officialPosition": [
+        -3162.07,
+        2827.1
+      ]
+    },
+    {
+      "name": "化城郭",
+      "tier": "secondary",
+      "officialPosition": [
+        -3154.07,
+        3125.1
+      ]
+    },
+    {
+      "name": "无郁稠林",
+      "tier": "secondary",
+      "officialPosition": [
+        -3054.07,
+        2077.1
+      ]
+    },
+    {
+      "name": "采樵谷",
+      "tier": "secondary",
+      "officialPosition": [
+        -2212.07,
+        2639.1
+      ]
+    },
+    {
+      "name": "伏鳌谷",
+      "tier": "secondary",
+      "officialPosition": [
+        -2542.07,
+        2771.1
+      ]
+    },
+    {
+      "name": "地面矿区",
+      "tier": "secondary",
+      "officialPosition": [
+        -2544.07,
+        2881.1
+      ]
+    },
+    {
+      "name": "丹砂崖",
+      "tier": "secondary",
+      "officialPosition": [
+        -2804.07,
+        3021.1
+      ]
+    },
+    {
+      "name": "天工峡",
+      "tier": "secondary",
+      "officialPosition": [
+        -2588.07,
+        3237.1
+      ]
+    },
+    {
+      "name": "巨渊之口",
+      "tier": "secondary",
+      "officialPosition": [
+        -2582.07,
+        3045.1
+      ]
+    },
+    {
+      "name": "琉璃峰",
+      "tier": "secondary",
+      "officialPosition": [
+        -2326.07,
+        3179.1
+      ]
+    },
+    {
+      "name": "千来神祠",
+      "tier": "secondary",
+      "officialPosition": [
+        2137.93,
+        8367.1
+      ]
+    },
+    {
+      "name": "知比山",
+      "tier": "secondary",
+      "officialPosition": [
+        1799.9299999999998,
+        8223.1
+      ]
+    },
+    {
+      "name": "逢岳之野",
+      "tier": "secondary",
+      "officialPosition": [
+        1729.9299999999998,
+        8563.1
+      ]
+    },
+    {
+      "name": "笈名海滨",
+      "tier": "secondary",
+      "officialPosition": [
+        1919.9299999999998,
+        8409.1
+      ]
+    },
+    {
+      "name": "菅名山",
+      "tier": "secondary",
+      "officialPosition": [
+        1939.9299999999998,
+        8611.1
+      ]
+    },
+    {
+      "name": "惑饲滩",
+      "tier": "secondary",
+      "officialPosition": [
+        2033.9299999999998,
+        8789.1
+      ]
+    },
+    {
+      "name": "茂知祭场",
+      "tier": "secondary",
+      "officialPosition": [
+        2105.93,
+        8695.1
+      ]
+    },
+    {
+      "name": "平海砦",
+      "tier": "secondary",
+      "officialPosition": [
+        3613.93,
+        6641.1
+      ]
+    },
+    {
+      "name": "天云峠",
+      "tier": "secondary",
+      "officialPosition": [
+        3499.93,
+        7043.1
+      ]
+    },
+    {
+      "name": "越石村",
+      "tier": "secondary",
+      "officialPosition": [
+        3181.93,
+        6719.1
+      ]
+    },
+    {
+      "name": "清籁丸",
+      "tier": "secondary",
+      "officialPosition": [
+        2907.93,
+        6759.1
+      ]
+    },
+    {
+      "name": "浅濑神社",
+      "tier": "secondary",
+      "officialPosition": [
+        2901.93,
+        7059.1
+      ]
+    },
+    {
+      "name": "望泷村",
+      "tier": "secondary",
+      "officialPosition": [
+        77.92999999999984,
+        6333.1
+      ]
+    },
+    {
+      "name": "珊瑚宫",
+      "tier": "secondary",
+      "officialPosition": [
+        57.929999999999836,
+        6119.1
+      ]
+    },
+    {
+      "name": "水月池",
+      "tier": "secondary",
+      "officialPosition": [
+        417.92999999999984,
+        5913.1
+      ]
+    },
+    {
+      "name": "曚云神社",
+      "tier": "secondary",
+      "officialPosition": [
+        -244.07000000000016,
+        6183.1
+      ]
+    },
+    {
+      "name": "踏鞴砂",
+      "tier": "secondary",
+      "officialPosition": [
+        2417.93,
+        6079.1
+      ]
+    },
+    {
+      "name": "九条阵屋",
+      "tier": "secondary",
+      "officialPosition": [
+        2711.93,
+        5569.1
+      ]
+    },
+    {
+      "name": "名椎滩",
+      "tier": "secondary",
+      "officialPosition": [
+        1967.9299999999998,
+        5815.1
+      ]
+    },
+    {
+      "name": "无想刃狭间",
+      "tier": "secondary",
+      "officialPosition": [
+        1627.9299999999998,
+        5957.1
+      ]
+    },
+    {
+      "name": "无明砦",
+      "tier": "secondary",
+      "officialPosition": [
+        995.9299999999998,
+        5997.1
+      ]
+    },
+    {
+      "name": "绯木村",
+      "tier": "secondary",
+      "officialPosition": [
+        1393.9299999999998,
+        6057.1
+      ]
+    },
+    {
+      "name": "蛇神之首",
+      "tier": "secondary",
+      "officialPosition": [
+        1517.9299999999998,
+        6161.1
+      ]
+    },
+    {
+      "name": "蛇骨矿洞",
+      "tier": "secondary",
+      "officialPosition": [
+        1599.9299999999998,
+        6329.1
+      ]
+    },
+    {
+      "name": "藤兜砦",
+      "tier": "secondary",
+      "officialPosition": [
+        1385.9299999999998,
+        5861.1
+      ]
+    },
+    {
+      "name": "刃连岛",
+      "tier": "secondary",
+      "officialPosition": [
+        3475.93,
+        4155.1
+      ]
+    },
+    {
+      "name": "鸣神大社·神樱",
+      "tier": "secondary",
+      "officialPosition": [
+        3659.93,
+        4805.1
+      ]
+    },
+    {
+      "name": "稻妻城",
+      "tier": "secondary",
+      "officialPosition": [
+        3789.93,
+        5547.1
+      ]
+    },
+    {
+      "name": "甘金岛",
+      "tier": "secondary",
+      "officialPosition": [
+        3237.93,
+        5289.1
+      ]
+    },
+    {
+      "name": "白狐之野",
+      "tier": "secondary",
+      "officialPosition": [
+        3421.93,
+        5239.1
+      ]
+    },
+    {
+      "name": "绀田村",
+      "tier": "secondary",
+      "officialPosition": [
+        3329.93,
+        5033.1
+      ]
+    },
+    {
+      "name": "离岛",
+      "tier": "secondary",
+      "officialPosition": [
+        2997.93,
+        4867.1
+      ]
+    },
+    {
+      "name": "影向山",
+      "tier": "secondary",
+      "officialPosition": [
+        3595.93,
+        4887.1
+      ]
+    },
+    {
+      "name": "镇守之森",
+      "tier": "secondary",
+      "officialPosition": [
+        3705.93,
+        5089.1
+      ]
+    },
+    {
+      "name": "神里屋敷",
+      "tier": "secondary",
+      "officialPosition": [
+        3881.93,
+        4877.1
+      ]
+    },
+    {
+      "name": "荒海",
+      "tier": "secondary",
+      "officialPosition": [
+        3489.93,
+        4577.1
+      ]
+    },
+    {
+      "name": "覆雪之路",
+      "tier": "secondary",
+      "officialPosition": [
+        289.92999999999984,
+        897.0999999999999
+      ]
+    },
+    {
+      "name": "雪葬之都·旧宫",
+      "tier": "secondary",
+      "officialPosition": [
+        247.92999999999984,
+        1211.1
+      ]
+    },
+    {
+      "name": "眠龙谷",
+      "tier": "secondary",
+      "officialPosition": [
+        -68.07000000000016,
+        1001.0999999999999
+      ]
+    },
+    {
+      "name": "寒天之钉",
+      "tier": "secondary",
+      "officialPosition": [
+        141.92999999999984,
+        1363.1
+      ]
+    },
+    {
+      "name": "星荧洞窟",
+      "tier": "secondary",
+      "officialPosition": [
+        43.929999999999836,
+        1451.1
+      ]
+    },
+    {
+      "name": "雪葬之都·近郊",
+      "tier": "secondary",
+      "officialPosition": [
+        -298.07000000000016,
+        1289.1
+      ]
+    },
+    {
+      "name": "蒙德城",
+      "tier": "secondary",
+      "officialPosition": [
+        79.92999999999984,
+        11.099999999999909
+      ]
+    },
+    {
+      "name": "果酒湖",
+      "tier": "secondary",
+      "officialPosition": [
+        163.92999999999984,
+        -314.9000000000001
+      ]
+    },
+    {
+      "name": "低语森林",
+      "tier": "secondary",
+      "officialPosition": [
+        367.92999999999984,
+        -106.90000000000009
+      ]
+    },
+    {
+      "name": "星落湖",
+      "tier": "secondary",
+      "officialPosition": [
+        585.9299999999998,
+        -240.9000000000001
+      ]
+    },
+    {
+      "name": "摘星崖",
+      "tier": "secondary",
+      "officialPosition": [
+        995.9299999999998,
+        -256.9000000000001
+      ]
+    },
+    {
+      "name": "望风山地",
+      "tier": "secondary",
+      "officialPosition": [
+        531.9299999999998,
+        -494.9000000000001
+      ]
+    },
+    {
+      "name": "望风角",
+      "tier": "secondary",
+      "officialPosition": [
+        987.9299999999998,
+        -580.9000000000001
+      ]
+    },
+    {
+      "name": "千风神殿",
+      "tier": "secondary",
+      "officialPosition": [
+        987.9299999999998,
+        -36.90000000000009
+      ]
+    },
+    {
+      "name": "清泉镇",
+      "tier": "secondary",
+      "officialPosition": [
+        69.92999999999984,
+        421.0999999999999
+      ]
+    },
+    {
+      "name": "晨曦酒庄",
+      "tier": "secondary",
+      "officialPosition": [
+        -350.07000000000016,
+        549.0999999999999
+      ]
+    },
+    {
+      "name": "奔狼领",
+      "tier": "secondary",
+      "officialPosition": [
+        -344.07000000000016,
+        155.0999999999999
+      ]
+    },
+    {
+      "name": "风起地",
+      "tier": "secondary",
+      "officialPosition": [
+        545.9299999999998,
+        361.0999999999999
+      ]
+    },
+    {
+      "name": "达达乌帕谷",
+      "tier": "secondary",
+      "officialPosition": [
+        835.9299999999998,
+        939.0999999999999
+      ]
+    },
+    {
+      "name": "誓言岬",
+      "tier": "secondary",
+      "officialPosition": [
+        1355.9299999999998,
+        829.0999999999999
+      ]
+    },
+    {
+      "name": "鹰翔海滩",
+      "tier": "secondary",
+      "officialPosition": [
+        867.9299999999998,
+        509.0999999999999
+      ]
+    },
+    {
+      "name": "马斯克礁",
+      "tier": "secondary",
+      "officialPosition": [
+        1973.9299999999998,
+        709.0999999999999
+      ]
+    },
+    {
+      "name": "风龙废墟",
+      "tier": "secondary",
+      "officialPosition": [
+        -874.0700000000002,
+        -418.9000000000001
+      ]
+    },
+    {
+      "name": "明冠峡",
+      "tier": "secondary",
+      "officialPosition": [
+        -334.07000000000016,
+        -406.9000000000001
+      ]
+    },
+    {
+      "name": "石门",
+      "tier": "secondary",
+      "officialPosition": [
+        -972.0700000000002,
+        881.0999999999999
+      ]
+    },
+    {
+      "name": "荻花洲",
+      "tier": "secondary",
+      "officialPosition": [
+        -1116.0700000000002,
+        1091.1
+      ]
+    },
+    {
+      "name": "望舒客栈",
+      "tier": "secondary",
+      "officialPosition": [
+        -1082.0700000000002,
+        1453.1
+      ]
+    },
+    {
+      "name": "轻策庄",
+      "tier": "secondary",
+      "officialPosition": [
+        -1404.0700000000002,
+        581.0999999999999
+      ]
+    },
+    {
+      "name": "无妄坡",
+      "tier": "secondary",
+      "officialPosition": [
+        -1156.0700000000002,
+        737.0999999999999
+      ]
+    },
+    {
+      "name": "地中之盐",
+      "tier": "secondary",
+      "officialPosition": [
+        -602.0700000000002,
+        1059.1
+      ]
+    },
+    {
+      "name": "归离原",
+      "tier": "secondary",
+      "officialPosition": [
+        -1042.0700000000002,
+        1817.1
+      ]
+    },
+    {
+      "name": "渌华池",
+      "tier": "secondary",
+      "officialPosition": [
+        -1368.0700000000002,
+        2111.1
+      ]
+    },
+    {
+      "name": "明蕴镇",
+      "tier": "secondary",
+      "officialPosition": [
+        -468.07000000000016,
+        1549.1
+      ]
+    },
+    {
+      "name": "瑶光滩",
+      "tier": "secondary",
+      "officialPosition": [
+        -516.0700000000002,
+        1865.1
+      ]
+    },
+    {
+      "name": "翠玦坡",
+      "tier": "secondary",
+      "officialPosition": [
+        -1592.0700000000002,
+        1867.1
+      ]
+    },
+    {
+      "name": "绝云间",
+      "tier": "secondary",
+      "officialPosition": [
+        -1942.0700000000002,
+        1599.1
+      ]
+    },
+    {
+      "name": "庆云顶",
+      "tier": "secondary",
+      "officialPosition": [
+        -2272.07,
+        1495.1
+      ]
+    },
+    {
+      "name": "奥藏山",
+      "tier": "secondary",
+      "officialPosition": [
+        -2302.07,
+        1209.1
+      ]
+    },
+    {
+      "name": "华光林",
+      "tier": "secondary",
+      "officialPosition": [
+        -2664.07,
+        1375.1
+      ]
+    },
+    {
+      "name": "琥牢山",
+      "tier": "secondary",
+      "officialPosition": [
+        -2638.07,
+        1603.1
+      ]
+    },
+    {
+      "name": "南天门",
+      "tier": "secondary",
+      "officialPosition": [
+        -2482.07,
+        1919.1
+      ]
+    },
+    {
+      "name": "天遒谷",
+      "tier": "secondary",
+      "officialPosition": [
+        -1996.0700000000002,
+        2175.1
+      ]
+    },
+    {
+      "name": "遁玉陵",
+      "tier": "secondary",
+      "officialPosition": [
+        -1690.0700000000002,
+        2515.1
+      ]
+    },
+    {
+      "name": "灵矩关",
+      "tier": "secondary",
+      "officialPosition": [
+        -1912.0700000000002,
+        2843.1
+      ]
+    },
+    {
+      "name": "青墟浦",
+      "tier": "secondary",
+      "officialPosition": [
+        -2026.0700000000002,
+        3211.1
+      ]
+    },
+    {
+      "name": "璃月港",
+      "tier": "secondary",
+      "officialPosition": [
+        -956.0700000000002,
+        2787.1
+      ]
+    },
+    {
+      "name": "天衡山",
+      "tier": "secondary",
+      "officialPosition": [
+        -1348.0700000000002,
+        2817.1
+      ]
+    },
+    {
+      "name": "孤云阁",
+      "tier": "secondary",
+      "officialPosition": [
+        19.929999999999836,
+        2577.1
+      ]
+    }
+  ]
+}

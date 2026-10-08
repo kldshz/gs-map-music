@@ -33,12 +33,13 @@ test('日文仅列任务/地点不抹掉BWIKI明确战斗属性，冲突留供�
  const c=candidates.find(c=>c.track.englishTitle==='No Turning Back');assert.equal(c.classification.kind,'battle-limited');assert.notEqual(c.classification.method,'region-scope');
 });
 
-test('补充出处中文可见，无出处仅神像归档；璃月纳塔战斗扩展到指定地区',()=>{
+test('补充出处中文可见，无出处仅神像归档；沉玉谷补战斗，悠悠不借用纳塔战斗',()=>{
  for(const t of library.tracks){
   const e=jaEvidence.get(t.id),raw=originalOrigin(t.sceneInfo);
   if((!raw.trim()||/^[\s/—-]+$/.test(raw))&&e?.placeJa.trim()){assert(t.sceneInfo.originText.startsWith('日文Wiki补充（中文）：'));assert(!/[ぁ-んァ-ヶ]/.test(t.sceneInfo.originText));}
   if(!hasOrigin({...t.sceneInfo,id:t.id})){assert.equal(t.sceneInfo.originText,'缺少出处');assert(library.associations.filter(a=>a.trackId===t.id).every(a=>map.anchors.find(p=>p.id===a.anchorId).kind==='statue'));}
  }
- for(const code of ['A:LY:CHENYUGU','A:NT:NATA5'])for(const p of map.anchors.filter(p=>p.areaCode===code&&!isCity(p)&&p.hiddenFlag!==3)){assert(library.associations.some(a=>a.anchorId===p.id&&category({...library.tracks.find(t=>t.id===a.trackId).sceneInfo,id:a.trackId})==='battle-generic'));}
+ for(const p of map.anchors.filter(p=>p.areaCode==='A:LY:CHENYUGU'&&!isCity(p)&&p.hiddenFlag!==3)){assert(library.associations.some(a=>a.anchorId===p.id&&category({...library.tracks.find(t=>t.id===a.trackId).sceneInfo,id:a.trackId}).startsWith('battle-')));}
+ for(const a of library.associations.filter(a=>map.anchors.find(p=>p.id===a.anchorId).areaCode==='A:NT:NATA5'))assert(!category({...library.tracks.find(t=>t.id===a.trackId).sceneInfo,id:a.trackId}).startsWith('battle-'));
  const e=[...jaEvidence.values()].find(e=>e.role==='battle');assert.equal(category({id:e.trackId,originText:'非战斗场景',discTitle:''}),'scene');
 });

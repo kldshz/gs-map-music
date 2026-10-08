@@ -15,7 +15,7 @@
             <span class="anchor-kind" :title="kindLabel(anchor.kind)" aria-hidden="true">{{ anchor.kind === 'statue' ? '✦' : '⚓' }}</span>
             <span class="sr-only">{{ kindLabel(anchor.kind) }}</span>
             <span class="anchor-name">{{ anchor.name }}</span>
-            <span class="anchor-area">{{ show(anchor.areaName) }}</span>
+            <span class="anchor-area anchor-geo-path">{{ geoPath(anchor.geography) }}</span>
             <span class="anchor-id">#{{ anchor.id }}</span>
             <span class="anchor-content">{{ summary(anchor.content) }}</span>
           </button>
@@ -45,13 +45,32 @@
         <dl class="anchor-info">
           <dt>编号</dt><dd>{{ state.selectedAnchor.id }}</dd>
           <dt>类型</dt><dd>{{ kindLabel(state.selectedAnchor.kind) }}</dd>
-          <dt>地区</dt><dd>{{ show(state.selectedAnchor.areaName) }}</dd>
-          <dt>国家</dt><dd>{{ show(state.selectedAnchor.country) }}</dd>
+          <dt>国家</dt><dd>{{ show(state.selectedAnchor.geography?.country || state.selectedAnchor.country) }}</dd>
+          <dt>一级地区</dt><dd>{{ primaryLabel(state.selectedAnchor.geography) }}</dd>
+          <dt>二级地点</dt><dd>{{ secondaryLabel(state.selectedAnchor.geography) }}</dd>
+          <dt>源地图分组</dt><dd>{{ show(state.selectedAnchor.areaName) }}</dd>
           <dt>坐标</dt><dd>{{ state.selectedAnchor.position ? `x=${state.selectedAnchor.position[0].toFixed(1)}, y=${state.selectedAnchor.position[1].toFixed(1)} (V3图像坐标)` : '待核实' }}</dd>
           <dt>说明</dt><dd>{{ show(state.selectedAnchor.content) }}</dd>
           <dt>来源</dt>
           <dd>
             <a v-if="state.selectedAnchor.sourceUrl" :href="state.selectedAnchor.sourceUrl" target="_blank" rel="noopener">空荧酒馆</a>
+            <template v-else>未知</template>
+          </dd>
+        </dl>
+      </details>
+
+      <details v-if="state.selectedAnchor.geography" class="detail-section geography-evidence">
+        <summary class="detail-summary">归类证据</summary>
+        <p class="context-note">距离候选仅供校对，不代表官方边界</p>
+        <dl class="anchor-info">
+          <dt>归类方式</dt><dd>{{ geographyMethodLabel(state.selectedAnchor.geography) }}</dd>
+          <dt>核实状态</dt><dd>{{ evidenceStatusLabel(state.selectedAnchor.geography) }}</dd>
+          <template v-if="geographyDistance(state.selectedAnchor.geography)">
+            <dt>距离候选</dt><dd>{{ geographyDistance(state.selectedAnchor.geography) }}</dd>
+          </template>
+          <dt>归类来源</dt>
+          <dd>
+            <a v-if="state.selectedAnchor.geography?.sourceUrl" :href="state.selectedAnchor.geography?.sourceUrl" target="_blank" rel="noopener">查看归类来源</a>
             <template v-else>未知</template>
           </dd>
         </dl>
@@ -137,6 +156,13 @@
         <dl class="track-metadata">
           <dt>出处原文</dt><dd class="origin-text">{{ state.selectedTrack.sceneInfo.originText || '未知' }}</dd>
           <dt>主要地区</dt><dd>{{ joinList(state.selectedTrack.sceneInfo.mainRegions) }}</dd>
+          <dt>统一分类路径</dt>
+          <dd>
+            <ul v-if="state.selectedTrack.sceneInfo.geographicScopes?.length" class="location-labels geo-scope-list">
+              <li v-for="(scope, idx) in state.selectedTrack.sceneInfo.geographicScopes" :key="idx">{{ geoPath(scope) }}</li>
+            </ul>
+            <template v-else>统一目录未归类</template>
+          </dd>
           <dt>完整细分目录</dt>
           <dd>
             <ul v-if="state.trackLocationLabels(state.selectedTrack.id).length" class="location-labels">
@@ -204,6 +230,7 @@
                 <div class="candidate-info">
                   <span class="anchor-content candidate-content">{{ anchor.content?.trim() || '点位说明尚未提供' }}</span>
                   <span class="anchor-meta"><span class="anchor-kind" :title="kindLabel(anchor.kind)" aria-hidden="true">{{ anchor.kind === 'statue' ? '✦' : '⚓' }}</span>{{ kindLabel(anchor.kind) }} · #{{ anchor.id }}</span>
+                  <span class="anchor-geo-path">{{ geoPath(anchor.geography) }}</span>
                 </div>
                 <div class="candidate-actions">
                   <button type="button" class="edit-btn add-btn" :disabled="state.editBusy || isAnchorAdded(anchor.id)" @click="addAnchorToTrack(anchor.id)">{{ isAnchorAdded(anchor.id) ? '已添加' : '添加到所选点位' }}</button>
@@ -252,7 +279,7 @@
 
 <script setup lang="ts">
 import { computed, nextTick, reactive, ref, watch } from 'vue';
-import type { MusicTrack, Anchor } from '../domain/contracts';
+import type { MusicTrack, Anchor, GeographicScope, AnchorGeography } from '../domain/contracts';
 import type { useExplorer } from '../services/explorer';
 
 type Maybe<T> = T | null | undefined;
@@ -312,7 +339,7 @@ const candidateAnchors = computed(() => {
   if (addAnchorQuery.value.trim()) {
     const q = addAnchorQuery.value.trim().toLocaleLowerCase();
     list = list.filter(a => {
-      const text = [a.name, a.content, a.areaName, a.country, a.id].join(' ').toLocaleLowerCase();
+      const text = [a.name, a.content, a.areaName, a.country, a.id, a.geography?.country, a.geography?.primary, a.geography?.secondary].join(' ').toLocaleLowerCase();
       return text.includes(q);
     });
   }
@@ -328,6 +355,34 @@ function kindLabel(kind: string): string {
   if (kind === 'statue') return '神像';
   if (kind === 'waypoint') return '传送锚点';
   return '点位';
+}
+
+function primaryLabel(scope: Maybe<GeographicScope>): string {
+  return scope?.primary?.trim() || '未确定';
+}
+
+function secondaryLabel(scope: Maybe<GeographicScope>): string {
+  return scope?.secondary?.trim() || '未细分';
+}
+
+function geoPath(scope: Maybe<GeographicScope>): string {
+  if (!scope) return '统一目录未归类';
+  return [scope.country?.trim() || '未知', primaryLabel(scope), secondaryLabel(scope)].join(' / ');
+}
+
+function geographyMethodLabel(geo: Maybe<AnchorGeography>): string {
+  if (geo?.method === 'source-header') return '来源标题归类';
+  if (geo?.method === 'landmark-distance') return '地标距离候选';
+  return '未解析';
+}
+
+function evidenceStatusLabel(geo: Maybe<AnchorGeography>): string {
+  return geo?.evidenceStatus === 'pending' ? '待核实' : '未知';
+}
+
+function geographyDistance(geo: Maybe<AnchorGeography>): string | null {
+  const d = geo?.distance;
+  return typeof d === 'number' && Number.isFinite(d) ? `${d.toFixed(1)} V3图像单位（非米）` : null;
 }
 
 function show(value: Maybe<string | number>): string {

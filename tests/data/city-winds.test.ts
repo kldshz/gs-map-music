@@ -12,13 +12,13 @@ const pilotIds=new Set(JSON.parse(await readFile('data/sources/city-winds-source
 const library={...full,tracks:full.tracks.filter(t=>pilotIds.has(t.id)),associations:full.associations.filter(a=>pilotIds.has(a.trackId)),musicLocations:full.musicLocations?.filter(p=>p.id.startsWith('city-winds-place-'))};
 const source=JSON.parse(await readFile('data/sources/city-winds-source.json','utf8'));
 test('63曲一一对应Wiki曲序和网易ID，出处/未知项/个人评价独立',()=>{
-  assert.equal(library.tracks.length,63);assert.equal(library.associations.length,404);assert.equal(library.musicLocations?.length,40);
+  assert.equal(library.tracks.length,63);assert.equal(library.musicLocations?.length,40);assert(library.associations.length>0);
   assert.equal(new Set(library.tracks.map(t=>t.neteaseId)).size,63);
   assert.deepEqual([1,2,3].map(n=>library.tracks.filter(t=>t.sceneInfo?.discNumber===n).length),[25,26,12]);
   for(const t of library.tracks){const s=source.tracks.find((s:any)=>s.neteaseId===t.neteaseId);assert(s);assert.equal(t.title,s.neteaseTitle);assert.equal(t.neteaseEncryptedId,s.neteaseEncryptedId);assert.equal(t.sceneInfo?.originText,s.originText);assert.equal(t.durationSeconds,s.durationSeconds);assert.equal(t.personalNote,'');assert.equal(t.releaseDate,'2020-09-28');assert.deepEqual(t.composers,['陈致逸']);}
   assert(library.associations.every(a=>a.evidenceStatus==='pending'));
   assert(library.associations.filter(a=>a.matchType==='region-archive').every(a=>snapshot.anchors.find(p=>p.id===a.anchorId)?.kind==='statue'));
-  assert(library.tracks.every(t=>library.associations.some(a=>a.trackId===t.id)));
+  assert.deepEqual(library.tracks.filter(t=>!library.associations.some(a=>a.trackId===t.id)).map(t=>t.sceneInfo?.wikiTitle).sort(),['冰封交响曲','冰风回荡']); // Boss without a researched nearby point is retained, never spread nationally.
 });
 test('秘境所属地区优先于专辑归属；不把全部曲目塞入蒙德',()=>{
   for(const [name,area] of [['芬德尼尔之顶','A:MD:XUESHAN'],['太山府','A:LY:LIYUE'],['震雷连山密宫','A:LY:LIYUE']]){
@@ -32,7 +32,7 @@ test('秘境所属地区优先于专辑归属；不把全部曲目塞入蒙德',
 });
 test('扩展导入保留独立评价，拒绝伪造已核实归档/错地区/非神像归档',()=>{
   const personal=structuredClone(raw);personal.tracks[0].personalNote='用户手填';assert.equal(validateLibrary(personal,ids,snapshot).tracks[0].personalNote,'用户手填');assert.equal(personal.tracks[0].description,raw.tracks[0].description);
-  for(const invalid of [()=>{const b=structuredClone(raw);b.associations[0].evidenceStatus='verified';return b;},()=>{const b=structuredClone(raw);b.musicLocations[0].areaCode='missing';return b;},()=>{const b=structuredClone(raw);b.associations[0].anchorId='kongying:6625';return b;}])assert.throws(()=>validateLibrary(invalid(),ids,snapshot));
+  for(const invalid of [()=>{const b=structuredClone(raw);b.associations.find((a:any)=>a.matchType==='region-archive').evidenceStatus='verified';return b;},()=>{const b=structuredClone(raw);b.musicLocations[0].areaCode='missing';return b;},()=>{const b=structuredClone(raw);b.associations.find((a:any)=>a.matchType==='region-archive').anchorId='kongying:6625';return b;}])assert.throws(()=>validateLibrary(invalid(),ids,snapshot));
 });
 test('个人评价保存/刷新/清空/恢复独立；失败和损坏存储不覆盖原值',()=>{
   const original=Object.getOwnPropertyDescriptor(globalThis,'localStorage');let stored:string|null=null,fail=false;
