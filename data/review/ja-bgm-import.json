@@ -27857,7 +27857,1271 @@
       "oldNote": "BWIKI：正机之神战斗阶段1。日文Wiki：魔神任務第三章第五幕；词典对照：魔神任务第三章第五幕。缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。",
       "newKind": "battle-limited",
       "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C"
+    },
+    {
+      "id": "ost:1879098466:13406",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:13406",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:13896",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:13896",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:13898",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:13898",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:13897",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:13897",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:13916",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:13916",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:13917",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:13917",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:13901",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:13901",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:10293",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:10293",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:10890",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:10890",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:13908",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:13908",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:13909",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:13909",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:10297",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:10297",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:10306",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:10306",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:13911",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:13911",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:10891",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:10891",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:10895",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:10895",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:17136",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:17136",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:10892",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:10892",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:10893",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:10893",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:13902",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:13902",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:13407",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:13407",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:13912",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:13912",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:16759",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:16759",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:10294",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:10294",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:16761",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:16761",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:16762",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:16762",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:13900",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:13900",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:10313",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:10313",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:10309",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:10309",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:10302",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:10302",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:13915",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:13915",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:13899",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:13899",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:10316",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:10316",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:16757",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:16757",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:16758",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:16758",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:10298",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:10298",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:10307",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:10307",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:10315",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:10315",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:10897",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:10897",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:10318",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:10318",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:16756",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:16756",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:10896",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:10896",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:13913",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:13913",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:13918",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:13918",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:10314",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:10314",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:16760",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:16760",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:10299",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:10299",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1879098466:10894",
+      "trackId": "netease:1879098466",
+      "anchorId": "kongying:10894",
+      "oldNote": "BWIKI：稻妻 世界BOSS。日文Wiki：戦闘(稲妻)；词典对照：战斗(稻妻)。通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。",
+      "newKind": "battle-generic",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD"
+    },
+    {
+      "id": "ost:1992141918:25509",
+      "trackId": "netease:1992141918",
+      "anchorId": "kongying:25509",
+      "oldNote": "BWIKI：道成林、护林森、二净甸、善见地白天、魔神任务（第四章）\n《原神》EP - 逆风散羽之别。日文Wiki：諸法の森；词典对照：諸法の森。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E3%82%B8%E3%83%A5%E3%83%8B%E3%83%A3%E3%83%BC%E3%83%8A%E3%81%A8%E3%83%B4%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A4%E3%83%BC%E3%81%AE%E6%A3%AE"
+    },
+    {
+      "id": "ost:1992141918:25847",
+      "trackId": "netease:1992141918",
+      "anchorId": "kongying:25847",
+      "oldNote": "BWIKI：道成林、护林森、二净甸、善见地白天、魔神任务（第四章）\n《原神》EP - 逆风散羽之别。日文Wiki：諸法の森；词典对照：諸法の森。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E3%82%B8%E3%83%A5%E3%83%8B%E3%83%A3%E3%83%BC%E3%83%8A%E3%81%A8%E3%83%B4%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A4%E3%83%BC%E3%81%AE%E6%A3%AE"
+    },
+    {
+      "id": "ost:1992141918:24567",
+      "trackId": "netease:1992141918",
+      "anchorId": "kongying:24567",
+      "oldNote": "BWIKI：道成林、护林森、二净甸、善见地白天、魔神任务（第四章）\n《原神》EP - 逆风散羽之别。日文Wiki：諸法の森；词典对照：諸法の森。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E3%82%B8%E3%83%A5%E3%83%8B%E3%83%A3%E3%83%BC%E3%83%8A%E3%81%A8%E3%83%B4%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A4%E3%83%BC%E3%81%AE%E6%A3%AE"
+    },
+    {
+      "id": "ost:1992141918:24629",
+      "trackId": "netease:1992141918",
+      "anchorId": "kongying:24629",
+      "oldNote": "BWIKI：道成林、护林森、二净甸、善见地白天、魔神任务（第四章）\n《原神》EP - 逆风散羽之别。日文Wiki：諸法の森；词典对照：諸法の森。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E3%82%B8%E3%83%A5%E3%83%8B%E3%83%A3%E3%83%BC%E3%83%8A%E3%81%A8%E3%83%B4%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A4%E3%83%BC%E3%81%AE%E6%A3%AE"
+    },
+    {
+      "id": "ost:1992141918:24635",
+      "trackId": "netease:1992141918",
+      "anchorId": "kongying:24635",
+      "oldNote": "BWIKI：道成林、护林森、二净甸、善见地白天、魔神任务（第四章）\n《原神》EP - 逆风散羽之别。日文Wiki：諸法の森；词典对照：諸法の森。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E3%82%B8%E3%83%A5%E3%83%8B%E3%83%A3%E3%83%BC%E3%83%8A%E3%81%A8%E3%83%B4%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A4%E3%83%BC%E3%81%AE%E6%A3%AE"
+    },
+    {
+      "id": "ost:1992141918:24623",
+      "trackId": "netease:1992141918",
+      "anchorId": "kongying:24623",
+      "oldNote": "BWIKI：道成林、护林森、二净甸、善见地白天、魔神任务（第四章）\n《原神》EP - 逆风散羽之别。日文Wiki：諸法の森；词典对照：諸法の森。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E3%82%B8%E3%83%A5%E3%83%8B%E3%83%A3%E3%83%BC%E3%83%8A%E3%81%A8%E3%83%B4%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A4%E3%83%BC%E3%81%AE%E6%A3%AE"
+    },
+    {
+      "id": "ost:1992141920:25509",
+      "trackId": "netease:1992141920",
+      "anchorId": "kongying:25509",
+      "oldNote": "BWIKI：道成林、护林森、二净甸、善见地夜晚、魔神任务（第三章、第四章）\n《原神》EP - 如风如露之思。日文Wiki：諸法の森；词典对照：諸法の森。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E3%82%B8%E3%83%A5%E3%83%8B%E3%83%A3%E3%83%BC%E3%83%8A%E3%81%A8%E3%83%B4%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A4%E3%83%BC%E3%81%AE%E6%A3%AE"
+    },
+    {
+      "id": "ost:1992141920:25847",
+      "trackId": "netease:1992141920",
+      "anchorId": "kongying:25847",
+      "oldNote": "BWIKI：道成林、护林森、二净甸、善见地夜晚、魔神任务（第三章、第四章）\n《原神》EP - 如风如露之思。日文Wiki：諸法の森；词典对照：諸法の森。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E3%82%B8%E3%83%A5%E3%83%8B%E3%83%A3%E3%83%BC%E3%83%8A%E3%81%A8%E3%83%B4%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A4%E3%83%BC%E3%81%AE%E6%A3%AE"
+    },
+    {
+      "id": "ost:1992141920:24567",
+      "trackId": "netease:1992141920",
+      "anchorId": "kongying:24567",
+      "oldNote": "BWIKI：道成林、护林森、二净甸、善见地夜晚、魔神任务（第三章、第四章）\n《原神》EP - 如风如露之思。日文Wiki：諸法の森；词典对照：諸法の森。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E3%82%B8%E3%83%A5%E3%83%8B%E3%83%A3%E3%83%BC%E3%83%8A%E3%81%A8%E3%83%B4%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A4%E3%83%BC%E3%81%AE%E6%A3%AE"
+    },
+    {
+      "id": "ost:1992141920:24629",
+      "trackId": "netease:1992141920",
+      "anchorId": "kongying:24629",
+      "oldNote": "BWIKI：道成林、护林森、二净甸、善见地夜晚、魔神任务（第三章、第四章）\n《原神》EP - 如风如露之思。日文Wiki：諸法の森；词典对照：諸法の森。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E3%82%B8%E3%83%A5%E3%83%8B%E3%83%A3%E3%83%BC%E3%83%8A%E3%81%A8%E3%83%B4%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A4%E3%83%BC%E3%81%AE%E6%A3%AE"
+    },
+    {
+      "id": "ost:1992141920:24635",
+      "trackId": "netease:1992141920",
+      "anchorId": "kongying:24635",
+      "oldNote": "BWIKI：道成林、护林森、二净甸、善见地夜晚、魔神任务（第三章、第四章）\n《原神》EP - 如风如露之思。日文Wiki：諸法の森；词典对照：諸法の森。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E3%82%B8%E3%83%A5%E3%83%8B%E3%83%A3%E3%83%BC%E3%83%8A%E3%81%A8%E3%83%B4%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A4%E3%83%BC%E3%81%AE%E6%A3%AE"
+    },
+    {
+      "id": "ost:1992141920:24623",
+      "trackId": "netease:1992141920",
+      "anchorId": "kongying:24623",
+      "oldNote": "BWIKI：道成林、护林森、二净甸、善见地夜晚、魔神任务（第三章、第四章）\n《原神》EP - 如风如露之思。日文Wiki：諸法の森；词典对照：諸法の森。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E3%82%B8%E3%83%A5%E3%83%8B%E3%83%A3%E3%83%BC%E3%83%8A%E3%81%A8%E3%83%B4%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A4%E3%83%BC%E3%81%AE%E6%A3%AE"
+    },
+    {
+      "id": "ost:3437730036:121653",
+      "trackId": "netease:3437730036",
+      "anchorId": "kongying:121653",
+      "oldNote": "BWIKI：野外 夜晚1 引用主题菲林斯角色PV。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730036:121680",
+      "trackId": "netease:3437730036",
+      "anchorId": "kongying:121680",
+      "oldNote": "BWIKI：野外 夜晚1 引用主题菲林斯角色PV。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730036:121670",
+      "trackId": "netease:3437730036",
+      "anchorId": "kongying:121670",
+      "oldNote": "BWIKI：野外 夜晚1 引用主题菲林斯角色PV。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730036:121685",
+      "trackId": "netease:3437730036",
+      "anchorId": "kongying:121685",
+      "oldNote": "BWIKI：野外 夜晚1 引用主题菲林斯角色PV。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730036:121686",
+      "trackId": "netease:3437730036",
+      "anchorId": "kongying:121686",
+      "oldNote": "BWIKI：野外 夜晚1 引用主题菲林斯角色PV。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730036:121682",
+      "trackId": "netease:3437730036",
+      "anchorId": "kongying:121682",
+      "oldNote": "BWIKI：野外 夜晚1 引用主题菲林斯角色PV。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730036:121684",
+      "trackId": "netease:3437730036",
+      "anchorId": "kongying:121684",
+      "oldNote": "BWIKI：野外 夜晚1 引用主题菲林斯角色PV。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730036:121690",
+      "trackId": "netease:3437730036",
+      "anchorId": "kongying:121690",
+      "oldNote": "BWIKI：野外 夜晚1 引用主题菲林斯角色PV。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730036:121693",
+      "trackId": "netease:3437730036",
+      "anchorId": "kongying:121693",
+      "oldNote": "BWIKI：野外 夜晚1 引用主题菲林斯角色PV。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730036:121676",
+      "trackId": "netease:3437730036",
+      "anchorId": "kongying:121676",
+      "oldNote": "BWIKI：野外 夜晚1 引用主题菲林斯角色PV。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730036:121678",
+      "trackId": "netease:3437730036",
+      "anchorId": "kongying:121678",
+      "oldNote": "BWIKI：野外 夜晚1 引用主题菲林斯角色PV。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730036:121753",
+      "trackId": "netease:3437730036",
+      "anchorId": "kongying:121753",
+      "oldNote": "BWIKI：野外 夜晚1 引用主题菲林斯角色PV。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730036:121762",
+      "trackId": "netease:3437730036",
+      "anchorId": "kongying:121762",
+      "oldNote": "BWIKI：野外 夜晚1 引用主题菲林斯角色PV。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730036:121759",
+      "trackId": "netease:3437730036",
+      "anchorId": "kongying:121759",
+      "oldNote": "BWIKI：野外 夜晚1 引用主题菲林斯角色PV。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730036:121765",
+      "trackId": "netease:3437730036",
+      "anchorId": "kongying:121765",
+      "oldNote": "BWIKI：野外 夜晚1 引用主题菲林斯角色PV。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730036:121774",
+      "trackId": "netease:3437730036",
+      "anchorId": "kongying:121774",
+      "oldNote": "BWIKI：野外 夜晚1 引用主题菲林斯角色PV。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730036:121694",
+      "trackId": "netease:3437730036",
+      "anchorId": "kongying:121694",
+      "oldNote": "BWIKI：野外 夜晚1 引用主题菲林斯角色PV。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730036:123803",
+      "trackId": "netease:3437730036",
+      "anchorId": "kongying:123803",
+      "oldNote": "BWIKI：野外 夜晚1 引用主题菲林斯角色PV。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730036:125358",
+      "trackId": "netease:3437730036",
+      "anchorId": "kongying:125358",
+      "oldNote": "BWIKI：野外 夜晚1 引用主题菲林斯角色PV。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730036:121714",
+      "trackId": "netease:3437730036",
+      "anchorId": "kongying:121714",
+      "oldNote": "BWIKI：野外 夜晚1 引用主题菲林斯角色PV。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730036:121715",
+      "trackId": "netease:3437730036",
+      "anchorId": "kongying:121715",
+      "oldNote": "BWIKI：野外 夜晚1 引用主题菲林斯角色PV。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730036:121769",
+      "trackId": "netease:3437730036",
+      "anchorId": "kongying:121769",
+      "oldNote": "BWIKI：野外 夜晚1 引用主题菲林斯角色PV。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730036:121771",
+      "trackId": "netease:3437730036",
+      "anchorId": "kongying:121771",
+      "oldNote": "BWIKI：野外 夜晚1 引用主题菲林斯角色PV。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730036:126219",
+      "trackId": "netease:3437730036",
+      "anchorId": "kongying:126219",
+      "oldNote": "BWIKI：野外 夜晚1 引用主题菲林斯角色PV。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730036:126268",
+      "trackId": "netease:3437730036",
+      "anchorId": "kongying:126268",
+      "oldNote": "BWIKI：野外 夜晚1 引用主题菲林斯角色PV。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730038:121653",
+      "trackId": "netease:3437730038",
+      "anchorId": "kongying:121653",
+      "oldNote": "BWIKI：野外 夜晚4 主线实机过场奥黛塔天鹅舞。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730038:121680",
+      "trackId": "netease:3437730038",
+      "anchorId": "kongying:121680",
+      "oldNote": "BWIKI：野外 夜晚4 主线实机过场奥黛塔天鹅舞。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730038:121670",
+      "trackId": "netease:3437730038",
+      "anchorId": "kongying:121670",
+      "oldNote": "BWIKI：野外 夜晚4 主线实机过场奥黛塔天鹅舞。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730038:121685",
+      "trackId": "netease:3437730038",
+      "anchorId": "kongying:121685",
+      "oldNote": "BWIKI：野外 夜晚4 主线实机过场奥黛塔天鹅舞。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730038:121686",
+      "trackId": "netease:3437730038",
+      "anchorId": "kongying:121686",
+      "oldNote": "BWIKI：野外 夜晚4 主线实机过场奥黛塔天鹅舞。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730038:121682",
+      "trackId": "netease:3437730038",
+      "anchorId": "kongying:121682",
+      "oldNote": "BWIKI：野外 夜晚4 主线实机过场奥黛塔天鹅舞。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730038:121684",
+      "trackId": "netease:3437730038",
+      "anchorId": "kongying:121684",
+      "oldNote": "BWIKI：野外 夜晚4 主线实机过场奥黛塔天鹅舞。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730038:121690",
+      "trackId": "netease:3437730038",
+      "anchorId": "kongying:121690",
+      "oldNote": "BWIKI：野外 夜晚4 主线实机过场奥黛塔天鹅舞。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730038:121693",
+      "trackId": "netease:3437730038",
+      "anchorId": "kongying:121693",
+      "oldNote": "BWIKI：野外 夜晚4 主线实机过场奥黛塔天鹅舞。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730038:121676",
+      "trackId": "netease:3437730038",
+      "anchorId": "kongying:121676",
+      "oldNote": "BWIKI：野外 夜晚4 主线实机过场奥黛塔天鹅舞。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730038:121678",
+      "trackId": "netease:3437730038",
+      "anchorId": "kongying:121678",
+      "oldNote": "BWIKI：野外 夜晚4 主线实机过场奥黛塔天鹅舞。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730038:121753",
+      "trackId": "netease:3437730038",
+      "anchorId": "kongying:121753",
+      "oldNote": "BWIKI：野外 夜晚4 主线实机过场奥黛塔天鹅舞。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730038:121762",
+      "trackId": "netease:3437730038",
+      "anchorId": "kongying:121762",
+      "oldNote": "BWIKI：野外 夜晚4 主线实机过场奥黛塔天鹅舞。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730038:121759",
+      "trackId": "netease:3437730038",
+      "anchorId": "kongying:121759",
+      "oldNote": "BWIKI：野外 夜晚4 主线实机过场奥黛塔天鹅舞。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730038:121765",
+      "trackId": "netease:3437730038",
+      "anchorId": "kongying:121765",
+      "oldNote": "BWIKI：野外 夜晚4 主线实机过场奥黛塔天鹅舞。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730038:121774",
+      "trackId": "netease:3437730038",
+      "anchorId": "kongying:121774",
+      "oldNote": "BWIKI：野外 夜晚4 主线实机过场奥黛塔天鹅舞。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730038:121694",
+      "trackId": "netease:3437730038",
+      "anchorId": "kongying:121694",
+      "oldNote": "BWIKI：野外 夜晚4 主线实机过场奥黛塔天鹅舞。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730038:123803",
+      "trackId": "netease:3437730038",
+      "anchorId": "kongying:123803",
+      "oldNote": "BWIKI：野外 夜晚4 主线实机过场奥黛塔天鹅舞。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730038:125358",
+      "trackId": "netease:3437730038",
+      "anchorId": "kongying:125358",
+      "oldNote": "BWIKI：野外 夜晚4 主线实机过场奥黛塔天鹅舞。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730038:121714",
+      "trackId": "netease:3437730038",
+      "anchorId": "kongying:121714",
+      "oldNote": "BWIKI：野外 夜晚4 主线实机过场奥黛塔天鹅舞。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730038:121715",
+      "trackId": "netease:3437730038",
+      "anchorId": "kongying:121715",
+      "oldNote": "BWIKI：野外 夜晚4 主线实机过场奥黛塔天鹅舞。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730038:121769",
+      "trackId": "netease:3437730038",
+      "anchorId": "kongying:121769",
+      "oldNote": "BWIKI：野外 夜晚4 主线实机过场奥黛塔天鹅舞。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730038:121771",
+      "trackId": "netease:3437730038",
+      "anchorId": "kongying:121771",
+      "oldNote": "BWIKI：野外 夜晚4 主线实机过场奥黛塔天鹅舞。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730038:126219",
+      "trackId": "netease:3437730038",
+      "anchorId": "kongying:126219",
+      "oldNote": "BWIKI：野外 夜晚4 主线实机过场奥黛塔天鹅舞。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:3437730038:126268",
+      "trackId": "netease:3437730038",
+      "anchorId": "kongying:126268",
+      "oldNote": "BWIKI：野外 夜晚4 主线实机过场奥黛塔天鹅舞。日文Wiki：スネージナヤ(夜)；词典对照：至冬(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB"
+    },
+    {
+      "id": "ost:1973619553:20698",
+      "trackId": "netease:1973619553",
+      "anchorId": "kongying:20698",
+      "oldNote": "BWIKI：渊下宫大日御舆过场。日文Wiki：三界道饗祭；词典对照：三界路飨祭。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C"
+    },
+    {
+      "id": "ost:1973619553:20685",
+      "trackId": "netease:1973619553",
+      "anchorId": "kongying:20685",
+      "oldNote": "BWIKI：渊下宫大日御舆过场。日文Wiki：三界道饗祭；词典对照：三界路飨祭。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C"
+    },
+    {
+      "id": "ost:1973619553:20673",
+      "trackId": "netease:1973619553",
+      "anchorId": "kongying:20673",
+      "oldNote": "BWIKI：渊下宫大日御舆过场。日文Wiki：三界道饗祭；词典对照：三界路飨祭。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C"
+    },
+    {
+      "id": "ost:1973619553:20699",
+      "trackId": "netease:1973619553",
+      "anchorId": "kongying:20699",
+      "oldNote": "BWIKI：渊下宫大日御舆过场。日文Wiki：三界道饗祭；词典对照：三界路飨祭。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C"
+    },
+    {
+      "id": "ost:1973619553:20697",
+      "trackId": "netease:1973619553",
+      "anchorId": "kongying:20697",
+      "oldNote": "BWIKI：渊下宫大日御舆过场。日文Wiki：三界道饗祭；词典对照：三界路飨祭。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C"
+    },
+    {
+      "id": "ost:1973619553:20702",
+      "trackId": "netease:1973619553",
+      "anchorId": "kongying:20702",
+      "oldNote": "BWIKI：渊下宫大日御舆过场。日文Wiki：三界道饗祭；词典对照：三界路飨祭。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C"
+    },
+    {
+      "id": "ost:1973619553:20821",
+      "trackId": "netease:1973619553",
+      "anchorId": "kongying:20821",
+      "oldNote": "BWIKI：渊下宫大日御舆过场。日文Wiki：三界道饗祭；词典对照：三界路飨祭。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C"
+    },
+    {
+      "id": "ost:1973619553:20822",
+      "trackId": "netease:1973619553",
+      "anchorId": "kongying:20822",
+      "oldNote": "BWIKI：渊下宫大日御舆过场。日文Wiki：三界道饗祭；词典对照：三界路飨祭。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C"
+    },
+    {
+      "id": "ost:1973619553:20551",
+      "trackId": "netease:1973619553",
+      "anchorId": "kongying:20551",
+      "oldNote": "BWIKI：渊下宫大日御舆过场。日文Wiki：三界道饗祭；词典对照：三界路飨祭。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C"
+    },
+    {
+      "id": "ost:1973619553:20672",
+      "trackId": "netease:1973619553",
+      "anchorId": "kongying:20672",
+      "oldNote": "BWIKI：渊下宫大日御舆过场。日文Wiki：三界道饗祭；词典对照：三界路飨祭。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C"
+    },
+    {
+      "id": "ost:3411268917:119912",
+      "trackId": "netease:3411268917",
+      "anchorId": "kongying:119912",
+      "oldNote": "BWIKI：伊比尼伯龙之眼 至乌吉恩圈 登月任务剧情开始与结尾。日文Wiki：イビニベルンの目(移送ステーション)；词典对照：伊比尼伯龙之眼(移送ステーション)。出处地名匹配同地区点位地理标题的父级范围；仅补缺少常态场景音乐的点位，实际音区待校对。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C"
+    },
+    {
+      "id": "ost:3411268917:119913",
+      "trackId": "netease:3411268917",
+      "anchorId": "kongying:119913",
+      "oldNote": "BWIKI：伊比尼伯龙之眼 至乌吉恩圈 登月任务剧情开始与结尾。日文Wiki：イビニベルンの目(移送ステーション)；词典对照：伊比尼伯龙之眼(移送ステーション)。出处地名匹配同地区点位地理标题的父级范围；仅补缺少常态场景音乐的点位，实际音区待校对。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C"
+    },
+    {
+      "id": "ost:3411268917:119914",
+      "trackId": "netease:3411268917",
+      "anchorId": "kongying:119914",
+      "oldNote": "BWIKI：伊比尼伯龙之眼 至乌吉恩圈 登月任务剧情开始与结尾。日文Wiki：イビニベルンの目(移送ステーション)；词典对照：伊比尼伯龙之眼(移送ステーション)。出处地名匹配同地区点位地理标题的父级范围；仅补缺少常态场景音乐的点位，实际音区待校对。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C"
+    },
+    {
+      "id": "ost:1992141925:24616",
+      "trackId": "netease:1992141925",
+      "anchorId": "kongying:24616",
+      "oldNote": "出处：阿陀河谷。出处地名与点位地理标题交叉匹配，实际音区仍待校对。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E3%82%B8%E3%83%A5%E3%83%8B%E3%83%A3%E3%83%BC%E3%83%8A%E3%81%A8%E3%83%B4%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A4%E3%83%BC%E3%81%AE%E6%A3%AE"
+    },
+    {
+      "id": "ost:1992141925:25157",
+      "trackId": "netease:1992141925",
+      "anchorId": "kongying:25157",
+      "oldNote": "出处：阿陀河谷。出处地名与点位地理标题交叉匹配，实际音区仍待校对。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E3%82%B8%E3%83%A5%E3%83%8B%E3%83%A3%E3%83%BC%E3%83%8A%E3%81%A8%E3%83%B4%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A4%E3%83%BC%E3%81%AE%E6%A3%AE"
+    },
+    {
+      "id": "ost:1992141925:24565",
+      "trackId": "netease:1992141925",
+      "anchorId": "kongying:24565",
+      "oldNote": "出处：阿陀河谷。出处地名与点位地理标题交叉匹配，实际音区仍待校对。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E3%82%B8%E3%83%A5%E3%83%8B%E3%83%A3%E3%83%BC%E3%83%8A%E3%81%A8%E3%83%B4%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A4%E3%83%BC%E3%81%AE%E6%A3%AE"
+    },
+    {
+      "id": "ost:1992141925:24615",
+      "trackId": "netease:1992141925",
+      "anchorId": "kongying:24615",
+      "oldNote": "出处：阿陀河谷。出处地名与点位地理标题交叉匹配，实际音区仍待校对。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E3%82%B8%E3%83%A5%E3%83%8B%E3%83%A3%E3%83%BC%E3%83%8A%E3%81%A8%E3%83%B4%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A4%E3%83%BC%E3%81%AE%E6%A3%AE"
+    },
+    {
+      "id": "ost:1992141925:24619",
+      "trackId": "netease:1992141925",
+      "anchorId": "kongying:24619",
+      "oldNote": "出处：阿陀河谷。出处地名与点位地理标题交叉匹配，实际音区仍待校对。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E3%82%B8%E3%83%A5%E3%83%8B%E3%83%A3%E3%83%BC%E3%83%8A%E3%81%A8%E3%83%B4%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A4%E3%83%BC%E3%81%AE%E6%A3%AE"
+    },
+    {
+      "id": "ost:2130083948:52120",
+      "trackId": "netease:2130083948",
+      "anchorId": "kongying:52120",
+      "oldNote": "出处：/。缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E4%B8%87%E6%B0%B4%E3%81%AE%E6%BA%90%E3%81%AA%E3%82%8B%E6%B5%B7"
+    },
+    {
+      "id": "ost:2130083948:52119",
+      "trackId": "netease:2130083948",
+      "anchorId": "kongying:52119",
+      "oldNote": "出处：/。缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E4%B8%87%E6%B0%B4%E3%81%AE%E6%BA%90%E3%81%AA%E3%82%8B%E6%B5%B7"
+    },
+    {
+      "id": "ost:2130083948:60443",
+      "trackId": "netease:2130083948",
+      "anchorId": "kongying:60443",
+      "oldNote": "出处：/。缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E4%B8%87%E6%B0%B4%E3%81%AE%E6%BA%90%E3%81%AA%E3%82%8B%E6%B5%B7"
+    },
+    {
+      "id": "ost:2130083948:60442",
+      "trackId": "netease:2130083948",
+      "anchorId": "kongying:60442",
+      "oldNote": "出处：/。缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E4%B8%87%E6%B0%B4%E3%81%AE%E6%BA%90%E3%81%AA%E3%82%8B%E6%B5%B7"
+    },
+    {
+      "id": "ost:2156623360:72590",
+      "trackId": "netease:2156623360",
+      "anchorId": "kongying:72590",
+      "oldNote": "出处：/。缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%B0%B8%E9%81%A0%E3%81%AE%E3%82%B7%E3%83%B3%E3%83%95%E3%82%A9%E3%83%8B%E3%83%BC"
+    },
+    {
+      "id": "ost:2156624898:72590",
+      "trackId": "netease:2156624898",
+      "anchorId": "kongying:72590",
+      "oldNote": "出处：/。缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%B0%B8%E9%81%A0%E3%81%AE%E3%82%B7%E3%83%B3%E3%83%95%E3%82%A9%E3%83%8B%E3%83%BC"
+    },
+    {
+      "id": "ost:2156624903:72590",
+      "trackId": "netease:2156624903",
+      "anchorId": "kongying:72590",
+      "oldNote": "出处：/。缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%B0%B8%E9%81%A0%E3%81%AE%E3%82%B7%E3%83%B3%E3%83%95%E3%82%A9%E3%83%8B%E3%83%BC"
+    },
+    {
+      "id": "ost:2657697282:84647",
+      "trackId": "netease:2657697282",
+      "anchorId": "kongying:84647",
+      "oldNote": "出处：/。缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%B0%B8%E9%81%A0%E3%81%AE%E5%A4%AA%E9%99%BD%E3%80%81%E4%B9%85%E9%81%A0%E3%81%AE%E6%B8%87%E6%9C%9B"
+    },
+    {
+      "id": "ost:2657697282:84646",
+      "trackId": "netease:2657697282",
+      "anchorId": "kongying:84646",
+      "oldNote": "出处：/。缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%B0%B8%E9%81%A0%E3%81%AE%E5%A4%AA%E9%99%BD%E3%80%81%E4%B9%85%E9%81%A0%E3%81%AE%E6%B8%87%E6%9C%9B"
+    },
+    {
+      "id": "ost:2657697282:84645",
+      "trackId": "netease:2657697282",
+      "anchorId": "kongying:84645",
+      "oldNote": "出处：/。缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%B0%B8%E9%81%A0%E3%81%AE%E5%A4%AA%E9%99%BD%E3%80%81%E4%B9%85%E9%81%A0%E3%81%AE%E6%B8%87%E6%9C%9B"
+    },
+    {
+      "id": "ost:2657697283:84647",
+      "trackId": "netease:2657697283",
+      "anchorId": "kongying:84647",
+      "oldNote": "出处：/。缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%B0%B8%E9%81%A0%E3%81%AE%E5%A4%AA%E9%99%BD%E3%80%81%E4%B9%85%E9%81%A0%E3%81%AE%E6%B8%87%E6%9C%9B"
+    },
+    {
+      "id": "ost:2657697283:84646",
+      "trackId": "netease:2657697283",
+      "anchorId": "kongying:84646",
+      "oldNote": "出处：/。缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%B0%B8%E9%81%A0%E3%81%AE%E5%A4%AA%E9%99%BD%E3%80%81%E4%B9%85%E9%81%A0%E3%81%AE%E6%B8%87%E6%9C%9B"
+    },
+    {
+      "id": "ost:2657697283:84645",
+      "trackId": "netease:2657697283",
+      "anchorId": "kongying:84645",
+      "oldNote": "出处：/。缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%B0%B8%E9%81%A0%E3%81%AE%E5%A4%AA%E9%99%BD%E3%80%81%E4%B9%85%E9%81%A0%E3%81%AE%E6%B8%87%E6%9C%9B"
+    },
+    {
+      "id": "ost:2699945653:93471",
+      "trackId": "netease:2699945653",
+      "anchorId": "kongying:93471",
+      "oldNote": "出处：剧情音乐《溯火而归的终局》。缺少精确点位，按来源地区或场景专辑归属在本范围神像归档；不代表实际播放。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%A4%9C%E3%82%92%E7%85%A7%E3%82%89%E3%81%99%E7%84%94"
+    },
+    {
+      "id": "ost:2756034892:111852",
+      "trackId": "netease:2756034892",
+      "anchorId": "kongying:111852",
+      "oldNote": "BWIKI：挪德卡莱大世界野外随机。日文Wiki：ナド・クライ(地下)；词典对照：挪德卡莱(地下)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%A4%95%E6%9A%AE%E3%82%8C%E3%82%92%E7%85%A7%E3%82%89%E3%81%99%E6%9C%88"
+    },
+    {
+      "id": "ost:2756034893:111852",
+      "trackId": "netease:2756034893",
+      "anchorId": "kongying:111852",
+      "oldNote": "BWIKI：挪德卡莱大世界野外随机。日文Wiki：ナド・クライ(地下)；词典对照：挪德卡莱(地下)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E5%A4%95%E6%9A%AE%E3%82%8C%E3%82%92%E7%85%A7%E3%82%89%E3%81%99%E6%9C%88"
+    },
+    {
+      "id": "ost:3358787316:111852",
+      "trackId": "netease:3358787316",
+      "anchorId": "kongying:111852",
+      "oldNote": "BWIKI：逐浪野/虚海望 野外白天。日文Wiki：海を望めぬ峰(昼)\n波追いの峠(昼)\n煙雲の山(昼)；词典对照：虚海望(白天)\n逐浪野(白天)\n烟硌山峰(白天)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%9C%94%E6%9C%9B%E3%82%92%E5%BE%85%E3%81%A4%E5%BA%AD"
+    },
+    {
+      "id": "ost:3358787317:111852",
+      "trackId": "netease:3358787317",
+      "anchorId": "kongying:111852",
+      "oldNote": "BWIKI：逐浪野/虚海望 野外白天。日文Wiki：海を望めぬ峰(昼)\n波追いの峠(昼)\n煙雲の山(昼)；词典对照：虚海望(白天)\n逐浪野(白天)\n烟硌山峰(白天)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%9C%94%E6%9C%9B%E3%82%92%E5%BE%85%E3%81%A4%E5%BA%AD"
+    },
+    {
+      "id": "ost:3358787318:111852",
+      "trackId": "netease:3358787318",
+      "anchorId": "kongying:111852",
+      "oldNote": "BWIKI：逐浪野/虚海望 野外白天。日文Wiki：海を望めぬ峰(昼)\n波追いの峠(昼)\n煙雲の山(昼)；词典对照：虚海望(白天)\n逐浪野(白天)\n烟硌山峰(白天)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%9C%94%E6%9C%9B%E3%82%92%E5%BE%85%E3%81%A4%E5%BA%AD"
+    },
+    {
+      "id": "ost:3358787319:111852",
+      "trackId": "netease:3358787319",
+      "anchorId": "kongying:111852",
+      "oldNote": "BWIKI：逐浪野/虚海望 野外白天。日文Wiki：海を望めぬ峰(昼)\n波追いの峠(昼)\n煙雲の山(昼)；词典对照：虚海望(白天)\n逐浪野(白天)\n烟硌山峰(白天)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%9C%94%E6%9C%9B%E3%82%92%E5%BE%85%E3%81%A4%E5%BA%AD"
+    },
+    {
+      "id": "ost:3358787320:111852",
+      "trackId": "netease:3358787320",
+      "anchorId": "kongying:111852",
+      "oldNote": "BWIKI：逐浪野/虚海望 野外白天。日文Wiki：海を望めぬ峰(昼)\n波追いの峠(昼)\n煙雲の山(昼)；词典对照：虚海望(白天)\n逐浪野(白天)\n烟硌山峰(白天)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%9C%94%E6%9C%9B%E3%82%92%E5%BE%85%E3%81%A4%E5%BA%AD"
+    },
+    {
+      "id": "ost:3358787321:111852",
+      "trackId": "netease:3358787321",
+      "anchorId": "kongying:111852",
+      "oldNote": "BWIKI：逐浪野/虚海望 野外白天。日文Wiki：海を望めぬ峰(昼)\n波追いの峠(昼)\n煙雲の山(昼)；词典对照：虚海望(白天)\n逐浪野(白天)\n烟硌山峰(白天)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%9C%94%E6%9C%9B%E3%82%92%E5%BE%85%E3%81%A4%E5%BA%AD"
+    },
+    {
+      "id": "ost:3358788978:111852",
+      "trackId": "netease:3358788978",
+      "anchorId": "kongying:111852",
+      "oldNote": "BWIKI：逐浪野/虚海望 野外夜晚。日文Wiki：海を望めぬ峰(夜)\n波追いの峠(夜)\n煙雲の山(夜)；词典对照：虚海望(夜晚)\n逐浪野(夜晚)\n烟硌山峰(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%9C%94%E6%9C%9B%E3%82%92%E5%BE%85%E3%81%A4%E5%BA%AD"
+    },
+    {
+      "id": "ost:3358788979:111852",
+      "trackId": "netease:3358788979",
+      "anchorId": "kongying:111852",
+      "oldNote": "BWIKI：逐浪野/虚海望 野外夜晚。日文Wiki：海を望めぬ峰(夜)\n波追いの峠(夜)\n煙雲の山(夜)；词典对照：虚海望(夜晚)\n逐浪野(夜晚)\n烟硌山峰(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%9C%94%E6%9C%9B%E3%82%92%E5%BE%85%E3%81%A4%E5%BA%AD"
+    },
+    {
+      "id": "ost:3358787322:111852",
+      "trackId": "netease:3358787322",
+      "anchorId": "kongying:111852",
+      "oldNote": "BWIKI：逐浪野/虚海望 野外夜晚。日文Wiki：海を望めぬ峰(夜)\n波追いの峠(夜)\n煙雲の山(夜)；词典对照：虚海望(夜晚)\n逐浪野(夜晚)\n烟硌山峰(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%9C%94%E6%9C%9B%E3%82%92%E5%BE%85%E3%81%A4%E5%BA%AD"
+    },
+    {
+      "id": "ost:3358788980:111852",
+      "trackId": "netease:3358788980",
+      "anchorId": "kongying:111852",
+      "oldNote": "BWIKI：逐浪野/虚海望 野外夜晚、厄布拉神柱（异时的流星完成后）。日文Wiki：海を望めぬ峰(夜)\n波追いの峠(夜)\n煙雲の山(夜)；词典对照：虚海望(夜晚)\n逐浪野(夜晚)\n烟硌山峰(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%9C%94%E6%9C%9B%E3%82%92%E5%BE%85%E3%81%A4%E5%BA%AD"
+    },
+    {
+      "id": "ost:3358788981:111852",
+      "trackId": "netease:3358788981",
+      "anchorId": "kongying:111852",
+      "oldNote": "BWIKI：逐浪野/虚海望 野外夜晚。日文Wiki：海を望めぬ峰(夜)\n波追いの峠(夜)\n煙雲の山(夜)；词典对照：虚海望(夜晚)\n逐浪野(夜晚)\n烟硌山峰(夜晚)。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E6%9C%94%E6%9C%9B%E3%82%92%E5%BE%85%E3%81%A4%E5%BA%AD"
+    },
+    {
+      "id": "ost:2737530029:104506",
+      "trackId": "netease:2737530029",
+      "anchorId": "kongying:104506",
+      "oldNote": "出处：悠悠度假村。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C"
+    },
+    {
+      "id": "ost:2737530029:104499",
+      "trackId": "netease:2737530029",
+      "anchorId": "kongying:104499",
+      "oldNote": "出处：悠悠度假村。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C"
+    },
+    {
+      "id": "ost:2737530029:104521",
+      "trackId": "netease:2737530029",
+      "anchorId": "kongying:104521",
+      "oldNote": "出处：悠悠度假村。野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。",
+      "newKind": "scene",
+      "sourceUrl": "https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C"
     }
   ],
-  "totalAssociations": 9774
+  "totalAssociations": 10073
 }

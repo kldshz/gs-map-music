@@ -32,14 +32,14 @@ const broadScopes = [
  [/^野外\s*(?:白天|夜晚)/,['A:ZD:ZHIDONG1']],
 ];
 const primary = s => s.split('\n').filter(x=>!x.includes('《原神》EP')&&!x.includes('旅行历程'))[0]??'';
-const useful = s => s.trim()&&!/^[\s/—-]+$/.test(s);
+const useful = s => s.trim()&&!/^[\s/—-]+$/.test(s)&&s!=='缺少出处';
+export const originalOrigin = t => t.metadataNotes?.find(n=>n.startsWith('BWIKI原出处：'))?.slice('BWIKI原出处：'.length)??t.originText??'';
+export const hasOrigin = t => useful(primary(originalOrigin(t)))||!!jaEvidence.get(t.id??'netease:'+t.neteaseId)?.placeJa?.trim();
 const clean = s => s.replace(/[「」『』“”]/g,'').trim();
 export function category(t) {
   const extra=jaEvidence.get(t.id??(t.neteaseId?'netease:'+t.neteaseId:''));
-  const supplemented=supplementalKind(extra);if(supplemented)return supplemented;
-  const note=t.metadataNotes?.find(n=>n.startsWith('日文Wiki分类：'));if(note)return note.slice('日文Wiki分类：'.length);
-  const o=primary(t.originText);
-  if(!useful(o))return 'missing-source';
+  const o=primary(originalOrigin(t));
+  if(!useful(o))return supplementalKind(extra)??'missing-source';
   if(/非战斗|战斗状态仍然使用/.test(o))return 'scene';
   if(/周本|BOSS|Boss|战斗|战BGM|女士[一二]阶段|雷电将军.*阶段|深海龙蜥|公子.*阶段|魔王武装/.test(o)){
     if(/^(蒙德战斗|璃月野外战斗|须弥(?:雨林|沙漠)野外战斗|龙脊雪山\s*战斗BGM|挪德卡莱.*大世界战斗|远古圣山战斗曲|霜月战斗曲|战斗曲[123]$)/.test(o))return 'battle-generic';
@@ -47,7 +47,8 @@ export function category(t) {
   }
   if(/Battles of Inazuma/.test(t.discTitle)&&/^稻妻野外/.test(o))return 'battle-generic';
   if(/任务|剧情|传说|过场|PV|活动|小游戏|主题曲|印象曲|界面|改编|回忆|登场|出场|音乐[一二三123]|七圣召唤|千星/.test(o))return 'task';
-  return 'scene';
+  // A location alone does not assert non-battle; explicit Chinese classifications above prevail.
+  return supplementalKind(extra)??'scene';
 }
 function special(album,t) {
   const o=t.originText;
@@ -93,9 +94,13 @@ export function classifyOne(album,t,map) {
   if(broad&&(kind==='battle-generic'||kind==='scene'))areaCodes=broad[1];
   if(kind==='battle-generic'&&album.title==='悯宥慈怜之垠')areaCodes=['A:ZD:ZHIDONG1'];
   const extraScopes=supplementalScopes(extra,map);if(extraScopes)areaCodes=extraScopes;
+  if(kind==='battle-generic'&&/璃月/.test(o))areaCodes=[...new Set([...areaCodes,'A:LY:CHENYUGU'])];
+  if(kind==='battle-generic'&&/纳塔/.test(o))areaCodes=[...new Set([...areaCodes,'A:NT:NATA5'])];
   let points=exact.map(({a})=>a);
   let method='place-match',reason='出处地名与点位地理标题交叉匹配，实际音区仍待校对。';
-  if(kind==='battle-generic'){
+  if(!hasOrigin(t)){
+    points=map.anchors.filter(a=>a.kind==='statue'&&areaCodes.includes(a.areaCode)&&!bannedArea(a.areaCode)&&a.hiddenFlag!==3);method='region-archive';reason='缺少出处；仅按可确定地区神像归档，不挂载传送锚点。';
+  }else if(kind==='battle-generic'){
     points=map.anchors.filter(a=>areaCodes.includes(a.areaCode)&&!isCity(a)&&!bannedArea(a.areaCode)&&a.hiddenFlag!==3);method='region-scope';reason='通用战斗独立覆盖来源范围所有非城市点位，不受专属普通场景音乐影响。';
   }else if(kind==='scene'&&(broad||extraScopes)){
     points=map.anchors.filter(a=>areaCodes.includes(a.areaCode)&&!isCity(a)&&!bannedArea(a.areaCode)&&a.hiddenFlag!==3);method='region-scope';reason='野外普通场景按来源范围补充，随后排除已有特有普通场景的点位。';

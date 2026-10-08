@@ -88,3 +88,12 @@ Windows/PowerShell；Node22.17.0/npm10.9.2/Git2.46.0，Vue3.5.43/Vite7.3.7/TS5.9
 日文战斗/未匹配清单见docs/JA_BGM_REVIEW.md；点位清单见docs/ANCHOR_MUSIC_REVIEW.md；原出处缺失见docs/TRACK_SOURCE_GAPS.md。新的来源事实在data/sources/ja-bgm-crosscheck.json。普通战斗与Boss/限定音区分开（层岩势若风雷限定危途疑踪；临阵的战栗通用；渊下宫独立；冰风组曲不铺全图）。隐藏特殊地图不挂载，归档不计场景。未唯一匹配或词典未收录部分仍需人工校对。
 
 重放顺序：import-ost-batch.mjs retrospective → import-ja-bgm.mjs → fill-anchor-music.mjs → audit-anchor-music.mjs → write-anchor-music-review.mjs → write-ja-bgm-review.mjs（均node scripts/）。重复导入及补缺新增/删除0；32数据检查与类型/构建通过，2项批量OST浏览器测试通过。无UI代码改动、无追加Claude调用。本轮未把新修订覆盖到MySQL；其既有增量导入保留旧候选/元数据，不宣称与网页同步。仍阶段3，未启动播放/路线。
+
+
+## 2026-10-08：中文补充出处与挂载规则修订
+
+当前阶段3：1663曲、10073条pending关系。565首原中文出处缺失歌曲，直接显示日文Wiki补充的中文翻译；BWIKI原文、日文原文及引用链接在元数据保留。专有名词优先用户指定词典，说明性短语中文翻译仍供人工校对。仍缺出处13首明确显示“缺少出处”，仅在可确定地区神像归档；无法确定地区或该范围无神像则不挂载。人工增删文件与个人评价未修改。中文明确分类优先，日文用于补缺。
+
+沉玉谷使用璃月通用战斗曲，悠悠度假村使用纳塔通用战斗曲；城市不补通用战斗，Boss限定不扩散；无支持证据的战斗缺口保留。740个非城市锚点：703个两类均有，10个缺常态，37个缺战斗，0个只有战斗；移除无出处猜测后常态缺口保留待查。最新清单见docs/TRACK_SOURCE_GAPS.md、docs/JA_BGM_REVIEW.md与docs/ANCHOR_MUSIC_REVIEW.md，旧统计仅为历史。
+
+验证：33项数据测试、构建、3项针对性页面测试通过；重复日文导入新增/删除均0，补覆盖新增0。未改前端布局与交互，未调用Claude设计；复用现有右侧歌曲信息显示。MySQL历史行未同步更新/删除，此次修改为网页JSON快照；播放与路线阶段未开始。

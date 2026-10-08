@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import assert from 'node:assert/strict';
-import {category,isCity,bannedArea} from './lib/ost-associations.mjs';
+import {category,isCity,bannedArea,hasOrigin} from './lib/ost-associations.mjs';
 import {associationCategory,auditCoverage} from './audit-anchor-music.mjs';
 import {jaEvidence,supplementalKind} from './lib/ja-bgm-evidence.mjs';
 
@@ -48,7 +48,8 @@ function fill(code,albumName,disc,pattern,role){
  if(!albumName)return;
  const album=source.albums.find(a=>a.title===albumName);assert(album);
  const pool=album.tracks.filter(t=>{
-  const extra=jaEvidence.get('netease:'+t.neteaseId),known=supplementalKind(extra);
+  if(!hasOrigin(t))return false;
+  const extra=jaEvidence.get('netease:'+t.neteaseId),known=category(t);
   if(known&&((role==='scene'&&known!=='scene')||(role!=='scene'&&known!=='battle-generic')))return false;
   if(role==='scene'&&extra&&/城|町|村|港|宮|宮殿|要塞|竞技场|競技場/.test(extra.placeJa))return false;
   return (disc===null||t.discNumber===disc)&&(pattern?pattern.test(t.originText):['missing-source'].includes(category(t))||known==='scene'&&role==='scene'||known==='battle-generic'&&role!=='scene')&&!/主题|剧情|过场|BOSS|Boss|周本|任务|界面|改编|秘境/.test(t.originText);

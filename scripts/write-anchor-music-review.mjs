@@ -1,3 +1,4 @@
+import {hasOrigin} from './lib/ost-associations.mjs';
 import fs from 'node:fs/promises';
 const read=async path=>JSON.parse(await fs.readFile(path,'utf8'));
 const coverage=await read('data/review/anchor-music-coverage.json'),fill=await read('data/review/anchor-music-fill.json');
@@ -12,7 +13,7 @@ for(const p of coverage.missingScene)md+=`| ${cell(anchors.get(p.id).areaName)} 
 md+='\n## 2. 仍缺通用战斗音乐\n\n不借用其他独立地图的战斗曲，不把已知 Boss 限定曲扩散。请检查是否存在通用曲或该点位确属例外。\n\n';
 md+='| 地区 | 点位说明 | 点位 ID | 你的校对（歌曲或例外） |\n| --- | --- | --- | --- |\n';
 for(const p of coverage.missingBattle)md+=`| ${cell(anchors.get(p.id).areaName)} | ${cell(p.place)} | ${p.id} | |\n`;
-md+='\n## 3. 本轮低精度推定，优先检查\n\n按专辑/分碟补缺，不是逐点确认。空出处曲目可能实际属于城市、任务或限定战斗，请重点校对。地区内只补缺失类别，已有精确曲目不替换。\n\n';
+md+='\n## 3. 本轮低精度推定，优先检查\n\n按专辑/分碟补缺，不是逐点确认。仍无出处的曲目已移除普通锚点挂载；下列候选仍需核验音区。地区内只补缺失类别，已有精确曲目不替换。\n\n';
 const groups=new Map();
 const active=new Set(library.associations.filter(a=>a.id.startsWith('coverage:')).map(a=>a.trackId+'|'+a.anchorId));
 const seen=new Set();
@@ -21,8 +22,8 @@ md+='| 地区 | 类别 | 候选曲目／ID | 专辑与分碟 | 原出处 | 补�
 for(const g of groups.values())md+=`| ${cell(anchors.get(g.anchorId).areaName)} | ${g.role==='scene'?'常态':'战斗'} | ${cell(tracks.get(g.trackId).title)}／${g.trackId} | ${cell(g.album+' / '+g.discTitle)} | ${cell(g.originText||'缺失')} | ${g.anchors.length} | |\n`;
 md+='\n精确的候选—点位列表见 `data/review/anchor-music-fill.json` 的 additions。歌曲原出处缺失清单见 [曲目出处缺失](TRACK_SOURCE_GAPS.md)。你可以填写表格的校对列，或通过开发网页增删关联；不要直接将 pending 批量改成 verified。\n';
 await fs.writeFile('docs/ANCHOR_MUSIC_REVIEW.md',md);
-const missing=library.tracks.filter(t=>!t.sceneInfo?.originText?.trim()||/^[\s/—-]+$/.test(t.sceneInfo.originText));
-let gaps=`# 曲目出处缺失\n\n当前曲库 ${missing.length} 首原始出处为空或占位符。按专辑/分碟推定不会改写原出处；已有曲目来源页面仍可查阅。\n\n| 专辑 | 曲目／ID | 分碟 | 来源 | 你的补充（地点与依据） |\n| --- | --- | --- | --- | --- |\n`;
+const missing=library.tracks.filter(t=>!hasOrigin({...t.sceneInfo,id:t.id}));
+let gaps=`# 曲目出处缺失\n\n当前曲库 ${missing.length} 首在中文与日文对照后仍缺少出处。仅按可确定地区神像归档，不能确定地区或没有神像则不挂载。\n\n| 专辑 | 曲目／ID | 分碟 | 来源 | 你的补充（地点与依据） |\n| --- | --- | --- | --- | --- |\n`;
 for(const t of missing)gaps+=`| ${cell(t.album)} | ${cell(t.title)}／${t.id} | ${cell(t.sceneInfo?.discTitle)} | ${cell(t.sceneInfo?.wikiSourceUrl||t.sourceUrl)} | |\n`;
 await fs.writeFile('docs/TRACK_SOURCE_GAPS.md',gaps);
 console.log(JSON.stringify({missingOrigins:missing.length,inferredGroups:groups.size}));

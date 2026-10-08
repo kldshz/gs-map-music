@@ -1,12 +1,83 @@
 {
   "summary": {
     "nonCityWaypoints": 740,
-    "withBoth": 650,
+    "withBoth": 703,
     "battleOnly": 0,
-    "missingScene": 0,
-    "missingBattle": 90
+    "missingScene": 10,
+    "missingBattle": 37
   },
-  "missingScene": [],
+  "missingScene": [
+    {
+      "id": "kongying:20698",
+      "areaCode": "A:DQ:SANJIE",
+      "place": "三界路飨祭 渊下宫",
+      "sceneTrackIds": [],
+      "battleTrackIds": []
+    },
+    {
+      "id": "kongying:20685",
+      "areaCode": "A:DQ:SANJIE",
+      "place": "三界路飨祭 渊下宫",
+      "sceneTrackIds": [],
+      "battleTrackIds": []
+    },
+    {
+      "id": "kongying:20673",
+      "areaCode": "A:DQ:SANJIE",
+      "place": "三界路飨祭 渊下宫",
+      "sceneTrackIds": [],
+      "battleTrackIds": []
+    },
+    {
+      "id": "kongying:20699",
+      "areaCode": "A:DQ:SANJIE",
+      "place": "三界路飨祭 渊下宫",
+      "sceneTrackIds": [],
+      "battleTrackIds": []
+    },
+    {
+      "id": "kongying:20697",
+      "areaCode": "A:DQ:SANJIE",
+      "place": "三界路飨祭 渊下宫",
+      "sceneTrackIds": [],
+      "battleTrackIds": []
+    },
+    {
+      "id": "kongying:20702",
+      "areaCode": "A:DQ:SANJIE",
+      "place": "三界路飨祭 渊下宫",
+      "sceneTrackIds": [],
+      "battleTrackIds": []
+    },
+    {
+      "id": "kongying:20821",
+      "areaCode": "A:DQ:SANJIE",
+      "place": "三界路飨祭 渊下宫",
+      "sceneTrackIds": [],
+      "battleTrackIds": []
+    },
+    {
+      "id": "kongying:20822",
+      "areaCode": "A:DQ:SANJIE",
+      "place": "三界路飨祭 渊下宫",
+      "sceneTrackIds": [],
+      "battleTrackIds": []
+    },
+    {
+      "id": "kongying:20551",
+      "areaCode": "A:DQ:SANJIE",
+      "place": "三界路飨祭 渊下宫",
+      "sceneTrackIds": [],
+      "battleTrackIds": []
+    },
+    {
+      "id": "kongying:20672",
+      "areaCode": "A:DQ:SANJIE",
+      "place": "三界路飨祭 渊下宫",
+      "sceneTrackIds": [],
+      "battleTrackIds": []
+    }
+  ],
   "missingBattle": [
     {
       "id": "kongying:116172",
@@ -27,913 +98,10 @@
       "battleTrackIds": []
     },
     {
-      "id": "kongying:103305",
-      "areaCode": "A:NT:NATA5",
-      "place": "纳塔 提提岛",
-      "sceneTrackIds": [
-        "netease:2737530029",
-        "netease:2737530030"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:103306",
-      "areaCode": "A:NT:NATA5",
-      "place": "纳塔 提提岛",
-      "sceneTrackIds": [
-        "netease:2737530029",
-        "netease:2737530030"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:103308",
-      "areaCode": "A:NT:NATA5",
-      "place": "纳塔 提提岛",
-      "sceneTrackIds": [
-        "netease:2737530029",
-        "netease:2737530030"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:103307",
-      "areaCode": "A:NT:NATA5",
-      "place": "纳塔 提提岛",
-      "sceneTrackIds": [
-        "netease:2737530029",
-        "netease:2737530030"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:103304",
-      "areaCode": "A:NT:NATA5",
-      "place": "纳塔 刺梨岩",
-      "sceneTrackIds": [
-        "netease:2737530031"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:103298",
-      "areaCode": "A:NT:NATA5",
-      "place": "纳塔 浪浪湾",
-      "sceneTrackIds": [
-        "netease:2737532157",
-        "netease:2737532159"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:103299",
-      "areaCode": "A:NT:NATA5",
-      "place": "纳塔 浪浪湾",
-      "sceneTrackIds": [
-        "netease:2737532157",
-        "netease:2737532159"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:103301",
-      "areaCode": "A:NT:NATA5",
-      "place": "纳塔 呼呼丘",
-      "sceneTrackIds": [
-        "netease:2737532155",
-        "netease:2737530026",
-        "netease:2737532156",
-        "netease:2737530029",
-        "netease:2737530024",
-        "netease:2737532154",
-        "netease:2737530025",
-        "netease:2737532160",
-        "netease:2737532161",
-        "netease:2737532164",
-        "netease:2737532165",
-        "netease:2737532166",
-        "netease:2737530032",
-        "netease:2737532167",
-        "netease:2737530033",
-        "netease:2737530034"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:103302",
-      "areaCode": "A:NT:NATA5",
-      "place": "纳塔 彩彩崖",
-      "sceneTrackIds": [
-        "netease:2737530027",
-        "netease:2737530028"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:103300",
-      "areaCode": "A:NT:NATA5",
-      "place": "纳塔 浪浪湾",
-      "sceneTrackIds": [
-        "netease:2737532157",
-        "netease:2737532159"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:103303",
-      "areaCode": "A:NT:NATA5",
-      "place": "纳塔 彩彩崖",
-      "sceneTrackIds": [
-        "netease:2737530027",
-        "netease:2737530028"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:103297",
-      "areaCode": "A:NT:NATA5",
-      "place": "纳塔 浪浪湾",
-      "sceneTrackIds": [
-        "netease:2737532157",
-        "netease:2737532159"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:103295",
-      "areaCode": "A:NT:NATA5",
-      "place": "纳塔 浪浪湾",
-      "sceneTrackIds": [
-        "netease:2737532157",
-        "netease:2737532159"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:103296",
-      "areaCode": "A:NT:NATA5",
-      "place": "纳塔 悠悠度假村",
-      "sceneTrackIds": [
-        "netease:2737530029",
-        "netease:2737532167",
-        "netease:2737530024",
-        "netease:2737532154",
-        "netease:2737530025",
-        "netease:2737532155",
-        "netease:2737530026",
-        "netease:2737532156",
-        "netease:2737532160",
-        "netease:2737532161",
-        "netease:2737530032",
-        "netease:2737530033",
-        "netease:2737530034",
-        "netease:2737532168",
-        "netease:2737532164",
-        "netease:2737532165",
-        "netease:2737532166"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:103294",
-      "areaCode": "A:NT:NATA5",
-      "place": "纳塔 悠悠度假村",
-      "sceneTrackIds": [
-        "netease:2737530029",
-        "netease:2737532167",
-        "netease:2737530024",
-        "netease:2737532154",
-        "netease:2737530025",
-        "netease:2737532155",
-        "netease:2737530026",
-        "netease:2737532156",
-        "netease:2737532160",
-        "netease:2737532161",
-        "netease:2737530032",
-        "netease:2737530033",
-        "netease:2737530034",
-        "netease:2737532168",
-        "netease:2737532164",
-        "netease:2737532165",
-        "netease:2737532166"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:103292",
-      "areaCode": "A:NT:NATA5",
-      "place": "纳塔 悠悠集市",
-      "sceneTrackIds": [
-        "netease:2737529153"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:103293",
-      "areaCode": "A:NT:NATA5",
-      "place": "纳塔 悠悠度假村",
-      "sceneTrackIds": [
-        "netease:2737530029",
-        "netease:2737532167",
-        "netease:2737530024",
-        "netease:2737532154",
-        "netease:2737530025",
-        "netease:2737532155",
-        "netease:2737530026",
-        "netease:2737532156",
-        "netease:2737532160",
-        "netease:2737532161",
-        "netease:2737530032",
-        "netease:2737530033",
-        "netease:2737530034",
-        "netease:2737532168",
-        "netease:2737532164",
-        "netease:2737532165",
-        "netease:2737532166"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:103209",
-      "areaCode": "A:NT:NATA5",
-      "place": "纳塔 悠悠集市",
-      "sceneTrackIds": [
-        "netease:2737529153"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:103258",
-      "areaCode": "A:NT:NATA5",
-      "place": "纳塔 悠悠度假村",
-      "sceneTrackIds": [
-        "netease:2737530029",
-        "netease:2737532167",
-        "netease:2737530024",
-        "netease:2737532154",
-        "netease:2737530025",
-        "netease:2737532155",
-        "netease:2737530026",
-        "netease:2737532156",
-        "netease:2737532160",
-        "netease:2737532161",
-        "netease:2737530032",
-        "netease:2737530033",
-        "netease:2737530034",
-        "netease:2737532168",
-        "netease:2737532164",
-        "netease:2737532165",
-        "netease:2737532166"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:103291",
-      "areaCode": "A:NT:NATA5",
-      "place": "纳塔 悠悠度假村",
-      "sceneTrackIds": [
-        "netease:2737530029",
-        "netease:2737532167",
-        "netease:2737530024",
-        "netease:2737532154",
-        "netease:2737530025",
-        "netease:2737532155",
-        "netease:2737530026",
-        "netease:2737532156",
-        "netease:2737532160",
-        "netease:2737532161",
-        "netease:2737530032",
-        "netease:2737530033",
-        "netease:2737530034",
-        "netease:2737532168",
-        "netease:2737532164",
-        "netease:2737532165",
-        "netease:2737532166"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:103098",
-      "areaCode": "A:NT:NATA5",
-      "place": "纳塔 悠悠度假村",
-      "sceneTrackIds": [
-        "netease:2737530029",
-        "netease:2737532167",
-        "netease:2737530024",
-        "netease:2737532154",
-        "netease:2737530025",
-        "netease:2737532155",
-        "netease:2737530026",
-        "netease:2737532156",
-        "netease:2737532160",
-        "netease:2737532161",
-        "netease:2737530032",
-        "netease:2737530033",
-        "netease:2737530034",
-        "netease:2737532168",
-        "netease:2737532164",
-        "netease:2737532165",
-        "netease:2737532166"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:104506",
-      "areaCode": "A:NT:NATA5",
-      "place": "纳塔 刺梨镇",
-      "sceneTrackIds": [
-        "netease:2737530029",
-        "netease:2737530031"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:104499",
-      "areaCode": "A:NT:NATA5",
-      "place": "纳塔 刺梨镇",
-      "sceneTrackIds": [
-        "netease:2737530029",
-        "netease:2737530031"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:104521",
-      "areaCode": "A:NT:NATA5",
-      "place": "纳塔 刺梨镇",
-      "sceneTrackIds": [
-        "netease:2737530029",
-        "netease:2737530031"
-      ],
-      "battleTrackIds": []
-    },
-    {
       "id": "kongying:20698",
       "areaCode": "A:DQ:SANJIE",
       "place": "三界路飨祭 渊下宫",
-      "sceneTrackIds": [
-        "netease:1973619553"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:67223",
-      "areaCode": "A:LY:CHENYUGU",
-      "place": "璃月 锦落庭",
-      "sceneTrackIds": [
-        "netease:2140118675",
-        "netease:2140118342"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:67195",
-      "areaCode": "A:LY:CHENYUGU",
-      "place": "璃月 沉玉谷 · 上谷",
-      "sceneTrackIds": [
-        "netease:2140118675",
-        "netease:2140118669",
-        "netease:2140118323",
-        "netease:2140118324",
-        "netease:2140118670",
-        "netease:2140118325",
-        "netease:2140118326",
-        "netease:2140118327",
-        "netease:2140118671",
-        "netease:2140118328",
-        "netease:2140118672",
-        "netease:2140118329",
-        "netease:2140118330",
-        "netease:2140118331",
-        "netease:2140118338",
-        "netease:2140118339"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:67197",
-      "areaCode": "A:LY:CHENYUGU",
-      "place": "璃月 沉玉谷 · 上谷",
-      "sceneTrackIds": [
-        "netease:2140118675",
-        "netease:2140118669",
-        "netease:2140118323",
-        "netease:2140118324",
-        "netease:2140118670",
-        "netease:2140118325",
-        "netease:2140118326",
-        "netease:2140118327",
-        "netease:2140118671",
-        "netease:2140118328",
-        "netease:2140118672",
-        "netease:2140118329",
-        "netease:2140118330",
-        "netease:2140118331",
-        "netease:2140118338",
-        "netease:2140118339"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:67201",
-      "areaCode": "A:LY:CHENYUGU",
-      "place": "璃月 沉玉谷 · 上谷",
-      "sceneTrackIds": [
-        "netease:2140118675",
-        "netease:2140118669",
-        "netease:2140118323",
-        "netease:2140118324",
-        "netease:2140118670",
-        "netease:2140118325",
-        "netease:2140118326",
-        "netease:2140118327",
-        "netease:2140118671",
-        "netease:2140118328",
-        "netease:2140118672",
-        "netease:2140118329",
-        "netease:2140118330",
-        "netease:2140118331",
-        "netease:2140118338",
-        "netease:2140118339"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:67211",
-      "areaCode": "A:LY:CHENYUGU",
-      "place": "璃月 沉玉谷 · 南陵",
-      "sceneTrackIds": [
-        "netease:2140118675",
-        "netease:2140118669",
-        "netease:2140118323",
-        "netease:2140118324",
-        "netease:2140118670",
-        "netease:2140118325",
-        "netease:2140118326",
-        "netease:2140118327",
-        "netease:2140118671",
-        "netease:2140118328",
-        "netease:2140118672",
-        "netease:2140118329",
-        "netease:2140118330",
-        "netease:2140118331",
-        "netease:2140118338",
-        "netease:2140118339"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:67215",
-      "areaCode": "A:LY:CHENYUGU",
-      "place": "璃月 沉玉谷 · 南陵",
-      "sceneTrackIds": [
-        "netease:2140118675",
-        "netease:2140118669",
-        "netease:2140118323",
-        "netease:2140118324",
-        "netease:2140118670",
-        "netease:2140118325",
-        "netease:2140118326",
-        "netease:2140118327",
-        "netease:2140118671",
-        "netease:2140118328",
-        "netease:2140118672",
-        "netease:2140118329",
-        "netease:2140118330",
-        "netease:2140118331",
-        "netease:2140118338",
-        "netease:2140118339"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:67209",
-      "areaCode": "A:LY:CHENYUGU",
-      "place": "璃月 沉玉谷 · 南陵",
-      "sceneTrackIds": [
-        "netease:2140118675",
-        "netease:2140118669",
-        "netease:2140118323",
-        "netease:2140118324",
-        "netease:2140118670",
-        "netease:2140118325",
-        "netease:2140118326",
-        "netease:2140118327",
-        "netease:2140118671",
-        "netease:2140118328",
-        "netease:2140118672",
-        "netease:2140118329",
-        "netease:2140118330",
-        "netease:2140118331",
-        "netease:2140118338",
-        "netease:2140118339"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:67204",
-      "areaCode": "A:LY:CHENYUGU",
-      "place": "璃月 沉玉谷 · 上谷",
-      "sceneTrackIds": [
-        "netease:2140118675",
-        "netease:2140118669",
-        "netease:2140118323",
-        "netease:2140118324",
-        "netease:2140118670",
-        "netease:2140118325",
-        "netease:2140118326",
-        "netease:2140118327",
-        "netease:2140118671",
-        "netease:2140118328",
-        "netease:2140118672",
-        "netease:2140118329",
-        "netease:2140118330",
-        "netease:2140118331",
-        "netease:2140118338",
-        "netease:2140118339"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:67200",
-      "areaCode": "A:LY:CHENYUGU",
-      "place": "璃月 沉玉谷 · 上谷",
-      "sceneTrackIds": [
-        "netease:2140118675",
-        "netease:2140118669",
-        "netease:2140118323",
-        "netease:2140118324",
-        "netease:2140118670",
-        "netease:2140118325",
-        "netease:2140118326",
-        "netease:2140118327",
-        "netease:2140118671",
-        "netease:2140118328",
-        "netease:2140118672",
-        "netease:2140118329",
-        "netease:2140118330",
-        "netease:2140118331",
-        "netease:2140118338",
-        "netease:2140118339"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:67206",
-      "areaCode": "A:LY:CHENYUGU",
-      "place": "璃月 沉玉谷 · 上谷",
-      "sceneTrackIds": [
-        "netease:2140118675",
-        "netease:2140118669",
-        "netease:2140118323",
-        "netease:2140118324",
-        "netease:2140118670",
-        "netease:2140118325",
-        "netease:2140118326",
-        "netease:2140118327",
-        "netease:2140118671",
-        "netease:2140118328",
-        "netease:2140118672",
-        "netease:2140118329",
-        "netease:2140118330",
-        "netease:2140118331",
-        "netease:2140118338",
-        "netease:2140118339"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:67212",
-      "areaCode": "A:LY:CHENYUGU",
-      "place": "璃月 古茶树坡",
-      "sceneTrackIds": [
-        "netease:2140118675",
-        "netease:2140118669",
-        "netease:2140118323",
-        "netease:2140118324",
-        "netease:2140118670",
-        "netease:2140118325",
-        "netease:2140118326",
-        "netease:2140118327",
-        "netease:2140118671",
-        "netease:2140118328",
-        "netease:2140118672",
-        "netease:2140118329",
-        "netease:2140118330",
-        "netease:2140118331",
-        "netease:2140118338",
-        "netease:2140118339"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:67191",
-      "areaCode": "A:LY:CHENYUGU",
-      "place": "璃月 翘英庄",
-      "sceneTrackIds": [
-        "netease:2140118675",
-        "netease:2140118666",
-        "netease:2140118667",
-        "netease:2140118321",
-        "netease:2140118322"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:67208",
-      "areaCode": "A:LY:CHENYUGU",
-      "place": "璃月 暝垣山",
-      "sceneTrackIds": [
-        "netease:2140118675",
-        "netease:2140118669",
-        "netease:2140118323",
-        "netease:2140118324",
-        "netease:2140118670",
-        "netease:2140118325",
-        "netease:2140118326",
-        "netease:2140118327",
-        "netease:2140118671",
-        "netease:2140118328",
-        "netease:2140118672",
-        "netease:2140118329",
-        "netease:2140118330",
-        "netease:2140118331",
-        "netease:2140118338",
-        "netease:2140118339"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:67207",
-      "areaCode": "A:LY:CHENYUGU",
-      "place": "璃月 沉珑渊",
-      "sceneTrackIds": [
-        "netease:2140118675",
-        "netease:2140118669",
-        "netease:2140118323",
-        "netease:2140118324",
-        "netease:2140118670",
-        "netease:2140118325",
-        "netease:2140118326",
-        "netease:2140118327",
-        "netease:2140118671",
-        "netease:2140118328",
-        "netease:2140118672",
-        "netease:2140118329",
-        "netease:2140118330",
-        "netease:2140118331",
-        "netease:2140118338",
-        "netease:2140118339"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:67194",
-      "areaCode": "A:LY:CHENYUGU",
-      "place": "璃月 沉玉谷 · 上谷",
-      "sceneTrackIds": [
-        "netease:2140118675",
-        "netease:2140118669",
-        "netease:2140118323",
-        "netease:2140118324",
-        "netease:2140118670",
-        "netease:2140118325",
-        "netease:2140118326",
-        "netease:2140118327",
-        "netease:2140118671",
-        "netease:2140118328",
-        "netease:2140118672",
-        "netease:2140118329",
-        "netease:2140118330",
-        "netease:2140118331",
-        "netease:2140118338",
-        "netease:2140118339"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:67196",
-      "areaCode": "A:LY:CHENYUGU",
-      "place": "璃月 沉玉谷 · 上谷",
-      "sceneTrackIds": [
-        "netease:2140118675",
-        "netease:2140118669",
-        "netease:2140118323",
-        "netease:2140118324",
-        "netease:2140118670",
-        "netease:2140118325",
-        "netease:2140118326",
-        "netease:2140118327",
-        "netease:2140118671",
-        "netease:2140118328",
-        "netease:2140118672",
-        "netease:2140118329",
-        "netease:2140118330",
-        "netease:2140118331",
-        "netease:2140118338",
-        "netease:2140118339"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:67213",
-      "areaCode": "A:LY:CHENYUGU",
-      "place": "璃月 药蝶谷",
-      "sceneTrackIds": [
-        "netease:2140118675",
-        "netease:2140118682",
-        "netease:2140118683"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:67199",
-      "areaCode": "A:LY:CHENYUGU",
-      "place": "璃月 暝垣山",
-      "sceneTrackIds": [
-        "netease:2140118675",
-        "netease:2140118669",
-        "netease:2140118323",
-        "netease:2140118324",
-        "netease:2140118670",
-        "netease:2140118325",
-        "netease:2140118326",
-        "netease:2140118327",
-        "netease:2140118671",
-        "netease:2140118328",
-        "netease:2140118672",
-        "netease:2140118329",
-        "netease:2140118330",
-        "netease:2140118331",
-        "netease:2140118338",
-        "netease:2140118339"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:67192",
-      "areaCode": "A:LY:CHENYUGU",
-      "place": "璃月 沉玉谷 · 上谷",
-      "sceneTrackIds": [
-        "netease:2140118675",
-        "netease:2140118669",
-        "netease:2140118323",
-        "netease:2140118324",
-        "netease:2140118670",
-        "netease:2140118325",
-        "netease:2140118326",
-        "netease:2140118327",
-        "netease:2140118671",
-        "netease:2140118328",
-        "netease:2140118672",
-        "netease:2140118329",
-        "netease:2140118330",
-        "netease:2140118331",
-        "netease:2140118338",
-        "netease:2140118339"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:67216",
-      "areaCode": "A:LY:CHENYUGU",
-      "place": "璃月 沉玉谷 · 南陵",
-      "sceneTrackIds": [
-        "netease:2140118675",
-        "netease:2140118669",
-        "netease:2140118323",
-        "netease:2140118324",
-        "netease:2140118670",
-        "netease:2140118325",
-        "netease:2140118326",
-        "netease:2140118327",
-        "netease:2140118671",
-        "netease:2140118328",
-        "netease:2140118672",
-        "netease:2140118329",
-        "netease:2140118330",
-        "netease:2140118331",
-        "netease:2140118338",
-        "netease:2140118339"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:67217",
-      "areaCode": "A:LY:CHENYUGU",
-      "place": "璃月 沉玉谷 · 南陵",
-      "sceneTrackIds": [
-        "netease:2140118675",
-        "netease:2140118669",
-        "netease:2140118323",
-        "netease:2140118324",
-        "netease:2140118670",
-        "netease:2140118325",
-        "netease:2140118326",
-        "netease:2140118327",
-        "netease:2140118671",
-        "netease:2140118328",
-        "netease:2140118672",
-        "netease:2140118329",
-        "netease:2140118330",
-        "netease:2140118331",
-        "netease:2140118338",
-        "netease:2140118339"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:67220",
-      "areaCode": "A:LY:CHENYUGU",
-      "place": "璃月 悬练山",
-      "sceneTrackIds": [
-        "netease:2140118675",
-        "netease:2140118676",
-        "netease:2140118336",
-        "netease:2140118337",
-        "netease:2140118677"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:67221",
-      "areaCode": "A:LY:CHENYUGU",
-      "place": "璃月 沉玉谷 · 南陵",
-      "sceneTrackIds": [
-        "netease:2140118675",
-        "netease:2140118669",
-        "netease:2140118323",
-        "netease:2140118324",
-        "netease:2140118670",
-        "netease:2140118325",
-        "netease:2140118326",
-        "netease:2140118327",
-        "netease:2140118671",
-        "netease:2140118328",
-        "netease:2140118672",
-        "netease:2140118329",
-        "netease:2140118330",
-        "netease:2140118331",
-        "netease:2140118338",
-        "netease:2140118339"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:67228",
-      "areaCode": "A:LY:CHENYUGU",
-      "place": "璃月 悬练山",
-      "sceneTrackIds": [
-        "netease:2140118675",
-        "netease:2140118676",
-        "netease:2140118336",
-        "netease:2140118337",
-        "netease:2140118677"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:67203",
-      "areaCode": "A:LY:CHENYUGU",
-      "place": "璃月 沉玉谷 · 上谷",
-      "sceneTrackIds": [
-        "netease:2140118675",
-        "netease:2140118669",
-        "netease:2140118323",
-        "netease:2140118324",
-        "netease:2140118670",
-        "netease:2140118325",
-        "netease:2140118326",
-        "netease:2140118327",
-        "netease:2140118671",
-        "netease:2140118328",
-        "netease:2140118672",
-        "netease:2140118329",
-        "netease:2140118330",
-        "netease:2140118331",
-        "netease:2140118338",
-        "netease:2140118339"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:67225",
-      "areaCode": "A:LY:CHENYUGU",
-      "place": "璃月 锦落庭",
-      "sceneTrackIds": [
-        "netease:2140118675",
-        "netease:2140118342"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:67227",
-      "areaCode": "A:LY:CHENYUGU",
-      "place": "璃月 锦落庭",
-      "sceneTrackIds": [
-        "netease:2140118675",
-        "netease:2140118342"
-      ],
+      "sceneTrackIds": [],
       "battleTrackIds": []
     },
     {
@@ -1057,9 +225,7 @@
       "id": "kongying:20685",
       "areaCode": "A:DQ:SANJIE",
       "place": "三界路飨祭 渊下宫",
-      "sceneTrackIds": [
-        "netease:1973619553"
-      ],
+      "sceneTrackIds": [],
       "battleTrackIds": []
     },
     {
@@ -1126,81 +292,45 @@
       "battleTrackIds": []
     },
     {
-      "id": "kongying:67150",
-      "areaCode": "A:LY:CHENYUGU",
-      "place": "璃月 沉珑渊",
-      "sceneTrackIds": [
-        "netease:2140118675",
-        "netease:2140118669",
-        "netease:2140118323",
-        "netease:2140118324",
-        "netease:2140118670",
-        "netease:2140118325",
-        "netease:2140118326",
-        "netease:2140118327",
-        "netease:2140118671",
-        "netease:2140118328",
-        "netease:2140118672",
-        "netease:2140118329",
-        "netease:2140118330",
-        "netease:2140118331",
-        "netease:2140118338",
-        "netease:2140118339"
-      ],
-      "battleTrackIds": []
-    },
-    {
       "id": "kongying:20673",
       "areaCode": "A:DQ:SANJIE",
       "place": "三界路飨祭 渊下宫",
-      "sceneTrackIds": [
-        "netease:1973619553"
-      ],
+      "sceneTrackIds": [],
       "battleTrackIds": []
     },
     {
       "id": "kongying:20699",
       "areaCode": "A:DQ:SANJIE",
       "place": "三界路飨祭 渊下宫",
-      "sceneTrackIds": [
-        "netease:1973619553"
-      ],
+      "sceneTrackIds": [],
       "battleTrackIds": []
     },
     {
       "id": "kongying:20697",
       "areaCode": "A:DQ:SANJIE",
       "place": "三界路飨祭 渊下宫",
-      "sceneTrackIds": [
-        "netease:1973619553"
-      ],
+      "sceneTrackIds": [],
       "battleTrackIds": []
     },
     {
       "id": "kongying:20702",
       "areaCode": "A:DQ:SANJIE",
       "place": "三界路飨祭 渊下宫",
-      "sceneTrackIds": [
-        "netease:1973619553"
-      ],
+      "sceneTrackIds": [],
       "battleTrackIds": []
     },
     {
       "id": "kongying:20821",
       "areaCode": "A:DQ:SANJIE",
       "place": "三界路飨祭 渊下宫",
-      "sceneTrackIds": [
-        "netease:1973619553"
-      ],
+      "sceneTrackIds": [],
       "battleTrackIds": []
     },
     {
       "id": "kongying:20822",
       "areaCode": "A:DQ:SANJIE",
       "place": "三界路飨祭 渊下宫",
-      "sceneTrackIds": [
-        "netease:1973619553"
-      ],
+      "sceneTrackIds": [],
       "battleTrackIds": []
     },
     {
@@ -1216,42 +346,14 @@
       "id": "kongying:20551",
       "areaCode": "A:DQ:SANJIE",
       "place": "三界路飨祭 渊下宫",
-      "sceneTrackIds": [
-        "netease:1973619553"
-      ],
+      "sceneTrackIds": [],
       "battleTrackIds": []
     },
     {
       "id": "kongying:20672",
       "areaCode": "A:DQ:SANJIE",
       "place": "三界路飨祭 渊下宫",
-      "sceneTrackIds": [
-        "netease:1973619553"
-      ],
-      "battleTrackIds": []
-    },
-    {
-      "id": "kongying:67219",
-      "areaCode": "A:LY:CHENYUGU",
-      "place": "璃月 沉玉谷 · 南陵",
-      "sceneTrackIds": [
-        "netease:2140118675",
-        "netease:2140118669",
-        "netease:2140118323",
-        "netease:2140118324",
-        "netease:2140118670",
-        "netease:2140118325",
-        "netease:2140118326",
-        "netease:2140118327",
-        "netease:2140118671",
-        "netease:2140118328",
-        "netease:2140118672",
-        "netease:2140118329",
-        "netease:2140118330",
-        "netease:2140118331",
-        "netease:2140118338",
-        "netease:2140118339"
-      ],
+      "sceneTrackIds": [],
       "battleTrackIds": []
     },
     {

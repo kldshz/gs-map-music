@@ -1,10 +1,10 @@
 # 日文BGM交叉核对与校对清单
 
-2026-10-08。25张专辑中唯一英文曲名匹配 1562 首；87 首有日文战斗相关证据，另21首BWIKI标战斗而日文仅列地点/任务，保留战斗属性待校对；565 首原BWIKI出处缺失但取得日文补充。原BWIKI原文未覆盖，分类及日文/词典对照放在歌曲信息的“元数据说明”。所有点位关系仍pending。
+2026-10-08。25张专辑中唯一英文曲名匹配 1562 首；87 首有日文战斗相关证据，另21首BWIKI标战斗而日文仅列地点/任务，保留战斗属性待校对；565 首原BWIKI出处缺失但取得日文补充。中文已有明确分类时优先；中文缺出处时直接显示日文补充的中文翻译，BWIKI原文与日文引用另存元数据说明。所有点位关系仍pending。
 
-来源：[日文BGM主表](https://wikiwiki.jp/genshinwiki/BGM)，各专辑子页见逐曲记录；[用户指定中英日词典](https://genshin-dictionary.com/zh-CN)，[开放数据与条款](https://genshin-dictionary.com/zh-CN/opendata)。使用词典321个实际词条，未收录地名保留日文，不自行译成已确认名称。
+来源：[日文BGM主表](https://wikiwiki.jp/genshinwiki/BGM)，各专辑子页见逐曲记录；[用户指定中英日词典](https://genshin-dictionary.com/zh-CN)，[开放数据与条款](https://genshin-dictionary.com/zh-CN/opendata)。专有名词优先采用指定词典，说明性短语翻译为中文；翻译和关联仍需人工校对。
 
-当前非城市锚点740个，两类均有650个，缺常态0个，缺战斗90个。覆盖含专辑推定，不等于实际音区验证。点位完整列表见[锚点校对](ANCHOR_MUSIC_REVIEW.md)。
+当前非城市锚点740个，两类均有703个，缺常态10个，缺战斗37个。覆盖含专辑推定，不等于实际音区验证。点位完整列表见[锚点校对](ANCHOR_MUSIC_REVIEW.md)。
 
 ## 原出处缺失且日文仍未补齐（13首）
 
@@ -39,7 +39,7 @@
 | 驱敌逐北 Fiery Pursuit／netease:1879098466 | 寂远无妄之国 | 范围通用候选 | 戦闘(稲妻) | 战斗(稻妻) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E5%AF%82%E3%80%85%E3%81%9F%E3%82%8B%E7%84%A1%E5%A6%84%E3%81%AE%E5%9B%BD) | |
 | 哀息之茧 Chrysalis Suspirii／netease:1937114515 | 佚落迁忘之岛 | Boss／音区限定 | 鳴神島・天守 | 鸣神岛·天守 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E9%81%BA%E5%A4%B1%E3%81%A8%E5%BF%98%E5%8D%B4%E3%81%AE%E5%B3%B6) | |
 | 燃烬之舞 Saltatio Favillae／netease:1937114513 | 佚落迁忘之岛 | Boss／音区限定 | 鳴神島・天守 | 鸣神岛·天守 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E9%81%BA%E5%A4%B1%E3%81%A8%E5%BF%98%E5%8D%B4%E3%81%AE%E5%B3%B6) | |
-| 薙除杂妄 Bane of Ambitions／netease:1937114499 | 佚落迁忘之岛 | Boss／音区限定 | 雷電将軍(魔神任務) | 雷電将軍(魔神任务) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E9%81%BA%E5%A4%B1%E3%81%A8%E5%BF%98%E5%8D%B4%E3%81%AE%E5%B3%B6) | |
+| 薙除杂妄 Bane of Ambitions／netease:1937114499 | 佚落迁忘之岛 | Boss／音区限定 | 雷電将軍(魔神任務) | 雷电将军(魔神任务) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E9%81%BA%E5%A4%B1%E3%81%A8%E5%BF%98%E5%8D%B4%E3%81%AE%E5%B3%B6) | |
 | 雷霆的威光 Thunderings of the Merciless／netease:1937111535 | 佚落迁忘之岛 | Boss／音区限定 | 夢想楽土の結末 | 梦想乐土之殁 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E9%81%BA%E5%A4%B1%E3%81%A8%E5%BF%98%E5%8D%B4%E3%81%AE%E5%B3%B6) | |
 | 稻光神鸣 The Almighty Violet Thunder／netease:1937111527 | 佚落迁忘之岛 | Boss／音区限定 | 夢想楽土の結末 | 梦想乐土之殁 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E9%81%BA%E5%A4%B1%E3%81%A8%E5%BF%98%E5%8D%B4%E3%81%AE%E5%B3%B6) | |
 | 寒光裂涛 Combat Beneath the Waves／netease:1937111536 | 佚落迁忘之岛 | 范围通用候选 | 戦闘(淵下宮) | 战斗(渊下宫) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E9%81%BA%E5%A4%B1%E3%81%A8%E5%BF%98%E5%8D%B4%E3%81%AE%E5%B3%B6) | |
@@ -55,12 +55,12 @@
 | 沉重的恶意 Snare Awaiting／netease:1992344604 | 智妙明论之林 | Boss／音区限定 | 戦闘(死域) | 战斗(死域) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E3%82%B8%E3%83%A5%E3%83%8B%E3%83%A3%E3%83%BC%E3%83%8A%E3%81%A8%E3%83%B4%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A4%E3%83%BC%E3%81%AE%E6%A3%AE) | |
 | 失色的灾厄 Fatal Confrontation／netease:1992344605 | 智妙明论之林 | 两源描述不同，保留战斗待校对 | 世界任務「森林書」 | 世界任务「森林书」 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E3%82%B8%E3%83%A5%E3%83%8B%E3%83%A3%E3%83%BC%E3%83%8A%E3%81%A8%E3%83%B4%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A4%E3%83%BC%E3%81%AE%E6%A3%AE) | |
 | 趁生烛尚未殄熄 Before the Light Fades／netease:1992344606 | 智妙明论之林 | 两源描述不同，保留战斗待校对 | 世界任務「森林書」 | 世界任务「森林书」 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E3%82%B8%E3%83%A5%E3%83%8B%E3%83%A3%E3%83%BC%E3%83%8A%E3%81%A8%E3%83%B4%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A4%E3%83%BC%E3%81%AE%E6%A3%AE) | |
-| 洄映的漩流 Swirls of the Stream／netease:1992343588 | 智妙明论之林 | 范围通用候选 | 戦闘(諸法の森) | 战斗(諸法の森) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E3%82%B8%E3%83%A5%E3%83%8B%E3%83%A3%E3%83%BC%E3%83%8A%E3%81%A8%E3%83%B4%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A4%E3%83%BC%E3%81%AE%E6%A3%AE) | |
-| 堙谷的铙歌 Rhymes of Vales／netease:1992343589 | 智妙明论之林 | 范围通用候选 | 戦闘(諸法の森) | 战斗(諸法の森) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E3%82%B8%E3%83%A5%E3%83%8B%E3%83%A3%E3%83%BC%E3%83%8A%E3%81%A8%E3%83%B4%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A4%E3%83%BC%E3%81%AE%E6%A3%AE) | |
+| 洄映的漩流 Swirls of the Stream／netease:1992343588 | 智妙明论之林 | 范围通用候选 | 戦闘(諸法の森) | 战斗(须弥雨林) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E3%82%B8%E3%83%A5%E3%83%8B%E3%83%A3%E3%83%BC%E3%83%8A%E3%81%A8%E3%83%B4%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A4%E3%83%BC%E3%81%AE%E6%A3%AE) | |
+| 堙谷的铙歌 Rhymes of Vales／netease:1992343589 | 智妙明论之林 | 范围通用候选 | 戦闘(諸法の森) | 战斗(须弥雨林) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E3%82%B8%E3%83%A5%E3%83%8B%E3%83%A3%E3%83%BC%E3%83%8A%E3%81%A8%E3%83%B4%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A4%E3%83%BC%E3%81%AE%E6%A3%AE) | |
 | 流金疾驰 Gilded Runner／netease:1992344607 | 智妙明论之林 | 范围通用候选 | 戦闘(スメール) | 战斗(须弥) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E3%82%B8%E3%83%A5%E3%83%8B%E3%83%A3%E3%83%BC%E3%83%8A%E3%81%A8%E3%83%B4%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A4%E3%83%BC%E3%81%AE%E6%A3%AE) | |
-| 森芒顷动 Jolts in the Forest／netease:1992343590 | 智妙明论之林 | Boss／音区限定 | 戦闘(フィールドボス) | 战斗(野外Boss) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E3%82%B8%E3%83%A5%E3%83%8B%E3%83%A3%E3%83%BC%E3%83%8A%E3%81%A8%E3%83%B4%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A4%E3%83%BC%E3%81%AE%E6%A3%AE) | |
-| 流金的烈怒 Wrathful Streaming Gold／netease:2041862752 | 啁哳流变之砂 | Boss／音区限定 | 戦闘(大赤砂海・遺跡) | 战斗(大赤沙海·遺跡) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E6%B5%81%E5%A4%89%E3%81%AE%E7%A0%82%E3%80%81%E3%81%95%E3%82%84%E3%81%95%E3%82%84%E3%81%A8) | |
-| 星灭光离 Across Dimming Asterisms／netease:2041859186 | 啁哳流变之砂 | Boss／音区限定 | 戦闘(大赤砂海・遺跡) | 战斗(大赤沙海·遺跡) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E6%B5%81%E5%A4%89%E3%81%AE%E7%A0%82%E3%80%81%E3%81%95%E3%82%84%E3%81%95%E3%82%84%E3%81%A8) | |
+| 森芒顷动 Jolts in the Forest／netease:1992343590 | 智妙明论之林 | Boss／音区限定 | 戦闘(フィールドボス) | 战斗(野外博斯) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E3%82%B8%E3%83%A5%E3%83%8B%E3%83%A3%E3%83%BC%E3%83%8A%E3%81%A8%E3%83%B4%E3%82%A3%E3%83%87%E3%82%A3%E3%83%A4%E3%83%BC%E3%81%AE%E6%A3%AE) | |
+| 流金的烈怒 Wrathful Streaming Gold／netease:2041862752 | 啁哳流变之砂 | Boss／音区限定 | 戦闘(大赤砂海・遺跡) | 战斗(大赤沙海·遗迹) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E6%B5%81%E5%A4%89%E3%81%AE%E7%A0%82%E3%80%81%E3%81%95%E3%82%84%E3%81%95%E3%82%84%E3%81%A8) | |
+| 星灭光离 Across Dimming Asterisms／netease:2041859186 | 啁哳流变之砂 | Boss／音区限定 | 戦闘(大赤砂海・遺跡) | 战斗(大赤沙海·遗迹) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E6%B5%81%E5%A4%89%E3%81%AE%E7%A0%82%E3%80%81%E3%81%95%E3%82%84%E3%81%95%E3%82%84%E3%81%A8) | |
 | 狮尾之舞 Swirls of Shamshir／netease:2041859187 | 啁哳流变之砂 | 范围通用候选 | 戦闘(大赤砂海) | 战斗(大赤沙海) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E6%B5%81%E5%A4%89%E3%81%AE%E7%A0%82%E3%80%81%E3%81%95%E3%82%84%E3%81%95%E3%82%84%E3%81%A8) | |
 | 赭泉酩旋 Swirls of Sachmis／netease:2041862753 | 啁哳流变之砂 | 范围通用候选 | 戦闘(大赤砂海) | 战斗(大赤沙海) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E6%B5%81%E5%A4%89%E3%81%AE%E7%A0%82%E3%80%81%E3%81%95%E3%82%84%E3%81%95%E3%82%84%E3%81%A8) | |
 | 六轮一露狂诗曲 Rhapsodia Roscida／netease:2041859188 | 啁哳流变之砂 | Boss／音区限定 | 淨琉璃工房 | 净琉璃工坊 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E6%B5%81%E5%A4%89%E3%81%AE%E7%A0%82%E3%80%81%E3%81%95%E3%82%84%E3%81%95%E3%82%84%E3%81%A8) | |
@@ -92,19 +92,19 @@
 | 切心的渴求 A Thirst That Cuts／netease:2756034904 | 幽暮衬映之月 | 范围通用候选 | 戦闘(ナド・クライ) | 战斗(挪德卡莱) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E5%A4%95%E6%9A%AE%E3%82%8C%E3%82%92%E7%85%A7%E3%82%89%E3%81%99%E6%9C%88) | |
 | 苍银的圣咒 Syntyloitsut of Koitar／netease:2756034905 | 幽暮衬映之月 | 范围通用候选 | 戦闘(ナド・クライ) | 战斗(挪德卡莱) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E5%A4%95%E6%9A%AE%E3%82%8C%E3%82%92%E7%85%A7%E3%82%89%E3%81%99%E6%9C%88) | |
 | 铁铸的洪流 The Iron-Cast Torrent／netease:2756034906 | 幽暮衬映之月 | Boss／音区限定 | 戦闘(クーヴァキ実験設計局) | 战斗(月矩力试验设计局) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E5%A4%95%E6%9A%AE%E3%82%8C%E3%82%92%E7%85%A7%E3%82%89%E3%81%99%E6%9C%88) | |
-| 诡影蛰动 What Sleeps in Shadow Now Wakes／netease:2756036521 | 幽暮衬映之月 | Boss／音区限定 | 戦闘(潮印石の周辺) | 战斗(潮印石の周辺) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E5%A4%95%E6%9A%AE%E3%82%8C%E3%82%92%E7%85%A7%E3%82%89%E3%81%99%E6%9C%88) | |
+| 诡影蛰动 What Sleeps in Shadow Now Wakes／netease:2756036521 | 幽暮衬映之月 | Boss／音区限定 | 戦闘(潮印石の周辺) | 战斗(潮印石之周围) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E5%A4%95%E6%9A%AE%E3%82%8C%E3%82%92%E7%85%A7%E3%82%89%E3%81%99%E6%9C%88) | |
 | 实力碾鸭 Duckle 'em Down!／netease:2756036522 | 幽暮衬映之月 | Boss／音区限定 | 戦闘(ボコボコダック) | 战斗(重拳出击鸭) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E5%A4%95%E6%9A%AE%E3%82%8C%E3%82%92%E7%85%A7%E3%82%89%E3%81%99%E6%9C%88) | |
-| 启明的祀奉 Heosphoros Hymn to Helel／netease:3358806550 | 朔望凝待之庭 | Boss／音区限定 | 戦闘(昏き魘夢の主)；世界任務「夜鳴鶯の歌」 | 战斗(深黯魇语之主)；世界任务「夜鳴鶯の歌」 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E6%9C%94%E6%9C%9B%E3%82%92%E5%BE%85%E3%81%A4%E5%BA%AD) | |
+| 启明的祀奉 Heosphoros Hymn to Helel／netease:3358806550 | 朔望凝待之庭 | Boss／音区限定 | 戦闘(昏き魘夢の主)；世界任務「夜鳴鶯の歌」 | 战斗(深黯魇语之主)；世界任务「夜莺之歌」 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E6%9C%94%E6%9C%9B%E3%82%92%E5%BE%85%E3%81%A4%E5%BA%AD) | |
 | 不虞之隙 Ain't That a Hole in the Boat／netease:3358807398 | 朔望凝待之庭 | 两源描述不同，保留战斗待校对 | 世界任務「月の東、太陽の西」 | 世界任务「月之東, 日之西」 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E6%9C%94%E6%9C%9B%E3%82%92%E5%BE%85%E3%81%A4%E5%BA%AD) | |
-| 月失星散 Of Lost Moon and Drifting Stars／netease:3358806551 | 朔望凝待之庭 | 两源描述不同，保留战斗待校对 | 魔神任務 空月の歌 第四幕 | 魔神任务 空月の歌 第四幕 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E6%9C%94%E6%9C%9B%E3%82%92%E5%BE%85%E3%81%A4%E5%BA%AD) | |
-| 未至的报赎 Redemptio Numquam Adventura／netease:3358806552 | 朔望凝待之庭 | 两源描述不同，保留战斗待校对 | 魔神任務 空月の歌 第四幕 | 魔神任务 空月の歌 第四幕 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E6%9C%94%E6%9C%9B%E3%82%92%E5%BE%85%E3%81%A4%E5%BA%AD) | |
+| 月失星散 Of Lost Moon and Drifting Stars／netease:3358806551 | 朔望凝待之庭 | 两源描述不同，保留战斗待校对 | 魔神任務 空月の歌 第四幕 | 魔神任务 空月之歌 第四幕 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E6%9C%94%E6%9C%9B%E3%82%92%E5%BE%85%E3%81%A4%E5%BA%AD) | |
+| 未至的报赎 Redemptio Numquam Adventura／netease:3358806552 | 朔望凝待之庭 | 两源描述不同，保留战斗待校对 | 魔神任務 空月の歌 第四幕 | 魔神任务 空月之歌 第四幕 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E6%9C%94%E6%9C%9B%E3%82%92%E5%BE%85%E3%81%A4%E5%BA%AD) | |
 | 七见断灭智论抄 Prajnaparamitopadesa to Quell Seven Calamities／netease:3358807399 | 朔望凝待之庭 | Boss／音区限定 | 偽月の研究所 | 赝月的研究所 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E6%9C%94%E6%9C%9B%E3%82%92%E5%BE%85%E3%81%A4%E5%BA%AD) | |
-| 白鸽之诗 Columbina's Poem／netease:3358806553 | 朔望凝待之庭 | Boss／音区限定 | 魔神任務 空月の歌 第八幕 | 魔神任务 空月の歌 第八幕 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E6%9C%94%E6%9C%9B%E3%82%92%E5%BE%85%E3%81%A4%E5%BA%AD) | |
+| 白鸽之诗 Columbina's Poem／netease:3358806553 | 朔望凝待之庭 | Boss／音区限定 | 魔神任務 空月の歌 第八幕 | 魔神任务 空月之歌 第八幕 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E6%9C%94%E6%9C%9B%E3%82%92%E5%BE%85%E3%81%A4%E5%BA%AD) | |
 | 冰湖的凯旋礼 Triumph on the Ice／netease:3437733165 | 悯宥慈怜之垠 | 范围通用候选 | 戦闘(スネージナヤ) | 战斗(至冬) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB) | |
 | 掣风揽熠 Wind Rider, Light Grasper／netease:3437733166 | 悯宥慈怜之垠 | 范围通用候选 | 戦闘(スネージナヤ) | 战斗(至冬) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB) | |
 | 驭光裁影 Wielding Light to Sever Shadows／netease:3437730698 | 悯宥慈怜之垠 | 范围通用候选 | 戦闘(スネージナヤ) | 战斗(至冬) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB) | |
-| 不死不灭之赐 The Boon of Immortality／netease:3437733167 | 悯宥慈怜之垠 | Boss／音区限定 | 戦闘(不滅の副産物) | 战斗(不滅の副産物) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB) | |
-| 落幕的赠礼 Gift at Curtain Call／netease:3437733168 | 悯宥慈怜之垠 | Boss／音区限定 | 戦闘(パヴリナ) | 战斗(パヴリナ) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB) | |
+| 不死不灭之赐 The Boon of Immortality／netease:3437733167 | 悯宥慈怜之垠 | Boss／音区限定 | 戦闘(不滅の副産物) | 战斗(不灭衍生造物) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB) | |
+| 落幕的赠礼 Gift at Curtain Call／netease:3437733168 | 悯宥慈怜之垠 | Boss／音区限定 | 戦闘(パヴリナ) | 战斗(帕芙琳娜) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E6%86%90%E6%86%AB%E3%81%A8%E6%85%88%E6%82%B2%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB) | |
 | 秣马厉兵 Battle Preparation／netease:1861576553 | 珍珠之歌 | 两源描述不同，保留战斗待校对 | 魔神任務第一章第四幕 | 魔神任务第一章第四幕 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
 | 凶险的密谋 A Wicked Plot／netease:1861577587 | 珍珠之歌 | 两源描述不同，保留战斗待校对 |  |  | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
 | 不冻的激浪 All-Conquering Tide／netease:1861579691 | 珍珠之歌 | 范围通用候选 | 戦闘(ドラゴンスパイン) | 战斗(龙脊雪山) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
@@ -114,22 +114,22 @@
 | 天遒歌 Ode to Azhdaha／netease:1861578699 | 珍珠之歌 | Boss／音区限定 | 若陀龍王 | 若陀龙王 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
 | 岩壑之崩 Rage Beneath the Mountains／netease:1861578703 | 珍珠之歌 | Boss／音区限定 | 若陀龍王 | 若陀龙王 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
 | 直面纷争的狂喜 Rapture of the Chaos／netease:1861579818 | 珍珠之歌 | 两源描述不同，保留战斗待校对 | 魔神任務第一章第三幕 | 魔神任务第一章第三幕 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
-| 魔王武装 Foul Legacy／netease:1861579782 | 珍珠之歌 | 两源描述不同，保留战斗待校对 | タルタリヤ 空鯨の章 第一幕 | 达达利亚 空鯨の章 第一幕 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
+| 魔王武装 Foul Legacy／netease:1861579782 | 珍珠之歌 | 两源描述不同，保留战斗待校对 | タルタリヤ 空鯨の章 第一幕 | 达达利亚 鲸天之章 第一幕 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
 | 凯歌的前奏 The Imminent Triumph／netease:1861578815 | 珍珠之歌 | 两源描述不同，保留战斗待校对 | 魔神任務第一章第三幕 | 魔神任务第一章第三幕 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
 | 灾厄的一击 An Inauspicious Blow／netease:1861579803 | 珍珠之歌 | 两源描述不同，保留战斗待校对 | 魔神任務第一章第四幕 | 魔神任务第一章第四幕 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
-| 游击骑士 Reconnaissance Captain／netease:1861578804 | 珍珠之歌 | 两源描述不同，保留战斗待校对 | エウルア 波沫の章 第一幕 | エウルア 波沫の章 第一幕 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
-| 磐峦的恶意 Ominous Monolith／netease:1861578821 | 珍珠之歌 | 两源描述不同，保留战斗待校对 | 鍾離 古聞の章 第二幕 | 鍾離 古聞の章 第二幕 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
+| 游击骑士 Reconnaissance Captain／netease:1861578804 | 珍珠之歌 | 两源描述不同，保留战斗待校对 | エウルア 波沫の章 第一幕 | 优菈 浪沫之章 第一幕 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
+| 磐峦的恶意 Ominous Monolith／netease:1861578821 | 珍珠之歌 | 两源描述不同，保留战斗待校对 | 鍾離 古聞の章 第二幕 | 钟离 古闻之章 第二幕 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
 | 特瓦林，抵达！ Dvalin Is Landing／netease:1861578765 | 珍珠之歌 | 两源描述不同，保留战斗待校对 | 真夏！島？大冒険！ | 真夏！島？大冒険！ | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
 | 危急的预觉 A Sense of Foreboding／netease:1973622669 | 珍珠之歌2 | Boss／音区限定 | 「淑女」形態移行 | 「女士 / 席诺拉」形態移行 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
-| 烈火轰雷 Burst Into Flames／netease:1973619548 | 珍珠之歌2 | 两源描述不同，保留战斗待校对 | 辛炎の幻境 | 辛炎の幻境 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
-| 仲夏夜绮思 Die Mittsommernacht-Fantasie／netease:1973619549 | 珍珠之歌2 | Boss／音区限定 | 戦闘(フィッシュルの幻境) | 战斗(フィッシュルの幻境) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
-| 险峙之刻 Moment of Conflict／netease:2068982799 | 珍珠之歌3 | 两源描述不同，保留战斗待校对 | ティナリ フェネックの章 第一幕 | ティナリ フェネックの章 第一幕 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
+| 烈火轰雷 Burst Into Flames／netease:1973619548 | 珍珠之歌2 | 两源描述不同，保留战斗待校对 | 辛炎の幻境 | 辛焱之幻境 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
+| 仲夏夜绮思 Die Mittsommernacht-Fantasie／netease:1973619549 | 珍珠之歌2 | Boss／音区限定 | 戦闘(フィッシュルの幻境) | 战斗(菲谢尔之幻境) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
+| 险峙之刻 Moment of Conflict／netease:2068982799 | 珍珠之歌3 | 两源描述不同，保留战斗待校对 | ティナリ フェネックの章 第一幕 | 提纳里 郭狐之章 第一幕 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
 | 三时三觉 Trifaria Conscientia／netease:2068981355 | 珍珠之歌3 | 两源描述不同，保留战斗待校对 | 魔神任務第三章第五幕 | 魔神任务第三章第五幕 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
 | 覆子之上 Beyond the Royal Fork／netease:2737538283 | 珍珠之歌5 | 两源描述不同，保留战斗待校对 | 魔神任務間章第四幕 | 魔神任务间章第四幕 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
 | 囿于棋格中 Ensnared Upon the Chessboard／netease:2737536430 | 珍珠之歌5 | Boss／音区限定 | 扉に通ずる対局 | 门扉前的弈局 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
 | 方寸颠倒 Order in Chaos／netease:2737536431 | 珍珠之歌5 | Boss／音区限定 | 扉に通ずる対局 | 门扉前的弈局 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
 | 累棋之危 In Mating Nets／netease:2737538289 | 珍珠之歌5 | Boss／音区限定 | 扉に通ずる対局 | 门扉前的弈局 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
-| 梭巡于渊隙 Shuttling Through the Abyssal Rift／netease:2737538290 | 珍珠之歌5 | 两源描述不同，保留战斗待校对 | スカーク クリスタリナの章 第一幕 | スカーク クリスタリナの章 第一幕 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
+| 梭巡于渊隙 Shuttling Through the Abyssal Rift／netease:2737538290 | 珍珠之歌5 | 两源描述不同，保留战斗待校对 | スカーク クリスタリナの章 第一幕 | 丝柯克 磷星之章 第一幕 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
 | 燹火的祈咏歌 Prayer in a Land of War／netease:2737536432 | 珍珠之歌5 | Boss／音区限定 | バクナワ | 巴窟纳瓦 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
 | 七狱空待 Seven Tabaqat of Asmoday／netease:3411268930 | 珍珠之歌6 | 两源描述不同，保留战斗待校对 | 空の神殿*5 | 空之神殿*5 | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E7%9C%9F%E7%8F%A0%E3%81%AE%E6%AD%8C) | |
 | 光辉的涨落 Photon of Fluctuation／netease:1481390929 | 风与牧歌之城 | 范围通用候选 | 戦闘(モンド) | 战斗(蒙德) | [子页](https://wikiwiki.jp/genshinwiki/BGM/%E9%A2%A8%E3%81%A8%E7%89%A7%E6%AD%8C%E3%81%AE%E5%9F%8E) | |

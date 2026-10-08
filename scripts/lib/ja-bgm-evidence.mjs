@@ -17,11 +17,11 @@ export function supplementalScopes(e,map){
  if(e.placeJa==='戦闘(古の聖山)')return ['A:NT:NATA4'];
  if(/海を望めぬ峰/.test(e.placeJa)&&/波追いの峠/.test(e.placeJa))return ['A:NDKL:NDKL2','A:NDKL:NDKL3'];
  if(e.placeJa==='三界道饗祭')return ['A:DQ:SANJIE'];
- const countries={'戦闘(モンド)':['A:MD:MENGDE'],'戦闘(璃月)':['A:LY:LIYUE'],'戦闘(稲妻)':['A:DQ:1','A:DQ:2','A:DQ:HEGUAN'],'戦闘(スメール)':['A:XM:FOREST'],'戦闘(ドラゴンスパイン)':['A:MD:XUESHAN'],'戦闘(ナド・クライ)':['A:NDKL:NDKL','A:NDKL:NDKL2','A:NDKL:NDKL3']};
+ const countries={'戦闘(モンド)':['A:MD:MENGDE'],'戦闘(璃月)':['A:LY:LIYUE','A:LY:CHENYUGU'],'戦闘(稲妻)':['A:DQ:1','A:DQ:2','A:DQ:HEGUAN'],'戦闘(スメール)':['A:XM:FOREST'],'戦闘(ドラゴンスパイン)':['A:MD:XUESHAN'],'戦闘(ナド・クライ)':['A:NDKL:NDKL','A:NDKL:NDKL2','A:NDKL:NDKL3']};
  if(countries[e.placeJa])return countries[e.placeJa];
  if(e.placeJa==='戦闘(スネージナヤ)')return ['A:ZD:ZHIDONG1'];
  if(e.placeJa==='戦闘(フォンテーヌ)')return ['A:FD:FENGDAN','A:FD:FENGDAN2','A:FD:FENGDAN3','A:FD:FENGDAN4','A:FD:ANCIENT_SEA'];
- if(e.placeJa==='戦闘(ナタ)')return ['A:NT:NATA','A:NT:NATA2','A:NT:NATA3'];
+ if(e.placeJa==='戦闘(ナタ)')return ['A:NT:NATA','A:NT:NATA2','A:NT:NATA3','A:NT:NATA5'];
  if(e.placeJa==='層岩巨淵')return ['A:LY:CENGYAN'];
  if(e.placeJa==='層岩巨淵・地下鉱区')return ['A:LY:CENGYAN_UG'];
  if(/^沈玉の谷\([昼夜霧]\)$/.test(e.placeJa))return ['A:LY:CHENYUGU'];

@@ -27,9 +27,18 @@ test('悠悠度假村与霜月真实点位支持反向定位，手机长说明�
  for(const code of ['A:NT:NATA5','A:NDKL:SY']){
   const t=review.tracks.find((t:any)=>t.areaCodes.length===1&&t.areaCodes[0]===code&&t.anchorIds.length);
   await open(page,t.id);await page.getByRole('button',{name:'在地图上定位全部'}).click();
-  await expect(page.getByLabel('选择地区')).toHaveValue(code);await expect(page.locator('.music-anchor.is-highlighted')).toHaveCount(t.anchorIds.length);
+  const currentAnchors=library.associations.filter((a:any)=>a.trackId===t.id);
+  await expect(page.getByLabel('选择地区')).toHaveValue(code);await expect(page.locator('.music-anchor.is-highlighted')).toHaveCount(currentAnchors.length);
  }
  await expect.poll(()=>page.locator('.leaflet-tile-loaded').count(),{timeout:20000}).toBeGreaterThan(0);
  await page.getByLabel('个人评价输入框').scrollIntoViewIfNeeded();await expect(page.getByLabel('个人评价输入框')).toBeInViewport();
  expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(390);await page.screenshot({path:'.local/browser-tests/ost-bulk-mobile.png'});
+});
+
+test('日文补充以中文显示，缺少出处明确标注',async({page})=>{
+ await page.goto('/');await expect(page.locator('.anchor-list button')).toHaveCount(27);
+ for(const prefix of ['日文Wiki补充（中文）：','缺少出处']){
+  const t=library.tracks.find((t:any)=>t.sceneInfo.originText.startsWith(prefix));
+  await open(page,t.id);await expect(page.locator('.origin-text')).toContainText(t.sceneInfo.originText);
+ }
 });
