@@ -59,3 +59,9 @@ Vite只在开发服务提供本机/__dev/music-links，记录写data/association
 Anchor.geography与SceneInfo.geographicScopes使用country/primary/secondary(nullable)；独立于源Area47组。来源/距离/待核实在点位地理字段保留，原说明不改。地图快照校验该结构，曲库导入挑选保留并拒绝二级无一级。探索/搜索优先统一目录，旧musicLocations仅保留历史引用。重建入口scripts/reclassify-geography.mjs，规则与局限见GEOGRAPHY_REVIEW.md和PROJECT_STATUS末尾。MySQL尚无geography迁移，不能声称JSON已同步。
 
 2026-10-08增量：父范围字典也来自点位一级目录；二级去重复父地图名，专曲优先级按点位/音乐类别分别计算，没有专曲可父范围回退。多行出处保留范围，变奏引用不扩散限定战斗。未匹配曲使用region-archive，优先适用范围神像，回顾未知按既有album.scope归档国家并记录archiveBasis；归档不计覆盖。新月神像源快照由重建入口幂等补入，采集/规范化同时接受七天和新月。没有新增前端结构或数据库同步接口。
+
+## 阶段4实现增量（2026-10-08）
+
+src/services/music-player.ts负责全应用媒体、资源解析、竞态与播放器持久化；music-collection.ts负责浏览器收藏/播放列表；App持有实例，PlayerBar/PersonalLibrary/MusicSidebar消费，不随地图或面板卸载。explorer的专辑/地区筛选只作用曲目结果，采用canonical geographicScopes。媒体play承诺不作为成功证据，playing/timeupdate才更新实际状态。
+
+scripts/playback-service.ts注册Vite dev和preview本机API：白名单曲目→MySQL原始ID/标题→本机音频或官方CLI可用性核实。CLI无网页URL，暂不构造网易ready。流读取本机文件支持Range、无凭据返回。JSON曲库用于展示/地理，MySQL查询播放身份；不宣称历史数据库地理关系同步。PLAYBACK_INTERFACE明确接口及存储边界，STAGE4_REVIEW明确真实音频未验收。

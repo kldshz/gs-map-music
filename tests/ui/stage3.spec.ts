@@ -18,7 +18,7 @@ test('真实地图瓦片、27个蒙德点位、地图点击和键盘神像入口
   const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));await ready(page);
   await expect.poll(()=>page.locator('.leaflet-tile-loaded').count(),{timeout:30000}).toBeGreaterThan(0);
   await expect(page.locator('.music-anchor')).toHaveCount(27);
-  await page.locator(`[data-anchor-id="${waypoint.id}"]`).click({force:true});
+  await page.locator(`[data-anchor-id="${waypoint.id}"]`).click();
   await expect(page.locator('.detail-view')).toBeVisible();await expect(page.locator('.detail-view')).toContainText(`关联音乐（${countAt(waypoint.id)}）`);
   await page.keyboard.press('Escape');await expect(page.locator('.detail-view')).not.toBeVisible();
   await page.getByRole('button',{name:'神像',exact:true}).click();await expect(page.locator('.anchor-list button')).toHaveCount(4);
@@ -50,7 +50,7 @@ test('空曲库/校验失败及多对多反向定位；缺值未知、pending显
   await expect(page.locator('.detail-view')).toBeVisible();await expect(page.locator('dialog')).toHaveCount(0);await expect(page.locator('.music-anchor.is-highlighted')).toHaveCount(2);
   await page.locator('input[type=file]').setInputFiles({name:'bad.json',mimeType:'application/json',buffer:Buffer.from('{broken')});
   await expect(page.locator('.import-message').first()).toContainText('导入失败');await page.getByRole('button',{name:'曲目检索',exact:true}).click();await expect(page.locator('.track-list button')).toHaveCount(1);
-  await page.getByLabel('搜索点位、曲目、专辑、地区、细分目录或个人评价').fill('没有这首曲目');await expect(page.getByText('没有与"没有这首曲目"匹配的曲目')).toBeVisible();
+  await page.getByLabel('搜索点位、曲目、专辑、地区、细分目录或个人评价').fill('没有这首曲目');await expect(page.locator('.empty-state')).toContainText('没有匹配');
 });
 
 test('实际触发地图数据与瓦片加载失败并重试',async({page})=>{
@@ -62,7 +62,7 @@ test('实际触发地图数据与瓦片加载失败并重试',async({page})=>{
 
 for(const width of [390,320])test(`手机${width}px布局/面板/键盘可用`,async({page})=>{
   await page.setViewportSize({width,height:844});await ready(page);
-  await expect(page.locator('.leaflet-music-map')).toBeVisible();await expect(page.getByText('音源尚未接入')).toBeVisible();
+  await expect(page.locator('.leaflet-music-map')).toBeVisible();await expect(page.locator('.player-status')).toContainText('选择歌曲后点击播放');
   const bounds=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,width:innerWidth,map:document.querySelector('.map-container')!.getBoundingClientRect().height,footer:document.querySelector('footer')!.getBoundingClientRect().bottom}));
   expect(bounds.scroll).toBeLessThanOrEqual(width);expect(bounds.map).toBeGreaterThanOrEqual(240);expect(bounds.footer).toBeLessThanOrEqual(845);
   await page.getByRole('button',{name:'收起面板'}).click();await page.getByRole('button',{name:'展开面板'}).click();

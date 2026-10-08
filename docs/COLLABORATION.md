@@ -145,3 +145,11 @@ C3-04最终整合：Claude的原说明/出处设计沿用，Codex负责24专辑�
 ## C3-06：常态回退与神像存储数据修订
 
 2026-10-08，本轮没有前端文件改动，复用C3-05的右栏/目录/开发编辑设计，没有追加Claude调用或替换设计模型。Codex负责V3新月神像只读来源、分类/父范围回退/神像归档、生成数据、测试及记录/Git。48数据检查、6定向生产UI、2开发编辑UI与类型/构建通过；实际查看空之神殿回退/书院专曲、新月神像和蒙德神像。人工覆盖/评价保留、MySQL未同步。细节见MUSIC_FALLBACK_REVIEW.md。
+
+## C4-01：播放器/个人库及筛选（2026-10-08）
+
+实际工单S4-PLAYER-UI-001及R1/R2：本机Claude CLI2.1.291，既有stdin runner、禁用工具，固定--model claude-opus-5-5 --effort high；上下文仅允许源码/工单，无本机配置、MySQL或网易凭据。初版success/is_error=false、唯一modelUsage一致，193630ms；R1 600秒超时无可用交付，未替换模型；拆小R2同模型/high成功，34626ms。
+
+Claude主导PlayerBar/PersonalLibrary、侧栏播放收藏列表入口与专辑地区筛选及CSS，R2实现侧栏内重命名/失败保留草稿与播放上下文。Codex审查工单文件白名单、唯一old替换落盘；局部修复未转义JSON引号、reactive解包、单曲入口位置、真实状态/未知时长、失效队列、个人库聚焦、手机队列遮挡/footer截断、储存失败反馈。Codex负责播放器/收藏存储/服务/数据库权限探针及验证，未替代Claude整体设计。结果摘要WORK_ORDERS/S4-PLAYER-UI-001.RESULT.json；原始响应仅.local/claude-runs。既有网关上游认证及内部effort无独立回显限制保持。
+
+实际网易skill位于.local/reference-netease-skills/netease-music-cli/SKILL.md；遵守不可播放visible=false、未调用其play或队列。真实原神音频缺失，未把模型交付或模拟媒体测试当发声通过。

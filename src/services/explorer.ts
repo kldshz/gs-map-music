@@ -12,6 +12,7 @@ export function useExplorer() {
   const loading=ref(false),error=ref(''),importMessage=ref(''),query=ref('');
   const areaCode=ref('A:MD:MENGDE'),selectedAnchorId=ref(''),selectedTrackId=ref('');
   const typeFilter=ref<'all'|'waypoint'|'statue'>('all'),layerFilter=ref('all');
+  const albumFilter=ref(''),regionFilter=ref('');
   const developmentMode=import.meta.env?.DEV===true;
   const editingAvailable=ref(false),editBusy=ref(false),editMessage=ref('');
   const manualEdits=ref<AssociationEdits>({schemaVersion:1,edits:[]});
@@ -72,9 +73,19 @@ export function useExplorer() {
     t.sceneInfo?.wikiTitle,t.sceneInfo?.englishTitle,t.sceneInfo?.originText,...(t.sceneInfo?.mainRegions??[]),...trackLocationLabels(t.id),
     ...(associationIndex.value.byTrack.get(t.id)??[]).flatMap(link=>{const p=anchorById.value.get(link.anchorId);return p?[p.areaName,p.country,p.content,p.geography?.primary,p.geography?.secondary]:[]})].join(' ').toLocaleLowerCase()])));
   const searchTracks=computed(()=>{
-    const q=query.value.trim().toLocaleLowerCase();if(!q)return tracks.value;
-    return tracks.value.filter(t=>searchCorpus.value.get(t.id)?.includes(q)||notes.personalNoteFor(t.id,t.personalNote??'').toLocaleLowerCase().includes(q));
+    const q=query.value.trim().toLocaleLowerCase();
+    return tracks.value.filter(t=>(!albumFilter.value||t.album===albumFilter.value)&&(!regionFilter.value||trackRegionValues(t.id).includes(regionFilter.value))
+      &&(!q||searchCorpus.value.get(t.id)?.includes(q)||notes.personalNoteFor(t.id,t.personalNote??'').toLocaleLowerCase().includes(q)));
   });
+  function trackRegionValues(id:string){
+    const track=trackById.value.get(id),scopes=track?.sceneInfo?.geographicScopes??[];
+    const values=scopes.flatMap(s=>[s.country,s.primary?[s.country,s.primary].join(' / '):'',s.secondary?[s.country,s.primary,s.secondary].join(' / '):'']).filter(Boolean);
+    // Special-map tracks intentionally have no anchors; retain their source directory as a filter.
+    if(!scopes.length)for(const locationId of track?.sceneInfo?.musicLocationIds??[]){const p=locationById.value.get(locationId);if(p)values.push(p.country,[p.country,p.name].join(' / '));}
+    return [...new Set(values)];
+  }
+  const albumOptions=computed(()=>[...new Set(tracks.value.map(t=>t.album).filter((x):x is string=>!!x))].sort((a,b)=>a.localeCompare(b,'zh-CN')));
+  const regionOptions=computed(()=>[...new Set(tracks.value.flatMap(t=>trackRegionValues(t.id)))].sort((a,b)=>a.localeCompare(b,'zh-CN')).map(value=>({value,label:value})));
   async function load(){
     const revision=++libraryRevision;
     loading.value=true;error.value='';
@@ -134,7 +145,7 @@ export function useExplorer() {
     }catch(cause){importMessage.value=`导入失败：${cause instanceof Error?cause.message:'未知错误'}；原曲库保持不变。`;}
   }
   return {loading,error,areas,areaCode,selectedArea,roots,areaOptions,typeFilter,query,visibleAnchors,anchors,selectedAnchor,selectedAnchorId,highlightedIds,focusRequest,
-    tracks,searchTracks,anchorTracks,selectedTrack,trackLocations,trackAssociations,associationFor,trackLocationLabels,anchorMusicContexts,musicLocations,...notes,
+    tracks,searchTracks,albumFilter,regionFilter,albumOptions,regionOptions,anchorTracks,selectedTrack,trackLocations,trackAssociations,associationFor,trackLocationLabels,anchorMusicContexts,musicLocations,...notes,
     developmentMode,editingAvailable,editBusy,editMessage,hasManualEdit,addTrackToAnchor,removeTrackFromAnchor,restoreTrackAnchor,exportEditedLibrary,
     mapConfig,mapStatus,importMessage,layerOptions,layerFilter,load,selectArea,selectAnchor,selectTrack,locateTrack,associationStatus,importLibrary};
 }

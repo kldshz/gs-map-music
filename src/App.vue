@@ -44,7 +44,7 @@
           {{ panelCollapsed ? '◀' : '▶' }}
         </button>
         <div v-show="!panelCollapsed" id="side-panel-content" class="panel-content">
-          <MusicSidebar ref="sidebar" :explorer="explorer" />
+          <MusicSidebar ref="sidebar" :explorer="explorer" :player="player" :collection="collection" />
 
           <section class="import-section" aria-labelledby="import-title">
             <h3 id="import-title">导入音乐库</h3>
@@ -56,46 +56,62 @@
             <p v-if="explorer.importMessage.value" class="import-message" role="status" aria-live="polite">{{ explorer.importMessage.value }}</p>
             <p v-if="importError" class="import-message error" role="alert">{{ importError }}</p>
           </section>
+
+          <section v-if="libraryOpen" class="library-section" aria-labelledby="library-title">
+            <div class="library-header">
+              <h3 id="library-title" ref="libraryHeading" tabindex="-1">个人库</h3>
+              <button
+                type="button"
+                class="library-close-btn"
+                aria-label="收起个人库"
+                @click="libraryOpen = false"
+              >×</button>
+            </div>
+            <PersonalLibrary :player="player" :collection="collection" :tracks="explorer.tracks.value" />
+          </section>
         </div>
       </aside>
     </main>
 
     <footer class="app-footer">
-      <div class="player-stub" role="region" aria-label="播放器">
-        <div class="player-track">
-          <span class="player-title">{{ explorer.selectedTrack.value ? trackDisplayTitle(explorer.selectedTrack.value) : '尚未选择曲目' }}</span>
-          <span class="player-note">音源尚未接入</span>
-        </div>
-        <div class="player-controls">
-          <button type="button" class="player-btn" disabled aria-label="上一首">⏮</button>
-          <button type="button" class="player-btn" disabled aria-label="播放">▶</button>
-          <button type="button" class="player-btn" disabled aria-label="下一首">⏭</button>
-          <span class="player-time">--:--</span>
-          <input type="range" class="player-progress" min="0" max="100" value="0" disabled aria-label="播放进度" />
-          <span class="player-time">--:--</span>
-          <input type="range" class="player-volume" min="0" max="100" value="80" disabled aria-label="音量" />
-          <button type="button" class="player-btn" disabled aria-label="随机播放">⇄</button>
-          <button type="button" class="player-btn" disabled aria-label="循环播放">↻</button>
-        </div>
-      </div>
+      <PlayerBar :player="player" :collection="collection" :tracks="explorer.tracks.value" @show-track="handleShowTrack" />
+      <button
+        type="button"
+        class="library-toggle-btn"
+        :aria-label="libraryOpen ? '收起个人库' : '展开个人库'"
+        :aria-pressed="libraryOpen"
+        @click="toggleLibrary"
+      >个人库</button>
       <p class="footer-note">地图数据来源：<a href="https://yuanshen.site" target="_blank" rel="noopener">空荧酒馆</a></p>
     </footer>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, nextTick } from 'vue';
+import { ref, nextTick, onBeforeUnmount } from 'vue';
 import MapCanvas from './components/MapCanvas.vue';
 import MusicSidebar from './components/MusicSidebar.vue';
+import PlayerBar from './components/PlayerBar.vue';
+import PersonalLibrary from './components/PersonalLibrary.vue';
 import { useExplorer } from './services/explorer';
+import { useMusicPlayer } from './services/music-player';
+import { useMusicCollection } from './services/music-collection';
 import type { MusicTrack } from './domain/contracts';
 
 type Maybe<T> = T | null | undefined;
 
 const explorer = useExplorer();
+const player = useMusicPlayer(() => explorer.tracks.value);
+const collection = useMusicCollection();
 const panelCollapsed = ref(false);
+const libraryOpen = ref(false);
+const libraryHeading=ref<HTMLElement|null>(null);
 const sidebar = ref<InstanceType<typeof MusicSidebar> | null>(null);
 const importError = ref('');
+
+onBeforeUnmount(() => {
+  player.dispose();
+});
 
 function areaLabel(area: { name: string; parentId?: Maybe<number> }): string {
   const parent = area.parentId ? explorer.areas.value.find((a) => a.id === area.parentId)?.name : undefined;
@@ -126,6 +142,16 @@ async function handleImport(event: Event): Promise<void> {
 function handleMapSelect(anchorId: string): void {
   panelCollapsed.value = false;
   void nextTick(() => sidebar.value?.showAnchor(anchorId));
+}
+
+function handleShowTrack(id: string): void {
+  panelCollapsed.value = false;
+  void nextTick(() => sidebar.value?.showTrack(id));
+}
+
+function toggleLibrary():void {
+  libraryOpen.value=!libraryOpen.value;
+  if(libraryOpen.value){panelCollapsed.value=false;void nextTick(()=>{libraryHeading.value?.scrollIntoView({block:'nearest'});libraryHeading.value?.focus({preventScroll:true});});}
 }
 
 void explorer.load();

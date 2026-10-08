@@ -40,3 +40,9 @@ FAQ 的原文包括：“个人场景：暂不支持……仅可使用 ncm-cli �
 沿用已配置官方ncm-cli0.1.7与用户已授权登录，读取NetEase官方netease-music-cli技能，先help再查询；本轮login --check成功。search album、album get --descFlag true、album tracks针对《风与牧歌之城》均code200，专辑数字ID95790219、加密ID8687CEE480D6D9C33D3AD0EB20A204AF，63首真实曲目ID/艺人/毫秒时长及发行信息成功。元数据详细记录见[CITY_WINDS_PILOT](CITY_WINDS_PILOT.md)。
 
 63条visible=false、playFlag=false，不把返回成功说成可播放。只读取，不下载/解析/播放音频，不将凭据或账号字段发前端/Claude/Git。此前指定歌单400与本轮专辑成功为不同请求。上文“尚无CLI/ID/资质/许可示例”是阶段1历史条件，当前CLI已配置且登录，旧非原神音频已移除；网页API权限和实际播放仍未解决。
+
+## 2026-10-08阶段4实际复核
+
+官方CLI0.1.7登录检查成功，MySQL1663曲/1663加密ID真实读取。数据库晨曦酒庄1455706951及Windborne Hymn1481390533严格originalId匹配查询visible=false/playFlag=false；不是可播放授权。官方FAQ docId=3b75ab8e475d41ca93d91ebd4dfd383f的实际文档接口HTTP200仍说明个人仅CLI，直接API暂不支持，CLI无浏览器URL命令。保留.local/research原始查询，不提交账号/认证字段。没有调用不可见曲播放、截获网络URL、逆向签名或替换翻奏。
+
+本机/api/playback/resolve真实查询返回permission/unavailable；如用户本机提供数字ID普通原神音频可经同源Range流播放，这不是网易接口获取资源成功。目录目前为空，真实解码发声验收阻塞。厂商网页API权限需另行确认，已提供appid/privateKey无需重问。详见STAGE4_REVIEW/PLAYBACK_INTERFACE。

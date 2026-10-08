@@ -24,9 +24,35 @@
     </div>
 
     <div v-else-if="activeTab === 'tracks'" class="tab-content" @keydown="handleDetailKeydown">
+      <div class="track-filters">
+        <select
+          v-model="state.albumFilter"
+          class="filter-select"
+          aria-label="筛选专辑"
+        >
+          <option value="">全部专辑</option>
+          <option v-for="album in state.albumOptions" :key="album" :value="album">{{ album }}</option>
+        </select>
+        <select
+          v-model="state.regionFilter"
+          class="filter-select"
+          aria-label="筛选音乐地区"
+        >
+          <option value="">全部地区</option>
+          <option v-for="region in state.regionOptions" :key="region.value" :value="region.value">{{ region.label }}</option>
+        </select>
+      </div>
       <p class="result-count" aria-live="polite">{{ trackCountText }}</p>
       <p v-if="!state.tracks.length" class="empty-state">曲库尚未导入</p>
-      <p v-else-if="!state.searchTracks.length" class="empty-state">没有与"{{ state.query }}"匹配的曲目</p>
+      <p v-else-if="!state.searchTracks.length" class="empty-state">
+        <template v-if="state.query || state.albumFilter || state.regionFilter">
+          没有匹配的曲目
+          <template v-if="state.query">（搜索："{{ state.query }}"）</template>
+          <template v-if="state.albumFilter">（专辑：{{ state.albumFilter }}）</template>
+          <template v-if="state.regionFilter">（地区：{{ state.regionOptions.find(r => r.value === state.regionFilter)?.label }}）</template>
+        </template>
+        <template v-else>没有匹配的曲目</template>
+      </p>
       <ul v-else class="track-list" aria-label="曲目列表">
         <li v-for="track in state.searchTracks" :key="track.id">
           <button type="button" class="track-item" @click="selectTrackAndShow(track.id)">
@@ -78,6 +104,12 @@
 
       <details open class="detail-section">
         <summary class="detail-summary">关联音乐（{{ anchorTracks.length }}）</summary>
+        <button
+          v-if="anchorTracks.length"
+          type="button"
+          class="play-all-btn"
+          @click="handlePlayAnchorTracks"
+        >播放点位曲库</button>
         <div v-if="state.anchorMusicContexts.length" class="music-contexts">
           <h4>曲库细分目录</h4>
           <p class="context-note">以下为此点位已关联曲目的细分目录标签，不代表该点位的实际地理位置</p>
@@ -92,6 +124,29 @@
               <span class="track-artists">艺人：{{ joinList(track.artists) }}</span>
               <span class="track-origin">{{ track.sceneInfo?.originText?.trim() || '出处尚未提供' }}</span>
             </button>
+            <div class="track-actions">
+              <button type="button" class="track-action-btn" @click.stop="handlePlayTrack(track.id)">播放此曲</button>
+              <button type="button" class="track-action-btn" @click.stop="handleEnqueueTrack(track.id)">加入队列</button>
+              <button
+                type="button"
+                class="track-action-btn"
+                :aria-pressed="collectionState.isFavorite(track.id)"
+                @click.stop="collectionState.toggleFavorite(track.id)"
+              >{{ collectionState.isFavorite(track.id) ? '已收藏' : '收藏' }}</button>
+              <details class="track-add-playlist">
+                <summary class="track-action-btn">添加到播放列表</summary>
+                <ul v-if="collectionState.playlists.length" class="playlist-menu">
+                  <li v-for="list in collectionState.playlists" :key="list.id">
+                    <button
+                      type="button"
+                      class="playlist-menu-item"
+                      @click.stop="collectionState.addToPlaylist(list.id, track.id)"
+                    >{{ list.name }}</button>
+                  </li>
+                </ul>
+                <p v-else class="playlist-menu-empty">尚无播放列表</p>
+              </details>
+            </div>
             <div v-if="state.developmentMode && state.editingAvailable" class="edit-actions">
               <button type="button" class="edit-btn remove-btn" :disabled="state.editBusy" @click="removeFromAnchor(track.id)">移除关联</button>
               <button v-if="anchorTrackCanRestore(track.id)" type="button" class="edit-btn restore-btn" :disabled="state.editBusy" @click="restoreAssociation(track.id, state.selectedAnchor.id)">恢复来源关联</button>
@@ -121,6 +176,29 @@
 
     <div v-else-if="activeTab === 'detail' && viewMode === 'track' && state.selectedTrack" class="tab-content detail-view" @keydown="handleDetailKeydown">
       <h2 ref="trackDetailHeading" tabindex="-1" class="sidebar-detail-title">{{ trackDisplayTitle(state.selectedTrack) }}</h2>
+        <div class="track-detail-actions">
+          <button type="button" class="track-action-btn" @click="handlePlayTrack(state.selectedTrack.id)">播放此曲</button>
+          <button type="button" class="track-action-btn" @click="handleEnqueueTrack(state.selectedTrack.id)">加入队列</button>
+          <button
+            type="button"
+            class="track-action-btn"
+            :aria-pressed="collectionState.isFavorite(state.selectedTrack.id)"
+            @click="collectionState.toggleFavorite(state.selectedTrack.id)"
+          >{{ collectionState.isFavorite(state.selectedTrack.id) ? '已收藏' : '收藏' }}</button>
+          <details class="track-add-playlist">
+            <summary class="track-action-btn">添加到播放列表</summary>
+            <ul v-if="collectionState.playlists.length" class="playlist-menu">
+              <li v-for="list in collectionState.playlists" :key="list.id">
+                <button
+                  type="button"
+                  class="playlist-menu-item"
+                  @click="collectionState.addToPlaylist(list.id, state.selectedTrack.id)"
+                >{{ list.name }}</button>
+              </li>
+            </ul>
+            <p v-else class="playlist-menu-empty">尚无播放列表</p>
+          </details>
+        </div>
       <button v-if="state.selectedAnchor" type="button" class="back-to-anchor-btn" @click="selectAnchorAndShow(state.selectedAnchor.id)">← 返回当前点位曲库</button>
       <details open class="detail-section">
         <summary class="detail-summary">基本信息</summary>
@@ -195,6 +273,7 @@
 
       <details class="detail-section">
         <summary class="detail-summary">关联点位（{{ trackLocationsCount }}）</summary>
+
 
         <template v-if="trackLocations.length">
           <button type="button" class="locate-btn" @click="locateAll">在地图上定位全部</button>
@@ -286,9 +365,13 @@ type Maybe<T> = T | null | undefined;
 
 const props = defineProps<{
   explorer: ReturnType<typeof useExplorer>;
+  player: ReturnType<typeof import('../services/music-player').useMusicPlayer>;
+  collection: ReturnType<typeof import('../services/music-collection').useMusicCollection>;
 }>();
 
 const state = reactive(props.explorer);
+const playerState = reactive(props.player);
+const collectionState = reactive(props.collection);
 
 type Tab = 'anchors' | 'tracks' | 'detail';
 type ViewMode = 'anchor' | 'track' | null;
@@ -572,5 +655,21 @@ watch(() => state.selectedAnchorId, () => {
   addAnchorQuery.value = '';
   addAnchorRegion.value = '';
 });
-defineExpose({showAnchor:selectAnchorAndShow});
+
+async function handlePlayAnchorTracks(): Promise<void> {
+  if (!anchorTracks.value.length) return;
+  const ids = anchorTracks.value.map(t => t.id);
+  await playerState.playTrack(ids[0], ids);
+}
+
+async function handlePlayTrack(id: string): Promise<void> {
+  const context = viewMode.value === "anchor" ? anchorTracks.value.map(t=>t.id) : state.searchTracks.map(t=>t.id);
+  await playerState.playTrack(id, context.includes(id) ? context : [id]);
+}
+
+function handleEnqueueTrack(id: string): void {
+  playerState.enqueue(id);
+}
+
+defineExpose({ showAnchor: selectAnchorAndShow, showTrack: selectTrackAndShow });
 </script>

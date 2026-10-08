@@ -59,7 +59,7 @@ export interface TrackAnchor {
   matchType?:AssociationMatch;
 }
 export interface MusicLibrary { schemaVersion:1; tracks:MusicTrack[]; associations:TrackAnchor[]; musicLocations?:MusicLocation[] }
-/** Stage 4 resolver contract only; no audio implementation or URL is bundled. */
+/** Runtime playback resolution. Short-lived URLs and audio files never enter the catalog or storage. */
 export type PlaybackResource =
   | { status:'ready'; provider:'netease'|'local'; url:string; expiresAt:string|null; preview:boolean }
   | { status:'unavailable'; reason:'missing'|'authentication'|'permission'|'copyright'|'expired'|'network'; message:string };
