@@ -88,3 +88,11 @@ https://gs-map-music.online 已发布 Worker `046dc1e8-4b2f-4c9d-b8ce-777e696590
 本机证据：`.local/cloudflare/public-verification.json`、`remote-audit.json`、`public-browser.log`、`public-player.png`；凭据/完整导入日志只在忽略目录。D1实际约18MB，以remote-audit的 `size_after` 实测为准。未改原JSON/人工编辑或稳定标签、未移除本机MySQL、未增加路线与R2。Cloudflare出口限制已用明确candidate及真实浏览器播放验证处理，仍不保证所有曲目/浏览器/地区长期可用。
 
 下一轮可复制：读取项目说明、AGENTS、状态、CLOUDFLARE_DEPLOYMENT、PLAYBACK_INTERFACE和验收。继续阶段4部署改善，先核查现有公网Worker/D1版本，抽样核查不同专辑和浏览器音源，记录不可播项与原因；保留candidate只由真实媒体事件确认播放、人工记录、pending及本机播放方式。按实际需要再决定目录读库与受保护的数据管理；不开展路线、不自动迁移个人库、不转存全部音频。检查、更新记录、提交推送。
+
+## 2026-10-09：精简界面公网验收
+
+已发布https://gs-map-music.online，Worker版本e27bffd9-ba17-47a0-9a9d-0923282175cc。真正dry-run及发布前静态快照/D1活动版本一致性检查通过；数据未变，不重新导入D1。
+
+公网Edge：8项精简界面测试全部通过（1440/1024/390/320首次收起、无名称/左栏/个人控件、旧存储不改、地图点击展开、队列恢复/独立滚动/排序移除清空）；另外3项云端测试全部通过，含两首真实原神音频播放/暂停/进度/音量/上下曲/随机循环/地图队列连续及刷新恢复。实际查看加载完成后的1440/320截图，无地图遮挡或横向溢出；截图.local/browser-tests/search-only-online-1440.png与search-only-online-320.png。
+
+保留stable-2026-10-08标签，曲库/点位/人工记录不改。外部音源长期及全库可播限制仍存在，未新增路线。此次代码已推送main；最终提交哈希以交付回复为准。
