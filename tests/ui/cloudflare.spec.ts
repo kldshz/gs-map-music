@@ -17,6 +17,6 @@ test('两首云端资源为HTTPS媒体或明确未验证公开入口，签名不
     else {expect(url.hostname).toBe('music.163.com');expect(result.url).toBe(`https://music.163.com/song/media/outer/url?id=${id}.mp3`);}
     const audio=await request.head(result.url);expect(audio.ok()).toBe(true);expect(audio.headers()['content-type']).toMatch(/^audio\//);
   }
-  await page.goto('/');await expect(page.locator('.anchor-list button')).toHaveCount(27);
+  await page.goto('/');await expect(page.locator('.anchor-list button')).toHaveCount(27);await page.getByRole('button',{name:'展开面板',exact:true}).click();
   const values=await page.evaluate(()=>Object.values(localStorage).join('\n'));expect(values).not.toContain('music.126.net');
 });

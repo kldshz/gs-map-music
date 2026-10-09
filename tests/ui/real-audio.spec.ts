@@ -8,7 +8,7 @@ test('实际原神音频：外链播放暂停/拖动/上下曲/随机循环/面�
  const [first,second]=samples;
  const resource=await (await request.get(`/api/playback/resolve?trackId=${encodeURIComponent(first.id)}`)).json();
  expect(['ready','candidate'],JSON.stringify(resource)).toContain(resource.status);expect(['netease-outer','local']).toContain(resource.provider);
- await page.goto('/');await expect(page.locator('.anchor-list button')).toHaveCount(27);
+ await page.goto('/');await expect(page.locator('.anchor-list button')).toHaveCount(27);await page.getByRole('button',{name:'展开面板',exact:true}).click();
  await page.getByRole('button',{name:'曲目检索',exact:true}).click();await page.getByRole('searchbox',{name:'搜索点位、曲目、专辑、地区或细分目录',exact:true}).fill(first.neteaseId);await page.locator('.track-list .track-item').click();await page.getByRole('button',{name:'播放此曲',exact:true}).click();
  const audio=page.locator('audio[data-player-audio]');
  async function playing(title:string){

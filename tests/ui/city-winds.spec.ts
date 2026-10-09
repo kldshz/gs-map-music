@@ -4,7 +4,7 @@ const countAt=(id:string)=>builtin.associations.filter((a:any)=>a.anchorId===id)
 import { test, expect } from '@playwright/test';
 
 test.setTimeout(60000);
-async function ready(page:any){await page.goto('/');await expect(page.locator('.anchor-list button')).toHaveCount(27);}
+async function ready(page:any){await page.goto('/');await expect(page.locator('.anchor-list button')).toHaveCount(27);await page.getByRole('button',{name:'展开面板',exact:true}).click();}
 async function track(page:any,query:string){await page.getByRole('button',{name:'曲目检索',exact:true}).click();await page.getByRole('searchbox',{name:'搜索点位、曲目、专辑、地区或细分目录',exact:true}).fill(query);await expect(page.locator('.track-list .track-item')).toHaveCount(1);await page.locator('.track-list .track-item').click();await page.locator('summary').filter({hasText:/^关联点位/}).click();}
 
 test('专辑63首、蒙德城曲库和神像归档提示、所有关联反向定位',async({page})=>{
@@ -24,7 +24,7 @@ test('撤下评价及独立来源界面，历史评价保留且不再参与检�
   await ready(page);await track(page,'风所爱之城');await expect(page.getByLabel('个人评价输入框')).toHaveCount(0);
   await expect(page.locator('.track-detail-view > details')).toHaveCount(2);await expect(page.getByText('完整元数据',{exact:true})).toHaveCount(0);
   await expect(page.getByText('歌曲元数据来源',{exact:true})).toHaveCount(0);await expect(page.getByText('曲目说明',{exact:true})).toHaveCount(0);
-  const origin=await page.locator('.origin-text').innerText();await page.reload();await expect(page.locator('.anchor-list button')).toHaveCount(27);await track(page,'风所爱之城');expect(await page.locator('.origin-text').innerText()).toBe(origin);
+  const origin=await page.locator('.origin-text').innerText();await page.reload();await expect(page.locator('.anchor-list button')).toHaveCount(27);await page.getByRole('button',{name:'展开面板',exact:true}).click();await track(page,'风所爱之城');expect(await page.locator('.origin-text').innerText()).toBe(origin);
   expect(await page.evaluate(()=>localStorage.getItem('gs-map-music.personal-notes.v1'))).toBe(old);
   await page.getByRole('button',{name:'曲目检索',exact:true}).click();await page.getByLabel('搜索点位、曲目、专辑、地区或细分目录').fill('历史评价专用检索词XYZ');await expect(page.locator('.track-list .track-item')).toHaveCount(0);
 });

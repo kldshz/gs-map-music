@@ -5,7 +5,7 @@ import { test, expect } from '@playwright/test';
 
 test.setTimeout(60000);
 test('开发环境普通浏览默认不显示关联编辑，主动启用才出现',async({page})=>{
-  await page.goto('/');await expect(page.locator('.anchor-list button')).toHaveCount(27);
+  await page.goto('/');await expect(page.locator('.anchor-list button')).toHaveCount(27);await page.getByRole('button',{name:'展开面板',exact:true}).click();
   await expect(page.getByRole('checkbox',{name:'开发关联编辑',exact:true})).not.toBeChecked();
   await page.locator('.anchor-list button').first().click();
   await expect(page.getByRole('button',{name:'移除关联',exact:true})).toHaveCount(0);
@@ -15,7 +15,7 @@ test('开发环境普通浏览默认不显示关联编辑，主动启用才出�
   await page.getByRole('checkbox',{name:'开发关联编辑',exact:true}).uncheck();
   await expect(page.getByRole('button',{name:'移除关联',exact:true})).toHaveCount(0);
 });
-async function ready(page:any){await page.goto('/');await expect(page.locator('.anchor-list button')).toHaveCount(27);await page.getByRole('checkbox',{name:'开发关联编辑',exact:true}).check();}
+async function ready(page:any){await page.goto('/');await expect(page.locator('.anchor-list button')).toHaveCount(27);await page.getByRole('button',{name:'展开面板',exact:true}).click();await page.getByRole('checkbox',{name:'开发关联编辑',exact:true}).check();}
 
 test('开发模式点位方向增删、恢复和刷新保存',async({page})=>{
   await ready(page);

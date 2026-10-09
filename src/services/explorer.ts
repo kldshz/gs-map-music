@@ -5,14 +5,14 @@ import { resolveMap } from '../adapters/kongying-config';
 import { usePersonalNotes } from './personal-notes';
 import type { AssociationEdits, EditOperation } from '../domain/association-edits';
 
-export function useExplorer(options:{favorites?:()=>string[]}={}) {
+export function useExplorer() {
   let libraryRevision=0;
   const notes=usePersonalNotes();
   const snapshot=ref<MapSnapshot|null>(null),library=ref<MusicLibrary>({schemaVersion:1,tracks:[],associations:[]});
   const loading=ref(false),error=ref(''),importMessage=ref(''),query=ref('');
   const areaCode=ref('A:MD:MENGDE'),selectedAnchorId=ref(''),selectedTrackId=ref('');
   const typeFilter=ref<'all'|'waypoint'|'statue'>('all'),layerFilter=ref('all');
-  const albumFilter=ref(''),regionFilter=ref(''),favoritesOnly=ref(false);
+  const albumFilter=ref(''),regionFilter=ref('');
   const developmentMode=import.meta.env?.DEV===true;
   const editingAvailable=ref(false),editingEnabled=ref(false),editBusy=ref(false),editMessage=ref('');
   function setEditingEnabled(value:boolean){editingEnabled.value=developmentMode&&value;}
@@ -76,7 +76,7 @@ export function useExplorer(options:{favorites?:()=>string[]}={}) {
   const searchTracks=computed(()=>{
     const q=query.value.trim().toLocaleLowerCase();
     return tracks.value.filter(t=>(!albumFilter.value||t.album===albumFilter.value)&&(!regionFilter.value||trackRegionValues(t.id).includes(regionFilter.value))
-      &&(!favoritesOnly.value||options.favorites?.().includes(t.id))&&(!q||searchCorpus.value.get(t.id)?.includes(q)));
+      &&(!q||searchCorpus.value.get(t.id)?.includes(q)));
   });
   function trackRegionValues(id:string){
     const track=trackById.value.get(id),scopes=track?.sceneInfo?.geographicScopes??[];
@@ -146,7 +146,7 @@ export function useExplorer(options:{favorites?:()=>string[]}={}) {
     }catch(cause){importMessage.value=`导入失败：${cause instanceof Error?cause.message:'未知错误'}；原曲库保持不变。`;}
   }
   return {loading,error,areas,areaCode,selectedArea,roots,areaOptions,typeFilter,query,visibleAnchors,anchors,selectedAnchor,selectedAnchorId,highlightedIds,focusRequest,
-    tracks,searchTracks,albumFilter,regionFilter,favoritesOnly,albumOptions,regionOptions,anchorTracks,selectedTrack,trackLocations,trackAssociations,associationFor,trackLocationLabels,anchorMusicContexts,musicLocations,...notes,
+    tracks,searchTracks,albumFilter,regionFilter,albumOptions,regionOptions,anchorTracks,selectedTrack,trackLocations,trackAssociations,associationFor,trackLocationLabels,anchorMusicContexts,musicLocations,...notes,
     developmentMode,editingAvailable,editingEnabled,setEditingEnabled,editBusy,editMessage,hasManualEdit,addTrackToAnchor,removeTrackFromAnchor,restoreTrackAnchor,exportEditedLibrary,
     mapConfig,mapStatus,importMessage,layerOptions,layerFilter,load,selectArea,selectAnchor,selectTrack,locateTrack,associationStatus,importLibrary};
 }

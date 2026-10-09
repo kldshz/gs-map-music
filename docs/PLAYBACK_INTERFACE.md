@@ -36,3 +36,6 @@ GET/HEAD /api/playback/audio?trackId=...：仅流resources/local/audio/genshin/<
 2026-10-09 云端增量：Cloudflare Worker 实现同源 /api/playback/resolve 与 /api/health，D1活动快照查询数字ID；公开媒体入口重定向后再核实HTTPS媒体URL，临时地址仅返回播放器内存，60秒重新解析期限不持久化。未知API返回JSON404，API不会回落SPA；本机Vite/MySQL保留原流程。迁移及公网验收见CLOUDFLARE_DEPLOYMENT。
 
 云端补验：Cloudflare出口无法核实网易但实际用户端可播时，返回status=candidate/provider=netease-outer/固定HTTPS公开入口/preview=null，明确不是ready。播放器仅接受固定入口格式，真实playing才成功，错误/拒绝/竞态照常处理；本机仍返回原ready路径。公网两首完整操作通过，见CLOUDFLARE_DEPLOYMENT。
+
+
+2026-10-09最新：个人库/收藏/歌单业务与UI撤除，历史collection.v1存储不再读取/修改/删除；player.v1队列和播放恢复继续使用。资源接口与媒体单例不变，右栏每次初始化收起，主动打开队列后退出恢复原栏状态。详见STAGE4_SEARCH_ONLY。

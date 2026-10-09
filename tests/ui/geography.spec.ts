@@ -2,7 +2,7 @@ import {test,expect} from '@playwright/test';
 import fs from 'node:fs';
 const library=JSON.parse(fs.readFileSync('public/data/music-library.json','utf8'));
 test('统一目录可检索，木屋/远点留空正确，柔灯港歌曲仅定位港口',async({page})=>{
- await page.goto('/');await expect(page.locator('.anchor-list button')).toHaveCount(27);
+ await page.goto('/');await expect(page.locator('.anchor-list button')).toHaveCount(27);await page.getByRole('button',{name:'展开面板',exact:true}).click();
  await page.getByLabel('选择地区').selectOption('A:ZD:ZHIDONG1');
  await page.getByRole('searchbox',{name:'搜索点位、曲目、专辑、地区或细分目录',exact:true}).fill('121680');await page.locator('.anchor-list button').click();
  await expect(page.locator('.anchor-info').first()).toContainText('巡猎者木屋');await expect(page.locator('.anchor-info').first()).toContainText('古兽冰原');

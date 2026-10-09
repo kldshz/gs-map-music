@@ -2,7 +2,7 @@
   <div class="music-sidebar">
     <div class="panel-tabs" role="group" aria-label="面板切换">
       <button ref="anchorsTabBtn" type="button" :class="['tab-btn', { active: activeTab === 'anchors' }]" :aria-pressed="activeTab === 'anchors'" title="浏览当前地图筛选下的传送锚点与神像" @click="switchTab('anchors')">点位目录</button>
-      <button ref="tracksTabBtn" type="button" :class="['tab-btn', { active: activeTab === 'tracks' }]" :aria-pressed="activeTab === 'tracks'" title="按文字、专辑、地区或收藏检索曲目" @click="switchTab('tracks')">曲目检索</button>
+      <button ref="tracksTabBtn" type="button" :class="['tab-btn', { active: activeTab === 'tracks' }]" :aria-pressed="activeTab === 'tracks'" title="按文字、专辑或地区检索曲目" @click="switchTab('tracks')">曲目检索</button>
       <button type="button" :class="['tab-btn', { active: activeTab === 'detail' }]" :aria-pressed="activeTab === 'detail'" title="查看当前选中点位或曲目的详细信息" @click="switchTab('detail')">歌曲信息</button>
     </div>
 
@@ -33,34 +33,26 @@
           <option value="">全部地区</option>
           <option v-for="region in state.regionOptions" :key="region.value" :value="region.value">{{ region.label }}</option>
         </select>
-        <label class="fav-switch sb-tip" data-tip="只显示已收藏曲目；可与搜索、专辑和地区筛选同时使用">
-          <input v-model="state.favoritesOnly" type="checkbox" role="switch" class="fav-switch-input" />
-          <UiIcon name="star" class="fav-switch-icon" aria-hidden="true" />
-          <span>仅收藏</span>
-        </label>
       </div>
       <p class="result-count" aria-live="polite">{{ trackCountText }}</p>
       <p v-if="!state.tracks.length" class="empty-state">曲库暂无曲目</p>
-      <p v-else-if="state.favoritesOnly && !collectionState.favorites.length" class="empty-state fav-empty">尚未收藏任何曲目。可在曲目卡片中点击“收藏”，或关闭“仅收藏”浏览全部曲目。</p>
       <p v-else-if="!state.searchTracks.length" class="empty-state">
         没有匹配的曲目
         <template v-if="state.query">（搜索：“{{ state.query }}”）</template>
         <template v-if="state.albumFilter">（专辑：{{ state.albumFilter }}）</template>
         <template v-if="state.regionFilter">（地区：{{ regionLabel(state.regionFilter) }}）</template>
-        <template v-if="state.favoritesOnly">（仅收藏）</template>
       </p>
       <ul v-else class="track-list track-card-list" aria-label="曲目列表">
         <li v-for="track in state.searchTracks" :key="track.id" class="track-card" :data-track-id="track.id">
           <button type="button" class="track-item info sb-tip sb-tip--inset" data-tip="查看曲目详情" @click="selectTrackAndShow(track.id, 'search')">
             <span class="track-title-row">
               <span class="track-title">{{ trackDisplayTitle(track) }}</span>
-              <span v-if="isFavorite(track.id)" class="fav-mark" role="img" aria-label="已收藏" title="已收藏"><UiIcon name="star" /></span>
             </span>
             <span class="track-artists">{{ joinList(track.artists) }}</span>
             <span class="track-origin">{{ originOrPending(track) }}</span>
           </button>
           <div class="track-card-actions">
-            <TrackActions :track="track" :player="props.player" :collection="props.collection" :context-ids="searchTrackIds" @open-library="forwardOpenLibrary" />
+            <TrackActions :track="track" :player="props.player" :context-ids="searchTrackIds" />
           </div>
         </li>
       </ul>
@@ -125,13 +117,12 @@
               <button type="button" class="track-item info sb-tip sb-tip--inset" data-tip="查看曲目详情" @click="selectTrackAndShow(track.id, 'anchor')">
                 <span class="track-title-row">
                   <span class="track-title">{{ trackDisplayTitle(track) }}</span>
-                  <span v-if="isFavorite(track.id)" class="fav-mark" role="img" aria-label="已收藏" title="已收藏"><UiIcon name="star" /></span>
                 </span>
                 <span class="track-artists">艺人：{{ joinList(track.artists) }}</span>
                 <span class="track-origin">{{ originOrPending(track) }}</span>
               </button>
               <div class="track-card-actions">
-                <TrackActions :track="track" :player="props.player" :collection="props.collection" :context-ids="anchorTrackIds" @open-library="forwardOpenLibrary" />
+                <TrackActions :track="track" :player="props.player" :context-ids="anchorTrackIds" />
               </div>
               <div v-if="editorOn" class="edit-actions dev-zone-inline" role="group" aria-label="开发编辑：此曲目与当前点位的关联">
                 <span class="dev-tag">开发</span>
@@ -165,9 +156,8 @@
       <header class="track-detail-head" :data-track-id="state.selectedTrack.id">
         <div class="track-detail-title-row">
           <h2 ref="trackDetailHeading" tabindex="-1" class="sidebar-detail-title">{{ trackDisplayTitle(state.selectedTrack) }}</h2>
-          <span v-if="isFavorite(state.selectedTrack.id)" class="fav-mark fav-mark--lg" role="img" aria-label="已收藏" title="已收藏"><UiIcon name="star" /></span>
         </div>
-        <TrackActions :track="state.selectedTrack" :player="props.player" :collection="props.collection" :context-ids="detailContextIds" @open-library="forwardOpenLibrary" />
+        <TrackActions :track="state.selectedTrack" :player="props.player" :context-ids="detailContextIds" />
       </header>
       <UiButton v-if="state.selectedAnchor" class="back-to-anchor-btn" label="返回当前点位曲库" text="返回当前点位曲库" icon="arrow-left" @click="backToAnchor" />
 
@@ -304,16 +294,10 @@ type Maybe<T> = T | null | undefined;
 const props = defineProps<{
   explorer: ReturnType<typeof useExplorer>;
   player: ReturnType<typeof import('../services/music-player').useMusicPlayer>;
-  collection: ReturnType<typeof import('../services/music-collection').useMusicCollection>;
-}>();
-
-const emit = defineEmits<{
-  (e: 'open-library', payload: { trackId?: string }): void;
 }>();
 
 const state = reactive(props.explorer);
 const playerState = reactive(props.player);
-const collectionState = reactive(props.collection);
 
 type Tab = 'anchors' | 'tracks' | 'detail';
 type ViewMode = 'anchor' | 'track' | null;
@@ -344,7 +328,7 @@ const trackCountText = computed(() => {
   const shown = state.searchTracks.length;
   if (!total) return '0 首曲目';
   const base = shown === total ? `${total} 首曲目` : `${shown} / ${total} 首曲目`;
-  return state.favoritesOnly ? `${base} · 仅收藏` : base;
+  return base;
 });
 
 const anchorTracks = computed(() => state.anchorTracks);
@@ -386,10 +370,6 @@ const candidateAnchors = computed(() => {
   }
   return list;
 });
-
-function isFavorite(id: string): boolean {
-  return collectionState.isFavorite(id);
-}
 
 function regionLabel(value: string): string {
   return state.regionOptions.find(r => r.value === value)?.label ?? value;
@@ -632,10 +612,6 @@ async function handlePlayAnchorTracks(): Promise<void> {
   const ids = anchorTrackIds.value;
   if (!ids.length) return;
   await playerState.playTrack(ids[0], ids);
-}
-
-function forwardOpenLibrary(payload: { trackId?: string }): void {
-  emit('open-library', { trackId: payload?.trackId });
 }
 
 defineExpose({ showAnchor: selectAnchorAndShow, showTrack: (id: string) => selectTrackAndShow(id) });

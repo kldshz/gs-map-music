@@ -12,7 +12,7 @@ async function open(page:any,id:string){
  await page.locator('summary').filter({hasText:/^关联点位/}).click();
 }
 test('全批次检索/原出处/限定未挂与特殊地图零挂载，保留全部定位',async({page})=>{
- await page.goto('/');await expect(page.locator('.anchor-list button')).toHaveCount(27);
+ await page.goto('/');await expect(page.locator('.anchor-list button')).toHaveCount(27);await page.getByRole('button',{name:'展开面板',exact:true}).click();
  await page.getByRole('button',{name:'曲目检索',exact:true}).click();await expect(page.locator('.track-list .track-item')).toHaveCount(library.tracks.length);
  const special=review.tracks.find((t:any)=>t.category==='special-map');await open(page,special.id);
  await expect(page.locator('.location-list button')).toHaveCount(0);await expect(page.locator('.detail-view')).toContainText(special.countries[0]);
@@ -27,7 +27,7 @@ test('全批次检索/原出处/限定未挂与特殊地图零挂载，保留全
  await expect(page.locator('.association-detail')).toHaveCount(0);await page.screenshot({path:'.local/browser-tests/ost-bulk-battle.png'});
 });
 test('悠悠度假村与霜月真实点位支持反向定位，手机长说明可读',async({page})=>{
- await page.setViewportSize({width:390,height:844});await page.goto('/');await expect(page.locator('.anchor-list button')).toHaveCount(27);
+ await page.setViewportSize({width:390,height:844});await page.goto('/');await expect(page.locator('.anchor-list button')).toHaveCount(27);await page.getByRole('button',{name:'展开面板',exact:true}).click();
  for(const code of ['A:NT:NATA5','A:NDKL:SY']){
   const t=review.tracks.find((t:any)=>t.areaCodes.length===1&&t.areaCodes[0]===code&&t.anchorIds.length);
   await open(page,t.id);await page.getByRole('button',{name:'在地图上定位全部'}).click();
@@ -40,7 +40,7 @@ test('悠悠度假村与霜月真实点位支持反向定位，手机长说明�
 });
 
 test('日文补充以中文显示，缺少出处明确标注',async({page})=>{
- await page.goto('/');await expect(page.locator('.anchor-list button')).toHaveCount(27);
+ await page.goto('/');await expect(page.locator('.anchor-list button')).toHaveCount(27);await page.getByRole('button',{name:'展开面板',exact:true}).click();
  for(const prefix of ['日文Wiki补充（中文）：','缺少出处']){
   const t=library.tracks.find((t:any)=>t.sceneInfo.originText.startsWith(prefix));
   await open(page,t.id);await expect(page.locator('.origin-text')).toContainText(t.sceneInfo.originText);

@@ -1,7 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { useMusicPlayer, PLAYER_KEY } from '../../src/services/music-player';
-import { useMusicCollection, COLLECTION_KEY } from '../../src/services/music-collection';
 import { officialAvailability, parseRange, resolveNeteaseOuter } from '../../scripts/playback-service';
 import type { MusicTrack, PlaybackResource } from '../../src/domain/contracts';
 
@@ -88,14 +87,6 @@ test('过期资源与媒体失败不伪造成功；故障不递归轮询队列',
 test('损坏播放存储保留，配额失败明确反馈',async()=>{
  const storage=new MemoryStorage();storage.setItem(PLAYER_KEY,'broken');const {player}=setup(async()=>ready,storage);await player.playTrack('netease:1');assert.equal(storage.getItem(PLAYER_KEY),'broken');assert(player.storageMessage.value);player.dispose();
  const second=setup();second.storage.fail=true;second.player.setVolume(.4);assert(second.player.storageMessage.value);second.player.dispose();
-});
-test('收藏/播放列表去重排序/重命名/删除与刷新持久化',()=>{
- const storage=new MemoryStorage(),c=useMusicCollection(storage);c.toggleFavorite('netease:1');const id=c.createPlaylist('测试')!;c.addToPlaylist(id,'netease:1');c.addToPlaylist(id,'netease:2');c.addToPlaylist(id,'netease:1');c.movePlaylistTrack(id,'netease:2',-1);c.renamePlaylist(id,'新名');
- const reload=useMusicCollection(storage);assert.equal(reload.isFavorite('netease:1'),true);assert.deepEqual(reload.playlists.value[0].trackIds,['netease:2','netease:1']);assert.equal(reload.playlists.value[0].name,'新名');reload.removeFromPlaylist(id,'netease:1');reload.deletePlaylist(id);assert.equal(useMusicCollection(storage).playlists.value.length,0);
-});
-test('损坏个人库与存储写失败不会覆盖旧数据',()=>{
- const storage=new MemoryStorage();storage.setItem(COLLECTION_KEY,'broken');const c=useMusicCollection(storage);c.toggleFavorite('netease:1');assert.equal(storage.getItem(COLLECTION_KEY),'broken');assert(c.message.value);
- const second=new MemoryStorage(),ok=useMusicCollection(second);ok.toggleFavorite('netease:1');second.fail=true;ok.toggleFavorite('netease:2');assert.deepEqual(ok.favorites.value,['netease:1']);assert.match(ok.message.value,/失败/);
 });
 test('本机音频Range支持进度拖动，不接受多范围/越界请求',()=>{
  assert.equal(parseRange(undefined,100),null);assert.deepEqual(parseRange('bytes=30-',100),{start:30,end:99});assert.deepEqual(parseRange('bytes=-20',100),{start:80,end:99});assert.deepEqual(parseRange('bytes=0-1000',100),{start:0,end:99});assert.equal(parseRange('bytes=100-',100),false);assert.equal(parseRange('bytes=0-1,10-20',100),false);assert.equal(parseRange('bytes=-0',100),false);

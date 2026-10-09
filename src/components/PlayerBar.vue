@@ -12,7 +12,6 @@
           <span class="player-title">{{ displayTitle }}</span>
           <span class="s4c-player-artist" :title="displayArtist">{{ displayArtist || '地图里的旋律，随行而听' }}</span>
         </button>
-        <UiButton :label="isFavorite ? '取消收藏当前曲目' : '收藏当前曲目'" icon="star" :pressed="isFavorite" :disabled="!state.currentTrack" @click="favorite" />
       </div>
 
       <div class="s4c-player-center">
@@ -41,7 +40,6 @@
     <span v-if="normalFeedback" class="s4c-player-feedback sr-only" role="status">{{ normalFeedback }}</span>
     <div v-if="errorMessage" class="player-status" role="alert">{{ errorMessage }}</div>
     <div v-if="state.storageMessage" class="s4c-player-storage-error" role="alert">{{ state.storageMessage }}</div>
-    <div v-if="collectionError" class="s4c-player-storage-error" role="alert">{{ collectionError }}</div>
   </div>
 </template>
 
@@ -49,18 +47,15 @@
 import { computed, reactive } from 'vue';
 import type { MusicTrack } from '../domain/contracts';
 import type { useMusicPlayer } from '../services/music-player';
-import type { useMusicCollection } from '../services/music-collection';
 import UiButton from './UiButton.vue';
 
 const props = defineProps<{
   player: ReturnType<typeof useMusicPlayer>;
-  collection: ReturnType<typeof useMusicCollection>;
   tracks: MusicTrack[];
   queueOpen: boolean;
 }>();
 const emit = defineEmits<{ 'show-track': [id: string]; 'toggle-queue': [] }>();
 const state = reactive(props.player);
-const collection = reactive(props.collection);
 const busy = computed(() => state.status === 'resolving' || state.status === 'loading');
 const wantsPause = computed(() => state.playing || busy.value);
 const canSeek = computed(() => state.duration > 0 && !['error', 'unavailable'].includes(state.status));
@@ -69,11 +64,9 @@ const displayTitle = computed(() => {
   return track ? (track.sceneInfo ? `${track.sceneInfo.wikiTitle} / ${track.sceneInfo.englishTitle}` : track.title) : '尚未选择曲目';
 });
 const displayArtist = computed(() => state.currentTrack?.artists.join('、') || '');
-const isFavorite = computed(() => collection.isFavorite(state.currentId));
 const repeatLabel = computed(() => state.repeat === 'all' ? '列表循环' : state.repeat === 'one' ? '单曲循环' : '关闭循环');
 const errorMessage = computed(() => ['error', 'unavailable', 'blocked'].includes(state.status) ? state.message : '');
 const normalFeedback = computed(() => busy.value || state.message.startsWith('已恢复') ? state.message : '');
-const collectionError = computed(() => /失败|无法|损坏|阻止|上限/.test(collection.message) ? collection.message : '');
 const progressFill = computed(() => `${state.duration > 0 ? Math.min(100, state.position / state.duration * 100) : 0}%`);
 
 function formatTime(seconds: number): string {
@@ -82,6 +75,5 @@ function formatTime(seconds: number): string {
 }
 function seek(event: Event) { state.seek(Number((event.target as HTMLInputElement).value)); }
 function volume(event: Event) { state.setVolume(Number((event.target as HTMLInputElement).value) / 100); }
-function favorite() { if (state.currentTrack) collection.toggleFavorite(state.currentId); }
 function showDetail() { if (state.currentTrack) emit('show-track', state.currentId); }
 </script>

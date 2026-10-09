@@ -12,7 +12,7 @@ const waypoint=mondstadt.find(a=>a.kind==='waypoint')!;
 const fixture={schemaVersion:1,tracks:[{id:'ui-fixture',title:'自动化验证条目（不是音乐数据）',artists:[],composers:null,album:'测试元数据专辑',releaseDate:null,durationSeconds:null,description:'仅测试导入与关联',neteaseId:null,sourceUrl:null}],
   associations:[statue,waypoint].map((p,i)=>({id:'ui-edge-'+i,trackId:'ui-fixture',anchorId:p.id,evidenceStatus:'pending',evidenceNote:'仅自动化测试',sourceUrl:null}))};
 test.setTimeout(60000);
-async function ready(page:any){await page.goto('/');await expect(page.locator('.anchor-list button')).toHaveCount(27);}
+async function ready(page:any){await page.goto('/');await expect(page.locator('.anchor-list button')).toHaveCount(27);await page.getByRole('button',{name:'展开面板',exact:true}).click();}
 
 test('真实地图瓦片、27个蒙德点位、地图点击和键盘神像入口；无昼夜/假音频',async({page})=>{
   const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));await ready(page);
@@ -43,14 +43,14 @@ test('空曲库/加载校验失败及多对多反向定位；缺值未知，无�
   await page.route('**/data/music-library.json',r=>r.fulfill({json:response}));
   await ready(page);await page.getByRole('button',{name:'曲目检索',exact:true}).click();await expect(page.getByText('曲库暂无曲目')).toBeVisible();
   await expect(page.locator('input[type=file]')).toHaveCount(0);
-  response=fixture;await page.reload();await expect(page.locator('.anchor-list button')).toHaveCount(27);
+  response=fixture;await page.reload();await expect(page.locator('.anchor-list button')).toHaveCount(27);await page.getByRole('button',{name:'展开面板',exact:true}).click();
   await page.getByRole('button',{name:'曲目检索',exact:true}).click();await page.getByLabel('搜索点位、曲目、专辑、地区或细分目录').fill('测试元数据专辑');await expect(page.locator('.track-list .track-item')).toHaveCount(1);
   await page.locator('.track-list .track-item').focus();await page.keyboard.press('Space');await expect(page.locator('.detail-view')).toBeVisible();
   await expect(page.locator('.detail-view')).toContainText('未知');await expect(page.locator('.association-status')).toHaveCount(0);
   await page.getByText('关联点位（2）',{exact:true}).click();await expect(page.locator('.location-list button')).toHaveCount(2);await page.getByRole('button',{name:'在地图上定位全部'}).click();
   await expect(page.locator('.detail-view')).toBeVisible();await expect(page.locator('dialog')).toHaveCount(0);await expect(page.locator('.music-anchor.is-highlighted')).toHaveCount(2);
   response={schemaVersion:1,tracks:[{id:'invalid'}],associations:[]};await page.reload();await expect(page.getByRole('alert')).toBeVisible();
-  response=fixture;await page.getByRole('button',{name:'重试加载'}).click();await page.getByRole('button',{name:'曲目检索',exact:true}).click();await expect(page.locator('.track-list .track-item')).toHaveCount(1);
+  response=fixture;await page.getByRole('button',{name:'重试加载'}).click();await page.getByRole('button',{name:'展开面板',exact:true}).click();await page.getByRole('button',{name:'曲目检索',exact:true}).click();await expect(page.locator('.track-list .track-item')).toHaveCount(1);
   await page.getByLabel('搜索点位、曲目、专辑、地区或细分目录').fill('没有这首曲目');await expect(page.locator('.empty-state')).toContainText('没有匹配');
 });
 
@@ -58,7 +58,7 @@ test('实际触发地图数据与瓦片加载失败并重试',async({page})=>{
   await page.route('**/data/kongying-map.json',r=>r.fulfill({status:503,body:''}));await page.goto('/');
   await expect(page.getByRole('alert')).toContainText('503');await page.unroute('**/data/kongying-map.json');
   await page.route('https://assets.yuanshen.site/tiles_**',r=>r.abort());await page.getByRole('button',{name:'重试加载'}).click();
-  await expect(page.locator('.anchor-list button')).toHaveCount(27);await expect(page.locator('.map-status')).toContainText('加载失败',{timeout:30000});
+  await expect(page.locator('.anchor-list button')).toHaveCount(27);await page.getByRole('button',{name:'展开面板',exact:true}).click();await expect(page.locator('.map-status')).toContainText('加载失败',{timeout:30000});
 });
 
 for(const width of [390,320])test(`手机${width}px布局/面板/键盘可用`,async({page})=>{
