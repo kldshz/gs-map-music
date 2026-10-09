@@ -68,3 +68,6 @@ scripts/playback-service.ts注册Vite dev和preview本机API：白名单曲目�
 阶段4外链增量：播放service本机文件后备仍支持，缺本机文件现在调用resolveNeteaseOuter，固定网易公开媒体入口按数据库数字ID、无凭据HEAD探测后返回稳定Audio.src。官方CLI不再参与网站播放资源解析，开发者权限与公开入口分开。provider=netease-outer/preview=null，不保存重定向CDN签名；前端playing事件保证真实状态。7针对性页面包含两首真实媒体全控制与刷新通过，见NETEASE_OUTER_REVIEW。
 
 阶段4 UI返修：library-panel.ts独立持有左栏业务与待添加曲/歌单草稿，explorer注入favorites getter做响应式交集筛选，editingEnabled默认关闭且业务门控。App持有collection/explorer/player/panel；两侧组件只消费服务，TrackActions每实例绑定具体曲目，UiButton共享SVG和body级tooltip。个人评价仅保留历史存储/契约兼容，网页编辑/检索入口撤下；音乐库导入导出不提供产品入口。DEV编辑必须主动开启，生产无入口。详情STAGE4_UI_REFINEMENT。
+
+
+2026-10-09：阶段4部署补齐，现有Workers静态托管添加worker/index.ts，/api优先路由，D1不可变目录快照与完整导入激活。完整当前JSON与人工覆盖进入D1，首轮播放身份查询读D1，地图及曲库检索仍使用同批JSON；收藏歌单仅浏览器。本机插件仍保留，HTTPS资源独立核实，不代理存储音频。详见CLOUDFLARE_DEPLOYMENT。

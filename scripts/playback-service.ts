@@ -6,6 +6,8 @@ import { resolve } from 'node:path';
 import type { IncomingMessage, ServerResponse } from 'node:http';
 import type { Plugin } from 'vite';
 import type { PlaybackResource } from '../src/domain/contracts';
+import { resolveNeteaseOuter } from '../src/services/netease-resource';
+export { resolveNeteaseOuter } from '../src/services/netease-resource';
 
 const run=promisify(execFile);
 const types:Record<string,string>={mp3:'audio/mpeg',flac:'audio/flac',wav:'audio/wav',ogg:'audio/ogg',m4a:'audio/mp4'};
@@ -19,23 +21,6 @@ export function officialAvailability(records:unknown,id:string):PlaybackResource
   if(!song)return unavailable('missing','网易查询没有找到当前数据库歌曲；未替换为同名歌曲');
   if(song.visible===false||song.playFlag===false)return unavailable('permission','网易当前应用不允许播放此曲，且未找到本机音频');
   return unavailable('permission','网易个人 CLI 不提供浏览器播放 URL；请使用本机音频或开通网页播放 API');
-}
-
-/** Public media link: no CLI authorization, account cookies or developer credentials. */
-export async function resolveNeteaseOuter(id:string,request:typeof fetch=fetch):Promise<PlaybackResource>{
-  if(!/^\d{1,20}$/.test(id))return unavailable('missing','没有有效的网易歌曲 ID');
-  const url=`https://music.163.com/song/media/outer/url?id=${id}.mp3`;
-  try{
-    const response=await request(url,{method:'HEAD',redirect:'follow',credentials:'omit',signal:AbortSignal.timeout(10000)});
-    const destination=new URL(response.url);
-    const mediaHost=destination.hostname==='music.126.net'||destination.hostname.endsWith('.music.126.net');
-    if(response.ok&&mediaHost&&['http:','https:'].includes(destination.protocol)&&/^audio\//i.test(response.headers.get('Content-Type')??'')){
-      // Keep the stable ID link; do not expose or persist its temporary signed CDN redirect.
-      return {status:'ready',provider:'netease-outer',url,expiresAt:null,preview:null};
-    }
-    if(response.status===403||response.status===404||!mediaHost)return unavailable('copyright','网易公开外链暂无可播放资源；可能受版权或服务限制');
-    return unavailable('network','网易公开外链没有返回有效音频，请稍后重试');
-  }catch{return unavailable('network','网易公开外链请求失败或超时，请检查网络后重试');}
 }
 
 export function parseRange(header:string|undefined,size:number):{start:number;end:number}|null|false{

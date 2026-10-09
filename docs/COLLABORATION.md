@@ -172,3 +172,8 @@ Claude主导应用壳、左右栏、播放器、共享SVG/按钮提示与歌曲�
 上下文仅指定源码与样式片段，没有网易/MySQL/Claude凭据。原始输出在忽略目录.local/claude-runs，结果摘要不含费用、token或内部推理。既有网关上游身份与内部effort不能独立认证的限制沿用。UI实现不等同验收通过，实际检查与最终结果见STAGE4_UI_REFINEMENT和ACCEPTANCE。
 
 补充：VISUAL-R3在600秒超时无可用交付，拆为PLAYER-CSS-R4（39692ms）和SIDEBAR-CSS-R4（63921ms）成功，唯一modelUsage一致。Codex仅映射实际类名与open class、修旧CSS优先级/层级及颜色对比，沿用Claude居中grid/边缘侧栏/菜单flow设计；不是替换设计模型。最终实际桌面/手机查看及定向回归通过。
+
+
+## C4-04：Cloudflare部署补齐
+
+2026-10-09，本轮Codex负责Worker/D1迁移、API路由、HTTPS媒体验证与播放接口错误处理，复用现有视觉与媒体单例，没有视觉设计改动或追加Claude调用。用户本人完成Cloudflare OAuth授权；令牌仅Wrangler本机保存，未入库、未发送网易或Claude。

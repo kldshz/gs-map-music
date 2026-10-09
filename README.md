@@ -50,3 +50,8 @@ UI测试使用已安装的Edge，自动启动/停止4173预览，请先停止手
 ## 阶段3批量OST
 
 现有25张专辑（含原风与牧歌）1663曲，7075待校对关系。新增24专辑的来源、离线净化、分批导入与人工覆盖语义见[批量说明](docs/OST_BULK_IMPORT.md)，需要你校对的歌曲与冲突见[清单](docs/OST_REVIEW.md)。所有关联pending，播放/路线未开始；运行页面`npm run dev`。旧Excel是原63首历史产物，当前完整数据以public/data/music-library.json及审查记录为准。
+
+
+## 2026-10-09：Cloudflare Workers部署
+
+现有站点https://gs-map-music.online/的云端播放补齐方案与运行/导入/发布/回退命令见[Cloudflare部署记录](docs/CLOUDFLARE_DEPLOYMENT.md)。Node要求更新为>=22.12。新增Worker+D1，原本机Vite+MySQL继续可用；旧文中未开发播放/仅本机状态为历史，当前阶段4已通过真实音频本地验收，公网结果见该记录最新追加。浏览器收藏歌单不迁移，无R2音频托管。

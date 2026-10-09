@@ -31,3 +31,6 @@ GET/HEAD /api/playback/audio?trackId=...：仅流resources/local/audio/genshin/<
 阶段4 UI返修：正常音源提供者与播放文字不在播放器显示，真实失败/浏览器限制/储存异常保留；资源接口与媒体实例不变。左栏收藏与歌单由library-panel.ts管理，个人评价产品入口撤下而旧存储不删除；详见STAGE4_UI_REFINEMENT。
 
 阶段4紧凑布局补充（2026-10-09）：player schemaVersion=1追加可选lastAudibleVolume（最近非零音量），旧存储可读；volume=0表示静音，取消静音恢复该值，旧静音存储无该字段时默认0.8。不会在恢复时自动发声；媒体切曲继续沿用volume。队列视图状态由App管理而不改变资源接口或媒体单例；普通恢复/加载提示用无障碍状态节点，不显示提供者，实际错误仍可见。详见STAGE4_COMPACT_LAYOUT。
+
+
+2026-10-09 云端增量：Cloudflare Worker 实现同源 /api/playback/resolve 与 /api/health，D1活动快照查询数字ID；公开媒体入口重定向后再核实HTTPS媒体URL，临时地址仅返回播放器内存，60秒重新解析期限不持久化。未知API返回JSON404，API不会回落SPA；本机Vite/MySQL保留原流程。迁移及公网验收见CLOUDFLARE_DEPLOYMENT。

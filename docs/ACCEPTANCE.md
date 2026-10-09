@@ -227,3 +227,8 @@ Claude实际工单S3-GEOGRAPHY-UI-001，CLI2.1.291，固定claude-opus-5-5/--eff
 - 通过：真实两首原神音频控制/随机/循环/地图面板连续/刷新点击恢复；错误无音源、迟到请求取消、失效ID与权限边界回归。来源提供者不在播放器展示，真实错误与存储异常保留。
 - 验证：66数据业务、首轮生产28/开发3、最终定向11（真实音频在内）及13（地图/布局在内）通过，类型/构建通过；定向有重叠不累计为新独立全量。截图.local/browser-tests/stage4-refined-final.jpg与stage4-refined-mobile.jpg；真实页面35秒/68秒，结束暂停。
 - 限制：既有网关只能核实CLI指定high和返回模型，不能独立认证上游身份/内部effort；外部瓦片/音源长期和全库、部署未保证。数据/人工关联/历史评价未改，个人库不跨设备或同步MySQL。未开始路线。
+
+
+## 2026-10-09：阶段4 Cloudflare部署补齐（代码与本地验收）
+
+用户授权实施逐步改进，现站点gs-map-music.online使用Workers。已定位线上播放API返回SPA HTML；新增Worker只读播放API与D1版本化迁移，云端核实HTTPS音频，本机MySQL/Vite路径保留。72数据业务（43+29）、类型构建、真实Workerd/D1与两首音频3项本地UI通过。1663曲/13038pending关系、884点位/62神像及人工记录不变；收藏歌单仍仅浏览器，页面检索暂仍同批JSON。公网导入/部署验收另行追加，不把本地验收当公网。详见[CLOUDFLARE_DEPLOYMENT](CLOUDFLARE_DEPLOYMENT.md)。无布局设计改动、无Claude追加或路线增量；稳定标签保留。

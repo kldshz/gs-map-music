@@ -6,6 +6,9 @@ coverage/
 .vite/
 .cache/
 .local/
+.wrangler/
+.dev.vars
+.dev.vars.*
 *.tsbuildinfo
 
 # Secrets and machine-local configuration

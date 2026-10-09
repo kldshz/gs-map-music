@@ -6,13 +6,19 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "build": "npm run typecheck && vite build",
-    "typecheck": "vue-tsc --noEmit",
+    "typecheck": "vue-tsc --noEmit && tsc -p tsconfig.worker.json",
     "preview": "vite preview --host 127.0.0.1",
     "test:data": "tsx --test tests/data/*.test.ts && node --test tests/data/*.test.mjs",
     "db:setup": "node scripts/setup-mysql.mjs",
     "db:import": "tsx scripts/import-music-library.ts",
     "test:dev-ui": "playwright test --config playwright.dev.config.ts",
-    "test:ui": "playwright test"
+    "test:ui": "playwright test",
+    "cf:export": "tsx scripts/export-d1.ts",
+    "cf:dev": "wrangler dev --port 8787 --persist-to .local/cloudflare/state",
+    "cf:import": "tsx scripts/import-d1.ts",
+    "cf:import:local": "tsx scripts/import-d1.ts --local",
+    "cf:import:remote": "tsx scripts/import-d1.ts --remote",
+    "cf:deploy": "wrangler deploy --config .local/cloudflare/wrangler.json"
   },
   "dependencies": {
     "leaflet": "1.9.4",
@@ -20,6 +26,7 @@
     "vue": "3.5.43"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "5.20261009.1",
     "@playwright/test": "1.56.1",
     "@types/leaflet": "1.9.21",
     "@types/node": "22.17.2",
@@ -27,9 +34,10 @@
     "tsx": "4.20.6",
     "typescript": "5.9.3",
     "vite": "7.3.7",
-    "vue-tsc": "3.1.4"
+    "vue-tsc": "3.1.4",
+    "wrangler": "4.149.0"
   },
   "engines": {
-    "node": "^20.19.0 || >=22.12.0"
+    "node": ">=22.12.0"
   }
 }

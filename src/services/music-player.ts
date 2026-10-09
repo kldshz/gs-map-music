@@ -11,6 +11,17 @@ export interface PlayerOptions {
 const finite=(v:unknown,max:number):v is number=>typeof v==='number'&&Number.isFinite(v)&&v>=0&&v<=max;
 const ids=(v:unknown):v is string[]=>Array.isArray(v)&&v.length<=10000&&v.every(x=>typeof x==='string'&&x.length<=100);
 
+export async function resolvePlaybackResource(id:string,signal:AbortSignal,request:typeof fetch=fetch):Promise<PlaybackResource>{
+  const response=await request(`/api/playback/resolve?trackId=${encodeURIComponent(id)}`,{signal,cache:'no-store'});
+  const unavailable=(message:string):PlaybackResource=>({status:'unavailable',reason:'network',message});
+  if(!/application\/json/i.test(response.headers.get('content-type')??''))return unavailable('网站播放接口未接入或返回了网页，请检查云端服务部署');
+  let result:PlaybackResource;
+  try{result=await response.json() as PlaybackResource;}catch{signal.throwIfAborted();return unavailable('播放接口返回了无效数据，请稍后重试');}
+  if(result?.status==='unavailable'&&typeof result.message==='string')return result;
+  if(!response.ok||result?.status!=='ready')return unavailable('播放服务暂时不可用，请稍后重试');
+  return result;
+}
+
 /** One player belongs to the application, not to a map, selected detail or panel. */
 export function useMusicPlayer(tracks:()=>MusicTrack[],options:PlayerOptions={}){
   let storage:Storage|undefined;
@@ -37,13 +48,7 @@ export function useMusicPlayer(tracks:()=>MusicTrack[],options:PlayerOptions={})
     catch{storageMessage.value='播放状态保存失败；本次仍可操作，刷新可能无法恢复。';}
   }
   function retire(){abort?.abort();abort=null;if(audio){audio.pause();audio.removeAttribute('src');audio.load();audio.remove?.();audio=null;}playing.value=false;expiry=null;}
-  const resolve=options.resolve??(async(id,signal)=>{
-    const response=await fetch(`/api/playback/resolve?trackId=${encodeURIComponent(id)}`,{signal,cache:'no-store'});
-    const result=await response.json() as PlaybackResource;
-    if(result.status==='unavailable')return result;
-    if(!response.ok||result.status!=='ready')throw Error('本机播放服务不可用');
-    return result;
-  });
+  const resolve=options.resolve??resolvePlaybackResource;
   function fail(cause:unknown){
     playing.value=false;wantPlay=false;
     if(cause instanceof Error&&cause.name==='NotAllowedError'){status.value='blocked';message.value='浏览器阻止自动播放，请再次点击播放';}
