@@ -63,4 +63,6 @@ export interface MusicLibrary { schemaVersion:1; tracks:MusicTrack[]; associatio
 // preview=null means the provider does not report whether the resource is a preview.
 export type PlaybackResource =
   | { status:'ready'; provider:'netease'|'netease-outer'|'local'; url:string; expiresAt:string|null; preview:boolean|null }
+  /** Cloud egress could not verify this public entry. Only the browser's real playing event confirms playback. */
+  | { status:'candidate'; provider:'netease-outer'; url:string; expiresAt:null; preview:null }
   | { status:'unavailable'; reason:'missing'|'authentication'|'permission'|'copyright'|'expired'|'network'; message:string };

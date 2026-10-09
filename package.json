@@ -18,7 +18,8 @@
     "cf:import": "tsx scripts/import-d1.ts",
     "cf:import:local": "tsx scripts/import-d1.ts --local",
     "cf:import:remote": "tsx scripts/import-d1.ts --remote",
-    "cf:deploy": "wrangler deploy --config .local/cloudflare/wrangler.json"
+    "cf:check": "tsx scripts/deploy-cloudflare.ts --dry-run",
+    "cf:deploy": "tsx scripts/deploy-cloudflare.ts"
   },
   "dependencies": {
     "leaflet": "1.9.4",

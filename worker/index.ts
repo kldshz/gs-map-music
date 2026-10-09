@@ -26,7 +26,13 @@ export async function handleApi(request: Request, env: Env, provider: typeof res
     if (!row || !row.netease_id || !/^\d{1,20}$/.test(row.netease_id) || row.id !== `netease:${row.netease_id}`) {
       return unavailable('missing', '当前云端曲库中没有对应原神歌曲或网易 ID');
     }
-    return json(await provider(row.netease_id, fetch, true));
+    const resource=await provider(row.netease_id, fetch, true);
+    if(resource.status==='unavailable'){
+      // Cloudflare's egress response is not authoritative for the user's network.
+      // This is explicitly unverified, never a ready/success response. Audio events decide success.
+      return json({status:'candidate',provider:'netease-outer',url:`https://music.163.com/song/media/outer/url?id=${row.netease_id}.mp3`,expiresAt:null,preview:null});
+    }
+    return json(resource);
   } catch {
     return unavailable('network', '云端播放服务读取失败，请稍后重试', 503);
   }

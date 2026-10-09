@@ -232,3 +232,9 @@ Claude实际工单S3-GEOGRAPHY-UI-001，CLI2.1.291，固定claude-opus-5-5/--eff
 ## 2026-10-09：阶段4 Cloudflare部署补齐（代码与本地验收）
 
 用户授权实施逐步改进，现站点gs-map-music.online使用Workers。已定位线上播放API返回SPA HTML；新增Worker只读播放API与D1版本化迁移，云端核实HTTPS音频，本机MySQL/Vite路径保留。72数据业务（43+29）、类型构建、真实Workerd/D1与两首音频3项本地UI通过。1663曲/13038pending关系、884点位/62神像及人工记录不变；收藏歌单仍仅浏览器，页面检索暂仍同批JSON。公网导入/部署验收另行追加，不把本地验收当公网。详见[CLOUDFLARE_DEPLOYMENT](CLOUDFLARE_DEPLOYMENT.md)。无布局设计改动、无Claude追加或路线增量；稳定标签保留。
+
+## 2026-10-09：Cloudflare公网播放验收（最新）
+
+D1完整导入并启用：1663曲/13038pending关系/884点位含62神像，远程外键零错误。站点https://gs-map-music.online已发布Worker与D1绑定，API不再返回SPA。Cloudflare出口网易HEAD失败但同站点浏览器直接公开入口实测成功，新增明确candidate（未验证）响应，只真实playing才成功，不伪造ready；不代理/转存音频。
+
+公网Edge3项通过，含晨曦酒庄68.321229秒/孤独旅居50.138896秒真实播放暂停/seek/音量静音/上下曲/随机循环/地图队列连续/刷新恢复和非静音解码。73数据业务全轮与最终22定向（重叠，含新增发布约束）、类型构建及真正dry-run通过。云端静态数据与合并人工覆盖有效快照哈希一致；发布脚本核对构建与活动D1版本，不发布过期快照。原始JSON、人工记录、MySQL、稳定标签不改；个人库仍浏览器，页面检索暂JSON。详见CLOUDFLARE_DEPLOYMENT最终章节。全库/浏览器/地区长期可播仍不保证，无路线增量。

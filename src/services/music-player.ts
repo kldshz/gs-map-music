@@ -18,7 +18,7 @@ export async function resolvePlaybackResource(id:string,signal:AbortSignal,reque
   let result:PlaybackResource;
   try{result=await response.json() as PlaybackResource;}catch{signal.throwIfAborted();return unavailable('播放接口返回了无效数据，请稍后重试');}
   if(result?.status==='unavailable'&&typeof result.message==='string')return result;
-  if(!response.ok||result?.status!=='ready')return unavailable('播放服务暂时不可用，请稍后重试');
+  if(!response.ok||!['ready','candidate'].includes(result?.status))return unavailable('播放服务暂时不可用，请稍后重试');
   return result;
 }
 
@@ -62,7 +62,8 @@ export function useMusicPlayer(tracks:()=>MusicTrack[],options:PlayerOptions={})
     status.value='resolving';message.value='正在获取播放资源…';abort=new AbortController();
     try{
       const resource=await resolve(id,abort.signal);if(token!==version||disposed)return;
-      if(resource.status!=='ready'){status.value='unavailable';message.value=resource.message;wantPlay=false;return;}
+      if(resource.status==='unavailable'){status.value='unavailable';message.value=resource.message;wantPlay=false;return;}
+      if(resource.status==='candidate'&&(resource.provider!=='netease-outer'||!/^https:\/\/music\.163\.com\/song\/media\/outer\/url\?id=\d{1,20}\.mp3$/.test(resource.url)))throw Error('无效候选音源');
       if(typeof resource.url!=='string'||!resource.url||!(/^(https?:\/\/|\/api\/playback\/audio\?)/.test(resource.url))){throw Error('无效音源');}
       expiry=resource.expiresAt?Date.parse(resource.expiresAt):null;
       if(expiry!==null&&(!Number.isFinite(expiry)||expiry<=Date.now())){status.value='unavailable';message.value='播放资源已过期，请重试';wantPlay=false;return;}

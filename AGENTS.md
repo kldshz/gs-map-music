@@ -31,3 +31,5 @@
 用户长期偏好：直接执行，无需先改写提示词；调查和验证与任务相称，证据足够后行动。明确区分假设、事实和授权，不保证绝对正确。具体能力以当前文档和本机实测为准。
 
 2026-10-09阶段4部署增量：用户授权逐步改善gs-map-music.online既有Workers部署，Codex负责D1迁移/Worker播放后端/HTTPS核实，沿用UI无Claude追加。迁移依据当前JSON+人工覆盖，不用过期MySQL地理行；个人库仍浏览器，pending不路线。部署与验收见docs/CLOUDFLARE_DEPLOYMENT最新追加，稳定标签保留。
+
+2026-10-09部署最终：公网Workers+D1已接通、两首真实原神完整播放/刷新验收通过；云端网易出口限制用明确candidate固定入口+浏览器实际playing验证处理，不伪造ready。当前D11663/13038pending/884/62，页面检索仍有效静态JSON，收藏歌单仍浏览器；发布先核对构建和D1活动版本。详见docs/CLOUDFLARE_DEPLOYMENT最终章节。

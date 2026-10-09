@@ -32,6 +32,14 @@ test('缺音频不生成媒体、无假播放进度；官方不可见/错ID不�
  const {player,media}=setup(async()=>unavailable);await player.playTrack('netease:1');assert.equal(player.status.value,'unavailable');assert.equal(player.playing.value,false);assert.equal(player.position.value,0);assert.equal(media.length,0);
  assert.equal(officialAvailability([{originalId:1,visible:false,playFlag:true}],'1').status,'unavailable');assert.equal(officialAvailability([{originalId:2,visible:true,playFlag:true}],'1').status,'unavailable');player.dispose();
 });
+test('未验证公开入口只有真实playing事件才可报播放，错误及任意URL不伪造成功',async()=>{
+ const candidate:PlaybackResource={status:'candidate',provider:'netease-outer',url:'https://music.163.com/song/media/outer/url?id=1.mp3',expiresAt:null,preview:null};
+ const storage=new MemoryStorage(),m=new Media();m.deferred=Promise.resolve();
+ const player=useMusicPlayer(()=>tracks,{storage,resolve:async()=>candidate,createAudio:()=>m as unknown as HTMLAudioElement});
+ await player.playTrack('netease:1');assert.equal(player.status.value,'loading');assert.equal(player.playing.value,false);assert.equal(player.position.value,0);
+ m.emit('error');assert.equal(player.status.value,'error');assert.equal(player.playing.value,false);assert.ok(!storage.getItem(PLAYER_KEY)?.includes('music.163.com'));player.dispose();
+ const invalid=setup(async()=>({...candidate,url:'https://other.example/file.mp3'}));await invalid.player.playTrack('netease:1');assert.equal(invalid.player.status.value,'error');assert.equal(invalid.media.length,0);invalid.player.dispose();
+});
 test('快速切歌只接受最后资源响应，旧媒体事件不能覆盖新曲',async()=>{
  let release!:(value:PlaybackResource)=>void;
  const {player,media}=setup(async id=>id==='netease:1'?new Promise(r=>release=r):ready);

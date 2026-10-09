@@ -6,6 +6,11 @@ import { buildD1Export } from '../../scripts/export-d1';
 import { resolveNeteaseOuter } from '../../src/services/netease-resource';
 import worker, { handleApi, type Env } from '../../worker/index';
 import { resolvePlaybackResource } from '../../src/services/music-player';
+import { checkCloudflareBuild, requireCatalogVersion } from '../../scripts/deploy-cloudflare';
+import { applyAssociationEdits } from '../../src/domain/association-edits';
+import { validateLibrary,validateSnapshot } from '../../src/domain/validation';
+import os from 'node:os';
+import path from 'node:path';
 
 const map = JSON.parse(fs.readFileSync('public/data/kongying-map.json', 'utf8'));
 const library = JSON.parse(fs.readFileSync('public/data/music-library.json', 'utf8'));
@@ -74,7 +79,8 @@ test('Worker仅查活动版本与真实ID；跨站/写入/无效ID/缺库/未知
       return { status: 'unavailable', reason: 'copyright', message: 'test-denied' };
     }) as typeof resolveNeteaseOuter;
     const resolve = '/api/playback/resolve?trackId=netease%3A1455706951';
-    assert.equal((await (await handleApi(request(resolve), env, provider)).json()).status, 'unavailable');
+    const candidate=await (await handleApi(request(resolve), env, provider)).json();
+    assert.equal(candidate.status,'candidate');assert.equal(candidate.url,'https://music.163.com/song/media/outer/url?id=1455706951.mp3');
     assert.equal((await handleApi(request(resolve, { method: 'POST' }), env, provider)).status, 405);
     assert.equal((await handleApi(request(resolve, { headers: { Origin: 'https://elsewhere.com' } }), env, provider)).status, 403);
     assert.equal((await handleApi(request(resolve, { headers: { 'Sec-Fetch-Site': 'cross-site' } }), env, provider)).status, 403);
@@ -115,4 +121,24 @@ test('静态站API回落HTML和损坏JSON有明确错误，不伪造可播', asy
   assert.equal(html.status,'unavailable');if(html.status==='unavailable')assert.match(html.message,/接口未接入/);
   const broken=await resolvePlaybackResource('netease:1',signal,(async()=>new Response('{',{headers:{'content-type':'application/json'}})) as typeof fetch);
   assert.equal(broken.status,'unavailable');
+});
+
+test('发布前检查构建含人工覆盖的有效快照与D1版本，不接受过期构建/空活动版本',async()=>{
+ const root=fs.mkdtempSync(path.join(os.tmpdir(),'gs-cf-check-'));
+ try{
+  for(const directory of ['public/data','data','dist/data'])fs.mkdirSync(path.join(root,directory),{recursive:true});
+  const snapshot=validateSnapshot(map),base=validateLibrary(library,new Set(snapshot.anchors.map(a=>a.id)),snapshot);
+  const normalized=applyAssociationEdits(base,snapshot,edits);
+  for(const [file,value] of Object.entries({'public/data/kongying-map.json':map,'public/data/music-library.json':library,'data/association-edits.json':edits,'dist/data/kongying-map.json':map,'dist/data/music-library.json':normalized}))fs.writeFileSync(path.join(root,file),JSON.stringify(value,null,2)+'\n');
+  assert.equal(await checkCloudflareBuild(root),exported.manifest.release);
+  requireCatalogVersion(exported.manifest.release,exported.manifest.release);
+  assert.throws(()=>requireCatalogVersion(exported.manifest.release,undefined),/D1活动版本/);
+  assert.throws(()=>requireCatalogVersion(exported.manifest.release,'old-version'),/D1活动版本/);
+  fs.writeFileSync(path.join(root,'dist/data/music-library.json'),'{}');
+  await assert.rejects(()=>checkCloudflareBuild(root),/构建快照/);
+ }finally{
+  assert.equal(path.dirname(path.resolve(root)),path.resolve(os.tmpdir()));
+  assert.ok(path.basename(root).startsWith('gs-cf-check-'));
+  fs.rmSync(root,{recursive:true,force:true});
+ }
 });

@@ -216,3 +216,5 @@ Claude实际工单S3-GEOGRAPHY-UI-001，CLI2.1.291，固定claude-opus-5-5/--eff
 ## D4-05：Cloudflare Worker同源API与D1不可变快照
 
 现有域名继续使用Workers，API优先路由避免SPA回落。D1以当前JSON和人工覆盖生成完整版本，计数/外键检查后才启用；旧MySQL不覆盖新地理数据。公网返回已核实HTTPS媒体短时地址，不代理音频，不增加R2。页面JSON与D1由同次发布保持一致，浏览器个人库不迁移。原本仅本机/不部署约定由本轮用户明确部署授权覆盖；不引入公开写入或付费服务。详见CLOUDFLARE_DEPLOYMENT。
+
+D4-05补充：云端HEAD失败不等同浏览器端不可播。D1有效曲目返回明确candidate固定公开入口，由浏览器实际媒体事件验证，拒绝任意URL；公网两首真实通过。增加发布前快照/D1版本一致性检查，详见CLOUDFLARE_DEPLOYMENT。
