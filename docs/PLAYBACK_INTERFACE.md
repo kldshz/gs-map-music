@@ -29,3 +29,5 @@ GET/HEAD /api/playback/audio?trackId=...：仅流resources/local/audio/genshin/<
 个人库与播放器各用版本化localStorage（gs-map-music.collection.v1、gs-map-music.player.v1）；只浏览器保存。既有评价、JSON与开发关联文件不自动同步；本轮MySQL只读。删除播放列表会删除当前浏览器副本，界面按钮明确。无账户跨设备同步，清浏览器数据会丢个人库。
 
 阶段4 UI返修：正常音源提供者与播放文字不在播放器显示，真实失败/浏览器限制/储存异常保留；资源接口与媒体实例不变。左栏收藏与歌单由library-panel.ts管理，个人评价产品入口撤下而旧存储不删除；详见STAGE4_UI_REFINEMENT。
+
+阶段4紧凑布局补充（2026-10-09）：player schemaVersion=1追加可选lastAudibleVolume（最近非零音量），旧存储可读；volume=0表示静音，取消静音恢复该值，旧静音存储无该字段时默认0.8。不会在恢复时自动发声；媒体切曲继续沿用volume。队列视图状态由App管理而不改变资源接口或媒体单例；普通恢复/加载提示用无障碍状态节点，不显示提供者，实际错误仍可见。详见STAGE4_COMPACT_LAYOUT。

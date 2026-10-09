@@ -16,6 +16,13 @@ test('实际原神音频：外链播放暂停/拖动/上下曲/随机循环/面�
   await expect.poll(()=>audio.evaluate((el:HTMLAudioElement)=>!el.paused&&el.currentTime>.2&&el.readyState>=3&&el.error===null),{timeout:20000}).toBe(true);
  }
  await playing(first.sceneInfo.wikiTitle);
+ // Queue is a view only: the same audio element continues playing through open/close.
+ await audio.evaluate(el=>(el as HTMLElement).dataset.continuity='same');
+ await page.getByRole('button',{name:'展开队列',exact:true}).click();await expect(page.locator('.playback-queue')).toBeVisible();
+ await expect(audio).toHaveAttribute('data-continuity','same');await expect(audio).toHaveJSProperty('paused',false);
+ await page.locator('.playback-queue').getByRole('button',{name:'收起队列',exact:true}).click();await expect(page.locator('.track-detail-view')).toBeVisible();
+ await page.getByLabel('音量',{exact:true}).fill('37');await page.getByRole('button',{name:'静音',exact:true}).click();await expect(audio).toHaveJSProperty('volume',0);
+ await page.getByRole('button',{name:'取消静音',exact:true}).click();await expect(audio).toHaveJSProperty('volume',.37);
  const duration=await audio.evaluate((el:HTMLAudioElement)=>el.duration);expect(Math.abs(duration-first.durationSeconds)).toBeLessThan(2);
  const start=await audio.evaluate((el:HTMLAudioElement)=>el.currentTime);await page.getByLabel('选择地区').selectOption('A:FD:FENGDAN');await page.getByRole('button',{name:'点位目录',exact:true}).click();await page.getByRole('button',{name:'收起面板'}).click();await expect.poll(()=>audio.evaluate((el:HTMLAudioElement)=>el.currentTime)).toBeGreaterThan(start);await expect(page.locator('.player-title')).toContainText(first.sceneInfo.wikiTitle);
  await page.locator('.player-bar').getByRole('button',{name:'暂停',exact:true}).click();await expect(audio).toHaveJSProperty('paused',true);
@@ -35,11 +42,11 @@ test('实际原神音频：外链播放暂停/拖动/上下曲/随机循环/面�
  const secondDuration=await audio.evaluate((el:HTMLAudioElement)=>el.duration);await page.getByRole('button',{name:'关闭循环',exact:true}).click(); // list repeat wraps at tail
  await page.getByLabel('播放进度').fill(String(Math.floor(secondDuration)));await playing(first.sceneInfo.wikiTitle);
  await page.locator('.player-bar').getByRole('button',{name:'暂停',exact:true}).click();await page.getByLabel('播放进度').fill('10');await page.reload();
- await expect(page.locator('.player-title')).toContainText(first.sceneInfo.wikiTitle);await expect(page.locator('audio')).toHaveCount(0);await expect(page.getByLabel('音量')).toHaveValue('25');await expect(page.locator('.player-status')).toContainText('已恢复');await page.locator('.player-bar').getByRole('button',{name:'播放',exact:true}).click();await playing(first.sceneInfo.wikiTitle);await expect.poll(()=>audio.evaluate((el:HTMLAudioElement)=>el.currentTime)).toBeGreaterThan(9.8);
+ await expect(page.locator('.player-title')).toContainText(first.sceneInfo.wikiTitle);await expect(page.locator('audio')).toHaveCount(0);await expect(page.getByLabel('音量')).toHaveValue('25');await expect(page.locator('.s4c-player-feedback')).toContainText('已恢复');await page.locator('.player-bar').getByRole('button',{name:'播放',exact:true}).click();await playing(first.sceneInfo.wikiTitle);await expect.poll(()=>audio.evaluate((el:HTMLAudioElement)=>el.currentTime)).toBeGreaterThan(9.8);
  await page.screenshot({path:'.local/browser-tests/stage4-real-audio.png'});await page.locator('.player-bar').getByRole('button',{name:'暂停',exact:true}).click();
  // Network decode evidence stays in test memory; no audio file is saved or committed.
  const file=await request.get(resource.url);expect(file.ok()).toBe(true);expect(file.headers()['content-type']).toMatch(/^audio\//);
  const energy=await page.evaluate(async bytes=>{const ctx=new OfflineAudioContext(1,1,44100),buffer=await ctx.decodeAudioData(Uint8Array.from(bytes).buffer);const data=buffer.getChannelData(0);let sum=0;for(let i=0;i<data.length;i+=64)sum+=data[i]*data[i];return {duration:buffer.duration,energy:sum};},[...await file.body()]);
  expect(Math.abs(energy.duration-first.durationSeconds)).toBeLessThan(2);expect(energy.energy).toBeGreaterThan(0);
- fs.writeFileSync('.local/browser-tests/stage4-real-audio-result.json',JSON.stringify({provider:resource.provider,samples:[{id:first.id,duration},{id:second.id,duration:secondDuration}],decode:energy,controls:['play','pause','seek','volume','previous','next','shuffle','repeat-one','repeat-all','map-panel-continuity','refresh-resume']},null,2));
+ fs.writeFileSync('.local/browser-tests/stage4-real-audio-result.json',JSON.stringify({provider:resource.provider,samples:[{id:first.id,duration},{id:second.id,duration:secondDuration}],decode:energy,controls:['play','pause','seek','volume','previous','next','shuffle','repeat-one','repeat-all','map-panel-continuity','queue-panel-continuity','mute-restore','refresh-resume']},null,2));
 });

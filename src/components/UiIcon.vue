@@ -21,6 +21,7 @@
       <text x="12" y="16" text-anchor="middle" font-size="10" font-weight="bold" fill="currentColor" stroke="none">1</text>
     </g>
     <path v-else-if="name === 'volume'" d="M11 5L6 9H2v6h4l5 4V5zM19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07" />
+    <path v-else-if="name === 'mute'" d="M11 5L6 9H2v6h4l5 4V5zM16 9l6 6M22 9l-6 6" />
     <path v-else-if="name === 'library'" d="M4 19.5A2.5 2.5 0 016.5 17H20M4 19.5A2.5 2.5 0 014 17V6a2 2 0 012-2h10l4 4v9a2 2 0 01-2 2H6.5" />
     <path v-else-if="name === 'chevron-left'" d="M15 18l-6-6 6-6" />
     <path v-else-if="name === 'chevron-right'" d="M9 18l6-6-6-6" />

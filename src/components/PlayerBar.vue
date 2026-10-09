@@ -1,339 +1,87 @@
 <template>
-  <div class="player-bar" role="region" aria-label="播放器">
-    <div class="s4r-player-grid">
-      <div class="s4r-player-left">
-        <div class="player-track">
+  <div class="player-bar s4c-player" role="region" aria-label="播放器" :aria-busy="busy">
+    <div class="s4c-player-grid">
+      <div class="s4c-player-left">
+        <div class="s4c-player-art" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M18 7v17M18 7l8-2v15M18 12l8-2" />
+            <ellipse cx="14" cy="24" rx="4" ry="3" /><ellipse cx="22" cy="20" rx="4" ry="3" />
+          </svg>
+        </div>
+        <button class="s4c-player-track" :disabled="!state.currentTrack" aria-label="查看当前曲目详情" :title="displayTitle" @click="showDetail">
           <span class="player-title">{{ displayTitle }}</span>
-          <span v-if="displayArtist" class="s4r-player-artist">{{ displayArtist }}</span>
+          <span class="s4c-player-artist" :title="displayArtist">{{ displayArtist || '地图里的旋律，随行而听' }}</span>
+        </button>
+        <UiButton :label="isFavorite ? '取消收藏当前曲目' : '收藏当前曲目'" icon="star" :pressed="isFavorite" :disabled="!state.currentTrack" @click="favorite" />
+      </div>
+
+      <div class="s4c-player-center">
+        <div class="s4c-player-controls">
+          <UiButton :label="state.shuffle ? '关闭随机播放' : '开启随机播放'" icon="shuffle" :pressed="state.shuffle" @click="state.toggleShuffle()" />
+          <UiButton label="上一首" icon="previous" :disabled="!state.queueIds.length" @click="state.previous()" />
+          <UiButton class="s4c-play-button" :class="{ 'is-loading': busy }" :label="wantsPause ? '暂停' : '播放'" :icon="wantsPause ? 'pause' : 'play'" :disabled="!state.currentId && !state.queueIds.length" @click="state.toggle()" />
+          <UiButton label="下一首" icon="next" :disabled="!state.queueIds.length" @click="state.next()" />
+          <UiButton :label="repeatLabel" :icon="state.repeat === 'one' ? 'repeat-one' : 'repeat'" :pressed="state.repeat !== 'off'" @click="state.cycleRepeat()" />
+        </div>
+        <div class="s4c-player-seek">
+          <span class="s4c-player-time">{{ formatTime(state.position) }}</span>
+          <input type="range" min="0" :max="state.duration || 0" step="0.1" :value="state.position" :disabled="!canSeek" :style="{ '--range-fill': progressFill }" aria-label="播放进度" :aria-valuetext="`${formatTime(state.position)} / ${formatTime(state.duration)}`" @input="seek" />
+          <span class="s4c-player-time">{{ state.duration > 0 ? formatTime(state.duration) : '--:--' }}</span>
         </div>
       </div>
 
-      <div class="s4r-player-center">
-        <div class="s4r-player-controls-row">
-          <UiButton
-            label="上一首"
-            icon="previous"
-            :disabled="!canSkip"
-            @click="handlePrevious"
-          />
-          <UiButton
-            :label="wantsPause ? '暂停' : '播放'"
-            :icon="wantsPause ? 'pause' : 'play'"
-            :disabled="!canToggle"
-            class="s4r-play-button"
-            @click="handleToggle"
-          />
-          <UiButton
-            label="下一首"
-            icon="next"
-            :disabled="!canSkip"
-            @click="handleNext"
-          />
-        </div>
-      </div>
-
-      <div class="s4r-player-right">
-        <UiButton
-          :label="isFavorite ? '取消收藏当前曲目' : '收藏当前曲目'"
-          icon="star"
-          :pressed="isFavorite"
-          :disabled="!state.currentId"
-          @click="handleFavorite"
-        />
-        <UiButton
-          :label="queueOpen ? '收起队列' : '展开队列'"
-          icon="queue"
-          :text="String(state.queueIds.length)"
-          :pressed="queueOpen"
-          @click="queueOpen = !queueOpen"
-        />
-        <UiButton
-          label="查看当前曲目详情"
-          icon="info"
-          :disabled="!state.currentTrack"
-          @click="handleShowDetail"
-        />
-      </div>
-
-      <div class="s4r-player-seek-row">
-        <span class="s4r-player-time">{{ formatTime(state.position) }}</span>
-        <input
-          type="range"
-          class="s4r-player-progress"
-          :min="0"
-          :max="progressMax"
-          :value="state.position"
-          :disabled="!canSeek"
-          aria-label="播放进度"
-          @input="handleSeek"
-        />
-        <span class="s4r-player-time">{{ state.duration > 0 ? formatTime(state.duration) : '--:--' }}</span>
-      </div>
-
-      <div class="s4r-player-secondary">
-        <div class="s4r-player-modes">
-          <UiButton
-            :label="state.shuffle ? '关闭随机播放' : '开启随机播放'"
-            icon="shuffle"
-            :pressed="state.shuffle"
-            @click="handleShuffle"
-          />
-          <UiButton
-            :label="repeatLabel"
-            :icon="state.repeat === 'one' ? 'repeat-one' : 'repeat'"
-            :pressed="state.repeat !== 'off'"
-            @click="handleRepeat"
-          />
-        </div>
-        <div class="s4r-player-volume-control">
-          <UiIcon name="volume" />
-          <input
-            type="range"
-            class="s4r-player-volume"
-            :min="0"
-            :max="100"
-            :value="Math.round(state.volume * 100)"
-            aria-label="音量"
-            @input="handleVolume"
-          />
+      <div class="s4c-player-right">
+        <UiButton class="s4c-queue-toggle" :label="queueOpen ? '收起队列' : '展开队列'" icon="queue" :pressed="queueOpen" :aria-expanded="queueOpen" aria-controls="playback-queue" @click="emit('toggle-queue')" />
+        <div class="s4c-player-volume-control">
+          <UiButton :label="state.volume === 0 ? '取消静音' : '静音'" :icon="state.volume === 0 ? 'mute' : 'volume'" :pressed="state.volume === 0" @click="state.toggleMute()" />
+          <input type="range" min="0" max="100" :value="Math.round(state.volume * 100)" :style="{ '--range-fill': `${state.volume * 100}%` }" aria-label="音量" @input="volume" />
         </div>
       </div>
     </div>
-
-    <div v-if="visibleStatusMessage" class="player-status" role="alert" aria-live="assertive">
-      {{ visibleStatusMessage }}
-    </div>
-
-    <div v-if="queueOpen" class="queue-panel s4r-queue-panel">
-      <div class="s4r-queue-header">
-        <h3 class="s4r-queue-title">播放队列</h3>
-        <UiButton
-          label="收起队列"
-          icon="close"
-          @click="queueOpen = false"
-        />
-      </div>
-
-      <div class="queue-content">
-        <div v-if="state.currentTrack" class="s4r-queue-current">
-          <span class="s4r-queue-label">{{ state.playing ? '正在播放' : '当前曲目' }}</span>
-          <div class="s4r-queue-track-info">
-            <span class="s4r-queue-track-title">{{ trackTitle(state.currentTrack) }}</span>
-            <span class="s4r-queue-track-artist">{{ trackArtist(state.currentTrack) }}</span>
-          </div>
-        </div>
-
-        <div v-if="state.queueIds.length" class="s4r-queue-list-container">
-          <div class="s4r-queue-list-header">
-            <span class="s4r-queue-label">队列顺序 ({{ state.queueIds.length }})</span>
-            <UiButton
-              label="清空队列"
-              icon="trash"
-              text="清空"
-              :disabled="!state.queueIds.length"
-              @click="handleClearQueue"
-            />
-          </div>
-
-          <ul class="s4r-queue-list">
-            <li
-              v-for="(entry, idx) in queueTracks"
-              :key="entry.id"
-              class="s4r-queue-item"
-              :class="{ 's4r-queue-item-current': state.currentId === entry.id }"
-            >
-              <div class="s4r-queue-track-info">
-                <span class="s4r-queue-track-title">
-                  {{ entry.track ? trackTitle(entry.track) : '曲库中已不可用' }}
-                </span>
-                <span class="s4r-queue-track-artist">
-                  {{ entry.track ? trackArtist(entry.track) : entry.id }}
-                </span>
-              </div>
-              <div class="s4r-queue-item-actions">
-                <UiButton
-                  label="播放队列曲目"
-                  icon="play"
-                  :disabled="!entry.track"
-                  @click="state.playTrack(entry.id, state.queueIds)"
-                />
-                <UiButton
-                  label="上移"
-                  icon="arrow-up"
-                  :disabled="idx === 0"
-                  @click="handleMoveUp(entry.id)"
-                />
-                <UiButton
-                  label="下移"
-                  icon="arrow-down"
-                  :disabled="idx === queueTracks.length - 1"
-                  @click="handleMoveDown(entry.id)"
-                />
-                <UiButton
-                  label="移除"
-                  icon="close"
-                  @click="handleRemoveFromQueue(entry.id)"
-                />
-              </div>
-            </li>
-          </ul>
-        </div>
-        <p v-else class="s4r-queue-empty">队列为空</p>
-      </div>
-    </div>
-
-    <div v-if="state.storageMessage" class="player-save-message" role="status" aria-live="polite">
-      {{ state.storageMessage }}
-    </div>
-    <div v-if="collectionState.message && /失败|无法|损坏|阻止|上限/.test(collectionState.message)" class="player-save-message" role="alert">
-      {{ collectionState.message }}
-    </div>
+    <span v-if="normalFeedback" class="s4c-player-feedback sr-only" role="status">{{ normalFeedback }}</span>
+    <div v-if="errorMessage" class="player-status" role="alert">{{ errorMessage }}</div>
+    <div v-if="state.storageMessage" class="s4c-player-storage-error" role="alert">{{ state.storageMessage }}</div>
+    <div v-if="collectionError" class="s4c-player-storage-error" role="alert">{{ collectionError }}</div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { computed, reactive, ref } from 'vue';
+import { computed, reactive } from 'vue';
 import type { MusicTrack } from '../domain/contracts';
 import type { useMusicPlayer } from '../services/music-player';
 import type { useMusicCollection } from '../services/music-collection';
 import UiButton from './UiButton.vue';
-import UiIcon from './UiIcon.vue';
 
 const props = defineProps<{
   player: ReturnType<typeof useMusicPlayer>;
   collection: ReturnType<typeof useMusicCollection>;
   tracks: MusicTrack[];
+  queueOpen: boolean;
 }>();
-
-const emit = defineEmits<{
-  'show-track': [id: string];
-}>();
-
+const emit = defineEmits<{ 'show-track': [id: string]; 'toggle-queue': [] }>();
 const state = reactive(props.player);
-const collectionState = reactive(props.collection);
-const queueOpen = ref(false);
-
+const collection = reactive(props.collection);
+const busy = computed(() => state.status === 'resolving' || state.status === 'loading');
+const wantsPause = computed(() => state.playing || busy.value);
+const canSeek = computed(() => state.duration > 0 && !['error', 'unavailable'].includes(state.status));
 const displayTitle = computed(() => {
-  if (!state.currentTrack) return '尚未选择曲目';
-  return trackTitle(state.currentTrack);
+  const track = state.currentTrack;
+  return track ? (track.sceneInfo ? `${track.sceneInfo.wikiTitle} / ${track.sceneInfo.englishTitle}` : track.title) : '尚未选择曲目';
 });
-
-const displayArtist = computed(() => {
-  if (!state.currentTrack) return '';
-  return trackArtist(state.currentTrack);
-});
-
-const visibleStatusMessage = computed(() => {
-  if (!state.message) return '';
-  const status = state.status;
-  if (status === 'error' || status === 'unavailable' || status === 'blocked') {
-    return state.message;
-  }
-  if (status === 'resolving' || status === 'loading' || state.message.startsWith('已恢复')) {
-    return state.message;
-  }
-  return '';
-});
-
-const wantsPause = computed(() =>
-  state.playing || state.status === 'resolving' || state.status === 'loading'
-);
-
-const canToggle = computed(() => !!state.currentId || state.queueIds.length > 0);
-const canSkip = computed(() => state.queueIds.length > 0);
-const canSeek = computed(() =>
-  state.duration > 0 && !['error', 'unavailable'].includes(state.status)
-);
-const progressMax = computed(() => state.duration > 0 ? state.duration : 0);
-
-const repeatLabel = computed(() => {
-  if (state.repeat === 'all') return '列表循环';
-  if (state.repeat === 'one') return '单曲循环';
-  return '关闭循环';
-});
-
-const isFavorite = computed(() =>
-  state.currentId ? collectionState.isFavorite(state.currentId) : false
-);
-
-const queueTracks = computed(() =>
-  state.queueIds.map(id => ({ id, track: props.tracks.find(t => t.id === id) }))
-);
-
-function trackTitle(track: MusicTrack): string {
-  if (track.sceneInfo) {
-    return `${track.sceneInfo.wikiTitle} / ${track.sceneInfo.englishTitle}`;
-  }
-  return track.title;
-}
-
-function trackArtist(track: MusicTrack): string {
-  return track.artists.length ? track.artists.join('、') : '未知';
-}
+const displayArtist = computed(() => state.currentTrack?.artists.join('、') || '');
+const isFavorite = computed(() => collection.isFavorite(state.currentId));
+const repeatLabel = computed(() => state.repeat === 'all' ? '列表循环' : state.repeat === 'one' ? '单曲循环' : '关闭循环');
+const errorMessage = computed(() => ['error', 'unavailable', 'blocked'].includes(state.status) ? state.message : '');
+const normalFeedback = computed(() => busy.value || state.message.startsWith('已恢复') ? state.message : '');
+const collectionError = computed(() => /失败|无法|损坏|阻止|上限/.test(collection.message) ? collection.message : '');
+const progressFill = computed(() => `${state.duration > 0 ? Math.min(100, state.position / state.duration * 100) : 0}%`);
 
 function formatTime(seconds: number): string {
   if (!Number.isFinite(seconds) || seconds < 0) return '--:--';
-  const total = Math.floor(seconds);
-  const m = Math.floor(total / 60);
-  const s = total % 60;
-  return `${m}:${String(s).padStart(2, '0')}`;
+  return `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, '0')}`;
 }
-
-async function handleToggle(): Promise<void> {
-  await state.toggle();
-}
-
-async function handlePrevious(): Promise<void> {
-  await state.previous();
-}
-
-async function handleNext(): Promise<void> {
-  await state.next();
-}
-
-function handleSeek(event: Event): void {
-  const input = event.target as HTMLInputElement;
-  state.seek(parseFloat(input.value));
-}
-
-function handleVolume(event: Event): void {
-  const input = event.target as HTMLInputElement;
-  state.setVolume(parseInt(input.value, 10) / 100);
-}
-
-function handleShuffle(): void {
-  state.toggleShuffle();
-}
-
-function handleRepeat(): void {
-  state.cycleRepeat();
-}
-
-function handleFavorite(): void {
-  if (state.currentId) {
-    collectionState.toggleFavorite(state.currentId);
-  }
-}
-
-function handleShowDetail(): void {
-  if (state.currentTrack) {
-    emit('show-track', state.currentTrack.id);
-  }
-}
-
-function handleMoveUp(id: string): void {
-  state.moveInQueue(id, -1);
-}
-
-function handleMoveDown(id: string): void {
-  state.moveInQueue(id, 1);
-}
-
-function handleRemoveFromQueue(id: string): void {
-  state.removeFromQueue(id);
-}
-
-function handleClearQueue(): void {
-  state.clearQueue();
-}
+function seek(event: Event) { state.seek(Number((event.target as HTMLInputElement).value)); }
+function volume(event: Event) { state.setVolume(Number((event.target as HTMLInputElement).value) / 100); }
+function favorite() { if (state.currentTrack) collection.toggleFavorite(state.currentId); }
+function showDetail() { if (state.currentTrack) emit('show-track', state.currentId); }
 </script>

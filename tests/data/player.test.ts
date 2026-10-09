@@ -61,6 +61,14 @@ test('结束事件顺序切歌，关闭循环在队尾停止；单曲循环重�
  const {player,media}=setup();await player.playTrack('netease:1',['netease:1','netease:2']);media[0].emit('ended');await tick();assert.equal(player.currentId.value,'netease:2');media[1].emit('ended');await tick();assert.equal(player.status.value,'paused');
  player.cycleRepeat();player.cycleRepeat();await player.playTrack('netease:1');const before=media.length;media.at(-1)!.emit('ended');await tick();assert.equal(player.currentId.value,'netease:1');assert.equal(media.length,before+1);player.dispose();
 });
+test('静音恢复最近非零音量，刷新和旧存储兼容，媒体切曲仍保持静音',async()=>{
+ const {player,media,storage}=setup();await player.playTrack('netease:1');player.setVolume(.27);player.toggleMute();
+ assert.equal(media[0].volume,0);await player.playTrack('netease:2');assert.equal(media[1].volume,0);player.dispose();
+ const restored=setup(async()=>ready,storage);assert.equal(restored.player.volume.value,0);restored.player.toggleMute();assert.equal(restored.player.volume.value,.27);
+ restored.player.setVolume(0);restored.player.toggleMute();assert.equal(restored.player.volume.value,.27);restored.player.setVolume(Number.NaN);assert.equal(restored.player.volume.value,.27);restored.player.dispose();
+ const old=JSON.parse(storage.getItem(PLAYER_KEY)!);delete old.lastAudibleVolume;old.volume=0;storage.setItem(PLAYER_KEY,JSON.stringify(old));
+ const compatible=setup(async()=>ready,storage);compatible.player.toggleMute();assert.equal(compatible.player.volume.value,.8);compatible.player.dispose();
+});
 test('随机不连续重复，上下曲、队列排序/删除/清空不打断当前播放',async()=>{
  const {player,media}=setup();await player.playTrack('netease:1',tracks.map(t=>t.id));player.toggleShuffle();await player.next();assert.equal(player.currentId.value,'netease:2');await player.previous();assert.equal(player.currentId.value,'netease:1');
  player.moveInQueue('netease:3',-1);assert.deepEqual(player.queueIds.value,['netease:1','netease:3','netease:2']);player.removeFromQueue('netease:1');assert.equal(player.playing.value,true);player.clearQueue();assert.equal(player.queueIds.value.length,0);assert.equal(media.at(-1)!.paused,false);player.dispose();

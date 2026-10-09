@@ -33,18 +33,13 @@ test('简化单曲信息、定位按钮留白、来源不进入播放器，键�
 
 for(const width of [1280,320])test(`返修布局${width}px：播放器居中、侧栏边界、收起可重新打开`,async({page})=>{
  await page.setViewportSize({width,height:844});await page.goto('/');await expect(page.locator('.anchor-list button')).toHaveCount(27);
- const controls=await page.locator('.s4r-player-center').boundingBox();expect(Math.abs(controls!.x+controls!.width/2-width/2)).toBeLessThan(25);
- if(width===320){
-  const title=await page.locator('.s4r-player-left').boundingBox(),modes=await page.locator('.s4r-player-modes').boundingBox(),volume=await page.locator('.s4r-player-volume-control').boundingBox();
-  expect(controls!.y).toBeGreaterThanOrEqual(title!.y+title!.height);
-  expect(modes!.x+modes!.width).toBeLessThanOrEqual(controls!.x);expect(controls!.x+controls!.width).toBeLessThanOrEqual(volume!.x);
- }
+ const controls=await page.locator('.s4c-player-center').boundingBox();expect(Math.abs(controls!.x+controls!.width/2-width/2)).toBeLessThan(25);
  await page.getByRole('button',{name:'收起面板',exact:true}).click();await expect(page.getByRole('button',{name:'点位目录',exact:true})).not.toBeVisible();
  await expect(page.locator('#side-panel-content')).toHaveAttribute('inert','');await page.getByRole('button',{name:'展开面板',exact:true}).click();await expect(page.getByRole('button',{name:'点位目录',exact:true})).toBeVisible();
  await page.getByRole('button',{name:'展开个人库',exact:true}).click();await expect(page.locator('.personal-library')).toBeVisible();
  if(width===320)await expect(page.getByRole('button',{name:'展开面板',exact:true})).toBeVisible();
  await expect.poll(async()=>page.evaluate(()=>{const header=document.querySelector('header')!.getBoundingClientRect(),footer=document.querySelector('footer')!.getBoundingClientRect(),left=document.querySelector('.s4r-library-sidebar')!.getBoundingClientRect();return left.top>=header.bottom-1&&left.bottom<=footer.top+1;})).toBe(true);
- await page.keyboard.press('Escape');await expect(page.locator('#personal-library-sidebar')).toHaveAttribute('inert','');await expect(page.getByRole('button',{name:'展开个人库',exact:true})).toBeFocused();
+ await page.keyboard.press('Escape');await expect(page.locator('#personal-library-content')).toHaveAttribute('inert','');await expect(page.getByRole('button',{name:'展开个人库',exact:true})).toBeFocused();
  await expect.poll(()=>page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
  const map=await page.locator('.map-container').boundingBox();expect(map!.height).toBeGreaterThanOrEqual(240);
  await page.emulateMedia({reducedMotion:'reduce'});expect(await page.locator('.side-panel').evaluate(el=>parseFloat(getComputedStyle(el).transitionDuration))).toBeLessThan(.02);

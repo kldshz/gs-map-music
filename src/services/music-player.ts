@@ -20,19 +20,20 @@ export function useMusicPlayer(tracks:()=>MusicTrack[],options:PlayerOptions={})
   const shuffle=ref(false),repeat=ref<'off'|'all'|'one'>('off'),storageMessage=ref('');
   const currentTrack=computed(()=>tracks().find(t=>t.id===currentId.value)??null);
   let audio:HTMLAudioElement|null=null,abort:AbortController|null=null,version=0,playAttempt=0,disposed=false,damaged=false,wantPlay=false;
-  let resumePosition=0,lastSave=0,expiry:number|null=null,sourceNote='';
+  let resumePosition=0,lastSave=0,expiry:number|null=null,sourceNote='',lastAudibleVolume=.8;
   const history:string[]=[];
   try{
     storage=options.storage??globalThis.localStorage;
     const raw=storage?.getItem(PLAYER_KEY);
     if(raw){const s=JSON.parse(raw);if(s.schemaVersion!==1||typeof s.currentId!=='string'||s.currentId.length>100||!ids(s.queueIds)||!finite(s.position,86400)||!finite(s.volume,1)||typeof s.shuffle!=='boolean'||!['off','all','one'].includes(s.repeat))throw Error();
       currentId.value=s.currentId;queueIds.value=[...new Set(s.queueIds as string[])];position.value=s.position;resumePosition=s.position;volume.value=s.volume;shuffle.value=s.shuffle;repeat.value=s.repeat;
+      lastAudibleVolume=finite(s.lastAudibleVolume,1)&&s.lastAudibleVolume>0?s.lastAudibleVolume:s.volume>0?s.volume:.8;
       if(currentId.value){status.value='paused';message.value='已恢复曲目和进度，点击播放继续';}
     }
   }catch{damaged=true;storageMessage.value='播放状态无法读取，原存储保留；请备份修复后刷新。';}
   function persist(){
     if(damaged)return;
-    try{if(!storage)throw Error('storage');storage.setItem(PLAYER_KEY,JSON.stringify({schemaVersion:1,currentId:currentId.value,queueIds:queueIds.value,position:position.value,volume:volume.value,shuffle:shuffle.value,repeat:repeat.value}));}
+    try{if(!storage)throw Error('storage');storage.setItem(PLAYER_KEY,JSON.stringify({schemaVersion:1,currentId:currentId.value,queueIds:queueIds.value,position:position.value,volume:volume.value,lastAudibleVolume,shuffle:shuffle.value,repeat:repeat.value}));}
     catch{storageMessage.value='播放状态保存失败；本次仍可操作，刷新可能无法恢复。';}
   }
   function retire(){abort?.abort();abort=null;if(audio){audio.pause();audio.removeAttribute('src');audio.load();audio.remove?.();audio=null;}playing.value=false;expiry=null;}
@@ -109,7 +110,8 @@ export function useMusicPlayer(tracks:()=>MusicTrack[],options:PlayerOptions={})
     const q=validQueue();if(!q.length)return;const id=shuffle.value?history.pop()??q[0]:q[(q.indexOf(currentId.value)-1+q.length)%q.length];await start(id);
   }
   function seek(seconds:number){if(!audio||!finite(seconds,86400)||duration.value<=0)return;audio.currentTime=Math.min(seconds,duration.value);position.value=audio.currentTime;persist();}
-  function setVolume(value:number){if(!finite(value,1))return;volume.value=value;if(audio)audio.volume=value;persist();}
+  function setVolume(value:number){if(!finite(value,1))return;volume.value=value;if(value>0)lastAudibleVolume=value;if(audio)audio.volume=value;persist();}
+  function toggleMute(){setVolume(volume.value>0?0:lastAudibleVolume);}
   function toggleShuffle(){shuffle.value=!shuffle.value;persist();}
   function cycleRepeat(){repeat.value=repeat.value==='off'?'all':repeat.value==='all'?'one':'off';persist();}
   function enqueue(id:string){if(tracks().some(t=>t.id===id)&&!queueIds.value.includes(id)&&queueIds.value.length<10000){queueIds.value.push(id);persist();}}
@@ -118,5 +120,5 @@ export function useMusicPlayer(tracks:()=>MusicTrack[],options:PlayerOptions={})
   function moveInQueue(id:string,direction:-1|1){const at=queueIds.value.indexOf(id),to=at+direction;if(at>=0&&to>=0&&to<queueIds.value.length){[queueIds.value[at],queueIds.value[to]]=[queueIds.value[to],queueIds.value[at]];persist();}}
   function dispose(){persist();disposed=true;++version;retire();if(typeof window!=='undefined')window.removeEventListener('pagehide',persist);}
   if(typeof window!=='undefined')window.addEventListener('pagehide',persist);
-  return {currentTrack,currentId,queueIds,playing,status,message,position,duration,volume,shuffle,repeat,storageMessage,playTrack,toggle,previous,next,seek,setVolume,toggleShuffle,cycleRepeat,enqueue,removeFromQueue,clearQueue,moveInQueue,dispose};
+  return {currentTrack,currentId,queueIds,playing,status,message,position,duration,volume,shuffle,repeat,storageMessage,playTrack,toggle,previous,next,seek,setVolume,toggleMute,toggleShuffle,cycleRepeat,enqueue,removeFromQueue,clearQueue,moveInQueue,dispose};
 }
